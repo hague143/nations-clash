@@ -18,6 +18,9 @@ Clicking Enter unlocks browser audio; Sound and Volume control it. If the docume
 opens as text, ensure its extension is `.html`, not `.html.txt`. The build can also
 be hosted as `index.html` on a static website.
 
+For a direct browser website, a GitHub Pages workflow is prepared. See
+[publishing instructions and access status](../docs/WEB-PUBLISH.md).
+
 ## Controls
 
 | Action | Player 1 | Player 2 in local mode |
