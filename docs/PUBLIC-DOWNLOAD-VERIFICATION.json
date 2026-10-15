@@ -1,7 +1,22 @@
 {
-  "status": "awaiting_public_verification",
+  "status": "verified",
+  "commit": "db897916e998e1b48fa89e3d2857b85d57531fbd",
+  "verifiedAt": "2026-10-15T22:02:46.319685+00:00",
   "format": "self-contained single HTML inside ZIP",
-  "expectedZipBytes": 89221996,
-  "expectedZipSha256": "39df9515d66b28aeaae56f7a75bdb00782e71d3c3b61650c63736b8c226fd651",
-  "expectedHtmlSha256": "7aa18592f8f180757d8a96633ddc08cc4b973343b7d2090a8bc0b5de321a0b0a"
+  "files": [
+    {
+      "file": "NationClash-Windows.zip",
+      "url": "https://raw.githubusercontent.com/hague143/nations-clash/db897916e998e1b48fa89e3d2857b85d57531fbd/downloads/NationClash-Windows.zip",
+      "bytes": 89221996,
+      "sha256": "39df9515d66b28aeaae56f7a75bdb00782e71d3c3b61650c63736b8c226fd651",
+      "contentType": "application/zip",
+      "contentDisposition": null,
+      "status": "verified",
+      "zipCrc": "passed",
+      "htmlMatchesBrowserTestedDocument": true,
+      "htmlSha256": "7aa18592f8f180757d8a96633ddc08cc4b973343b7d2090a8bc0b5de321a0b0a",
+      "members": 9,
+      "companionAssetFiles": 0
+    }
+  ]
 }
