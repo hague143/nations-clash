@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "source concepts; not integrated; national flag costumes pending",
+  "provenance": "Image-generation tool, in response to the user reference-art request; not APK-extracted",
+  "transparentBackground": true,
+  "intendedLayout": {
+    "columns": 5,
+    "rows": 2,
+    "equalCellCropsVerified": false,
+    "poses": [
+      "idle",
+      "walk",
+      "block",
+      "crouch",
+      "lowPunch",
+      "punch",
+      "kick",
+      "hit",
+      "ko",
+      "lowKick"
+    ]
+  },
+  "assets": [
+    {
+      "file": "base-00.png",
+      "width": 1983,
+      "height": 793,
+      "bytes": 1751737,
+      "sha256": "a5244a7fdc85608b8d95e1227975ea782dca863013cbeb896486e22693cb1bcb",
+      "identity": "Tan skin; dark wavy tied-back hair; short beard; muscular; long cape and trousers."
+    },
+    {
+      "file": "base-01.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1952157,
+      "sha256": "c3f6d669b6a5f2a3e64934faeca170f19a8d2a65206a2fb14ba5dae4b1c6c0f3",
+      "identity": "Light warm-beige skin; short thick black hair; clean-shaven; lean muscular; open sleeveless gi and short scarf."
+    },
+    {
+      "file": "base-02.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1655666,
+      "sha256": "ef478de14aa7f25cfc7ae5eaa7c6be15a94f3023be0772cae7484aa690726134",
+      "identity": "Deep warm-brown skin; short curled black hair; full beard; broad muscular; sleeveless open martial longcoat."
+    },
+    {
+      "file": "base-03.png",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1536718,
+      "sha256": "a1cd5c48d261ddbc4bf59355d44fa755904b91121f5c7da0fe2c917a17dcfb0b",
+      "identity": "Fair skin; sandy-blond hair and beard; compact muscular; sleeveless short martial jacket and trousers."
+    },
+    {
+      "file": "base-04.png",
+      "width": 1983,
+      "height": 793,
+      "bytes": 1583691,
+      "sha256": "ce7e46c2ff2fd0daad303f407ae6b7880b6d463c5151095c9117b666ceeb3237",
+      "identity": "Medium warm-brown skin; long silver-white high ponytail; clean-shaven; lean muscular; high-collared sleeveless tunic."
+    },
+    {
+      "file": "base-05.png",
+      "width": 1983,
+      "height": 793,
+      "bytes": 1414008,
+      "sha256": "801f627e9e37b557a76b519f676654d980f24158a2046a8fed1e045985200c07",
+      "identity": "Olive-brown skin; bald; black goatee; stocky strong build; sleeveless vest and loose trousers."
+    },
+    {
+      "file": "base-06.png",
+      "width": 1983,
+      "height": 793,
+      "bytes": 1537264,
+      "sha256": "f31d8808e721181c53c0b0fa02723826f9714f3609e19283c38e733db736638c",
+      "identity": "Medium olive-tan skin; long straight black hair tied low; moustache and short chin beard; tall athletic; open longcoat."
+    }
+  ]
+}
