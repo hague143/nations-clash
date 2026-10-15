@@ -1,10 +1,10 @@
 # Play the self-contained HTML
 
-[Download the ZIP containing NationClash.html](https://github.com/hague143/nations-clash/raw/refs/heads/backup/nationclash-2026-10-15/downloads/NationClash-Windows.zip)
+[Download the ZIP containing NationClash.html](https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash-Windows.zip)
 
 Right-click the ZIP, choose **Extract All**, then open `NationClash.html` in current Chrome or Edge. **No companion artwork folder is required.** All 196 fighters and audio are inside the HTML. Allow the large file to finish loading.
 
-[Direct HTML file](https://github.com/hague143/nations-clash/raw/refs/heads/backup/nationclash-2026-10-15/downloads/NationClash.html): right-click **Save link as**, keeping the `.html` extension. GitHub's raw-file viewer is a download source; open the saved file in your browser to play.
+[Direct HTML file](https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash.html): right-click **Save link as**, keeping the `.html` extension. GitHub's raw-file viewer is a download source; open the saved file in your browser to play.
 
 Latest artwork: 36 received PNGs, 32 changed and four unchanged. All 196 countries are present. 195 sheets have eight poses; Turkey has four and uses explicit adapted crouch/KO states. Two unchanged costumes still need replacement, and two need confirmation: [creator checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
 

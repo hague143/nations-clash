@@ -75,3 +75,14 @@ and scripts without external assets, a user-run server, Python or Unity.
 
 See [package metadata](COUNTRY-PACKAGE-MANIFEST.json), [browser evidence](WORLD-ACCEPTANCE.json)
 and [public download verification](PUBLIC-DOWNLOAD-VERIFICATION.json).
+
+## Verified public delivery
+
+Both immutable public files were downloaded in full after the push:
+
+- https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash-Windows.zip
+- https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash.html
+
+Both returned HTTP 200 and match the exact tested ZIP/HTML sizes and SHA-256
+values. ZIP CRCs pass; its contained HTML is identical to the standalone public
+HTML and to the browser acceptance document.

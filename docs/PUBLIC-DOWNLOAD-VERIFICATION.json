@@ -1,8 +1,30 @@
 {
-  "status": "pending new revision push and full ZIP/HTML public download verification",
-  "expectedZipBytes": 79113341,
-  "expectedZipSha256": "bf7dc3623d67133c0d4ea1e42fb55a550d178b90d463767bb1a6446676e20a3b",
-  "expectedHtmlBytes": 104572020,
-  "expectedHtmlSha256": "2c0ddb0a34f4683b5e88abcfe73d67b89ad087e8654c1d38bab29be1b9193258",
-  "priorPackageSuperseded": true
+  "status": "verified",
+  "commit": "17563c22045bb95463843fe01c3fe920d7ee3ebe",
+  "verifiedAt": "2026-10-15T18:58:03.476049+00:00",
+  "format": "self-contained single HTML",
+  "files": [
+    {
+      "file": "NationClash-Windows.zip",
+      "url": "https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash-Windows.zip",
+      "bytes": 79113341,
+      "sha256": "bf7dc3623d67133c0d4ea1e42fb55a550d178b90d463767bb1a6446676e20a3b",
+      "contentType": "application/zip",
+      "contentDisposition": null,
+      "status": "verified",
+      "zipCrc": "passed",
+      "htmlMatchesBrowserTestedDocument": true,
+      "members": 7,
+      "companionAssetFiles": 0
+    },
+    {
+      "file": "NationClash.html",
+      "url": "https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash.html",
+      "bytes": 104572020,
+      "sha256": "2c0ddb0a34f4683b5e88abcfe73d67b89ad087e8654c1d38bab29be1b9193258",
+      "contentType": "text/plain; charset=utf-8",
+      "contentDisposition": null,
+      "status": "verified"
+    }
+  ]
 }
