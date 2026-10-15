@@ -1,6 +1,6 @@
 # Play the updated arena edition
 
-[Download NationClash-Windows.zip](NationClash-Windows.zip)
+[Download NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/6c41478bd01ad26e42ea39af79e86ce590cc9eb0/downloads/NationClash-Windows.zip)
 
 Right-click the ZIP, choose **Extract All**, then open `NationClash.html` in
 current Chrome or Edge. All **196 fighters, 30 arena views and audio** are inside

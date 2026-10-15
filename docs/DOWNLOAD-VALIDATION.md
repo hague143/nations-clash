@@ -81,3 +81,11 @@ not described as independently drawn faces. Backgrounds are static illustrations
 
 See [package metadata](COUNTRY-PACKAGE-MANIFEST.json), [browser evidence](WORLD-ACCEPTANCE.json)
 and [public download verification](PUBLIC-DOWNLOAD-VERIFICATION.json).
+
+## Verified public delivery
+
+https://raw.githubusercontent.com/hague143/nations-clash/6c41478bd01ad26e42ea39af79e86ce590cc9eb0/downloads/NationClash-Windows.zip
+
+The public ZIP returned HTTP 200 and was downloaded in full. Its byte count,
+SHA-256 and CRCs match the tested artifact. The contained HTML matches the exact
+browser acceptance document. All artwork is embedded in that HTML.
