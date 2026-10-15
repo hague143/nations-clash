@@ -1,39 +1,189 @@
 {
-  "assignment": "original filename",
+  "assignment": "Filename plus explicit one-to-one reviewed flag corrections in assignments.json",
   "observations": {
+    "ao": "Green/yellow/red costume; missing the distinctive Angola red/black and yellow cog/machete design.",
     "br": "Red/white crescent-and-star design, visually resembling Turkey.",
+    "ch": "Green/white/red with a yellow star resembles Suriname.",
     "cn": "Green/yellow/blue design with a Brazil-like diamond and disc.",
+    "de": "Yellow/blue/red costume, unlike Germany black/red/gold.",
+    "dm": "Green/red/yellow star design resembles Cameroon; no clear Dominica cross/parrot design.",
     "ee": "Red/green/blue and yellow wreath, visually resembling Eritrea.",
-    "sz": "Green/yellow/red tricolor, unlike the Eswatini shield flag.",
+    "er": "Red/blue/green bands with white separators resemble Gambia.",
+    "es": "Light-blue/white star costume resembles Somalia.",
     "et": "White/blue Nordic-cross costume, visually resembling Finland.",
-    "fj": "Green/yellow/blue bands, visually resembling Gabon.",
     "fi": "Black/red/gold costume, visually resembling Germany.",
+    "fj": "Green/yellow/blue bands, visually resembling Gabon.",
     "fr": "Red/black double-headed-eagle costume, visually resembling Albania.",
     "ga": "Light blue with Union Jack, visually resembling Fiji.",
-    "gm": "White field with red crosses, visually resembling Georgia.",
-    "ge": "Blue/black/white bands, visually resembling Estonia.",
-    "de": "Yellow/blue/red costume, unlike Germany black/red/gold.",
-    "gh": "White/red embroidered panels with green, visually resembling Belarus.",
-    "gr": "Red/yellow/green and black star, visually resembling Ghana.",
     "gd": "Blue/white and blue stars, visually resembling Honduras.",
+    "ge": "Blue/black/white bands, visually resembling Estonia.",
+    "gh": "White/red embroidered panels with green, visually resembling Belarus.",
+    "gm": "White field with red crosses, visually resembling Georgia.",
     "gn": "Blue/white design, unlike Guinea red/yellow/green.",
-    "ht": "Red/yellow/green star-emblem design, visually resembling Grenada.",
+    "gr": "Red/yellow/green and black star, visually resembling Ghana.",
     "hn": "Red/yellow/green design, unlike Honduras blue/white/blue.",
+    "ht": "Red/yellow/green star-emblem design, visually resembling Grenada.",
     "hu": "Blue/red/white and coat of arms, visually resembling Belize.",
     "jp": "Green/white robe with Saudi-like motifs, unlike Japan white/red disc.",
+    "kr": "Red/white/black and green costume resembles Sudan.",
+    "ma": "Yellow/green/red bands, unlike Morocco red/green star.",
+    "mc": "White/black with red trim; the Monaco red/white flag design is not clearly identifiable. Please confirm intended costume.",
+    "me": "Red/yellow sunburst design, visually resembling North Macedonia.",
+    "mn": "Red/yellow sunburst design, visually resembling North Macedonia.",
     "mt": "Red/yellow sunburst design, visually resembling North Macedonia.",
     "mu": "Striped red/white and blue/yellow crescent, visually resembling Malaysia.",
-    "mx": "Green/white crescent/star design, visually resembling Pakistan.",
-    "mn": "Red/yellow sunburst design, visually resembling North Macedonia.",
-    "me": "Red/yellow sunburst design, visually resembling North Macedonia.",
-    "ma": "Yellow/green/red bands, unlike Morocco red/green star.",
     "mv": "White/red/green layout, visually resembling Madagascar.",
+    "mx": "Green/white crescent/star design, visually resembling Pakistan.",
     "om": "Red/black/green with white crescent/star, visually resembling Libya.",
-    "pw": "Blue/red/gold costume, unlike Palau light-blue/yellow disc.",
     "pa": "Striped red/white star-field design, unlike Panama quadrants.",
     "pe": "Red/yellow sunburst design, visually resembling North Macedonia.",
+    "pw": "Blue/red/gold costume, unlike Palau light-blue/yellow disc.",
     "py": "Light-blue/red/white lion-like emblem, unlike the Paraguay flag.",
     "sa": "Blue/yellow/red coat-of-arms costume, unlike Saudi Arabia green/white.",
-    "tr": "White/red Japanese-style martial gi, without a visible Turkey crescent/star."
-  }
+    "sb": "Light-blue/white with ornate crest resembles San Marino; no clear Solomon Islands diagonal/yellow-star design.",
+    "sd": "Blue/yellow Nordic cross costume resembles Sweden.",
+    "se": "White/black/red/blue taegeuk and trigrams resemble South Korea.",
+    "si": "Blue/red/white costume has cross-like ornament; the Slovenia mountain shield is not clear. Please confirm intended costume.",
+    "sl": "Red/yellow/green with a black star resembles Ghana, rather than Sierra Leone green/white/blue.",
+    "so": "Black/red/green with blue triangle and yellow star resembles South Sudan.",
+    "sr": "Red costume with a white Swiss cross resembles Switzerland.",
+    "ss": "Multicolour diagonal Y costume resembles South Africa.",
+    "st": "Green/white/blue costume resembles Sierra Leone; no clear Sao Tome yellow/red triangle and two black stars.",
+    "sz": "Green/yellow/red tricolor, unlike the Eswatini shield flag.",
+    "tr": "White/red Japanese-style martial gi, without a visible Turkey crescent/star.",
+    "za": "Red/yellow Spanish costume rather than the South Africa Y flag."
+  },
+  "correctedDestinations": [
+    "ch",
+    "ee",
+    "er",
+    "es",
+    "fj",
+    "ga",
+    "ge",
+    "gm",
+    "kr",
+    "sd",
+    "se",
+    "so",
+    "sr",
+    "ss",
+    "za"
+  ],
+  "unresolvedCostumeCountries": [
+    "ao",
+    "br",
+    "cn",
+    "de",
+    "dm",
+    "et",
+    "fi",
+    "fr",
+    "gd",
+    "gh",
+    "gn",
+    "gr",
+    "hn",
+    "ht",
+    "hu",
+    "jp",
+    "ma",
+    "me",
+    "mn",
+    "mt",
+    "mu",
+    "mv",
+    "mx",
+    "om",
+    "pa",
+    "pe",
+    "pw",
+    "py",
+    "sa",
+    "sb",
+    "sl",
+    "st",
+    "sz",
+    "tr"
+  ],
+  "confirmationRequestedCountries": [
+    "mc",
+    "si"
+  ],
+  "sharedCostumeFamilies": [
+    {
+      "countries": [
+        "mt",
+        "mn",
+        "me",
+        "mk",
+        "pe"
+      ],
+      "observation": "Repeated North Macedonia sunburst costume family; different sheets, not exact duplicate pixels."
+    },
+    {
+      "countries": [
+        "pk",
+        "mx"
+      ],
+      "observation": "Pakistan-like green/white crescent costume family."
+    },
+    {
+      "countries": [
+        "ad",
+        "sa"
+      ],
+      "observation": "Andorra-like blue/yellow/red and coat-of-arms family."
+    },
+    {
+      "countries": [
+        "by",
+        "gh"
+      ],
+      "observation": "Belarus-like white/red embroidery and green family."
+    },
+    {
+      "countries": [
+        "bz",
+        "hu"
+      ],
+      "observation": "Belize-like blue/red/white coat-of-arms family."
+    },
+    {
+      "countries": [
+        "al",
+        "fr"
+      ],
+      "observation": "Albania-like red/black eagle family."
+    },
+    {
+      "countries": [
+        "ly",
+        "om"
+      ],
+      "observation": "Libya-like red/black/green crescent family."
+    },
+    {
+      "countries": [
+        "li",
+        "pw"
+      ],
+      "observation": "Liechtenstein-like blue/red/gold family."
+    },
+    {
+      "countries": [
+        "mg",
+        "mv"
+      ],
+      "observation": "Madagascar-like white/red/green family."
+    },
+    {
+      "countries": [
+        "my",
+        "mu"
+      ],
+      "observation": "Malaysia-like striped crescent family."
+    }
+  ],
+  "faceUniqueness": "Many supplied faces, bodies and pose patterns resemble a shared base. File/pixel uniqueness does not establish 196 unique faces. No claim of 196 independently designed faces is made."
 }

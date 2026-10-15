@@ -1,0 +1,65 @@
+{
+  "policy": "Filename by default. Only visually reviewed, one-to-one flag swap cycles override filenames. No source reused and no source discarded. Unresolved costumes remain explicitly listed for replacement.",
+  "overrides": {
+    "es": {
+      "sourceId": "za",
+      "reason": "Red/yellow Spanish costume on South Africa.png"
+    },
+    "so": {
+      "sourceId": "es",
+      "reason": "Light-blue/white star Somali costume on Spain.png"
+    },
+    "ss": {
+      "sourceId": "so",
+      "reason": "South Sudan flag design on Somalia.png"
+    },
+    "za": {
+      "sourceId": "ss",
+      "reason": "South Africa multicolour Y flag on South Sudan.png"
+    },
+    "kr": {
+      "sourceId": "se",
+      "reason": "Korean taegeuk/trigrams on Sweden.png"
+    },
+    "sd": {
+      "sourceId": "kr",
+      "reason": "Sudan red/white/black and green on South Korea.png"
+    },
+    "se": {
+      "sourceId": "sd",
+      "reason": "Swedish yellow Nordic cross on Sudan.png"
+    },
+    "sr": {
+      "sourceId": "ch",
+      "reason": "Suriname green/white/red and gold star on Switzerland.png"
+    },
+    "ch": {
+      "sourceId": "sr",
+      "reason": "Swiss white cross on Suriname.png"
+    },
+    "ee": {
+      "sourceId": "ge",
+      "reason": "Estonian blue/black/white on Georgia.png"
+    },
+    "er": {
+      "sourceId": "ee",
+      "reason": "Eritrean wreath and red/green/blue on Estonia.png"
+    },
+    "gm": {
+      "sourceId": "er",
+      "reason": "Gambian red/blue/green with white separators on Eritrea.png"
+    },
+    "ge": {
+      "sourceId": "gm",
+      "reason": "Georgian five-cross design on Gambia.png"
+    },
+    "fj": {
+      "sourceId": "ga",
+      "reason": "Fiji shield and Union Jack on Gabon.png"
+    },
+    "ga": {
+      "sourceId": "fj",
+      "reason": "Gabon green/yellow/blue on Fiji.png"
+    }
+  }
+}

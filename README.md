@@ -9,10 +9,13 @@ after extracting the complete ZIP. See [browser controls](browser/README.md).
 The browser edition has **196 country representatives**, **10
 selectable landmark arenas**, computer/local play, music and spoken Fight/KO cues.
 The roster is 193 UN members plus Palestine, Vatican City and Taiwan.
-**150 country fighters now use the supplied eight-pose country PNGs**, mapped
-by their filenames; 46 retain the previous textured fighters while their images
-are being made. Costumes are preserved as supplied: some painted flags differ
-from their filenames. See [artwork review](docs/COUNTRY-ARTWORK-REVIEW.md).
+**All 196 country fighters now use supplied eight-pose PNGs**. Batches 16–20
+completed the remaining 46 sheets. Fifteen clear flag swaps are corrected through
+an explicit one-to-one assignment table; all original PNGs remain intact.
+No exact duplicate files or visible-pixel sheets were found. Some faces/designs
+are shared in the artwork; 34 costumes need replacement and two need confirmation.
+See the [artwork audit](docs/COUNTRY-ARTWORK-REVIEW.md) and
+[replacement checklist](docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
 Attacks share visible contact geometry with collision checks. Full-size country
 artwork loads only for selected fighters. See [download validation](docs/DOWNLOAD-VALIDATION.md).
 The Unity/C# foundation below remains a separate project.

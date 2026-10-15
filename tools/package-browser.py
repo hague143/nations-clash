@@ -73,7 +73,7 @@ Guard break U. Throw I. Ultimate O. Pause Escape.
 Keep the country-art folder beside NationClash.html. It contains the supplied
 fighter images and loads only the fighters selected for a match.
 
-Includes the agreed 196 countries (150 supplied fighters, 46 retained fighters),
+Includes the agreed 196 countries (196 supplied fighters, no missing country sheets),
 the supplied costumes, 10 selectable arenas,
 computer/local modes, music, Fight/KO announcements and strike sounds.
 """
@@ -90,12 +90,14 @@ with ZipFile(archive, "w", ZIP_DEFLATED, compresslevel=9) as zip_file:
     zip_file.writestr("CREDITS.txt", credits)
     zip_file.writestr("ARTWORK-NOTES.txt", (ROOT / 'docs/COUNTRY-ARTWORK-REVIEW.md').read_text())
     zip_file.writestr("ARTWORK-INVENTORY.json", (ROOT / 'artwork/country-fighters/intake.json').read_bytes())
+    zip_file.writestr('COUNTRY-ASSIGNMENTS.json', (ROOT / 'artwork/country-fighters/assignments.json').read_bytes())
+    zip_file.writestr('REPLACEMENT-CHECKLIST.txt', (ROOT / 'docs/REPLACEMENT-ARTWORK-CHECKLIST.md').read_text())
     for source in sorted((ROOT / 'browser/country-art').glob('*.js')):
         zip_file.write(source, 'country-art/' + source.name)
 with ZipFile(archive) as zip_file:
     assert zip_file.testzip() is None
     assert zip_file.read("NationClash.html") == game.read_bytes()
-    assert len([n for n in zip_file.namelist() if n.startswith('country-art/')]) == 150
+    assert len([n for n in zip_file.namelist() if n.startswith('country-art/')]) == 196
 OUT.chmod(0o755)
 for path in (game, archive):
     path.chmod(0o644)

@@ -1,6 +1,6 @@
 # NationClash World Arena
 
-A browser fighting game with **196 country fighters**, **150 supplied sprite sheets**,
+A browser fighting game with **196 country fighters**, **196 supplied sprite sheets**,
 **10 selectable landmark arenas**, computer and local two-player
 matches, music, spoken announcements, and punch/kick/block effects. The agreed
 roster is 193 UN members plus Palestine, Vatican City and Taiwan.
@@ -46,19 +46,20 @@ clear held inputs and suspend/stop the appropriate audio.
 
 ## Fighters and venues
 
-All 150 PNGs supplied in the five Country_Fighters ZIPs are mapped to countries
-by their filenames, including Brunei/Brunei Darussalam and United States/United
-States of America. Their eight poses now drive portraits, movement, guard,
-crouch, punches, kicks, damage reactions and knockdowns. Pose orders differ, so
-the importer has reviewed overrides. Additional punch and airborne poses are
-used where present. Sheets lacking a dedicated low strike or ground KO use
-adapted available poses; these are sprite animations, not full 3D animation rigs.
+All 196 supplied PNGs are integrated, including the 46 sheets from batches 16–20.
+Their eight poses drive portraits, movement, guard, crouch, punches, kicks, damage
+reactions and knockdowns. Older pose-order exceptions have reviewed overrides.
+Low strikes and motions missing from a source sheet adapt its available poses;
+these are sprite animations, not full 3D animation rigs.
 
-The remaining 46 countries retain their previous shared textured fighters.
-Original PNGs are preserved with SHA-256 checksums; runtime atlases are isolated,
-scaled WebP derivatives. Some supplied costumes have painted flag mismatches;
-the game preserves the requested filename mapping and shows official flag badges.
-See [the complete intake and review](../docs/COUNTRY-ARTWORK-REVIEW.md).
+Original PNGs remain intact with SHA-256 checksums. Fifteen clear flag swaps use
+an explicit one-to-one assignment table, shared by portraits, match atlases and
+collision metadata. Every source is used exactly once. No exact byte or visible
+pixel duplicate sheets were found among 19,110 pairs; many faces, base poses and
+some costumes are still similar in the supplied artwork. There are zero missing
+PNGs, but 34 costumes need replacements and two need confirmation. See the
+[full audit](../docs/COUNTRY-ARTWORK-REVIEW.md) and
+[creator checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
 
 Choose Minar-e-Pakistan, Times Square, Shibuya Crossing, Eiffel Promenade,
 the Great Wall, Copacabana, Giza Pyramids, Tower Bridge, Sydney Harbour or
@@ -80,10 +81,10 @@ node --test Tests/Browser/roster.test.cjs Tests/Browser/combat.test.cjs Tests/Br
 ```
 
 The builder includes all source modules, thumbnails, fallback atlases, 196 SVG
-flags and four WAV cues in the HTML. It writes `browser/index.html` plus 150
+flags and four WAV cues in the HTML. It writes `browser/index.html` plus 196
 on-demand artwork scripts under `browser/country-art/`, and copies both the HTML
 and local artwork files into `artifacts/`. The full ZIP is the portable game;
-the HTML alone does not contain the 150 match atlases.
+the HTML alone does not contain the 196 match atlases.
 Set `NATIONCLASH_ARTIFACT_DIR` to choose a different downloadable output folder.
 
 Browser acceptance additionally requires Playwright and Chromium:

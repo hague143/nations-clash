@@ -1,0 +1,1775 @@
+{
+  "countries": 196,
+  "sourceSheets": 196,
+  "newBatchSheets": 46,
+  "missingSourceSheets": [],
+  "correctedAssignments": 15,
+  "costumeReplacementsRequested": 34,
+  "costumeConfirmationsRequested": 2,
+  "countriesAudit": [
+    {
+      "id": "ad",
+      "country": "Andorra",
+      "sourceId": "ad",
+      "sourceFilename": "Andorra.png",
+      "sourceSha256": "7bf54b62cedef40c163750f57dc10b4d798a568f6537b39011d239f0b73fe99d",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ae",
+      "country": "United Arab Emirates",
+      "sourceId": "ae",
+      "sourceFilename": "United Arab Emirates.png",
+      "sourceSha256": "be0cc38f21ca9a1a28d088453efa7b4f2a0c6ee36ebe8ab6bf3300452d3efe32",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "af",
+      "country": "Afghanistan",
+      "sourceId": "af",
+      "sourceFilename": "Afghanistan.png",
+      "sourceSha256": "cc18b2d2ee1bc4531ea36af1dd96ba8c974aaf72aa1b4b4f54c1a0b90789dea2",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ag",
+      "country": "Antigua and Barbuda",
+      "sourceId": "ag",
+      "sourceFilename": "Antigua and Barbuda.png",
+      "sourceSha256": "97fba6d517360e9c9b1eb85d0f34cbd910577fadbc8db9322b04586d58360fc1",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "al",
+      "country": "Albania",
+      "sourceId": "al",
+      "sourceFilename": "Albania.png",
+      "sourceSha256": "d63423ac6115f96b7c059cc57fd485808465d8f12d4047a2c9011a0b6d96dc8e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "am",
+      "country": "Armenia",
+      "sourceId": "am",
+      "sourceFilename": "Armenia.png",
+      "sourceSha256": "bb454e74f3e57cc53b8b32457b1bc655659b5948812f455ce7090853ad09de4e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ao",
+      "country": "Angola",
+      "sourceId": "ao",
+      "sourceFilename": "Angola.png",
+      "sourceSha256": "c381be1b3728be6323707843974d367364cbe25b46bffefb6b246e5afca0ef5c",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "ar",
+      "country": "Argentina",
+      "sourceId": "ar",
+      "sourceFilename": "Argentina.png",
+      "sourceSha256": "450027d4620697c94dbbda6d6ae6e1865d6a6c8bad3f797d61073dce07cf7a12",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "at",
+      "country": "Austria",
+      "sourceId": "at",
+      "sourceFilename": "Austria.png",
+      "sourceSha256": "256108560fb872beebaa6490435a30c9f39fbf7a1b7ef65b10f51ac4d462e390",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "au",
+      "country": "Australia",
+      "sourceId": "au",
+      "sourceFilename": "Australia.png",
+      "sourceSha256": "d6b53782f1c2336680a26bdc7ce376b7c8eb5a135a66363ceb98e23f423c8fe2",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "az",
+      "country": "Azerbaijan",
+      "sourceId": "az",
+      "sourceFilename": "Azerbaijan.png",
+      "sourceSha256": "d1ec6b355490bbc685d9b9b6c21b6a8c7ac40df0d3485c9c750ab8feddbc4d34",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ba",
+      "country": "Bosnia and Herzegovina",
+      "sourceId": "ba",
+      "sourceFilename": "Bosnia and Herzegovina.png",
+      "sourceSha256": "a0e313f6f1da5cdf6a44c1dbb902fffdb350edc58c1322482be71d5540101bb6",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bb",
+      "country": "Barbados",
+      "sourceId": "bb",
+      "sourceFilename": "Barbados.png",
+      "sourceSha256": "e807c12ab7916073ad50644d398095f8896a1ee4f120976c8290e8c27e46df49",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bd",
+      "country": "Bangladesh",
+      "sourceId": "bd",
+      "sourceFilename": "Bangladesh.png",
+      "sourceSha256": "669817cf113bb29bb3369871fcd603023e9582027f515a356ff3653da048a849",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "be",
+      "country": "Belgium",
+      "sourceId": "be",
+      "sourceFilename": "Belgium.png",
+      "sourceSha256": "05a27abd4b5d7a67ed32d099eab368ca448e18529e5c8add2b3bf6e8ea89ddbd",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bf",
+      "country": "Burkina Faso",
+      "sourceId": "bf",
+      "sourceFilename": "Burkina Faso.png",
+      "sourceSha256": "e0855404dd743eea5626fed73a70a947f02daf29a4fbc4bb1d814f74461e207c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bg",
+      "country": "Bulgaria",
+      "sourceId": "bg",
+      "sourceFilename": "Bulgaria.png",
+      "sourceSha256": "a60361f57fe0c9705b361d50b22138eebb74e85991b6751ea0efd605a0b0ea9e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bh",
+      "country": "Bahrain",
+      "sourceId": "bh",
+      "sourceFilename": "Bahrain.png",
+      "sourceSha256": "771f0bdcde8b7abafc4165ccc39ea75ae84c8cb0e89087c32525c183fda40a65",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bi",
+      "country": "Burundi",
+      "sourceId": "bi",
+      "sourceFilename": "Burundi.png",
+      "sourceSha256": "5193701efdb7679bd705590732c71770228e374a997e6f771fde9bb0d0389769",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bj",
+      "country": "Benin",
+      "sourceId": "bj",
+      "sourceFilename": "Benin.png",
+      "sourceSha256": "d2fc1c703c27ed622538d7b59bbfa87bed488008d6c2a948e2624a59f4e429b7",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bn",
+      "country": "Brunei",
+      "sourceId": "bn",
+      "sourceFilename": "Brunei.png",
+      "sourceSha256": "f50099c575fdd6192c278ec3834d349b444de3b07df47b63f83c22030730ce95",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bo",
+      "country": "Bolivia",
+      "sourceId": "bo",
+      "sourceFilename": "Bolivia.png",
+      "sourceSha256": "9e86037fa3ee440f2cf6b099cf8f3c2ab02cae75bae1df8ef7ddf95f4179949e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "br",
+      "country": "Brazil",
+      "sourceId": "br",
+      "sourceFilename": "Brazil.png",
+      "sourceSha256": "f90c212bc71a5ba47b64be577dbf42417b8234113cb6949fbbd3f2ef6c0c1e8d",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "bs",
+      "country": "Bahamas",
+      "sourceId": "bs",
+      "sourceFilename": "Bahamas.png",
+      "sourceSha256": "65adfa31e0868a10095257283f1b9fded75d8ce2b9dd0c1fb44b56da824aecc2",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bt",
+      "country": "Bhutan",
+      "sourceId": "bt",
+      "sourceFilename": "Bhutan.png",
+      "sourceSha256": "593594fbc7a73dbdc025eba48f66800a8aa97441d25c0cb4da57b29c9bab0971",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bw",
+      "country": "Botswana",
+      "sourceId": "bw",
+      "sourceFilename": "Botswana.png",
+      "sourceSha256": "079fef45cfb54ab5bdb26adf34ca1dd6ed8855b21c84f5eafb028b11f3164d3a",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "by",
+      "country": "Belarus",
+      "sourceId": "by",
+      "sourceFilename": "Belarus.png",
+      "sourceSha256": "ddde7d120d46b9495196680149b5b885d9358962f2f620e6122f6e915a0adcc6",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "bz",
+      "country": "Belize",
+      "sourceId": "bz",
+      "sourceFilename": "Belize.png",
+      "sourceSha256": "19e436f4427ead92188e8349236aa3cb91fac89a5a158720b33bc376d8ec1bce",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ca",
+      "country": "Canada",
+      "sourceId": "ca",
+      "sourceFilename": "Canada.png",
+      "sourceSha256": "8546ffc2385cccc3e36e3d07b1959795da62cada10db5ed151f3666c47d9c31e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cd",
+      "country": "Democratic Republic of the Congo",
+      "sourceId": "cd",
+      "sourceFilename": "Democratic Republic of the Congo.png",
+      "sourceSha256": "2e8ed717cd0baef22a93ff586d2bc247c13feb8d60e683556c06ae63c3419c5a",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cf",
+      "country": "Central African Republic",
+      "sourceId": "cf",
+      "sourceFilename": "Central African Republic.png",
+      "sourceSha256": "9f57d67b0abcfbc258a8cafc5318c5a7e85f924040a063e7e7c12e466b6e2624",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cg",
+      "country": "Republic of the Congo",
+      "sourceId": "cg",
+      "sourceFilename": "Republic of the Congo.png",
+      "sourceSha256": "b6247627baad2a142bd787588ad1e452d6b34f3e7c3ad94451c8361360c9d00f",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ch",
+      "country": "Switzerland",
+      "sourceId": "sr",
+      "sourceFilename": "Suriname.png",
+      "sourceSha256": "be5c3fcca29c88e7053b83f1f8919d3a32973b912938f47ade9432229133a4af",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "ci",
+      "country": "Ivory Coast",
+      "sourceId": "ci",
+      "sourceFilename": "Ivory Coast.png",
+      "sourceSha256": "b9d4f36c4ef02eead3e330949afeb0c029891e7b06e452cd7d48e60e5e017188",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cl",
+      "country": "Chile",
+      "sourceId": "cl",
+      "sourceFilename": "Chile.png",
+      "sourceSha256": "ca4774377e6d7ba6c538e17bda339b03090caa686e213cc73171e440b2c4920c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cm",
+      "country": "Cameroon",
+      "sourceId": "cm",
+      "sourceFilename": "Cameroon.png",
+      "sourceSha256": "b43500fc13263e08218a2008f092d0fa65141a97ea3975cfbd5904fa6e5d0b41",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cn",
+      "country": "China",
+      "sourceId": "cn",
+      "sourceFilename": "China.png",
+      "sourceSha256": "1974c3bd74096892ca70eee87c55cff0851eb00d230f7d102809363452819bd8",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "co",
+      "country": "Colombia",
+      "sourceId": "co",
+      "sourceFilename": "Colombia.png",
+      "sourceSha256": "0b4db5a23ab15a09b7da852bbc1f301a6ef038210767f9e3c7255738c8d4ae0a",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cr",
+      "country": "Costa Rica",
+      "sourceId": "cr",
+      "sourceFilename": "Costa Rica.png",
+      "sourceSha256": "03b810c142d8bc0dd135be4ac2fffb55774f40aa758c1ea4dbab5465ca46aa3c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cu",
+      "country": "Cuba",
+      "sourceId": "cu",
+      "sourceFilename": "Cuba.png",
+      "sourceSha256": "23344dd14aa8036a5f5d92564a5d3e6eb59c02816980ab1881e30bc49b6adec8",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cv",
+      "country": "Cabo Verde",
+      "sourceId": "cv",
+      "sourceFilename": "Cabo Verde.png",
+      "sourceSha256": "168e694655133ba6ec9feb8581b0419922bbae2ab5318e2a528e43daa206cd90",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cy",
+      "country": "Cyprus",
+      "sourceId": "cy",
+      "sourceFilename": "Cyprus.png",
+      "sourceSha256": "caab273241b509c7d7aeacfea485f5e66849291ddd6a2a674aedadd96ae2fdaa",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "cz",
+      "country": "Czechia",
+      "sourceId": "cz",
+      "sourceFilename": "Czechia.png",
+      "sourceSha256": "a1d8fe0df53e5f57d89f20d5988181a3e8b686723b513cfbf336f9b90028319a",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "de",
+      "country": "Germany",
+      "sourceId": "de",
+      "sourceFilename": "Germany.png",
+      "sourceSha256": "0dea253c340a1c7a7f2f6b385cb16bfd32738fea9f3fadf0800583bbbdb8b2c7",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "dj",
+      "country": "Djibouti",
+      "sourceId": "dj",
+      "sourceFilename": "Djibouti.png",
+      "sourceSha256": "73ca366643a8ca94ab2bd742a8da3515c52fd21503ccfa59168a4c4a743c2145",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "dk",
+      "country": "Denmark",
+      "sourceId": "dk",
+      "sourceFilename": "Denmark.png",
+      "sourceSha256": "40995e5f9383ee7db96a7cbb64b76087b52f9edf04e0b48808880303a7805dbb",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "dm",
+      "country": "Dominica",
+      "sourceId": "dm",
+      "sourceFilename": "Dominica.png",
+      "sourceSha256": "d1f67cfe0cfc6ad83a8640eba484f0242deda4f73f66c3cbcda434a8e36e74e6",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "do",
+      "country": "Dominican Republic",
+      "sourceId": "do",
+      "sourceFilename": "Dominican Republic.png",
+      "sourceSha256": "ff9678fa55c457166ef9756d1ee09852b07764792d38918a8219e893baabdc98",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "dz",
+      "country": "Algeria",
+      "sourceId": "dz",
+      "sourceFilename": "Algeria.png",
+      "sourceSha256": "93794b4213f938cf834f65d17828ec55387036b02b69ea102049829aac5cb2e4",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ec",
+      "country": "Ecuador",
+      "sourceId": "ec",
+      "sourceFilename": "Ecuador.png",
+      "sourceSha256": "57b0f6753ed2a905783dc1593c47dfaae0745bf57241778151a04675a9bc35d0",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ee",
+      "country": "Estonia",
+      "sourceId": "ge",
+      "sourceFilename": "Georgia.png",
+      "sourceSha256": "12d0fdc28d8b33b8d2eb1390e8ccb576627b47ec081a4f6049040c746090b585",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "eg",
+      "country": "Egypt",
+      "sourceId": "eg",
+      "sourceFilename": "Egypt.png",
+      "sourceSha256": "6d82353fe053e23c5aac719569af4e6a9cbfcaebefc6c3041301aa3d3432b84e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "er",
+      "country": "Eritrea",
+      "sourceId": "ee",
+      "sourceFilename": "Estonia.png",
+      "sourceSha256": "5c4eb699549f681b484e3b3e501f438982813801135f25278e8a8b3d15350b8d",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "es",
+      "country": "Spain",
+      "sourceId": "za",
+      "sourceFilename": "South Africa.png",
+      "sourceSha256": "fb78ccb9b2be746a490f3bf2eb8cedb886f69ff832a13478b54388e39257b968",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "et",
+      "country": "Ethiopia",
+      "sourceId": "et",
+      "sourceFilename": "Ethiopia.png",
+      "sourceSha256": "c3519b70195257655a747f194763c87d1ac67ed21caeebe5b816f7ba205e4a2f",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "fi",
+      "country": "Finland",
+      "sourceId": "fi",
+      "sourceFilename": "Finland.png",
+      "sourceSha256": "f2e3d4ef883b277d0b27e1d007224c3d12a29aaeaea2e479d3bff96f0d0cc6ce",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "fj",
+      "country": "Fiji",
+      "sourceId": "ga",
+      "sourceFilename": "Gabon.png",
+      "sourceSha256": "297f97684e78266b92910a4f6895b2f077f25f8ccd15681d8fd95035f258d15e",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "fm",
+      "country": "Micronesia",
+      "sourceId": "fm",
+      "sourceFilename": "Micronesia.png",
+      "sourceSha256": "bc3e9d13a5e5e99634feb6922d62bbc59ba5ed38aa3bf9bedb941ec584730efd",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "fr",
+      "country": "France",
+      "sourceId": "fr",
+      "sourceFilename": "France.png",
+      "sourceSha256": "5e61599aaab0bb003a73372226922e59f1dc55c600c1bf0e0c68d9d7bac1977f",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "ga",
+      "country": "Gabon",
+      "sourceId": "fj",
+      "sourceFilename": "Fiji.png",
+      "sourceSha256": "65ece628ba5e56a3aabb0fe8594a39cc7905a0eb71e2f65668ca2749876566f1",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "gb",
+      "country": "United Kingdom",
+      "sourceId": "gb",
+      "sourceFilename": "United Kingdom.png",
+      "sourceSha256": "fe4e0be1ca881c2323a3435de89db30700663a4d72ead5ffe41d0e82acb09f0b",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "gd",
+      "country": "Grenada",
+      "sourceId": "gd",
+      "sourceFilename": "Grenada.png",
+      "sourceSha256": "c5fe0a4cfd37b5a753f9a78991d442483965eccb5a5d687db9c5164c4fb426f8",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "ge",
+      "country": "Georgia",
+      "sourceId": "gm",
+      "sourceFilename": "Gambia.png",
+      "sourceSha256": "5fe356729664fe361762953d800b7fc86bbeaaf90f44d598c4a1d0fa94043bbf",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "gh",
+      "country": "Ghana",
+      "sourceId": "gh",
+      "sourceFilename": "Ghana.png",
+      "sourceSha256": "9808c237ff9941e32c78f2500d2cf0d97b2d965504c6373dd24c815f12146d10",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "gm",
+      "country": "Gambia",
+      "sourceId": "er",
+      "sourceFilename": "Eritrea.png",
+      "sourceSha256": "65eaf19b28fee06847c043e518d98d0a1f8904549a5a8d73148e46527232df66",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "gn",
+      "country": "Guinea",
+      "sourceId": "gn",
+      "sourceFilename": "Guinea.png",
+      "sourceSha256": "0bd8092e578d6889a532760b36dad3ccc8312627261748a3fd07add860b964fe",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "gq",
+      "country": "Equatorial Guinea",
+      "sourceId": "gq",
+      "sourceFilename": "Equatorial Guinea.png",
+      "sourceSha256": "1971910bccf9b9c0814a38c6823f23091e61e781581e8be48041d106c2b74f17",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "gr",
+      "country": "Greece",
+      "sourceId": "gr",
+      "sourceFilename": "Greece.png",
+      "sourceSha256": "d30fdb1368bb38276b5b37bbef044caa69c3b85311e5ade356f83637fbc23955",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "gt",
+      "country": "Guatemala",
+      "sourceId": "gt",
+      "sourceFilename": "Guatemala.png",
+      "sourceSha256": "d709deb324b62fa326a357c24cc49b610fad9325be60891bfc9a52eb60e60d32",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "gw",
+      "country": "Guinea-Bissau",
+      "sourceId": "gw",
+      "sourceFilename": "Guinea-Bissau.png",
+      "sourceSha256": "c83c5f94a3fd5caa849dbf1e2b4ade20499b718163e727fbcd858c65f89fd137",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "gy",
+      "country": "Guyana",
+      "sourceId": "gy",
+      "sourceFilename": "Guyana.png",
+      "sourceSha256": "8dbe1c949a3f6faf392de76104e3c2a904c505d7adfb9ee519c3a3a424c004b7",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "hn",
+      "country": "Honduras",
+      "sourceId": "hn",
+      "sourceFilename": "Honduras.png",
+      "sourceSha256": "1666973e6253a69065cfe94e5891d77cab1aaabd92a0ef5f9ab3c06c7f7107b7",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "hr",
+      "country": "Croatia",
+      "sourceId": "hr",
+      "sourceFilename": "Croatia.png",
+      "sourceSha256": "f450e70b67bf7051f1e06884b72bfa75dfa78e95cdd0e33ea14e7bd82528ed0e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ht",
+      "country": "Haiti",
+      "sourceId": "ht",
+      "sourceFilename": "Haiti.png",
+      "sourceSha256": "070c38968c2cc05e201374c3084a793ec3680c6a50738d80ffb43f1ee7ee97c7",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "hu",
+      "country": "Hungary",
+      "sourceId": "hu",
+      "sourceFilename": "Hungary.png",
+      "sourceSha256": "9571ee0d2f5767dcab8f7429cda000920b267951931999a944422d2ef1e12b73",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "id",
+      "country": "Indonesia",
+      "sourceId": "id",
+      "sourceFilename": "Indonesia.png",
+      "sourceSha256": "a061098945a3028e7f2ac4c0ea353c7872954438e4b510033c0979551b067006",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ie",
+      "country": "Ireland",
+      "sourceId": "ie",
+      "sourceFilename": "Ireland.png",
+      "sourceSha256": "9c818db1350f08ed493063d5f0766a475c2477e36a5f783cb6263a58e18b0005",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "il",
+      "country": "Israel",
+      "sourceId": "il",
+      "sourceFilename": "Israel.png",
+      "sourceSha256": "239c035f836f4e2e3a5df73f129385ca9308340acd7c585747c469a86881ae40",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "in",
+      "country": "India",
+      "sourceId": "in",
+      "sourceFilename": "India.png",
+      "sourceSha256": "c7084202bddf525379cbd45dfeb53c2fd2ac535f3e1a078f1376451b74a8ffd1",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "iq",
+      "country": "Iraq",
+      "sourceId": "iq",
+      "sourceFilename": "Iraq.png",
+      "sourceSha256": "040314202e81bd89f3e598a51527571d336c892e4a06048e7444f7134d87f0ff",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ir",
+      "country": "Iran",
+      "sourceId": "ir",
+      "sourceFilename": "Iran.png",
+      "sourceSha256": "d7f445c95395cf074d6376bfc28980424cabf1fa17d85fab2530e770bad9f2f8",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "is",
+      "country": "Iceland",
+      "sourceId": "is",
+      "sourceFilename": "Iceland.png",
+      "sourceSha256": "f54b1efa0f6c48ac2ea08f16d4326de49963f7c2a326655c9a0b06382615451c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "it",
+      "country": "Italy",
+      "sourceId": "it",
+      "sourceFilename": "Italy.png",
+      "sourceSha256": "f82cfb616912cf287c5a99de0b2202161981b4ca4e21ac655439608984f0e8fc",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "jm",
+      "country": "Jamaica",
+      "sourceId": "jm",
+      "sourceFilename": "Jamaica.png",
+      "sourceSha256": "cd51939547bbb76650f33533aebd43823669a10d4224a4c443ebef6a697deb82",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "jo",
+      "country": "Jordan",
+      "sourceId": "jo",
+      "sourceFilename": "Jordan.png",
+      "sourceSha256": "814b2ff84b1c26160c1c0a1d674f9b0a4f156c7c764a6b3f06e4ea7b620b21e4",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "jp",
+      "country": "Japan",
+      "sourceId": "jp",
+      "sourceFilename": "Japan.png",
+      "sourceSha256": "fa5853c24ce2e46830001e1fd120559bf3e850649f0f09a6f7ae84196e1a0fc9",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "ke",
+      "country": "Kenya",
+      "sourceId": "ke",
+      "sourceFilename": "Kenya.png",
+      "sourceSha256": "42119d984e89334a91f3e6e1b311dace4861ff40cc297a2c7b3781439e05effb",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "kg",
+      "country": "Kyrgyzstan",
+      "sourceId": "kg",
+      "sourceFilename": "Kyrgyzstan.png",
+      "sourceSha256": "3b0b3036c48233ae7ddbdd60497386cc1635329e93578d0cf802a3085049c7ba",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "kh",
+      "country": "Cambodia",
+      "sourceId": "kh",
+      "sourceFilename": "Cambodia.png",
+      "sourceSha256": "ac91e8c45ecde8f85265be2926d3fe8f894260381a13f8337ebffd58e5a1b44b",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ki",
+      "country": "Kiribati",
+      "sourceId": "ki",
+      "sourceFilename": "Kiribati.png",
+      "sourceSha256": "10f32cb2253491c373338d7fb5696a3a4470ac9a3a7b187c292338545f11ab32",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "km",
+      "country": "Comoros",
+      "sourceId": "km",
+      "sourceFilename": "Comoros.png",
+      "sourceSha256": "ae753d630e6b52ed83e5337b735352474c9e92b0f927990fc75f14c63e21e989",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "kn",
+      "country": "Saint Kitts and Nevis",
+      "sourceId": "kn",
+      "sourceFilename": "Saint Kitts and Nevis.png",
+      "sourceSha256": "dcb89024f9b92abc5ddf3af3df05a8af3bd4fedb5ee0725f60bf4a185e22ba4e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "kp",
+      "country": "North Korea",
+      "sourceId": "kp",
+      "sourceFilename": "North Korea.png",
+      "sourceSha256": "897d654b5d05305a8be57c78c60d65f46bf70a0ebc1f6893fb167e76cae9a5d7",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "kr",
+      "country": "South Korea",
+      "sourceId": "se",
+      "sourceFilename": "Sweden.png",
+      "sourceSha256": "52ceb86f8f3858c74524f6ab53a508cd1eb6d3257f288473de0c6efef65d1e3f",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "kw",
+      "country": "Kuwait",
+      "sourceId": "kw",
+      "sourceFilename": "Kuwait.png",
+      "sourceSha256": "003bcdcb8d41d55dccff1c479b49b34dda9528bf19fc6a879d0923871037cff7",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "kz",
+      "country": "Kazakhstan",
+      "sourceId": "kz",
+      "sourceFilename": "Kazakhstan.png",
+      "sourceSha256": "8a9ab567e5b28a3f6e870638fcaba4ab6569a4f19ded8288f3fdd6ceb12975c1",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "la",
+      "country": "Laos",
+      "sourceId": "la",
+      "sourceFilename": "Laos.png",
+      "sourceSha256": "906efde6d19c9e5a9940370fd14514735ad3ec047ad4752039b3d032ba67f67d",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "lb",
+      "country": "Lebanon",
+      "sourceId": "lb",
+      "sourceFilename": "Lebanon.png",
+      "sourceSha256": "bb47541f4effd8c055fedc9763c4107cf45faa5931b03121247b0ad83a1776f7",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "lc",
+      "country": "Saint Lucia",
+      "sourceId": "lc",
+      "sourceFilename": "Saint Lucia.png",
+      "sourceSha256": "c48c4a486b0b6a5a257a382a04afa7fec128630e85723e381d5d7dd2321b5354",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "li",
+      "country": "Liechtenstein",
+      "sourceId": "li",
+      "sourceFilename": "Liechtenstein.png",
+      "sourceSha256": "dfca1b9ceb1ec47f03c4dc8eefb23843f193af1e8c1a47abfc06c67dda55d405",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "lk",
+      "country": "Sri Lanka",
+      "sourceId": "lk",
+      "sourceFilename": "Sri Lanka.png",
+      "sourceSha256": "d572ccd8c9ba599e9caa72bed645b00cec4c134098543827c527a98a9aae246f",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "lr",
+      "country": "Liberia",
+      "sourceId": "lr",
+      "sourceFilename": "Liberia.png",
+      "sourceSha256": "2a2922050892cd419010adcb51dfb2b6735599d2ddf467438441dd37bc02324c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ls",
+      "country": "Lesotho",
+      "sourceId": "ls",
+      "sourceFilename": "Lesotho.png",
+      "sourceSha256": "33e1b7edfc8f22062f3d37d4b0bc9d6ae6584a6a2d29904fcb912fece858509e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "lt",
+      "country": "Lithuania",
+      "sourceId": "lt",
+      "sourceFilename": "Lithuania.png",
+      "sourceSha256": "cb620a6114c481fe20fcedaccde1ddfa8d65d4cdcf55b465520db95508d4fc25",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "lu",
+      "country": "Luxembourg",
+      "sourceId": "lu",
+      "sourceFilename": "Luxembourg.png",
+      "sourceSha256": "4fd4e2c995d9171e084d7d80ca95e899f0768af90edc2f44c8b34b4156d72f6e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "lv",
+      "country": "Latvia",
+      "sourceId": "lv",
+      "sourceFilename": "Latvia.png",
+      "sourceSha256": "33c491a57ec81d37077944295bb50ce57162147a585141f2d345983145f11706",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ly",
+      "country": "Libya",
+      "sourceId": "ly",
+      "sourceFilename": "Libya.png",
+      "sourceSha256": "450e107fa9564360db7ade5fd77bb6493dfe2227b6b5a77ccf6097d0a6685033",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ma",
+      "country": "Morocco",
+      "sourceId": "ma",
+      "sourceFilename": "Morocco.png",
+      "sourceSha256": "33a901090fff01b1535a0eeb5e37fb4fe1167172a49e95f04dd969898e066518",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "mc",
+      "country": "Monaco",
+      "sourceId": "mc",
+      "sourceFilename": "Monaco.png",
+      "sourceSha256": "0312e753dd2bb73e88a8bbaedb621e70a5f307cc0cad2c50123009a3bbf156f3",
+      "poseCount": 8,
+      "status": "confirmation_requested"
+    },
+    {
+      "id": "md",
+      "country": "Moldova",
+      "sourceId": "md",
+      "sourceFilename": "Moldova.png",
+      "sourceSha256": "01bcfdc038768e03d40db42e92991adcb58975ec7a93f1930630e8b8174e7ec9",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "me",
+      "country": "Montenegro",
+      "sourceId": "me",
+      "sourceFilename": "Montenegro.png",
+      "sourceSha256": "b837698f325468569b43274c02a15f4a0e4b9e4885ac0ddc81c19dfe47a0965f",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "mg",
+      "country": "Madagascar",
+      "sourceId": "mg",
+      "sourceFilename": "Madagascar.png",
+      "sourceSha256": "a825f53abb10f3ab09a0d4474e5d8a82162e3e6c1ac928067f1177b87536d8c5",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "mh",
+      "country": "Marshall Islands",
+      "sourceId": "mh",
+      "sourceFilename": "Marshall Islands.png",
+      "sourceSha256": "da1972f83b738084e120fa932fed8f4de80e4a100e2fb05ff6f20514d2624d49",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "mk",
+      "country": "North Macedonia",
+      "sourceId": "mk",
+      "sourceFilename": "North Macedonia.png",
+      "sourceSha256": "b01338828e8ff6efebb114c6962a274a303e655b26342bb880f979dc18226e03",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ml",
+      "country": "Mali",
+      "sourceId": "ml",
+      "sourceFilename": "Mali.png",
+      "sourceSha256": "77fb3b75079553a83b675220c7beb1465c733deae9b56357f4d328ac3e0147d2",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "mm",
+      "country": "Myanmar",
+      "sourceId": "mm",
+      "sourceFilename": "Myanmar.png",
+      "sourceSha256": "18ce25c8460e3a63b4a3b412e584711779eadd041cd75f6673817eb056b42321",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "mn",
+      "country": "Mongolia",
+      "sourceId": "mn",
+      "sourceFilename": "Mongolia.png",
+      "sourceSha256": "85cfaa459a71c3dd1a435674084484975fa982d08369bd681fa03deb8cc8626b",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "mr",
+      "country": "Mauritania",
+      "sourceId": "mr",
+      "sourceFilename": "Mauritania.png",
+      "sourceSha256": "eccbefeeffd654ecf5cc77bb131a20b28d449072a6e7d213096bf15324aa25d6",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "mt",
+      "country": "Malta",
+      "sourceId": "mt",
+      "sourceFilename": "Malta.png",
+      "sourceSha256": "b98095c79780cb26632a736d50e7d15660d24ed79d8213001aedc8ec1941deb0",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "mu",
+      "country": "Mauritius",
+      "sourceId": "mu",
+      "sourceFilename": "Mauritius.png",
+      "sourceSha256": "77ab91b87243f3fcdd6ccc9f90d4ee988ac413f4b85497a16bcfe14e7fca8067",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "mv",
+      "country": "Maldives",
+      "sourceId": "mv",
+      "sourceFilename": "Maldives.png",
+      "sourceSha256": "d16b613046e1dd76097ebb302b6d8d11994fb128861bbd627f44a10d75426cd5",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "mw",
+      "country": "Malawi",
+      "sourceId": "mw",
+      "sourceFilename": "Malawi.png",
+      "sourceSha256": "63833d14f4ef8518b9b79dd19c39c0faa753a51b18c160ac477598b8142ce15a",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "mx",
+      "country": "Mexico",
+      "sourceId": "mx",
+      "sourceFilename": "Mexico.png",
+      "sourceSha256": "7335b87355ec1aef160a1d5fd33c27ffe6a3281c37b0e7d736e443a9f8270487",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "my",
+      "country": "Malaysia",
+      "sourceId": "my",
+      "sourceFilename": "Malaysia.png",
+      "sourceSha256": "cedeaa7399e4765c90ce4a63110cda384d5087e6e96441486ac422fd64477607",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "mz",
+      "country": "Mozambique",
+      "sourceId": "mz",
+      "sourceFilename": "Mozambique.png",
+      "sourceSha256": "60981b2ada14f7b741cb2ae1379cc8310e05ada87bfffcd81483453eb00697fc",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "na",
+      "country": "Namibia",
+      "sourceId": "na",
+      "sourceFilename": "Namibia.png",
+      "sourceSha256": "068db464bce25fe8e36657c74689e7243432b4db6b6ba93c1f9fde9ad38c5fd6",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ne",
+      "country": "Niger",
+      "sourceId": "ne",
+      "sourceFilename": "Niger.png",
+      "sourceSha256": "2baac74d5d55f805c84dc920e9df854493a1aea8d748b787c64d5b67fb8d8d3b",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ng",
+      "country": "Nigeria",
+      "sourceId": "ng",
+      "sourceFilename": "Nigeria.png",
+      "sourceSha256": "a967207ee8ab6ad3899c72253750f1af469b72272ce35a2f237a4b8095a94d00",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ni",
+      "country": "Nicaragua",
+      "sourceId": "ni",
+      "sourceFilename": "Nicaragua.png",
+      "sourceSha256": "6e7b852a3a35f2fc53b1f409d19e605dd1d076fcdcac5f3c14ddb9306ad5989c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "nl",
+      "country": "Netherlands",
+      "sourceId": "nl",
+      "sourceFilename": "Netherlands.png",
+      "sourceSha256": "f637f65c3929c5d9e89e83c57872cde737ded31441ee1a64a754164ea761d64c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "no",
+      "country": "Norway",
+      "sourceId": "no",
+      "sourceFilename": "Norway.png",
+      "sourceSha256": "f6a187cfb10fdb15f2798e3dc068d232fe4a3ff0f2c4d7be87ea2962712c045d",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "np",
+      "country": "Nepal",
+      "sourceId": "np",
+      "sourceFilename": "Nepal.png",
+      "sourceSha256": "7c93e89df6db855cdda4ab7d52f833bf6d45224f2dd835a378098b5594c9b55b",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "nr",
+      "country": "Nauru",
+      "sourceId": "nr",
+      "sourceFilename": "Nauru.png",
+      "sourceSha256": "6ef88776cdc8e3b0085230229aa4598332c9c839591aebed94bc5a086809da73",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "nz",
+      "country": "New Zealand",
+      "sourceId": "nz",
+      "sourceFilename": "New Zealand.png",
+      "sourceSha256": "3065608f6bf9f29c2d455a4f7112fd020740ffbbfd123463cbe3c6d559c2ff0c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "om",
+      "country": "Oman",
+      "sourceId": "om",
+      "sourceFilename": "Oman.png",
+      "sourceSha256": "13c4628a111bbe9fd944c7f9e35f80d5f9010830b20a6c35409e43995942c1dd",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "pa",
+      "country": "Panama",
+      "sourceId": "pa",
+      "sourceFilename": "Panama.png",
+      "sourceSha256": "2d26efb9b7d011e8741402fbd562cb3ad1424cf88e419b100bef01f4e84addbc",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "pe",
+      "country": "Peru",
+      "sourceId": "pe",
+      "sourceFilename": "Peru.png",
+      "sourceSha256": "24fd8277498d0da6b222553a5f29b8c378d8a845883f8c281f07dd969b5b8288",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "pg",
+      "country": "Papua New Guinea",
+      "sourceId": "pg",
+      "sourceFilename": "Papua New Guinea.png",
+      "sourceSha256": "82548fbf2dd991f24a8fd9685466a29ea0b8d0339a9f9b044b5c6187368fd2cf",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ph",
+      "country": "Philippines",
+      "sourceId": "ph",
+      "sourceFilename": "Philippines.png",
+      "sourceSha256": "3882fbc99aaf031fa897fd38305440321ef22f554b59e43f01bbdd9d1c6783a2",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "pk",
+      "country": "Pakistan",
+      "sourceId": "pk",
+      "sourceFilename": "Pakistan.png",
+      "sourceSha256": "ef987ac72d27b0a313cab581c2a84f65724be8fb25bcf52ed65fc629efd7596d",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "pl",
+      "country": "Poland",
+      "sourceId": "pl",
+      "sourceFilename": "Poland.png",
+      "sourceSha256": "54cade3a69ce9f282a6a115d0c1a9c5a2e9e233d42aecc9967cbb63bcf19e6e6",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ps",
+      "country": "State of Palestine",
+      "sourceId": "ps",
+      "sourceFilename": "State of Palestine.png",
+      "sourceSha256": "b0b2172d125fd3a536582a3c08cbbe2e816f1dcc1c41e5161d3dea36465d1054",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "pt",
+      "country": "Portugal",
+      "sourceId": "pt",
+      "sourceFilename": "Portugal.png",
+      "sourceSha256": "9b8270cea40b6cad138f6fdd8e2d93a55feea872049df4d9f801655a982b63e5",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "pw",
+      "country": "Palau",
+      "sourceId": "pw",
+      "sourceFilename": "Palau.png",
+      "sourceSha256": "203091489375e21b67277e013bc59a155a94a0bcf102dc1c1d273e14a92bf7f9",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "py",
+      "country": "Paraguay",
+      "sourceId": "py",
+      "sourceFilename": "Paraguay.png",
+      "sourceSha256": "e75b572108d8f2ee6376db6bb3aead431210e076a3cb668cc582fd5b62999f96",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "qa",
+      "country": "Qatar",
+      "sourceId": "qa",
+      "sourceFilename": "Qatar.png",
+      "sourceSha256": "728b72b9298999b677a5e2fbd5551cee8bb9d1590d73f3b38c002767fe336ee8",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ro",
+      "country": "Romania",
+      "sourceId": "ro",
+      "sourceFilename": "Romania.png",
+      "sourceSha256": "742f606bdbc9040723d50d63933ddda6ac48e210d0b7189beffbcabc0fb1b25c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "rs",
+      "country": "Serbia",
+      "sourceId": "rs",
+      "sourceFilename": "Serbia.png",
+      "sourceSha256": "d312ec313ea21e443a0031caefb3cb0dbf71a407dcb644ac19f45f997b27e36c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ru",
+      "country": "Russia",
+      "sourceId": "ru",
+      "sourceFilename": "Russia.png",
+      "sourceSha256": "6e21c684852cc510b2a595f866c1e5d5421fef434db83de2a4aa7acc01398b7e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "rw",
+      "country": "Rwanda",
+      "sourceId": "rw",
+      "sourceFilename": "Rwanda.png",
+      "sourceSha256": "631060762f2e023264139fdf437de7566ff85be249ee5371c7f8e0c3a5cdc066",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "sa",
+      "country": "Saudi Arabia",
+      "sourceId": "sa",
+      "sourceFilename": "Saudi Arabia.png",
+      "sourceSha256": "32bfa8889b5799beceb1ad550df57883868c26d106a78382bdfd2695e5d3e443",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "sb",
+      "country": "Solomon Islands",
+      "sourceId": "sb",
+      "sourceFilename": "Solomon Islands.png",
+      "sourceSha256": "7d8a555612ea39321088aafcf78f326f69e4dfe1b0b7c98a5eeb19c004a6e20f",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "sc",
+      "country": "Seychelles",
+      "sourceId": "sc",
+      "sourceFilename": "Seychelles.png",
+      "sourceSha256": "491225d9e518c15c1722d78e100efcf2557c56756835c5364fe4f2f2856ceaf3",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "sd",
+      "country": "Sudan",
+      "sourceId": "kr",
+      "sourceFilename": "South Korea.png",
+      "sourceSha256": "66223263ac3dcdbe16692f0a8558a3a26f883f94f9bb76fa9a0d629265c19572",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "se",
+      "country": "Sweden",
+      "sourceId": "sd",
+      "sourceFilename": "Sudan.png",
+      "sourceSha256": "ccfad2a5f1362246cb92736ecbeeee3a4a3c222b16c4832e16de31b319198f26",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "sg",
+      "country": "Singapore",
+      "sourceId": "sg",
+      "sourceFilename": "Singapore.png",
+      "sourceSha256": "ea4da3193eae2ff03b68e09cff0ed7aec6c2bb4424eece422ada6eff2b42fd39",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "si",
+      "country": "Slovenia",
+      "sourceId": "si",
+      "sourceFilename": "Slovenia.png",
+      "sourceSha256": "d3bfd86c3b3b575577696497a9e1d8287c243b7ad9e83f149174b4ff15dd5be5",
+      "poseCount": 8,
+      "status": "confirmation_requested"
+    },
+    {
+      "id": "sk",
+      "country": "Slovakia",
+      "sourceId": "sk",
+      "sourceFilename": "Slovakia.png",
+      "sourceSha256": "fa1752d4e477cfffda4d4853d318eb28ae1bb4c30cff1fa01f0551ae43660b25",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "sl",
+      "country": "Sierra Leone",
+      "sourceId": "sl",
+      "sourceFilename": "Sierra Leone.png",
+      "sourceSha256": "7fe626b886a61e2e271c9068d3d3e64d8f2d11d62f3612347c28feeff53708dd",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "sm",
+      "country": "San Marino",
+      "sourceId": "sm",
+      "sourceFilename": "San Marino.png",
+      "sourceSha256": "83015201db74c747a41e77a5ed73d597d9780481b0498708e94bde7ede5540b0",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "sn",
+      "country": "Senegal",
+      "sourceId": "sn",
+      "sourceFilename": "Senegal.png",
+      "sourceSha256": "35e3b6749c76fb4457720786bed2836ec2da216eab3273cec4574ebed9ff39d2",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "so",
+      "country": "Somalia",
+      "sourceId": "es",
+      "sourceFilename": "Spain.png",
+      "sourceSha256": "cf102ca973b7e10afee4011d2dc70faa2d61bc17f02a89244b0bdd8d7239a649",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "sr",
+      "country": "Suriname",
+      "sourceId": "ch",
+      "sourceFilename": "Switzerland.png",
+      "sourceSha256": "fff8f87d3ec9f376b9fa44c5486005a5787f077372823c05a7faf1cfe97e14a6",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "ss",
+      "country": "South Sudan",
+      "sourceId": "so",
+      "sourceFilename": "Somalia.png",
+      "sourceSha256": "4956250e99a47bef509bb284e97b2a91bec86cb5372d79c27e6af51e2cb7c3d3",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "st",
+      "country": "Sao Tome and Principe",
+      "sourceId": "st",
+      "sourceFilename": "Sao Tome and Principe.png",
+      "sourceSha256": "1c1c88d15f195fc215cd5641816dba633a5d27fee0b2d5f254c46e87f6434faf",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "sv",
+      "country": "El Salvador",
+      "sourceId": "sv",
+      "sourceFilename": "El Salvador.png",
+      "sourceSha256": "c197e3d7b2372f21992ddac38d120869fec89c5d465556b850394f3fea946b38",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "sy",
+      "country": "Syria",
+      "sourceId": "sy",
+      "sourceFilename": "Syria.png",
+      "sourceSha256": "bff01b2bc87b782b188d4b7274ac513de23496f7ab84ec2f263d8f836275bbb1",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "sz",
+      "country": "Eswatini",
+      "sourceId": "sz",
+      "sourceFilename": "Eswatini.png",
+      "sourceSha256": "982459ed8c74b80975e17befeb10d46a018375221d63b46e82e6dbe639bbd8ac",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "td",
+      "country": "Chad",
+      "sourceId": "td",
+      "sourceFilename": "Chad.png",
+      "sourceSha256": "b3a21a168fca46cbfa3705d4e94f705d758e303ec91a4f3a671affd46de499eb",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tg",
+      "country": "Togo",
+      "sourceId": "tg",
+      "sourceFilename": "Togo.png",
+      "sourceSha256": "c645b7571a2025945e6d2fb737a7ca2aee6cdb07e4cdf4899b9e849f01ec81b4",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "th",
+      "country": "Thailand",
+      "sourceId": "th",
+      "sourceFilename": "Thailand.png",
+      "sourceSha256": "282a131c50b071af8abe0d162e96eb084612509db29e757433f7d81cfc966c95",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tj",
+      "country": "Tajikistan",
+      "sourceId": "tj",
+      "sourceFilename": "Tajikistan.png",
+      "sourceSha256": "2286639394f1c58f89059dbb484a8d6312b5288f469cdec0411130cf7f8c8981",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tl",
+      "country": "Timor-Leste",
+      "sourceId": "tl",
+      "sourceFilename": "Timor-Leste.png",
+      "sourceSha256": "16a3b9d2c8f3ef5dd563d5ceca06f3713684be7db2d2b832ae42ba32726a60fb",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tm",
+      "country": "Turkmenistan",
+      "sourceId": "tm",
+      "sourceFilename": "Turkmenistan.png",
+      "sourceSha256": "fdff541dd577f20449822c3ef5f240dc8189fd1f4fc76292fd39084d8bb275ca",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tn",
+      "country": "Tunisia",
+      "sourceId": "tn",
+      "sourceFilename": "Tunisia.png",
+      "sourceSha256": "1bec21bb122a67cfb63e8e8d34032f6f8d4c045836254c8c6d15c497b895461e",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "to",
+      "country": "Tonga",
+      "sourceId": "to",
+      "sourceFilename": "Tonga.png",
+      "sourceSha256": "7bbedaf40353fbb47c98ac00a0402da7a288579fecd47118102b6465cc411dc4",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tr",
+      "country": "Turkey",
+      "sourceId": "tr",
+      "sourceFilename": "Turkey.png",
+      "sourceSha256": "db60ee8bdc278643eef2a40eadf2c457751608e3bf72542b8f0c044a23ff50ed",
+      "poseCount": 8,
+      "status": "replacement_requested"
+    },
+    {
+      "id": "tt",
+      "country": "Trinidad and Tobago",
+      "sourceId": "tt",
+      "sourceFilename": "Trinidad and Tobago.png",
+      "sourceSha256": "815c731e9212300317a4d85945bc2fa94347a30abdc6f404192dd5f5dc53a099",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tv",
+      "country": "Tuvalu",
+      "sourceId": "tv",
+      "sourceFilename": "Tuvalu.png",
+      "sourceSha256": "6b0f72fffe112dd245a3497f7a83880fc28dfa9ea0f6356954236493c15dcd25",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tw",
+      "country": "Taiwan",
+      "sourceId": "tw",
+      "sourceFilename": "Taiwan.png",
+      "sourceSha256": "d753d4a8a48800e44b6ce82e0a77ee5cee3028713cdd5b1221390ff41d2613e7",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "tz",
+      "country": "Tanzania",
+      "sourceId": "tz",
+      "sourceFilename": "Tanzania.png",
+      "sourceSha256": "f8593528a18dcfc430710a0972f574afa4e4477d5a9d13a522942c1125c31b94",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ua",
+      "country": "Ukraine",
+      "sourceId": "ua",
+      "sourceFilename": "Ukraine.png",
+      "sourceSha256": "659e2d9cb9cc5e502d56a7e1a75d4b81ba43a1cefd86ff8330cf80ef80fc520d",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ug",
+      "country": "Uganda",
+      "sourceId": "ug",
+      "sourceFilename": "Uganda.png",
+      "sourceSha256": "afb07a17756e6e2274c50174af74aff073aed969bd74b48836a74c61a5413b07",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "us",
+      "country": "United States",
+      "sourceId": "us",
+      "sourceFilename": "United States.png",
+      "sourceSha256": "e9b0e93f0660c12e1d2581c4e3093f6863318793ec917158e1e69463257b3124",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "uy",
+      "country": "Uruguay",
+      "sourceId": "uy",
+      "sourceFilename": "Uruguay.png",
+      "sourceSha256": "9f24e25cab78592e94bf7087e7b54f63fa16f5880a10cf90e2414e444a0b84aa",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "uz",
+      "country": "Uzbekistan",
+      "sourceId": "uz",
+      "sourceFilename": "Uzbekistan.png",
+      "sourceSha256": "8a086dba3376e672ab5271b282863b35f5a56b7052b9668a411e611b52480aa3",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "va",
+      "country": "Vatican City",
+      "sourceId": "va",
+      "sourceFilename": "Holy See.png",
+      "sourceSha256": "4ca5cb32a0e9136caec66518d4e60ef87877625fecab9c1a2f9bfddcceca4279",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "vc",
+      "country": "Saint Vincent and the Grenadines",
+      "sourceId": "vc",
+      "sourceFilename": "Saint Vincent and the Grenadines.png",
+      "sourceSha256": "b1d7ee9c197fec19eeb5de2ebcaad61b14f8e2018301ac09b3cb1a2dd4894442",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ve",
+      "country": "Venezuela",
+      "sourceId": "ve",
+      "sourceFilename": "Venezuela.png",
+      "sourceSha256": "6fe5a8e83a25f432a739fc3ea96554c7d23a0fe68f425ab4bea6c6da7d01a29b",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "vn",
+      "country": "Vietnam",
+      "sourceId": "vn",
+      "sourceFilename": "Vietnam.png",
+      "sourceSha256": "544d370dff7ab35869253d9c974efb969e76e9c2724ecf8a32231e5a383d146f",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "vu",
+      "country": "Vanuatu",
+      "sourceId": "vu",
+      "sourceFilename": "Vanuatu.png",
+      "sourceSha256": "523ca8be8f13877c74c1350f056bb15c24347daf65cc831e3e8b15d149883e67",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ws",
+      "country": "Samoa",
+      "sourceId": "ws",
+      "sourceFilename": "Samoa.png",
+      "sourceSha256": "9d1ca0372dd60e680808d4da9bf334c676e79c0e71738507972e02913b8da55a",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "ye",
+      "country": "Yemen",
+      "sourceId": "ye",
+      "sourceFilename": "Yemen.png",
+      "sourceSha256": "45a25e8feaad7ac6b160cd64925bd32c96f39e8088f9bce416a6052b31866f6d",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "za",
+      "country": "South Africa",
+      "sourceId": "ss",
+      "sourceFilename": "South Sudan.png",
+      "sourceSha256": "4739415a289e367c437d63e8a184e91e241a91d5c9f45d67ccc4dae76cd1cff8",
+      "poseCount": 8,
+      "status": "corrected_flag_swap"
+    },
+    {
+      "id": "zm",
+      "country": "Zambia",
+      "sourceId": "zm",
+      "sourceFilename": "Zambia.png",
+      "sourceSha256": "c124ae224eba321ba3f1f404ef8d23d8e2fea9978d88d7e6d2c22db6f8c4659c",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    },
+    {
+      "id": "zw",
+      "country": "Zimbabwe",
+      "sourceId": "zw",
+      "sourceFilename": "Zimbabwe.png",
+      "sourceSha256": "0fbedbea218836d229d387c63bd47fe3e61ae38bc733325234d8e28f7ec54e0f",
+      "poseCount": 8,
+      "status": "no_obvious_mismatch_on_visual_review"
+    }
+  ]
+}

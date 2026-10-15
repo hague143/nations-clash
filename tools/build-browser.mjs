@@ -10,10 +10,11 @@ const countryArt=JSON.parse(await readFile(path.join(root,'browser/assets/countr
 const countryFolder=path.join(root,'browser/country-art');await mkdir(countryFolder,{recursive:true});
 const countryFiles={},countryPortraits={};
 for(const id of Object.keys(countryArt)){
- const image='data:image/webp;base64,'+(await readFile(path.join(root,'browser/assets/countries',id+'.webp'))).toString('base64');
+ const sourceId=countryArt[id].sourceCountryId||id;
+ const image='data:image/webp;base64,'+(await readFile(path.join(root,'browser/assets/countries',sourceId+'.webp'))).toString('base64');
  await writeFile(path.join(countryFolder,id+'.js'),'window.NationCountrySprites.register('+JSON.stringify(id)+','+JSON.stringify(image)+');\n');
  countryFiles[id]='country-art/'+id+'.js';
- countryPortraits[id]='data:image/webp;base64,'+(await readFile(path.join(root,'browser/assets/countries',id+'-portrait.webp'))).toString('base64');
+ countryPortraits[id]='data:image/webp;base64,'+(await readFile(path.join(root,'browser/assets/countries',sourceId+'-portrait.webp'))).toString('base64');
 }
 script=script.replace('/* COUNTRY_ASSET_FILES */null',()=>JSON.stringify(countryFiles));
 script=script.replace('/* COUNTRY_PORTRAIT_DATA */null',()=>JSON.stringify(countryPortraits));

@@ -1,10 +1,15 @@
 # Supplied country fighter derivatives
 
-150 country atlases and portraits come from the user's Country_Fighters ZIPs.
-The source country name is authoritative for assignment, as the user requested.
-The intake contains 150 PNGs, not 196; the remaining 46 keep existing fighters.
-Some painted costume flags do not match their filenames; they are not silently
-reassigned or described as verified national flag costumes.
+196 country atlases and portraits come from the user's original five ZIPs and
+batches 16–20. No country PNG is missing. Filename mapping is the default;
+15 visually reviewed, one-to-one flag swap corrections are recorded in
+`artwork/country-fighters/assignments.json`. Original source IDs and bytes stay
+unchanged. Combined runtime metadata carries `sourceCountryId`; the builder
+selects that source's atlas and portrait together. Every source is used once.
+
+34 unresolved costumes need replacement and two need visual confirmation.
+Shared source faces/designs are not described as 196 unique faces. Read
+`docs/COUNTRY-ARTWORK-REVIEW.md` and the replacement checklist.
 
 Original source PNGs and hashes are in `artwork/country-fighters/`. Runtime
 atlases isolate the eight figures with their transparency, remove detached

@@ -1,105 +1,94 @@
-# Supplied country artwork review
+# Country artwork audit: batches 16–20
 
-The five uploaded ZIPs contain 150 country PNGs (30 per archive), plus README files. All 150 originals are preserved byte for byte with the intake SHA-256 checksums. Only image data and descriptive metadata were used; archive README contents were not treated as project instructions.
+All 46 PNGs in batches 16–20 are integrated. Together with the original 150 sheets, every agreed roster country now has supplied eight-pose artwork: **196 supplied fighters, zero missing PNGs**. Holy See.png maps to Vatican City (`va`); State of Palestine.png maps to Palestine (`ps`).
 
-All ten contact sheets were visually inspected. Pose layouts were reviewed, and five touching sheets (Malta, Peru, Poland, Russia and Samoa) use explicit separation seams. The current eight-frame artwork supports sprite-state animation; it is not a complete motion-capture or 3D animation set. Missing low attacks, walks and ground KOs adapt the available source poses as documented in browser/assets/countries/README.md.
+The original 196 PNGs are retained byte for byte. Their SHA-256 values and archive provenance are in `artwork/country-fighters/intake.json` and `archives.json`. Archive documents are descriptive input, not project instructions.
 
-## Assignment and costume observations
+## Duplicate and appearance audit
 
-Country assignment follows the PNG filename, as requested. These visual observations flag source artwork for review; they do not silently rename, swap or repaint the supplied characters. Official menu/waist flag badges use the existing verified national SVGs. Mirroring a fighter also mirrors the supplied painted costume; the separate official badge remains readable.
+All **19,110 pairs** were compared. There are **zero byte-identical source PNG pairs, zero identical canonical visible-pixel sheets, and zero repeated source assignments**. Canonical pixel hashes clear RGB hidden under fully transparent pixels. The 40 closest 255-bit DCT perceptual candidates are retained in `duplicate-audit.json`; proximity is a review aid, not proof of identical characters. Every original contact sheet was visually reviewed.
 
-| Original filename | Observation |
+**Some faces, bodies, poses and costumes are similar in the supplied artwork.** The result does not establish 196 unique faces. Clear shared costume families include Malta/Mongolia/Montenegro/North Macedonia/Peru (sunburst), Pakistan/Mexico, Andorra/Saudi Arabia, Belarus/Ghana, Belize/Hungary, Albania/France, Libya/Oman, Liechtenstein/Palau, Madagascar/Maldives and Malaysia/Mauritius. Their PNGs are different; reusing a shared design in the source is separate from accidentally assigning one image twice in code.
+
+## 15 corrected country assignments
+
+Only complete, visually clear one-to-one swap cycles override filenames. All 196 sources remain used exactly once. This avoids replacing one wrong flag with a duplicate of another country. Source filenames and original backups are unchanged; `assignments.json` records every correction. Portraits, match atlases, pose metadata and collision landmarks all use the same assignment.
+
+| Game country | Original PNG now used | Visible basis |
+| --- | --- | --- |
+| Eritrea | Estonia.png | Eritrean wreath and red/green/blue on Estonia.png |
+| Estonia | Georgia.png | Estonian blue/black/white on Georgia.png |
+| Fiji | Gabon.png | Fiji shield and Union Jack on Gabon.png |
+| Gabon | Fiji.png | Gabon green/yellow/blue on Fiji.png |
+| Gambia | Eritrea.png | Gambian red/blue/green with white separators on Eritrea.png |
+| Georgia | Gambia.png | Georgian five-cross design on Gambia.png |
+| Somalia | Spain.png | Light-blue/white star Somali costume on Spain.png |
+| South Africa | South Sudan.png | South Africa multicolour Y flag on South Sudan.png |
+| South Korea | Sweden.png | Korean taegeuk/trigrams on Sweden.png |
+| South Sudan | Somalia.png | South Sudan flag design on Somalia.png |
+| Spain | South Africa.png | Red/yellow Spanish costume on South Africa.png |
+| Sudan | South Korea.png | Sudan red/white/black and green on South Korea.png |
+| Suriname | Switzerland.png | Suriname green/white/red and gold star on Switzerland.png |
+| Sweden | Sudan.png | Swedish yellow Nordic cross on Sudan.png |
+| Switzerland | Suriname.png | Swiss white cross on Suriname.png |
+
+## 34 costumes still need replacement
+
+No source PNG is missing. These **existing files** still have a mismatched or unconvincing national costume; a correct replacement is needed to resolve them without duplicating another fighter. They remain playable under their original filename assignment, explicitly unverified. Official menu and waist badges use the correct country flag, but that badge does not repair the painted source costume.
+
+| Country / replacement filename | Observed issue |
 | --- | --- |
-| Brazil.png | Red/white crescent-and-star design, visually resembling Turkey. |
-| China.png | Green/yellow/blue design with a Brazil-like diamond and disc. |
-| Estonia.png | Red/green/blue and yellow wreath, visually resembling Eritrea. |
-| Eswatini.png | Green/yellow/red tricolor, unlike the Eswatini shield flag. |
-| Ethiopia.png | White/blue Nordic-cross costume, visually resembling Finland. |
-| Fiji.png | Green/yellow/blue bands, visually resembling Gabon. |
-| Finland.png | Black/red/gold costume, visually resembling Germany. |
-| France.png | Red/black double-headed-eagle costume, visually resembling Albania. |
-| Gabon.png | Light blue with Union Jack, visually resembling Fiji. |
-| Gambia.png | White field with red crosses, visually resembling Georgia. |
-| Georgia.png | Blue/black/white bands, visually resembling Estonia. |
-| Germany.png | Yellow/blue/red costume, unlike Germany black/red/gold. |
-| Ghana.png | White/red embroidered panels with green, visually resembling Belarus. |
-| Greece.png | Red/yellow/green and black star, visually resembling Ghana. |
-| Grenada.png | Blue/white and blue stars, visually resembling Honduras. |
-| Guinea.png | Blue/white design, unlike Guinea red/yellow/green. |
-| Haiti.png | Red/yellow/green star-emblem design, visually resembling Grenada. |
-| Honduras.png | Red/yellow/green design, unlike Honduras blue/white/blue. |
-| Hungary.png | Blue/red/white and coat of arms, visually resembling Belize. |
-| Japan.png | Green/white robe with Saudi-like motifs, unlike Japan white/red disc. |
-| Maldives.png | White/red/green layout, visually resembling Madagascar. |
-| Malta.png | Red/yellow sunburst design, visually resembling North Macedonia. |
-| Mauritius.png | Striped red/white and blue/yellow crescent, visually resembling Malaysia. |
-| Mexico.png | Green/white crescent/star design, visually resembling Pakistan. |
-| Mongolia.png | Red/yellow sunburst design, visually resembling North Macedonia. |
-| Montenegro.png | Red/yellow sunburst design, visually resembling North Macedonia. |
-| Morocco.png | Yellow/green/red bands, unlike Morocco red/green star. |
-| Oman.png | Red/black/green with white crescent/star, visually resembling Libya. |
-| Palau.png | Blue/red/gold costume, unlike Palau light-blue/yellow disc. |
-| Panama.png | Striped red/white star-field design, unlike Panama quadrants. |
-| Paraguay.png | Light-blue/red/white lion-like emblem, unlike the Paraguay flag. |
-| Peru.png | Red/yellow sunburst design, visually resembling North Macedonia. |
-| Saudi Arabia.png | Blue/yellow/red coat-of-arms costume, unlike Saudi Arabia green/white. |
-| Turkey.png | White/red Japanese-style martial gi, without a visible Turkey crescent/star. |
+| Angola / Angola.png | Green/yellow/red costume; missing the distinctive Angola red/black and yellow cog/machete design. |
+| Brazil / Brazil.png | Red/white crescent-and-star design, visually resembling Turkey. |
+| China / China.png | Green/yellow/blue design with a Brazil-like diamond and disc. |
+| Germany / Germany.png | Yellow/blue/red costume, unlike Germany black/red/gold. |
+| Dominica / Dominica.png | Green/red/yellow star design resembles Cameroon; no clear Dominica cross/parrot design. |
+| Ethiopia / Ethiopia.png | White/blue Nordic-cross costume, visually resembling Finland. |
+| Finland / Finland.png | Black/red/gold costume, visually resembling Germany. |
+| France / France.png | Red/black double-headed-eagle costume, visually resembling Albania. |
+| Grenada / Grenada.png | Blue/white and blue stars, visually resembling Honduras. |
+| Ghana / Ghana.png | White/red embroidered panels with green, visually resembling Belarus. |
+| Guinea / Guinea.png | Blue/white design, unlike Guinea red/yellow/green. |
+| Greece / Greece.png | Red/yellow/green and black star, visually resembling Ghana. |
+| Honduras / Honduras.png | Red/yellow/green design, unlike Honduras blue/white/blue. |
+| Haiti / Haiti.png | Red/yellow/green star-emblem design, visually resembling Grenada. |
+| Hungary / Hungary.png | Blue/red/white and coat of arms, visually resembling Belize. |
+| Japan / Japan.png | Green/white robe with Saudi-like motifs, unlike Japan white/red disc. |
+| Morocco / Morocco.png | Yellow/green/red bands, unlike Morocco red/green star. |
+| Montenegro / Montenegro.png | Red/yellow sunburst design, visually resembling North Macedonia. |
+| Mongolia / Mongolia.png | Red/yellow sunburst design, visually resembling North Macedonia. |
+| Malta / Malta.png | Red/yellow sunburst design, visually resembling North Macedonia. |
+| Mauritius / Mauritius.png | Striped red/white and blue/yellow crescent, visually resembling Malaysia. |
+| Maldives / Maldives.png | White/red/green layout, visually resembling Madagascar. |
+| Mexico / Mexico.png | Green/white crescent/star design, visually resembling Pakistan. |
+| Oman / Oman.png | Red/black/green with white crescent/star, visually resembling Libya. |
+| Panama / Panama.png | Striped red/white star-field design, unlike Panama quadrants. |
+| Peru / Peru.png | Red/yellow sunburst design, visually resembling North Macedonia. |
+| Palau / Palau.png | Blue/red/gold costume, unlike Palau light-blue/yellow disc. |
+| Paraguay / Paraguay.png | Light-blue/red/white lion-like emblem, unlike the Paraguay flag. |
+| Saudi Arabia / Saudi Arabia.png | Blue/yellow/red coat-of-arms costume, unlike Saudi Arabia green/white. |
+| Solomon Islands / Solomon Islands.png | Light-blue/white with ornate crest resembles San Marino; no clear Solomon Islands diagonal/yellow-star design. |
+| Sierra Leone / Sierra Leone.png | Red/yellow/green with a black star resembles Ghana, rather than Sierra Leone green/white/blue. |
+| Sao Tome and Principe / Sao Tome and Principe.png | Green/white/blue costume resembles Sierra Leone; no clear Sao Tome yellow/red triangle and two black stars. |
+| Eswatini / Eswatini.png | Green/yellow/red tricolor, unlike the Eswatini shield flag. |
+| Turkey / Turkey.png | White/red Japanese-style martial gi, without a visible Turkey crescent/star. |
 
-## Missing 46 country sheets
+## Two costumes need your confirmation
 
-The user confirmed these are still being made. Their previous fighters remain playable; no supplied image is falsely assigned to these countries.
+- **Monaco** (`Monaco.png`): White/black with red trim; the Monaco red/white flag design is not clearly identifiable. Please confirm intended costume.
+- **Slovenia** (`Slovenia.png`): Blue/red/white costume has cross-like ornament; the Slovenia mountain shield is not clear. Please confirm intended costume.
 
-- San Marino (`sm`)
-- Sao Tome and Principe (`st`)
-- Senegal (`sn`)
-- Serbia (`rs`)
-- Seychelles (`sc`)
-- Sierra Leone (`sl`)
-- Singapore (`sg`)
-- Slovakia (`sk`)
-- Slovenia (`si`)
-- Solomon Islands (`sb`)
-- Somalia (`so`)
-- South Africa (`za`)
-- South Korea (`kr`)
-- South Sudan (`ss`)
-- Spain (`es`)
-- Sri Lanka (`lk`)
-- State of Palestine (`ps`)
-- Sudan (`sd`)
-- Suriname (`sr`)
-- Sweden (`se`)
-- Switzerland (`ch`)
-- Syria (`sy`)
-- Taiwan (`tw`)
-- Tajikistan (`tj`)
-- Tanzania (`tz`)
-- Thailand (`th`)
-- Timor-Leste (`tl`)
-- Togo (`tg`)
-- Tonga (`to`)
-- Trinidad and Tobago (`tt`)
-- Tunisia (`tn`)
-- Turkmenistan (`tm`)
-- Tuvalu (`tv`)
-- Uganda (`ug`)
-- Ukraine (`ua`)
-- United Arab Emirates (`ae`)
-- United Kingdom (`gb`)
-- Uruguay (`uy`)
-- Uzbekistan (`uz`)
-- Vanuatu (`vu`)
-- Vatican City (`va`)
-- Venezuela (`ve`)
-- Vietnam (`vn`)
-- Yemen (`ye`)
-- Zambia (`zm`)
-- Zimbabwe (`zw`)
+## Poses and limits
 
-## Rebuild and verification
+All 46 new sheets contain eight separate figures in the standard idle / walk / block / crouch / punch / kick / hit / ground-KO order. All 196 runtime atlases have eight isolated source figures; older exceptional layouts retain reviewed mappings and separation seams. Low strikes and missing motions adapt available poses; eight poses are sprite-state animation, not a complete 3D or motion-capture animation set. Painted costumes mirror when fighters face left; the official badge stays readable.
 
-- `python3 tools/prepare-country-art.py` regenerates derivatives from the preserved PNGs.
-- `node tools/build-browser.mjs` writes the HTML and its local country-art scripts.
-- `python3 tools/package-browser.py` packages the complete offline game.
-- `Tests/Browser/country-art.test.cjs` verifies original hashes, mapping, contacts, hits/whiffs, guards and low-input release.
-- `Tests/Browser/world-smoke.cjs` checks the actual renderer for 2,400 visible contact fixtures and all eight source poses per country, plus roster, controls, rounds, arenas, audio, AI and portrait/landscape touch.
+## Rebuild and audit
+
+```sh
+python3 tools/audit-country-art.py
+python3 tools/prepare-country-art.py
+node tools/build-browser.mjs
+python3 tools/package-browser.py
+```
+
+Runtime acceptance covers 196 correct source assignments, all eight poses, 3,136 painted melee-contact fixtures and bounded lazy loading. Module tests cover 4,704 supplied-fighter damage fixtures, guard rules and genuine whiffs. See DOWNLOAD-VALIDATION.md for results from the exact delivered package.

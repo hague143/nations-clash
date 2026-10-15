@@ -1,8 +1,15 @@
 {
-  "zipBytes": 63494033,
-  "zipSha256": "679c05a55b8a1754b76fc9f98300db3e136d148673f9b3fd9b973c8aca58ed7a",
-  "htmlBytes": 10549992,
-  "htmlSha256": "3661341f60667a7c8e01668e9dd5ebfaada24e73ef918171f1d0e7d4877dd942",
-  "assetFiles": 150,
-  "members": 155
+  "zipBytes": 80923717,
+  "zipSha256": "34727e5bc4c42e257bf80ee3d3b1c9526abd215844d18081cd56d0707206acbc",
+  "htmlBytes": 12624748,
+  "htmlSha256": "59213819779691a5c2bc7641d971537539f15cbcdae7e44df40acfc99f28e24a",
+  "sourceHtmlSha256": "142aa373fba527cd77f560dc4c60cdd680f3b832aedb8b0196bd1fe4dc6e96f2",
+  "assetFiles": 196,
+  "members": 203,
+  "sourcePngs": 196,
+  "missingPngs": 0,
+  "reviewedAssignmentCorrections": 15,
+  "assignedAtlasByteChecks": 196,
+  "costumeReplacementRequests": 34,
+  "costumeConfirmationRequests": 2
 }

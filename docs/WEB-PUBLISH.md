@@ -2,7 +2,7 @@
 
 The browser builder writes `browser/index.html` and the accompanying
 `browser/country-art/` directory. The Pages workflow copies both; publishing only
-the HTML would omit the 150 match atlases. The portable game is also available
+the HTML would omit the 196 match atlases. The portable game is also available
 as [the complete offline ZIP](../downloads/NationClash-Windows.zip).
 
 GitHub write access was successfully restored. The preserved code and supplied

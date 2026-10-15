@@ -8,18 +8,24 @@ require('../../browser/src/sprites.js');
 const T=require('../../browser/src/country-sprites.js');
 const root=path.resolve(__dirname,'../..');
 const intake=require('../../artwork/country-fighters/intake.json');
+const assignments=require('../../artwork/country-fighters/assignments.json');
+const sourceFor=id=>assignments.overrides[id]?.sourceId||id;
 const actions=['light','heavy','special','break','throw','ultimate'];
 
-test('all 150 country mappings preserve the exact supplied PNGs; 46 countries retain their existing fighters',()=>{
- assert.equal(intake.images.length,150);assert.equal(intake.missing.length,46);
- assert.equal(Object.keys(T.METADATA).length,150);
+test('all 196 country mappings preserve the exact supplied PNGs with no country missing',()=>{
+ assert.equal(intake.images.length,196);assert.equal(intake.missing.length,0);
+ assert.equal(Object.keys(T.METADATA).length,196);
+ assert.equal(new Set(Object.values(T.METADATA).map(m=>m.sourceCountryId)).size,196,'no source reused for two countries');
+ assert.equal(new Set(intake.images.map(e=>e.sha256)).size,196,'no duplicate source PNG files');
  const ids=new Set();
  for(const entry of intake.images){
   assert.ok(!ids.has(entry.id));ids.add(entry.id);
-  assert.equal(T.METADATA[entry.id].sourceName,entry.originalName);
+  const assigned=intake.images.find(e=>e.id===sourceFor(entry.id));
+  assert.equal(T.METADATA[entry.id].sourceName,assigned.originalName);
+  assert.equal(T.METADATA[entry.id].sourceCountryId,assigned.id);
   const bytes=fs.readFileSync(path.join(root,'artwork/country-fighters/source',entry.id+'.png'));
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),entry.sha256,entry.originalName+' retained intact');
-  assert.equal(T.METADATA[entry.id].sourceSha256,entry.sha256);
+  assert.equal(T.METADATA[entry.id].sourceSha256,assigned.sha256);
  }
  for(const c of intake.missing)assert.equal(T.hasArt(c.id),false,c.country+' not falsely marked as supplied');
  assert.equal(new Set([...ids,...intake.missing.map(c=>c.id)]).size,196);
@@ -37,7 +43,7 @@ test('every supplied pose is inside its atlas with finite pivots and opaque-cont
  }
 });
 
-test('150 supplied fighters land all six attacks once, at standing and low stances, facing either way',()=>{
+test('196 supplied fighters land all six attacks once, at standing and low stances, facing either way',()=>{
  let count=0;
  for(const data of C.ROSTER.filter(c=>T.hasArt(c.id)))for(const low of [false,true])for(const facing of [-1,1])for(const action of actions){
   const enemy=C.ROSTER.find(c=>c.id==='za');
@@ -53,7 +59,7 @@ test('150 supplied fighters land all six attacks once, at standing and low stanc
   assert.equal(fight.right.hp,first,data.id+' single damage event');
   count++;
  }
- assert.equal(count,3600);
+ assert.equal(count,4704);
 });
 
 test('supplied fighters whiff from across the arena and obey low/standing guard rules',()=>{
@@ -76,4 +82,11 @@ test('blocked impact uses the authored guard pose and a buffered low attack keep
  const f=fight.left;fight.start(f,{action:'light',low:true});f.low=false;
  assert.equal(T.sourcePose(f),'crouch','low startup remains crouched after key release');
  assert.ok(C.hurtbox(f).top<2,'hurtbox follows the committed low strike, not the released input');
+});
+
+// These regressions encode the independently reviewed painted emblems, rather
+// than trusting the misleading archive filename as the expected country.
+test('reviewed flag swap cycles place Korean, Swiss, Somali and Spanish artwork in the correct country',()=>{
+ for(const [id,name]of Object.entries({kr:'Sweden.png',ch:'Suriname.png',so:'Spain.png',es:'South Africa.png',ee:'Georgia.png',fj:'Gabon.png'}))
+  assert.equal(T.METADATA[id].sourceName,name,id+' reviewed costume mapping');
 });

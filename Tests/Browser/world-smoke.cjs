@@ -157,14 +157,19 @@ async function renderedRosterAcceptance(page){
  });
  assert.ok(rendered.countries.every(c=>c.pixels>3500),'every country fighter actually draws body pixels beyond its small floor shadow');
  const supplied=rendered.countries.filter(c=>c.diagnostic?.renderer==='supplied-country-art');
- assert.equal(supplied.length,150,'all 150 supplied images use the new renderer');
+ assert.equal(supplied.length,196,'all 196 supplied images use the new renderer');
  const intake=JSON.parse(fs.readFileSync(path.join(ROOT,'artwork/country-fighters/intake.json'),'utf8'));
- for(const entry of intake.images)assert.equal(supplied.find(c=>c.id===entry.id)?.diagnostic.source,entry.originalName,'correct country-to-original-filename mapping');
+ const overrides=JSON.parse(fs.readFileSync(path.join(ROOT,'artwork/country-fighters/assignments.json'),'utf8')).overrides;
+ for(const entry of intake.images){
+  const sourceId=overrides[entry.id]?.sourceId||entry.id;
+  const original=intake.images.find(e=>e.id===sourceId);
+  assert.equal(supplied.find(c=>c.id===entry.id)?.diagnostic.source,original.originalName,'reviewed country-to-source assignment');
+ }
  const unique=new Set(rendered.countries.map(c=>crypto.createHash('sha256').update(c.image).digest('hex')));
  assert.equal(unique.size,196,'every rendered fighter has a distinct appearance including its costume');
  assert.ok(rendered.poses.every(p=>p.pixels>3500),'shared rigs and every archetype render all six moves in both directions');
  assert.ok(rendered.poses.every(p=>Number.isFinite(p.contact.x)&&Number.isFinite(p.contact.y)),'all rendered attack contacts are finite');
- check('150 supplied country sprites, 46 retained fighters and every archetype attack pose',{fighters:196,supplied:150,retained:46,poseFixtures:rendered.poses.length});
+ check('196 supplied country sprites, zero retained fighters and every archetype attack pose',{fighters:196,supplied:196,retained:0,poseFixtures:rendered.poses.length});
 }
 
 async function suppliedContactAcceptance(page){
@@ -202,9 +207,9 @@ async function suppliedContactAcceptance(page){
   return {fixtures,failures,coverage,loadedIds:T.loadedIds};
  });
  assert.deepEqual(result.failures,[],'actual renderer must paint a visible strike at the actual collision point');
- assert.equal(result.fixtures,2400);
+ assert.equal(result.fixtures,3136);
  assert.ok(result.coverage.every(c=>c.used.length===8),'all eight supplied poses participate in production actions/states');
- check('150 supplied fighters: 2400 visible melee contacts, both stances/facings, all eight poses, bounded decoded cache',{fixtures:result.fixtures,countries:150,maxDecodedAtlases:6});
+ check('196 supplied fighters: 3136 visible melee contacts, both stances/facings, all eight poses, bounded decoded cache',{fixtures:result.fixtures,countries:196,maxDecodedAtlases:6});
 }
 
 async function actualControls(page){

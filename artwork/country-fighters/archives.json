@@ -30,6 +30,36 @@
       "bytes": 65303298,
       "sha256": "06a5b16765618602698111cf71ebb743cbeb25a75e8a516406434b95227eb6bc",
       "pngCount": 30
+    },
+    {
+      "file": "Country_Fighters_Batch_16.zip",
+      "bytes": 15905675,
+      "sha256": "8a83e38abaed7e19bc393ba1d8a733fd72bb8a983570ee4d5f455bce6c92ccb2",
+      "pngCount": 10
+    },
+    {
+      "file": "Country_Fighters_Batch_17.zip",
+      "bytes": 18316697,
+      "sha256": "3ed113356ff52d10d77a36913089c430f2fa453239625976ad2b55eed16cfeb3",
+      "pngCount": 10
+    },
+    {
+      "file": "Country_Fighters_Batch_18.zip",
+      "bytes": 21418565,
+      "sha256": "52a306e9a4bd52f05c6d80b1dd64ee348086141b770a81b11d83893628ecee78",
+      "pngCount": 10
+    },
+    {
+      "file": "Country_Fighters_Batch_19.zip",
+      "bytes": 21330091,
+      "sha256": "1f2d99dda7367f0a5d56fbc5f406669472eb38cceec9b7f5b69ce79f49118a89",
+      "pngCount": 10
+    },
+    {
+      "file": "Country_Fighters_Batch_20.zip",
+      "bytes": 12536820,
+      "sha256": "dbe0159e3b2f4d6d3c800e8ebaaa266853bb9ad8a7bae96a6899b453bf729048",
+      "pngCount": 6
     }
   ]
 }
