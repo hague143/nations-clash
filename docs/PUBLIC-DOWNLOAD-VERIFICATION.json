@@ -1,6 +1,12 @@
 {
-  "status": "pending new package push and full download verification",
-  "expectedBytes": 80923717,
-  "expectedSha256": "34727e5bc4c42e257bf80ee3d3b1c9526abd215844d18081cd56d0707206acbc",
-  "priorPackageSuperseded": true
+  "status": "verified",
+  "url": "https://raw.githubusercontent.com/hague143/nations-clash/8d2db835d01bdec6166b36bdbacc3d14965a0fc5/downloads/NationClash-Windows.zip",
+  "commit": "8d2db835d01bdec6166b36bdbacc3d14965a0fc5",
+  "verifiedAt": "2026-10-15T14:13:23.023820+00:00",
+  "bytes": 80923717,
+  "sha256": "34727e5bc4c42e257bf80ee3d3b1c9526abd215844d18081cd56d0707206acbc",
+  "zipCrc": "passed",
+  "htmlMatchesBrowserTestedDocument": true,
+  "countryAssetFiles": 196,
+  "members": 203
 }

@@ -55,3 +55,11 @@ embedded image data to avoid cross-origin file-image canvas restrictions.
 
 See [package metadata](COUNTRY-PACKAGE-MANIFEST.json), [browser evidence](WORLD-ACCEPTANCE.json)
 and [public delivery verification](PUBLIC-DOWNLOAD-VERIFICATION.json).
+
+## Verified public delivery
+
+https://raw.githubusercontent.com/hague143/nations-clash/8d2db835d01bdec6166b36bdbacc3d14965a0fc5/downloads/NationClash-Windows.zip
+
+The entire immutable GitHub download returned HTTP 200. All 80923717 bytes
+match the tested ZIP SHA-256. CRCs pass, all 196 country scripts are present,
+and the contained HTML hash matches browser acceptance.

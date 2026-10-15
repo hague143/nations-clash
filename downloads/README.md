@@ -1,6 +1,6 @@
 # Playable Windows browser package
 
-[Download the game ZIP](https://github.com/hague143/nations-clash/raw/refs/heads/backup/nationclash-2026-10-15/downloads/NationClash-Windows.zip)
+[Download the verified game ZIP](https://raw.githubusercontent.com/hague143/nations-clash/8d2db835d01bdec6166b36bdbacc3d14965a0fc5/downloads/NationClash-Windows.zip)
 
 Download `NationClash-Windows.zip`, right-click **Extract All**, then open the extracted `NationClash.html` in current Chrome or Edge. Keep `country-art/` beside it. No Unity, Python or server is required to play.
 
