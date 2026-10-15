@@ -1,46 +1,52 @@
-# Compact Windows package validation
+# Windows game package validation
 
-The user requested a downloadable ZIP without GitHub. `python3 tools/package-browser.py`
-creates a standalone game, with same-size WebP atlas variants and a gzip-compressed
-inline program. Original source PNGs remain unchanged. The user needs current
-Chrome or Edge, with no Unity, Python, server or additional game downloads.
+The current package contains the HTML plus 150 on-demand country artwork scripts.
+Right-click the ZIP and choose Extract All; keep `country-art/` beside the HTML.
+No Unity, Python, account, server or internet is required to play the complete
+extracted package in current Chrome or Edge.
 
-ZIP size: 2,453,387 bytes.
-Packaged HTML size: 3,255,296 bytes.
-Packaged HTML SHA256: `46c411a26dd1e5a30c3e74a85d4b5f0a7980b3fccf092d71bbad4c052b0fc81c`.
+The five supplied ZIPs contain 150 country PNGs. The user confirmed that the
+remaining 46 sheets are still being made, so those countries retain their prior
+fighters. Originals are preserved with SHA-256 checksums. Filenames determine
+country assignment; source costume flag mismatches are listed in
+[the artwork review](COUNTRY-ARTWORK-REVIEW.md) and in the ZIP's ARTWORK-NOTES.txt.
 
-The archive's CRC check passed. Its actual extracted HTML was tested with:
+## Exact tested package
+
+- ZIP: 63,494,033 bytes (60.55 MiB).
+- ZIP SHA-256: `679c05a55b8a1754b76fc9f98300db3e136d148673f9b3fd9b973c8aca58ed7a`.
+- Extracted HTML: 10,549,992 bytes.
+- HTML SHA-256: `3661341f60667a7c8e01668e9dd5ebfaada24e73ef918171f1d0e7d4877dd942`.
+- Members: 155, including all 150 country artwork scripts.
+
+All ZIP CRCs pass. Every artwork script was extracted and the HTML matches the
+packager output byte for byte. The actual extracted package was tested with:
 
 ```sh
-NATIONCLASH_HTML=/workspace/nations-clash/artifacts/windows-check/NationClash.html \
-NATIONCLASH_ARTIFACT_DIR=/workspace/nations-clash/artifacts/windows-validation \
+python3 -m zipfile -e artifacts/NationClash-Windows.zip artifacts/country-package-check
+NATIONCLASH_HTML=artifacts/country-package-check/NationClash.html \
+NATIONCLASH_ARTIFACT_DIR=artifacts/country-package-validation \
 node Tests/Browser/world-smoke.cjs
 ```
 
-All 12 acceptance groups passed: all 196 selections and rendered fighters, 96
-attack poses, flags, keyboard/contact, rounds/rematches, 10 arenas, audio, AI,
-portrait and landscape touch, zero runtime errors and zero external requests.
-The tested extracted bytes match `NationClash.html` in the ZIP.
+All 13 browser acceptance groups pass: all 196 selectable/rendered countries,
+150 exact original-filename mappings, every supplied pose, 2,400 visible melee
+contact fixtures in both stances and directions, bounded six-atlas decoding,
+live keyboard movement/attacks/guard/whiff/jump/pause, rounds/results/rematch,
+10 arenas, music and start/KO/impact sounds, live AI, portrait and landscape touch,
+zero runtime errors and zero requests outside the local game files.
 
-Delivery remains separate from local validation. The user is on the Codex
-cloud/setup screen, where the supplied internal and sandbox links did not
-download. No attachment-export tool is available here. The temporary download
-host tmpfiles.org returned proxy CONNECT403; its domain was added to the saved
-network draft. Runtime availability awaits user review/save/publication.
-No public URL or successful user download is claimed.
+All 49 module/functional checks pass, including original-file hashes and 3,600
+supplied-fighter hit fixtures, guard rules, genuine across-arena whiffs and
+committed low-attack stance after input release. Contact landmarks were separately
+checked against opaque pixels in the actual WebP atlases.
 
-Publication recheck: the user published the configuration. The config read showed
-a new active base version and tmpfiles.org in the explicit allowed-host list.
-Nevertheless, the current runner still receives proxy CONNECT HTTP403 for that
-host, including an escalated request and a turn-scoped network permission grant.
-No upload was performed and no working HTTPS download URL exists yet. A runtime
-reconnection or a new task using the published environment is still needed to
-recheck effective access; do not ask the user to republish unchanged settings.
+Managed Linux Chromium uses an internal HTTP server to serve the exact extracted
+files because its managed browser can block file navigation. Direct use on a
+Windows computer has not been observed here. Artwork loads through local scripts
+that register image data, avoiding canvas access to cross-origin file images.
 
-Delivery succeeded after runtime reconnection. The public file-host page is
-https://tmpfiles.org/weARZwgtpl2i/nationclash-windows.zip
-The host reported file expires in 47 hours and 58 minutes. The actual Download-button URL
-was fetched over HTTPS; all 2453387 downloaded bytes match the tested
-ZIP, its CRC check passes, and its contained HTML matches the browser-tested
-compact document. ZIP SHA256: `a709926ca727f4535b4c3bf05d0cf03a2fc215a597c9e55d6103970190c22b9f`.
-The download page is temporary; the extracted game works offline after saving.
+The prior 2.34 MiB download predates these supplied characters and is superseded.
+Current package metadata is in [COUNTRY-PACKAGE-MANIFEST.json](COUNTRY-PACKAGE-MANIFEST.json).
+
+Additional regression: `node Tests/Browser/start-loading.cjs` delays the artwork load and changes the visible country/arena controls mid-load. The match still starts with its original snapshotted fighters, arena and audio, with both characters rendered and no runtime error.

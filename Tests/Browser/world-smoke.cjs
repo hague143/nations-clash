@@ -7,6 +7,7 @@ const assert=require('node:assert/strict');
 const path=require('node:path');
 const fs=require('node:fs');
 const crypto=require('node:crypto');
+const http=require('node:http');
 
 const ROOT=path.resolve(__dirname,'../..');
 const OUT=process.env.NATIONCLASH_ARTIFACT_DIR||'/workspace/artifacts';
@@ -14,7 +15,7 @@ const EXPECTED_CODES=(`af al dz ad ao ag ar am au at az bs bh bd bb by be bz bj 
 assert.equal(EXPECTED_CODES.length,196,'acceptance country list itself must contain 196 entries');
 
 const report={startedAt:new Date().toISOString(),document:null,checks:[],screenshots:[],errors:[],externalRequests:[]};
-let browser;
+let browser,server,siteURL;
 const check=(name,details={})=>{report.checks.push({name,status:'passed',...details});console.log(`PASS ${name}`);};
 const snapshot=async(page,name)=>{
  const file=path.join(OUT,`NationClash-World-${name}.png`);
@@ -23,8 +24,8 @@ const snapshot=async(page,name)=>{
 function watch(page,label){
  page.on('pageerror',e=>report.errors.push(`${label}: ${e.message}`));
  page.on('console',m=>{if(m.type()==='error')report.errors.push(`${label}: ${m.text()}`);});
- page.on('request',request=>{if(/^https?:/i.test(request.url()))report.externalRequests.push(request.url());});
- page.route(/^https?:\/\//,route=>route.abort());
+ page.on('request',request=>{if(/^https?:/i.test(request.url())&&!request.url().startsWith(siteURL))report.externalRequests.push(request.url());});
+ page.route(/^https?:\/\//,route=>route.request().url().startsWith(siteURL)?route.continue():route.abort());
 }
 const emptySearch=async(page)=>{await page.locator('#country-search').fill('');await page.selectOption('#region-filter','All');};
 const choose=async(page,id,side=0)=>{
@@ -40,7 +41,8 @@ const choose=async(page,id,side=0)=>{
 const waitFight=page=>page.waitForFunction(()=>NationClash.fight?.phase==='fight');
 async function fixture(page,{left='pk',right='jp',facing=1,distance=1,paused=false}={}){
  if(paused&&!await page.evaluate(()=>NationClash.paused))await page.locator('#pause').click();
- await page.evaluate(({left,right,facing,distance})=>{
+ await page.evaluate(async({left,right,facing,distance})=>{
+  await NationCountrySprites.ensure([left,right],NationClash.assets);
   const f=NationClash.fight;
   f.left.data=NationClash.catalog.find(c=>c.id===left);f.right.data=NationClash.catalog.find(c=>c.id===right);
   f.resetRound();f.phase='fight';f.left.x=0;f.right.x=facing*distance;f.left.facing=facing;f.right.facing=-facing;
@@ -121,25 +123,27 @@ async function flagOrientation(page){
  });
  for(const row of result.rows){assert.ok(row.nonempty>2000,`${row.id}: flag pixels drawn`);assert.equal(row.different,0,`${row.id}: flag reads the same facing left and right`);}
  const previewPath=path.join(OUT,'NationClash-World-flag-orientation.png');fs.writeFileSync(previewPath,Buffer.from(result.preview.split(',')[1],'base64'));report.screenshots.push(previewPath);
- check('production flag costume drawing preserves emblem orientation',{sampleCountries:result.rows.map(x=>x.id)});
+ check('fallback fighter flag drawing preserves emblem orientation',{sampleCountries:result.rows.map(x=>x.id)});
 }
 
 async function renderedRosterAcceptance(page){
- const rendered=await page.evaluate(()=>{
+ const rendered=await page.evaluate(async()=>{
   const canvas=document.createElement('canvas');canvas.width=360;canvas.height=400;
   const ctx=canvas.getContext('2d');
-  const countries=NationClash.catalog.map(c=>{
+  const countries=[];for(const c of NationClash.catalog){
+   await NationCountrySprites.ensure([c.id],NationClash.assets);
    const f=new NationCombat.Fight(c,NationClash.catalog[0],{intro:0}).left;f.x=0;f.facing=1;
    ctx.clearRect(0,0,360,400);
-   NationClash.renderFighter(ctx,f,{time:0,frame:0,floor:355,pixelsPerUnit:78,originX:180});
+   const result=NationClash.renderFighter(ctx,f,{time:0,frame:0,floor:355,pixelsPerUnit:78,originX:180});
    const image=ctx.getImageData(0,0,360,400).data;let pixels=0;
    for(let i=3;i<image.length;i+=4)if(image[i]>0)pixels++;
-   return {id:c.id,pixels,image:canvas.toDataURL('image/png')};
-  });
+   countries.push({id:c.id,pixels,image:canvas.toDataURL('image/png'),diagnostic:result?.diagnostic});
+  }
   const heroes=['pk','jp'];
   const seen=new Set();for(const c of NationClash.catalog)if(!seen.has(c.style)){heroes.push(c.id);seen.add(c.style);}
   const poses=[];
   for(const id of [...new Set(heroes)])for(const facing of [1,-1])for(const action of ['light','heavy','special','break','throw','ultimate']){
+   await NationCountrySprites.ensure([id],NationClash.assets);
    const c=NationClash.catalog.find(c=>c.id===id),fight=new NationCombat.Fight(c,NationClash.catalog[0],{intro:0}),f=fight.left;
    f.x=0;f.facing=facing;f.meter=100;fight.start(f,{action});f.moveFrame=f.move.start;
    ctx.clearRect(0,0,360,400);
@@ -152,11 +156,55 @@ async function renderedRosterAcceptance(page){
   return {countries,poses};
  });
  assert.ok(rendered.countries.every(c=>c.pixels>3500),'every country fighter actually draws body pixels beyond its small floor shadow');
+ const supplied=rendered.countries.filter(c=>c.diagnostic?.renderer==='supplied-country-art');
+ assert.equal(supplied.length,150,'all 150 supplied images use the new renderer');
+ const intake=JSON.parse(fs.readFileSync(path.join(ROOT,'artwork/country-fighters/intake.json'),'utf8'));
+ for(const entry of intake.images)assert.equal(supplied.find(c=>c.id===entry.id)?.diagnostic.source,entry.originalName,'correct country-to-original-filename mapping');
  const unique=new Set(rendered.countries.map(c=>crypto.createHash('sha256').update(c.image).digest('hex')));
  assert.equal(unique.size,196,'every rendered fighter has a distinct appearance including its costume');
  assert.ok(rendered.poses.every(p=>p.pixels>3500),'shared rigs and every archetype render all six moves in both directions');
  assert.ok(rendered.poses.every(p=>Number.isFinite(p.contact.x)&&Number.isFinite(p.contact.y)),'all rendered attack contacts are finite');
- check('196 visually distinct rendered fighters and every archetype attack pose',{fighters:196,poseFixtures:rendered.poses.length});
+ check('150 supplied country sprites, 46 retained fighters and every archetype attack pose',{fighters:196,supplied:150,retained:46,poseFixtures:rendered.poses.length});
+}
+
+async function suppliedContactAcceptance(page){
+ const result=await page.evaluate(async()=>{
+  const failures=[],coverage=[],canvas=document.createElement('canvas');canvas.width=720;canvas.height=500;
+  const ctx=canvas.getContext('2d',{willReadFrequently:true}),C=NationCombat,T=NationCountrySprites,assets=NationClash.assets;
+  let fixtures=0;
+  for(const data of NationClash.catalog.filter(c=>T.hasArt(c.id))){
+   await T.ensure([data.id],assets);const used=new Set();
+   for(const facing of [-1,1])for(const low of [false,true])for(const action of ['light','heavy','break','throw']){
+    const fight=new C.Fight(data,NationClash.catalog[0],{intro:0}),f=fight.left;f.x=0;f.facing=facing;f.low=low;
+    fight.start(f,{action,low});f.moveFrame=f.move.start;
+    ctx.clearRect(0,0,720,500);
+    const drawn=NationClash.renderFighter(ctx,f,{floor:440,originX:360,pixelsPerUnit:78,frame:30,time:0});
+    const contact=C.contact(f);used.add(drawn.diagnostic.sourceIndex);
+    if(Math.abs(drawn.strikeTip.x-contact.x)>1e-8||Math.abs(drawn.strikeTip.y-contact.y)>1e-8)failures.push(`${data.id}/${action}/${low}/${facing}: geometry mismatch`);
+    const x=Math.round(360+contact.x*78),y=Math.round(440-contact.y*78);
+    if(x<4||x>715||y<4||y>495)failures.push(`${data.id}: contact outside fixture`);
+    else{
+     const pixels=ctx.getImageData(x-3,y-3,7,7).data;let opaque=0;
+     for(let i=3;i<pixels.length;i+=4)if(pixels[i]>100)opaque++;
+     if(opaque<2)failures.push(`${data.id}/${action}/${low}/${facing}: no visible knuckle/toe at collision point`);
+    }
+    fixtures++;
+   }
+   for(const state of ['idle','walk','block','crouch','hit','ko','jump']){
+    const f=new C.Fight(data,NationClash.catalog[0],{intro:0}).left;f.x=0;f.pose=state;
+    if(state==='block')f.guard=true;if(state==='crouch')f.low=true;if(state==='hit')f.stun=8;if(state==='ko')f.hp=0;if(state==='jump')f.y=.4;
+    ctx.clearRect(0,0,720,500);const drawn=NationClash.renderFighter(ctx,f,{floor:440,originX:360,pixelsPerUnit:78,frame:8,time:0});
+    used.add(drawn.diagnostic.sourceIndex);
+   }
+   coverage.push({id:data.id,used:[...used].sort()});
+   if(T.loadedIds.length>T.MAX_DECODED)failures.push('decoded atlas cache exceeded bound');
+  }
+  return {fixtures,failures,coverage,loadedIds:T.loadedIds};
+ });
+ assert.deepEqual(result.failures,[],'actual renderer must paint a visible strike at the actual collision point');
+ assert.equal(result.fixtures,2400);
+ assert.ok(result.coverage.every(c=>c.used.length===8),'all eight supplied poses participate in production actions/states');
+ check('150 supplied fighters: 2400 visible melee contacts, both stances/facings, all eight poses, bounded decoded cache',{fixtures:result.fixtures,countries:150,maxDecodedAtlases:6});
 }
 
 async function actualControls(page){
@@ -279,7 +327,7 @@ async function audioAcceptance(page){
 
 async function mobileAcceptance(html){
  const page=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});watch(page,'mobile');
- await page.setContent(html);await page.waitForFunction(()=>NationClash.assetsReady);
+ await page.goto(siteURL);await page.waitForFunction(()=>NationClash.assetsReady);
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,'mobile selection has no horizontal overflow');
  await snapshot(page,'mobile-roster');await choose(page,'pk');await choose(page,'jp',1);await page.selectOption('#mode','local');
  await page.locator('#start').tap();await waitFight(page);await fixture(page,{distance:1.1});
@@ -291,7 +339,7 @@ async function mobileAcceptance(html){
  await snapshot(page,'mobile-fight');await page.close();check('390px mobile touch attack/jump, target sizes and layout');
 
  const landscape=await browser.newPage({viewport:{width:844,height:390},isMobile:true,hasTouch:true});watch(landscape,'mobile-landscape');
- await landscape.setContent(html);await landscape.waitForFunction(()=>NationClash.assetsReady);
+ await landscape.goto(siteURL);await landscape.waitForFunction(()=>NationClash.assetsReady);
  assert.equal(await landscape.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,'landscape selection has no horizontal overflow');
  await choose(landscape,'pk');await choose(landscape,'jp',1);await landscape.selectOption('#mode','local');
  await landscape.locator('#start').tap();await waitFight(landscape);
@@ -332,10 +380,19 @@ async function computerAcceptance(page){
  fs.mkdirSync(OUT,{recursive:true});
  const documentPath=process.env.NATIONCLASH_HTML||path.join(ROOT,'browser/index.html');
  const html=fs.readFileSync(documentPath,'utf8');report.document={path:documentPath,bytes:Buffer.byteLength(html),sha256:crypto.createHash('sha256').update(html).digest('hex')};
+ const filesRoot=path.dirname(documentPath);
+ server=http.createServer((req,res)=>{
+  const url=new URL(req.url,'http://localhost'),asset=url.pathname.match(/^\/country-art\/([a-z]{2})\.js$/);
+  if(url.pathname==='/'){res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});res.end(html);}
+  else if(asset){const file=path.join(filesRoot,'country-art',asset[1]+'.js');if(!fs.existsSync(file)){res.writeHead(404);res.end('Missing country asset');return;}res.writeHead(200,{'Content-Type':'text/javascript'});fs.createReadStream(file).pipe(res);}
+  else if(url.pathname==='/favicon.ico'){res.writeHead(204);res.end();}
+  else{res.writeHead(404);res.end();}
+ });
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));siteURL='http://127.0.0.1:'+server.address().port+'/';
  browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--autoplay-policy=user-gesture-required']});
  const page=await browser.newPage({viewport:{width:1440,height:1050}});watch(page,'desktop');
- await page.setContent(html);await page.waitForFunction(()=>NationClash.assetsReady,{},{timeout:60000});
- await rosterAcceptance(page);await renderedRosterAcceptance(page);await flagOrientation(page);await actualControls(page);await roundsAcceptance(page);await arenaAcceptance(page);await audioAcceptance(page);await computerAcceptance(page);await mobileAcceptance(html);
+ await page.goto(siteURL,{timeout:60000});await page.waitForFunction(()=>NationClash.assetsReady,{},{timeout:60000});
+ await rosterAcceptance(page);await renderedRosterAcceptance(page);await suppliedContactAcceptance(page);await flagOrientation(page);await actualControls(page);await roundsAcceptance(page);await arenaAcceptance(page);await audioAcceptance(page);await computerAcceptance(page);await mobileAcceptance(html);
  assert.deepEqual(report.errors,[],'no browser runtime or console errors');assert.deepEqual(report.externalRequests,[],'offline document makes no external requests');
  check('zero runtime errors and zero external network requests');
  report.status='passed';report.finishedAt=new Date().toISOString();
@@ -345,4 +402,4 @@ async function computerAcceptance(page){
  report.status='failed';report.failure={message:error.message,stack:error.stack};report.finishedAt=new Date().toISOString();
  fs.mkdirSync(OUT,{recursive:true});fs.writeFileSync(path.join(OUT,'NationClash-World-acceptance.json'),JSON.stringify(report,null,2));
  console.error(error);process.exitCode=1;
-}).finally(async()=>{if(browser)await browser.close();});
+}).finally(async()=>{if(browser)await browser.close();if(server)await new Promise(resolve=>server.close(resolve));});

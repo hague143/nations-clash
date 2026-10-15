@@ -25,12 +25,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Build the self-contained game
+      - name: Build the offline-capable game and local artwork files
         run: node tools/build-browser.mjs
       - name: Prepare website
         run: |
           mkdir -p artifacts/site
           cp browser/index.html artifacts/site/index.html
+          cp -R browser/country-art artifacts/site/country-art
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

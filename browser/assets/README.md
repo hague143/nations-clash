@@ -1,5 +1,15 @@
 # Fighter artwork and asset provenance
 
+The active browser renderer now uses 150 supplied eight-pose country sheets.
+Their unchanged PNG originals are under `artwork/country-fighters/source/`;
+runtime derivatives and provenance are described in [countries/README.md](countries/README.md).
+They replace the legacy Japan/Pakistan and shared rigs for those 150 countries.
+The remaining 46 retain their earlier rigs while their images are being made.
+Some supplied costume flags differ from the filenames; mapping follows the
+user's explicit filename instruction. See `docs/COUNTRY-ARTWORK-REVIEW.md`.
+
+The earlier assets below remain preserved for fallback rendering and provenance.
+
 `japan-poses.png` and `pakistan-poses.png` were prepared with the image-generation
 editing tool from the four-pose character images supplied by the user in this
 conversation. Both contain idle, punch, kick and block key poses on transparency.

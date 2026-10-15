@@ -1,17 +1,20 @@
 # NationClash
 
-**Play without Unity:** the new [standalone browser edition](browser/index.html)
-runs in Chrome or Edge. Download `NationClash.html`, right-click it and choose
-**Open with > Google Chrome / Microsoft Edge**, pick a country, then **Enter the
-arena**. The default opponent is a computer. No server, account, installation or
-external downloads are needed. See [browser controls and checks](browser/README.md).
+**Play without Unity:** download [NationClash-Windows.zip](downloads/NationClash-Windows.zip),
+right-click → **Extract All**, then open the extracted `NationClash.html` in
+Chrome or Edge. Keep its `country-art` folder beside the HTML. Pick a country,
+then **Enter the arena**. No server, account, installation or internet is needed
+after extracting the complete ZIP. See [browser controls](browser/README.md).
 
-The browser edition has **196 country representatives**, flag costumes, **10
+The browser edition has **196 country representatives**, **10
 selectable landmark arenas**, computer/local play, music and spoken Fight/KO cues.
-The roster is 193 UN members plus Palestine, Vatican City and Taiwan. Shared
-textured fighter rigs have individual appearance profiles; Pakistan and Japan use
-the supplied artwork. Attacks share visible contact geometry with collision checks.
-The complete offline HTML is about 12 MB. See [browser validation](docs/WORLD-VALIDATION.md).
+The roster is 193 UN members plus Palestine, Vatican City and Taiwan.
+**150 country fighters now use the supplied eight-pose country PNGs**, mapped
+by their filenames; 46 retain the previous textured fighters while their images
+are being made. Costumes are preserved as supplied: some painted flags differ
+from their filenames. See [artwork review](docs/COUNTRY-ARTWORK-REVIEW.md).
+Attacks share visible contact geometry with collision checks. Full-size country
+artwork loads only for selected fighters. See [download validation](docs/DOWNLOAD-VALIDATION.md).
 The Unity/C# foundation below remains a separate project.
 
 Original Unity/C# 2.5D fighting-game foundation, implementing **Phase 1** of the

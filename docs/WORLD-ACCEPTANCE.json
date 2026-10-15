@@ -1,9 +1,9 @@
 {
-  "startedAt": "2026-10-14T16:45:26.989Z",
+  "startedAt": "2026-10-15T11:05:04.556Z",
   "document": {
-    "path": "/workspace/nations-clash/browser/index.html",
-    "bytes": 12103349,
-    "sha256": "c04432a29db1300b2a828c97a0c69b8b381b407ad2f45ba18b0ede381dfa0449"
+    "path": "artifacts/country-package-check/NationClash.html",
+    "bytes": 10549992,
+    "sha256": "3661341f60667a7c8e01668e9dd5ebfaada24e73ef918171f1d0e7d4877dd942"
   },
   "checks": [
     {
@@ -17,13 +17,22 @@
       "countrySelections": 196
     },
     {
-      "name": "196 visually distinct rendered fighters and every archetype attack pose",
+      "name": "150 supplied country sprites, 46 retained fighters and every archetype attack pose",
       "status": "passed",
       "fighters": 196,
+      "supplied": 150,
+      "retained": 46,
       "poseFixtures": 96
     },
     {
-      "name": "production flag costume drawing preserves emblem orientation",
+      "name": "150 supplied fighters: 2400 visible melee contacts, both stances/facings, all eight poses, bounded decoded cache",
+      "status": "passed",
+      "fixtures": 2400,
+      "countries": 150,
+      "maxDecodedAtlases": 6
+    },
+    {
+      "name": "fallback fighter flag drawing preserves emblem orientation",
       "status": "passed",
       "sampleCountries": [
         "pk",
@@ -86,28 +95,28 @@
     }
   ],
   "screenshots": [
-    "/workspace/artifacts/NationClash-World-roster-desktop.png",
-    "/workspace/artifacts/NationClash-World-flag-orientation.png",
-    "/workspace/artifacts/NationClash-World-pakistan-impact.png",
-    "/workspace/artifacts/NationClash-World-mirrored-kick.png",
-    "/workspace/artifacts/NationClash-World-match-result.png",
-    "/workspace/artifacts/NationClash-World-arena-lahore.png",
-    "/workspace/artifacts/NationClash-World-arena-times-square.png",
-    "/workspace/artifacts/NationClash-World-arena-tokyo.png",
-    "/workspace/artifacts/NationClash-World-arena-paris.png",
-    "/workspace/artifacts/NationClash-World-arena-great-wall.png",
-    "/workspace/artifacts/NationClash-World-arena-rio.png",
-    "/workspace/artifacts/NationClash-World-arena-giza.png",
-    "/workspace/artifacts/NationClash-World-arena-london.png",
-    "/workspace/artifacts/NationClash-World-arena-sydney.png",
-    "/workspace/artifacts/NationClash-World-arena-dubai.png",
-    "/workspace/artifacts/NationClash-World-computer-match.png",
-    "/workspace/artifacts/NationClash-World-mobile-roster.png",
-    "/workspace/artifacts/NationClash-World-mobile-fight.png",
-    "/workspace/artifacts/NationClash-World-mobile-landscape-fight.png"
+    "artifacts/country-package-validation/NationClash-World-roster-desktop.png",
+    "artifacts/country-package-validation/NationClash-World-flag-orientation.png",
+    "artifacts/country-package-validation/NationClash-World-pakistan-impact.png",
+    "artifacts/country-package-validation/NationClash-World-mirrored-kick.png",
+    "artifacts/country-package-validation/NationClash-World-match-result.png",
+    "artifacts/country-package-validation/NationClash-World-arena-lahore.png",
+    "artifacts/country-package-validation/NationClash-World-arena-times-square.png",
+    "artifacts/country-package-validation/NationClash-World-arena-tokyo.png",
+    "artifacts/country-package-validation/NationClash-World-arena-paris.png",
+    "artifacts/country-package-validation/NationClash-World-arena-great-wall.png",
+    "artifacts/country-package-validation/NationClash-World-arena-rio.png",
+    "artifacts/country-package-validation/NationClash-World-arena-giza.png",
+    "artifacts/country-package-validation/NationClash-World-arena-london.png",
+    "artifacts/country-package-validation/NationClash-World-arena-sydney.png",
+    "artifacts/country-package-validation/NationClash-World-arena-dubai.png",
+    "artifacts/country-package-validation/NationClash-World-computer-match.png",
+    "artifacts/country-package-validation/NationClash-World-mobile-roster.png",
+    "artifacts/country-package-validation/NationClash-World-mobile-fight.png",
+    "artifacts/country-package-validation/NationClash-World-mobile-landscape-fight.png"
   ],
   "errors": [],
   "externalRequests": [],
   "status": "passed",
-  "finishedAt": "2026-10-14T16:47:31.631Z"
+  "finishedAt": "2026-10-15T11:06:35.399Z"
 }

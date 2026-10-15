@@ -42,8 +42,13 @@
     }
     SPRITE_ART[id]=metadata;return metadata;
   }
-  function hurtbox(f){return {left:f.x-GEOMETRY.bodyRadius,right:f.x+GEOMETRY.bodyRadius,
-    bottom:f.y,top:f.y+(f.low&&f.y===0?GEOMETRY.crouchHeight:GEOMETRY.height)};}
+  function hurtbox(f){
+    const art=SPRITE_ART[f.data.id];
+    const low=(f.move?f.move.low:f.low)&&f.y===0;
+    let height=low?(art?.crouchHeight||GEOMETRY.crouchHeight):GEOMETRY.height;
+    if(low&&art?.sourceName&&f.move){const frame=art.frames[f.move.visualPose];height=f.move.visualLowWarp?(frame.h-frame.baseline+frame.tipY)*art.scale+f.move.height:frame.h*art.scale*(f.move.visualScaleY||1);}
+    return {left:f.x-GEOMETRY.bodyRadius,right:f.x+GEOMETRY.bodyRadius,bottom:f.y,top:f.y+height};
+  }
   function contact(f){
     if(!f.move)return null;
     const m=f.move,y=f.y+m.height,x=f.x+f.facing*m.reach;
@@ -79,16 +84,29 @@
     const art=SPRITE_ART[data.id];
     if(art){
       move.visualPose=['heavy','special','ultimate'].includes(action)?'kick':'punch';
+      if(action==='break'&&art.frames.powerPunch)move.visualPose='powerPunch';
+      if(low&&art.sourceName){
+        if(move.visualPose==='kick')move.visualPose='lowKick';
+        else if(art.hasLowPunch)move.visualPose='lowPunch';
+        else move.visualLowWarp=true;
+      }
       const pose=art.frames[move.visualPose];
       const authoredReach=(pose.tipX-pose.pivot)*art.scale;
       const authoredHeight=(pose.baseline-pose.tipY)*art.scale;
       if(['light','heavy','break'].includes(action)){
-        move.reach=authoredReach;move.height=authoredHeight;
+        move.reach=authoredReach;move.height=art.sourceName?Math.min(authoredHeight,2.35):authoredHeight;
       }
+      if(art.sourceName&&action==='throw')move.height=authoredHeight;
       move.visualScaleX=move.reach/authoredReach;
       move.visualScaleY=(low?.65:move.height)/authoredHeight;
+      if(low&&art.sourceName){
+        move.height=move.visualLowWarp ? .65 : authoredHeight;
+        if(['light','heavy','break'].includes(action))move.reach=authoredReach;
+        move.visualScaleX=move.reach/authoredReach;
+        move.visualScaleY=1;
+      }
     }
-    if(low)move.height=.65;
+    if(low&&!art?.sourceName)move.height=.65;
     if(action==='light'&&combo)move.damage+=combo*8;
     return move;
   }

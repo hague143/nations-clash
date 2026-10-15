@@ -70,11 +70,16 @@ Use an up-to-date Chrome or Edge browser.
 Move A/D. Jump W. Crouch S. Block F. Attacks J/K/L.
 Guard break U. Throw I. Ultimate O. Pause Escape.
 
-Includes the agreed 196 countries, national flag costumes, 10 selectable arenas,
+Keep the country-art folder beside NationClash.html. It contains the supplied
+fighter images and loads only the fighters selected for a match.
+
+Includes the agreed 196 countries (150 supplied fighters, 46 retained fighters),
+the supplied costumes, 10 selectable arenas,
 computer/local modes, music, Fight/KO announcements and strike sounds.
 """
 credits = (ROOT / "browser/assets/README.md").read_text()
 credits += "\n\n" + (ROOT / "browser/assets/audio/README.md").read_text()
+credits += "\n\n" + (ROOT / "browser/assets/countries/README.md").read_text()
 credits += "\n\nNational flags: lipis/flag-icons 7.5.0\n"
 credits += (ROOT / "browser/assets/flags/LICENSE.txt").read_text()
 credits += "\nDownload optimization: PNG sources remain intact; the downloadable game embeds WebP variants at the same dimensions. Its inline program is gzip compressed.\n"
@@ -83,9 +88,14 @@ with ZipFile(archive, "w", ZIP_DEFLATED, compresslevel=9) as zip_file:
     zip_file.writestr("NationClash.html", html)
     zip_file.writestr("START-HERE.txt", readme.replace("\n", "\r\n"))
     zip_file.writestr("CREDITS.txt", credits)
+    zip_file.writestr("ARTWORK-NOTES.txt", (ROOT / 'docs/COUNTRY-ARTWORK-REVIEW.md').read_text())
+    zip_file.writestr("ARTWORK-INVENTORY.json", (ROOT / 'artwork/country-fighters/intake.json').read_bytes())
+    for source in sorted((ROOT / 'browser/country-art').glob('*.js')):
+        zip_file.write(source, 'country-art/' + source.name)
 with ZipFile(archive) as zip_file:
     assert zip_file.testzip() is None
     assert zip_file.read("NationClash.html") == game.read_bytes()
+    assert len([n for n in zip_file.namelist() if n.startswith('country-art/')]) == 150
 OUT.chmod(0o755)
 for path in (game, archive):
     path.chmod(0o644)

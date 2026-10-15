@@ -22,4 +22,5 @@ Tests/Compatibility/obj/
 Assets/Generated/
 Assets/Scenes/Generated/
 artifacts/
+browser/country-art/
 __pycache__/

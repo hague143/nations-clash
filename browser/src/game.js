@@ -1,7 +1,7 @@
 (() => {
  'use strict';
  const C=window.NationCombat,{Fight,ROSTER,clamp,contact,active,getMoveSpec}=C;
- const F=window.NationFighters,S=window.NationSprites,A=window.NationArenas;
+ const F=window.NationFighters,S=window.NationSprites,T=window.NationCountrySprites,A=window.NationArenas;
  const $=id=>document.getElementById(id),canvas=$('arena'),ctx=canvas.getContext('2d');
  const IMAGE_DATA={japan:'/* JAPAN_IMAGE_DATA */',pakistan:'/* PAKISTAN_IMAGE_DATA */',heads:'/* HEADS_IMAGE_DATA */',body:'/* BODY_IMAGE_DATA */'};
  const audio=new window.NationAudio.AudioDirector({enabled:true,volume:.75});
@@ -16,7 +16,7 @@
  function filtered(){const query=fold($('country-search').value),region=$('region-filter').value;
   return ROSTER.map((data,index)=>({data,index})).filter(({data})=>(region==='All'||data.region===region)&&(!query||fold([data.country,data.name,...(data.aliases||[])].join(' ')).includes(query)));
  }
- function portrait(c){return S.METADATA[c.id]?S.portrait(c,assets):F.portrait(c,assets,{width:240,height:270});}
+ function portrait(c){return T.hasArt(c.id)?T.portrait(c):S.METADATA[c.id]?S.portrait(c,assets):F.portrait(c,assets,{width:240,height:270});}
  function roster(){
   const matches=filtered(),pages=Math.max(1,Math.ceil(matches.length/PAGE_SIZE));pageIndex=clamp(pageIndex,0,pages-1);
   $('roster').innerHTML=matches.slice(pageIndex*PAGE_SIZE,(pageIndex+1)*PAGE_SIZE).map(({data:c,index:i})=>{
@@ -40,15 +40,20 @@
  function clearInputs(){keys.clear();holds.clear();actions[0]=[];actions[1]=[];document.querySelectorAll('.pressed').forEach(b=>b.classList.remove('pressed'));}
  async function start(){
   if(!assetsReady||starting)return;starting=true;$('start').disabled=true;
+  const chosen=selected.map(i=>ROSTER[i]),settings={mode:$('mode').value,difficulty:$('difficulty').value,arena:$('arena-select').value};
   try{
-   audio.stop();match={mode:$('mode').value,difficulty:$('difficulty').value,arena:$('arena-select').value};audio.setArena(match.arena);await audio.unlock();
-   fight=new Fight(ROSTER[selected[0]],ROSTER[selected[1]]);paused=false;accumulator=0;previousPhase=fight.phase;clearInputs();
+   audio.stop();audio.setArena(settings.arena);const audioUnlock=audio.unlock();
+   $('start').textContent='LOADING SELECTED FIGHTERS…';
+   await Promise.all([T.ensure(chosen.map(c=>c.id),assets),audioUnlock]);
+   match=settings;
+   fight=new Fight(chosen[0],chosen[1]);paused=false;accumulator=0;previousPhase=fight.phase;clearInputs();
    $('selection').classList.add('hidden');$('game').classList.remove('hidden');$('overlay').classList.add('hidden');
    $('left-name').textContent=fight.left.data.country;$('right-name').textContent=fight.right.data.country;$('left-style').textContent=fight.left.data.style;$('right-style').textContent=fight.right.data.style;
    $('stage-name').textContent=A.ARENAS.find(a=>a.id===match.arena).name.toUpperCase();$('match-mode').textContent=match.mode==='ai'?'YOU VS COMPUTER · FIRST TO TWO ROUNDS':'LOCAL TWO PLAYER · FIRST TO TWO ROUNDS';
    $('combat-hint').textContent=match.mode==='local'?'Player 2: arrows move/jump/crouch, right Ctrl block, numpad 1–6 attacks. Both players follow the same combat rules.':'Move into range with A / D. J → J → K launches; L follows with a slam. Hold S for low attacks. Press I quickly to escape a grab. O needs a full meter.';
    window.scrollTo({top:0,behavior:'smooth'});canvas.tabIndex=0;canvas.focus({preventScroll:true});hud();draw(0);
-  }catch(error){console.error(error);$('start').textContent='START FAILED · RETRY';$('arena-description').textContent=error.message;}
+   $('start').textContent='ENTER THE ARENA';
+  }catch(error){audio.stop();console.error(error);$('start').textContent='START FAILED · RETRY';$('arena-description').textContent=error.message;}
   finally{starting=false;$('start').disabled=!assetsReady;}
  }
  $('start').onclick=start;$('rematch').onclick=start;
@@ -70,7 +75,7 @@
  }
  $('sound').onclick=()=>{audio.setEnabled(!audio.enabled);$('sound').textContent=audio.enabled?'SOUND ON':'SOUND OFF';$('sound').classList.toggle('sound-on',audio.enabled);$('sound').setAttribute('aria-pressed',String(audio.enabled));};$('volume').addEventListener('input',()=>audio.setVolume(Number($('volume').value)/100));
  const line=(a,b,width,color)=>{ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.stroke();},screen=x=>640+x*C.GEOMETRY.pixelsPerUnit;
- function renderFighter(target,f,view={}){const options={time:0,frame:fight?.frame||0,originX:640,floor:551,pixelsPerUnit:78,...view};const result=S.METADATA[f.data.id]?S.draw(target,f,options,assets):F.draw(target,f,options,assets);if(result)diagnostics.push(result.diagnostic||{countryId:f.data.id,facing:f.facing,flagMirrored:false,pose:f.move?.id||f.pose});return result;}
+ function renderFighter(target,f,view={}){const options={time:0,frame:fight?.frame||0,originX:640,floor:551,pixelsPerUnit:78,...view};const result=T.hasArt(f.data.id)?T.draw(target,f,options,assets):S.METADATA[f.data.id]?S.draw(target,f,options,assets):F.draw(target,f,options,assets);if(result)diagnostics.push(result.diagnostic||{countryId:f.data.id,facing:f.facing,flagMirrored:false,pose:f.move?.id||f.pose});return result;}
  function draw(t){
   if(!fight||!assetsReady)return;ctx.clearRect(0,0,1280,720);A.drawScene(ctx,match?.arena||$('arena-select').value,t);diagnostics.length=0;ctx.save();ctx.translate(fight.hitstop>0?Math.sin(t*125)*2:0,0);
   const results=[];for(const f of [fight.left,fight.right])results.push(renderFighter(ctx,f,{time:t,frame:fight.frame}));

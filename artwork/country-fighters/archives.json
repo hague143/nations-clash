@@ -1,0 +1,35 @@
+{
+  "source": "User-provided Drive folder",
+  "archives": [
+    {
+      "file": "Country_Fighters_Part_1_of_5.zip",
+      "bytes": 62721179,
+      "sha256": "3d27088a7568d322e418284beee2933742f950a2af298257d38090cd73b10ec6",
+      "pngCount": 30
+    },
+    {
+      "file": "Country_Fighters_Part_2_of_5.zip",
+      "bytes": 64356296,
+      "sha256": "423d69ce0c082bcaaac66618d50a4377f3fe5bb5dc6ba4187acc5e8488bd8e3c",
+      "pngCount": 30
+    },
+    {
+      "file": "Country_Fighters_Part_3_of_5.zip",
+      "bytes": 64106050,
+      "sha256": "1d35671cead9e7a49a620850db004e6c6b3416d13af23bac12ace699491f39bd",
+      "pngCount": 30
+    },
+    {
+      "file": "Country_Fighters_Part_4_of_5.zip",
+      "bytes": 60533023,
+      "sha256": "dd9c2d5bb31d9892e4302ca1c44bb9b6b4068f81db1facb795659a5613754e31",
+      "pngCount": 30
+    },
+    {
+      "file": "Country_Fighters_Part_5_of_5.zip",
+      "bytes": 65303298,
+      "sha256": "06a5b16765618602698111cf71ebb743cbeb25a75e8a516406434b95227eb6bc",
+      "pngCount": 30
+    }
+  ]
+}

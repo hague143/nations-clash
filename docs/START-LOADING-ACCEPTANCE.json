@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "before": {
+    "ids": [
+      "pk",
+      "jp"
+    ],
+    "arena": "lahore"
+  },
+  "after": {
+    "ids": [
+      "pk",
+      "jp"
+    ],
+    "arena": "lahore",
+    "audioArena": "lahore",
+    "rendered": [
+      "pk",
+      "jp"
+    ]
+  }
+}

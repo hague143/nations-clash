@@ -8,5 +8,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - run: node --test Tests/Browser/roster.test.cjs Tests/Browser/combat.test.cjs Tests/Browser/combat-matrix.test.cjs Tests/Browser/fighters.test.cjs
+      - run: node --test Tests/Browser/roster.test.cjs Tests/Browser/combat.test.cjs Tests/Browser/combat-matrix.test.cjs Tests/Browser/fighters.test.cjs Tests/Browser/country-art.test.cjs
       - run: node tools/build-browser.mjs
