@@ -1,6 +1,47 @@
 {
   "assignment": "Filename plus explicit one-to-one reviewed flag corrections in assignments.json",
   "observations": {
+    "st": "Green/white/blue costume resembles Sierra Leone; no clear Sao Tome yellow/red triangle and two black stars.",
+    "sl": "Red/yellow/green with a black star resembles Ghana, rather than Sierra Leone green/white/blue.",
+    "mc": "White/black with red trim; the Monaco red/white flag design is not clearly identifiable. Please confirm intended costume.",
+    "si": "Blue/red/white costume has cross-like ornament; the Slovenia mountain shield is not clear. Please confirm intended costume."
+  },
+  "correctedDestinations": [
+    "ch",
+    "ee",
+    "er",
+    "es",
+    "fj",
+    "ga",
+    "ge",
+    "gm",
+    "kr",
+    "sd",
+    "se",
+    "so",
+    "sr",
+    "ss",
+    "za"
+  ],
+  "unresolvedCostumeCountries": [
+    "st",
+    "sl"
+  ],
+  "confirmationRequestedCountries": [
+    "mc",
+    "si"
+  ],
+  "sharedCostumeFamilies": [
+    {
+      "countries": [
+        "gh",
+        "sl"
+      ],
+      "observation": "The unchanged Sierra Leone sheet still has a Ghana-like black star and red/yellow/green costume."
+    }
+  ],
+  "faceUniqueness": "Shared base faces and poses still occur in the supplied art; distinct PNG hashes do not establish 196 independently designed faces.",
+  "historicalObservations": {
     "ao": "Green/yellow/red costume; missing the distinctive Angola red/black and yellow cog/machete design.",
     "br": "Red/white crescent-and-star design, visually resembling Turkey.",
     "ch": "Green/white/red with a yellow star resembles Suriname.",
@@ -53,137 +94,38 @@
     "tr": "White/red Japanese-style martial gi, without a visible Turkey crescent/star.",
     "za": "Red/yellow Spanish costume rather than the South Africa Y flag."
   },
-  "correctedDestinations": [
-    "ch",
-    "ee",
-    "er",
-    "es",
-    "fj",
-    "ga",
-    "ge",
-    "gm",
-    "kr",
-    "sd",
-    "se",
-    "so",
-    "sr",
-    "ss",
-    "za"
-  ],
-  "unresolvedCostumeCountries": [
+  "resolvedBySelected36": [
     "ao",
     "br",
     "cn",
-    "de",
     "dm",
+    "sz",
     "et",
     "fi",
     "fr",
-    "gd",
+    "de",
     "gh",
-    "gn",
     "gr",
-    "hn",
+    "gd",
+    "gn",
     "ht",
+    "hn",
     "hu",
     "jp",
-    "ma",
-    "me",
-    "mn",
+    "mv",
     "mt",
     "mu",
-    "mv",
     "mx",
+    "mn",
+    "me",
+    "ma",
     "om",
-    "pa",
-    "pe",
     "pw",
+    "pa",
     "py",
+    "pe",
     "sa",
     "sb",
-    "sl",
-    "st",
-    "sz",
     "tr"
-  ],
-  "confirmationRequestedCountries": [
-    "mc",
-    "si"
-  ],
-  "sharedCostumeFamilies": [
-    {
-      "countries": [
-        "mt",
-        "mn",
-        "me",
-        "mk",
-        "pe"
-      ],
-      "observation": "Repeated North Macedonia sunburst costume family; different sheets, not exact duplicate pixels."
-    },
-    {
-      "countries": [
-        "pk",
-        "mx"
-      ],
-      "observation": "Pakistan-like green/white crescent costume family."
-    },
-    {
-      "countries": [
-        "ad",
-        "sa"
-      ],
-      "observation": "Andorra-like blue/yellow/red and coat-of-arms family."
-    },
-    {
-      "countries": [
-        "by",
-        "gh"
-      ],
-      "observation": "Belarus-like white/red embroidery and green family."
-    },
-    {
-      "countries": [
-        "bz",
-        "hu"
-      ],
-      "observation": "Belize-like blue/red/white coat-of-arms family."
-    },
-    {
-      "countries": [
-        "al",
-        "fr"
-      ],
-      "observation": "Albania-like red/black eagle family."
-    },
-    {
-      "countries": [
-        "ly",
-        "om"
-      ],
-      "observation": "Libya-like red/black/green crescent family."
-    },
-    {
-      "countries": [
-        "li",
-        "pw"
-      ],
-      "observation": "Liechtenstein-like blue/red/gold family."
-    },
-    {
-      "countries": [
-        "mg",
-        "mv"
-      ],
-      "observation": "Madagascar-like white/red/green family."
-    },
-    {
-      "countries": [
-        "my",
-        "mu"
-      ],
-      "observation": "Malaysia-like striped crescent family."
-    }
-  ],
-  "faceUniqueness": "Many supplied faces, bodies and pose patterns resemble a shared base. File/pixel uniqueness does not establish 196 unique faces. No claim of 196 independently designed faces is made."
+  ]
 }

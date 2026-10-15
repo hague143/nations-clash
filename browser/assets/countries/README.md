@@ -7,14 +7,17 @@ batches 16–20. No country PNG is missing. Filename mapping is the default;
 unchanged. Combined runtime metadata carries `sourceCountryId`; the builder
 selects that source's atlas and portrait together. Every source is used once.
 
-34 unresolved costumes need replacement and two need visual confirmation.
+Two unchanged costumes still need replacement (Sao Tome and Principe, Sierra Leone);
+Monaco and Slovenia need confirmation. The latest archive contains 32 changed
+and four unchanged PNGs. Turkey has four supplied poses; the other 195 have eight.
+Its missing crouch/KO use explicit adapted states.
 Shared source faces/designs are not described as 196 unique faces. Read
 `docs/COUNTRY-ARTWORK-REVIEW.md` and the replacement checklist.
 
 Original source PNGs and hashes are in `artwork/country-fighters/`. Runtime
-atlases isolate the eight figures with their transparency, remove detached
+atlases isolate the supplied figures with their transparency, remove detached
 background specks farther than six pixels from the connected figure, scale to
-360-pixel standing height, and encode WebP at quality 88. Five touching sheets
+360-pixel standing height, and encode WebP at quality 88. Touching sheets
 have reviewed separation seams; a few already-overlapping source edges cannot
 be reconstructed by cropping. Painted RGB colors and designs are not repainted.
 
@@ -39,3 +42,7 @@ python3 tools/package-browser.py
 ```
 
 No Python or build tools are needed to play the extracted ZIP.
+
+The downloadable HTML embeds all 196 atlases as inert payloads and needs no
+companion folder. Hosted builds retain separate lazy scripts. Both paths decode
+only selected fighters and keep the same six-atlas cache.

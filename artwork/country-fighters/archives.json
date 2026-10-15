@@ -60,6 +60,14 @@
       "bytes": 12536820,
       "sha256": "dbe0159e3b2f4d6d3c800e8ebaaa266853bb9ad8a7bae96a6899b453bf729048",
       "pngCount": 6
+    },
+    {
+      "file": "Country_Fighters_Selected_36.zip",
+      "bytes": 68184777,
+      "sha256": "ca58edb84c24fbc95df6b4492b347439e88f8fc588d11a1ec6a324645f7f4447",
+      "pngCount": 36,
+      "replacedCountrySheets": 32,
+      "unchangedCountrySheets": 4
     }
   ]
 }

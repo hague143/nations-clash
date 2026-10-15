@@ -1,0 +1,297 @@
+{
+  "archive": "Country_Fighters_Selected_36.zip",
+  "received": 36,
+  "changed": 32,
+  "unchanged": 4,
+  "previousSourcesPreservedInGitCommit": "8d2db835d01bdec6166b36bdbacc3d14965a0fc5",
+  "images": [
+    {
+      "id": "ao",
+      "country": "Angola",
+      "file": "Angola.png",
+      "previousSha256": "c381be1b3728be6323707843974d367364cbe25b46bffefb6b246e5afca0ef5c",
+      "sha256": "59c4d09c6d13b5e508e07a2c3e334a78e79597ac4630e08e1e9ecc9a7c4059f0",
+      "changed": true
+    },
+    {
+      "id": "br",
+      "country": "Brazil",
+      "file": "Brazil.png",
+      "previousSha256": "f90c212bc71a5ba47b64be577dbf42417b8234113cb6949fbbd3f2ef6c0c1e8d",
+      "sha256": "02d980dfb3465b715923b953ac00e90a8e89aa9e13ebea901a35d7b46716db15",
+      "changed": true
+    },
+    {
+      "id": "cn",
+      "country": "China",
+      "file": "China.png",
+      "previousSha256": "1974c3bd74096892ca70eee87c55cff0851eb00d230f7d102809363452819bd8",
+      "sha256": "24773d01be275edb2a5e8b775ebde82e3496b511e58224fe552436fbbfdd8d1f",
+      "changed": true
+    },
+    {
+      "id": "dm",
+      "country": "Dominica",
+      "file": "Dominica.png",
+      "previousSha256": "d1f67cfe0cfc6ad83a8640eba484f0242deda4f73f66c3cbcda434a8e36e74e6",
+      "sha256": "ce13cc117566231a8ba1a4d637aef5ead57e9222ba3fa667009b2f58a63e0d87",
+      "changed": true
+    },
+    {
+      "id": "sz",
+      "country": "Eswatini",
+      "file": "Eswatini.png",
+      "previousSha256": "982459ed8c74b80975e17befeb10d46a018375221d63b46e82e6dbe639bbd8ac",
+      "sha256": "0dea253c340a1c7a7f2f6b385cb16bfd32738fea9f3fadf0800583bbbdb8b2c7",
+      "changed": true
+    },
+    {
+      "id": "et",
+      "country": "Ethiopia",
+      "file": "Ethiopia.png",
+      "previousSha256": "c3519b70195257655a747f194763c87d1ac67ed21caeebe5b816f7ba205e4a2f",
+      "sha256": "4899c9b23898ea33ae36935c879f1d13d24590d9ef521197e6fd16074c576bd2",
+      "changed": true
+    },
+    {
+      "id": "fi",
+      "country": "Finland",
+      "file": "Finland.png",
+      "previousSha256": "f2e3d4ef883b277d0b27e1d007224c3d12a29aaeaea2e479d3bff96f0d0cc6ce",
+      "sha256": "e2eed8d3da044044b906fcf13080005fd4387e98546267d0f420286304c8a53b",
+      "changed": true
+    },
+    {
+      "id": "fr",
+      "country": "France",
+      "file": "France.png",
+      "previousSha256": "5e61599aaab0bb003a73372226922e59f1dc55c600c1bf0e0c68d9d7bac1977f",
+      "sha256": "1a0eefd86477b94b12d041437fa6751c9722ea9beb60bf35aa280775bd1a807c",
+      "changed": true
+    },
+    {
+      "id": "de",
+      "country": "Germany",
+      "file": "Germany.png",
+      "previousSha256": "0dea253c340a1c7a7f2f6b385cb16bfd32738fea9f3fadf0800583bbbdb8b2c7",
+      "sha256": "f517c95588ba180c81a58ae7e55a3f556b62a96eace664a9ccf35034dd452bfc",
+      "changed": true
+    },
+    {
+      "id": "gh",
+      "country": "Ghana",
+      "file": "Ghana.png",
+      "previousSha256": "9808c237ff9941e32c78f2500d2cf0d97b2d965504c6373dd24c815f12146d10",
+      "sha256": "e935f886b218d0fb08b781ef0137090283788c9b7400c293789d033744708b94",
+      "changed": true
+    },
+    {
+      "id": "gr",
+      "country": "Greece",
+      "file": "Greece.png",
+      "previousSha256": "d30fdb1368bb38276b5b37bbef044caa69c3b85311e5ade356f83637fbc23955",
+      "sha256": "4180b2769fa55d08c26ebb8e915611a271103972b635634293c95129da83b082",
+      "changed": true
+    },
+    {
+      "id": "gd",
+      "country": "Grenada",
+      "file": "Grenada.png",
+      "previousSha256": "c5fe0a4cfd37b5a753f9a78991d442483965eccb5a5d687db9c5164c4fb426f8",
+      "sha256": "fbd3178d5468a87e51cfa03c199ee3fbd820ff0856b40c906fd23509d2bcb68a",
+      "changed": true
+    },
+    {
+      "id": "gn",
+      "country": "Guinea",
+      "file": "Guinea.png",
+      "previousSha256": "0bd8092e578d6889a532760b36dad3ccc8312627261748a3fd07add860b964fe",
+      "sha256": "cdb517d5510484a99ff554d1f4b393a0bad4d603b4e59208135f131c43f645f0",
+      "changed": true
+    },
+    {
+      "id": "ht",
+      "country": "Haiti",
+      "file": "Haiti.png",
+      "previousSha256": "070c38968c2cc05e201374c3084a793ec3680c6a50738d80ffb43f1ee7ee97c7",
+      "sha256": "a6ee8e8334d1a477c0026abac9e83414cfeb30ca79c91ba91d7ef83a37d8ad39",
+      "changed": true
+    },
+    {
+      "id": "hn",
+      "country": "Honduras",
+      "file": "Honduras.png",
+      "previousSha256": "1666973e6253a69065cfe94e5891d77cab1aaabd92a0ef5f9ab3c06c7f7107b7",
+      "sha256": "33d71cef277460705b61b984bb27874b32f095d294df968c2f56f32cc602f9aa",
+      "changed": true
+    },
+    {
+      "id": "hu",
+      "country": "Hungary",
+      "file": "Hungary.png",
+      "previousSha256": "9571ee0d2f5767dcab8f7429cda000920b267951931999a944422d2ef1e12b73",
+      "sha256": "00e08b0b0369b586d65b90f57f02d0fb3af3c48b4d41c42762e803a53939ba1f",
+      "changed": true
+    },
+    {
+      "id": "jp",
+      "country": "Japan",
+      "file": "Japan.png",
+      "previousSha256": "fa5853c24ce2e46830001e1fd120559bf3e850649f0f09a6f7ae84196e1a0fc9",
+      "sha256": "01d48d10ec0bbb965a488f0ca30bc3d541e1affd184a950ba3a0dd76a4e031da",
+      "changed": true
+    },
+    {
+      "id": "mv",
+      "country": "Maldives",
+      "file": "Maldives.png",
+      "previousSha256": "d16b613046e1dd76097ebb302b6d8d11994fb128861bbd627f44a10d75426cd5",
+      "sha256": "f1d2bea4acf923aff34cff12847b609764731f3efe6a8239c35f423eb7b10b81",
+      "changed": true
+    },
+    {
+      "id": "mt",
+      "country": "Malta",
+      "file": "Malta.png",
+      "previousSha256": "b98095c79780cb26632a736d50e7d15660d24ed79d8213001aedc8ec1941deb0",
+      "sha256": "2c760cc08fd9509cdf8b88c39af1834f63fb271d2c00aef34baba5c6fc2243a2",
+      "changed": true
+    },
+    {
+      "id": "mu",
+      "country": "Mauritius",
+      "file": "Mauritius.png",
+      "previousSha256": "77ab91b87243f3fcdd6ccc9f90d4ee988ac413f4b85497a16bcfe14e7fca8067",
+      "sha256": "7f69a6bcac76c0437ffabc1f97f9a197b476c068383325fe08459ba7992d9a44",
+      "changed": true
+    },
+    {
+      "id": "mx",
+      "country": "Mexico",
+      "file": "Mexico.png",
+      "previousSha256": "7335b87355ec1aef160a1d5fd33c27ffe6a3281c37b0e7d736e443a9f8270487",
+      "sha256": "0a02d097b8da5acef173bcd14fcf36bb32e2705e9ab2bd4b0d5f4f57684f96b5",
+      "changed": true
+    },
+    {
+      "id": "mc",
+      "country": "Monaco",
+      "file": "Monaco.png",
+      "previousSha256": "0312e753dd2bb73e88a8bbaedb621e70a5f307cc0cad2c50123009a3bbf156f3",
+      "sha256": "0312e753dd2bb73e88a8bbaedb621e70a5f307cc0cad2c50123009a3bbf156f3",
+      "changed": false
+    },
+    {
+      "id": "mn",
+      "country": "Mongolia",
+      "file": "Mongolia.png",
+      "previousSha256": "85cfaa459a71c3dd1a435674084484975fa982d08369bd681fa03deb8cc8626b",
+      "sha256": "e96a26105e8ffb1aef3090fda188a15365a6ae09fd75d0faa07524adf315e6cf",
+      "changed": true
+    },
+    {
+      "id": "me",
+      "country": "Montenegro",
+      "file": "Montenegro.png",
+      "previousSha256": "b837698f325468569b43274c02a15f4a0e4b9e4885ac0ddc81c19dfe47a0965f",
+      "sha256": "9ea655af481622ee162f367cf1286899a45ac0982196b20d21bfaf5c8d7c3d09",
+      "changed": true
+    },
+    {
+      "id": "ma",
+      "country": "Morocco",
+      "file": "Morocco.png",
+      "previousSha256": "33a901090fff01b1535a0eeb5e37fb4fe1167172a49e95f04dd969898e066518",
+      "sha256": "ddcb2394711bea8d6df294d6b536830c63861535b2c54877294e463fdb2d188b",
+      "changed": true
+    },
+    {
+      "id": "om",
+      "country": "Oman",
+      "file": "Oman.png",
+      "previousSha256": "13c4628a111bbe9fd944c7f9e35f80d5f9010830b20a6c35409e43995942c1dd",
+      "sha256": "4a05d579559a9b227058944a4a9c96abb3c289d94065b4096eb621714c82b86d",
+      "changed": true
+    },
+    {
+      "id": "pw",
+      "country": "Palau",
+      "file": "Palau.png",
+      "previousSha256": "203091489375e21b67277e013bc59a155a94a0bcf102dc1c1d273e14a92bf7f9",
+      "sha256": "e5a386d060d990d1054b5d4f73a8389f1b01007c6cf9a8b7251d241f2e7aedba",
+      "changed": true
+    },
+    {
+      "id": "pa",
+      "country": "Panama",
+      "file": "Panama.png",
+      "previousSha256": "2d26efb9b7d011e8741402fbd562cb3ad1424cf88e419b100bef01f4e84addbc",
+      "sha256": "c1b6029977dfd6e2ecd1ea11240c44cd119879e368f3e67e46b8782aee6c9df3",
+      "changed": true
+    },
+    {
+      "id": "py",
+      "country": "Paraguay",
+      "file": "Paraguay.png",
+      "previousSha256": "e75b572108d8f2ee6376db6bb3aead431210e076a3cb668cc582fd5b62999f96",
+      "sha256": "f9f5c20788ee64383aa93b39fea15f477291df60d9687430bbb7173aa469c5f7",
+      "changed": true
+    },
+    {
+      "id": "pe",
+      "country": "Peru",
+      "file": "Peru.png",
+      "previousSha256": "24fd8277498d0da6b222553a5f29b8c378d8a845883f8c281f07dd969b5b8288",
+      "sha256": "44e0f89cb204e78afc5c2b2b6c11398266331cbbab03f4bc1f012b8e1aa0967f",
+      "changed": true
+    },
+    {
+      "id": "st",
+      "country": "Sao Tome and Principe",
+      "file": "Sao Tome and Principe.png",
+      "previousSha256": "1c1c88d15f195fc215cd5641816dba633a5d27fee0b2d5f254c46e87f6434faf",
+      "sha256": "1c1c88d15f195fc215cd5641816dba633a5d27fee0b2d5f254c46e87f6434faf",
+      "changed": false
+    },
+    {
+      "id": "sa",
+      "country": "Saudi Arabia",
+      "file": "Saudi Arabia.png",
+      "previousSha256": "32bfa8889b5799beceb1ad550df57883868c26d106a78382bdfd2695e5d3e443",
+      "sha256": "4c12dd380d696757dbb7f5f066123cc1883967bd01469bb15c86a7d41121e15d",
+      "changed": true
+    },
+    {
+      "id": "sl",
+      "country": "Sierra Leone",
+      "file": "Sierra Leone.png",
+      "previousSha256": "7fe626b886a61e2e271c9068d3d3e64d8f2d11d62f3612347c28feeff53708dd",
+      "sha256": "7fe626b886a61e2e271c9068d3d3e64d8f2d11d62f3612347c28feeff53708dd",
+      "changed": false
+    },
+    {
+      "id": "si",
+      "country": "Slovenia",
+      "file": "Slovenia.png",
+      "previousSha256": "d3bfd86c3b3b575577696497a9e1d8287c243b7ad9e83f149174b4ff15dd5be5",
+      "sha256": "d3bfd86c3b3b575577696497a9e1d8287c243b7ad9e83f149174b4ff15dd5be5",
+      "changed": false
+    },
+    {
+      "id": "sb",
+      "country": "Solomon Islands",
+      "file": "Solomon Islands.png",
+      "previousSha256": "7d8a555612ea39321088aafcf78f326f69e4dfe1b0b7c98a5eeb19c004a6e20f",
+      "sha256": "78f3a28d6eb96ef3c7eb15dc4f9fbd22b42858ac65577c1666e7c0347472c589",
+      "changed": true
+    },
+    {
+      "id": "tr",
+      "country": "Turkey",
+      "file": "Turkey.png",
+      "previousSha256": "db60ee8bdc278643eef2a40eadf2c457751608e3bf72542b8f0c044a23ff50ed",
+      "sha256": "d74bd3be7de436de2fccba7f81d7b46530705886d4db63e632ac81183bfd04de",
+      "changed": true
+    }
+  ]
+}

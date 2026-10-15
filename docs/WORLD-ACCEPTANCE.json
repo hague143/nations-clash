@@ -1,9 +1,9 @@
 {
-  "startedAt": "2026-10-15T14:08:59.077Z",
+  "startedAt": "2026-10-15T18:52:27.786Z",
   "document": {
-    "path": "artifacts/country-package-check/NationClash.html",
-    "bytes": 12624748,
-    "sha256": "59213819779691a5c2bc7641d971537539f15cbcdae7e44df40acfc99f28e24a"
+    "path": "artifacts/selected36/package-check/NationClash.html",
+    "bytes": 104572020,
+    "sha256": "2c0ddb0a34f4683b5e88abcfe73d67b89ad087e8654c1d38bab29be1b9193258"
   },
   "checks": [
     {
@@ -25,11 +25,39 @@
       "poseFixtures": 96
     },
     {
-      "name": "196 supplied fighters: 3136 visible melee contacts, both stances/facings, all eight poses, bounded decoded cache",
+      "name": "196 supplied fighters: 3136 visible melee contacts, both stances/facings, every supplied pose, bounded decoded cache",
       "status": "passed",
       "fixtures": 3136,
       "countries": 196,
       "maxDecodedAtlases": 6
+    },
+    {
+      "name": "196 fighters: striking hand/foot stays visible over defender in both player slots and facings",
+      "status": "passed",
+      "fixtures": 3136,
+      "previouslyObscuredFixtures": 1362
+    },
+    {
+      "name": "four-pose Turkey sheet has grounded adapted crouch and KO",
+      "status": "passed",
+      "states": [
+        {
+          "pose": "crouch",
+          "bounds": {
+            "width": 134,
+            "height": 127,
+            "bottom": 440
+          }
+        },
+        {
+          "pose": "ko",
+          "bounds": {
+            "width": 204,
+            "height": 146,
+            "bottom": 437
+          }
+        }
+      ]
     },
     {
       "name": "fallback fighter flag drawing preserves emblem orientation",
@@ -56,6 +84,12 @@
     {
       "name": "actual knockout rounds, first-to-two result and rematch reset",
       "status": "passed"
+    },
+    {
+      "name": "Iraq versus Iran: real keyboard punch/kick hits and genuine whiffs, both stances and directions",
+      "status": "passed",
+      "hits": 8,
+      "whiffs": 8
     },
     {
       "name": "ten selectable landmarks enter matches and render distinct scenes",
@@ -95,28 +129,29 @@
     }
   ],
   "screenshots": [
-    "artifacts/batch16-20/package-validation/NationClash-World-roster-desktop.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-flag-orientation.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-pakistan-impact.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-mirrored-kick.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-match-result.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-lahore.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-times-square.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-tokyo.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-paris.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-great-wall.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-rio.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-giza.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-london.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-sydney.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-arena-dubai.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-computer-match.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-mobile-roster.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-mobile-fight.png",
-    "artifacts/batch16-20/package-validation/NationClash-World-mobile-landscape-fight.png"
+    "artifacts/selected36/package-validation/NationClash-World-roster-desktop.png",
+    "artifacts/selected36/package-validation/NationClash-World-flag-orientation.png",
+    "artifacts/selected36/package-validation/NationClash-World-pakistan-impact.png",
+    "artifacts/selected36/package-validation/NationClash-World-mirrored-kick.png",
+    "artifacts/selected36/package-validation/NationClash-World-match-result.png",
+    "artifacts/selected36/package-validation/NationClash-World-iraq-kick-impact.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-lahore.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-times-square.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-tokyo.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-paris.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-great-wall.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-rio.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-giza.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-london.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-sydney.png",
+    "artifacts/selected36/package-validation/NationClash-World-arena-dubai.png",
+    "artifacts/selected36/package-validation/NationClash-World-computer-match.png",
+    "artifacts/selected36/package-validation/NationClash-World-mobile-roster.png",
+    "artifacts/selected36/package-validation/NationClash-World-mobile-fight.png",
+    "artifacts/selected36/package-validation/NationClash-World-mobile-landscape-fight.png"
   ],
   "errors": [],
   "externalRequests": [],
   "status": "passed",
-  "finishedAt": "2026-10-15T14:10:33.954Z"
+  "finishedAt": "2026-10-15T18:54:39.068Z"
 }

@@ -6,6 +6,7 @@ dependency. Original PNG source assets are retained unchanged.
 import base64
 import gzip
 import hashlib
+import json
 import re
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -53,7 +54,17 @@ loader = """<script>
  }
 })();
 </script>""".replace("PACKED_PROGRAM", packed)
-html = html[:script.start()] + loader + html[script.end():]
+# Inert payloads are parsed as text rather than a giant JavaScript object.
+# Image decoding remains lazy and bounded in country-sprites.js. The downloaded
+# HTML therefore works by itself, including after moving it to another folder.
+metadata = json.loads((ROOT / 'browser/assets/countries/metadata.json').read_text())
+payloads = []
+for country, art in sorted(metadata.items()):
+    source_id = art.get('sourceCountryId', country)
+    encoded = base64.b64encode((ROOT / 'browser/assets/countries' / (source_id+'.webp')).read_bytes()).decode()
+    payloads.append('<script type="application/octet-stream" id="country-art-'+country+'">'+encoded+'</script>')
+assert len(payloads) == 196
+html = html[:script.start()] + '\n'.join(payloads) + '\n' + loader + html[script.end():]
 game = OUT / "NationClash-Play.html"
 game.write_text(html)
 readme = """NATIONCLASH WORLD ARENA - WINDOWS
@@ -70,8 +81,9 @@ Use an up-to-date Chrome or Edge browser.
 Move A/D. Jump W. Crouch S. Block F. Attacks J/K/L.
 Guard break U. Throw I. Ultimate O. Pause Escape.
 
-Keep the country-art folder beside NationClash.html. It contains the supplied
-fighter images and loads only the fighters selected for a match.
+NationClash.html contains all 196 fighters, portraits, flags, arenas and sounds.
+The HTML works by itself; there is no required country-art folder.
+The file is large: allow it to finish loading before selecting a match.
 
 Includes the agreed 196 countries (196 supplied fighters, no missing country sheets),
 the supplied costumes, 10 selectable arenas,
@@ -92,12 +104,13 @@ with ZipFile(archive, "w", ZIP_DEFLATED, compresslevel=9) as zip_file:
     zip_file.writestr("ARTWORK-INVENTORY.json", (ROOT / 'artwork/country-fighters/intake.json').read_bytes())
     zip_file.writestr('COUNTRY-ASSIGNMENTS.json', (ROOT / 'artwork/country-fighters/assignments.json').read_bytes())
     zip_file.writestr('REPLACEMENT-CHECKLIST.txt', (ROOT / 'docs/REPLACEMENT-ARTWORK-CHECKLIST.md').read_text())
-    for source in sorted((ROOT / 'browser/country-art').glob('*.js')):
-        zip_file.write(source, 'country-art/' + source.name)
+
 with ZipFile(archive) as zip_file:
     assert zip_file.testzip() is None
     assert zip_file.read("NationClash.html") == game.read_bytes()
-    assert len([n for n in zip_file.namelist() if n.startswith('country-art/')]) == 196
+    assert len(zip_file.namelist()) == 7
+    assert html.count('id="country-art-') == 196
+    assert not any(n.startswith('country-art/') for n in zip_file.namelist())
 OUT.chmod(0o755)
 for path in (game, archive):
     path.chmod(0o644)

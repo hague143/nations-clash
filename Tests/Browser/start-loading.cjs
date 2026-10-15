@@ -1,6 +1,6 @@
 const {chromium}=require('playwright'),http=require('node:http'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 (async()=>{
- const root=path.resolve('artifacts/country-package-check');let browser;
+ const root=path.resolve(process.env.NATIONCLASH_PACKAGE_DIR||'artifacts/country-package-check');let browser;
  const server=http.createServer((req,res)=>{const p=new URL(req.url,'http://localhost').pathname;const file=p==='/'?path.join(root,'NationClash.html'):/^\/country-art\/[a-z]{2}\.js$/.test(p)?path.join(root,p):null;if(!file||!fs.existsSync(file)){res.writeHead(404);res.end();return;}res.writeHead(200,{'Content-Type':p==='/'?'text/html':'text/javascript'});fs.createReadStream(file).pipe(res);});
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
  try{

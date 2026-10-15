@@ -19,7 +19,7 @@ from scipy import ndimage
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT = ['idle', 'walk', 'block', 'crouch', 'punch', 'kick', 'hit', 'ko']
 ORDERS = {
-    **dict.fromkeys(['mt', 'mn', 'me', 'mk', 'pe'],
+    **dict.fromkeys(['mk'],
                     ['idle', 'punch', 'kick', 'punch', 'crouch', 'lowPunch', 'jump', 'down']),
     **dict.fromkeys(['mm', 'nr', 'np', 'nz', 'kp'],
                     ['idle', 'punch', 'block', 'crouch', 'punch', 'kick', 'hit', 'ko']),
@@ -32,12 +32,46 @@ ORDERS = {
     'pl': ['idle', 'punch', 'kick', 'block', 'crouch', 'lowPunch', 'hit', 'down'],
 }
 # Touching figures in these supplied sheets require an explicit separation seam.
-SPLITS = {'mt': [470], 'pe': [475], 'pl': [465], 'ru': [390, 1085], 'ws': [1085]}
+SPLITS = {'pl': [465], 'ru': [390, 1085], 'ws': [1085],
+          **dict.fromkeys(['mx','om','pw','pa','pe','sb'], [1140])}
+FOUR_POSE_COUNTRIES = {'tr'}
 SPLIT_PATHS = {
+    **dict.fromkeys([(c,1140) for c in ['mx','om','pw','pa','pe','sb']],
+                   [(0,1180),(900,1160),(980,1110),(1010,1080),(1045,930),(1086,930)]),
     ('ru',390): [(0,390),(590,390),(650,418),(664,390),(850,395),(1020,445),(1086,445)],
     ('ru',1085): [(0,1190),(820,1170),(910,1100),(980,1020),(1086,1015)],
     ('ws',1085): [(0,1160),(800,1160),(900,1130),(980,1090),(1086,1080)],
 }
+
+
+def separation_seam(mask, center):
+    """Follow transparent gaps around touching feet, cutting minimal opaque pixels.
+
+    A reviewed corridor keeps the path between the hit and KO figures. Dynamic
+    programming avoids the broad straight cuts that would amputate their boots.
+    """
+    height, width = mask.shape
+    x0 = max(0, int(center.min())-180)
+    x1 = min(width, int(center.max())+181)
+    xx = np.arange(x0, x1)
+    cost = mask[:,x0:x1].astype(float)*10000 + (xx[None,:]-center[:,None])**2*.0005
+    cost[abs(xx[None,:]-center[:,None])>180] = 1e12
+    previous = cost[0].copy()
+    parents = np.zeros((height,len(xx)),np.int16)
+    steps = np.arange(-6,7)
+    for y in range(1,height):
+        choices = np.full((len(steps),len(xx)),1e15)
+        for n, step in enumerate(steps):
+            if step<0: choices[n,:step] = previous[-step:]+abs(step)*.1
+            elif step>0: choices[n,step:] = previous[:-step]+step*.1
+            else: choices[n] = previous
+        best = choices.argmin(axis=0)
+        parents[y] = xx-steps[best]
+        previous = cost[y]+choices[best,np.arange(len(xx))]
+    seam = np.zeros(height,np.int16)
+    seam[-1] = xx[previous.argmin()]
+    for y in range(height-1,0,-1):seam[y-1] = parents[y,seam[y]-x0]
+    return seam
 
 
 def isolate(rgba, code):
@@ -58,26 +92,32 @@ def isolate(rgba, code):
             cut = cuts[0]
             xx = np.arange(mask.shape[1])[None, :]
             path = SPLIT_PATHS.get((code,cut), [(0,cut),(mask.shape[0],cut)])
-            seam = np.interp(np.arange(mask.shape[0]), [p[0] for p in path], [p[1] for p in path])[:,None]
+            seam = np.interp(np.arange(mask.shape[0]), [p[0] for p in path], [p[1] for p in path])
+            if code in ['mx','om','pw','pa','pe','sb']:
+                seam = separation_seam(mask, seam)
+            seam = seam[:,None]
             for region in [xx < seam, xx >= seam]:
                 owners[mask & region] = next_id
                 next_id += 1
         else:
             owners[mask] = next_id
             next_id += 1
-    if next_id != 9:
-        raise ValueError(f'{code}: expected 8 figures, found {next_id - 1}')
+    expected = 4 if code in FOUR_POSE_COUNTRIES else 8
+    if next_id != expected + 1:
+        raise ValueError(f'{code}: expected {expected} figures, found {next_id - 1}')
     # Assign detached tassels and translucent edges to the nearest actual figure.
     distance, nearest = ndimage.distance_transform_edt(owners == 0, return_indices=True)
     owners = owners[tuple(nearest)]
     parts = []
-    for number in range(1, 9):
+    for number in range(1, expected + 1):
         mask = (owners == number) & (alpha > 0) & (distance <= 6)
         ys, xs = np.where(mask)
         x, y, right, bottom = int(xs.min()), int(ys.min()), int(xs.max()+1), int(ys.max()+1)
         pixels = rgba[y:bottom, x:right].copy()
         pixels[:, :, 3] = np.where(mask[y:bottom, x:right], pixels[:, :, 3], 0)
         parts.append({'box': [x, y, right-x, bottom-y], 'pixels': pixels})
+    if expected == 4:
+        return sorted(parts, key=lambda p: p['box'][0])
     # The ground KO is shorter, so its top is much lower than the other row.
     by_top = sorted(parts, key=lambda p: p['box'][1])
     return (sorted(by_top[:4], key=lambda p: p['box'][0]) +
@@ -155,12 +195,12 @@ def main():
         with Image.open(source) as image:
             rgba = np.array(image.convert('RGBA'))
         parts = isolate(rgba, code)
-        order = ORDERS.get(code, DEFAULT)
+        order = ['idle','punch','kick','block'] if code in FOUR_POSE_COUNTRIES else ORDERS.get(code, DEFAULT)
         standing_height = parts[0]['pixels'].shape[0]
         ratio = min(1, 360 / standing_height)
         cell_w = max(round(p['pixels'].shape[1] * ratio) for p in parts) + 16
         cell_h = max(round(p['pixels'].shape[0] * ratio) for p in parts) + 16
-        atlas = Image.new('RGBA', (cell_w*4, cell_h*2))
+        atlas = Image.new('RGBA', (cell_w*4, cell_h*((len(parts)+3)//4)))
         frames = {}
         records = []
         for i, (part, pose) in enumerate(zip(parts, order)):
@@ -185,6 +225,8 @@ def main():
         for pose, fallback in [('walk','idle'), ('block','idle'), ('hit','idle'), ('ko','down')]:
             if pose not in frames:
                 frames[pose] = frames.get(fallback, frames['idle'])
+        if 'crouch' not in frames:
+            frames['crouch'] = {**frames['block'], 'drawScaleY': .62}
         # A short low foot strike uses the supplied crouch's forward ankle/toe.
         # This is explicitly an adapted pose, not an invented source low kick.
         crouch = frames['crouch']
@@ -203,10 +245,11 @@ def main():
         # retain the normal authored contact and use a documented crouch warp.
         entry_meta = {'width': atlas.width, 'height': atlas.height,
                       'scale': round(2.65/(standing_height*ratio), 9),
-                      'frames': frames, 'poseRecords': records,
+                      'frames': frames, 'poseRecords': records, 'sourcePoseCount': len(records),
+                      'adaptedCrouch': 'crouch' not in order, 'adaptedKo': 'ko' not in order and 'down' not in order,
                       'hasWalkPose': 'walk' in order, 'hasHitPose': 'hit' in order,
                       'hasGroundKo': 'ko' in order, 'hasLowPunch': 'lowPunch' in order,
-                      'crouchHeight': round(crouch['h']*2.65/(standing_height*ratio),4),
+                      'crouchHeight': round(crouch['h']*2.65/(standing_height*ratio)*crouch.get('drawScaleY',1),4),
                       'sourceName': entry['originalName'], 'sourceSha256': entry['sha256']}
         metadata[code] = entry_meta
         atlas.save(output/(code+'.webp'), 'WEBP', quality=88, method=4)
@@ -218,7 +261,7 @@ def main():
         portrait.paste(idle, (round(120-root_x), 4))
         portrait.save(output/(code+'-portrait.webp'), 'WEBP', quality=88, method=4)
         (output/(code+'.json')).write_text(json.dumps(entry_meta,separators=(',',':'))+'\n')
-        print(code, entry['country'], '8 poses', 'source verified', flush=True)
+        print(code, entry['country'], len(records), 'poses', 'source verified', flush=True)
     if worker is not None:
         return
     # Keep per-source derivatives stable. Assign reviewed flag swap cycles only

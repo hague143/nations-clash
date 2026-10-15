@@ -1,22 +1,25 @@
 # Browser world validation
 
-The current extracted Windows package passes all **13 browser acceptance groups**
-and **50 module/functional checks**. See [the exact ZIP hashes and test commands](DOWNLOAD-VALIDATION.md)
-and the machine-readable [acceptance report](WORLD-ACCEPTANCE.json).
+The exact self-contained HTML passes **16 browser acceptance groups** and the
+source passes **52 automated tests**. See [exact artifact hashes and commands](DOWNLOAD-VALIDATION.md)
+and [machine-readable browser evidence](WORLD-ACCEPTANCE.json).
 
-Coverage includes the agreed 196-country roster, 196 supplied country sheets
-with 15 reviewed flag corrections and zero missing images, all eight supplied poses,
-3,136 actual rendered melee contact fixtures, 4,704 supplied-fighter combat hit
-fixtures, misses outside range, guards, real keyboard controls, KO/rematch,
-all 10 arenas, bundled announcements and music, AI, touch at 390×844 and 844×390,
-no runtime errors, and no requests outside the extracted game files.
+All 196 fighters have supplied art, including 32 changed images from the latest
+36-file archive. Four files were unchanged. 195 countries have eight source
+poses; Turkey has four and explicit adapted crouch/KO states. No country PNG is
+missing. Two costumes need replacement and two need confirmation; see the
+[creator checklist](REPLACEMENT-ARTWORK-CHECKLIST.md).
 
-Visual review included all 196 source sheets and actual desktop/mobile game
-screenshots. Eight static poses are adapted into sprite-state animations;
-missing walks, low attacks and ground KOs use the available poses. Fifteen flag assignments were corrected; 34 unresolved costumes and two uncertain
-designs are explicitly [listed for review](COUNTRY-ARTWORK-REVIEW.md).
-These tests do not establish 196 unique 3D models or complete hand-authored animation.
+Coverage includes every country card and renderer, 4,704 attack hit fixtures,
+153,664 low-strike hits against every crouched country and the same number of
+boundary whiffs, 3,136 painted contact fixtures, 3,136 two-fighter layer checks,
+real Iraq/Iran country selection and keyboard hits/misses, guards, KO/rematch,
+all 10 arenas, audio, AI, portrait/landscape touch, and no runtime errors or
+external network requests. All embedded atlas bytes match their expected sources.
 
-Managed Chromium serves exact extracted files over an internal HTTP test server;
-Windows file-opening itself has not been observed. The complete ZIP works through
-local scripts and image data without Python, Unity or a user-run server.
+The downloaded HTML embeds all 196 atlases and works without a companion asset
+folder; hosted source builds still use separate lazy scripts. Only selected
+fighters decode, with a six-image cache. Testing uses an internal HTTP server
+because managed Chromium blocks direct file navigation. Windows file opening
+itself has not been observed. Static source poses are adapted sprite animation,
+not a complete 3D or motion-capture animation set.

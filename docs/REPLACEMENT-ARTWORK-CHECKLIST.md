@@ -1,49 +1,23 @@
-# Replacement artwork checklist
+# Remaining artwork checklist
 
-Missing PNGs: **0 of 196**. Batches 16–20 supplied all 46 remaining files.
+Missing country PNGs: **0 of 196**. The latest ZIP supplied 36 files: **32 changed,
+four identical to the earlier versions**.
 
-Corrected by mapping: **15**. Exact duplicate files/pixel sheets: **0**.
+## Please replace these two unchanged costumes
 
-## Please remake these 34 costumes
+- **Sao Tome and Principe.png** — yellow/green with red triangle and two black stars.
+- **Sierra Leone.png** — green/white/blue, without the Ghana black star.
 
-- Angola.png
-- Brazil.png
-- China.png
-- Germany.png
-- Dominica.png
-- Ethiopia.png
-- Finland.png
-- France.png
-- Grenada.png
-- Ghana.png
-- Guinea.png
-- Greece.png
-- Honduras.png
-- Haiti.png
-- Hungary.png
-- Japan.png
-- Morocco.png
-- Montenegro.png
-- Mongolia.png
-- Malta.png
-- Mauritius.png
-- Maldives.png
-- Mexico.png
-- Oman.png
-- Panama.png
-- Peru.png
-- Palau.png
-- Paraguay.png
-- Saudi Arabia.png
-- Solomon Islands.png
-- Sierra Leone.png
-- Sao Tome and Principe.png
-- Eswatini.png
-- Turkey.png
+## Please confirm these two unchanged costumes
 
-## Please confirm these two costumes
+- **Monaco.png** — its red/white flag design is unclear in the supplied white/black/red outfit.
+- **Slovenia.png** — please confirm the intended blue/red/white costume and Slovenia mountain shield.
 
-- Monaco.png
-- Slovenia.png
+## Additional poses, when available
 
-Please keep each replacement as a transparent eight-pose sheet. A clear national flag emblem on the cape/cloth helps prevent filename/flag mixups. Full reasons and the 15 corrected mappings are in COUNTRY-ARTWORK-REVIEW.md.
+**Turkey.png has four source poses.** Idle/punch/kick/block are used directly.
+An eight-pose replacement with walk, crouch, hit reaction and ground KO would
+improve its animation; current adapted states keep it playable.
+
+Keep PNGs transparent and pose figures separated. Full details are in
+COUNTRY-ARTWORK-REVIEW.md.

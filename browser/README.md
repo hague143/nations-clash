@@ -8,16 +8,17 @@ roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 ## Play on Windows
 
 1. Download `NationClash-Windows.zip`, right-click → **Extract All**.
-2. Keep the extracted `country-art` folder beside `NationClash.html`, then open
-   the HTML in **Google Chrome** or **Microsoft Edge**.
+2. Open the extracted `NationClash.html` in **Google Chrome** or **Microsoft Edge**.
+   This downloaded HTML is self-contained; no companion artwork folder is required.
 3. Search or filter countries. Choose **Your fighter** or **Select opponent**,
    then select a card. Pakistan and Japan are the initial matchup.
 4. Choose an arena and difficulty, then click **Enter the arena**.
 
 No Unity, account, server or internet connection is needed after downloading.
 Clicking Enter unlocks browser audio; Sound and Volume control it. If the document
-opens as text, ensure its extension is `.html`, not `.html.txt`. The build can also
-be hosted as `index.html` with the accompanying `country-art` folder on a static website.
+opens as text, ensure its extension is `.html`, not `.html.txt`. Allow this large
+HTML to finish loading. For a hosted website, the source build uses `index.html`
+with an accompanying `country-art` folder.
 
 For a direct browser website, a GitHub Pages workflow is prepared. See
 [publishing instructions and access status](../docs/WEB-PUBLISH.md).
@@ -47,8 +48,11 @@ clear held inputs and suspend/stop the appropriate audio.
 ## Fighters and venues
 
 All 196 supplied PNGs are integrated, including the 46 sheets from batches 16–20.
-Their eight poses drive portraits, movement, guard, crouch, punches, kicks, damage
-reactions and knockdowns. Older pose-order exceptions have reviewed overrides.
+The latest 36-file ZIP contains 32 changed and four unchanged sheets. There are
+195 eight-pose sheets and one four-pose sheet (Turkey). Its missing crouch, walk,
+hit and KO states adapt the supplied poses; its four source indices remain explicit.
+Poses drive portraits, movement, guard, attacks, damage reactions and knockdowns.
+Older pose-order exceptions have reviewed overrides.
 Low strikes and motions missing from a source sheet adapt its available poses;
 these are sprite animations, not full 3D animation rigs.
 
@@ -57,7 +61,8 @@ an explicit one-to-one assignment table, shared by portraits, match atlases and
 collision metadata. Every source is used exactly once. No exact byte or visible
 pixel duplicate sheets were found among 19,110 pairs; many faces, base poses and
 some costumes are still similar in the supplied artwork. There are zero missing
-PNGs, but 34 costumes need replacements and two need confirmation. See the
+PNGs. Two unchanged costumes (Sao Tome and Principe, Sierra Leone) need
+replacements; Monaco and Slovenia need confirmation. See the
 [full audit](../docs/COUNTRY-ARTWORK-REVIEW.md) and
 [creator checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
 
@@ -83,8 +88,11 @@ node --test Tests/Browser/roster.test.cjs Tests/Browser/combat.test.cjs Tests/Br
 The builder includes all source modules, thumbnails, fallback atlases, 196 SVG
 flags and four WAV cues in the HTML. It writes `browser/index.html` plus 196
 on-demand artwork scripts under `browser/country-art/`, and copies both the HTML
-and local artwork files into `artifacts/`. The full ZIP is the portable game;
-the HTML alone does not contain the 196 match atlases.
+and local artwork files into `artifacts/`. That hosted source HTML requires its
+196 match scripts. `python3 tools/package-browser.py` produces a different,
+self-contained downloadable HTML with all 196 atlas payloads inside it, plus a
+ZIP containing that HTML and six notes/inventory files. No companion asset
+folder is required by the downloaded HTML.
 Set `NATIONCLASH_ARTIFACT_DIR` to choose a different downloadable output folder.
 
 Browser acceptance additionally requires Playwright and Chromium:
@@ -103,7 +111,6 @@ The cloud checks cover all 196 real country selections and rendered fighters,
 all moves, collision/whiff/guard behavior, round results/rematches, all 10 venues,
 audio lifecycle, live AI and mobile touch. See [validation evidence](../docs/WORLD-VALIDATION.md).
 Managed Chromium tests the actual extracted package through an internal HTTP
-server because it can block `file:` navigation. Its country scripts register
-embedded image data, so canvas rendering does not need cross-origin file-image
-access. Direct opening on a Windows PC has not been tested in this Linux cloud;
+server because it can block `file:` navigation. The downloaded HTML uses
+embedded image data and decodes at most six country atlases. Direct opening on a Windows PC has not been tested in this Linux cloud;
 the complete extracted game needs no external network requests.

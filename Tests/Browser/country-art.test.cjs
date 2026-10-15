@@ -33,8 +33,9 @@ test('all 196 country mappings preserve the exact supplied PNGs with no country 
 
 test('every supplied pose is inside its atlas with finite pivots and opaque-contact coordinates',()=>{
  for(const [id,art]of Object.entries(T.METADATA)){
-  assert.equal(art.poseRecords.length,8,id);
-  assert.deepEqual(art.poseRecords.map(r=>r.index),[0,1,2,3,4,5,6,7]);
+  const expected=art.sourceCountryId==='tr'?4:8;
+  assert.equal(art.poseRecords.length,expected,id);
+  assert.deepEqual(art.poseRecords.map(r=>r.index),Array.from({length:expected},(_,i)=>i));
   for(const [pose,f]of Object.entries(art.frames)){
    for(const k of ['x','y','w','h','pivot','baseline'])assert.ok(Number.isFinite(f[k]),id+' '+pose+' '+k);
    assert.ok(f.w>0&&f.h>0&&f.x>=0&&f.y>=0&&f.x+f.w<=art.width&&f.y+f.h<=art.height,id+' '+pose+' atlas bounds');
@@ -89,4 +90,25 @@ test('blocked impact uses the authored guard pose and a buffered low attack keep
 test('reviewed flag swap cycles place Korean, Swiss, Somali and Spanish artwork in the correct country',()=>{
  for(const [id,name]of Object.entries({kr:'Sweden.png',ch:'Suriname.png',so:'Spain.png',es:'South Africa.png',ee:'Georgia.png',fj:'Gabon.png'}))
   assert.equal(T.METADATA[id].sourceName,name,id+' reviewed costume mapping');
+});
+
+test('every country low punch and low kick hits every crouching country, from either side, and whiffs beyond its actual range',()=>{
+ let pairs=0;
+ for(const data of C.ROSTER)for(const enemy of C.ROSTER)for(const facing of [-1,1])for(const action of ['light','heavy']){
+  const f=new C.Fight(data,enemy,{intro:0});f.left.x=0;f.left.facing=facing;f.right.facing=-facing;f.right.low=true;
+  f.start(f.left,{action,low:true});f.left.moveFrame=f.left.move.start;
+  const reach=f.left.move.reach+C.GEOMETRY.bodyRadius+C.GEOMETRY.strikeRadius;
+  f.right.x=facing*(reach+.03);
+  assert.equal(f.detect(f.left,f.right),null,`${data.id}/${enemy.id}/${action}: genuine boundary whiff`);
+  f.right.x=facing*Math.max(.75,Math.min(1.1,reach-.03));
+  const hit=f.detect(f.left,f.right);
+  assert.equal(hit?.kind,'hit',`${data.id}/${enemy.id}/${action}/${facing}: low strike reaches crouched body`);
+  const hp=f.right.hp;f.apply(hit);assert.ok(f.right.hp<hp);assert.equal(f.detect(f.left,f.right),null,'one damage event per move');pairs++;
+ }
+ assert.equal(pairs,153664);
+});
+
+test('the four-pose Turkey replacement declares adapted crouch and KO, without inventing missing source frames',()=>{
+ const art=T.METADATA.tr;assert.equal(art.poseRecords.length,4);assert.equal(art.hasGroundKo,false);assert.equal(art.adaptedKo,true);assert.equal(art.adaptedCrouch,true);
+ assert.ok(art.crouchHeight<1.8);const data=C.ROSTER.find(c=>c.id==='tr');const move=C.getMoveSpec(data,'heavy',{low:true});assert.ok(move.height<.65,'adapted low foot contact stays near the floor');
 });

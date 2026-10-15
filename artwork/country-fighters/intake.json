@@ -54,10 +54,10 @@
     {
       "id": "ao",
       "country": "Angola",
-      "archive": "Country_Fighters_Part_1_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Angola.png",
-      "bytes": 1992325,
-      "sha256": "c381be1b3728be6323707843974d367364cbe25b46bffefb6b246e5afca0ef5c"
+      "bytes": 1846757,
+      "sha256": "59c4d09c6d13b5e508e07a2c3e334a78e79597ac4630e08e1e9ecc9a7c4059f0"
     },
     {
       "id": "ar",
@@ -182,10 +182,10 @@
     {
       "id": "br",
       "country": "Brazil",
-      "archive": "Country_Fighters_Part_1_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Brazil.png",
-      "bytes": 2233884,
-      "sha256": "f90c212bc71a5ba47b64be577dbf42417b8234113cb6949fbbd3f2ef6c0c1e8d"
+      "bytes": 2032132,
+      "sha256": "02d980dfb3465b715923b953ac00e90a8e89aa9e13ebea901a35d7b46716db15"
     },
     {
       "id": "bs",
@@ -294,10 +294,10 @@
     {
       "id": "cn",
       "country": "China",
-      "archive": "Country_Fighters_Part_2_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "China.png",
-      "bytes": 2127690,
-      "sha256": "1974c3bd74096892ca70eee87c55cff0851eb00d230f7d102809363452819bd8"
+      "bytes": 2081450,
+      "sha256": "24773d01be275edb2a5e8b775ebde82e3496b511e58224fe552436fbbfdd8d1f"
     },
     {
       "id": "co",
@@ -350,10 +350,10 @@
     {
       "id": "de",
       "country": "Germany",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Germany.png",
-      "bytes": 2154226,
-      "sha256": "0dea253c340a1c7a7f2f6b385cb16bfd32738fea9f3fadf0800583bbbdb8b2c7"
+      "bytes": 2020258,
+      "sha256": "f517c95588ba180c81a58ae7e55a3f556b62a96eace664a9ccf35034dd452bfc"
     },
     {
       "id": "dj",
@@ -374,10 +374,10 @@
     {
       "id": "dm",
       "country": "Dominica",
-      "archive": "Country_Fighters_Part_2_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Dominica.png",
-      "bytes": 2039559,
-      "sha256": "d1f67cfe0cfc6ad83a8640eba484f0242deda4f73f66c3cbcda434a8e36e74e6"
+      "bytes": 2050443,
+      "sha256": "ce13cc117566231a8ba1a4d637aef5ead57e9222ba3fa667009b2f58a63e0d87"
     },
     {
       "id": "do",
@@ -438,18 +438,18 @@
     {
       "id": "et",
       "country": "Ethiopia",
-      "archive": "Country_Fighters_Part_2_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Ethiopia.png",
-      "bytes": 2499789,
-      "sha256": "c3519b70195257655a747f194763c87d1ac67ed21caeebe5b816f7ba205e4a2f"
+      "bytes": 2081046,
+      "sha256": "4899c9b23898ea33ae36935c879f1d13d24590d9ef521197e6fd16074c576bd2"
     },
     {
       "id": "fi",
       "country": "Finland",
-      "archive": "Country_Fighters_Part_2_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Finland.png",
-      "bytes": 2207929,
-      "sha256": "f2e3d4ef883b277d0b27e1d007224c3d12a29aaeaea2e479d3bff96f0d0cc6ce"
+      "bytes": 2350084,
+      "sha256": "e2eed8d3da044044b906fcf13080005fd4387e98546267d0f420286304c8a53b"
     },
     {
       "id": "fj",
@@ -470,10 +470,10 @@
     {
       "id": "fr",
       "country": "France",
-      "archive": "Country_Fighters_Part_2_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "France.png",
-      "bytes": 2102690,
-      "sha256": "5e61599aaab0bb003a73372226922e59f1dc55c600c1bf0e0c68d9d7bac1977f"
+      "bytes": 1906622,
+      "sha256": "1a0eefd86477b94b12d041437fa6751c9722ea9beb60bf35aa280775bd1a807c"
     },
     {
       "id": "ga",
@@ -494,10 +494,10 @@
     {
       "id": "gd",
       "country": "Grenada",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Grenada.png",
-      "bytes": 2203309,
-      "sha256": "c5fe0a4cfd37b5a753f9a78991d442483965eccb5a5d687db9c5164c4fb426f8"
+      "bytes": 1900885,
+      "sha256": "fbd3178d5468a87e51cfa03c199ee3fbd820ff0856b40c906fd23509d2bcb68a"
     },
     {
       "id": "ge",
@@ -510,10 +510,10 @@
     {
       "id": "gh",
       "country": "Ghana",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Ghana.png",
-      "bytes": 2145390,
-      "sha256": "9808c237ff9941e32c78f2500d2cf0d97b2d965504c6373dd24c815f12146d10"
+      "bytes": 1877303,
+      "sha256": "e935f886b218d0fb08b781ef0137090283788c9b7400c293789d033744708b94"
     },
     {
       "id": "gm",
@@ -526,10 +526,10 @@
     {
       "id": "gn",
       "country": "Guinea",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Guinea.png",
-      "bytes": 2180112,
-      "sha256": "0bd8092e578d6889a532760b36dad3ccc8312627261748a3fd07add860b964fe"
+      "bytes": 1535083,
+      "sha256": "cdb517d5510484a99ff554d1f4b393a0bad4d603b4e59208135f131c43f645f0"
     },
     {
       "id": "gq",
@@ -542,10 +542,10 @@
     {
       "id": "gr",
       "country": "Greece",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Greece.png",
-      "bytes": 1975545,
-      "sha256": "d30fdb1368bb38276b5b37bbef044caa69c3b85311e5ade356f83637fbc23955"
+      "bytes": 1801773,
+      "sha256": "4180b2769fa55d08c26ebb8e915611a271103972b635634293c95129da83b082"
     },
     {
       "id": "gt",
@@ -574,10 +574,10 @@
     {
       "id": "hn",
       "country": "Honduras",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Honduras.png",
-      "bytes": 2003442,
-      "sha256": "1666973e6253a69065cfe94e5891d77cab1aaabd92a0ef5f9ab3c06c7f7107b7"
+      "bytes": 1682180,
+      "sha256": "33d71cef277460705b61b984bb27874b32f095d294df968c2f56f32cc602f9aa"
     },
     {
       "id": "hr",
@@ -590,18 +590,18 @@
     {
       "id": "ht",
       "country": "Haiti",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Haiti.png",
-      "bytes": 2002329,
-      "sha256": "070c38968c2cc05e201374c3084a793ec3680c6a50738d80ffb43f1ee7ee97c7"
+      "bytes": 1666562,
+      "sha256": "a6ee8e8334d1a477c0026abac9e83414cfeb30ca79c91ba91d7ef83a37d8ad39"
     },
     {
       "id": "hu",
       "country": "Hungary",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Hungary.png",
-      "bytes": 2167693,
-      "sha256": "9571ee0d2f5767dcab8f7429cda000920b267951931999a944422d2ef1e12b73"
+      "bytes": 1521636,
+      "sha256": "00e08b0b0369b586d65b90f57f02d0fb3af3c48b4d41c42762e803a53939ba1f"
     },
     {
       "id": "id",
@@ -686,10 +686,10 @@
     {
       "id": "jp",
       "country": "Japan",
-      "archive": "Country_Fighters_Part_3_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Japan.png",
-      "bytes": 2177952,
-      "sha256": "fa5853c24ce2e46830001e1fd120559bf3e850649f0f09a6f7ae84196e1a0fc9"
+      "bytes": 1710418,
+      "sha256": "01d48d10ec0bbb965a488f0ca30bc3d541e1affd184a950ba3a0dd76a4e031da"
     },
     {
       "id": "ke",
@@ -862,15 +862,15 @@
     {
       "id": "ma",
       "country": "Morocco",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Morocco.png",
-      "bytes": 1896061,
-      "sha256": "33a901090fff01b1535a0eeb5e37fb4fe1167172a49e95f04dd969898e066518"
+      "bytes": 1727145,
+      "sha256": "ddcb2394711bea8d6df294d6b536830c63861535b2c54877294e463fdb2d188b"
     },
     {
       "id": "mc",
       "country": "Monaco",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Monaco.png",
       "bytes": 1867399,
       "sha256": "0312e753dd2bb73e88a8bbaedb621e70a5f307cc0cad2c50123009a3bbf156f3"
@@ -886,10 +886,10 @@
     {
       "id": "me",
       "country": "Montenegro",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Montenegro.png",
-      "bytes": 2107542,
-      "sha256": "b837698f325468569b43274c02a15f4a0e4b9e4885ac0ddc81c19dfe47a0965f"
+      "bytes": 1512178,
+      "sha256": "9ea655af481622ee162f367cf1286899a45ac0982196b20d21bfaf5c8d7c3d09"
     },
     {
       "id": "mg",
@@ -934,10 +934,10 @@
     {
       "id": "mn",
       "country": "Mongolia",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Mongolia.png",
-      "bytes": 2198917,
-      "sha256": "85cfaa459a71c3dd1a435674084484975fa982d08369bd681fa03deb8cc8626b"
+      "bytes": 1646405,
+      "sha256": "e96a26105e8ffb1aef3090fda188a15365a6ae09fd75d0faa07524adf315e6cf"
     },
     {
       "id": "mr",
@@ -950,26 +950,26 @@
     {
       "id": "mt",
       "country": "Malta",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Malta.png",
-      "bytes": 2123982,
-      "sha256": "b98095c79780cb26632a736d50e7d15660d24ed79d8213001aedc8ec1941deb0"
+      "bytes": 1614134,
+      "sha256": "2c760cc08fd9509cdf8b88c39af1834f63fb271d2c00aef34baba5c6fc2243a2"
     },
     {
       "id": "mu",
       "country": "Mauritius",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Mauritius.png",
-      "bytes": 1794569,
-      "sha256": "77ab91b87243f3fcdd6ccc9f90d4ee988ac413f4b85497a16bcfe14e7fca8067"
+      "bytes": 2233691,
+      "sha256": "7f69a6bcac76c0437ffabc1f97f9a197b476c068383325fe08459ba7992d9a44"
     },
     {
       "id": "mv",
       "country": "Maldives",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Maldives.png",
-      "bytes": 2112336,
-      "sha256": "d16b613046e1dd76097ebb302b6d8d11994fb128861bbd627f44a10d75426cd5"
+      "bytes": 2073590,
+      "sha256": "f1d2bea4acf923aff34cff12847b609764731f3efe6a8239c35f423eb7b10b81"
     },
     {
       "id": "mw",
@@ -982,10 +982,10 @@
     {
       "id": "mx",
       "country": "Mexico",
-      "archive": "Country_Fighters_Part_4_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Mexico.png",
-      "bytes": 2163560,
-      "sha256": "7335b87355ec1aef160a1d5fd33c27ffe6a3281c37b0e7d736e443a9f8270487"
+      "bytes": 2148073,
+      "sha256": "0a02d097b8da5acef173bcd14fcf36bb32e2705e9ab2bd4b0d5f4f57684f96b5"
     },
     {
       "id": "my",
@@ -1078,26 +1078,26 @@
     {
       "id": "om",
       "country": "Oman",
-      "archive": "Country_Fighters_Part_5_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Oman.png",
-      "bytes": 2054799,
-      "sha256": "13c4628a111bbe9fd944c7f9e35f80d5f9010830b20a6c35409e43995942c1dd"
+      "bytes": 2234645,
+      "sha256": "4a05d579559a9b227058944a4a9c96abb3c289d94065b4096eb621714c82b86d"
     },
     {
       "id": "pa",
       "country": "Panama",
-      "archive": "Country_Fighters_Part_5_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Panama.png",
-      "bytes": 2175041,
-      "sha256": "2d26efb9b7d011e8741402fbd562cb3ad1424cf88e419b100bef01f4e84addbc"
+      "bytes": 2132739,
+      "sha256": "c1b6029977dfd6e2ecd1ea11240c44cd119879e368f3e67e46b8782aee6c9df3"
     },
     {
       "id": "pe",
       "country": "Peru",
-      "archive": "Country_Fighters_Part_5_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Peru.png",
-      "bytes": 2259278,
-      "sha256": "24fd8277498d0da6b222553a5f29b8c378d8a845883f8c281f07dd969b5b8288"
+      "bytes": 2266967,
+      "sha256": "44e0f89cb204e78afc5c2b2b6c11398266331cbbab03f4bc1f012b8e1aa0967f"
     },
     {
       "id": "pg",
@@ -1150,18 +1150,18 @@
     {
       "id": "pw",
       "country": "Palau",
-      "archive": "Country_Fighters_Part_5_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Palau.png",
-      "bytes": 1992199,
-      "sha256": "203091489375e21b67277e013bc59a155a94a0bcf102dc1c1d273e14a92bf7f9"
+      "bytes": 2173167,
+      "sha256": "e5a386d060d990d1054b5d4f73a8389f1b01007c6cf9a8b7251d241f2e7aedba"
     },
     {
       "id": "py",
       "country": "Paraguay",
-      "archive": "Country_Fighters_Part_5_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Paraguay.png",
-      "bytes": 2034015,
-      "sha256": "e75b572108d8f2ee6376db6bb3aead431210e076a3cb668cc582fd5b62999f96"
+      "bytes": 2191807,
+      "sha256": "f9f5c20788ee64383aa93b39fea15f477291df60d9687430bbb7173aa469c5f7"
     },
     {
       "id": "qa",
@@ -1206,18 +1206,18 @@
     {
       "id": "sa",
       "country": "Saudi Arabia",
-      "archive": "Country_Fighters_Part_5_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Saudi Arabia.png",
-      "bytes": 2168099,
-      "sha256": "32bfa8889b5799beceb1ad550df57883868c26d106a78382bdfd2695e5d3e443"
+      "bytes": 2259811,
+      "sha256": "4c12dd380d696757dbb7f5f066123cc1883967bd01469bb15c86a7d41121e15d"
     },
     {
       "id": "sb",
       "country": "Solomon Islands",
-      "archive": "Country_Fighters_Batch_16.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Solomon Islands.png",
-      "bytes": 1723510,
-      "sha256": "7d8a555612ea39321088aafcf78f326f69e4dfe1b0b7c98a5eeb19c004a6e20f"
+      "bytes": 2193756,
+      "sha256": "78f3a28d6eb96ef3c7eb15dc4f9fbd22b42858ac65577c1666e7c0347472c589"
     },
     {
       "id": "sc",
@@ -1254,7 +1254,7 @@
     {
       "id": "si",
       "country": "Slovenia",
-      "archive": "Country_Fighters_Batch_16.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Slovenia.png",
       "bytes": 1543021,
       "sha256": "d3bfd86c3b3b575577696497a9e1d8287c243b7ad9e83f149174b4ff15dd5be5"
@@ -1270,7 +1270,7 @@
     {
       "id": "sl",
       "country": "Sierra Leone",
-      "archive": "Country_Fighters_Batch_16.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Sierra Leone.png",
       "bytes": 1489683,
       "sha256": "7fe626b886a61e2e271c9068d3d3e64d8f2d11d62f3612347c28feeff53708dd"
@@ -1318,7 +1318,7 @@
     {
       "id": "st",
       "country": "Sao Tome and Principe",
-      "archive": "Country_Fighters_Batch_16.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Sao Tome and Principe.png",
       "bytes": 1745315,
       "sha256": "1c1c88d15f195fc215cd5641816dba633a5d27fee0b2d5f254c46e87f6434faf"
@@ -1342,10 +1342,10 @@
     {
       "id": "sz",
       "country": "Eswatini",
-      "archive": "Country_Fighters_Part_2_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Eswatini.png",
-      "bytes": 2095804,
-      "sha256": "982459ed8c74b80975e17befeb10d46a018375221d63b46e82e6dbe639bbd8ac"
+      "bytes": 2154226,
+      "sha256": "0dea253c340a1c7a7f2f6b385cb16bfd32738fea9f3fadf0800583bbbdb8b2c7"
     },
     {
       "id": "td",
@@ -1414,10 +1414,10 @@
     {
       "id": "tr",
       "country": "Turkey",
-      "archive": "Country_Fighters_Part_5_of_5.zip",
+      "archive": "Country_Fighters_Selected_36.zip",
       "originalName": "Turkey.png",
-      "bytes": 2410681,
-      "sha256": "db60ee8bdc278643eef2a40eadf2c457751608e3bf72542b8f0c044a23ff50ed"
+      "bytes": 2203514,
+      "sha256": "d74bd3be7de436de2fccba7f81d7b46530705886d4db63e632ac81183bfd04de"
     },
     {
       "id": "tt",

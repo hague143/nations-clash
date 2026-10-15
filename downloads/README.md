@@ -1,13 +1,15 @@
-# Playable Windows browser package
+# Play the self-contained HTML
 
-[Download the verified game ZIP](https://raw.githubusercontent.com/hague143/nations-clash/8d2db835d01bdec6166b36bdbacc3d14965a0fc5/downloads/NationClash-Windows.zip)
+[Download the ZIP containing NationClash.html](https://github.com/hague143/nations-clash/raw/refs/heads/backup/nationclash-2026-10-15/downloads/NationClash-Windows.zip)
 
-Download `NationClash-Windows.zip`, right-click **Extract All**, then open the extracted `NationClash.html` in current Chrome or Edge. Keep `country-art/` beside it. No Unity, Python or server is required to play.
+Right-click the ZIP, choose **Extract All**, then open `NationClash.html` in current Chrome or Edge. **No companion artwork folder is required.** All 196 fighters and audio are inside the HTML. Allow the large file to finish loading.
 
-All 196 countries now use supplied sheets; batches 16–20 added the final 46. Fifteen clear flag swaps were corrected. PNGs missing: zero. There are no exact byte/pixel duplicates, but some supplied faces and costumes repeat. [34 costumes need replacement and two need confirmation](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md). Read the ZIP's `ARTWORK-NOTES.txt` and `REPLACEMENT-CHECKLIST.txt`.
+[Direct HTML file](https://github.com/hague143/nations-clash/raw/refs/heads/backup/nationclash-2026-10-15/downloads/NationClash.html): right-click **Save link as**, keeping the `.html` extension. GitHub's raw-file viewer is a download source; open the saved file in your browser to play.
 
-ZIP bytes: 80923717
+Latest artwork: 36 received PNGs, 32 changed and four unchanged. All 196 countries are present. 195 sheets have eight poses; Turkey has four and uses explicit adapted crouch/KO states. Two unchanged costumes still need replacement, and two need confirmation: [creator checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
 
-SHA-256: `34727e5bc4c42e257bf80ee3d3b1c9526abd215844d18081cd56d0707206acbc`
+ZIP: 79113341 bytes; SHA-256 `bf7dc3623d67133c0d4ea1e42fb55a550d178b90d463767bb1a6446676e20a3b`.
 
-The exact extracted package passed all 13 browser acceptance groups and 196 assigned-atlas byte checks. Source tests: 50 passed. See [validation](../docs/DOWNLOAD-VALIDATION.md).
+HTML: 104572020 bytes; SHA-256 `2c0ddb0a34f4683b5e88abcfe73d67b89ad087e8654c1d38bab29be1b9193258`.
+
+All 52 automated tests and 16 browser acceptance groups pass, including all 196 fighters, 153,664 crouched matchup hit fixtures, visible contact and layer checks, and real Iraq/Iran keyboard hits and misses. See [validation](../docs/DOWNLOAD-VALIDATION.md).

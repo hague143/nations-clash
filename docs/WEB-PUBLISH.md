@@ -3,7 +3,9 @@
 The browser builder writes `browser/index.html` and the accompanying
 `browser/country-art/` directory. The Pages workflow copies both; publishing only
 the HTML would omit the 196 match atlases. The portable game is also available
-as [the complete offline ZIP](../downloads/NationClash-Windows.zip).
+as [a self-contained HTML inside the offline ZIP](../downloads/NationClash-Windows.zip).
+That packaged HTML embeds all atlases and requires no companion folder; it is
+separate from the smaller hosted source HTML.
 
 GitHub write access was successfully restored. The preserved code and supplied
 artwork are saved on `backup/nationclash-2026-10-15`. No public game website has

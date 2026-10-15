@@ -9,26 +9,6 @@
   "perceptualMethod": "255 low-frequency DCT bits of the complete sheet on a fixed matte. Nearest pairs are candidates only; common pose layout lowers distance.",
   "nearestPairsForVisualReview": [
     {
-      "a": "ao",
-      "b": "ma",
-      "perceptualDistanceOf255": 20
-    },
-    {
-      "a": "md",
-      "b": "py",
-      "perceptualDistanceOf255": 26
-    },
-    {
-      "a": "fm",
-      "b": "sz",
-      "perceptualDistanceOf255": 32
-    },
-    {
-      "a": "fr",
-      "b": "zm",
-      "perceptualDistanceOf255": 34
-    },
-    {
       "a": "li",
       "b": "lt",
       "perceptualDistanceOf255": 34
@@ -41,11 +21,6 @@
     {
       "a": "bi",
       "b": "lv",
-      "perceptualDistanceOf255": 36
-    },
-    {
-      "a": "gn",
-      "b": "sv",
       "perceptualDistanceOf255": 36
     },
     {
@@ -64,38 +39,8 @@
       "perceptualDistanceOf255": 38
     },
     {
-      "a": "cd",
-      "b": "hn",
-      "perceptualDistanceOf255": 38
-    },
-    {
       "a": "ec",
       "b": "ee",
-      "perceptualDistanceOf255": 38
-    },
-    {
-      "a": "ec",
-      "b": "gn",
-      "perceptualDistanceOf255": 38
-    },
-    {
-      "a": "fm",
-      "b": "gd",
-      "perceptualDistanceOf255": 38
-    },
-    {
-      "a": "gn",
-      "b": "il",
-      "perceptualDistanceOf255": 38
-    },
-    {
-      "a": "gr",
-      "b": "tw",
-      "perceptualDistanceOf255": 38
-    },
-    {
-      "a": "hn",
-      "b": "sv",
       "perceptualDistanceOf255": 38
     },
     {
@@ -109,16 +54,6 @@
       "perceptualDistanceOf255": 40
     },
     {
-      "a": "al",
-      "b": "fr",
-      "perceptualDistanceOf255": 40
-    },
-    {
-      "a": "ao",
-      "b": "sz",
-      "perceptualDistanceOf255": 40
-    },
-    {
       "a": "az",
       "b": "tw",
       "perceptualDistanceOf255": 40
@@ -126,11 +61,6 @@
     {
       "a": "ba",
       "b": "ca",
-      "perceptualDistanceOf255": 40
-    },
-    {
-      "a": "br",
-      "b": "in",
       "perceptualDistanceOf255": 40
     },
     {
@@ -164,23 +94,8 @@
       "perceptualDistanceOf255": 40
     },
     {
-      "a": "fm",
-      "b": "py",
-      "perceptualDistanceOf255": 40
-    },
-    {
-      "a": "fr",
-      "b": "li",
-      "perceptualDistanceOf255": 40
-    },
-    {
-      "a": "fr",
-      "b": "ly",
-      "perceptualDistanceOf255": 40
-    },
-    {
-      "a": "fr",
-      "b": "tl",
+      "a": "et",
+      "b": "fm",
       "perceptualDistanceOf255": 40
     },
     {
@@ -189,24 +104,109 @@
       "perceptualDistanceOf255": 40
     },
     {
-      "a": "gd",
-      "b": "hn",
-      "perceptualDistanceOf255": 40
-    },
-    {
-      "a": "gh",
+      "a": "kz",
       "b": "lv",
       "perceptualDistanceOf255": 40
     },
     {
-      "a": "gn",
-      "b": "hn",
+      "a": "pg",
+      "b": "zm",
       "perceptualDistanceOf255": 40
     },
     {
-      "a": "gr",
-      "b": "ly",
+      "a": "tl",
+      "b": "zm",
       "perceptualDistanceOf255": 40
+    },
+    {
+      "a": "ae",
+      "b": "ba",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ae",
+      "b": "jo",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ao",
+      "b": "cn",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "at",
+      "b": "cz",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ba",
+      "b": "ec",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ba",
+      "b": "hr",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ca",
+      "b": "hr",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "cn",
+      "b": "pg",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "cu",
+      "b": "ir",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "cz",
+      "b": "gm",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "cz",
+      "b": "ie",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "dk",
+      "b": "mc",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ec",
+      "b": "gm",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ee",
+      "b": "gm",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ee",
+      "b": "gt",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "ee",
+      "b": "lv",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "fm",
+      "b": "ga",
+      "perceptualDistanceOf255": 42
+    },
+    {
+      "a": "fm",
+      "b": "id",
+      "perceptualDistanceOf255": 42
     }
   ],
   "sources": [
@@ -280,8 +280,8 @@
       "id": "ao",
       "country": "Angola",
       "sourceName": "Angola.png",
-      "sha256": "c381be1b3728be6323707843974d367364cbe25b46bffefb6b246e5afca0ef5c",
-      "pixelSha256": "766b41bc7d042a08528a9c4879d26dfc230a3f2158009486f4d9a5ac6e74d0cc",
+      "sha256": "59c4d09c6d13b5e508e07a2c3e334a78e79597ac4630e08e1e9ecc9a7c4059f0",
+      "pixelSha256": "5b689ae8bd8ceb036cbdf08a4b7758aba8dfa8b0d431ff137b61c4c3dc2779ad",
       "size": [
         1774,
         887
@@ -456,11 +456,11 @@
       "id": "br",
       "country": "Brazil",
       "sourceName": "Brazil.png",
-      "sha256": "f90c212bc71a5ba47b64be577dbf42417b8234113cb6949fbbd3f2ef6c0c1e8d",
-      "pixelSha256": "197603d5a7c8019fe17530b8ef474aa2b790a6930c3dc1ae7d2207b980b4fd9b",
+      "sha256": "02d980dfb3465b715923b953ac00e90a8e89aa9e13ebea901a35d7b46716db15",
+      "pixelSha256": "7da4ae869e77d2638110924e0ed5f7bd62f128f9931eac765a895a7baddd08e4",
       "size": [
-        1672,
-        941
+        1774,
+        887
       ]
     },
     {
@@ -610,11 +610,11 @@
       "id": "cn",
       "country": "China",
       "sourceName": "China.png",
-      "sha256": "1974c3bd74096892ca70eee87c55cff0851eb00d230f7d102809363452819bd8",
-      "pixelSha256": "8ea14b53e3b4e4dcef0b8458be7e7cc76a335173d9a4e5a15cb3c06676e7f0c5",
+      "sha256": "24773d01be275edb2a5e8b775ebde82e3496b511e58224fe552436fbbfdd8d1f",
+      "pixelSha256": "77addf8a4e71992a77976ad608a7225850da39bd4003b107a7aefaed5f3bb265",
       "size": [
-        1672,
-        941
+        1774,
+        887
       ]
     },
     {
@@ -687,8 +687,8 @@
       "id": "de",
       "country": "Germany",
       "sourceName": "Germany.png",
-      "sha256": "0dea253c340a1c7a7f2f6b385cb16bfd32738fea9f3fadf0800583bbbdb8b2c7",
-      "pixelSha256": "207b7786439d7564604a5b0f1d515e3652522bf8aaecce17f098a2c4ad0c97b5",
+      "sha256": "f517c95588ba180c81a58ae7e55a3f556b62a96eace664a9ccf35034dd452bfc",
+      "pixelSha256": "4c69f499a187a124af8674f485cc8bd8877e66dbf5eca486deeffedb1b53a32b",
       "size": [
         1774,
         887
@@ -720,8 +720,8 @@
       "id": "dm",
       "country": "Dominica",
       "sourceName": "Dominica.png",
-      "sha256": "d1f67cfe0cfc6ad83a8640eba484f0242deda4f73f66c3cbcda434a8e36e74e6",
-      "pixelSha256": "58be9372191d9d8fb17512f7787db5764e82ab69f59cfd35a4f71e48890b6255",
+      "sha256": "ce13cc117566231a8ba1a4d637aef5ead57e9222ba3fa667009b2f58a63e0d87",
+      "pixelSha256": "c35e6131967a515d2412624aa79847fba6a384005019461c09553a593f701a1e",
       "size": [
         1774,
         887
@@ -808,8 +808,8 @@
       "id": "et",
       "country": "Ethiopia",
       "sourceName": "Ethiopia.png",
-      "sha256": "c3519b70195257655a747f194763c87d1ac67ed21caeebe5b816f7ba205e4a2f",
-      "pixelSha256": "a83fec48d4d9f2c0452e91bb7e98722a59328cd8ebc0942d5e58901744c6221c",
+      "sha256": "4899c9b23898ea33ae36935c879f1d13d24590d9ef521197e6fd16074c576bd2",
+      "pixelSha256": "ba57fb878da8f396704a15bc862ee151b90bf0d71003ace7c04c77e16e823d6f",
       "size": [
         1774,
         887
@@ -819,8 +819,8 @@
       "id": "fi",
       "country": "Finland",
       "sourceName": "Finland.png",
-      "sha256": "f2e3d4ef883b277d0b27e1d007224c3d12a29aaeaea2e479d3bff96f0d0cc6ce",
-      "pixelSha256": "6cc803c0a23f8fcd3738bc13fed9b9e2d101f9c6dad6cb81184aff1606fe42fe",
+      "sha256": "e2eed8d3da044044b906fcf13080005fd4387e98546267d0f420286304c8a53b",
+      "pixelSha256": "9c466535a9375d630bd60c660cc2b93179127e23840f45590ce080f6c81dea55",
       "size": [
         1774,
         887
@@ -852,11 +852,11 @@
       "id": "fr",
       "country": "France",
       "sourceName": "France.png",
-      "sha256": "5e61599aaab0bb003a73372226922e59f1dc55c600c1bf0e0c68d9d7bac1977f",
-      "pixelSha256": "9dc8dec3d78b117de69d7ad9f01d9f6d1468923513111693168c07b4347b7b63",
+      "sha256": "1a0eefd86477b94b12d041437fa6751c9722ea9beb60bf35aa280775bd1a807c",
+      "pixelSha256": "ed32294f2fb48174f2eea74aaeffc8827ce6075432684c0af2687b7df4f1239b",
       "size": [
-        1672,
-        941
+        1774,
+        887
       ]
     },
     {
@@ -885,8 +885,8 @@
       "id": "gd",
       "country": "Grenada",
       "sourceName": "Grenada.png",
-      "sha256": "c5fe0a4cfd37b5a753f9a78991d442483965eccb5a5d687db9c5164c4fb426f8",
-      "pixelSha256": "3576ec2c35ccab074f2c2795b0699ac1f63e698284a66954ddfcc944b88979d2",
+      "sha256": "fbd3178d5468a87e51cfa03c199ee3fbd820ff0856b40c906fd23509d2bcb68a",
+      "pixelSha256": "0a49cb228620087480573ea35f28bccbb5074286c0776abb0180c06dbb4c3baa",
       "size": [
         1774,
         887
@@ -907,8 +907,8 @@
       "id": "gh",
       "country": "Ghana",
       "sourceName": "Ghana.png",
-      "sha256": "9808c237ff9941e32c78f2500d2cf0d97b2d965504c6373dd24c815f12146d10",
-      "pixelSha256": "d5cda5c7d522ab1a5447cded66aeaeaeaf8a0f13e6f48b978b26be58d61f194f",
+      "sha256": "e935f886b218d0fb08b781ef0137090283788c9b7400c293789d033744708b94",
+      "pixelSha256": "ba34a5158b3698bdc0f6ecf2b96a7f057e9b71164adae6299fffec3e3e970284",
       "size": [
         1774,
         887
@@ -929,11 +929,11 @@
       "id": "gn",
       "country": "Guinea",
       "sourceName": "Guinea.png",
-      "sha256": "0bd8092e578d6889a532760b36dad3ccc8312627261748a3fd07add860b964fe",
-      "pixelSha256": "a228f04969d6c003048fb810b4fccc0f68bbc7814267e6676ca5cc01f27a9073",
+      "sha256": "cdb517d5510484a99ff554d1f4b393a0bad4d603b4e59208135f131c43f645f0",
+      "pixelSha256": "8493de4a17d1eeadef7ddf4b5ed4780670a551a680ced3af49fad6f8d4351a76",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
@@ -951,11 +951,11 @@
       "id": "gr",
       "country": "Greece",
       "sourceName": "Greece.png",
-      "sha256": "d30fdb1368bb38276b5b37bbef044caa69c3b85311e5ade356f83637fbc23955",
-      "pixelSha256": "ac6480130c6a35666deca49d9bf16d1976681d693ca3d789586d9ac5c80a65cc",
+      "sha256": "4180b2769fa55d08c26ebb8e915611a271103972b635634293c95129da83b082",
+      "pixelSha256": "5a2b0114cd715063d979d7f0068ce7240073bc4123d92a09d02b0a007714fa69",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
@@ -995,11 +995,11 @@
       "id": "hn",
       "country": "Honduras",
       "sourceName": "Honduras.png",
-      "sha256": "1666973e6253a69065cfe94e5891d77cab1aaabd92a0ef5f9ab3c06c7f7107b7",
-      "pixelSha256": "0508519d77c700c65d0ccb429ebf6b16a5b3bcfae062f94ecf1eb6ea716f0e11",
+      "sha256": "33d71cef277460705b61b984bb27874b32f095d294df968c2f56f32cc602f9aa",
+      "pixelSha256": "56328bc5e4d5893bf60ca36350103e9348b0ddef47e3cd32722096cb7e6553e7",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
@@ -1017,22 +1017,22 @@
       "id": "ht",
       "country": "Haiti",
       "sourceName": "Haiti.png",
-      "sha256": "070c38968c2cc05e201374c3084a793ec3680c6a50738d80ffb43f1ee7ee97c7",
-      "pixelSha256": "ae498d3ba4c3d5a160974fb2c2b8d5f1ad298e512178152770a8fbd32365e3ca",
+      "sha256": "a6ee8e8334d1a477c0026abac9e83414cfeb30ca79c91ba91d7ef83a37d8ad39",
+      "pixelSha256": "9cdf77c29eba982046e8f1b032a7fbb21c7c151ed533887686d165d2c290c0b6",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
       "id": "hu",
       "country": "Hungary",
       "sourceName": "Hungary.png",
-      "sha256": "9571ee0d2f5767dcab8f7429cda000920b267951931999a944422d2ef1e12b73",
-      "pixelSha256": "65ca14e843104ca70aa6a689171eeb68c33d688101c9d82d2cb40884d87f7c02",
+      "sha256": "00e08b0b0369b586d65b90f57f02d0fb3af3c48b4d41c42762e803a53939ba1f",
+      "pixelSha256": "ef1a6521be9f4387717487b82cde6476554e5283bf9604afac28be6963c47647",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
@@ -1149,8 +1149,8 @@
       "id": "jp",
       "country": "Japan",
       "sourceName": "Japan.png",
-      "sha256": "fa5853c24ce2e46830001e1fd120559bf3e850649f0f09a6f7ae84196e1a0fc9",
-      "pixelSha256": "ca2af2ff9c7d8783a565ac4df6c3da2d9c7edc162f8538d802c476f105bd0759",
+      "sha256": "01d48d10ec0bbb965a488f0ca30bc3d541e1affd184a950ba3a0dd76a4e031da",
+      "pixelSha256": "e242f32ec401ccbf09734dc89c66753c697740ae51c343feb596f265e92f0924",
       "size": [
         1672,
         941
@@ -1391,11 +1391,11 @@
       "id": "ma",
       "country": "Morocco",
       "sourceName": "Morocco.png",
-      "sha256": "33a901090fff01b1535a0eeb5e37fb4fe1167172a49e95f04dd969898e066518",
-      "pixelSha256": "9895c7a0fe6c12a4c202f510374e9ebaa2f205960779b38815b123cf485ddce9",
+      "sha256": "ddcb2394711bea8d6df294d6b536830c63861535b2c54877294e463fdb2d188b",
+      "pixelSha256": "eb00ac4ab9f51927877b909b7eabf71afd312ae5581778a086db588e8b464fcb",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
@@ -1424,11 +1424,11 @@
       "id": "me",
       "country": "Montenegro",
       "sourceName": "Montenegro.png",
-      "sha256": "b837698f325468569b43274c02a15f4a0e4b9e4885ac0ddc81c19dfe47a0965f",
-      "pixelSha256": "84c46f1b4a6d291c06205b974dac51a8ccef84db0c8aeadb63e95a0c318c2a0a",
+      "sha256": "9ea655af481622ee162f367cf1286899a45ac0982196b20d21bfaf5c8d7c3d09",
+      "pixelSha256": "abb00944550ade98b8eae77c287472995e278c623e80a920eedd1a0c60445ac1",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
@@ -1490,11 +1490,11 @@
       "id": "mn",
       "country": "Mongolia",
       "sourceName": "Mongolia.png",
-      "sha256": "85cfaa459a71c3dd1a435674084484975fa982d08369bd681fa03deb8cc8626b",
-      "pixelSha256": "a317332f1e0c2f0a3ad5442b87aa34dd2e81ca50d47a5d8385124aa37bd6c77d",
+      "sha256": "e96a26105e8ffb1aef3090fda188a15365a6ae09fd75d0faa07524adf315e6cf",
+      "pixelSha256": "f2e9e9e6cb08e5a07bc52ac3e179198e4b8a01246c33e833c9e36a08d5960377",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
@@ -1512,33 +1512,33 @@
       "id": "mt",
       "country": "Malta",
       "sourceName": "Malta.png",
-      "sha256": "b98095c79780cb26632a736d50e7d15660d24ed79d8213001aedc8ec1941deb0",
-      "pixelSha256": "4c7f98a0a29a95333a3debb86b5a3041e3eb6004529a7ba90a12996ee74a6d38",
+      "sha256": "2c760cc08fd9509cdf8b88c39af1834f63fb271d2c00aef34baba5c6fc2243a2",
+      "pixelSha256": "f695c4af38a121c8b70913358cf7bf221eb951c4defbf35c873d488357fffeb4",
       "size": [
-        1774,
-        887
+        1672,
+        941
       ]
     },
     {
       "id": "mu",
       "country": "Mauritius",
       "sourceName": "Mauritius.png",
-      "sha256": "77ab91b87243f3fcdd6ccc9f90d4ee988ac413f4b85497a16bcfe14e7fca8067",
-      "pixelSha256": "353b67df98e1a58551b182155aa3395338c94eb2792dd10d46ff206c18e0d6bd",
+      "sha256": "7f69a6bcac76c0437ffabc1f97f9a197b476c068383325fe08459ba7992d9a44",
+      "pixelSha256": "63f9c8780bc07b971a56a58bc9cd801bce5de99742f435d0acdaaf64b5941771",
       "size": [
-        1774,
-        887
+        1448,
+        1086
       ]
     },
     {
       "id": "mv",
       "country": "Maldives",
       "sourceName": "Maldives.png",
-      "sha256": "d16b613046e1dd76097ebb302b6d8d11994fb128861bbd627f44a10d75426cd5",
-      "pixelSha256": "b644fd06ad685db5900a7f147fb026d375f127ca0f9ce5e1d423590af92af1d9",
+      "sha256": "f1d2bea4acf923aff34cff12847b609764731f3efe6a8239c35f423eb7b10b81",
+      "pixelSha256": "637ab2dc43aaef51f590e61d37cd474a86fad573c1063176251732cdeb066638",
       "size": [
-        1672,
-        941
+        1448,
+        1086
       ]
     },
     {
@@ -1556,11 +1556,11 @@
       "id": "mx",
       "country": "Mexico",
       "sourceName": "Mexico.png",
-      "sha256": "7335b87355ec1aef160a1d5fd33c27ffe6a3281c37b0e7d736e443a9f8270487",
-      "pixelSha256": "bc3dc2f73ba19c1c96f9b7cc7a9fd14913d20a5d24cb95e798a4549a72c8ff5d",
+      "sha256": "0a02d097b8da5acef173bcd14fcf36bb32e2705e9ab2bd4b0d5f4f57684f96b5",
+      "pixelSha256": "faba513d7a1f4d0f510fb82f5e912c036be64c133dda94a56714aff0659b6727",
       "size": [
-        1672,
-        941
+        1448,
+        1086
       ]
     },
     {
@@ -1688,33 +1688,33 @@
       "id": "om",
       "country": "Oman",
       "sourceName": "Oman.png",
-      "sha256": "13c4628a111bbe9fd944c7f9e35f80d5f9010830b20a6c35409e43995942c1dd",
-      "pixelSha256": "a84828502978a6cee274c9a524964d0901f58bd688ba3c1818f8a9f83156fe00",
+      "sha256": "4a05d579559a9b227058944a4a9c96abb3c289d94065b4096eb621714c82b86d",
+      "pixelSha256": "78976336bec32d3ba940b88c188b2270363aaa82c35e108fa14d36ca8d6d9cb2",
       "size": [
-        1672,
-        941
+        1448,
+        1086
       ]
     },
     {
       "id": "pa",
       "country": "Panama",
       "sourceName": "Panama.png",
-      "sha256": "2d26efb9b7d011e8741402fbd562cb3ad1424cf88e419b100bef01f4e84addbc",
-      "pixelSha256": "54d4312a3bc5cf50a22432aa4e0b9faa62908ab515a43dbfe0286648bc8ff0d7",
+      "sha256": "c1b6029977dfd6e2ecd1ea11240c44cd119879e368f3e67e46b8782aee6c9df3",
+      "pixelSha256": "75825733d304432b7f38e4b87e56fb91b01247ae7e0752fd90a77664b1ff79fc",
       "size": [
-        1672,
-        941
+        1448,
+        1086
       ]
     },
     {
       "id": "pe",
       "country": "Peru",
       "sourceName": "Peru.png",
-      "sha256": "24fd8277498d0da6b222553a5f29b8c378d8a845883f8c281f07dd969b5b8288",
-      "pixelSha256": "7b89119de0a407e953ab5d948628f43409b656d6989096ee6fddd7523ee8381e",
+      "sha256": "44e0f89cb204e78afc5c2b2b6c11398266331cbbab03f4bc1f012b8e1aa0967f",
+      "pixelSha256": "a59d4c4f532fb2b58d0f93307b8cfcf935081e57c0a886beaac04e7d6e0c1bd5",
       "size": [
-        1774,
-        887
+        1448,
+        1086
       ]
     },
     {
@@ -1787,22 +1787,22 @@
       "id": "pw",
       "country": "Palau",
       "sourceName": "Palau.png",
-      "sha256": "203091489375e21b67277e013bc59a155a94a0bcf102dc1c1d273e14a92bf7f9",
-      "pixelSha256": "dcd2ed6f82515302fdc6e4e049468e140935ee45dc8fc0402fb627ec0ff3bf3a",
+      "sha256": "e5a386d060d990d1054b5d4f73a8389f1b01007c6cf9a8b7251d241f2e7aedba",
+      "pixelSha256": "8f392237ab98ce0c74f3d4bc0a89dfcbb00eba214af06949830a96e4238a5419",
       "size": [
-        1774,
-        887
+        1448,
+        1086
       ]
     },
     {
       "id": "py",
       "country": "Paraguay",
       "sourceName": "Paraguay.png",
-      "sha256": "e75b572108d8f2ee6376db6bb3aead431210e076a3cb668cc582fd5b62999f96",
-      "pixelSha256": "ab668e722bcfb5d26259c2f4b84e78e4857ed3cf4dfe3eae1f370a8a09c3b3d5",
+      "sha256": "f9f5c20788ee64383aa93b39fea15f477291df60d9687430bbb7173aa469c5f7",
+      "pixelSha256": "0bda4fb9a505dc9054930b48d650a1cc07aa13de8411bf262c948e3fb8889e60",
       "size": [
-        1774,
-        887
+        1448,
+        1086
       ]
     },
     {
@@ -1864,22 +1864,22 @@
       "id": "sa",
       "country": "Saudi Arabia",
       "sourceName": "Saudi Arabia.png",
-      "sha256": "32bfa8889b5799beceb1ad550df57883868c26d106a78382bdfd2695e5d3e443",
-      "pixelSha256": "5b488c42fdb77f5fe918d4e50979e94da292c62e090294a22de2e9bb16ac63f2",
+      "sha256": "4c12dd380d696757dbb7f5f066123cc1883967bd01469bb15c86a7d41121e15d",
+      "pixelSha256": "ddd5d945dbebea9733a17b9005d9a741e998b8add678654cf0731aeb4646490b",
       "size": [
-        1672,
-        941
+        1448,
+        1086
       ]
     },
     {
       "id": "sb",
       "country": "Solomon Islands",
       "sourceName": "Solomon Islands.png",
-      "sha256": "7d8a555612ea39321088aafcf78f326f69e4dfe1b0b7c98a5eeb19c004a6e20f",
-      "pixelSha256": "3eda3e6b63cb920ce4ac442ff0fc9212f68c8595cecb5cb7f75e718a50b3ab9e",
+      "sha256": "78f3a28d6eb96ef3c7eb15dc4f9fbd22b42858ac65577c1666e7c0347472c589",
+      "pixelSha256": "cec422407fde574b7b7eefb24dbf9e4d31fecefec77abf88b608932e5ed036f4",
       "size": [
-        1774,
-        887
+        1448,
+        1086
       ]
     },
     {
@@ -2051,8 +2051,8 @@
       "id": "sz",
       "country": "Eswatini",
       "sourceName": "Eswatini.png",
-      "sha256": "982459ed8c74b80975e17befeb10d46a018375221d63b46e82e6dbe639bbd8ac",
-      "pixelSha256": "d70dd42cc70f45444d58e663a6b75f2a4fe4b942e02ae8615a492e4a6155c680",
+      "sha256": "0dea253c340a1c7a7f2f6b385cb16bfd32738fea9f3fadf0800583bbbdb8b2c7",
+      "pixelSha256": "207b7786439d7564604a5b0f1d515e3652522bf8aaecce17f098a2c4ad0c97b5",
       "size": [
         1774,
         887
@@ -2150,11 +2150,11 @@
       "id": "tr",
       "country": "Turkey",
       "sourceName": "Turkey.png",
-      "sha256": "db60ee8bdc278643eef2a40eadf2c457751608e3bf72542b8f0c044a23ff50ed",
-      "pixelSha256": "7e6f637502f1e0d153f465e01be311c1143516b14826a8e0336377cc8d4849c4",
+      "sha256": "d74bd3be7de436de2fccba7f81d7b46530705886d4db63e632ac81183bfd04de",
+      "pixelSha256": "056a40dcf8611b4fe0afa240e61bb8a9eab0faec18330abdb4fca61d4f170c7b",
       "size": [
-        1672,
-        941
+        2172,
+        724
       ]
     },
     {

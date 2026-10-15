@@ -2,19 +2,21 @@
 
 **Play without Unity:** download [NationClash-Windows.zip](downloads/NationClash-Windows.zip),
 right-click → **Extract All**, then open the extracted `NationClash.html` in
-Chrome or Edge. Keep its `country-art` folder beside the HTML. Pick a country,
+Chrome or Edge. The downloaded HTML contains all artwork and needs no companion
+folder. Pick a country,
 then **Enter the arena**. No server, account, installation or internet is needed
 after extracting the complete ZIP. See [browser controls](browser/README.md).
 
 The browser edition has **196 country representatives**, **10
 selectable landmark arenas**, computer/local play, music and spoken Fight/KO cues.
 The roster is 193 UN members plus Palestine, Vatican City and Taiwan.
-**All 196 country fighters now use supplied eight-pose PNGs**. Batches 16–20
-completed the remaining 46 sheets. Fifteen clear flag swaps are corrected through
-an explicit one-to-one assignment table; all original PNGs remain intact.
-No exact duplicate files or visible-pixel sheets were found. Some faces/designs
-are shared in the artwork; 34 costumes need replacement and two need confirmation.
-See the [artwork audit](docs/COUNTRY-ARTWORK-REVIEW.md) and
+**All 196 countries use supplied PNGs**. The latest 36-file archive provides
+32 changed sheets and four unchanged sheets. There are 195 eight-pose fighters
+and one four-pose fighter (Turkey), with explicit adapted crouch/KO states.
+Fifteen reviewed flag swaps remain recorded in a shared assignment table.
+There are no exact duplicate files or visible-pixel sheets. Sao Tome and
+Principe and Sierra Leone still need corrected costumes; Monaco and Slovenia
+need confirmation. See the [artwork audit](docs/COUNTRY-ARTWORK-REVIEW.md) and
 [replacement checklist](docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
 Attacks share visible contact geometry with collision checks. Full-size country
 artwork loads only for selected fighters. See [download validation](docs/DOWNLOAD-VALIDATION.md).

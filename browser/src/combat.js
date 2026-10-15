@@ -46,7 +46,7 @@
     const art=SPRITE_ART[f.data.id];
     const low=(f.move?f.move.low:f.low)&&f.y===0;
     let height=low?(art?.crouchHeight||GEOMETRY.crouchHeight):GEOMETRY.height;
-    if(low&&art?.sourceName&&f.move){const frame=art.frames[f.move.visualPose];height=f.move.visualLowWarp?(frame.h-frame.baseline+frame.tipY)*art.scale+f.move.height:frame.h*art.scale*(f.move.visualScaleY||1);}
+    if(low&&art?.sourceName&&f.move){const frame=art.frames[f.move.visualPose];height=f.move.visualLowWarp?(frame.h-frame.baseline+frame.tipY)*art.scale+f.move.height:frame.h*art.scale*(frame.drawScaleY||1)*(f.move.visualScaleY||1);}
     return {left:f.x-GEOMETRY.bodyRadius,right:f.x+GEOMETRY.bodyRadius,bottom:f.y,top:f.y+height};
   }
   function contact(f){
@@ -92,7 +92,7 @@
       }
       const pose=art.frames[move.visualPose];
       const authoredReach=(pose.tipX-pose.pivot)*art.scale;
-      const authoredHeight=(pose.baseline-pose.tipY)*art.scale;
+      const authoredHeight=(pose.baseline-pose.tipY)*art.scale*(pose.drawScaleY||1);
       if(['light','heavy','break'].includes(action)){
         move.reach=authoredReach;move.height=art.sourceName?Math.min(authoredHeight,2.35):authoredHeight;
       }
@@ -100,6 +100,9 @@
       move.visualScaleX=move.reach/authoredReach;
       move.visualScaleY=(low?.65:move.height)/authoredHeight;
       if(low&&art.sourceName){
+        // A low punch must stay below the smallest crouched defender. Keep its
+        // upper-body pixels intact while bending the area below the fist.
+        if(move.visualPose==='lowPunch'&&authoredHeight>.9)move.visualLowWarp=true;
         move.height=move.visualLowWarp ? .65 : authoredHeight;
         if(['light','heavy','break'].includes(action))move.reach=authoredReach;
         move.visualScaleX=move.reach/authoredReach;

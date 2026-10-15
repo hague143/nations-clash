@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "moduleTests": 52,
+  "failed": 0,
+  "suppliedFighters": 196,
+  "sixActionHitFixtures": 4704,
+  "allCountryCrouchedLowStrikeHits": 153664,
+  "allCountryCrouchedBoundaryWhiffs": 153664,
+  "browserGroups": 16,
+  "paintedContactFixtures": 3136,
+  "twoFighterLayerFixtures": 3136,
+  "formerPaintOrderObscuredFixtures": 1362,
+  "iraqIranUiKeyboardHits": 8,
+  "iraqIranUiKeyboardWhiffs": 8,
+  "singleFileHtmlSha256": "2c0ddb0a34f4683b5e88abcfe73d67b89ad087e8654c1d38bab29be1b9193258"
+}

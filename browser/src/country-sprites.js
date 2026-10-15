@@ -17,6 +17,8 @@
   image.onerror=()=>{requests.delete(id);request.reject(new Error('Country fighter artwork could not decode'));};image.src=uri;
  }
  function loadImage(id){return new Promise((resolve,reject)=>{
+  const embedded=document.getElementById('country-art-'+id);
+  if(embedded){const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(new Error('Embedded country fighter artwork could not decode'));image.src='data:image/webp;base64,'+embedded.textContent.trim();return;}
   const request={resolve,reject,registered:false};requests.set(id,request);
   const script=document.createElement('script');script.src=ASSET_FILES[id];
   script.onerror=()=>{script.remove();requests.delete(id);reject(new Error('Fighter artwork is missing. Extract the entire ZIP, including its country-art folder, before opening NationClash.html.'));};
@@ -74,7 +76,7 @@
   const attacking=!!f.move&&pose===f.move.visualPose;
   const ranged=attacking&&['special','ultimate'].includes(f.move.id);
   const sx=attacking&&!ranged?(f.move.visualScaleX||1):1;
-  const sy=attacking&&!ranged&&!f.move.visualLowWarp?(f.move.visualScaleY||1):1;
+  const sy=(attacking&&!ranged&&!f.move.visualLowWarp?(f.move.visualScaleY||1):1)*(frame.drawScaleY||1);
   const lowWarp=attacking&&f.move.visualLowWarp?{targetPixels:f.move.height/art.scale}:null;
   const x=origin+f.x*ppu,y=floor-f.y*ppu,scale=art.scale*ppu;
   ctx.save();ctx.globalAlpha=.25;ctx.fillStyle='#020b13';ctx.beginPath();ctx.ellipse(x,floor+5,Math.max(12,45-f.y*3),10,0,0,Math.PI*2);ctx.fill();ctx.restore();
@@ -87,6 +89,14 @@
   }
   ctx.scale(f.facing*scale*sx,scale*sy);
   if(f.flash>0)ctx.filter='brightness(1.65) saturate(.65)';
+  const adaptedKo=f.hp<=0&&art.adaptedKo;
+  if(adaptedKo){
+   const progress=C.clamp((frameNumber-f.damagedAt)/10,0,1),ease=1-Math.pow(1-progress,3),angle=-Math.PI/2*ease;
+   const cos=Math.cos(angle),sin=Math.sin(angle),xs=[frame.x-frame.pivot,frame.x+frame.w-frame.pivot],ys=[frame.y-frame.baseline,frame.y+frame.h-frame.baseline];
+   const corners=xs.flatMap(x=>ys.map(y=>({x:x*cos-y*sin,y:x*sin+y*cos})));
+   const center=(Math.min(...corners.map(p=>p.x))+Math.max(...corners.map(p=>p.x)))/2;
+   ctx.translate(-center*ease,-Math.max(...corners.map(p=>p.y))*ease);ctx.rotate(angle);
+  }
   drawFrame(ctx,image,frame,lowWarp);ctx.restore();
   // The official badge remains readable; the supplied painted costume turns
   // with its wearer, as normal mirrored sprite artwork does.
@@ -97,7 +107,7 @@
   return {hand:tip,foot:tip,energyTip:tip,strikeTip:tip,diagnostic:{countryId:f.data.id,
    renderer:'supplied-country-art',source:art.sourceName,pose,sourceIndex:frame.sourceIndex,
    facing:f.facing,flagMirrored:false,paintedCostumeMirrored:f.facing===-1,
-   active:C.active(f),strikeTip:tip,contact:C.contact(f),lowWarp:!!lowWarp}};
+   active:C.active(f),adaptedKo,adaptedCrouch:!!art.adaptedCrouch&&pose==='crouch',strikeTip:tip,contact:C.contact(f),lowWarp:!!lowWarp}};
  }
  const api={METADATA,hasArt,ensure,portrait,sourcePose,draw,register,get loadedIds(){return [...cache.keys()];},MAX_DECODED};
  root.NationCountrySprites=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;

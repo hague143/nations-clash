@@ -208,8 +208,85 @@ async function suppliedContactAcceptance(page){
  });
  assert.deepEqual(result.failures,[],'actual renderer must paint a visible strike at the actual collision point');
  assert.equal(result.fixtures,3136);
- assert.ok(result.coverage.every(c=>c.used.length===8),'all eight supplied poses participate in production actions/states');
- check('196 supplied fighters: 3136 visible melee contacts, both stances/facings, all eight poses, bounded decoded cache',{fixtures:result.fixtures,countries:196,maxDecodedAtlases:6});
+ const metadata=JSON.parse(fs.readFileSync(path.join(ROOT,'browser/assets/countries/metadata.json'),'utf8'));
+ assert.ok(result.coverage.every(c=>c.used.length===metadata[c.id].poseRecords.length),'every available source pose participates, including all four Turkey poses');
+ check('196 supplied fighters: 3136 visible melee contacts, both stances/facings, every supplied pose, bounded decoded cache',{fixtures:result.fixtures,countries:196,maxDecodedAtlases:6});
+}
+
+async function impactLayerAcceptance(page){
+ const result=await page.evaluate(async()=>{
+  const C=NationCombat,T=NationCountrySprites,assets=NationClash.assets,failures=[];let fixtures=0,legacyHidden=0;
+  const canvases=Array.from({length:4},()=>{const c=document.createElement('canvas');c.width=720;c.height=500;return c;});
+  const contexts=canvases.map(c=>c.getContext('2d',{willReadFrequently:true}));
+  for(const data of NationClash.catalog){
+   const enemy=NationClash.catalog.find(c=>c.id===(data.id==='jp'?'iq':'jp'));
+   await T.ensure([data.id,enemy.id],assets);
+   for(const facing of [-1,1])for(const low of [false,true])for(const action of ['light','heavy'])for(const slot of [0,1]){
+    const f=new C.Fight(slot?enemy:data,slot?data:enemy,{intro:0});const actors=[f.left,f.right],a=actors[slot],d=actors[1-slot];
+    a.x=0;a.facing=facing;f.start(a,{action,low});a.moveFrame=a.move.start;d.x=facing*Math.max(.75,Math.min(1.4,a.move.reach+.2));d.facing=-facing;
+    const view={floor:440,originX:360,pixelsPerUnit:78,time:0,frame:20};
+    contexts.forEach(ctx=>ctx.clearRect(0,0,720,500));
+    NationClash.renderFighter(contexts[0],a,view);
+    NationClash.renderFighters(contexts[1],actors,view);
+    actors.forEach(actor=>NationClash.renderFighter(contexts[2],actor,view));
+    NationClash.renderFighter(contexts[3],d,view);NationClash.renderFighter(contexts[3],a,view);
+    const p=C.contact(a),x=Math.round(360+p.x*78),y=Math.round(440-p.y*78);
+    const sample=contexts.map(ctx=>ctx.getImageData(x-3,y-3,7,7).data);
+    let opaque=0,hidden=0;
+    for(let n=0;n<sample[0].length;n+=4)if(sample[0][n+3]>100){
+     opaque++;if([0,1,2,3].some(k=>sample[1][n+k]!==sample[3][n+k]))failures.push(`${data.id}/${facing}/${low}/${action}/${slot}: striking pixels hidden`);
+     if([0,1,2,3].some(k=>sample[2][n+k]!==sample[3][n+k]))hidden++;
+    }
+    if(!opaque)failures.push(`${data.id}: no opaque strike pixels`);
+    if(hidden)legacyHidden++;fixtures++;
+   }
+  }
+  return {fixtures,legacyHidden,failures};
+ });
+ assert.deepEqual(result.failures,[],'the actual two-fighter painter composites contact pixels with the attacker in front');
+ assert.equal(result.fixtures,3136);assert.ok(result.legacyHidden>0,'the previous fixed paint order demonstrably obscured contact pixels');
+ check('196 fighters: striking hand/foot stays visible over defender in both player slots and facings',{fixtures:result.fixtures,previouslyObscuredFixtures:result.legacyHidden});
+}
+
+async function fourPoseAcceptance(page){
+ const result=await page.evaluate(async()=>{
+  await NationCountrySprites.ensure(['tr'],NationClash.assets);const data=NationClash.catalog.find(c=>c.id==='tr');
+  const c=document.createElement('canvas');c.width=720;c.height=500;const ctx=c.getContext('2d',{willReadFrequently:true}),rows=[];
+  for(const pose of ['crouch','ko']){
+   const f=new NationCombat.Fight(data,NationClash.catalog[0],{intro:0}).left;f.x=0;f.low=pose==='crouch';if(pose==='ko'){f.hp=0;f.damagedAt=0;}
+   ctx.clearRect(0,0,720,500);const result=NationClash.renderFighter(ctx,f,{floor:440,originX:360,pixelsPerUnit:78,time:0,frame:20});
+   const pixels=ctx.getImageData(0,0,720,500).data;let minX=720,minY=500,maxX=0,maxY=0;
+   for(let y=0;y<500;y++)for(let x=0;x<720;x++)if(pixels[(y*720+x)*4+3]>100){minX=Math.min(x,minX);maxX=Math.max(x,maxX);minY=Math.min(y,minY);maxY=Math.max(y,maxY);}
+   rows.push({pose,diagnostic:result.diagnostic,bounds:{width:maxX-minX+1,height:maxY-minY+1,bottom:maxY}});
+  }return rows;
+ });
+ const ko=result.find(r=>r.pose==='ko'),crouch=result.find(r=>r.pose==='crouch');
+ assert.equal(ko.diagnostic.adaptedKo,true);assert.ok(ko.bounds.width>ko.bounds.height,'KO rotates down instead of standing in an absent pose');assert.ok(ko.bounds.bottom<=442,'KO is grounded');
+ assert.equal(crouch.diagnostic.adaptedCrouch,true);assert.ok(crouch.bounds.height<150,'crouch lowers the four-pose guard');
+ check('four-pose Turkey sheet has grounded adapted crouch and KO',{states:result.map(r=>({pose:r.pose,bounds:r.bounds}))});
+}
+
+async function iraqKeyboardAcceptance(page){
+ await page.locator('#back').click();await choose(page,'iq');await choose(page,'ir',1);
+ await page.selectOption('#mode','local');await page.locator('#start').click();await waitFight(page);
+ assert.equal(await page.locator('#left-name').textContent(),'Iraq');assert.equal(await page.locator('#right-name').textContent(),'Iran');
+ await page.locator('#pause').click();
+ let hits=0,whiffs=0;
+ for(const facing of [-1,1])for(const low of [false,true])for(const key of ['j','k']){
+  await fixture(page,{left:'iq',right:'ir',facing,distance:1});
+  const hp=await page.evaluate(()=>NationClash.fight.right.hp);await page.locator('#resume').click();
+  if(low)await page.keyboard.down('s');await page.keyboard.press(key);
+  await page.waitForFunction(hp=>NationClash.fight.right.hp<hp,hp);if(low)await page.keyboard.up('s');
+  assert.ok(await page.evaluate(()=>NationClash.fight.right.lastDamage>0&&NationClash.fight.effects.some(e=>e.damage>0)),'Iraq keyboard strike gives damage and impact feedback');
+  if(facing===1&&!low&&key==='k')await snapshot(page,'iraq-kick-impact');
+  await page.locator('#pause').click();hits++;
+  await fixture(page,{left:'iq',right:'ir',facing,distance:4});await page.locator('#resume').click();
+  if(low)await page.keyboard.down('s');await page.keyboard.press(key);await page.waitForFunction(()=>NationClash.fight.message.includes('MISSED'));if(low)await page.keyboard.up('s');
+  assert.equal(await page.evaluate(()=>NationClash.fight.right.hp),await page.evaluate(()=>NationClash.fight.right.data.hp));await page.locator('#pause').click();whiffs++;
+ }
+ await page.locator('#back').click();await choose(page,'pk');await choose(page,'jp',1);
+ await page.locator('#start').click();await waitFight(page);await page.locator('#pause').click();
+ check('Iraq versus Iran: real keyboard punch/kick hits and genuine whiffs, both stances and directions',{hits,whiffs});
 }
 
 async function actualControls(page){
@@ -397,7 +474,7 @@ async function computerAcceptance(page){
  browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--autoplay-policy=user-gesture-required']});
  const page=await browser.newPage({viewport:{width:1440,height:1050}});watch(page,'desktop');
  await page.goto(siteURL,{timeout:60000});await page.waitForFunction(()=>NationClash.assetsReady,{},{timeout:60000});
- await rosterAcceptance(page);await renderedRosterAcceptance(page);await suppliedContactAcceptance(page);await flagOrientation(page);await actualControls(page);await roundsAcceptance(page);await arenaAcceptance(page);await audioAcceptance(page);await computerAcceptance(page);await mobileAcceptance(html);
+ await rosterAcceptance(page);await renderedRosterAcceptance(page);await suppliedContactAcceptance(page);await impactLayerAcceptance(page);await fourPoseAcceptance(page);await flagOrientation(page);await actualControls(page);await roundsAcceptance(page);await iraqKeyboardAcceptance(page);await arenaAcceptance(page);await audioAcceptance(page);await computerAcceptance(page);await mobileAcceptance(html);
  assert.deepEqual(report.errors,[],'no browser runtime or console errors');assert.deepEqual(report.externalRequests,[],'offline document makes no external requests');
  check('zero runtime errors and zero external network requests');
  report.status='passed';report.finishedAt=new Date().toISOString();
