@@ -1,0 +1,113 @@
+{
+  "startedAt": "2026-10-14T16:45:26.989Z",
+  "document": {
+    "path": "/workspace/nations-clash/browser/index.html",
+    "bytes": 12103349,
+    "sha256": "c04432a29db1300b2a828c97a0c69b8b381b407ad2f45ba18b0ede381dfa0449"
+  },
+  "checks": [
+    {
+      "name": "196 canonical countries, decoded flags, individual looks and supplied art",
+      "status": "passed",
+      "countries": 196
+    },
+    {
+      "name": "live search, regions, pagination, random pick and every country card",
+      "status": "passed",
+      "countrySelections": 196
+    },
+    {
+      "name": "196 visually distinct rendered fighters and every archetype attack pose",
+      "status": "passed",
+      "fighters": 196,
+      "poseFixtures": 96
+    },
+    {
+      "name": "production flag costume drawing preserves emblem orientation",
+      "status": "passed",
+      "sampleCountries": [
+        "pk",
+        "jp",
+        "us",
+        "br",
+        "sa",
+        "gb",
+        "in",
+        "kr",
+        "za",
+        "np",
+        "va",
+        "tw"
+      ]
+    },
+    {
+      "name": "real keyboard movement, punch, guard, mirrored kick, whiff, jump and pause",
+      "status": "passed"
+    },
+    {
+      "name": "actual knockout rounds, first-to-two result and rematch reset",
+      "status": "passed"
+    },
+    {
+      "name": "ten selectable landmarks enter matches and render distinct scenes",
+      "status": "passed",
+      "arenas": [
+        "Minar-e-Pakistan",
+        "Times Square",
+        "Shibuya Crossing",
+        "Eiffel Promenade",
+        "The Great Wall",
+        "Copacabana",
+        "Giza Pyramids",
+        "Tower Bridge",
+        "Sydney Harbour",
+        "Burj Khalifa Plaza"
+      ]
+    },
+    {
+      "name": "bundled start/KO audio, background music, punch/kick sounds, volume, mute, pause and deduplication",
+      "status": "passed"
+    },
+    {
+      "name": "computer mode movement and combat through live AI adapter",
+      "status": "passed"
+    },
+    {
+      "name": "390px mobile touch attack/jump, target sizes and layout",
+      "status": "passed"
+    },
+    {
+      "name": "844×390 landscape touch attack/jump, side controls, viewport fit and target sizes",
+      "status": "passed"
+    },
+    {
+      "name": "zero runtime errors and zero external network requests",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "/workspace/artifacts/NationClash-World-roster-desktop.png",
+    "/workspace/artifacts/NationClash-World-flag-orientation.png",
+    "/workspace/artifacts/NationClash-World-pakistan-impact.png",
+    "/workspace/artifacts/NationClash-World-mirrored-kick.png",
+    "/workspace/artifacts/NationClash-World-match-result.png",
+    "/workspace/artifacts/NationClash-World-arena-lahore.png",
+    "/workspace/artifacts/NationClash-World-arena-times-square.png",
+    "/workspace/artifacts/NationClash-World-arena-tokyo.png",
+    "/workspace/artifacts/NationClash-World-arena-paris.png",
+    "/workspace/artifacts/NationClash-World-arena-great-wall.png",
+    "/workspace/artifacts/NationClash-World-arena-rio.png",
+    "/workspace/artifacts/NationClash-World-arena-giza.png",
+    "/workspace/artifacts/NationClash-World-arena-london.png",
+    "/workspace/artifacts/NationClash-World-arena-sydney.png",
+    "/workspace/artifacts/NationClash-World-arena-dubai.png",
+    "/workspace/artifacts/NationClash-World-computer-match.png",
+    "/workspace/artifacts/NationClash-World-mobile-roster.png",
+    "/workspace/artifacts/NationClash-World-mobile-fight.png",
+    "/workspace/artifacts/NationClash-World-mobile-landscape-fight.png"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "status": "passed",
+  "finishedAt": "2026-10-14T16:47:31.631Z"
+}

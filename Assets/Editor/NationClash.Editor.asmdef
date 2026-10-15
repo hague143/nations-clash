@@ -1,0 +1,5 @@
+{
+  "name": "NationClash.Editor",
+  "references": ["NationClash"],
+  "includePlatforms": ["Editor"]
+}

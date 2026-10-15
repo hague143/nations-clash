@@ -1,0 +1,13 @@
+name: Core combat
+on: [push, pull_request]
+jobs:
+  combat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.426
+      - run: dotnet run --project Tests/Combat/Combat.Tests.csproj --configuration Release
+      - run: dotnet build Tests/Compatibility/Combat.Core.csproj --configuration Release --nologo
+      - run: python3 -m unittest discover -s Tests/Tools -v
