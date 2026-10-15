@@ -50,3 +50,11 @@ The prior 2.34 MiB download predates these supplied characters and is superseded
 Current package metadata is in [COUNTRY-PACKAGE-MANIFEST.json](COUNTRY-PACKAGE-MANIFEST.json).
 
 Additional regression: `node Tests/Browser/start-loading.cjs` delays the artwork load and changes the visible country/arena controls mid-load. The match still starts with its original snapshotted fighters, arena and audio, with both characters rendered and no runtime error.
+
+## Verified public delivery
+
+The immutable GitHub ZIP URL was downloaded over HTTPS after the push:
+
+https://raw.githubusercontent.com/hague143/nations-clash/49f39c142575d3d5ab4e2b0e4205108151a39a23/downloads/NationClash-Windows.zip
+
+All 63494033 downloaded bytes match the tested ZIP SHA-256. ZIP CRCs pass, all 150 country asset scripts are present, and the contained HTML hash matches the document that passed browser acceptance. See [the delivery verification record](PUBLIC-DOWNLOAD-VERIFICATION.json).

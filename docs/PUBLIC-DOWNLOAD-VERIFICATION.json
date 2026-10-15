@@ -1,0 +1,10 @@
+{
+  "status": "verified",
+  "url": "https://raw.githubusercontent.com/hague143/nations-clash/49f39c142575d3d5ab4e2b0e4205108151a39a23/downloads/NationClash-Windows.zip",
+  "commit": "49f39c142575d3d5ab4e2b0e4205108151a39a23",
+  "bytes": 63494033,
+  "sha256": "679c05a55b8a1754b76fc9f98300db3e136d148673f9b3fd9b973c8aca58ed7a",
+  "zipCrc": "passed",
+  "htmlMatchesBrowserTestedDocument": true,
+  "countryAssetFiles": 150
+}

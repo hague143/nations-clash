@@ -1,5 +1,7 @@
 # Playable Windows browser package
 
+[Download the verified game ZIP](https://raw.githubusercontent.com/hague143/nations-clash/49f39c142575d3d5ab4e2b0e4205108151a39a23/downloads/NationClash-Windows.zip)
+
 Download `NationClash-Windows.zip`, right-click **Extract All**, then open the extracted `NationClash.html` in current Chrome or Edge. Keep `country-art/` beside it. The complete extracted game works offline; no Unity, Python or server is required.
 
 This package includes 150 supplied country sheets and the retained fighters for the remaining 46 countries. The supplied filename mapping is preserved. Read `ARTWORK-NOTES.txt` for costume flag mismatches and the missing-sheet list.
