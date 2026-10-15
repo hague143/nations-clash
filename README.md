@@ -10,6 +10,11 @@ after extracting the complete ZIP. See [browser controls](browser/README.md).
 The browser edition has **196 country representatives**, **30 supplied arena
 views** of 29 landmarks, computer/local play, music and spoken Fight/KO cues.
 See the [arena artwork review](docs/ARENA-ARTWORK-REVIEW.md).
+Each country also has a named fantasy signature on **H** (player two: **Numpad 7**),
+with travelling energy, blocks and a four-second recharge. The refreshed matchup
+screen, lighting and shaded particles add a 3D-style presentation to the supplied
+artwork. Original electronic music and layered combat sounds have independent
+Music and Effects controls. See [country powers](docs/COUNTRY-POWERS.md).
 The roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 **All 196 countries use supplied PNGs**. The latest 36-file archive provides
 32 changed sheets and four unchanged sheets. There are 195 eight-pose fighters

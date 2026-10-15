@@ -2,7 +2,7 @@ import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const files=['roster','combat','arena-catalog','arenas','audio','fighters','sprites','country-art','country-sprites','game'];
+const files=['roster','powers','combat','arena-catalog','arenas','audio','fighters','sprites','country-art','country-sprites','power-fx','presentation','game'];
 const sources=await Promise.all(files.map(name=>readFile(path.join(root,'browser/src',name+'.js'),'utf8')));
 const imageFiles={JAPAN:'japan-poses.png',PAKISTAN:'pakistan-poses.png',HEADS:'fighter-heads.png',BODY:'fighter-body.png'};
 let script=sources.join('\n;\n');

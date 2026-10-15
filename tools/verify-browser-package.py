@@ -39,6 +39,27 @@ def main():
     packed = re.search(r"Uint8Array.from\(atob\('([A-Za-z0-9+/=]+)'\)", html)
     assert packed, 'Missing compressed program'
     program = gzip.decompress(base64.b64decode(packed.group(1), validate=True)).decode()
+    bundled_modules = {}
+    for name in ('powers', 'combat', 'power-fx', 'presentation', 'audio', 'game'):
+        source = (ROOT/'browser/src'/(name+'.js')).read_text()
+        prepared = source
+        if name == 'audio':
+            for cue in ('fight', 'ko', 'getready', 'timeover'):
+                uri = 'data:audio/wav;base64,'+base64.b64encode((ROOT/'browser/assets/audio'/(cue+'.wav')).read_bytes()).decode()
+                prepared = prepared.replace('/* AUDIO_'+cue.upper()+'_DATA */', uri)
+        # Legacy atlases are separately optimized by the packager. Verify all
+        # remaining game source in order around those four URI substitutions.
+        if name == 'game':
+            cursor = 0
+            parts = re.split(r'/\* [A-Z]+_IMAGE_DATA \*/', prepared)
+            assert len(parts) == 5
+            for part in parts:
+                at = program.find(part, cursor)
+                assert at >= 0, 'Bundled game logic differs from tested source'
+                cursor = at+len(part)
+        else:
+            assert prepared in program, 'Bundled module differs from tested source: '+name
+        bundled_modules[name] = digest(source.encode())
     images = json.loads(re.search(r'const IMAGE_DATA=(\{[^\n]+\});', program).group(1))
     arenas = json.loads((ROOT/'browser/assets/arenas/metadata.json').read_text())
     assert len(images) == 30 and set(images) == set(arenas)
@@ -61,6 +82,8 @@ def main():
         'sourcePoseTotal': sum(len(a['poseRecords']) for a in countries.values()),
         'arenaSourcePngs': len(arenas), 'embeddedArenaViews': len(images),
         'arenaByteChecks': len(images), 'arenaLandmarks': 29,
+        'countrySignatures': 196, 'signatureVisualMaterials': 9,
+        'bundledModuleSourceHashes': bundled_modules,
     }
     (args.out/'package-manifest.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2))

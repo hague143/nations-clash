@@ -1,25 +1,28 @@
-# Browser world validation
+# Browser world and upgrade validation
 
-The exact self-contained HTML passes **17 browser acceptance groups** and the
-source passes **52 automated tests**. See [exact artifact hashes and commands](DOWNLOAD-VALIDATION.md)
-and [machine-readable browser evidence](WORLD-ACCEPTANCE.json).
+The exact standalone HTML passes **17 world browser groups**, **nine presentation/
+power groups** and three loading/navigation regression cases. All **78 automated
+tests pass**. See [artifact hashes and executed commands](DOWNLOAD-VALIDATION.md),
+[world evidence](WORLD-ACCEPTANCE.json) and [upgrade evidence](UPGRADE-ACCEPTANCE.json).
 
-All 196 fighters have supplied art, including 32 changed images from the latest
-36-file archive. Four files were unchanged. 195 countries have eight source
-poses; Turkey has four and explicit adapted crouch/KO states. No country PNG is
-missing. Two costumes need replacement and two need confirmation; see the
-[creator checklist](REPLACEMENT-ARTWORK-CHECKLIST.md).
+Every supplied fighter's punches/kicks were rechecked: 4,704 six-action hits,
+153,664 low-strike hits and the same number of boundary whiffs, 3,136 painted
+contacts and 3,136 two-fighter layering fixtures. Real Iraq/Iran keyboard hits,
+misses, KO/rematch, all 30 arena matches, audio, AI and mobile controls pass.
 
-Coverage includes every country card and renderer, 4,704 attack hit fixtures,
-153,664 low-strike hits against every crouched country and the same number of
-boundary whiffs, 3,136 painted contact fixtures, 3,136 two-fighter layer checks,
-real Iraq/Iran country selection and keyboard hits/misses, guards, KO/rematch,
-all 30 supplied arena views, audio, AI, portrait/landscape touch, and no runtime errors or
-external network requests. All embedded atlas and arena bytes match their expected sources. Thirty supplied views depict 29 landmarks, including two Angkor Wat views. See [arena evidence](ARENA-ACCEPTANCE.json).
+Each of the 196 countries now has a named fantasy power. All 196 missile visuals
+are distinct; 392 live game render fixtures verify exact collision-core positions
+in both directions. Travelling hits, guards, misses, recharge, startup interrupt,
+pause, double KO and round cleanup pass. The matchup UI uses actual supplied
+portraits with perspective panels and lighting. Audio has original eight-bar
+scores, layered impacts, eight power sound families and independent volume buses.
 
-The downloaded HTML embeds all 196 atlases and works without a companion asset
-folder; hosted source builds still use separate lazy scripts. Only selected
-fighters decode, with a six-image cache. Testing uses an internal HTTP server
-because managed Chromium blocks direct file navigation. Windows file opening
-itself has not been observed. Static source poses are adapted sprite animation,
-not a complete 3D or motion-capture animation set.
+All fighter and arena payloads match their expected source WebPs. Selected
+fighters decode with a six-image cache; backgrounds retain at most three images,
+pinning the live match. The HTML has no companion artwork folder or external
+requests. Testing uses an internal HTTP server because managed Chromium blocks
+file navigation. Direct Windows file opening has not been observed here.
+
+These are supplied sprite animations and static background illustrations with a
+3D-style presentation. Existing source costume issues and adapted Turkey poses
+remain documented in the [creator checklist](REPLACEMENT-ARTWORK-CHECKLIST.md).

@@ -1,22 +1,23 @@
-# Play the updated arena edition
+# Play the country-power edition
 
-[Download NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/6c41478bd01ad26e42ea39af79e86ce590cc9eb0/downloads/NationClash-Windows.zip)
+[Download NationClash-Windows.zip](NationClash-Windows.zip)
 
-Right-click the ZIP, choose **Extract All**, then open `NationClash.html` in
-current Chrome or Edge. All **196 fighters, 30 arena views and audio** are inside
-the HTML; no companion artwork folder is required. Allow the large file to load.
-The standalone HTML is delivered inside the ZIP.
+Right-click the ZIP → **Extract All**, then open `NationClash.html` in current
+Chrome or Edge. All 196 fighters, 196 powers, 30 arena views and audio are inside
+the single HTML. No companion artwork folder is required. Allow it to finish loading.
 
-The supplied backgrounds depict 29 landmarks, with two distinct Angkor Wat views.
-Every menu preview matches its live match. See [arena review](../docs/ARENA-ARTWORK-REVIEW.md).
+**H** launches your country power; player two uses **Numpad 7**. Powers travel,
+can be blocked and recharge in four seconds. Music and Effects have separate
+volume controls. The new matchup screen, lighting and shaded particles give
+the supplied artwork a 3D-style presentation.
 
-ZIP: 89186024 bytes; SHA-256 `5a0cc0ad9c6197ebe57bfc8d7fc4a2243ec15f7e1f36961a6d5079557936e498`.
+ZIP: 89221996 bytes; SHA-256 `39df9515d66b28aeaae56f7a75bdb00782e71d3c3b61650c63736b8c226fd651`.
 
-Extracted HTML: 117864361 bytes; SHA-256 `184ec8c4626388900b75a09c80ebffe18e83910ae67369a33782df2b5238f822`.
+Extracted HTML: 117922292 bytes; SHA-256 `7aa18592f8f180757d8a96633ddc08cc4b973343b7d2090a8bc0b5de321a0b0a`.
 
-All **52 automated tests** and **17 browser acceptance groups** pass, including
-all 196 fighters, all 30 arenas, visible contact, Iraq/Iran keyboard hits/misses,
-music, KO and mobile controls. See [validation](../docs/DOWNLOAD-VALIDATION.md).
+All **78 automated tests**, **26 browser gameplay/presentation groups** and
+three loading/navigation regression cases pass. Every supplied fighter's
+punches/kicks and every arena were rechecked. See [validation](../docs/DOWNLOAD-VALIDATION.md).
 
-Existing source-artwork requests remain recorded in the
-[creator checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
+See [all country powers](../docs/COUNTRY-POWERS.md), [audio design](../docs/AUDIO-DESIGN.md)
+and the existing [source-artwork checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).

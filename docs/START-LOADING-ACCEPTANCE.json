@@ -22,6 +22,14 @@
     "loadedArenas": [
       "lahore",
       "times-square"
+    ],
+    "presentationIds": [
+      "pk",
+      "jp"
+    ],
+    "powerIds": [
+      "pk",
+      "jp"
     ]
   }
 }

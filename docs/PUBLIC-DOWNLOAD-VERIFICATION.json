@@ -1,22 +1,7 @@
 {
-  "status": "verified",
-  "commit": "6c41478bd01ad26e42ea39af79e86ce590cc9eb0",
-  "verifiedAt": "2026-10-15T21:26:51.566057+00:00",
+  "status": "awaiting_public_verification",
   "format": "self-contained single HTML inside ZIP",
-  "files": [
-    {
-      "file": "NationClash-Windows.zip",
-      "url": "https://raw.githubusercontent.com/hague143/nations-clash/6c41478bd01ad26e42ea39af79e86ce590cc9eb0/downloads/NationClash-Windows.zip",
-      "bytes": 89186024,
-      "sha256": "5a0cc0ad9c6197ebe57bfc8d7fc4a2243ec15f7e1f36961a6d5079557936e498",
-      "contentType": "application/zip",
-      "contentDisposition": null,
-      "status": "verified",
-      "zipCrc": "passed",
-      "htmlMatchesBrowserTestedDocument": true,
-      "htmlSha256": "184ec8c4626388900b75a09c80ebffe18e83910ae67369a33782df2b5238f822",
-      "members": 9,
-      "companionAssetFiles": 0
-    }
-  ]
+  "expectedZipBytes": 89221996,
+  "expectedZipSha256": "39df9515d66b28aeaae56f7a75bdb00782e71d3c3b61650c63736b8c226fd651",
+  "expectedHtmlSha256": "7aa18592f8f180757d8a96633ddc08cc4b973343b7d2090a8bc0b5de321a0b0a"
 }

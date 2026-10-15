@@ -80,6 +80,9 @@ Use an up-to-date Chrome or Edge browser.
 
 Move A/D. Jump W. Crouch S. Block F. Attacks J/K/L.
 Guard break U. Throw I. Ultimate O. Pause Escape.
+Country power H (player two: Numpad 7). Each country has its own fantasy power.
+The energy travels to the opponent and can be blocked. Recharge takes four seconds.
+Music and Effects have separate volume sliders; Sound mutes everything.
 
 NationClash.html contains all 196 fighters, portraits, flags, arenas and sounds.
 The HTML works by itself; there is no required country-art folder.
@@ -88,11 +91,14 @@ The file is large: allow it to finish loading before selecting a match.
 Includes the agreed 196 countries (196 supplied fighters, no missing country sheets),
 the supplied costumes, 30 supplied arena views (29 landmarks),
 computer/local modes, music, Fight/KO announcements and strike sounds.
+The supplied sprites now have dimensional UI, lighting and particle effects;
+these are illustrated fighters with a 3D-style presentation.
 """
 credits = (ROOT / "browser/assets/README.md").read_text()
 credits += "\n\n" + (ROOT / "browser/assets/audio/README.md").read_text()
 credits += "\n\n" + (ROOT / "browser/assets/countries/README.md").read_text()
 credits += "\n\n" + (ROOT / "browser/assets/arenas/README.md").read_text()
+credits += "\n\n" + (ROOT / "docs/AUDIO-DESIGN.md").read_text()
 credits += "\n\nNational flags: lipis/flag-icons 7.5.0\n"
 credits += (ROOT / "browser/assets/flags/LICENSE.txt").read_text()
 credits += "\nDownload optimization: PNG sources remain intact; the downloadable game embeds WebP variants at the same dimensions. Its inline program is gzip compressed.\n"

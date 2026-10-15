@@ -2,7 +2,8 @@
 
 A browser fighting game with **196 country fighters**, **196 supplied sprite sheets**,
 **30 supplied arena views** of 29 landmarks, computer and local two-player
-matches, music, spoken announcements, and punch/kick/block effects. The agreed
+matches, 196 country signature powers, original music, spoken announcements,
+and punch/kick/block effects. The agreed
 roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 
 ## Play on Windows
@@ -15,7 +16,8 @@ roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 4. Choose an arena and difficulty, then click **Enter the arena**.
 
 No Unity, account, server or internet connection is needed after downloading.
-Clicking Enter unlocks browser audio; Sound and Volume control it. If the document
+Clicking Enter unlocks browser audio. Master, Music and Effects sliders adjust
+the mix; Sound mutes everything. If the document
 opens as text, ensure its extension is `.html`, not `.html.txt`. Allow this large
 HTML to finish loading. For a hosted website, the source build uses `index.html`
 with an accompanying `country-art` folder.
@@ -32,6 +34,7 @@ For a direct browser website, a GitHub Pages workflow is prepared. See
 | Block | F, or hold away | Right Ctrl, or hold away |
 | Light / heavy / special | J / K / L | Numpad 1 / 2 / 3 |
 | Guard break / throw / ultimate | U / I / O | Numpad 4 / 5 / 6 |
+| Country signature power | H | Numpad 7 |
 | Pause/resume | Escape | Escape |
 
 On-screen buttons support mouse and multitouch. Chain **J → J → K** after
@@ -44,6 +47,29 @@ Visual attacks share contact geometry with the combat engine. Connected strikes
 show recoil, sparks, damage numbers and remaining HP. Out-of-range attacks miss;
 blocking prevents strike damage. Pause, focus loss and returning to selection
 clear held inputs and suspend/stop the appropriate audio.
+
+## Country powers and presentation
+
+Each country has a named fantasy power: Iran's Uranium Pulse, Pakistan's Emerald
+Crescent and UAE's Golden Falcon are examples. Press **H** (player two: **Numpad 7**)
+for a charged punch that launches a visible projectile. It causes 120 damage,
+starts after 18 simulation frames and recharges in four seconds. It can miss,
+be blocked, or be interrupted before launch. Hold S for a low power; a crouching
+guard blocks low attacks. The move is available on the ground and uses no
+ultimate meter. Its projectile travels at eight world units per second for up
+to six units beyond the fist. All countries share these combat rules.
+
+The matchup screen shows the selected supplied portraits and signature names.
+Perspective panels, lit pedestals, shaded energy cores, sparse particles and
+floor reflections provide depth. The supplied fighters and arena illustrations
+remain sprites; this is a 3D-style presentation. Reduced-motion mode disables
+decorative animation while keeping attacks visible and playable.
+
+The original offline soundtrack uses an eight-bar electronic score with pads,
+bass, melody and drums, tuned per arena. Layered punch/kick sounds and eight
+power sound families play alongside the existing announcer. Music and Effects
+can be adjusted independently. See [all country powers](../docs/COUNTRY-POWERS.md)
+and [audio design](../docs/AUDIO-DESIGN.md).
 
 ## Fighters and venues
 
@@ -66,9 +92,10 @@ replacements; Monaco and Slovenia need confirmation. See the
 [full audit](../docs/COUNTRY-ARTWORK-REVIEW.md) and
 [creator checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
 
-Choose Minar-e-Pakistan, Times Square, Shibuya Crossing, Eiffel Promenade,
-the Great Wall, Copacabana, Giza Pyramids, Tower Bridge, Sydney Harbour or
-Burj Khalifa Plaza. Each arena has its own illustrated scene and music settings.
+Choose from 30 supplied arena views, including Minar-e-Pakistan, Times Square,
+Shibuya Crossing, Eiffel Tower, Big Ben, Taj Mahal, Christ the Redeemer and Burj
+Khalifa. Two Angkor Wat views depict the same landmark. Each arena has its own
+image and music settings; see the [arena review](../docs/ARENA-ARTWORK-REVIEW.md).
 
 Credits and flag variants are recorded in [assets/README.md](assets/README.md),
 [flags/README.md](assets/flags/README.md) and [audio/README.md](assets/audio/README.md).

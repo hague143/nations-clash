@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checkedAt": "2026-10-15T21:24:08.828Z",
+  "checkedAt": "2026-10-15T22:00:55.752Z",
   "sourceArchive": {
     "archive": "Famous_Fighting_Stages_All_30.zip",
     "archiveBytes": 87685046,
@@ -21,12 +21,12 @@
   "liveMatchArenaRetained": true,
   "rapidSelectionRace": "passed",
   "startLoadingRace": "passed",
-  "automatedTestsPassed": 52,
+  "automatedTestsPassed": 78,
   "automatedTestsFailed": 0,
-  "browserGroupsPassed": 17,
+  "browserGroupsPassed": 26,
   "runtimeErrors": 0,
   "externalRequests": 0,
-  "htmlSha256": "184ec8c4626388900b75a09c80ebffe18e83910ae67369a33782df2b5238f822",
+  "htmlSha256": "7aa18592f8f180757d8a96633ddc08cc4b973343b7d2090a8bc0b5de321a0b0a",
   "visualReview": [
     "docs/previews/arena-gallery.png",
     "docs/previews/arena-matches-1.jpg",

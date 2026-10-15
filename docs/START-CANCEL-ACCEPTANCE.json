@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "document": "/workspace/nations-clash/artifacts/presentation-upgrade/final-package-check/NationClash.html",
+  "checks": [
+    {
+      "name": "Back cancels pending completed-match Rematch and a stale success cannot replace a fresh Start",
+      "status": "passed",
+      "cancelled": {
+        "fight": false,
+        "selectionVisible": true,
+        "startDisabled": false,
+        "status": "ready"
+      },
+      "resolved": {
+        "sameFight": true,
+        "left": "us",
+        "selectionVisible": false,
+        "status": "ready"
+      }
+    },
+    {
+      "name": "stale rejected artwork cannot overwrite a newer pending Start or release its arena",
+      "status": "passed",
+      "pending": {
+        "button": "LOADING SELECTED FIGHTERS\u2026",
+        "disabled": true,
+        "status": "loading"
+      },
+      "afterReject": {
+        "button": "LOADING SELECTED FIGHTERS\u2026",
+        "disabled": true,
+        "status": "loading",
+        "fight": false
+      },
+      "fresh": {
+        "left": "ir",
+        "status": "ready",
+        "arena": "lahore",
+        "retained": "lahore",
+        "audioArena": "lahore"
+      }
+    }
+  ],
+  "errors": []
+}

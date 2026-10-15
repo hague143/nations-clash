@@ -74,7 +74,7 @@
   if(f.pose==='walk')f.walkTime=frameNumber;
   const pose=f.hp<=0&&art.hasGroundKo&&frameNumber-f.damagedAt<7?'hit':sourcePose(f),frame=art.frames[pose]||art.frames.idle;
   const attacking=!!f.move&&pose===f.move.visualPose;
-  const ranged=attacking&&['special','ultimate'].includes(f.move.id);
+  const ranged=attacking&&(['special','ultimate'].includes(f.move.id)||f.move.projectile);
   const sx=attacking&&!ranged?(f.move.visualScaleX||1):1;
   const sy=(attacking&&!ranged&&!f.move.visualLowWarp?(f.move.visualScaleY||1):1)*(frame.drawScaleY||1);
   const lowWarp=attacking&&f.move.visualLowWarp?{targetPixels:f.move.height/art.scale}:null;
