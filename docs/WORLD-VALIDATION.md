@@ -1,6 +1,6 @@
 # Browser world validation
 
-The exact self-contained HTML passes **16 browser acceptance groups** and the
+The exact self-contained HTML passes **17 browser acceptance groups** and the
 source passes **52 automated tests**. See [exact artifact hashes and commands](DOWNLOAD-VALIDATION.md)
 and [machine-readable browser evidence](WORLD-ACCEPTANCE.json).
 
@@ -14,8 +14,8 @@ Coverage includes every country card and renderer, 4,704 attack hit fixtures,
 153,664 low-strike hits against every crouched country and the same number of
 boundary whiffs, 3,136 painted contact fixtures, 3,136 two-fighter layer checks,
 real Iraq/Iran country selection and keyboard hits/misses, guards, KO/rematch,
-all 10 arenas, audio, AI, portrait/landscape touch, and no runtime errors or
-external network requests. All embedded atlas bytes match their expected sources.
+all 30 supplied arena views, audio, AI, portrait/landscape touch, and no runtime errors or
+external network requests. All embedded atlas and arena bytes match their expected sources. Thirty supplied views depict 29 landmarks, including two Angkor Wat views. See [arena evidence](ARENA-ACCEPTANCE.json).
 
 The downloaded HTML embeds all 196 atlases and works without a companion asset
 folder; hosted source builds still use separate lazy scripts. Only selected

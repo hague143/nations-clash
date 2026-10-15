@@ -34,8 +34,7 @@ Unity/C# foundation follows that scope and has two marked training definitions.
 Unity roster/art integration, AI, matchmaking and tournaments remain future work.
 
 Subsequent user requests authorized a separate playable browser game, expanding
-the agreed roster to 196 countries, supplied Pakistan/Japan art, shared flag-costume
-rigs, 10 arenas, AI and audio. That browser implementation and its current evidence
+the agreed roster to 196 countries, 196 supplied fighter sheets, 30 supplied arena views, AI and audio. That browser implementation and its current evidence
 are documented in [browser/README.md](../browser/README.md) and
 [WORLD-VALIDATION.md](WORLD-VALIDATION.md).
 

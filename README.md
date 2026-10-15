@@ -7,8 +7,9 @@ folder. Pick a country,
 then **Enter the arena**. No server, account, installation or internet is needed
 after extracting the complete ZIP. See [browser controls](browser/README.md).
 
-The browser edition has **196 country representatives**, **10
-selectable landmark arenas**, computer/local play, music and spoken Fight/KO cues.
+The browser edition has **196 country representatives**, **30 supplied arena
+views** of 29 landmarks, computer/local play, music and spoken Fight/KO cues.
+See the [arena artwork review](docs/ARENA-ARTWORK-REVIEW.md).
 The roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 **All 196 countries use supplied PNGs**. The latest 36-file archive provides
 32 changed sheets and four unchanged sheets. There are 195 eight-pose fighters

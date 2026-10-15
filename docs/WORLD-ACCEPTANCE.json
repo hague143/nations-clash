@@ -1,9 +1,9 @@
 {
-  "startedAt": "2026-10-15T18:52:27.786Z",
+  "startedAt": "2026-10-15T21:21:10.421Z",
   "document": {
-    "path": "artifacts/selected36/package-check/NationClash.html",
-    "bytes": 104572020,
-    "sha256": "2c0ddb0a34f4683b5e88abcfe73d67b89ad087e8654c1d38bab29be1b9193258"
+    "path": "artifacts/arena-update/package-check/NationClash.html",
+    "bytes": 117864361,
+    "sha256": "184ec8c4626388900b75a09c80ebffe18e83910ae67369a33782df2b5238f822"
   },
   "checks": [
     {
@@ -92,19 +92,43 @@
       "whiffs": 8
     },
     {
-      "name": "ten selectable landmarks enter matches and render distinct scenes",
+      "name": "rapid arena selection keeps the latest preview after out-of-order loading",
+      "status": "passed"
+    },
+    {
+      "name": "thirty selectable supplied arena views enter matches with matching previews, scenery and music",
       "status": "passed",
       "arenas": [
         "Minar-e-Pakistan",
         "Times Square",
-        "Shibuya Crossing",
-        "Eiffel Promenade",
+        "Eiffel Tower",
+        "Burj Khalifa",
         "The Great Wall",
-        "Copacabana",
+        "Colosseum",
         "Giza Pyramids",
-        "Tower Bridge",
-        "Sydney Harbour",
-        "Burj Khalifa Plaza"
+        "Shibuya Crossing",
+        "Christ the Redeemer",
+        "Big Ben",
+        "Acropolis",
+        "Angkor Wat \u2014 Temple Terrace",
+        "Chichen Itza",
+        "Niagara Falls",
+        "Venice",
+        "Stonehenge",
+        "Mount Fuji",
+        "Sagrada Familia",
+        "Cappadocia",
+        "Bagan",
+        "Taj Mahal",
+        "Sydney Opera House",
+        "Machu Picchu",
+        "Petra",
+        "Hagia Sophia",
+        "Angkor Wat \u2014 Lotus Causeway",
+        "Santorini",
+        "Statue of Liberty",
+        "Easter Island Moai",
+        "Burj Al Arab"
       ]
     },
     {
@@ -120,7 +144,7 @@
       "status": "passed"
     },
     {
-      "name": "844×390 landscape touch attack/jump, side controls, viewport fit and target sizes",
+      "name": "844\u00d7390 landscape touch attack/jump, side controls, viewport fit and target sizes",
       "status": "passed"
     },
     {
@@ -129,29 +153,49 @@
     }
   ],
   "screenshots": [
-    "artifacts/selected36/package-validation/NationClash-World-roster-desktop.png",
-    "artifacts/selected36/package-validation/NationClash-World-flag-orientation.png",
-    "artifacts/selected36/package-validation/NationClash-World-pakistan-impact.png",
-    "artifacts/selected36/package-validation/NationClash-World-mirrored-kick.png",
-    "artifacts/selected36/package-validation/NationClash-World-match-result.png",
-    "artifacts/selected36/package-validation/NationClash-World-iraq-kick-impact.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-lahore.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-times-square.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-tokyo.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-paris.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-great-wall.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-rio.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-giza.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-london.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-sydney.png",
-    "artifacts/selected36/package-validation/NationClash-World-arena-dubai.png",
-    "artifacts/selected36/package-validation/NationClash-World-computer-match.png",
-    "artifacts/selected36/package-validation/NationClash-World-mobile-roster.png",
-    "artifacts/selected36/package-validation/NationClash-World-mobile-fight.png",
-    "artifacts/selected36/package-validation/NationClash-World-mobile-landscape-fight.png"
+    "artifacts/arena-update/package-validation/NationClash-World-roster-desktop.png",
+    "artifacts/arena-update/package-validation/NationClash-World-flag-orientation.png",
+    "artifacts/arena-update/package-validation/NationClash-World-pakistan-impact.png",
+    "artifacts/arena-update/package-validation/NationClash-World-mirrored-kick.png",
+    "artifacts/arena-update/package-validation/NationClash-World-match-result.png",
+    "artifacts/arena-update/package-validation/NationClash-World-iraq-kick-impact.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-lahore.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-times-square.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-paris.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-dubai.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-great-wall.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-rome.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-giza.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-tokyo.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-rio.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-london.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-athens.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-angkor-temple.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-chichen-itza.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-niagara.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-venice.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-stonehenge.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-mount-fuji.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-barcelona.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-cappadocia.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-bagan.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-taj-mahal.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-sydney.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-machu-picchu.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-petra.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-hagia-sophia.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-angkor-causeway.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-santorini.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-liberty.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-easter-island.png",
+    "artifacts/arena-update/package-validation/NationClash-World-arena-burj-al-arab.png",
+    "artifacts/arena-update/package-validation/NationClash-World-computer-match.png",
+    "artifacts/arena-update/package-validation/NationClash-World-mobile-roster.png",
+    "artifacts/arena-update/package-validation/NationClash-World-mobile-fight.png",
+    "artifacts/arena-update/package-validation/NationClash-World-mobile-landscape-fight.png"
   ],
   "errors": [],
   "externalRequests": [],
   "status": "passed",
-  "finishedAt": "2026-10-15T18:54:39.068Z"
+  "finishedAt": "2026-10-15T21:24:08.828Z"
 }

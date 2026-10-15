@@ -1,0 +1,1011 @@
+[
+  {
+    "id": "lahore",
+    "name": "Minar-e-Pakistan",
+    "city": "Lahore, Pakistan",
+    "country": "pk",
+    "subtitle": "Sunset over the marble plaza",
+    "description": "Sunset over the marble plaza.",
+    "icon": "☾",
+    "accent": "#72edb6",
+    "floorY": 600,
+    "originalName": "01_Minar_e_Pakistan_Lahore.png",
+    "music": {
+      "tempo": 104,
+      "key": 50,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        3,
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "times-square",
+    "name": "Times Square",
+    "city": "New York, United States",
+    "country": "us",
+    "subtitle": "Neon lights on rain-soaked streets",
+    "description": "Neon lights on rain-soaked streets.",
+    "icon": "▥",
+    "accent": "#ff63c7",
+    "floorY": 600,
+    "originalName": "02_Times_Square_New_York.png",
+    "music": {
+      "tempo": 118,
+      "key": 45,
+      "scale": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "melody": [
+        0,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "paris",
+    "name": "Eiffel Tower",
+    "city": "Paris, France",
+    "country": "fr",
+    "subtitle": "Golden reflections beside the Seine",
+    "description": "Golden reflections beside the Seine.",
+    "icon": "♜",
+    "accent": "#f5c56a",
+    "floorY": 600,
+    "originalName": "03_Eiffel_Tower_Paris.png",
+    "music": {
+      "tempo": 100,
+      "key": 48,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        0,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "dubai",
+    "name": "Burj Khalifa",
+    "city": "Dubai, United Arab Emirates",
+    "country": "ae",
+    "subtitle": "A skyline reflected in the plaza",
+    "description": "A skyline reflected in the plaza.",
+    "icon": "◇",
+    "accent": "#dac2ff",
+    "floorY": 600,
+    "originalName": "04_Burj_Khalifa_Dubai.png",
+    "music": {
+      "tempo": 114,
+      "key": 49,
+      "scale": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "melody": [
+        0,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "great-wall",
+    "name": "The Great Wall",
+    "city": "Beijing, China",
+    "country": "cn",
+    "subtitle": "Mountain mist beyond the battlements",
+    "description": "Mountain mist beyond the battlements.",
+    "icon": "▰",
+    "accent": "#e7b679",
+    "floorY": 600,
+    "originalName": "05_Great_Wall_of_China.png",
+    "music": {
+      "tempo": 108,
+      "key": 48,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        0,
+        1,
+        2,
+        4,
+        3,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "rome",
+    "name": "Colosseum",
+    "city": "Rome, Italy",
+    "country": "it",
+    "subtitle": "Rivals in the ancient arena",
+    "description": "Rivals in the ancient arena.",
+    "icon": "◈",
+    "accent": "#ebad73",
+    "floorY": 600,
+    "originalName": "06_Colosseum_Rome.png",
+    "music": {
+      "tempo": 110,
+      "key": 50,
+      "scale": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        3,
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "giza",
+    "name": "Giza Pyramids",
+    "city": "Giza, Egypt",
+    "country": "eg",
+    "subtitle": "The desert at golden hour",
+    "description": "The desert at golden hour.",
+    "icon": "△",
+    "accent": "#ffd08d",
+    "floorY": 600,
+    "originalName": "07_Giza_Pyramids_Egypt.png",
+    "music": {
+      "tempo": 100,
+      "key": 45,
+      "scale": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "melody": [
+        0,
+        2,
+        3,
+        4,
+        3,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "tokyo",
+    "name": "Shibuya Crossing",
+    "city": "Tokyo, Japan",
+    "country": "jp",
+    "subtitle": "A rain-lit crossing beneath neon screens",
+    "description": "A rain-lit crossing beneath neon screens.",
+    "icon": "◈",
+    "accent": "#bf98ff",
+    "floorY": 600,
+    "originalName": "08_Shibuya_Tokyo.png",
+    "music": {
+      "tempo": 112,
+      "key": 52,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "melody": [
+        0,
+        1,
+        3,
+        4,
+        3,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "rio",
+    "name": "Christ the Redeemer",
+    "city": "Rio de Janeiro, Brazil",
+    "country": "br",
+    "subtitle": "A terrace above the coastal mountains",
+    "description": "A terrace above the coastal mountains.",
+    "icon": "≈",
+    "accent": "#66e8d6",
+    "floorY": 600,
+    "originalName": "09_Christ_the_Redeemer_Rio.png",
+    "music": {
+      "tempo": 116,
+      "key": 50,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        2,
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "london",
+    "name": "Big Ben",
+    "city": "London, United Kingdom",
+    "country": "gb",
+    "subtitle": "Sunset over Westminster",
+    "description": "Sunset over Westminster.",
+    "icon": "╬",
+    "accent": "#94c6ea",
+    "floorY": 600,
+    "originalName": "10_Big_Ben_London.png",
+    "music": {
+      "tempo": 110,
+      "key": 47,
+      "scale": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        10
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        5,
+        4,
+        2,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "athens",
+    "name": "Acropolis",
+    "city": "Athens, Greece",
+    "country": "gr",
+    "subtitle": "Champions below the ancient citadel",
+    "description": "Champions below the ancient citadel.",
+    "icon": "◈",
+    "accent": "#f5c56a",
+    "floorY": 600,
+    "originalName": "11_Acropolis_Athens.png",
+    "music": {
+      "tempo": 120,
+      "key": 55,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        3,
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "angkor-temple",
+    "name": "Angkor Wat — Temple Terrace",
+    "city": "Siem Reap, Cambodia",
+    "country": "kh",
+    "subtitle": "Sunset reflected across the temple water",
+    "description": "Sunset reflected across the temple water.",
+    "icon": "◈",
+    "accent": "#ff63c7",
+    "floorY": 600,
+    "originalName": "12_Angkor_Wat_Cambodia_v1.png",
+    "music": {
+      "tempo": 122,
+      "key": 56,
+      "scale": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "melody": [
+        1,
+        3,
+        0,
+        4,
+        3,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "chichen-itza",
+    "name": "Chichen Itza",
+    "city": "Yucatan, Mexico",
+    "country": "mx",
+    "subtitle": "Stone circles beneath the pyramid",
+    "description": "Stone circles beneath the pyramid.",
+    "icon": "◈",
+    "accent": "#f3b78a",
+    "floorY": 600,
+    "originalName": "13_Chichen_Itza_Mexico.png",
+    "music": {
+      "tempo": 124,
+      "key": 45,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "melody": [
+        2,
+        4,
+        1,
+        0,
+        4,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "niagara",
+    "name": "Niagara Falls",
+    "city": "Canada / United States",
+    "country": "ca",
+    "subtitle": "A stone terrace above the falls",
+    "description": "A stone terrace above the falls.",
+    "icon": "◈",
+    "accent": "#dac2ff",
+    "floorY": 600,
+    "originalName": "14_Niagara_Falls.png",
+    "music": {
+      "tempo": 126,
+      "key": 46,
+      "scale": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "melody": [
+        3,
+        0,
+        2,
+        1,
+        0,
+        4,
+        3,
+        1
+      ]
+    },
+    "countries": [
+      "ca",
+      "us"
+    ]
+  },
+  {
+    "id": "venice",
+    "name": "Venice",
+    "city": "Venice, Italy",
+    "country": "it",
+    "subtitle": "Canals beneath the evening sky",
+    "description": "Canals beneath the evening sky.",
+    "icon": "◈",
+    "accent": "#e7b679",
+    "floorY": 600,
+    "originalName": "15_Venice_Italy.png",
+    "music": {
+      "tempo": 128,
+      "key": 47,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        4,
+        1,
+        3,
+        2,
+        1,
+        0,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "stonehenge",
+    "name": "Stonehenge",
+    "city": "Wiltshire, United Kingdom",
+    "country": "gb",
+    "subtitle": "Ancient stones under a dramatic sky",
+    "description": "Ancient stones under a dramatic sky.",
+    "icon": "◈",
+    "accent": "#ebad73",
+    "floorY": 600,
+    "originalName": "16_Stonehenge_UK.png",
+    "music": {
+      "tempo": 100,
+      "key": 48,
+      "scale": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        3,
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "mount-fuji",
+    "name": "Mount Fuji",
+    "city": "Japan",
+    "country": "jp",
+    "subtitle": "Cherry blossoms beside the mountain lake",
+    "description": "Cherry blossoms beside the mountain lake.",
+    "icon": "◈",
+    "accent": "#ffd08d",
+    "floorY": 600,
+    "originalName": "17_Mount_Fuji_Japan.png",
+    "music": {
+      "tempo": 102,
+      "key": 49,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "melody": [
+        1,
+        3,
+        0,
+        4,
+        3,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "barcelona",
+    "name": "Sagrada Familia",
+    "city": "Barcelona, Spain",
+    "country": "es",
+    "subtitle": "Golden light beneath the soaring towers",
+    "description": "Golden light beneath the soaring towers.",
+    "icon": "◈",
+    "accent": "#bf98ff",
+    "floorY": 600,
+    "originalName": "18_Sagrada_Familia_Barcelona.png",
+    "music": {
+      "tempo": 104,
+      "key": 50,
+      "scale": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "melody": [
+        2,
+        4,
+        1,
+        0,
+        4,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "cappadocia",
+    "name": "Cappadocia",
+    "city": "Turkiye",
+    "country": "tr",
+    "subtitle": "Balloons over the stone valley",
+    "description": "Balloons over the stone valley.",
+    "icon": "◈",
+    "accent": "#66e8d6",
+    "floorY": 600,
+    "originalName": "19_Cappadocia_Turkey.png",
+    "music": {
+      "tempo": 106,
+      "key": 51,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        3,
+        0,
+        2,
+        1,
+        0,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "bagan",
+    "name": "Bagan",
+    "city": "Myanmar",
+    "country": "mm",
+    "subtitle": "Pagodas stretching into the evening mist",
+    "description": "Pagodas stretching into the evening mist.",
+    "icon": "◈",
+    "accent": "#94c6ea",
+    "floorY": 600,
+    "originalName": "20_Bagan_Myanmar.png",
+    "music": {
+      "tempo": 108,
+      "key": 52,
+      "scale": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "melody": [
+        4,
+        1,
+        3,
+        2,
+        1,
+        0,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "city": "Agra, India",
+    "country": "in",
+    "subtitle": "Marble reflections in the courtyard",
+    "description": "Marble reflections in the courtyard.",
+    "icon": "◈",
+    "accent": "#f5c56a",
+    "floorY": 600,
+    "originalName": "21_Taj_Mahal_India.png",
+    "music": {
+      "tempo": 110,
+      "key": 53,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        3,
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sydney",
+    "name": "Sydney Opera House",
+    "city": "Sydney, Australia",
+    "country": "au",
+    "subtitle": "Harbour lights across the waterfront",
+    "description": "Harbour lights across the waterfront.",
+    "icon": "◭",
+    "accent": "#ffb485",
+    "floorY": 600,
+    "originalName": "22_Sydney_Opera_House_Australia.png",
+    "music": {
+      "tempo": 106,
+      "key": 52,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        0,
+        3,
+        2,
+        4,
+        2,
+        1,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "machu-picchu",
+    "name": "Machu Picchu",
+    "city": "Cusco Region, Peru",
+    "country": "pe",
+    "subtitle": "A mountaintop circle above the clouds",
+    "description": "A mountaintop circle above the clouds.",
+    "icon": "◈",
+    "accent": "#f3b78a",
+    "floorY": 600,
+    "originalName": "23_Machu_Picchu_Peru.png",
+    "music": {
+      "tempo": 114,
+      "key": 55,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        2,
+        4,
+        1,
+        0,
+        4,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "petra",
+    "name": "Petra",
+    "city": "Jordan",
+    "country": "jo",
+    "subtitle": "A stone platform before the Treasury",
+    "description": "A stone platform before the Treasury.",
+    "icon": "◈",
+    "accent": "#dac2ff",
+    "floorY": 600,
+    "originalName": "24_Petra_Jordan.png",
+    "music": {
+      "tempo": 116,
+      "key": 56,
+      "scale": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "melody": [
+        3,
+        0,
+        2,
+        1,
+        0,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "hagia-sophia",
+    "name": "Hagia Sophia",
+    "city": "Istanbul, Turkiye",
+    "country": "tr",
+    "subtitle": "The domed skyline at dusk",
+    "description": "The domed skyline at dusk.",
+    "icon": "◈",
+    "accent": "#e7b679",
+    "floorY": 600,
+    "originalName": "25_Hagia_Sophia_Istanbul.png",
+    "music": {
+      "tempo": 118,
+      "key": 45,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "melody": [
+        4,
+        1,
+        3,
+        2,
+        1,
+        0,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "id": "angkor-causeway",
+    "name": "Angkor Wat — Lotus Causeway",
+    "city": "Siem Reap, Cambodia",
+    "country": "kh",
+    "subtitle": "Lotus water and the temple causeway",
+    "description": "Lotus water and the temple causeway.",
+    "icon": "◈",
+    "accent": "#ebad73",
+    "floorY": 600,
+    "originalName": "26_Angkor_Wat_Cambodia_v2.png",
+    "music": {
+      "tempo": 120,
+      "key": 46,
+      "scale": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "melody": [
+        0,
+        2,
+        4,
+        3,
+        2,
+        1,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "santorini",
+    "name": "Santorini",
+    "city": "Greece",
+    "country": "gr",
+    "subtitle": "White terraces above the Aegean",
+    "description": "White terraces above the Aegean.",
+    "icon": "◈",
+    "accent": "#ffd08d",
+    "floorY": 600,
+    "originalName": "27_Santorini_Greece.png",
+    "music": {
+      "tempo": 122,
+      "key": 47,
+      "scale": [
+        0,
+        2,
+        4,
+        7,
+        9
+      ],
+      "melody": [
+        1,
+        3,
+        0,
+        4,
+        3,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "id": "liberty",
+    "name": "Statue of Liberty",
+    "city": "New York, United States",
+    "country": "us",
+    "subtitle": "A harbour terrace facing the skyline",
+    "description": "A harbour terrace facing the skyline.",
+    "icon": "◈",
+    "accent": "#bf98ff",
+    "floorY": 600,
+    "originalName": "28_Statue_of_Liberty_New_York.png",
+    "music": {
+      "tempo": 124,
+      "key": 48,
+      "scale": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "melody": [
+        2,
+        4,
+        1,
+        0,
+        4,
+        3,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "easter-island",
+    "name": "Easter Island Moai",
+    "city": "Rapa Nui, Chile",
+    "country": "cl",
+    "subtitle": "Stone guardians above the Pacific",
+    "description": "Stone guardians above the Pacific.",
+    "icon": "◈",
+    "accent": "#66e8d6",
+    "floorY": 600,
+    "originalName": "29_Easter_Island_Moai_Chile.png",
+    "music": {
+      "tempo": 126,
+      "key": 49,
+      "scale": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "melody": [
+        3,
+        0,
+        2,
+        1,
+        0,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "burj-al-arab",
+    "name": "Burj Al Arab",
+    "city": "Dubai, United Arab Emirates",
+    "country": "ae",
+    "subtitle": "A waterfront circle by the sail-shaped tower",
+    "description": "A waterfront circle by the sail-shaped tower.",
+    "icon": "◈",
+    "accent": "#94c6ea",
+    "floorY": 600,
+    "originalName": "30_Burj_Al_Arab_Dubai.png",
+    "music": {
+      "tempo": 128,
+      "key": 50,
+      "scale": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "melody": [
+        4,
+        1,
+        3,
+        2,
+        1,
+        0,
+        4,
+        2
+      ]
+    }
+  }
+]

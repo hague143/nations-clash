@@ -11,8 +11,9 @@ const {chromium}=require('playwright'),http=require('node:http'),fs=require('nod
   await page.locator('#start').click();await page.waitForFunction(()=>document.getElementById('start').textContent.includes('LOADING SELECTED'));
   await page.locator('#country-search').fill('United States');await page.locator('.card').click();await page.selectOption('#arena-select','times-square');
   await page.evaluate(()=>releaseArt());await page.waitForFunction(()=>NationClash.fight?.phase==='fight');
-  const after=await page.evaluate(()=>({ids:[NationClash.fight.left.data.id,NationClash.fight.right.data.id],arena:NationClash.selectedArena,audioArena:NationClash.audioDebug.arena,rendered:NationClash.rendererDiagnostics.map(d=>d.countryId)}));
+  const after=await page.evaluate(()=>({ids:[NationClash.fight.left.data.id,NationClash.fight.right.data.id],arena:NationClash.selectedArena,audioArena:NationClash.audioDebug.arena,rendered:NationClash.rendererDiagnostics.map(d=>d.countryId),retainedArena:NationArenas.retainedId,loadedArenas:NationArenas.loadedIds}));
   assert.deepEqual(after.ids,before.ids);assert.equal(after.arena,before.arena);assert.equal(after.audioArena,before.arena);assert.deepEqual(after.rendered,before.ids);assert.deepEqual(errors,[]);
+  assert.equal(after.retainedArena,before.arena);assert.ok(after.loadedArenas.includes(before.arena)&&after.loadedArenas.length<=3);
   fs.writeFileSync('artifacts/start-race-check.json',JSON.stringify({status:'passed',before,after},null,2)+'\n');console.log('PASS changing country/arena while artwork loads cannot change or blank the match already starting');
  }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1;});

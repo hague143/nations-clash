@@ -86,12 +86,13 @@ The HTML works by itself; there is no required country-art folder.
 The file is large: allow it to finish loading before selecting a match.
 
 Includes the agreed 196 countries (196 supplied fighters, no missing country sheets),
-the supplied costumes, 10 selectable arenas,
+the supplied costumes, 30 supplied arena views (29 landmarks),
 computer/local modes, music, Fight/KO announcements and strike sounds.
 """
 credits = (ROOT / "browser/assets/README.md").read_text()
 credits += "\n\n" + (ROOT / "browser/assets/audio/README.md").read_text()
 credits += "\n\n" + (ROOT / "browser/assets/countries/README.md").read_text()
+credits += "\n\n" + (ROOT / "browser/assets/arenas/README.md").read_text()
 credits += "\n\nNational flags: lipis/flag-icons 7.5.0\n"
 credits += (ROOT / "browser/assets/flags/LICENSE.txt").read_text()
 credits += "\nDownload optimization: PNG sources remain intact; the downloadable game embeds WebP variants at the same dimensions. Its inline program is gzip compressed.\n"
@@ -104,11 +105,13 @@ with ZipFile(archive, "w", ZIP_DEFLATED, compresslevel=9) as zip_file:
     zip_file.writestr("ARTWORK-INVENTORY.json", (ROOT / 'artwork/country-fighters/intake.json').read_bytes())
     zip_file.writestr('COUNTRY-ASSIGNMENTS.json', (ROOT / 'artwork/country-fighters/assignments.json').read_bytes())
     zip_file.writestr('REPLACEMENT-CHECKLIST.txt', (ROOT / 'docs/REPLACEMENT-ARTWORK-CHECKLIST.md').read_text())
+    zip_file.writestr('ARENA-NOTES.txt', (ROOT / 'docs/ARENA-ARTWORK-REVIEW.md').read_text())
+    zip_file.writestr('ARENA-INVENTORY.json', (ROOT / 'artwork/arenas/intake.json').read_bytes())
 
 with ZipFile(archive) as zip_file:
     assert zip_file.testzip() is None
     assert zip_file.read("NationClash.html") == game.read_bytes()
-    assert len(zip_file.namelist()) == 7
+    assert len(zip_file.namelist()) == 9
     assert html.count('id="country-art-') == 196
     assert not any(n.startswith('country-art/') for n in zip_file.namelist())
 OUT.chmod(0o755)

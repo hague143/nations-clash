@@ -1,7 +1,7 @@
 # NationClash World Arena
 
 A browser fighting game with **196 country fighters**, **196 supplied sprite sheets**,
-**10 selectable landmark arenas**, computer and local two-player
+**30 supplied arena views** of 29 landmarks, computer and local two-player
 matches, music, spoken announcements, and punch/kick/block effects. The agreed
 roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 
@@ -108,7 +108,7 @@ browser in a separate tooling directory, and expose that directory through
 These tooling packages are not required by the playable HTML.
 
 The cloud checks cover all 196 real country selections and rendered fighters,
-all moves, collision/whiff/guard behavior, round results/rematches, all 10 venues,
+all moves, collision/whiff/guard behavior, round results/rematches, all 30 arena views,
 audio lifecycle, live AI and mobile touch. See [validation evidence](../docs/WORLD-VALIDATION.md).
 Managed Chromium tests the actual extracted package through an internal HTTP
 server because it can block `file:` navigation. The downloaded HTML uses

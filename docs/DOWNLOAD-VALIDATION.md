@@ -1,88 +1,83 @@
-# Single-file HTML package validation
+# Updated arena package validation
 
-The playable download is now **one self-contained NationClash.html**. Its 196
-country atlases are inert embedded payloads; only selected match images decode,
-with a maximum six-atlas cache. No companion country-art folder is required.
-The ZIP contains that HTML plus six instructions, credits and artwork records.
-The hosted source build remains a smaller HTML with lazy local artwork scripts.
+The download contains one self-contained `NationClash.html`, with all **196
+country fighters, 30 supplied arena views and audio** embedded. Its ZIP includes
+that HTML and eight instructions, credits and artwork records. No companion
+asset folder is required. The smaller hosted source build still loads country
+atlases from accompanying local scripts.
 
-The latest 36-image archive supplies 32 changed PNGs and four identical copies
-of previous files. No country PNG is missing. 195 countries have eight source
-poses; Turkey has four, with explicit adapted crouch and ground KO states.
-Sao Tome and Principe and Sierra Leone still need corrected costumes; Monaco
-and Slovenia need confirmation. See [the artwork review](COUNTRY-ARTWORK-REVIEW.md).
+The arena images depict 29 landmarks: Angkor Wat has two distinct views.
+All 30 original PNGs were visually reviewed and preserved unchanged. Menu names,
+preview pixels and live-match backgrounds match their reviewed source mappings.
+See [arena review](ARENA-ARTWORK-REVIEW.md) and [checks](ARENA-ACCEPTANCE.json).
 
 ## Exact tested artifact
 
-- ZIP: 79,113,341 bytes (75.45 MiB).
-- ZIP SHA-256: `bf7dc3623d67133c0d4ea1e42fb55a550d178b90d463767bb1a6446676e20a3b`.
-- HTML: 104,572,020 bytes (99.73 MiB).
-- HTML SHA-256: `2c0ddb0a34f4683b5e88abcfe73d67b89ad087e8654c1d38bab29be1b9193258`.
-- ZIP members: seven. Companion artwork files: **zero**.
-- Embedded country atlases: **196**, each byte-checked against its expected
-  source-country WebP and recorded assignment.
+- ZIP: 89,186,024 bytes (85.05 MiB).
+- ZIP SHA-256: `5a0cc0ad9c6197ebe57bfc8d7fc4a2243ec15f7e1f36961a6d5079557936e498`.
+- Extracted HTML: 117,864,361 bytes (112.40 MiB).
+- HTML SHA-256: `184ec8c4626388900b75a09c80ebffe18e83910ae67369a33782df2b5238f822`.
+- ZIP members: nine. Companion artwork files: **zero**.
+- All **196** embedded country atlases match their assigned source WebPs.
+- All **30** embedded arena images match their runtime WebPs and recorded hashes.
 
-All ZIP CRCs pass. The archive was extracted into a new directory without any
-old country-art folder. The exact extracted HTML hash matches the document in
-[the browser acceptance report](WORLD-ACCEPTANCE.json).
+ZIP CRCs pass. The exact extracted HTML hash matches the document in
+[the browser acceptance report](WORLD-ACCEPTANCE.json). The expanded HTML exceeds
+GitHub's 100 MiB individual-file limit, so it is distributed inside the ZIP.
+The old standalone download is removed from the current branch to avoid serving
+an outdated game; earlier immutable commits retain it.
 
 ## Executed checks
 
-All **52 automated tests pass**, including preserved source hashes, unique
-source assignment, every supplied frame, 4,704 six-action hit fixtures, guard
-rules and genuine whiffs. A new full country-versus-country low-strike matrix
-checks **153,664 hits and 153,664 boundary whiffs** across all 196 crouched
-opponents, both punch/kick actions and both directions. Low punches formerly
-above shorter crouchers now bend below the fist to align with their hitbox.
+All **52 automated tests pass**. These cover preserved country/arena hashes,
+unique mappings, every supplied pose, 4,704 six-action hit fixtures, guards and
+whiffs. The crouched matchup matrix verifies **153,664 low-strike hits and
+153,664 boundary whiffs** across all 196 defenders, both attacks and directions.
+The arena browser test decodes all supplied backgrounds, compares the rendered
+pixels with their source images, and verifies the three-image cache and retained
+match background. All 30 images and music arrangements are distinct.
 
-All **16 browser acceptance groups pass** on the exact standalone HTML:
+All **17 browser acceptance groups pass** on the exact standalone HTML:
 
-- All 196 country cards, source assignments and rendered fighters.
-- 3,136 actual painted melee-contact fixtures, both stances and facings.
-- 3,136 two-fighter layering fixtures, both player slots and facings. The old
-  fixed paint order obscured contact pixels in 1,362 of these fixtures; the
-  active attack now draws over its defender.
-- Every supplied source pose, bounded lazy decoding, adapted four-pose Turkey
+- All 196 country cards, assignments and rendered fighters.
+- 3,136 painted melee-contact fixtures and 3,136 two-fighter layering fixtures,
+  both stances, facings and player slots.
+- Every supplied pose, bounded country decoding, adapted four-pose Turkey
   crouch and grounded KO.
-- Iraq and Iran selected through the real country UI, with correct HUD names;
-  live keyboard checks for eight hits and eight out-of-range misses across
-  punch/kick, standing/low and left/right directions.
-- Keyboard controls, guards, jump, pause, KO rounds/results/rematch, 10 arenas,
-  music/Fight/KO/strike audio, AI, mobile portrait/landscape touch.
-- Zero runtime errors and no requests outside the tested local document.
+- Real Iraq/Iran UI selection and keyboard punch/kick hits and out-of-range
+  misses, standing/low and both directions.
+- All 30 arena previews and live matches, matching background pixels and music,
+  retained active image and bounded cache. Late image loads cannot overwrite a
+  newer selection.
+- Keyboard controls, guards, jump, pause, KO/results/rematch, music/Fight/KO/strike
+  audio, volume/mute, AI, mobile portrait and landscape touch.
+- Zero runtime errors and no external network requests.
 
-The start-loading regression passes on the standalone package: changes to the
-visible country/arena selectors while loading cannot change or blank the match
-already starting. All 196 source pairs were separately audited (19,110 pairs):
-no identical file pairs, canonical visible-pixel sheets or reused assignments.
-Shared source faces/designs are not described as 196 independent faces.
+The separate start-loading regression also passes: changing the visible country
+or arena while images load cannot change or blank the match already starting.
 
 ```sh
 node --test Tests/Browser/roster.test.cjs Tests/Browser/combat.test.cjs \
   Tests/Browser/combat-matrix.test.cjs Tests/Browser/fighters.test.cjs \
   Tests/Browser/country-art.test.cjs Tests/Browser/arenas-audio.test.cjs
-NATIONCLASH_HTML=artifacts/selected36/package-check/NationClash.html \
-NATIONCLASH_ARTIFACT_DIR=artifacts/selected36/package-validation \
+python3 tools/verify-browser-package.py --out artifacts/arena-update/package-check
+NATIONCLASH_HTML=artifacts/arena-update/package-check/NationClash.html \
+NATIONCLASH_ARTIFACT_DIR=artifacts/arena-update/package-validation \
   node Tests/Browser/world-smoke.cjs
-NATIONCLASH_PACKAGE_DIR=artifacts/selected36/package-check \
+NATIONCLASH_PACKAGE_DIR=artifacts/arena-update/package-check \
   node Tests/Browser/start-loading.cjs
 ```
 
-Managed Linux Chromium serves the exact extracted HTML over an internal HTTP
-server. Managed browser policy blocks direct file navigation; direct opening on
-a Windows PC has not been observed here. The single HTML uses embedded images
-and scripts without external assets, a user-run server, Python or Unity.
+Managed Linux Chromium tests the exact extracted HTML over an internal HTTP
+server. Browser policy blocks direct file navigation; Windows file opening has
+not been observed here. The HTML uses embedded assets and needs no user-run
+server, Unity, Python or internet to play in current Chrome or Edge.
+
+Country artwork remains as reviewed: all 196 PNGs are present; 195 sheets have
+eight poses and Turkey has four with explicit adapted states. Two costumes need
+replacement and two need confirmation. See the [creator checklist](REPLACEMENT-ARTWORK-CHECKLIST.md).
+No identical file or visible-pixel sheets were found; shared faces/designs are
+not described as independently drawn faces. Backgrounds are static illustrations.
 
 See [package metadata](COUNTRY-PACKAGE-MANIFEST.json), [browser evidence](WORLD-ACCEPTANCE.json)
 and [public download verification](PUBLIC-DOWNLOAD-VERIFICATION.json).
-
-## Verified public delivery
-
-Both immutable public files were downloaded in full after the push:
-
-- https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash-Windows.zip
-- https://raw.githubusercontent.com/hague143/nations-clash/17563c22045bb95463843fe01c3fe920d7ee3ebe/downloads/NationClash.html
-
-Both returned HTTP 200 and match the exact tested ZIP/HTML sizes and SHA-256
-values. ZIP CRCs pass; its contained HTML is identical to the standalone public
-HTML and to the browser acceptance document.

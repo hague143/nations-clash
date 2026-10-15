@@ -2,15 +2,37 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
+const crypto=require('node:crypto');
 const root=path.resolve(__dirname,'../..');
 const {ARENAS}=require(path.join(root,'browser/src/arenas.js'));
 
-test('Ten unique, recognizable venues have varied original musical arrangements',()=>{
-  assert.equal(ARENAS.length,10);assert.equal(new Set(ARENAS.map(a=>a.id)).size,10);
+test('Thirty supplied arena views have distinct names, preserved mappings and varied music',()=>{
+  assert.equal(ARENAS.length,30);assert.equal(new Set(ARENAS.map(a=>a.id)).size,30);
+  assert.equal(new Set(ARENAS.map(a=>a.name)).size,30);
   assert.ok(ARENAS.some(a=>a.name==='Minar-e-Pakistan'));
   assert.ok(ARENAS.some(a=>a.name==='Times Square'));
   for(const arena of ARENAS){assert.ok(arena.city&&arena.subtitle&&/^#[a-f0-9]{6}$/i.test(arena.accent));assert.ok(arena.music.tempo>=90&&arena.music.tempo<=130);assert.ok(arena.music.scale.length>=5);assert.equal(arena.music.melody.length,8);}
-  assert.equal(new Set(ARENAS.map(a=>JSON.stringify(a.music))).size,10);
+  assert.equal(new Set(ARENAS.map(a=>JSON.stringify(a.music))).size,30);
+  assert.equal(ARENAS.filter(a=>a.name.startsWith('Angkor Wat')).length,2,'two supplied views of the same landmark');
+  assert.equal(ARENAS.find(a=>a.id==='london').name,'Big Ben');
+  assert.equal(ARENAS.find(a=>a.id==='rio').name,'Christ the Redeemer');
+  const intake=JSON.parse(fs.readFileSync(path.join(root,'artwork/arenas/intake.json')));
+  const metadata=JSON.parse(fs.readFileSync(path.join(root,'browser/assets/arenas/metadata.json')));
+  assert.equal(intake.images.length,30);assert.equal(Object.keys(metadata).length,30);
+  for(const [i,arena] of ARENAS.entries()){
+    const original=intake.images[i],art=metadata[arena.id];
+    assert.equal(arena.id,original.id);assert.equal(arena.sourceName,original.originalName);
+    assert.ok(arena.sourceName.startsWith(String(i+1).padStart(2,'0')+'_'),'archive menu order is preserved');
+    assert.equal(art.originalName,arena.sourceName);assert.equal(art.sourceSha256,original.sha256);
+    const source=fs.readFileSync(path.join(root,'artwork/arenas/source',original.originalName));
+    assert.equal(crypto.createHash('sha256').update(source).digest('hex'),original.sha256);
+    const webp=fs.readFileSync(path.join(root,'browser/assets/arenas',arena.id+'.webp'));
+    assert.equal(crypto.createHash('sha256').update(webp).digest('hex'),art.sha256);
+    assert.equal(webp.length,art.bytes);assert.equal(art.width,1280);assert.equal(art.height,720);
+    assert.ok(arena.floorY>=560&&arena.floorY<=640,'feet stay on the supplied foreground platform');
+  }
+  assert.equal(new Set(Object.values(metadata).map(a=>a.sourceSha256)).size,30,'no original reused');
+  assert.equal(new Set(Object.values(metadata).map(a=>a.sha256)).size,30,'no runtime background reused');
 });
 
 test('Original offline announcer WAVs have valid PCM headers and non-silent samples',()=>{
@@ -28,12 +50,32 @@ test('Real browser renders every landmark and correctly manages music and spoken
   try{
     const page=await browser.newPage({viewport:{width:1920,height:790}}),errors=[];let network=0;
     page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network++;});
-    const arenaSource=fs.readFileSync(path.join(root,'browser/src/arenas.js'),'utf8');
+    const images=Object.fromEntries(ARENAS.map(a=>[a.id,'data:image/webp;base64,'+fs.readFileSync(path.join(root,'browser/assets/arenas',a.id+'.webp')).toString('base64')]));
+    const catalogSource=fs.readFileSync(path.join(root,'browser/src/arena-catalog.js'),'utf8');
+    const arenaSource=fs.readFileSync(path.join(root,'browser/src/arenas.js'),'utf8').replace('/* ARENA_IMAGE_DATA */null',()=>JSON.stringify(images));
     let audioSource=fs.readFileSync(path.join(root,'browser/src/audio.js'),'utf8');
     for(const name of ['fight','ko','getready','timeover'])audioSource=audioSource.replace(`/* AUDIO_${name.toUpperCase()}_DATA */`,()=>`data:audio/wav;base64,${fs.readFileSync(path.join(root,'browser/assets/audio',name+'.wav')).toString('base64')}`);
-    await page.setContent(`<style>body{margin:0;background:#08121f;color:#f3f5e8;font:14px Segoe UI,Arial}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding:16px}canvas{width:100%;border:1px solid #4c6877}p{margin:8px 0 20px}button{margin:16px;padding:16px}</style><div class="grid" id="grid"></div><button id="unlock">Enable original soundtrack</button><script>${arenaSource}</script><script>${audioSource}</script><script>window.director=new NationAudio.AudioDirector();document.getElementById('unlock').onclick=()=>director.unlock();for(const a of NationArenas.ARENAS){const article=document.createElement('article'),canvas=document.createElement('canvas');canvas.width=640;canvas.height=360;article.appendChild(canvas);const text=document.createElement('p');text.textContent=a.name+' · '+a.city;article.appendChild(text);document.getElementById('grid').appendChild(article);NationArenas.drawScene(canvas.getContext('2d'),a.id,12,{width:640,height:360});}</script>`);
-    assert.equal(await page.locator('canvas').count(),10);
-    assert.equal(await page.evaluate(()=>new Set([...document.querySelectorAll('canvas')].map(c=>c.toDataURL())).size),10,'all ten backgrounds are visually distinct');
+    await page.setContent(`<style>body{margin:0;background:#08121f;color:#f3f5e8;font:14px Segoe UI,Arial}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding:16px}canvas{width:100%;border:1px solid #4c6877}p{margin:8px 0 20px}button{margin:16px;padding:16px}</style><div class="grid" id="grid"></div><button id="unlock">Enable original soundtrack</button><script>${catalogSource}</script><script>${arenaSource}</script><script>${audioSource}</script>`);
+    await page.evaluate(async()=>{
+      window.director=new NationAudio.AudioDirector();document.getElementById('unlock').onclick=()=>director.unlock();
+      NationArenas.retain('lahore');await NationArenas.ensure('lahore');
+      window.arenaChecks=[];
+      for(const a of NationArenas.ARENAS){
+        const image=await NationArenas.ensure(a.id),article=document.createElement('article'),canvas=document.createElement('canvas');
+        canvas.width=640;canvas.height=360;article.appendChild(canvas);
+        const text=document.createElement('p');text.textContent=a.name+' · '+a.city;article.appendChild(text);document.getElementById('grid').appendChild(article);
+        NationArenas.drawScene(canvas.getContext('2d'),a.id,12,{width:640,height:360});
+        const reference=document.createElement('canvas');reference.width=640;reference.height=360;reference.getContext('2d').drawImage(image,0,0,640,360);
+        arenaChecks.push({id:a.id,width:image.naturalWidth,height:image.naturalHeight,pixelsMatch:canvas.toDataURL()===reference.toDataURL(),loaded:NationArenas.loadedIds,retained:NationArenas.retainedId});
+      }
+      NationArenas.release();
+    });
+    assert.equal(await page.locator('canvas').count(),30);
+    const rendered=await page.evaluate(()=>arenaChecks);
+    assert.ok(rendered.every(a=>a.width===1280&&a.height===720&&a.pixelsMatch),'all supplied backgrounds decode and render without overlays or cropping');
+    assert.ok(rendered.every(a=>a.loaded.length<=3&&a.loaded.includes('lahore')&&a.retained==='lahore'),'decoded cache stays bounded and preserves the live match');
+    assert.equal(await page.evaluate(()=>NationArenas.retainedId),null);
+    assert.equal(await page.evaluate(()=>new Set([...document.querySelectorAll('canvas')].map(c=>c.toDataURL())).size),30,'all thirty backgrounds are visually distinct');
     assert.ok(await page.evaluate(()=>[...document.querySelectorAll('canvas')].every(c=>c.getContext('2d').getTransform().isIdentity)),'render does not leak transforms');
     fs.mkdirSync('/workspace/artifacts',{recursive:true});await page.screenshot({path:'/workspace/artifacts/NationClash-world-arenas.png',fullPage:true});
     await page.locator('#unlock').click();await page.waitForFunction(()=>director.debug.decodedCues.length===4&&director.debug.musicRunning);

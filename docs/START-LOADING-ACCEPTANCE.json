@@ -17,6 +17,11 @@
     "rendered": [
       "pk",
       "jp"
+    ],
+    "retainedArena": "lahore",
+    "loadedArenas": [
+      "lahore",
+      "times-square"
     ]
   }
 }

@@ -1,0 +1,218 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-15T21:24:08.828Z",
+  "sourceArchive": {
+    "archive": "Famous_Fighting_Stages_All_30.zip",
+    "archiveBytes": 87685046,
+    "archiveSha256": "ed647f2c723ea85c6b12314e8af7927265b6b60e7b371990e98135cfa491efa7"
+  },
+  "views": 30,
+  "landmarks": 29,
+  "angkorWatViews": 2,
+  "missingArenaPngs": 0,
+  "duplicateOriginalHashes": 0,
+  "duplicateRuntimeHashes": 0,
+  "originalSourceChecksumsVerified": 30,
+  "embeddedArenaBytesVerified": 30,
+  "decodedRuntimeImages": 30,
+  "previewPixelComparisons": 30,
+  "liveMatchSceneComparisons": 30,
+  "maximumDecodedArenaCache": 3,
+  "liveMatchArenaRetained": true,
+  "rapidSelectionRace": "passed",
+  "startLoadingRace": "passed",
+  "automatedTestsPassed": 52,
+  "automatedTestsFailed": 0,
+  "browserGroupsPassed": 17,
+  "runtimeErrors": 0,
+  "externalRequests": 0,
+  "htmlSha256": "184ec8c4626388900b75a09c80ebffe18e83910ae67369a33782df2b5238f822",
+  "visualReview": [
+    "docs/previews/arena-gallery.png",
+    "docs/previews/arena-matches-1.jpg",
+    "docs/previews/arena-matches-2.jpg",
+    "docs/previews/arena-matches-3.jpg"
+  ],
+  "arenas": [
+    {
+      "id": "lahore",
+      "name": "Minar-e-Pakistan",
+      "source": "01_Minar_e_Pakistan_Lahore.png",
+      "sha256": "43366b18b7c3cbbfe92a2a82d41d21e813ac0e862e1dfa0d02354ffb1435ba85"
+    },
+    {
+      "id": "times-square",
+      "name": "Times Square",
+      "source": "02_Times_Square_New_York.png",
+      "sha256": "c52aa2ffa5a7de0fff9d70701f2f81e9192fc10670377179f833df848b06393b"
+    },
+    {
+      "id": "paris",
+      "name": "Eiffel Tower",
+      "source": "03_Eiffel_Tower_Paris.png",
+      "sha256": "69672fa9c02dfc842c10798cf271c1de59efaab2b0fc2ca9ce0444770bb0debf"
+    },
+    {
+      "id": "dubai",
+      "name": "Burj Khalifa",
+      "source": "04_Burj_Khalifa_Dubai.png",
+      "sha256": "60a2e7a9afc3c02b6d5fc8999345b8e210e2c119c8adb8de7fa81dee94e79a51"
+    },
+    {
+      "id": "great-wall",
+      "name": "The Great Wall",
+      "source": "05_Great_Wall_of_China.png",
+      "sha256": "07b3e423d231b366541af42a96896d1571bdcb794e463d9a0ea03e5581a294d8"
+    },
+    {
+      "id": "rome",
+      "name": "Colosseum",
+      "source": "06_Colosseum_Rome.png",
+      "sha256": "c6079abb8567c8eb37e75cba188f5ea555b6c2f0fb570b28558a08d37cfec914"
+    },
+    {
+      "id": "giza",
+      "name": "Giza Pyramids",
+      "source": "07_Giza_Pyramids_Egypt.png",
+      "sha256": "7dc1f7ebadf7a17cd36b74014c5cd3dec52118ced978fdf9093141eb65990566"
+    },
+    {
+      "id": "tokyo",
+      "name": "Shibuya Crossing",
+      "source": "08_Shibuya_Tokyo.png",
+      "sha256": "3d28f379ab5032bd691403ff708fdc482be8796e6d64f3c4d87b311997bdb4e4"
+    },
+    {
+      "id": "rio",
+      "name": "Christ the Redeemer",
+      "source": "09_Christ_the_Redeemer_Rio.png",
+      "sha256": "9c7d9774b559833bf7330563f8085fed2d1565a0cead2a64101db348d9137ce3"
+    },
+    {
+      "id": "london",
+      "name": "Big Ben",
+      "source": "10_Big_Ben_London.png",
+      "sha256": "e5da831493174a1a9ab45d709deff1ae47bafa97f259155635f5ec4b991d3461"
+    },
+    {
+      "id": "athens",
+      "name": "Acropolis",
+      "source": "11_Acropolis_Athens.png",
+      "sha256": "de7f2ea82a975895c20932247463ab629b28911004337bbf01edbf7ac93ff616"
+    },
+    {
+      "id": "angkor-temple",
+      "name": "Angkor Wat \u2014 Temple Terrace",
+      "source": "12_Angkor_Wat_Cambodia_v1.png",
+      "sha256": "6e322f6dafb5a7707d987842eb18c75c86fa2bd974a3f857fc3f70548b229b34"
+    },
+    {
+      "id": "chichen-itza",
+      "name": "Chichen Itza",
+      "source": "13_Chichen_Itza_Mexico.png",
+      "sha256": "dc5bbf41526ee5497b6e7593a8ea02e4daedf9082b297dc2e8469a16326113e5"
+    },
+    {
+      "id": "niagara",
+      "name": "Niagara Falls",
+      "source": "14_Niagara_Falls.png",
+      "sha256": "5833194ed104ef8ff308b355b8c377d92edb8e02bb513e7c3a84b9eecdbfc7ec"
+    },
+    {
+      "id": "venice",
+      "name": "Venice",
+      "source": "15_Venice_Italy.png",
+      "sha256": "42afc235ea066bafd3f9e4185d4fc4449df9592a3d5143d3b2a977bdfc5f8fb7"
+    },
+    {
+      "id": "stonehenge",
+      "name": "Stonehenge",
+      "source": "16_Stonehenge_UK.png",
+      "sha256": "161259cce09bc13a84926a70ec500a3fe5d28b286fa31209ee02b33c1f71adac"
+    },
+    {
+      "id": "mount-fuji",
+      "name": "Mount Fuji",
+      "source": "17_Mount_Fuji_Japan.png",
+      "sha256": "30e7275c9193a410ce3e72ec55e9510436f1d8ef017e2a34ac2ed35f48a1d750"
+    },
+    {
+      "id": "barcelona",
+      "name": "Sagrada Familia",
+      "source": "18_Sagrada_Familia_Barcelona.png",
+      "sha256": "e3a7d1ae4462f4b84686ec5ba004dc0a2269bf7e2e704dabf325df14a12a435e"
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia",
+      "source": "19_Cappadocia_Turkey.png",
+      "sha256": "2c9b37ca89acad00995d3e8c6bb1aaa2576cc87491fbdf050a6636ba897660ee"
+    },
+    {
+      "id": "bagan",
+      "name": "Bagan",
+      "source": "20_Bagan_Myanmar.png",
+      "sha256": "2c676898bec0cd14a9344328fb8c59ff8613237d3323e55adcde3f2eba5910cd"
+    },
+    {
+      "id": "taj-mahal",
+      "name": "Taj Mahal",
+      "source": "21_Taj_Mahal_India.png",
+      "sha256": "8bc4b02d0beef70aa6b2e417e71a68e864839d711eecff8b662ea4e2b3e6d198"
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney Opera House",
+      "source": "22_Sydney_Opera_House_Australia.png",
+      "sha256": "61d0142d819b84b1020479bda4c0f7c659d8c110cfe4f642f40bba89362f88be"
+    },
+    {
+      "id": "machu-picchu",
+      "name": "Machu Picchu",
+      "source": "23_Machu_Picchu_Peru.png",
+      "sha256": "2def7a2a2bd5173a9da46831d011641e20d8c8c6a24b53095b4dbea06b647cca"
+    },
+    {
+      "id": "petra",
+      "name": "Petra",
+      "source": "24_Petra_Jordan.png",
+      "sha256": "211c1dba667552c5e136f796ea12c602f17ab6ba97e0f6232d65689fae57fa48"
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "source": "25_Hagia_Sophia_Istanbul.png",
+      "sha256": "122892a1f1e0cf6ec2f6744f604d5abe5082ad7b1f8416dc1a83dee4d3db8b44"
+    },
+    {
+      "id": "angkor-causeway",
+      "name": "Angkor Wat \u2014 Lotus Causeway",
+      "source": "26_Angkor_Wat_Cambodia_v2.png",
+      "sha256": "a2a16ce0e3193b52a9407d3bb9d4a2bcd6d6963d2486c1a2308471ab4292ee0a"
+    },
+    {
+      "id": "santorini",
+      "name": "Santorini",
+      "source": "27_Santorini_Greece.png",
+      "sha256": "16a59258659fa54071c51de912dbf55922ae46b18694c813491650068f759f9a"
+    },
+    {
+      "id": "liberty",
+      "name": "Statue of Liberty",
+      "source": "28_Statue_of_Liberty_New_York.png",
+      "sha256": "051fdc541310a6d9f17d1caf9ac60fb346126cf4060b6a6613155be08f9d3174"
+    },
+    {
+      "id": "easter-island",
+      "name": "Easter Island Moai",
+      "source": "29_Easter_Island_Moai_Chile.png",
+      "sha256": "ee7ca426aeb4b1ec1ba0233a7191a98e43b46cbc17dbc3300371668e2ae6cb6e"
+    },
+    {
+      "id": "burj-al-arab",
+      "name": "Burj Al Arab",
+      "source": "30_Burj_Al_Arab_Dubai.png",
+      "sha256": "0bea20da5951b4e778335304bc11d39992102d71d828a6c2b800a04b8b568eab"
+    }
+  ]
+}

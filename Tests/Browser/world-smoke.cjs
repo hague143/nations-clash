@@ -341,22 +341,49 @@ async function roundsAcceptance(page){
 async function arenaAcceptance(page){
  await page.locator('#back').click();
  const arenas=await page.locator('#arena-select option').evaluateAll(options=>options.map(o=>({id:o.value,name:NationArenas.ARENAS.find(a=>a.id===o.value)?.name,label:o.textContent})));
- assert.equal(arenas.length,10,'ten user-selectable arenas');assert.equal(new Set(arenas.map(a=>a.id)).size,10);
+ assert.equal(arenas.length,30,'thirty user-selectable arena views');assert.equal(new Set(arenas.map(a=>a.id)).size,30);
  assert.ok(arenas.some(a=>/minar.*pakistan/i.test(a.name)),'Minar-e-Pakistan selectable');
  assert.ok(arenas.some(a=>/times? square/i.test(a.name)),'Times Square selectable');
- const fixedScenes=await page.evaluate(()=>{
+ // A late image response must not paint over a more recently selected location.
+ await page.evaluate(()=>{
+  window.originalArenaEnsure=NationArenas.ensure;let release;
+  const gate=new Promise(r=>release=r);window.releaseArena=release;
+  NationArenas.ensure=id=>id==='paris'?(window.delayedArena=gate.then(()=>originalArenaEnsure(id))):originalArenaEnsure(id);
+ });
+ await page.selectOption('#arena-select','paris');await page.selectOption('#arena-select','tokyo');
+ await page.waitForFunction(()=>document.getElementById('stage-preview').dataset.arena==='tokyo'&&document.getElementById('stage-preview').dataset.ready==='true');
+ const tokyoPreview=await page.locator('#stage-preview').evaluate(c=>c.toDataURL());
+ await page.evaluate(async()=>{releaseArena();await delayedArena;NationArenas.ensure=originalArenaEnsure;});
+ assert.equal(await page.locator('#stage-preview').evaluate(c=>c.toDataURL()),tokyoPreview,'late Paris decode cannot overwrite the Tokyo preview');
+ check('rapid arena selection keeps the latest preview after out-of-order loading');
+ const fixedScenes=await page.evaluate(async()=>{
   const canvas=document.createElement('canvas');canvas.width=1280;canvas.height=720;const ctx=canvas.getContext('2d');
-  return NationArenas.ARENAS.map(a=>{ctx.clearRect(0,0,1280,720);NationArenas.drawScene(ctx,a.id,0);return canvas.toDataURL('image/png');});
+  const scenes=[];
+  for(const a of NationArenas.ARENAS){await NationArenas.ensure(a.id);ctx.clearRect(0,0,1280,720);NationArenas.drawScene(ctx,a.id,0);scenes.push(canvas.toDataURL('image/png'));}
+  return scenes;
  });
  const fixedHashes=fixedScenes.map(png=>crypto.createHash('sha256').update(png).digest('hex'));
- assert.equal(new Set(fixedHashes).size,10,'ten scenery backgrounds differ at the exact same animation time');
+ assert.equal(new Set(fixedHashes).size,30,'thirty supplied backgrounds are distinct');
  const hashes=[];
  for(const arena of arenas){
   await page.selectOption('#arena-select',arena.id);
+  await page.waitForFunction(id=>{const c=document.getElementById('stage-preview');return c.dataset.arena===id&&c.dataset.ready==='true';},arena.id);
+  assert.ok(await page.evaluate(async id=>{
+   const preview=document.getElementById('stage-preview'),expected=document.createElement('canvas');expected.width=preview.width;expected.height=preview.height;
+   expected.getContext('2d').drawImage(await NationArenas.ensure(id),0,0,expected.width,expected.height);
+   return expected.toDataURL()===preview.toDataURL();
+  },arena.id),'preview pixels match the chosen artwork');
   const expectedDescription=await page.evaluate(id=>{const stage=NationArenas.ARENAS.find(a=>a.id===id);return stage.description||stage.city;},arena.id);
   assert.equal((await page.locator('#arena-description').textContent()).trim(),expectedDescription,'arena description matches the selected venue');
   await page.locator('#start').click();await waitFight(page);await page.locator('#pause').click();
   assert.equal(await page.evaluate(()=>NationClash.selectedArena),arena.id,'selected arena enters match');
+  const loaded=await page.evaluate(async id=>{
+   const image=await NationArenas.ensure(id),expected=document.createElement('canvas');expected.width=1280;expected.height=720;expected.getContext('2d').drawImage(image,0,0);
+   const actual=document.getElementById('arena').getContext('2d'),reference=expected.getContext('2d');
+   const pixelsMatch=[[25,25],[1220,25],[25,680],[1220,680]].every(([x,y])=>String(actual.getImageData(x,y,1,1).data)===String(reference.getImageData(x,y,1,1).data));
+   return {pixelsMatch,retained:NationArenas.retainedId,cache:NationArenas.loadedIds,audio:NationClash.audioDebug.arena};
+  },arena.id);
+  assert.ok(loaded.pixelsMatch,'live match uses the selected photograph');assert.equal(loaded.retained,arena.id);assert.equal(loaded.audio,arena.id);assert.ok(loaded.cache.length<=3&&loaded.cache.includes(arena.id));
   assert.match(await page.locator('#stage-name').textContent(),new RegExp(arena.name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'i'));
   // Hide only the pause modal while the real simulation remains frozen so the
   // complete landmark can be reviewed. Restore it before exercising Back.
@@ -364,8 +391,8 @@ async function arenaAcceptance(page){
   const png=await page.locator('#arena').screenshot();hashes.push(crypto.createHash('sha256').update(png).digest('hex'));
   await snapshot(page,`arena-${arena.id}`);await page.locator('#overlay').evaluate(el=>{el.style.visibility='';});await page.locator('#back').click();
  }
- assert.equal(new Set(hashes).size,10,'ten selected live matches render distinct scenes');
- check('ten selectable landmarks enter matches and render distinct scenes',{arenas:arenas.map(x=>x.name)});
+ assert.equal(new Set(hashes).size,30,'thirty selected live matches render distinct scenes');
+ check('thirty selectable supplied arena views enter matches with matching previews, scenery and music',{arenas:arenas.map(x=>x.name)});
 }
 
 async function audioAcceptance(page){
