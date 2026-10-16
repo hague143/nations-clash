@@ -80,3 +80,11 @@ NATIONCLASH_3D_HTML=downloads/NationClash-3D-Prototype.html \
 NATIONCLASH_3D_ARTIFACT_DIR=artifacts/prototype3d/verified-browser \
   node Tests/Browser/prototype3d-browser.cjs
 ```
+
+## Verified public download
+
+[Download the tested prototype ZIP](https://raw.githubusercontent.com/hague143/nations-clash/39a8e002ab32da310689171e4788f5b965aa0cc9/downloads/NationClash-3D-Prototype.zip).
+
+The public ZIP returned HTTP 200. A full download passed the expected size,
+SHA-256 and all CRC checks. Its HTML is byte-identical to the exact browser-tested
+document. [Verification record](3D-PROTOTYPE-PUBLIC.json).

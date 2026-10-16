@@ -1,5 +1,14 @@
 {
-  "status": "awaiting_public_verification",
+  "status": "verified",
+  "commit": "39a8e002ab32da310689171e4788f5b965aa0cc9",
+  "url": "https://raw.githubusercontent.com/hague143/nations-clash/39a8e002ab32da310689171e4788f5b965aa0cc9/downloads/NationClash-3D-Prototype.zip",
+  "verifiedAt": "2026-10-16T09:07:15.272502+00:00",
+  "httpStatus": 200,
+  "contentType": "application/zip",
+  "zipBytes": 323576,
   "zipSha256": "2c8d11e7cd900f282fc4161c5a0d2567eeadc2c2f2ad9c5ec5129af71585b97e",
-  "htmlSha256": "ef0215dec776ccbe6cfa027fbc8167dfacbab3b27a7de544e5efe631d7fc1409"
+  "zipCrc": "passed",
+  "members": 3,
+  "htmlSha256": "ef0215dec776ccbe6cfa027fbc8167dfacbab3b27a7de544e5efe631d7fc1409",
+  "htmlMatchesExactBrowserTestedDocument": true
 }

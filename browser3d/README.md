@@ -6,7 +6,7 @@ feet, clothing and landmark are actual Three.js geometry with perspective,
 lighting and shadows. The models are stylized interpretations of the supplied
 costume references. They are an initial gameplay prototype for review.
 
-[Download the offline prototype](../downloads/NationClash-3D-Prototype.zip).
+[Download the offline prototype](https://raw.githubusercontent.com/hague143/nations-clash/39a8e002ab32da310689171e4788f5b965aa0cc9/downloads/NationClash-3D-Prototype.zip).
 Extract All, then open `NationClash-3D-Prototype.html` in current Chrome or Edge.
 Everything is embedded in that one HTML; Unity, accounts, hosting and an internet
 connection are unnecessary after downloading. Choose Low graphics if needed.
