@@ -3,6 +3,11 @@
 **Active version: the neon 2D browser game**, with 196 country fighters,
 hover move previews and 30 arena views.
 
+**Test on Android:** download [NationClash-Android-test.apk](downloads/NationClash-Android-test.apk)
+(about 88 MB), install it and open **NationClash**. Android 8.0+ is required.
+All fighters, arenas and audio are included for offline play. See
+[Android installation and build instructions](android/README.md).
+
 **Play without Unity:** download [NationClash-Windows.zip](downloads/NationClash-Windows.zip),
 right-click → **Extract All**, then open the extracted `NationClash.html` in
 Chrome or Edge. The downloaded HTML contains all artwork and needs no companion
@@ -40,8 +45,8 @@ capsule rigs. No Tekken code, models, animation, audio or character data is incl
 **Status:** the pure combat core compiles and passes headless functional tests.
 Unity Editor is unavailable on this cloud machine, so Unity script compilation,
 visual playtesting and Android export are pending. This is a foundation, not a
-finished Unity game or a verified APK build. The playable 196-country browser
-edition is available above.
+finished Unity game. The playable 196-country browser edition and its separate
+Android WebView test APK are available above.
 
 ## Play in Unity
 
@@ -55,7 +60,8 @@ edition is available above.
    fighters, then **Enter the arena**. Both players are human; AI is Phase 3.
 4. For Android, install Android Build Support/SDK/NDK through Unity Hub, switch
    the build target to Android and use the generated scene. Test on a device before
-   distribution. No signed APK has been produced or verified here.
+   distribution. No Unity APK has been exported here; the Android APK linked
+   above packages the separate neon 2D browser game.
 
 For a separately installed, licensed Unity Editor, an import/preparation check is:
 

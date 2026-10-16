@@ -15,7 +15,7 @@ The separate 196-fighter browser game's checks are in
 | Stable Androguard metadata smoke | Passed on upstream `TestActivity.apk` fixture | Correctly reported package `tests.androguard`, version `1.0`, minimum SDK `9`, target SDK `16`, DEX member and v1 signature-block presence. Fixture SHA-256: `3bb32dd50129690bce850124ea120aa334e708eaa7987cf2329fd1ea0467a0eb`. No APK was executed and cryptographic APK signature validity was not checked. |
 | `bash tools/setup-apk-analysis.sh` and `pip check` | Passed | Installed/reused frozen Androguard 4.1.4 analysis dependencies are consistent. |
 | Unity import, Editor preparation, rendered combat, touch input | **Unrun: Unity Editor absent** | Generated scene/controllers/clips require the provided Editor command. They are source implementations awaiting Unity validation, not artifacts produced here. |
-| Android export/device test | **Unrun** | No signed game APK or device-tested build exists. |
+| Unity Android export/device test | **Unrun for Unity** | The Unity foundation has not been exported. The separate neon 2D WebView APK has its own [Android validation](ANDROID-APK-VALIDATION.md). |
 | Uploaded Tekken-named APK | **Blocked: 32 MiB attachment transfer limit** | No package, engine, asset or permission finding is claimed for this upload. A direct download link or smaller parts is needed. |
 | Remote CI and new-task restoration | **Unrun** | CI is configured; publishing/snapshot restoration has not been independently verified. |
 
