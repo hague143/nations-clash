@@ -1,8 +1,7 @@
 # NationClash
 
-**Try the 3D prototype:** [download the small offline ZIP](downloads/NationClash-3D-Prototype.zip)
-for Pakistan versus Japan at a modelled Minar-e-Pakistan arena.
-See [3D controls and development](browser3d/README.md).
+**Active version: the neon 2D browser game**, with 196 country fighters,
+hover move previews and 30 arena views.
 
 **Play without Unity:** download [NationClash-Windows.zip](downloads/NationClash-Windows.zip),
 right-click → **Extract All**, then open the extracted `NationClash.html` in

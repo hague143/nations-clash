@@ -1,5 +1,8 @@
 # NationClash 3D combat prototype
 
+Development of this prototype is paused. The active version is the
+[neon 2D browser game](../browser/README.md).
+
 Two original articulated 3D fighters—Pakistan and Japan—fight on a marble
 forecourt at a modelled Minar-e-Pakistan in Lahore. The scene, bodies, hands,
 feet, clothing and landmark are actual Three.js geometry with perspective,
