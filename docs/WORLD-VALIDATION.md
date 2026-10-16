@@ -1,7 +1,7 @@
 # Browser world and upgrade validation
 
 The exact standalone HTML passes **17 world browser groups**, **nine presentation/
-power groups** and three loading/navigation regression cases. All **78 automated
+power groups**, **three KO groups**, and three loading/navigation regression cases. All **81 automated
 tests pass**. See [artifact hashes and executed commands](DOWNLOAD-VALIDATION.md),
 [world evidence](WORLD-ACCEPTANCE.json) and [upgrade evidence](UPGRADE-ACCEPTANCE.json).
 
@@ -26,3 +26,6 @@ file navigation. Direct Windows file opening has not been observed here.
 These are supplied sprite animations and static background illustrations with a
 3D-style presentation. Existing source costume issues and adapted Turkey poses
 remain documented in the [creator checklist](REPLACEMENT-ARTWORK-CHECKLIST.md).
+
+The [full fighter retest](FIGHTER-RETEST.md) completes 19,992 AI matches and fixes
+post-KO animation freezing without changing scores, attack damage or reach.

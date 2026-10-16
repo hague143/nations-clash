@@ -8,10 +8,10 @@ lazy country scripts; all arena images are embedded in both builds.
 
 ## Exact tested artifact
 
-- ZIP: 89,221,996 bytes (85.09 MiB).
-- ZIP SHA-256: `39df9515d66b28aeaae56f7a75bdb00782e71d3c3b61650c63736b8c226fd651`.
-- HTML: 117,922,292 bytes (112.46 MiB).
-- HTML SHA-256: `7aa18592f8f180757d8a96633ddc08cc4b973343b7d2090a8bc0b5de321a0b0a`.
+- ZIP: 89,222,582 bytes (85.09 MiB).
+- ZIP SHA-256: `c58710e3fc1549fa289a9287597e9acfc17f00c6f1dafc82091e0cc9c415dcb4`.
+- HTML: 117,922,700 bytes (112.46 MiB).
+- HTML SHA-256: `38ad0cb58544440386a4a4e16bd4e742b5c15f46473ef8d432df22e07e191c35`.
 - Nine ZIP members; CRCs pass; companion asset files: **zero**.
 - All **196** country atlas payloads and **30** arena payloads match expected WebPs.
 - Powers, combat, FX, presentation and audio source match the embedded program;
@@ -23,7 +23,7 @@ ZIP. Earlier immutable commits retain their older standalone downloads.
 
 ## Executed checks
 
-All **78 automated tests pass**, with zero failures or skips. The captured
+All **81 automated tests pass**, with zero failures or skips. The captured
 runner output is in [AUTOMATED-TESTS.txt](AUTOMATED-TESTS.txt). This includes:
 
 - Every supplied source hash, pose, flag assignment and all legacy combat rules.
@@ -42,7 +42,7 @@ runner output is in [AUTOMATED-TESTS.txt](AUTOMATED-TESTS.txt). This includes:
   combat RMS .042, peak .508. Browser controls, ducking, pause, arena changes,
   stale loading, mute and stop are checked.
 
-All **26 browser gameplay/presentation groups pass** on the exact packaged HTML:
+All **29 browser gameplay/presentation groups pass** on the exact packaged HTML:
 
 - [17 world groups](WORLD-ACCEPTANCE.json): every country card and rendered
   fighter; 3,136 painted melee contacts; 3,136 two-fighter layer fixtures;
@@ -55,6 +55,15 @@ All **26 browser gameplay/presentation groups pass** on the exact packaged HTML:
   sound; pause freeze and cooldown; guard, finite-range miss, Numpad 7 gold shot;
   independent music/effects sliders, master mute; mobile country-power touch;
   reduced-motion play; zero runtime errors and external network requests.
+
+- [Three KO groups](KO-ACCEPTANCE.json): all 196 rendered defeated poses,
+  six real keyboard deciding KOs (ground, adapted, kneeling and airborne),
+  expired flash/particles and completed winning recovery, with locked outcomes.
+
+The KO fix adds 1,568 defeat-settling fixtures across all 196 countries, both
+player slots/facings and grounded/airborne states. [Full-fight auditing](FIGHTER-RETEST.md)
+also completes 19,992 production-AI matches across all countries, eight opposing
+styles, three difficulty settings, both slots and representative seeds.
 
 Three additional state regression cases pass:
 
@@ -81,6 +90,9 @@ NATIONCLASH_PACKAGE_DIR=artifacts/presentation-upgrade/final-package-check \
   node Tests/Browser/start-loading.cjs
 NATIONCLASH_PACKAGE_DIR=artifacts/presentation-upgrade/final-package-check \
   node Tests/Browser/start-cancel.cjs
+NATIONCLASH_HTML=artifacts/presentation-upgrade/final-package-check/NationClash.html \
+  node Tests/Browser/round-settle-browser.cjs
+node tools/audit-fighter-matches.cjs
 ```
 
 ## Practical limits
@@ -103,11 +115,3 @@ drawn faces. Arena images depict 29 landmarks, including two Angkor Wat views.
 
 See [package metadata](COUNTRY-PACKAGE-MANIFEST.json), [country powers](COUNTRY-POWERS.md),
 [audio design](AUDIO-DESIGN.md) and [public download verification](PUBLIC-DOWNLOAD-VERIFICATION.json).
-
-## Verified public delivery
-
-https://raw.githubusercontent.com/hague143/nations-clash/db897916e998e1b48fa89e3d2857b85d57531fbd/downloads/NationClash-Windows.zip
-
-The public ZIP returned HTTP 200 and was downloaded in full. Its byte count,
-SHA-256 and CRCs match the tested artifact. The contained HTML matches the exact
-browser acceptance document. All artwork is embedded in that HTML.

@@ -1,10 +1,10 @@
 {
   "format": "self-contained single HTML inside ZIP",
-  "zipBytes": 89221996,
-  "zipSha256": "39df9515d66b28aeaae56f7a75bdb00782e71d3c3b61650c63736b8c226fd651",
-  "htmlBytes": 117922292,
-  "htmlSha256": "7aa18592f8f180757d8a96633ddc08cc4b973343b7d2090a8bc0b5de321a0b0a",
-  "sourceHtmlSha256": "5675eca707fbb211dc848045a915bf673f86497e82fc5fcb5350d59d09e69928",
+  "zipBytes": 89222582,
+  "zipSha256": "c58710e3fc1549fa289a9287597e9acfc17f00c6f1dafc82091e0cc9c415dcb4",
+  "htmlBytes": 117922700,
+  "htmlSha256": "38ad0cb58544440386a4a4e16bd4e742b5c15f46473ef8d432df22e07e191c35",
+  "sourceHtmlSha256": "01d9fbf6db8a4af90d37f3eb81ec1c0dd8f3037bf8a332b847f52b2f3b40ff20",
   "zipCrc": "passed",
   "members": 9,
   "companionAssetFiles": 0,
@@ -25,10 +25,10 @@
   "signatureVisualMaterials": 9,
   "bundledModuleSourceHashes": {
     "powers": "d91e837b029dd1176046a69c5a079067d521ee7c80a83fa9e13030ea351bb332",
-    "combat": "9425c23408da51258a1b3b175d3e6a76c613d35ead6c54d96b6ef8f5c34b7f54",
+    "combat": "ddc2fff5a0dd179b2a89c80c8c7e4bf27c67bbc29590f263cad30ef8e49e3ebb",
     "power-fx": "a5b8c3565efc71816553b43a57e6ed6fa5148fcd76bb10d18de8be190369ed3d",
     "presentation": "2dd9be6f680da81f3c25a05281f5ec2ac2171d92537624fca7bb69d64a8887f2",
     "audio": "7bc84f99a1c4a8d9c07f205c293e8ce70a646706629ce4fde513b959b2cf9274",
-    "game": "2e779f8cf3effb9ff342748edc3a0619592781af9e07affebe7f9d72daba58f5"
+    "game": "6042a5257264662ae3af03c76c8e72410f42c531a2ea9bb83e0602a6bd685643"
   }
 }

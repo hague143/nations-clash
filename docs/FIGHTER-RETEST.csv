@@ -1,0 +1,197 @@
+id,country,style,matches,completed,normal_hits,signature_hits,observed_violations
+jp,Japan,Striker,102,102,1571,10,0
+pk,Pakistan,Grappler,102,102,1873,11,0
+af,Afghanistan,Dual-Stance,102,102,1864,10,0
+al,Albania,Striker,102,102,1717,11,0
+dz,Algeria,Kicker,102,102,1923,11,0
+ad,Andorra,Striker,102,102,1955,10,0
+ao,Angola,Grappler,102,102,1856,11,0
+ag,Antigua and Barbuda,Grappler,102,102,1814,12,0
+ar,Argentina,Trickster,102,102,1645,13,0
+am,Armenia,Kicker,102,102,1985,8,0
+au,Australia,Kicker,102,102,1974,9,0
+at,Austria,Striker,102,102,1906,12,0
+az,Azerbaijan,Trickster,102,102,1835,14,0
+bs,Bahamas,Trickster,102,102,1703,13,0
+bh,Bahrain,Zoner,102,102,1851,25,0
+bd,Bangladesh,Kicker,102,102,1989,8,0
+bb,Barbados,Brawler,102,102,1810,13,0
+by,Belarus,Duelist,102,102,1638,8,0
+be,Belgium,Striker,102,102,1822,12,0
+bz,Belize,Brawler,102,102,1389,8,0
+bj,Benin,Brawler,102,102,1753,15,0
+bt,Bhutan,Kicker,102,102,1574,11,0
+bo,Bolivia,Dual-Stance,102,102,1669,9,0
+ba,Bosnia and Herzegovina,Duelist,102,102,1804,8,0
+bw,Botswana,Dual-Stance,102,102,1702,9,0
+br,Brazil,Trickster,102,102,1703,13,0
+bn,Brunei Darussalam,Grappler,102,102,1762,11,0
+bg,Bulgaria,Dual-Stance,102,102,1599,8,0
+bf,Burkina Faso,Grappler,102,102,1606,9,0
+bi,Burundi,Duelist,102,102,1786,8,0
+cv,Cabo Verde,Duelist,102,102,1827,10,0
+kh,Cambodia,Dual-Stance,102,102,1735,10,0
+cm,Cameroon,Brawler,102,102,1727,13,0
+ca,Canada,Grappler,102,102,1775,10,0
+cf,Central African Republic,Duelist,102,102,1630,11,0
+td,Chad,Brawler,102,102,1622,14,0
+cl,Chile,Trickster,102,102,1669,13,0
+cn,China,Dual-Stance,102,102,1962,11,0
+co,Colombia,Zoner,102,102,1717,25,0
+km,Comoros,Brawler,102,102,1590,12,0
+cr,Costa Rica,Striker,102,102,1716,12,0
+ci,Côte d’Ivoire,Grappler,102,102,1911,15,0
+hr,Croatia,Zoner,102,102,1796,22,0
+cu,Cuba,Brawler,102,102,1658,13,0
+cy,Cyprus,Grappler,102,102,1827,12,0
+cz,Czechia,Striker,102,102,1873,12,0
+cd,Democratic Republic of the Congo,Trickster,102,102,1841,14,0
+dk,Denmark,Striker,102,102,1954,11,0
+dj,Djibouti,Kicker,102,102,1953,11,0
+dm,Dominica,Trickster,102,102,1775,13,0
+do,Dominican Republic,Duelist,102,102,1881,10,0
+ec,Ecuador,Grappler,102,102,1930,15,0
+eg,Egypt,Brawler,102,102,1664,13,0
+sv,El Salvador,Duelist,102,102,1871,10,0
+gq,Equatorial Guinea,Brawler,102,102,1807,13,0
+er,Eritrea,Dual-Stance,102,102,1883,10,0
+ee,Estonia,Zoner,102,102,1597,25,0
+sz,Eswatini,Striker,102,102,1907,10,0
+et,Ethiopia,Duelist,102,102,1694,9,0
+fj,Fiji,Grappler,102,102,1617,12,0
+fi,Finland,Striker,102,102,1733,12,0
+fr,France,Duelist,102,102,1917,10,0
+ga,Gabon,Brawler,102,102,1646,13,0
+gm,Gambia,Grappler,102,102,1938,14,0
+ge,Georgia,Grappler,102,102,1890,10,0
+de,Germany,Trickster,102,102,1895,11,0
+gh,Ghana,Trickster,102,102,1763,12,0
+gr,Greece,Duelist,102,102,1484,8,0
+gd,Grenada,Dual-Stance,102,102,1767,12,0
+gt,Guatemala,Dual-Stance,102,102,1818,10,0
+gn,Guinea,Striker,102,102,1639,11,0
+gw,Guinea-Bissau,Kicker,102,102,1901,9,0
+gy,Guyana,Brawler,102,102,1625,14,0
+ht,Haiti,Grappler,102,102,1921,12,0
+hn,Honduras,Kicker,102,102,1550,11,0
+hu,Hungary,Dual-Stance,102,102,1620,9,0
+is,Iceland,Brawler,102,102,1645,13,0
+in,India,Dual-Stance,102,102,1761,12,0
+id,Indonesia,Striker,102,102,1739,10,0
+ir,Iran,Trickster,102,102,1696,14,0
+iq,Iraq,Zoner,102,102,1760,21,0
+ie,Ireland,Kicker,102,102,1863,11,0
+il,Israel,Striker,102,102,1682,10,0
+it,Italy,Striker,102,102,1879,12,0
+jm,Jamaica,Striker,102,102,1713,11,0
+jo,Jordan,Dual-Stance,102,102,1970,12,0
+kz,Kazakhstan,Striker,102,102,1878,12,0
+ke,Kenya,Brawler,102,102,1784,12,0
+ki,Kiribati,Grappler,102,102,1888,14,0
+kw,Kuwait,Zoner,102,102,1847,22,0
+kg,Kyrgyzstan,Zoner,102,102,1813,23,0
+la,Laos,Dual-Stance,102,102,1984,11,0
+lv,Latvia,Zoner,102,102,1783,22,0
+lb,Lebanon,Kicker,102,102,1990,8,0
+ls,Lesotho,Striker,102,102,1962,9,0
+lr,Liberia,Kicker,102,102,1835,9,0
+ly,Libya,Dual-Stance,102,102,1927,11,0
+li,Liechtenstein,Dual-Stance,102,102,1700,10,0
+lt,Lithuania,Brawler,102,102,1639,12,0
+lu,Luxembourg,Trickster,102,102,1818,12,0
+mg,Madagascar,Brawler,102,102,1651,14,0
+mw,Malawi,Brawler,102,102,1756,14,0
+my,Malaysia,Kicker,102,102,1574,11,0
+mv,Maldives,Trickster,102,102,1335,9,0
+ml,Mali,Duelist,102,102,1623,10,0
+mt,Malta,Duelist,102,102,1695,9,0
+mh,Marshall Islands,Striker,102,102,1960,10,0
+mr,Mauritania,Dual-Stance,102,102,1968,11,0
+mu,Mauritius,Zoner,102,102,1579,23,0
+mx,Mexico,Striker,102,102,1489,10,0
+fm,Micronesia,Duelist,102,102,1889,10,0
+md,Moldova,Duelist,102,102,1870,10,0
+mc,Monaco,Grappler,102,102,1895,11,0
+mn,Mongolia,Trickster,102,102,1580,11,0
+me,Montenegro,Zoner,102,102,1569,25,0
+ma,Morocco,Kicker,102,102,1709,8,0
+mz,Mozambique,Dual-Stance,102,102,1807,11,0
+mm,Myanmar,Zoner,102,102,665,20,0
+na,Namibia,Striker,102,102,1666,12,0
+nr,Nauru,Grappler,102,102,1586,10,0
+np,Nepal,Kicker,102,102,1778,6,0
+nl,Netherlands,Zoner,102,102,1705,24,0
+nz,New Zealand,Grappler,102,102,1543,9,0
+ni,Nicaragua,Striker,102,102,1517,12,0
+ne,Niger,Duelist,102,102,1684,10,0
+ng,Nigeria,Brawler,102,102,1610,12,0
+kp,North Korea,Dual-Stance,102,102,1962,9,0
+mk,North Macedonia,Grappler,102,102,1502,11,0
+no,Norway,Trickster,102,102,1412,12,0
+om,Oman,Grappler,102,102,1572,11,0
+pw,Palau,Striker,102,102,1507,11,0
+pa,Panama,Trickster,102,102,1288,10,0
+pg,Papua New Guinea,Striker,102,102,1945,12,0
+py,Paraguay,Trickster,102,102,1414,11,0
+pe,Peru,Dual-Stance,102,102,1474,10,0
+ph,Philippines,Brawler,102,102,1503,12,0
+pl,Poland,Grappler,102,102,1472,11,0
+pt,Portugal,Grappler,102,102,1257,8,0
+qa,Qatar,Zoner,102,102,1409,18,0
+cg,Republic of the Congo,Zoner,102,102,1193,25,0
+ro,Romania,Dual-Stance,102,102,1180,11,0
+ru,Russia,Striker,102,102,1474,10,0
+rw,Rwanda,Dual-Stance,102,102,1264,10,0
+kn,Saint Kitts and Nevis,Duelist,102,102,1458,11,0
+lc,Saint Lucia,Striker,102,102,1416,11,0
+vc,Saint Vincent and the Grenadines,Dual-Stance,102,102,1391,9,0
+ws,Samoa,Zoner,102,102,1310,17,0
+sm,San Marino,Brawler,102,102,1636,12,0
+st,Sao Tome and Principe,Trickster,102,102,1546,11,0
+sa,Saudi Arabia,Grappler,102,102,1626,10,0
+sn,Senegal,Duelist,102,102,1630,8,0
+rs,Serbia,Trickster,102,102,1859,12,0
+sc,Seychelles,Kicker,102,102,1664,12,0
+sl,Sierra Leone,Trickster,102,102,1831,12,0
+sg,Singapore,Zoner,102,102,1468,21,0
+sk,Slovakia,Kicker,102,102,1813,10,0
+si,Slovenia,Grappler,102,102,1914,15,0
+sb,Solomon Islands,Striker,102,102,1475,12,0
+so,Somalia,Zoner,102,102,1340,18,0
+za,South Africa,Duelist,102,102,1256,8,0
+kr,South Korea,Kicker,102,102,1304,6,0
+ss,South Sudan,Kicker,102,102,1408,10,0
+es,Spain,Grappler,102,102,1432,8,0
+lk,Sri Lanka,Striker,102,102,1195,11,0
+ps,State of Palestine,Duelist,102,102,1816,10,0
+sd,Sudan,Trickster,102,102,1287,9,0
+sr,Suriname,Striker,102,102,1293,9,0
+se,Sweden,Brawler,102,102,1302,10,0
+ch,Switzerland,Dual-Stance,102,102,1538,12,0
+sy,Syria,Grappler,102,102,1792,11,0
+tw,Taiwan,Duelist,102,102,1880,10,0
+tj,Tajikistan,Kicker,102,102,1731,9,0
+tz,Tanzania,Kicker,102,102,1762,9,0
+th,Thailand,Grappler,102,102,1839,11,0
+tl,Timor-Leste,Brawler,102,102,1594,11,0
+tg,Togo,Duelist,102,102,1849,10,0
+to,Tonga,Duelist,102,102,1876,10,0
+tt,Trinidad and Tobago,Brawler,102,102,1686,14,0
+tn,Tunisia,Zoner,102,102,1865,22,0
+tr,Türkiye,Kicker,102,102,1813,9,0
+tm,Turkmenistan,Trickster,102,102,1596,12,0
+tv,Tuvalu,Zoner,102,102,1783,22,0
+ug,Uganda,Brawler,102,102,1772,12,0
+ua,Ukraine,Kicker,102,102,1992,8,0
+ae,United Arab Emirates,Kicker,102,102,1960,10,0
+gb,United Kingdom,Duelist,102,102,1915,9,0
+us,United States of America,Zoner,102,102,1758,25,0
+uy,Uruguay,Kicker,102,102,1984,11,0
+uz,Uzbekistan,Dual-Stance,102,102,1915,10,0
+vu,Vanuatu,Duelist,102,102,1951,11,0
+va,Vatican City,Striker,102,102,1906,12,0
+ve,Venezuela,Duelist,102,102,1879,10,0
+vn,Vietnam,Brawler,102,102,1652,13,0
+ye,Yemen,Kicker,102,102,1917,8,0
+zm,Zambia,Striker,102,102,1909,10,0
+zw,Zimbabwe,Dual-Stance,102,102,1973,10,0

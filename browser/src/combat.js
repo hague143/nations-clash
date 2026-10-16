@@ -160,6 +160,26 @@
       countryId:move?.projectile?a.data.id:undefined,frame:this.frame});}
     validGrab(p){return p&&p.attacker.hp>0&&!p.attacker.stun&&p.attacker.move===p.move;}
     releaseGrab(f){f.pending=null;f.buffer=null;if(!f.stun)f.pose='idle';}
+    // A finished round still needs a visual tail: defeated fighters land,
+    // the winning strike recovers, and its flash/particles fade. This never
+    // reads commands, changes the result or advances the combat timer.
+    settle(){
+      if(this.phase!=='intermission'&&this.phase!=='complete')return false;
+      if(this.hitstop>0){this.hitstop--;return true;}
+      this.frame++;
+      this.effects=this.effects.filter(effect=>--effect.life>0);
+      for(const f of [this.left,this.right]){
+        if(f.flash>0)f.flash--;
+        if(f.stun>0)f.stun--;
+        if(Math.abs(f.recoil)>.003){f.x=clamp(f.x+f.recoil,-6.6,6.6);f.recoil*=.72;}else f.recoil=0;
+        if(f.y>0||f.vy>0){f.vy-=20/60;f.y+=f.vy/60;if(f.y<=0){f.y=0;f.vy=0;f.juggle=0;}}
+        f.buffer=null;f.pending=null;f.axis=0;f.guard=false;f.low=false;
+        if(f.hp<=0){f.move=null;f.pose='ko';continue;}
+        if(f.move&&++f.moveFrame>=f.move.start+f.move.active+f.move.recovery)f.move=null;
+        f.pose=f.move?f.move.id:f.stun>0?'hit':f.y>0?'jump':'idle';
+      }
+      return true;
+    }
     read(f,input={}) {
       f.axis=clamp(input.axis||0,-1,1);f.low=!!input.low;f.guard=!!input.guard;
       if(f.pending&&!this.validGrab(f.pending))this.releaseGrab(f);
@@ -174,7 +194,7 @@
     step(a={},b={}) {
       if(this.phase==='complete')return;
       if(this.phase!=='fight'){
-        this.frame++;
+        if(this.phase==='intermission')this.settle();else this.frame++;
         if(--this.wait<=0){
           if(this.phase==='intermission'){this.round++;this.resetRound();}
           else{this.phase='fight';this.say('FIGHT');this.roundEvent('fight');}
