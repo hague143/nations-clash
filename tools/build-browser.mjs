@@ -2,7 +2,7 @@ import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const files=['roster','powers','combat','arena-catalog','arenas','audio','fighters','sprites','country-art','country-sprites','power-fx','presentation','game'];
+const files=['roster','powers','combat','arena-catalog','arenas','audio','fighters','sprites','country-art','country-sprites','power-fx','fighter-preview','presentation','game'];
 const sources=await Promise.all(files.map(name=>readFile(path.join(root,'browser/src',name+'.js'),'utf8')));
 const imageFiles={JAPAN:'japan-poses.png',PAKISTAN:'pakistan-poses.png',HEADS:'fighter-heads.png',BODY:'fighter-body.png'};
 let script=sources.join('\n;\n');
@@ -30,9 +30,10 @@ for(const key of ['fight','ko','getready','timeover']){
  script=script.replace(`/* AUDIO_${key.toUpperCase()}_DATA */`,()=>`data:audio/wav;base64,${wav.toString('base64')}`);
 }
 const template=await readFile(path.join(root,'browser/template.html'),'utf8');
+const neon=await readFile(path.join(root,'browser/landing-neon.css'),'utf8');
 const flagLicense=await readFile(path.join(root,'browser/assets/flags/LICENSE.txt'),'utf8');
 const credits='<!-- National flag SVGs: lipis/flag-icons 7.5.0.\n'+flagLicense.replace(/--/g,'—')+'\nFighter atlases prepared with image generation; Pakistan/Japan source images supplied by the user.\nArena artwork supplied by the user; synthesized music/impacts and offline eSpeak NG announcer cues.\n-->\n';
-const html=template.replace('<head>',()=>'<head>\n'+credits).replace('<script>/* COMBAT_SOURCE */</script><script>/* GAME_SOURCE */</script>',()=>'<script>'+script.replace(/<\/script/gi,'<\\/script')+'</script>');
+const html=template.replace('/* LANDING_NEON_CSS */',()=>neon).replace('<head>',()=>'<head>\n'+credits).replace('<script>/* COMBAT_SOURCE */</script><script>/* GAME_SOURCE */</script>',()=>'<script>'+script.replace(/<\/script/gi,'<\\/script')+'</script>');
 if(/\/\* (?:[A-Z]+_IMAGE_DATA|AUDIO_[A-Z]+_DATA|COMBAT_SOURCE|GAME_SOURCE) \*\//.test(html))throw new Error('Unresolved standalone asset placeholder');
 await writeFile(path.join(root,'browser/index.html'),html);
 const output=process.env.NATIONCLASH_ARTIFACT_DIR||path.join(root,'artifacts');await mkdir(output,{recursive:true});

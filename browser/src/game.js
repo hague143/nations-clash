@@ -2,7 +2,7 @@
  'use strict';
  const C=window.NationCombat,{Fight,ROSTER,clamp,contact,active,getMoveSpec}=C;
  const F=window.NationFighters,S=window.NationSprites,T=window.NationCountrySprites,A=window.NationArenas;
- const P=window.NationPresentation,Q=window.NationPowers,V=window.NationPowerFX;
+ const P=window.NationPresentation,Q=window.NationPowers,V=window.NationPowerFX,Preview=window.NationFighterPreview;
  const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
  const $=id=>document.getElementById(id),canvas=$('arena'),ctx=canvas.getContext('2d');
  const IMAGE_DATA={japan:'/* JAPAN_IMAGE_DATA */',pakistan:'/* PAKISTAN_IMAGE_DATA */',heads:'/* HEADS_IMAGE_DATA */',body:'/* BODY_IMAGE_DATA */'};
@@ -10,6 +10,7 @@
  let selected=[ROSTER.findIndex(c=>c.id==='pk'),ROSTER.findIndex(c=>c.id==='jp')],picking=0,pageIndex=0;
  let fight=null,match=null,paused=false,last=0,accumulator=0,assets=null,assetsReady=false,starting=false,startRevision=0,previousPhase=null;
  const PAGE_SIZE=24,keys=new Set(),holds=new Map(),actions=[[],[]],diagnostics=[],powerDiagnostics=[];
+ Preview.initialize(()=>assets,()=>assetsReady&&!starting&&!fight);
  const keyboard={KeyJ:'light',KeyK:'heavy',KeyL:'special',KeyU:'break',KeyI:'throw',KeyO:'ultimate',KeyH:'signature',KeyW:'jump'};
  const second={Numpad1:'light',Numpad2:'heavy',Numpad3:'special',Numpad4:'break',Numpad5:'throw',Numpad6:'ultimate',Numpad7:'signature',ArrowUp:'jump'};
  const fold=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -25,10 +26,11 @@
    arena:A.getArena($('arena-select').value),picking,ready:assetsReady};
  }
  function roster(){
+  Preview.stop();
   const matches=filtered(),pages=Math.max(1,Math.ceil(matches.length/PAGE_SIZE));pageIndex=clamp(pageIndex,0,pages-1);
   $('roster').innerHTML=matches.slice(pageIndex*PAGE_SIZE,(pageIndex+1)*PAGE_SIZE).map(({data:c,index:i})=>{
    const flag=assets?.flags[c.id]?.src||'',art=assetsReady?portrait(c):'';
-   return `<button class="card ${selected[picking]===i?'selected':''}" style="--color:${c.colors[0]}55" data-fighter="${i}" aria-pressed="${selected[picking]===i}" aria-label="Select ${escape(c.country)}: ${escape(c.name)}"><div class="portrait">${art?`<img class="fighter-portrait" src="${art}" alt="${escape(c.country)} fighter in flag costume">`:''}<span class="flag" title="${escape(c.flagVariant||c.country)}">${flag?`<img src="${flag}" alt="${escape(c.country)} flag">`:escape(c.flag)}</span><span class="assigned">${selected[0]===i?'YOU':selected[1]===i?'RIVAL':''}</span></div><div class="card-body"><div class="country">${escape(c.country)}</div><div class="fighter-name">${escape(c.name)}</div><div class="card-bottom"><span>${escape(c.style.toUpperCase())}</span><span>${c.hp} HP</span></div></div></button>`;
+   return `<button class="card ${selected[picking]===i?'selected':''}" style="--color:${c.colors[0]}55" data-fighter="${i}" aria-pressed="${selected[picking]===i}" aria-describedby="preview-hint" aria-label="Select ${escape(c.country)}: ${escape(c.name)}"><div class="portrait">${art?`<img class="fighter-portrait" src="${art}" alt="${escape(c.country)} fighter in flag costume">`:''}<span class="flag" title="${escape(c.flagVariant||c.country)}">${flag?`<img src="${flag}" alt="${escape(c.country)} flag">`:escape(c.flag)}</span><span class="assigned">${selected[0]===i?'YOU':selected[1]===i?'RIVAL':''}</span><span class="preview-cue" aria-hidden="true">HOVER · MOVE PREVIEW</span></div><div class="card-body"><div class="country">${escape(c.country)}</div><div class="fighter-name">${escape(c.name)}</div><div class="card-bottom"><span>${escape(c.style.toUpperCase())}</span><span>${c.hp} HP</span></div></div></button>`;
   }).join('');
   $('roster-empty').classList.toggle('hidden',matches.length>0);$('page-label').textContent=`PAGE ${pageIndex+1} OF ${pages} · ${matches.length} FIGHTERS`;
   $('count').textContent=`${ROSTER.length} FIGHTERS`;$('prev-page').disabled=pageIndex===0;$('next-page').disabled=pageIndex>=pages-1;
@@ -57,14 +59,16 @@
  $('arena-select').onchange=previewArena;
  function clearInputs(){keys.clear();holds.clear();actions[0]=[];actions[1]=[];document.querySelectorAll('.pressed').forEach(b=>b.classList.remove('pressed'));}
  async function start(){
-  if(!assetsReady||starting)return;const revision=++startRevision;starting=true;$('start').disabled=true;
+  if(!assetsReady||starting)return;const revision=++startRevision;starting=true;Preview.stop();$('start').disabled=true;
   const chosen=selected.map(i=>ROSTER[i]),settings={mode:$('mode').value,difficulty:$('difficulty').value,arena:$('arena-select').value};
+  const matchArt={countrySprites:{}};
   try{
    audio.stop();audio.setArena(settings.arena);const audioUnlock=audio.unlock();
    $('start').textContent='LOADING SELECTED FIGHTERS…';P.setStatus({state:'loading',message:'Preparing your fighters and arena…'});
    A.retain(settings.arena);
-   await Promise.all([T.ensure(chosen.map(c=>c.id),assets),A.ensure(settings.arena),audioUnlock]);
+   await Promise.all([T.ensure(chosen.map(c=>c.id),matchArt),A.ensure(settings.arena),audioUnlock]);
    if(revision!==startRevision)return;
+   assets.countrySprites=matchArt.countrySprites;
    match=settings;
    fight=new Fight(chosen[0],chosen[1]);P.updateMatch(selectionView(chosen));P.setFight(true);P.setStatus({state:'ready',message:'Your match is ready.'});paused=false;accumulator=0;previousPhase=fight.phase;clearInputs();
    $('selection').classList.add('hidden');$('game').classList.remove('hidden');$('overlay').classList.add('hidden');

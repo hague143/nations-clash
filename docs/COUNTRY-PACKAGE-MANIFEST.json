@@ -1,10 +1,10 @@
 {
   "format": "self-contained single HTML inside ZIP",
-  "zipBytes": 89222582,
-  "zipSha256": "c58710e3fc1549fa289a9287597e9acfc17f00c6f1dafc82091e0cc9c415dcb4",
-  "htmlBytes": 117922700,
-  "htmlSha256": "38ad0cb58544440386a4a4e16bd4e742b5c15f46473ef8d432df22e07e191c35",
-  "sourceHtmlSha256": "01d9fbf6db8a4af90d37f3eb81ec1c0dd8f3037bf8a332b847f52b2f3b40ff20",
+  "zipBytes": 89230613,
+  "zipSha256": "4744aefebdc6575353e7df552028920827d5196d4f73686c6f3e5e0eda0e76b3",
+  "htmlBytes": 117944012,
+  "htmlSha256": "27b7f8733a26231fc4ac2029bf64f0e46786efab276d4dbfd1582e48f465d09f",
+  "sourceHtmlSha256": "2dd2951243f59ba4a891ba863d1c7543bcb7391add87866506c5c1f319ad8c5c",
   "zipCrc": "passed",
   "members": 9,
   "companionAssetFiles": 0,
@@ -27,8 +27,10 @@
     "powers": "d91e837b029dd1176046a69c5a079067d521ee7c80a83fa9e13030ea351bb332",
     "combat": "ddc2fff5a0dd179b2a89c80c8c7e4bf27c67bbc29590f263cad30ef8e49e3ebb",
     "power-fx": "a5b8c3565efc71816553b43a57e6ed6fa5148fcd76bb10d18de8be190369ed3d",
-    "presentation": "2dd9be6f680da81f3c25a05281f5ec2ac2171d92537624fca7bb69d64a8887f2",
+    "fighter-preview": "0b643a2fd0d05ca681fb56ffb0e1abb4c5dcc59720e18f666c30e073ef60544e",
+    "presentation": "5ec0143ac28105633e95ef84d65a39c519eded7e575609d5bf62a5cf2c0f8cb8",
     "audio": "7bc84f99a1c4a8d9c07f205c293e8ce70a646706629ce4fde513b959b2cf9274",
-    "game": "6042a5257264662ae3af03c76c8e72410f42c531a2ea9bb83e0602a6bd685643"
-  }
+    "game": "159e220b530319641cb9ce795e2e93aa47edafeb10bad0f009e951a8f772e655"
+  },
+  "landingThemeSha256": "e9b6de2e8dc1033cb040f8c83db6a5a715e1a92cd543c7159d9fb32f101d958a"
 }

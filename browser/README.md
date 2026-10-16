@@ -13,7 +13,10 @@ roster is 193 UN members plus Palestine, Vatican City and Taiwan.
    This downloaded HTML is self-contained; no companion artwork folder is required.
 3. Search or filter countries. Choose **Your fighter** or **Select opponent**,
    then select a card. Pakistan and Japan are the initial matchup.
-4. Choose an arena and difficulty, then click **Enter the arena**.
+4. Hover a fighter card or focus it with Tab to preview its punch, kick and
+   named country power. On touch screens, select a card and tap **Preview moves**
+   on its large matchup panel. Hovering does not change your selection.
+5. Choose an arena and difficulty, then click **Enter the arena**.
 
 No Unity, account, server or internet connection is needed after downloading.
 Clicking Enter unlocks browser audio. Master, Music and Effects sliders adjust
@@ -24,6 +27,12 @@ with an accompanying `country-art` folder.
 
 For a direct browser website, a GitHub Pages workflow is prepared. See
 [publishing instructions and access status](../docs/WEB-PUBLISH.md).
+
+The neon landing page uses cyan, violet and lime highlights. Automatic hover
+previews loop through three moves; the explicit preview button plays one cycle.
+Reduced-motion users get still hover poses and can explicitly play one cycle.
+Previews stop when offscreen or when the match starts. See
+[preview validation](../docs/NEON-LANDING.md).
 
 ## Controls
 

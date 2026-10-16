@@ -1,9 +1,9 @@
 {
-  "startedAt": "2026-10-16T03:25:41.356Z",
+  "startedAt": "2026-10-16T06:58:02.100Z",
   "document": {
-    "path": "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/fixed-package/NationClash.html",
-    "bytes": 117922700,
-    "sha256": "38ad0cb58544440386a4a4e16bd4e742b5c15f46473ef8d432df22e07e191c35"
+    "path": "/workspace/nations-clash/artifacts/neon-landing/package-final/NationClash.html",
+    "bytes": 117944012,
+    "sha256": "27b7f8733a26231fc4ac2029bf64f0e46786efab276d4dbfd1582e48f465d09f"
   },
   "checks": [
     {
@@ -65,13 +65,13 @@
   "errors": [],
   "externalRequests": [],
   "screenshots": [
-    "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/upgrade/country-power-selection.png",
-    "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/upgrade/iran-uranium-projectile.png",
-    "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/upgrade/uranium-impact.png",
-    "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/upgrade/golden-falcon-projectile.png",
-    "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/upgrade/country-power-mobile-390.png",
-    "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/upgrade/country-power-mobile-844.png"
+    "/workspace/nations-clash/artifacts/neon-landing/upgrade/country-power-selection.png",
+    "/workspace/nations-clash/artifacts/neon-landing/upgrade/iran-uranium-projectile.png",
+    "/workspace/nations-clash/artifacts/neon-landing/upgrade/uranium-impact.png",
+    "/workspace/nations-clash/artifacts/neon-landing/upgrade/golden-falcon-projectile.png",
+    "/workspace/nations-clash/artifacts/neon-landing/upgrade/country-power-mobile-390.png",
+    "/workspace/nations-clash/artifacts/neon-landing/upgrade/country-power-mobile-844.png"
   ],
   "status": "passed",
-  "finishedAt": "2026-10-16T03:27:10.250Z"
+  "finishedAt": "2026-10-16T06:59:21.032Z"
 }

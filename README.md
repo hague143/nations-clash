@@ -24,8 +24,10 @@ There are no exact duplicate files or visible-pixel sheets. Sao Tome and
 Principe and Sierra Leone still need corrected costumes; Monaco and Slovenia
 need confirmation. See the [artwork audit](docs/COUNTRY-ARTWORK-REVIEW.md) and
 [replacement checklist](docs/REPLACEMENT-ARTWORK-CHECKLIST.md).
-Attacks share visible contact geometry with collision checks. Full-size country
-artwork loads only for selected fighters. See [download validation](docs/DOWNLOAD-VALIDATION.md).
+Attacks share visible contact geometry with collision checks. The full neon landing page previews actual punches, kicks and country powers
+on hover or keyboard focus; selected matchup panels have a touch-friendly
+**Preview moves** button. Full-size country artwork decodes only on demand for
+a preview or selected match. See [preview design and checks](docs/NEON-LANDING.md). See [download validation](docs/DOWNLOAD-VALIDATION.md).
 The Unity/C# foundation below remains a separate project.
 
 Original Unity/C# 2.5D fighting-game foundation, implementing **Phase 1** of the

@@ -21,7 +21,7 @@
   entries.forEach((value,index)=>{
    const data=fighter(value),side=index===0?'left':'right',panel=$('hero-'+side),power=powerFor(selection.powers?.[index],data);
    const accent=color(data.colors?.[0],index===0?'#73dbf1':'#f1c789');
-   if(panel){panel.style.setProperty('--fighter-accent',accent);panel.style.setProperty('--power-accent',powerColor(power,accent));panel.dataset.countryId=data.id||'';panel.classList.toggle('is-picking',Number(selection.picking||0)===index);}
+   if(panel){panel.style.setProperty('--fighter-accent',accent);panel.style.setProperty('--power-accent',powerColor(power,accent));panel.dataset.countryId=data.id||'';panel.classList.toggle('is-picking',Number(selection.picking||0)===index);const play=panel.querySelector('.preview-play');if(play){play.disabled=!selection.ready;play.setAttribute('aria-label','Preview '+(data.country||'fighter')+' punch, kick and '+powerName(power));}}
    text('hero-'+side+'-country',data.country||'Choose a champion');
    text('hero-'+side+'-name',[data.name,data.style].filter(Boolean).join(' · ')||'Your fighting spirit');
    text('hero-'+side+'-power',powerName(power));

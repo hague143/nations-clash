@@ -1,5 +1,10 @@
 {
   "status": "passed",
+  "document": {
+    "path": "/workspace/nations-clash/artifacts/neon-landing/package-final/NationClash.html",
+    "bytes": 117944012,
+    "sha256": "27b7f8733a26231fc4ac2029bf64f0e46786efab276d4dbfd1582e48f465d09f"
+  },
   "before": {
     "ids": [
       "pk",

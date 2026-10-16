@@ -83,6 +83,9 @@ Guard break U. Throw I. Ultimate O. Pause Escape.
 Country power H (player two: Numpad 7). Each country has its own fantasy power.
 The energy travels to the opponent and can be blocked. Recharge takes four seconds.
 Music and Effects have separate volume sliders; Sound mutes everything.
+The neon landing page previews each fighter's actual punch, kick and country power.
+Hover a country card or focus it with Tab. On touch, select a fighter and tap
+PREVIEW MOVES on its large matchup panel. Previews never change your selection.
 
 NationClash.html contains all 196 fighters, portraits, flags, arenas and sounds.
 The HTML works by itself; there is no required country-art folder.

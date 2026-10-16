@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#080d14">
+<meta name="theme-color" content="#07091c">
 <meta name="description" content="Choose your nation, pick an iconic arena, and fight for the championship in NationClash.">
 <title>NationClash · World Arena</title>
 <style>
@@ -68,6 +68,7 @@ button,input,select,summary{outline-offset:4px}button:focus-visible,input:focus-
 }
 @media(hover:none){.card:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.hero-stage,.hero-fighter,.hero-fighter.rival,.card:hover{transform:none!important}}
+/* LANDING_NEON_CSS */
 </style>
 </head>
 <body>
@@ -82,14 +83,15 @@ button,input,select,summary{outline-offset:4px}button:focus-visible,input:focus-
   <div class="hero-stage" id="hero-stage" aria-label="Your selected matchup">
    <div class="hero-topline"><span>WORLD ARENA / MATCHUP</span><span>FIRST TO TWO</span></div>
    <div class="hero-matchup">
-    <article class="hero-fighter is-picking" id="hero-left"><span class="hero-role">YOUR FIGHTER</span><img class="hero-flag" id="hero-left-flag" alt="" hidden><div class="hero-art"><span class="hero-placeholder" id="hero-left-placeholder">YOUR CHAMPION</span><img id="hero-left-portrait" alt="" hidden></div><div class="hero-identity"><strong class="hero-country" id="hero-left-country">Pakistan</strong><span class="hero-name" id="hero-left-name">Your fighting spirit</span><span class="hero-power" id="hero-left-power">Signature power</span></div></article>
+    <article class="hero-fighter is-picking" id="hero-left"><span class="hero-role">YOUR FIGHTER</span><img class="hero-flag" id="hero-left-flag" alt="" hidden><div class="hero-art"><span class="hero-placeholder" id="hero-left-placeholder">YOUR CHAMPION</span><img id="hero-left-portrait" alt="" hidden></div><div class="hero-identity"><strong class="hero-country" id="hero-left-country">Pakistan</strong><span class="hero-name" id="hero-left-name">Your fighting spirit</span><span class="hero-power" id="hero-left-power">Signature power</span><button type="button" class="preview-play" aria-label="Preview your fighter's punch, kick and country power">▷ PREVIEW MOVES</button></div></article>
     <div class="hero-vs" aria-hidden="true">VS</div>
-    <article class="hero-fighter rival" id="hero-right"><span class="hero-role">YOUR OPPONENT</span><img class="hero-flag" id="hero-right-flag" alt="" hidden><div class="hero-art"><span class="hero-placeholder" id="hero-right-placeholder">YOUR RIVAL</span><img id="hero-right-portrait" alt="" hidden></div><div class="hero-identity"><strong class="hero-country" id="hero-right-country">Japan</strong><span class="hero-name" id="hero-right-name">A worthy opponent</span><span class="hero-power" id="hero-right-power">Signature power</span></div></article>
+    <article class="hero-fighter rival" id="hero-right"><span class="hero-role">YOUR OPPONENT</span><img class="hero-flag" id="hero-right-flag" alt="" hidden><div class="hero-art"><span class="hero-placeholder" id="hero-right-placeholder">YOUR RIVAL</span><img id="hero-right-portrait" alt="" hidden></div><div class="hero-identity"><strong class="hero-country" id="hero-right-country">Japan</strong><span class="hero-name" id="hero-right-name">A worthy opponent</span><span class="hero-power" id="hero-right-power">Signature power</span><button type="button" class="preview-play" aria-label="Preview your opponent's punch, kick and country power">▷ PREVIEW MOVES</button></div></article>
    </div>
    <div class="hero-venue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.7"/></svg><strong id="hero-arena">CHOOSE YOUR WORLD LANDMARK</strong></div>
   </div>
  </div>
  <div class="section-top"><div class="select-title"><span class="step-number" aria-hidden="true">01</span><span>CHOOSE YOUR CHAMPION</span><span class="total" id="count">196 FIGHTERS</span></div><div class="pick-tools" role="group" aria-label="Choose which fighter to select"><button id="pick-player" class="secondary active" aria-pressed="true">YOUR FIGHTER</button><button id="pick-opponent" class="secondary" aria-pressed="false">YOUR OPPONENT</button></div></div>
+ <p id="preview-hint" class="preview-hint"><strong>HOVER TO SEE THEM FIGHT</strong><span>Punch · Kick · Country power. On touch screens, select a fighter and tap Preview moves above.</span></p>
  <div class="filter-bar">
   <label class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search countries or fighters</span><input id="country-search" type="search" placeholder="Search a country or champion…" autocomplete="off" maxlength="100"></label>
   <label class="filter-label"><span class="sr-only">Filter by region</span><select id="region-filter"><option value="All">All regions</option><option value="Africa">Africa</option><option value="Americas">Americas</option><option value="Asia">Asia</option><option value="Europe">Europe</option><option value="Oceania">Oceania</option></select></label>

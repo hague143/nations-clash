@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "document": "/workspace/nations-clash/artifacts/fighter-retest/2026-10-16/fixed-package/NationClash.html",
+  "document": "/workspace/nations-clash/artifacts/neon-landing/package-final/NationClash.html",
   "checks": [
     {
       "name": "Back cancels pending completed-match Rematch and a stale success cannot replace a fresh Start",
@@ -15,7 +15,16 @@
         "sameFight": true,
         "left": "us",
         "selectionVisible": false,
-        "status": "ready"
+        "status": "ready",
+        "sameArt": true,
+        "artIds": [
+          "jp",
+          "us"
+        ],
+        "matchIds": [
+          "jp",
+          "us"
+        ]
       }
     },
     {
@@ -30,14 +39,23 @@
         "button": "LOADING SELECTED FIGHTERS\u2026",
         "disabled": true,
         "status": "loading",
-        "fight": false
+        "fight": false,
+        "sameArt": true
       },
       "fresh": {
         "left": "ir",
         "status": "ready",
         "arena": "lahore",
         "retained": "lahore",
-        "audioArena": "lahore"
+        "audioArena": "lahore",
+        "artIds": [
+          "ir",
+          "jp"
+        ],
+        "matchIds": [
+          "ir",
+          "jp"
+        ]
       }
     }
   ],

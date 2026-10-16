@@ -30,6 +30,8 @@ def main():
         html_bytes = archive.read('NationClash.html')
         assert archive.read('ARENA-INVENTORY.json') == (ROOT/'artwork/arenas/intake.json').read_bytes()
     html = html_bytes.decode()
+    neon = (ROOT/'browser/landing-neon.css').read_text()
+    assert neon in html, 'Bundled landing theme differs from source'
     payloads = dict(re.findall(r'<script type="application/octet-stream" id="country-art-([a-z]{2})">([^<]+)</script>', html))
     countries = json.loads((ROOT/'browser/assets/countries/metadata.json').read_text())
     assert len(payloads) == 196 and set(payloads) == set(countries)
@@ -40,7 +42,7 @@ def main():
     assert packed, 'Missing compressed program'
     program = gzip.decompress(base64.b64decode(packed.group(1), validate=True)).decode()
     bundled_modules = {}
-    for name in ('powers', 'combat', 'power-fx', 'presentation', 'audio', 'game'):
+    for name in ('powers', 'combat', 'power-fx', 'fighter-preview', 'presentation', 'audio', 'game'):
         source = (ROOT/'browser/src'/(name+'.js')).read_text()
         prepared = source
         if name == 'audio':
@@ -84,6 +86,7 @@ def main():
         'arenaByteChecks': len(images), 'arenaLandmarks': 29,
         'countrySignatures': 196, 'signatureVisualMaterials': 9,
         'bundledModuleSourceHashes': bundled_modules,
+        'landingThemeSha256': digest(neon.encode()),
     }
     (args.out/'package-manifest.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2))

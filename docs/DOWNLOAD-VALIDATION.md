@@ -1,4 +1,4 @@
-# Country-power edition validation
+# Neon country-power edition validation
 
 The download contains one self-contained `NationClash.html`, with **196 supplied
 fighters, 196 country powers, 30 arena views and original audio** embedded. The
@@ -8,13 +8,14 @@ lazy country scripts; all arena images are embedded in both builds.
 
 ## Exact tested artifact
 
-- ZIP: 89,222,582 bytes (85.09 MiB).
-- ZIP SHA-256: `c58710e3fc1549fa289a9287597e9acfc17f00c6f1dafc82091e0cc9c415dcb4`.
-- HTML: 117,922,700 bytes (112.46 MiB).
-- HTML SHA-256: `38ad0cb58544440386a4a4e16bd4e742b5c15f46473ef8d432df22e07e191c35`.
+- ZIP: 89,230,613 bytes (85.10 MiB).
+- ZIP SHA-256: `4744aefebdc6575353e7df552028920827d5196d4f73686c6f3e5e0eda0e76b3`.
+- HTML: 117,944,012 bytes (112.48 MiB).
+- HTML SHA-256: `27b7f8733a26231fc4ac2029bf64f0e46786efab276d4dbfd1582e48f465d09f`.
 - Nine ZIP members; CRCs pass; companion asset files: **zero**.
 - All **196** country atlas payloads and **30** arena payloads match expected WebPs.
-- Powers, combat, FX, presentation and audio source match the embedded program;
+- Powers, combat, FX, preview, presentation and audio source match the embedded program;
+  the bundled neon stylesheet also matches its source;
   game logic matches around its four optimized legacy-atlas substitutions.
 
 The exact extracted HTML was used for all acceptance checks below. Its size
@@ -42,7 +43,7 @@ runner output is in [AUTOMATED-TESTS.txt](AUTOMATED-TESTS.txt). This includes:
   combat RMS .042, peak .508. Browser controls, ducking, pause, arena changes,
   stale loading, mute and stop are checked.
 
-All **29 browser gameplay/presentation groups pass** on the exact packaged HTML:
+All **38 browser gameplay/presentation groups pass** on the exact packaged HTML:
 
 - [17 world groups](WORLD-ACCEPTANCE.json): every country card and rendered
   fighter; 3,136 painted melee contacts; 3,136 two-fighter layer fixtures;
@@ -65,6 +66,16 @@ player slots/facings and grounded/airborne states. [Full-fight auditing](FIGHTER
 also completes 19,992 production-AI matches across all countries, eight opposing
 styles, three difficulty settings, both slots and representative seeds.
 
+- [Nine landing preview groups](LANDING-PREVIEW-ACCEPTANCE.json): real hover and
+  keyboard focus, 588 authored contacts across all 196 countries, each country's
+  own signature projectile, one reused canvas, serialized loading, stale-hover
+  cancellation, tiny/hidden/offscreen hosts, isolated selection and live-fight
+  state, bounded current match atlas references, portrait/landscape touch,
+  reduced motion and hidden static portraits. See [design and screenshots](NEON-LANDING.md).
+
+The earlier 19,992-match AI audit remains applicable to the unchanged combat
+engine; its source hash matches this package. It was not rerun for this UI change.
+
 Three additional state regression cases pass:
 
 - [Start loading](START-LOADING-ACCEPTANCE.json): changing country/arena selectors
@@ -79,20 +90,22 @@ Three additional state regression cases pass:
 node --test Tests/Browser/*.test.cjs
 node tools/build-browser.mjs
 python3 tools/package-browser.py
-python3 tools/verify-browser-package.py --out artifacts/presentation-upgrade/final-package-check
-NATIONCLASH_HTML=artifacts/presentation-upgrade/final-package-check/NationClash.html \
-NATIONCLASH_ARTIFACT_DIR=artifacts/presentation-upgrade/final-world \
+python3 tools/verify-browser-package.py --out artifacts/neon-landing/package-final
+NATIONCLASH_HTML=artifacts/neon-landing/package-final/NationClash.html \
+NATIONCLASH_ARTIFACT_DIR=artifacts/neon-landing/world-final \
   node Tests/Browser/world-smoke.cjs
-NATIONCLASH_HTML=artifacts/presentation-upgrade/final-package-check/NationClash.html \
-NATIONCLASH_ARTIFACT_DIR=artifacts/presentation-upgrade/final-upgrade \
+NATIONCLASH_HTML=artifacts/neon-landing/package-final/NationClash.html \
+NATIONCLASH_ARTIFACT_DIR=artifacts/neon-landing/upgrade \
   node Tests/Browser/upgrade-smoke.cjs
-NATIONCLASH_PACKAGE_DIR=artifacts/presentation-upgrade/final-package-check \
+NATIONCLASH_PACKAGE_DIR=artifacts/neon-landing/package-final \
   node Tests/Browser/start-loading.cjs
-NATIONCLASH_PACKAGE_DIR=artifacts/presentation-upgrade/final-package-check \
+NATIONCLASH_PACKAGE_DIR=artifacts/neon-landing/package-final \
   node Tests/Browser/start-cancel.cjs
-NATIONCLASH_HTML=artifacts/presentation-upgrade/final-package-check/NationClash.html \
+NATIONCLASH_HTML=artifacts/neon-landing/package-final/NationClash.html \
   node Tests/Browser/round-settle-browser.cjs
-node tools/audit-fighter-matches.cjs
+NATIONCLASH_HTML=artifacts/neon-landing/package-final/NationClash.html \
+NATIONCLASH_ARTIFACT_DIR=artifacts/neon-landing/preview \
+  node Tests/Browser/landing-preview.cjs
 ```
 
 ## Practical limits
@@ -115,11 +128,3 @@ drawn faces. Arena images depict 29 landmarks, including two Angkor Wat views.
 
 See [package metadata](COUNTRY-PACKAGE-MANIFEST.json), [country powers](COUNTRY-POWERS.md),
 [audio design](AUDIO-DESIGN.md) and [public download verification](PUBLIC-DOWNLOAD-VERIFICATION.json).
-
-## Verified public delivery
-
-https://raw.githubusercontent.com/hague143/nations-clash/ec30bbb73dfc4a7b671f9efad0d9581b593ea2e7/downloads/NationClash-Windows.zip
-
-The public ZIP returned HTTP 200 and was downloaded in full. Its byte count,
-SHA-256 and CRCs match the tested artifact. The contained HTML matches the exact
-browser acceptance document. All artwork is embedded in that HTML.
