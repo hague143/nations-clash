@@ -50,13 +50,31 @@ Machine-readable evidence:
 - [Public download verification](ANDROID-PUBLIC-DOWNLOAD.json): HTTP 200, full
   88,348,437-byte download, exact APK SHA256, ZIP CRCs, all 429 payload hashes,
   v2/v3 signing and ZIP alignment rechecked on the downloaded file.
+- [Android emulator evidence](ANDROID-DEVICE-VALIDATION.json)
+- [Native renderer crash isolation excerpt](ANDROID-EMULATOR-CRASH.txt)
 
 ## Android runtime validation
 
-Android 15 / API 35 x86_64 emulator, WebView 124.0.6367.219, software CPU
-emulation without KVM. The APK installed successfully with airplane mode enabled
-and Wi-Fi disabled. Rendered gameplay and lifecycle checks are in progress;
-installation alone is not a gameplay pass.
+The unchanged signed APK installed successfully on **both Android 15/API 35 and
+Android 14/API 34**, with airplane mode enabled and Wi-Fi disabled. Both machines
+used x86_64 software CPU emulation without KVM, with a 1280x720 display.
+
+| Runtime attempt | Result |
+|---|---|
+| Android 15, WebView 124.0.6367.219 | **Blocked:** native Chromium renderer SIGTRAP before the harness could evaluate the page. An independent tiny Hello WebView fixture, with no game code/assets, reproduced the exact same `libwebviewchromium.so` PC `0x17971cc`. |
+| Android 14, WebView 113.0.5672.136, 4 GB guest RAM, Vulkan disabled | **Blocked:** native Chromium renderer SIGTRAP at `libwebviewchromium.so` PC `0x191356a`. The independent Hello WebView fixture reproduced this exact PC. The OS also displayed a separate System UI ANR dialog. |
+
+No NationClash Java exception or JavaScript console error was recorded before
+the native renderer exits. The control fixture demonstrates a native failure
+independent of game logic in the tested emulator configuration; it does not
+establish whether gameplay works on a physical phone.
+
+**Android gameplay remains unverified.** Roster rendering, native touch damage,
+Android audio, Back behavior, rotation preservation and background pause could
+not complete. The passing Linux Chromium browser acceptance checks above must
+not be described as Android WebView gameplay passes. Installation alone is not
+a gameplay pass. The native UI screenshots show OS startup/ANR overlays and are
+not evidence of the game rendering.
 
 No physical Android handset was available here. Frame rate, heat, battery use,
 vendor-specific behavior and low-memory performance require a phone test.

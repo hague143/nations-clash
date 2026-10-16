@@ -1,0 +1,157 @@
+{
+  "startedAt": "2026-10-16T09:37:56.005975+00:00",
+  "device": {
+    "type": "Android emulator, software CPU emulation; no KVM",
+    "android": "15",
+    "api": 35,
+    "abi": "x86_64",
+    "webView": "124.0.6367.219",
+    "displayPixels": [
+      1280,
+      720
+    ],
+    "densityDpi": 240
+  },
+  "checks": [
+    {
+      "name": "APK installed by Android PackageManager",
+      "status": "passed",
+      "details": "pm install -r returned Success; package resolved to /data/app/.../com.nationclash.game.../base.apk"
+    },
+    {
+      "name": "Same frozen APK installed successfully on API34",
+      "status": "passed",
+      "details": "Single pm install returned explicit Success; SHA256 d9982a792bf33292b56a9c5607995966d159366c2f70775258b97d161922c299 unchanged."
+    }
+  ],
+  "limitations": [
+    "This environment cannot validate frame rate, temperature, memory pressure, touch latency or battery use on a physical Android phone.",
+    "Headless emulator host audio is disabled; Web Audio state, cue decoding, scheduler/effect counters and pause are observable, but speaker output cannot be audibly assessed here."
+  ],
+  "status": "blocked",
+  "apk": {
+    "path": "downloads/NationClash-Android-test.apk",
+    "bytes": 88348437,
+    "sha256": "d9982a792bf33292b56a9c5607995966d159366c2f70775258b97d161922c299",
+    "package": "com.nationclash.game",
+    "versionName": "0.1.0-test",
+    "versionCode": 1
+  },
+  "offlineConfiguration": {
+    "airplaneMode": "enabled by cmd connectivity airplane-mode enable",
+    "wifiOn": 0
+  },
+  "api35Runtime": {
+    "status": "blocked",
+    "process": 3109,
+    "webViewRenderer": 3143,
+    "nativeCrash": "SIGTRAP code128 SI_KERNEL in CrRendererMain libwebviewchromium.so pc0x17971cc",
+    "gameJavaScriptEvaluated": false,
+    "notes": [
+      "No NationClash JavaScript console errors recorded before the native renderer crashed.",
+      "A standalone Hello WebView fixture, containing no game code or assets, reproduced the exact same native renderer trap and instruction address. This isolates the failure from NationClash in this API35 software-emulated environment.",
+      "No game landing, combat, audio or lifecycle assertions completed on API35."
+    ],
+    "isolation": {
+      "fixture": "artifacts/android-emulator/fixture/fixture.apk",
+      "package": "com.nationclash.fixture",
+      "html": "Hello WebView heading, one button, fixtureReady=true; no game code/assets",
+      "rendererPid": 4144,
+      "nativeCrash": "SIGTRAP code128 SI_KERNEL, exact same libwebviewchromium.so pc0x17971cc/BuildId68dabd72c6088238cbfc9a5fbfe211f916771df5",
+      "conclusion": "Native renderer failure reproduced independently of the game in the software-emulated API35 image."
+    },
+    "screenshot": {
+      "path": "api35-startup-overlays.png",
+      "description": "API35 native first-fullscreen tutorial overlay and Wait dialog during software-emulated startup; this is not evidence of the game landing rendering."
+    },
+    "logs": [
+      "api35-logcat.txt",
+      "api35-fixture-logcat.txt"
+    ]
+  },
+  "api34Environment": {
+    "android": "14",
+    "api": 34,
+    "abi": "x86_64",
+    "emulator": "37.3.4.0 (16555280), TCG software CPU without KVM",
+    "gpu": "swiftshader_indirect; Vulkan disabled",
+    "ramMiB": 4096,
+    "displayPixels": [
+      1280,
+      720
+    ],
+    "densityDpi": 240,
+    "webView": "113.0.5672.136"
+  },
+  "api34Runtime": {
+    "startedAt": "2026-10-16T10:01:06.181149+00:00",
+    "status": "blocked",
+    "checks": [],
+    "notes": [
+      "The original frozen APK installed successfully on Android14/API34 with guest airplane mode enabled.",
+      "The validation runner planned native ADB touches and controlled close-range combat fixtures, but completed zero gameplay touches and zero game assertions because the native WebView renderer died during startup.",
+      "A native ADB tap selected Wait on the Android System UI ANR dialog; this was an OS dialog action and was not a game control test.",
+      "The recorded runner WebSocketConnectionClosedException describes loss of its devtools attachment, not a NationClash JavaScript exception."
+    ],
+    "failure": {
+      "type": "WebSocketConnectionClosedException",
+      "message": "Connection to remote host was lost.",
+      "trace": "Traceback (most recent call last):\n  File \"/workspace/nations-clash/artifacts/android-emulator/validate-game.py\", line 26, in <module>\n    c.call('Runtime.enable');c.call('Network.enable')\n    ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cdp.py\", line 16, in call\n    res=json.loads(self.ws.recv())\n                   ^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_core.py\", line 429, in recv\n    opcode, data = self.recv_data()\n                   ^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_core.py\", line 457, in recv_data\n    opcode, frame = self.recv_data_frame(control_frame)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_core.py\", line 478, in recv_data_frame\n    frame = self.recv_frame()\n            ^^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_core.py\", line 515, in recv_frame\n    return self.frame_buffer.recv_frame()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_abnf.py\", line 377, in recv_frame\n    self.recv_header()\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_abnf.py\", line 331, in recv_header\n    header = self.recv_strict(2)\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_abnf.py\", line 420, in recv_strict\n    bytes_ = self.recv(min(16384, shortage))\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_core.py\", line 645, in _recv\n    return recv(self.sock, bufsize)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/nations-clash/artifacts/android-emulator/cache/python/websocket/_socket.py\", line 143, in recv\n    raise WebSocketConnectionClosedException(\"Connection to remote host was lost.\")\nwebsocket._exceptions.WebSocketConnectionClosedException: Connection to remote host was lost.\n"
+    },
+    "finishedAt": "2026-10-16T10:01:20.846051+00:00",
+    "nativeCrash": {
+      "rendererPid": 2737,
+      "terminatorReportedCode": 5,
+      "nativeDumpSignal": "signal 0 (SIGTRAP), code 128 (SI_KERNEL), fault addr --------",
+      "nativeInstructionAddress": "libwebviewchromium.so pc0x191356a",
+      "nativeLibraryBuildId": "f91274aba2c3932b2c24b5323fd164aceb07dba8",
+      "rendererUptimeSeconds": 75,
+      "observedAt": "2026-10-16 10:02:15 UTC",
+      "details": "Native Chromium aw_browser_terminator.cc reported code5 after this native SIGTRAP-labelled dump. No game DOM/runtime assertion completed."
+    },
+    "gameplayChecksCompleted": 0,
+    "unrun": [
+      "Landing roster/flag/portrait assertions",
+      "Actual native touch punch/kick/signature damage",
+      "Audio scheduler/context/announcer checks",
+      "Native Back pause/menu",
+      "Rotation state preservation",
+      "Home/background lifecycle pause"
+    ],
+    "screenshot": {
+      "path": "api34-first-start.png",
+      "description": "System UI is not responding dialog over starting app; OS-level ANR, not a game screenshot."
+    },
+    "isolationStatus": "completed: plain fixture reproduced exact native trap address",
+    "logs": [
+      "api34-logcat.txt",
+      "validate-api34.log",
+      "boot-install-api34.log",
+      "api34-fixture-logcat.txt"
+    ],
+    "gameplayTouchesCompleted": 0,
+    "plannedRunner": "validate-game.py",
+    "isolation": {
+      "fixture": "artifacts/android-emulator/fixture/fixture.apk",
+      "package": "com.nationclash.fixture",
+      "fixtureSource": "artifacts/android-emulator/fixture/src/com/nationclash/fixture/MainActivity.java",
+      "html": "Hello WebView heading, one button, fixtureReady=true; no game code/assets",
+      "rendererPid": 3386,
+      "nativeDumpSignal": "signal 0 (SIGTRAP), code 128 (SI_KERNEL), fault addr --------",
+      "nativeInstructionAddress": "libwebviewchromium.so pc0x191356a",
+      "nativeLibraryBuildId": "f91274aba2c3932b2c24b5323fd164aceb07dba8",
+      "terminatorReportedCode": 5,
+      "rendererUptimeSeconds": 72,
+      "observedAt": "2026-10-16 10:05:10 UTC",
+      "conclusion": "The standalone fixture reproduced the same native renderer trap and instruction address as NationClash; this is a game-independent failure in this API34 software-emulated environment."
+    }
+  },
+  "finishedAt": "2026-10-16T10:06:15.823634+00:00",
+  "summary": {
+    "apkInstall": "passed on Android14/API34 and Android15/API35",
+    "androidGameplay": "unverified: zero gameplay gestures and assertions completed",
+    "rootCauseBoundary": "Both bundled WebView versions natively crashed in this no-KVM TCG environment before game DOM initialization. Independent plain-WebView fixtures reproduced each exact native instruction address. No APK change was made to bypass this environment failure.",
+    "physicalDevice": "not available; physical phone testing still required"
+  },
+  "cleanup": "Stopped agent-owned API34 emulator and devtools forwarding processes; retained SDK/AVD cache, fixture, logs, screenshots and report under ignored artifacts/android-emulator. No tracked appsource or APK changed."
+}
