@@ -115,3 +115,11 @@ drawn faces. Arena images depict 29 landmarks, including two Angkor Wat views.
 
 See [package metadata](COUNTRY-PACKAGE-MANIFEST.json), [country powers](COUNTRY-POWERS.md),
 [audio design](AUDIO-DESIGN.md) and [public download verification](PUBLIC-DOWNLOAD-VERIFICATION.json).
+
+## Verified public delivery
+
+https://raw.githubusercontent.com/hague143/nations-clash/ec30bbb73dfc4a7b671f9efad0d9581b593ea2e7/downloads/NationClash-Windows.zip
+
+The public ZIP returned HTTP 200 and was downloaded in full. Its byte count,
+SHA-256 and CRCs match the tested artifact. The contained HTML matches the exact
+browser acceptance document. All artwork is embedded in that HTML.

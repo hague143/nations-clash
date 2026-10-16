@@ -100,4 +100,3 @@ available poses. Existing costume issues remain in the creator checklist.
 ![Attack and defeat poses](previews/fighter-audit/poses-7-attacks-ko.jpg)
 
 ![Movement and defense poses](previews/fighter-audit/poses-7-movement.jpg)
-
