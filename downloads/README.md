@@ -1,6 +1,6 @@
 # Play the neon country-power edition
 
-[Download NationClash-Windows.zip](NationClash-Windows.zip)
+[Download NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/a408b8133194e2c5ad6027b88c6c63ed5500c76b/downloads/NationClash-Windows.zip)
 
 Right-click the ZIP → **Extract All**, then open `NationClash.html` in current
 Chrome or Edge. All 196 fighters, 196 powers, 30 arena views and audio are inside
