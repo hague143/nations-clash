@@ -1,0 +1,80 @@
+{
+  "startedAt": "2026-10-16T17:17:55.588Z",
+  "document": {
+    "path": "/workspace/nations-clash/browser/index.html",
+    "bytes": 35886774,
+    "sha256": "4b8eae6fe3315408589498052d67a6c26ffa1ada6332e3846b399f5b862ec04c"
+  },
+  "checks": [
+    {
+      "name": "real mouse hover and keyboard focus cycle punch, kick and country power without selecting a fighter or dispatching match events",
+      "status": "passed",
+      "countryId": "jp",
+      "actions": [
+        "light",
+        "heavy",
+        "signature"
+      ]
+    },
+    {
+      "name": "all 196 fighters preview their exact authored punch, kick and signature frames from the real combat specifications",
+      "status": "passed",
+      "countries": 196,
+      "fixtures": 588,
+      "reusedCanvas": true,
+      "maxPendingLoads": 0
+    },
+    {
+      "name": "rapid fighter changes retain the latest country, serialize decoding and remove the preview on stop",
+      "status": "passed",
+      "maxPendingLoads": 1
+    },
+    {
+      "name": "tiny, hidden, resized and offscreen hosts stop safely without negative canvas geometry",
+      "status": "passed"
+    },
+    {
+      "name": "hero manual preview works, stops when a match starts and cannot change live fight state or artwork",
+      "status": "passed",
+      "successiveMatchArt": [
+        [
+          "ae",
+          "ir"
+        ],
+        [
+          "fr",
+          "gb"
+        ]
+      ]
+    },
+    {
+      "name": "390px touch landing has a working explicit preview button and no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "844px touch landing has a working explicit preview button and no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "reduced motion freezes automatic hover and limits explicit playback to one cycle",
+      "status": "passed"
+    },
+    {
+      "name": "no runtime errors or external network requests",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "/workspace/nations-clash/artifacts/neon-landing/browser/neon-landing-hover.png",
+    "/workspace/nations-clash/artifacts/neon-landing/browser/neon-signature-hero.png",
+    "/workspace/nations-clash/artifacts/neon-landing/browser/neon-signature-card.png",
+    "/workspace/nations-clash/artifacts/neon-landing/browser/neon-landing-desktop.png",
+    "/workspace/nations-clash/artifacts/neon-landing/browser/neon-landing-mobile-390.png",
+    "/workspace/nations-clash/artifacts/neon-landing/browser/neon-landing-mobile-844.png",
+    "/workspace/nations-clash/artifacts/neon-landing/browser/neon-landing-reduced-motion.png"
+  ],
+  "status": "passed",
+  "finishedAt": "2026-10-16T17:19:03.518Z"
+}

@@ -1,0 +1,4210 @@
+{
+  "arenas": {
+    "angkor-causeway": {
+      "path": "arenas/angkor-causeway.webp",
+      "sourcePath": "browser/assets/arenas/angkor-causeway.webp",
+      "sourceSha256": "f403f1649915bbcd3a7f7c8f327dde1c847eeb41f8899edcf0cb19f4e640c7fc"
+    },
+    "angkor-temple": {
+      "path": "arenas/angkor-temple.webp",
+      "sourcePath": "browser/assets/arenas/angkor-temple.webp",
+      "sourceSha256": "810c8e42abffc05933780cdd24030243b1298b26f6cc380ab8ecb261e5ee5b7c"
+    },
+    "athens": {
+      "path": "arenas/athens.webp",
+      "sourcePath": "browser/assets/arenas/athens.webp",
+      "sourceSha256": "a5941a569b886617137c6e1e9a96d0e8977b641c1bacda363f6087a88a739aa3"
+    },
+    "bagan": {
+      "path": "arenas/bagan.webp",
+      "sourcePath": "browser/assets/arenas/bagan.webp",
+      "sourceSha256": "6d2e7a979c88dc4f7a171f205d9c39667259cc0c515bb23def07c1be9e73c210"
+    },
+    "barcelona": {
+      "path": "arenas/barcelona.webp",
+      "sourcePath": "browser/assets/arenas/barcelona.webp",
+      "sourceSha256": "317a3d6d05aafd80ae5af513955da01ad0cd2ac81445c9a13817a3528ae3324a"
+    },
+    "burj-al-arab": {
+      "path": "arenas/burj-al-arab.webp",
+      "sourcePath": "browser/assets/arenas/burj-al-arab.webp",
+      "sourceSha256": "2cf62ce71e9e5c7865bc86d79d0562bebdac3d791e264d146f684e3f45392a87"
+    },
+    "cappadocia": {
+      "path": "arenas/cappadocia.webp",
+      "sourcePath": "browser/assets/arenas/cappadocia.webp",
+      "sourceSha256": "ec80324f2a1fb8246b30d25d6f242b14ce741d38512003677e0603e64db22bfc"
+    },
+    "chichen-itza": {
+      "path": "arenas/chichen-itza.webp",
+      "sourcePath": "browser/assets/arenas/chichen-itza.webp",
+      "sourceSha256": "b3b081191c334f2df732f65b26f2a9b0a65d02e824cd8e3f39a25dcd3a3ffbfd"
+    },
+    "dubai": {
+      "path": "arenas/dubai.webp",
+      "sourcePath": "browser/assets/arenas/dubai.webp",
+      "sourceSha256": "b7571696cab831557c04138a76282de77098eae88ed5b81017bdd6d821983c4c"
+    },
+    "easter-island": {
+      "path": "arenas/easter-island.webp",
+      "sourcePath": "browser/assets/arenas/easter-island.webp",
+      "sourceSha256": "aad01a587731961777acd96a06f062e50a5b8855882f05b812303b577016d465"
+    },
+    "giza": {
+      "path": "arenas/giza.webp",
+      "sourcePath": "browser/assets/arenas/giza.webp",
+      "sourceSha256": "cfcea04f0a766503c4794ce1d434ad4c7b471ac794effcebe9ed09e8e77e816f"
+    },
+    "great-wall": {
+      "path": "arenas/great-wall.webp",
+      "sourcePath": "browser/assets/arenas/great-wall.webp",
+      "sourceSha256": "d11523855a8decf0e36b401bd5595e2ea3849b34cd85d70f30086bb644133759"
+    },
+    "hagia-sophia": {
+      "path": "arenas/hagia-sophia.webp",
+      "sourcePath": "browser/assets/arenas/hagia-sophia.webp",
+      "sourceSha256": "7be96550d7df8b128330b2bd6fb610b7cd5b63092b916bb20db74adb9ce65906"
+    },
+    "lahore": {
+      "path": "arenas/lahore.webp",
+      "sourcePath": "browser/assets/arenas/lahore.webp",
+      "sourceSha256": "f336c15e62014e98d8d1d7ed8ec0f7f50109621db8cced054e94eea9fa529771"
+    },
+    "liberty": {
+      "path": "arenas/liberty.webp",
+      "sourcePath": "browser/assets/arenas/liberty.webp",
+      "sourceSha256": "c253136af6d0e4e7baf4b14d289838780aeca182a48aae1916df801d7b4c71e8"
+    },
+    "london": {
+      "path": "arenas/london.webp",
+      "sourcePath": "browser/assets/arenas/london.webp",
+      "sourceSha256": "902c9cf6554738f9bd8c8700a5bfc757fd04eb011338cb686fa032f49273450c"
+    },
+    "machu-picchu": {
+      "path": "arenas/machu-picchu.webp",
+      "sourcePath": "browser/assets/arenas/machu-picchu.webp",
+      "sourceSha256": "fcf72178346f65d60c4d521474c09251f144f9fa455a9c3453a2ebf51f122555"
+    },
+    "mount-fuji": {
+      "path": "arenas/mount-fuji.webp",
+      "sourcePath": "browser/assets/arenas/mount-fuji.webp",
+      "sourceSha256": "f4f2aca7c5a93f477fde235f9a597f5dc8ec7f33950d50a9c426029a6621d6bd"
+    },
+    "niagara": {
+      "path": "arenas/niagara.webp",
+      "sourcePath": "browser/assets/arenas/niagara.webp",
+      "sourceSha256": "b136dbc4c90b08f59d2cf3c4dd305b8073dabd8d916a3440d932b335cc6e240f"
+    },
+    "paris": {
+      "path": "arenas/paris.webp",
+      "sourcePath": "browser/assets/arenas/paris.webp",
+      "sourceSha256": "3e62c6487a825a7147d2410254c6c4f33ca08740223e215e45d52cfaba027fa9"
+    },
+    "petra": {
+      "path": "arenas/petra.webp",
+      "sourcePath": "browser/assets/arenas/petra.webp",
+      "sourceSha256": "6670e190d1afdcb791fc90f16066cd7128c428f239eeedb45836185c43c9cf6e"
+    },
+    "rio": {
+      "path": "arenas/rio.webp",
+      "sourcePath": "browser/assets/arenas/rio.webp",
+      "sourceSha256": "168b32a65570fc2a65654021054a4bc43c17bbb299d95ab1e1f3847aacfafd87"
+    },
+    "rome": {
+      "path": "arenas/rome.webp",
+      "sourcePath": "browser/assets/arenas/rome.webp",
+      "sourceSha256": "621899ca88eea2bf736fe78ccd071ec0ffd58f4140fb4fbaa3e99cad8d2cd631"
+    },
+    "santorini": {
+      "path": "arenas/santorini.webp",
+      "sourcePath": "browser/assets/arenas/santorini.webp",
+      "sourceSha256": "dfc4948e5d5aacdc3592e64ece863455e1f1e95d673326883c789195e42ca768"
+    },
+    "stonehenge": {
+      "path": "arenas/stonehenge.webp",
+      "sourcePath": "browser/assets/arenas/stonehenge.webp",
+      "sourceSha256": "e8f14e937c387accf9d06b118de22d5bfd92bd6c0284ade9022b51148d85b214"
+    },
+    "sydney": {
+      "path": "arenas/sydney.webp",
+      "sourcePath": "browser/assets/arenas/sydney.webp",
+      "sourceSha256": "4c2f88bfefdcff0ca01e78afe03eb5a70900bcd557f76631573dcf6d51c60d46"
+    },
+    "taj-mahal": {
+      "path": "arenas/taj-mahal.webp",
+      "sourcePath": "browser/assets/arenas/taj-mahal.webp",
+      "sourceSha256": "a57d421e1452a5be638abea248cc14903c0dadd86506b3c24ebd2211881bd905"
+    },
+    "times-square": {
+      "path": "arenas/times-square.webp",
+      "sourcePath": "browser/assets/arenas/times-square.webp",
+      "sourceSha256": "33fd7d5a3360190d34f22666236f7edbc8a8d8fea0ee5ca5d058c1ef82326ebd"
+    },
+    "tokyo": {
+      "path": "arenas/tokyo.webp",
+      "sourcePath": "browser/assets/arenas/tokyo.webp",
+      "sourceSha256": "5acfce27e3df07d47d16bb79f636bf16f112f28114e9f6a65092b68c935c603a"
+    },
+    "venice": {
+      "path": "arenas/venice.webp",
+      "sourcePath": "browser/assets/arenas/venice.webp",
+      "sourceSha256": "a6b0a0785fab648efbbcc4b7ba49cfb9e8011aa98b895e1ba115e67cd5cc0200"
+    }
+  },
+  "assetOrigin": "https://appassets.androidplatform.net/assets/",
+  "branding": {
+    "height": 1024,
+    "name": "NationClash",
+    "path": "brand/logo.webp",
+    "sourcePath": "browser/assets/branding/nation-clash-logo.webp",
+    "sourceSha256": "d06638cd8b5bf9b0ab8818cc2c3f015d943a7f59ac769ab5c28a8d84c558a8c7",
+    "width": 1024
+  },
+  "countries": {
+    "ad": {
+      "height": 752,
+      "path": "countries/ad.webp",
+      "portraitPath": "portraits/ad.webp",
+      "portraitSourcePath": "browser/assets/countries/ad-portrait.webp",
+      "portraitSourceSha256": "929866926c7e896b331db0183b9036d71eadfc76a661aefcacf89ef6cc78c0d4",
+      "sourceCountryId": "ad",
+      "sourcePath": "browser/assets/countries/ad.webp",
+      "sourceSha256": "079a6380f5937e4f2f9910a997213cd93f2d37606b39f004364b28ee4b03c151",
+      "width": 1688
+    },
+    "ae": {
+      "height": 752,
+      "path": "countries/ae.webp",
+      "portraitPath": "portraits/ae.webp",
+      "portraitSourcePath": "browser/assets/countries/ae-portrait.webp",
+      "portraitSourceSha256": "168793d0fb79f01a419ed55e7e2fe2b521e252d4bbd7f7ed2a1f962634a81d83",
+      "sourceCountryId": "ae",
+      "sourcePath": "browser/assets/countries/ae.webp",
+      "sourceSha256": "f53544b2352791268de1ce17f74a33ca34505349601c07fc7054f0459a05f22d",
+      "width": 1592
+    },
+    "af": {
+      "height": 752,
+      "path": "countries/af.webp",
+      "portraitPath": "portraits/af.webp",
+      "portraitSourcePath": "browser/assets/countries/af-portrait.webp",
+      "portraitSourceSha256": "95ffb3359b5f169760c5fa41df65419d203fcb6d28ab7eb00f74bbef9ab93904",
+      "sourceCountryId": "af",
+      "sourcePath": "browser/assets/countries/af.webp",
+      "sourceSha256": "02bfe5050ae16cce799de931aa141e1ef179ca66215f286c904ce274885760b7",
+      "width": 1628
+    },
+    "ag": {
+      "height": 752,
+      "path": "countries/ag.webp",
+      "portraitPath": "portraits/ag.webp",
+      "portraitSourcePath": "browser/assets/countries/ag-portrait.webp",
+      "portraitSourceSha256": "c77cc435e740024b7be0d775c2cb61bb48bad1d5a4fbaa139457ac521002b969",
+      "sourceCountryId": "ag",
+      "sourcePath": "browser/assets/countries/ag.webp",
+      "sourceSha256": "3e3ce6d6aea21e61427e6cd8c40f2c8f51bcfc8fe3c83e8dd49dd0ec91ef144a",
+      "width": 1588
+    },
+    "al": {
+      "height": 752,
+      "path": "countries/al.webp",
+      "portraitPath": "portraits/al.webp",
+      "portraitSourcePath": "browser/assets/countries/al-portrait.webp",
+      "portraitSourceSha256": "e9e44cedd86fb758540feced6a3d48f46732b83dea9efe988f4a7b426dd57e8f",
+      "sourceCountryId": "al",
+      "sourcePath": "browser/assets/countries/al.webp",
+      "sourceSha256": "f0874dde1d27acf431a135b78a3cf9c90778995d9b1ef9787fa35b0e00d4aa8e",
+      "width": 1584
+    },
+    "am": {
+      "height": 756,
+      "path": "countries/am.webp",
+      "portraitPath": "portraits/am.webp",
+      "portraitSourcePath": "browser/assets/countries/am-portrait.webp",
+      "portraitSourceSha256": "10d056a6825cabb8af70d8d3f2ccb24e74ae83df2814b844bc724b942c32796e",
+      "sourceCountryId": "am",
+      "sourcePath": "browser/assets/countries/am.webp",
+      "sourceSha256": "41518291b97891a5a09c6feae72a713c958d45207584bce19d304a18f1005f63",
+      "width": 1632
+    },
+    "ao": {
+      "height": 754,
+      "path": "countries/ao.webp",
+      "portraitPath": "portraits/ao.webp",
+      "portraitSourcePath": "browser/assets/countries/ao-portrait.webp",
+      "portraitSourceSha256": "e089a9c3a25b7f14eed7d7626b319b59f603326ccde5b4e9de86611a76f0f46a",
+      "sourceCountryId": "ao",
+      "sourcePath": "browser/assets/countries/ao.webp",
+      "sourceSha256": "75eaa61ddb08b5848da199a0bd7120459c337c6fb225316f45824a352e92589b",
+      "width": 1652
+    },
+    "ar": {
+      "height": 756,
+      "path": "countries/ar.webp",
+      "portraitPath": "portraits/ar.webp",
+      "portraitSourcePath": "browser/assets/countries/ar-portrait.webp",
+      "portraitSourceSha256": "73cebf5ce3509fafa0efc8797a6a18530e9ccb89d1621a543ccd7f636c661038",
+      "sourceCountryId": "ar",
+      "sourcePath": "browser/assets/countries/ar.webp",
+      "sourceSha256": "e31f2618c6686d94b0e22396e7f6c019355bc06907f38cd2212094f4c9837c3f",
+      "width": 1656
+    },
+    "at": {
+      "height": 756,
+      "path": "countries/at.webp",
+      "portraitPath": "portraits/at.webp",
+      "portraitSourcePath": "browser/assets/countries/at-portrait.webp",
+      "portraitSourceSha256": "c6f4e36f9a1d2a5ca9bbf0a89f6cc018075cee439b4bdbd0a31dffe30feb0290",
+      "sourceCountryId": "at",
+      "sourcePath": "browser/assets/countries/at.webp",
+      "sourceSha256": "9c32061ebc2bb6bd62ea78242c7bc1e43cdbe3e7dce2c4beebbe9c307cff3cb7",
+      "width": 1632
+    },
+    "au": {
+      "height": 764,
+      "path": "countries/au.webp",
+      "portraitPath": "portraits/au.webp",
+      "portraitSourcePath": "browser/assets/countries/au-portrait.webp",
+      "portraitSourceSha256": "e2a3138861b06778a9a65fdf60d0821900526ee61a43937378004923ce4add0d",
+      "sourceCountryId": "au",
+      "sourcePath": "browser/assets/countries/au.webp",
+      "sourceSha256": "09366561af7b64e6314240f2856e6a51616efa75f6e7a3d449ef49cc59344bed",
+      "width": 1712
+    },
+    "az": {
+      "height": 752,
+      "path": "countries/az.webp",
+      "portraitPath": "portraits/az.webp",
+      "portraitSourcePath": "browser/assets/countries/az-portrait.webp",
+      "portraitSourceSha256": "16cf20e716c347415c3fca168c5095ae9171d497f1a4369e1541343209522410",
+      "sourceCountryId": "az",
+      "sourcePath": "browser/assets/countries/az.webp",
+      "sourceSha256": "851c3f9eea43d079fff7b6650e60574daecc6583a6df5c1d3b80a2cbbed00f66",
+      "width": 1636
+    },
+    "ba": {
+      "height": 756,
+      "path": "countries/ba.webp",
+      "portraitPath": "portraits/ba.webp",
+      "portraitSourcePath": "browser/assets/countries/ba-portrait.webp",
+      "portraitSourceSha256": "aa4e51d2ec5251b2a55a1fcf80a4a4060517bf836c24417e3e981d71ddfc848d",
+      "sourceCountryId": "ba",
+      "sourcePath": "browser/assets/countries/ba.webp",
+      "sourceSha256": "f4ec7c9ec5d1244308e79da4d2818c731469faebcf33e7250352bd7a8a82e1da",
+      "width": 1532
+    },
+    "bb": {
+      "height": 770,
+      "path": "countries/bb.webp",
+      "portraitPath": "portraits/bb.webp",
+      "portraitSourcePath": "browser/assets/countries/bb-portrait.webp",
+      "portraitSourceSha256": "eb719342025a13ef43d69dc006a2126da06bae3efd3c366e70c51f910a4f55b7",
+      "sourceCountryId": "bb",
+      "sourcePath": "browser/assets/countries/bb.webp",
+      "sourceSha256": "4be27b5f5d243ff50a777db7ce17f8744330004a690e0ab18ea71a56d48e1b9a",
+      "width": 1664
+    },
+    "bd": {
+      "height": 752,
+      "path": "countries/bd.webp",
+      "portraitPath": "portraits/bd.webp",
+      "portraitSourcePath": "browser/assets/countries/bd-portrait.webp",
+      "portraitSourceSha256": "37b72479ed0b4c7296d02fbbe2b58695717a38258ec61246ce683f8980809a77",
+      "sourceCountryId": "bd",
+      "sourcePath": "browser/assets/countries/bd.webp",
+      "sourceSha256": "223170d3e43a5eb17506806bbcc02902b3fc934f59949769d7984fd6c6ac8970",
+      "width": 1656
+    },
+    "be": {
+      "height": 774,
+      "path": "countries/be.webp",
+      "portraitPath": "portraits/be.webp",
+      "portraitSourcePath": "browser/assets/countries/be-portrait.webp",
+      "portraitSourceSha256": "fdcd5f31bae4e8d8f870b6b5adf392ea5a9d92c64aae56610619bfb080572911",
+      "sourceCountryId": "be",
+      "sourcePath": "browser/assets/countries/be.webp",
+      "sourceSha256": "bf29a4eb54befe33d05524e120c61386e8fa381cc7cbdcec6462338021e3147a",
+      "width": 1796
+    },
+    "bf": {
+      "height": 752,
+      "path": "countries/bf.webp",
+      "portraitPath": "portraits/bf.webp",
+      "portraitSourcePath": "browser/assets/countries/bf-portrait.webp",
+      "portraitSourceSha256": "e0e72a4d15e4a22f1686157b41b3201e8b3a1223892828c1bae876e4f22ee2f4",
+      "sourceCountryId": "bf",
+      "sourcePath": "browser/assets/countries/bf.webp",
+      "sourceSha256": "f4dbe8bb4097937b0e3de02c6d29739c50a2e51328a33bec8f63374a77b24987",
+      "width": 1652
+    },
+    "bg": {
+      "height": 766,
+      "path": "countries/bg.webp",
+      "portraitPath": "portraits/bg.webp",
+      "portraitSourcePath": "browser/assets/countries/bg-portrait.webp",
+      "portraitSourceSha256": "bd6b98d05fa13a2b92111804936521ccd25af406b1c924447e28ffc2a58519c0",
+      "sourceCountryId": "bg",
+      "sourcePath": "browser/assets/countries/bg.webp",
+      "sourceSha256": "ffc61caa284e5b093d3c50a413e213b98d7d2d6ea0a32721e13f804f368f1c3e",
+      "width": 1524
+    },
+    "bh": {
+      "height": 752,
+      "path": "countries/bh.webp",
+      "portraitPath": "portraits/bh.webp",
+      "portraitSourcePath": "browser/assets/countries/bh-portrait.webp",
+      "portraitSourceSha256": "772653af32b4caaac7f227af2c956de87bd4e74352417c095ae642247b0a32a3",
+      "sourceCountryId": "bh",
+      "sourcePath": "browser/assets/countries/bh.webp",
+      "sourceSha256": "5b6244b0a715b42d3c5fef9c0483240f57d729c155156d364e83604f9d51db53",
+      "width": 1652
+    },
+    "bi": {
+      "height": 752,
+      "path": "countries/bi.webp",
+      "portraitPath": "portraits/bi.webp",
+      "portraitSourcePath": "browser/assets/countries/bi-portrait.webp",
+      "portraitSourceSha256": "0bd7ef193bb48b7f17e38a44c228561bd9d13e31b63ed6fb87967889e23c9f04",
+      "sourceCountryId": "bi",
+      "sourcePath": "browser/assets/countries/bi.webp",
+      "sourceSha256": "e8bb422abf097bc7882d81bd9b042ba7885879821a9089c9f904d4396e629eea",
+      "width": 1520
+    },
+    "bj": {
+      "height": 770,
+      "path": "countries/bj.webp",
+      "portraitPath": "portraits/bj.webp",
+      "portraitSourcePath": "browser/assets/countries/bj-portrait.webp",
+      "portraitSourceSha256": "3c12fbfb2d14d333670f805fa7a5ead711d1b762770fbf366b50c2e142fc81a7",
+      "sourceCountryId": "bj",
+      "sourcePath": "browser/assets/countries/bj.webp",
+      "sourceSha256": "2360044d88e64e59c2c2e9fc58ccaa931e9c16bd84787fed3be0eed27dac75d1",
+      "width": 1832
+    },
+    "bn": {
+      "height": 754,
+      "path": "countries/bn.webp",
+      "portraitPath": "portraits/bn.webp",
+      "portraitSourcePath": "browser/assets/countries/bn-portrait.webp",
+      "portraitSourceSha256": "c665e721ec08fdd0ae6d7d12c25dc40e10d69c10c7ab85be5c54fa0d6c4a8d1f",
+      "sourceCountryId": "bn",
+      "sourcePath": "browser/assets/countries/bn.webp",
+      "sourceSha256": "8b5b3cfdc78e02674e804739a36c218a1b8c20b1f3a26092bc1ff43597228755",
+      "width": 1448
+    },
+    "bo": {
+      "height": 752,
+      "path": "countries/bo.webp",
+      "portraitPath": "portraits/bo.webp",
+      "portraitSourcePath": "browser/assets/countries/bo-portrait.webp",
+      "portraitSourceSha256": "ca8b024779a77c4fe54ec507fa2afda6a4a18ddc0c047c1ff98c3082b5d283f0",
+      "sourceCountryId": "bo",
+      "sourcePath": "browser/assets/countries/bo.webp",
+      "sourceSha256": "25bd04cb422a4de4918bcab5d67db3a1079c297b462fd587290555d6a48154db",
+      "width": 1428
+    },
+    "br": {
+      "height": 752,
+      "path": "countries/br.webp",
+      "portraitPath": "portraits/br.webp",
+      "portraitSourcePath": "browser/assets/countries/br-portrait.webp",
+      "portraitSourceSha256": "162ed88e80438e851bdd31cac57b948e392e8746e483436bb1615999f188d9d1",
+      "sourceCountryId": "br",
+      "sourcePath": "browser/assets/countries/br.webp",
+      "sourceSha256": "9d8ae0e67703bfd648c9eab7baf1f39930ed2d6984bda6832ffd505df98e7d84",
+      "width": 1544
+    },
+    "bs": {
+      "height": 752,
+      "path": "countries/bs.webp",
+      "portraitPath": "portraits/bs.webp",
+      "portraitSourcePath": "browser/assets/countries/bs-portrait.webp",
+      "portraitSourceSha256": "19e26b3bdfd631ba00f7f493c30d89f53aab7c0c10ba9e4ee7ec0b93adbf74cf",
+      "sourceCountryId": "bs",
+      "sourcePath": "browser/assets/countries/bs.webp",
+      "sourceSha256": "77bfef5b4707f1d9fd1792f07d1afe7525620acffdc1673a41b50b88308b2dbe",
+      "width": 1528
+    },
+    "bt": {
+      "height": 752,
+      "path": "countries/bt.webp",
+      "portraitPath": "portraits/bt.webp",
+      "portraitSourcePath": "browser/assets/countries/bt-portrait.webp",
+      "portraitSourceSha256": "2e0e0ccef2a7e18e08114dd0396269f2414ed212ab5bce208c180e6c2ea9cbaf",
+      "sourceCountryId": "bt",
+      "sourcePath": "browser/assets/countries/bt.webp",
+      "sourceSha256": "a38ccc4b46f2bec958a090412917f6a0bf69abb68fd01d940b87c4b9d1248a40",
+      "width": 1692
+    },
+    "bw": {
+      "height": 752,
+      "path": "countries/bw.webp",
+      "portraitPath": "portraits/bw.webp",
+      "portraitSourcePath": "browser/assets/countries/bw-portrait.webp",
+      "portraitSourceSha256": "e9deadac291f9877020c2830bf8260b1bac8782b8b3eb28aaa57c7db060242f4",
+      "sourceCountryId": "bw",
+      "sourcePath": "browser/assets/countries/bw.webp",
+      "sourceSha256": "a1383d897e6a6128cccdab162804a59c01061cbe025bac81c77a12a7892e5a1f",
+      "width": 1464
+    },
+    "by": {
+      "height": 756,
+      "path": "countries/by.webp",
+      "portraitPath": "portraits/by.webp",
+      "portraitSourcePath": "browser/assets/countries/by-portrait.webp",
+      "portraitSourceSha256": "02bbd9f6db2196ac28f040e66b8567cc96731caf8cb1d8875ca5abdb0d4cbd32",
+      "sourceCountryId": "by",
+      "sourcePath": "browser/assets/countries/by.webp",
+      "sourceSha256": "31db88299d6224d4925abffe6dd8fe2766da4a2c525327ba1baaf5e092b64aa4",
+      "width": 1632
+    },
+    "bz": {
+      "height": 752,
+      "path": "countries/bz.webp",
+      "portraitPath": "portraits/bz.webp",
+      "portraitSourcePath": "browser/assets/countries/bz-portrait.webp",
+      "portraitSourceSha256": "62abe5be8322f2dac8afb7b600c30568192c0d42859e62bce1a75b768f2532da",
+      "sourceCountryId": "bz",
+      "sourcePath": "browser/assets/countries/bz.webp",
+      "sourceSha256": "8ca703cd3a050b4a82a65d0a19e9dcd61e841071a4de9aa0ff190f5f4c94094e",
+      "width": 1600
+    },
+    "ca": {
+      "height": 762,
+      "path": "countries/ca.webp",
+      "portraitPath": "portraits/ca.webp",
+      "portraitSourcePath": "browser/assets/countries/ca-portrait.webp",
+      "portraitSourceSha256": "f0d5660d446fc59292ee020728276fa852e2a5058d94334faa42dfb848afa21f",
+      "sourceCountryId": "ca",
+      "sourcePath": "browser/assets/countries/ca.webp",
+      "sourceSha256": "c46c43e8c66434dc3e9d345b00b7cb68789b7bda52503ed3abdc45b88e431d1b",
+      "width": 1512
+    },
+    "cd": {
+      "height": 752,
+      "path": "countries/cd.webp",
+      "portraitPath": "portraits/cd.webp",
+      "portraitSourcePath": "browser/assets/countries/cd-portrait.webp",
+      "portraitSourceSha256": "1bda38e765919c074921f804542b8427504f732c3dd62a9ffb40169293146a7a",
+      "sourceCountryId": "cd",
+      "sourcePath": "browser/assets/countries/cd.webp",
+      "sourceSha256": "b5a33ab90c5678c1f65fe9d776a45aa565d68748aec8f22d606c9196f10a1f69",
+      "width": 1696
+    },
+    "cf": {
+      "height": 754,
+      "path": "countries/cf.webp",
+      "portraitPath": "portraits/cf.webp",
+      "portraitSourcePath": "browser/assets/countries/cf-portrait.webp",
+      "portraitSourceSha256": "e0512e184584b47d01a4f1fa938f4d778fb5b20cc47cc827d9bcec861b8bef1a",
+      "sourceCountryId": "cf",
+      "sourcePath": "browser/assets/countries/cf.webp",
+      "sourceSha256": "0a227afcd032ef0b1441e474a876a1fe09c52577de1b6d1859bc7df03eeb6275",
+      "width": 1468
+    },
+    "cg": {
+      "height": 758,
+      "path": "countries/cg.webp",
+      "portraitPath": "portraits/cg.webp",
+      "portraitSourcePath": "browser/assets/countries/cg-portrait.webp",
+      "portraitSourceSha256": "40bbb9eac1d6ae20481bccf1465d53841d33f27487d795c596e4c5166021ef16",
+      "sourceCountryId": "cg",
+      "sourcePath": "browser/assets/countries/cg.webp",
+      "sourceSha256": "f63d74ca235e562c00f3ef945bf3b200eb7c409bda96762ff55a8c146be85e98",
+      "width": 1312
+    },
+    "ch": {
+      "height": 770,
+      "path": "countries/ch.webp",
+      "portraitPath": "portraits/ch.webp",
+      "portraitSourcePath": "browser/assets/countries/sr-portrait.webp",
+      "portraitSourceSha256": "b8e605b9826c2b2a4c6aa9a7577d7dde5daa20f7b251a11a7c5dcbd7579f902e",
+      "sourceCountryId": "sr",
+      "sourcePath": "browser/assets/countries/sr.webp",
+      "sourceSha256": "f1b2ad129a07ff768cec26f8be8af38f985d9a7d52ffa6716d7630f611a638c0",
+      "width": 1368
+    },
+    "ci": {
+      "height": 752,
+      "path": "countries/ci.webp",
+      "portraitPath": "portraits/ci.webp",
+      "portraitSourcePath": "browser/assets/countries/ci-portrait.webp",
+      "portraitSourceSha256": "96f87c232d4a0d35f9b035abeff4b4567e6da508baaa1ed5c7ba745c86fea0b7",
+      "sourceCountryId": "ci",
+      "sourcePath": "browser/assets/countries/ci.webp",
+      "sourceSha256": "9ca4fcf6ba751805c427e12844108922eb45f05d7ed32b0ab482e9cefbf96b61",
+      "width": 1532
+    },
+    "cl": {
+      "height": 752,
+      "path": "countries/cl.webp",
+      "portraitPath": "portraits/cl.webp",
+      "portraitSourcePath": "browser/assets/countries/cl-portrait.webp",
+      "portraitSourceSha256": "172970d733c08d56ccb4ef4c21865e6a4775cd9036f60e4233ee6eef928b0e11",
+      "sourceCountryId": "cl",
+      "sourcePath": "browser/assets/countries/cl.webp",
+      "sourceSha256": "ee9bd8fcb4c0bacfa55644c40faa35b3c847ce6bb08293584d17ad01b88779ea",
+      "width": 1504
+    },
+    "cm": {
+      "height": 752,
+      "path": "countries/cm.webp",
+      "portraitPath": "portraits/cm.webp",
+      "portraitSourcePath": "browser/assets/countries/cm-portrait.webp",
+      "portraitSourceSha256": "e934be4e0bb5a41c1530076d546ed724c45f82fcf6f2b6574fabf9d1f8efc514",
+      "sourceCountryId": "cm",
+      "sourcePath": "browser/assets/countries/cm.webp",
+      "sourceSha256": "532b3cdcd2106269e66d9e73ff786ddad08ae05393e86fd7b081d4e61d2afde1",
+      "width": 1576
+    },
+    "cn": {
+      "height": 752,
+      "path": "countries/cn.webp",
+      "portraitPath": "portraits/cn.webp",
+      "portraitSourcePath": "browser/assets/countries/cn-portrait.webp",
+      "portraitSourceSha256": "b474c2cdcb35a0e743386b4fc64f1caf9f934bf6bf3130785ac14e79901487e1",
+      "sourceCountryId": "cn",
+      "sourcePath": "browser/assets/countries/cn.webp",
+      "sourceSha256": "06821e5bcb668f38b02937f797909d0286f250af10292f78972b80ad0ad3d6df",
+      "width": 1692
+    },
+    "co": {
+      "height": 752,
+      "path": "countries/co.webp",
+      "portraitPath": "portraits/co.webp",
+      "portraitSourcePath": "browser/assets/countries/co-portrait.webp",
+      "portraitSourceSha256": "69317cf5f328a06838f405a10d8c4d5044f6cf0e624dc94d2f6c3604f59f1f0b",
+      "sourceCountryId": "co",
+      "sourcePath": "browser/assets/countries/co.webp",
+      "sourceSha256": "9db4c9e5a44069ca3b3fde9ef825c4bb32cc7422afb83e421ab1570cc90ec1be",
+      "width": 1492
+    },
+    "cr": {
+      "height": 754,
+      "path": "countries/cr.webp",
+      "portraitPath": "portraits/cr.webp",
+      "portraitSourcePath": "browser/assets/countries/cr-portrait.webp",
+      "portraitSourceSha256": "4f3a0887cd0d9c5c3e032fe6b98bd82e33a2ce63e956fa99e7fe93c5a6a7f54c",
+      "sourceCountryId": "cr",
+      "sourcePath": "browser/assets/countries/cr.webp",
+      "sourceSha256": "88e259ed6fc82fd359da8b6bc2d678f3200471ad408ace9a29d8f7b2b6c2a932",
+      "width": 1628
+    },
+    "cu": {
+      "height": 752,
+      "path": "countries/cu.webp",
+      "portraitPath": "portraits/cu.webp",
+      "portraitSourcePath": "browser/assets/countries/cu-portrait.webp",
+      "portraitSourceSha256": "ba37b72d74ef43ee2b4af8f65e180212affb0e55258ffccac2a6918402dc5270",
+      "sourceCountryId": "cu",
+      "sourcePath": "browser/assets/countries/cu.webp",
+      "sourceSha256": "0331d9e08d4ba8d4c87ba1be18debc64a5bcbd081fadcab2ea5e8d6d116ae837",
+      "width": 1456
+    },
+    "cv": {
+      "height": 752,
+      "path": "countries/cv.webp",
+      "portraitPath": "portraits/cv.webp",
+      "portraitSourcePath": "browser/assets/countries/cv-portrait.webp",
+      "portraitSourceSha256": "8b8db41f4d5832a0e747107a891a5a9a2ff69ba8c695f001b8079db2932fcad7",
+      "sourceCountryId": "cv",
+      "sourcePath": "browser/assets/countries/cv.webp",
+      "sourceSha256": "cd9126b62417b6e991f39e10a0ad7f8345559edbe2f8b50e105cdd864e2db396",
+      "width": 1588
+    },
+    "cy": {
+      "height": 754,
+      "path": "countries/cy.webp",
+      "portraitPath": "portraits/cy.webp",
+      "portraitSourcePath": "browser/assets/countries/cy-portrait.webp",
+      "portraitSourceSha256": "f20d0e32da07747416cb0a8cfe2f3db91272ffb0cea44e5a374007dcaa6e20cb",
+      "sourceCountryId": "cy",
+      "sourcePath": "browser/assets/countries/cy.webp",
+      "sourceSha256": "68f3774327973ffdba7ef8fcc5c9c91a428fcc7e143f2f4b69f09b97615d8041",
+      "width": 1628
+    },
+    "cz": {
+      "height": 756,
+      "path": "countries/cz.webp",
+      "portraitPath": "portraits/cz.webp",
+      "portraitSourcePath": "browser/assets/countries/cz-portrait.webp",
+      "portraitSourceSha256": "340af7c2b191a97827d689a777f9ec66bede73efa74cf95d92021134845bf5cb",
+      "sourceCountryId": "cz",
+      "sourcePath": "browser/assets/countries/cz.webp",
+      "sourceSha256": "63bb34d2ae064e2581b761ac2c9b74c4f623d89e6b4c5ed45b92a2102d14c88b",
+      "width": 1556
+    },
+    "de": {
+      "height": 754,
+      "path": "countries/de.webp",
+      "portraitPath": "portraits/de.webp",
+      "portraitSourcePath": "browser/assets/countries/de-portrait.webp",
+      "portraitSourceSha256": "6091cc6ffed6012944e2d1b500900cfed5bf699098dd369bd2cbcab64333fb7f",
+      "sourceCountryId": "de",
+      "sourcePath": "browser/assets/countries/de.webp",
+      "sourceSha256": "62469ee16ffe754f5031cf4320c0cad215a3e5e4564df9fef225d30c3bf61d1b",
+      "width": 1712
+    },
+    "dj": {
+      "height": 756,
+      "path": "countries/dj.webp",
+      "portraitPath": "portraits/dj.webp",
+      "portraitSourcePath": "browser/assets/countries/dj-portrait.webp",
+      "portraitSourceSha256": "7968b9ea62c30f6fd0a0365adfc694950c7cea82dbf2440ced193fc76dc2224b",
+      "sourceCountryId": "dj",
+      "sourcePath": "browser/assets/countries/dj.webp",
+      "sourceSha256": "d60d4666bfa37ed3c971fd6d24da998f1bc86952739647cb0f7127842121c7fd",
+      "width": 1632
+    },
+    "dk": {
+      "height": 772,
+      "path": "countries/dk.webp",
+      "portraitPath": "portraits/dk.webp",
+      "portraitSourcePath": "browser/assets/countries/dk-portrait.webp",
+      "portraitSourceSha256": "6c07b76f0398d1e11dae4521032c6028ff3c7d1c19bfe091e2eac7034f46f1e2",
+      "sourceCountryId": "dk",
+      "sourcePath": "browser/assets/countries/dk.webp",
+      "sourceSha256": "a361671b3256076b2e8acb6924413ce67eef4ea691a4607259f44ddbb4a437ac",
+      "width": 1716
+    },
+    "dm": {
+      "height": 752,
+      "path": "countries/dm.webp",
+      "portraitPath": "portraits/dm.webp",
+      "portraitSourcePath": "browser/assets/countries/dm-portrait.webp",
+      "portraitSourceSha256": "f26ad0bf710dc3f640a583467ea31c24ca05f2bc5abc6e04aed095b10970578c",
+      "sourceCountryId": "dm",
+      "sourcePath": "browser/assets/countries/dm.webp",
+      "sourceSha256": "9eb29ee438d4d9f58a8165300261a58dceb8f02080ca1fbef03958a5a9017bfe",
+      "width": 1632
+    },
+    "do": {
+      "height": 752,
+      "path": "countries/do.webp",
+      "portraitPath": "portraits/do.webp",
+      "portraitSourcePath": "browser/assets/countries/do-portrait.webp",
+      "portraitSourceSha256": "735ac74770d5cc107c96bedfc441d2322a98d3b8946588c2f2efd61520e99284",
+      "sourceCountryId": "do",
+      "sourcePath": "browser/assets/countries/do.webp",
+      "sourceSha256": "b998ff677ac155c1fe26722856aec290ae77e0a5961f07aa371c99006462cb67",
+      "width": 1656
+    },
+    "dz": {
+      "height": 754,
+      "path": "countries/dz.webp",
+      "portraitPath": "portraits/dz.webp",
+      "portraitSourcePath": "browser/assets/countries/dz-portrait.webp",
+      "portraitSourceSha256": "7e92e7638f7a8f3a74716326df672798fca523e7b9a4db1db62a1baed8323f06",
+      "sourceCountryId": "dz",
+      "sourcePath": "browser/assets/countries/dz.webp",
+      "sourceSha256": "295ebce733175c5fa1f1b0d6c369d7d6ad3272bedb9dbb2153a22cb4dbecd27e",
+      "width": 1616
+    },
+    "ec": {
+      "height": 758,
+      "path": "countries/ec.webp",
+      "portraitPath": "portraits/ec.webp",
+      "portraitSourcePath": "browser/assets/countries/ec-portrait.webp",
+      "portraitSourceSha256": "552d7bb06d1470f29e491453eeea30e1c16199dac66da3c5aca538750a29e8c4",
+      "sourceCountryId": "ec",
+      "sourcePath": "browser/assets/countries/ec.webp",
+      "sourceSha256": "d28034a5bf6d2f7be68a2998044b6cf97644311a83e2c786da314a34637d037a",
+      "width": 1652
+    },
+    "ee": {
+      "height": 752,
+      "path": "countries/ee.webp",
+      "portraitPath": "portraits/ee.webp",
+      "portraitSourcePath": "browser/assets/countries/ge-portrait.webp",
+      "portraitSourceSha256": "5c2a510fcc224ef44eb72076324fccc26799a97f0ac97c9b59286144e38c2ba5",
+      "sourceCountryId": "ge",
+      "sourcePath": "browser/assets/countries/ge.webp",
+      "sourceSha256": "ad6b5308bf021e800e36327081609beb9abb535f73e79fa36fc0a74bfc277f34",
+      "width": 1640
+    },
+    "eg": {
+      "height": 752,
+      "path": "countries/eg.webp",
+      "portraitPath": "portraits/eg.webp",
+      "portraitSourcePath": "browser/assets/countries/eg-portrait.webp",
+      "portraitSourceSha256": "1643475a4dbc33224ffae6902a0015f8352a27fc43cffb12fa77f54a5ff1caec",
+      "sourceCountryId": "eg",
+      "sourcePath": "browser/assets/countries/eg.webp",
+      "sourceSha256": "debf6af24cb970a178b320f74d9e83b55b55e868dd15e35b2f9e7dc42c6262d2",
+      "width": 1748
+    },
+    "er": {
+      "height": 762,
+      "path": "countries/er.webp",
+      "portraitPath": "portraits/er.webp",
+      "portraitSourcePath": "browser/assets/countries/ee-portrait.webp",
+      "portraitSourceSha256": "879af1636e34171c48d056e760635080a360a1b2005fb8c6a855b4e5b1d31124",
+      "sourceCountryId": "ee",
+      "sourcePath": "browser/assets/countries/ee.webp",
+      "sourceSha256": "7d5b1d46feca5774a8df86d9ea48233b81bc4eb7f51c290c87a37e452f5b1e46",
+      "width": 1716
+    },
+    "es": {
+      "height": 752,
+      "path": "countries/es.webp",
+      "portraitPath": "portraits/es.webp",
+      "portraitSourcePath": "browser/assets/countries/za-portrait.webp",
+      "portraitSourceSha256": "093c4484bcbf9ef3c119cdf41afa36d608895ce9fec2417ea2f6ba1cc570164f",
+      "sourceCountryId": "za",
+      "sourcePath": "browser/assets/countries/za.webp",
+      "sourceSha256": "7ba897f627ab57470377393f2d24e47dbb624e9d401e3184cff6d0a5669e3d4e",
+      "width": 1280
+    },
+    "et": {
+      "height": 768,
+      "path": "countries/et.webp",
+      "portraitPath": "portraits/et.webp",
+      "portraitSourcePath": "browser/assets/countries/et-portrait.webp",
+      "portraitSourceSha256": "52e0cf798e1a7db2041c6582fff1d4070f820f4dad39c929c8487538affc8121",
+      "sourceCountryId": "et",
+      "sourcePath": "browser/assets/countries/et.webp",
+      "sourceSha256": "7d6b908eb5f43796b690a71f81fee7fa6f389600e24e77841d376e489d3d721e",
+      "width": 1660
+    },
+    "fi": {
+      "height": 752,
+      "path": "countries/fi.webp",
+      "portraitPath": "portraits/fi.webp",
+      "portraitSourcePath": "browser/assets/countries/fi-portrait.webp",
+      "portraitSourceSha256": "afe693c6361ccc488aa36d3f2760765401ed7a60e42b7bfeb5d0327234ad2dfa",
+      "sourceCountryId": "fi",
+      "sourcePath": "browser/assets/countries/fi.webp",
+      "sourceSha256": "b909bdc667fa69a7be9f4280237132eb380b972fa3b020107039f4b7e611dec1",
+      "width": 1464
+    },
+    "fj": {
+      "height": 752,
+      "path": "countries/fj.webp",
+      "portraitPath": "portraits/fj.webp",
+      "portraitSourcePath": "browser/assets/countries/ga-portrait.webp",
+      "portraitSourceSha256": "2bcf9cc8ba083ae1a99f3161ebca6f0ec8e0d9f0d87621a52e20818065f217ab",
+      "sourceCountryId": "ga",
+      "sourcePath": "browser/assets/countries/ga.webp",
+      "sourceSha256": "bab294e99404b06b770c7a8ba3fc579d1584b30a6e8457aaa29a55aa01fca8dd",
+      "width": 1640
+    },
+    "fm": {
+      "height": 752,
+      "path": "countries/fm.webp",
+      "portraitPath": "portraits/fm.webp",
+      "portraitSourcePath": "browser/assets/countries/fm-portrait.webp",
+      "portraitSourceSha256": "8a16a57ad914466bcf96ff0d4b9673c4f49792e98b8d3a55d36c934b915a602d",
+      "sourceCountryId": "fm",
+      "sourcePath": "browser/assets/countries/fm.webp",
+      "sourceSha256": "6e811862d1782cb65e72fb7efed761faf0329bd3514b3cf9cbc99caf2293ee08",
+      "width": 1616
+    },
+    "fr": {
+      "height": 756,
+      "path": "countries/fr.webp",
+      "portraitPath": "portraits/fr.webp",
+      "portraitSourcePath": "browser/assets/countries/fr-portrait.webp",
+      "portraitSourceSha256": "79b074aa7e110251d61941c32072c1055b572cbd381eed5c2a354101604c3afc",
+      "sourceCountryId": "fr",
+      "sourcePath": "browser/assets/countries/fr.webp",
+      "sourceSha256": "97b1fc94199e7de0352ca488490dc933cfe1248df385ef81da95c1205c09f7f6",
+      "width": 1620
+    },
+    "ga": {
+      "height": 752,
+      "path": "countries/ga.webp",
+      "portraitPath": "portraits/ga.webp",
+      "portraitSourcePath": "browser/assets/countries/fj-portrait.webp",
+      "portraitSourceSha256": "9f08e93298f72c807c0ac2e911c632e8fbb0552305bb43f88bd9586faf0b2227",
+      "sourceCountryId": "fj",
+      "sourcePath": "browser/assets/countries/fj.webp",
+      "sourceSha256": "b65377ea935bf0bebda968368ff5beaeb604d3cada0b3da36d51dc3dfc2a6bac",
+      "width": 1700
+    },
+    "gb": {
+      "height": 756,
+      "path": "countries/gb.webp",
+      "portraitPath": "portraits/gb.webp",
+      "portraitSourcePath": "browser/assets/countries/gb-portrait.webp",
+      "portraitSourceSha256": "48c6d9b0c205198db19a5cfb20532b170363a7fcee8914de2d4b0373b41f7a8f",
+      "sourceCountryId": "gb",
+      "sourcePath": "browser/assets/countries/gb.webp",
+      "sourceSha256": "a4ea1d422084f031bbd3f6c379f92ecf19608fa1b43a412f39fb0c51422d927a",
+      "width": 1696
+    },
+    "gd": {
+      "height": 752,
+      "path": "countries/gd.webp",
+      "portraitPath": "portraits/gd.webp",
+      "portraitSourcePath": "browser/assets/countries/gd-portrait.webp",
+      "portraitSourceSha256": "829bfab0a7b4dffc29eb9de1b1e2bd5e5d82bbc929bc22777dbcfe7703fd8e52",
+      "sourceCountryId": "gd",
+      "sourcePath": "browser/assets/countries/gd.webp",
+      "sourceSha256": "3bc86f83a06f8c0bc0f312d752174e66cb08dd901c458ec07a91c2cdcda79783",
+      "width": 1520
+    },
+    "ge": {
+      "height": 754,
+      "path": "countries/ge.webp",
+      "portraitPath": "portraits/ge.webp",
+      "portraitSourcePath": "browser/assets/countries/gm-portrait.webp",
+      "portraitSourceSha256": "413d054ada8ae78dc222b8f195c328ff41054e014894b4d23e3f98bbbe7cf17d",
+      "sourceCountryId": "gm",
+      "sourcePath": "browser/assets/countries/gm.webp",
+      "sourceSha256": "deadea3e69a376567e3a01e5bce97219176c41c68b5ec3e181e47235020fe607",
+      "width": 1728
+    },
+    "gh": {
+      "height": 752,
+      "path": "countries/gh.webp",
+      "portraitPath": "portraits/gh.webp",
+      "portraitSourcePath": "browser/assets/countries/gh-portrait.webp",
+      "portraitSourceSha256": "58537c5acc3880e61165e2cc49fb51633c4f72c2c9b56ac4ab232bb91d61af77",
+      "sourceCountryId": "gh",
+      "sourcePath": "browser/assets/countries/gh.webp",
+      "sourceSha256": "dee322ccf7300573db13932d16249a0ca212b18c2b948a0a7d5f08d9c65f26e9",
+      "width": 1652
+    },
+    "gm": {
+      "height": 752,
+      "path": "countries/gm.webp",
+      "portraitPath": "portraits/gm.webp",
+      "portraitSourcePath": "browser/assets/countries/er-portrait.webp",
+      "portraitSourceSha256": "ac7babbfd732d079e27dac0691da53583bc1f0d5db87732b7e8db1e3862bc871",
+      "sourceCountryId": "er",
+      "sourcePath": "browser/assets/countries/er.webp",
+      "sourceSha256": "bd43e20ae7fad021f179497be2d563c75a8eac8ec0a266f689883c1e5244a612",
+      "width": 1640
+    },
+    "gn": {
+      "height": 752,
+      "path": "countries/gn.webp",
+      "portraitPath": "portraits/gn.webp",
+      "portraitSourcePath": "browser/assets/countries/gn-portrait.webp",
+      "portraitSourceSha256": "eff5098c0ee1642d74cd00464efb34612f06ab2b1bb65c757d88e754b6af3f96",
+      "sourceCountryId": "gn",
+      "sourcePath": "browser/assets/countries/gn.webp",
+      "sourceSha256": "7ecdc9228cdc66e7086b23d9ae6b50ea55b932e7d9456ddf1938d8bfd730ad22",
+      "width": 1580
+    },
+    "gq": {
+      "height": 752,
+      "path": "countries/gq.webp",
+      "portraitPath": "portraits/gq.webp",
+      "portraitSourcePath": "browser/assets/countries/gq-portrait.webp",
+      "portraitSourceSha256": "300e28895a6e66bb2c662024d3e9b69e11ef7c4cc35a0cb5cd4d80c3b8b0bd1f",
+      "sourceCountryId": "gq",
+      "sourcePath": "browser/assets/countries/gq.webp",
+      "sourceSha256": "a3b2fabbb7e920b436daa85effcb1715d61be6bd4ced7f3715f597cf3425e236",
+      "width": 1636
+    },
+    "gr": {
+      "height": 752,
+      "path": "countries/gr.webp",
+      "portraitPath": "portraits/gr.webp",
+      "portraitSourcePath": "browser/assets/countries/gr-portrait.webp",
+      "portraitSourceSha256": "7965d0024e97fa0c2b116c262668db3218d5d85526539049d78569c4dc07083b",
+      "sourceCountryId": "gr",
+      "sourcePath": "browser/assets/countries/gr.webp",
+      "sourceSha256": "e522da5613c40d1ae9b351b545730c0c07fdcfb397b8f436f8c5620750168538",
+      "width": 1476
+    },
+    "gt": {
+      "height": 752,
+      "path": "countries/gt.webp",
+      "portraitPath": "portraits/gt.webp",
+      "portraitSourcePath": "browser/assets/countries/gt-portrait.webp",
+      "portraitSourceSha256": "e7137b7c6503b16ef43054676172f5097c38b598829a212d3becaebd95179b85",
+      "sourceCountryId": "gt",
+      "sourcePath": "browser/assets/countries/gt.webp",
+      "sourceSha256": "d7983f390de262a857330c0327330e394c575b5144ce3c8fb34d8a9f44786cfe",
+      "width": 1580
+    },
+    "gw": {
+      "height": 764,
+      "path": "countries/gw.webp",
+      "portraitPath": "portraits/gw.webp",
+      "portraitSourcePath": "browser/assets/countries/gw-portrait.webp",
+      "portraitSourceSha256": "6917427492fe10a668963bef7dd33b63b9a4620bc4f93f42812a33afcd391d58",
+      "sourceCountryId": "gw",
+      "sourcePath": "browser/assets/countries/gw.webp",
+      "sourceSha256": "d4dfb11282d2f40a0b0149d20cc62e5e6139077ea758b6dee06e903d01d82b2a",
+      "width": 1640
+    },
+    "gy": {
+      "height": 752,
+      "path": "countries/gy.webp",
+      "portraitPath": "portraits/gy.webp",
+      "portraitSourcePath": "browser/assets/countries/gy-portrait.webp",
+      "portraitSourceSha256": "69ffebd0b516a498ff480f4a56275562b13d2d1f739df002e91eaffaac0b0f12",
+      "sourceCountryId": "gy",
+      "sourcePath": "browser/assets/countries/gy.webp",
+      "sourceSha256": "a2a279ad1ace83788ba59c9183b7b05f32b13299cabc9c2ff5fe1b0c216ce590",
+      "width": 1616
+    },
+    "hn": {
+      "height": 752,
+      "path": "countries/hn.webp",
+      "portraitPath": "portraits/hn.webp",
+      "portraitSourcePath": "browser/assets/countries/hn-portrait.webp",
+      "portraitSourceSha256": "b388a73c99106ebc079c8568d15666b2592c23b1dffe7c5c95a7e4ba81d46f23",
+      "sourceCountryId": "hn",
+      "sourcePath": "browser/assets/countries/hn.webp",
+      "sourceSha256": "42cf6d7962a7f84bb87105831307749d4948b8f08a5e32b5b5c2c07607418993",
+      "width": 1500
+    },
+    "hr": {
+      "height": 752,
+      "path": "countries/hr.webp",
+      "portraitPath": "portraits/hr.webp",
+      "portraitSourcePath": "browser/assets/countries/hr-portrait.webp",
+      "portraitSourceSha256": "8ccd5833c7b21ab926d958fbfcb09f7a6b46736bd4314d1d2bc8f4e792fa4bba",
+      "sourceCountryId": "hr",
+      "sourcePath": "browser/assets/countries/hr.webp",
+      "sourceSha256": "c32ce0ade866bbf6229c9a624dca169010693fcbcd950cbac14df2c58a518a51",
+      "width": 1552
+    },
+    "ht": {
+      "height": 752,
+      "path": "countries/ht.webp",
+      "portraitPath": "portraits/ht.webp",
+      "portraitSourcePath": "browser/assets/countries/ht-portrait.webp",
+      "portraitSourceSha256": "9e66574b25429c939cc2d5f17488a1be89263b8c90e0060fe8f39ca94f48cbe6",
+      "sourceCountryId": "ht",
+      "sourcePath": "browser/assets/countries/ht.webp",
+      "sourceSha256": "40f3eadfc9c65c82789f4edcb6b6df83a0ef400af030f077479f8fe43bae2a19",
+      "width": 1552
+    },
+    "hu": {
+      "height": 754,
+      "path": "countries/hu.webp",
+      "portraitPath": "portraits/hu.webp",
+      "portraitSourcePath": "browser/assets/countries/hu-portrait.webp",
+      "portraitSourceSha256": "a7e6e0b69edd77533a96b40f6992bda7053bece5879c5f62993cb0727e715229",
+      "sourceCountryId": "hu",
+      "sourcePath": "browser/assets/countries/hu.webp",
+      "sourceSha256": "73c3bd8bb4d3895a39c22e1da587b996456604af499203d2eb38f74879821f67",
+      "width": 1472
+    },
+    "id": {
+      "height": 752,
+      "path": "countries/id.webp",
+      "portraitPath": "portraits/id.webp",
+      "portraitSourcePath": "browser/assets/countries/id-portrait.webp",
+      "portraitSourceSha256": "ee824de6812aacb1c04f52d15885544282a13bd2f0ae4cb91127ed0e97af5e20",
+      "sourceCountryId": "id",
+      "sourcePath": "browser/assets/countries/id.webp",
+      "sourceSha256": "cdbc0c131dc4f1b76e0d5d6c19ce61157a0f4a635007f7f2963fc7e85db0e59d",
+      "width": 1484
+    },
+    "ie": {
+      "height": 760,
+      "path": "countries/ie.webp",
+      "portraitPath": "portraits/ie.webp",
+      "portraitSourcePath": "browser/assets/countries/ie-portrait.webp",
+      "portraitSourceSha256": "e7fd934a1e9048e1aeb60eeddb89e0e9b63bb23782899b61f81485c15348b538",
+      "sourceCountryId": "ie",
+      "sourcePath": "browser/assets/countries/ie.webp",
+      "sourceSha256": "417fef1084b098451ad0f4b9f5527944768a7e595a32da60c6c5bbd235896809",
+      "width": 1512
+    },
+    "il": {
+      "height": 764,
+      "path": "countries/il.webp",
+      "portraitPath": "portraits/il.webp",
+      "portraitSourcePath": "browser/assets/countries/il-portrait.webp",
+      "portraitSourceSha256": "69418ac33c0b93a65f6f742cc1d6263d1d896bf849d6e4f8bcfa3440c9c09162",
+      "sourceCountryId": "il",
+      "sourcePath": "browser/assets/countries/il.webp",
+      "sourceSha256": "d7a9620f5759390f627eaa4f96c96b91e7dcffe833ee2cf6d1e6bfbc66d86457",
+      "width": 1524
+    },
+    "in": {
+      "height": 754,
+      "path": "countries/in.webp",
+      "portraitPath": "portraits/in.webp",
+      "portraitSourcePath": "browser/assets/countries/in-portrait.webp",
+      "portraitSourceSha256": "221847da3b532f009644f47595c1c9ea8deab382a20b2ec1b7939c3b48ea5279",
+      "sourceCountryId": "in",
+      "sourcePath": "browser/assets/countries/in.webp",
+      "sourceSha256": "b08bad6a82b7548328306ff54217fc4e0d5957cb025a1e8a2dae2a776cd974ec",
+      "width": 1484
+    },
+    "iq": {
+      "height": 752,
+      "path": "countries/iq.webp",
+      "portraitPath": "portraits/iq.webp",
+      "portraitSourcePath": "browser/assets/countries/iq-portrait.webp",
+      "portraitSourceSha256": "699e28145d90eb45e66a9afe50977d3558a00a8cdfff27195783b986268ef2e0",
+      "sourceCountryId": "iq",
+      "sourcePath": "browser/assets/countries/iq.webp",
+      "sourceSha256": "00177e1b0f5feb6a356e234f5d9ae8afa8c7e548c9cd0c8c3e02858bb1b51c26",
+      "width": 1660
+    },
+    "ir": {
+      "height": 752,
+      "path": "countries/ir.webp",
+      "portraitPath": "portraits/ir.webp",
+      "portraitSourcePath": "browser/assets/countries/ir-portrait.webp",
+      "portraitSourceSha256": "802770a223a72fb7b035022ee821ca22ceccf45fdfcd851ccc56d910e5d42676",
+      "sourceCountryId": "ir",
+      "sourcePath": "browser/assets/countries/ir.webp",
+      "sourceSha256": "0c8288882887f2c88d8a23f32f19816f5dca00f5d1cf2ae85f45e0daafa038ab",
+      "width": 1552
+    },
+    "is": {
+      "height": 762,
+      "path": "countries/is.webp",
+      "portraitPath": "portraits/is.webp",
+      "portraitSourcePath": "browser/assets/countries/is-portrait.webp",
+      "portraitSourceSha256": "1aa847d763494eabe6193c8a5de26728c5fafb52f973b3a14e2743624b278397",
+      "sourceCountryId": "is",
+      "sourcePath": "browser/assets/countries/is.webp",
+      "sourceSha256": "1ff7d213ab0947877bd606378be600425d94e15bae8237a741e203f1380c466a",
+      "width": 1508
+    },
+    "it": {
+      "height": 754,
+      "path": "countries/it.webp",
+      "portraitPath": "portraits/it.webp",
+      "portraitSourcePath": "browser/assets/countries/it-portrait.webp",
+      "portraitSourceSha256": "e9bc9a85a461584b9d0e360c960c635a206a725db35e49493efea38860a69970",
+      "sourceCountryId": "it",
+      "sourcePath": "browser/assets/countries/it.webp",
+      "sourceSha256": "7ef2c3e187ddfbb64220909e95c0cf0f3a43c915b315b5b238f9a3712d6e5aa3",
+      "width": 1508
+    },
+    "jm": {
+      "height": 752,
+      "path": "countries/jm.webp",
+      "portraitPath": "portraits/jm.webp",
+      "portraitSourcePath": "browser/assets/countries/jm-portrait.webp",
+      "portraitSourceSha256": "dab8fba1e1b2b93ac32626e2214038f7ad5112e6b0deed881ae4411d7b998988",
+      "sourceCountryId": "jm",
+      "sourcePath": "browser/assets/countries/jm.webp",
+      "sourceSha256": "9795c88e5c0c38edcec5afe579f1b02c2ee47f861e8d24d1937d8166e5905340",
+      "width": 1456
+    },
+    "jo": {
+      "height": 752,
+      "path": "countries/jo.webp",
+      "portraitPath": "portraits/jo.webp",
+      "portraitSourcePath": "browser/assets/countries/jo-portrait.webp",
+      "portraitSourceSha256": "8daeadcc76d3d0b7eab1a1923dcd1d7454b5730576f504bd108a13185f591a1f",
+      "sourceCountryId": "jo",
+      "sourcePath": "browser/assets/countries/jo.webp",
+      "sourceSha256": "2041a308226efbe45d4f72ef7249ca022e853d244e1d6fa9c816e235f89696bd",
+      "width": 1652
+    },
+    "jp": {
+      "height": 752,
+      "path": "countries/jp.webp",
+      "portraitPath": "portraits/jp.webp",
+      "portraitSourcePath": "browser/assets/countries/jp-portrait.webp",
+      "portraitSourceSha256": "cbe8fc62c407bb005da404381261146ce17334e0e3cd19ff3936a54cb37783b4",
+      "sourceCountryId": "jp",
+      "sourcePath": "browser/assets/countries/jp.webp",
+      "sourceSha256": "5cb1b9d26522d777e31c99b20b9830b1f6ae50b737de6d0498411de4a3de93f7",
+      "width": 1596
+    },
+    "ke": {
+      "height": 756,
+      "path": "countries/ke.webp",
+      "portraitPath": "portraits/ke.webp",
+      "portraitSourcePath": "browser/assets/countries/ke-portrait.webp",
+      "portraitSourceSha256": "2f759ef27b98bc866ebe6439bcd7a2c8f46fb1e39121670b5eb030c45331ef30",
+      "sourceCountryId": "ke",
+      "sourcePath": "browser/assets/countries/ke.webp",
+      "sourceSha256": "4b42190040ad616c9797a0dac8202636284083c85624d421cbb7a470a14d2711",
+      "width": 1580
+    },
+    "kg": {
+      "height": 752,
+      "path": "countries/kg.webp",
+      "portraitPath": "portraits/kg.webp",
+      "portraitSourcePath": "browser/assets/countries/kg-portrait.webp",
+      "portraitSourceSha256": "c71af43a32512691f7073778ed38370c25858a25af83e3e5459cf14bd62dbf97",
+      "sourceCountryId": "kg",
+      "sourcePath": "browser/assets/countries/kg.webp",
+      "sourceSha256": "61aa47f149377f5500ff88564a1b0b520828f359240e296e5c4b088b718470c9",
+      "width": 1708
+    },
+    "kh": {
+      "height": 752,
+      "path": "countries/kh.webp",
+      "portraitPath": "portraits/kh.webp",
+      "portraitSourcePath": "browser/assets/countries/kh-portrait.webp",
+      "portraitSourceSha256": "4aa655254563e49dccf4f2c7e1fa287a8e88358b96e92d5377d7aa40b1e2ad1d",
+      "sourceCountryId": "kh",
+      "sourcePath": "browser/assets/countries/kh.webp",
+      "sourceSha256": "927e7f7b2f7d85211981d48589041726dcb640812b42a039ee9ee2a330145009",
+      "width": 1476
+    },
+    "ki": {
+      "height": 752,
+      "path": "countries/ki.webp",
+      "portraitPath": "portraits/ki.webp",
+      "portraitSourcePath": "browser/assets/countries/ki-portrait.webp",
+      "portraitSourceSha256": "acafc571eb0d98c3861bc323913d5e077b01698310af41ef225163e89bf39c1f",
+      "sourceCountryId": "ki",
+      "sourcePath": "browser/assets/countries/ki.webp",
+      "sourceSha256": "7fbf57cbef82a9e2d03b4f5682a7a30d25f245daa7f649189d7f679e5f7ef2cd",
+      "width": 1552
+    },
+    "km": {
+      "height": 752,
+      "path": "countries/km.webp",
+      "portraitPath": "portraits/km.webp",
+      "portraitSourcePath": "browser/assets/countries/km-portrait.webp",
+      "portraitSourceSha256": "c3333cbb5ff4ab5419709956d7c4fea5c54ea1fc2832aca479340502ed7b5140",
+      "sourceCountryId": "km",
+      "sourcePath": "browser/assets/countries/km.webp",
+      "sourceSha256": "3b9818b9488f14843b89fa9f5207536d37d708e2ecce442bafc23990fa337778",
+      "width": 1484
+    },
+    "kn": {
+      "height": 788,
+      "path": "countries/kn.webp",
+      "portraitPath": "portraits/kn.webp",
+      "portraitSourcePath": "browser/assets/countries/kn-portrait.webp",
+      "portraitSourceSha256": "212acb43b7ea357452f0c93ca7e0f71712e7bab4fc1f2e6d4031eea1cde144bf",
+      "sourceCountryId": "kn",
+      "sourcePath": "browser/assets/countries/kn.webp",
+      "sourceSha256": "6a56f32aad602cc94f4cb826c274f0959493afbeed6f20e4d0c04ef4dca16dd3",
+      "width": 1348
+    },
+    "kp": {
+      "height": 752,
+      "path": "countries/kp.webp",
+      "portraitPath": "portraits/kp.webp",
+      "portraitSourcePath": "browser/assets/countries/kp-portrait.webp",
+      "portraitSourceSha256": "9ea66e25032557dc9aaa42fc8308998429c60d6de28a2639493c8e704c78cb84",
+      "sourceCountryId": "kp",
+      "sourcePath": "browser/assets/countries/kp.webp",
+      "sourceSha256": "bff5c5170728ac0843c39a4d71fe8463c002da617ccb56bcf25617b997b0d9d5",
+      "width": 1616
+    },
+    "kr": {
+      "height": 766,
+      "path": "countries/kr.webp",
+      "portraitPath": "portraits/kr.webp",
+      "portraitSourcePath": "browser/assets/countries/se-portrait.webp",
+      "portraitSourceSha256": "2ea8f11685633a0e20cc29b854f6342efa389437676e2ab4929957500956e8fb",
+      "sourceCountryId": "se",
+      "sourcePath": "browser/assets/countries/se.webp",
+      "sourceSha256": "3786d6a26330393e9a7ecc37651f35bebcf708dfa975a0e0fd91e1a791067044",
+      "width": 1176
+    },
+    "kw": {
+      "height": 752,
+      "path": "countries/kw.webp",
+      "portraitPath": "portraits/kw.webp",
+      "portraitSourcePath": "browser/assets/countries/kw-portrait.webp",
+      "portraitSourceSha256": "d52c352d76cadccec5493ee094108b9c7f56a6fbb8f02cce548dfd3f04532f04",
+      "sourceCountryId": "kw",
+      "sourcePath": "browser/assets/countries/kw.webp",
+      "sourceSha256": "bc42b022de19d67037ce61adacea4b82ddac3af87738961c87e4b3682c971ae0",
+      "width": 1672
+    },
+    "kz": {
+      "height": 752,
+      "path": "countries/kz.webp",
+      "portraitPath": "portraits/kz.webp",
+      "portraitSourcePath": "browser/assets/countries/kz-portrait.webp",
+      "portraitSourceSha256": "3bd8274eadaed443cabd10c0c99f3c4cb84ca729f14b8fbd6281f6f394a0caf7",
+      "sourceCountryId": "kz",
+      "sourcePath": "browser/assets/countries/kz.webp",
+      "sourceSha256": "d0e1a2e32351c0628d59282b6db5ae976f6fe49800e2b2bde9e802a8a7fede08",
+      "width": 1696
+    },
+    "la": {
+      "height": 754,
+      "path": "countries/la.webp",
+      "portraitPath": "portraits/la.webp",
+      "portraitSourcePath": "browser/assets/countries/la-portrait.webp",
+      "portraitSourceSha256": "cdfe57d22eba9574de535954747b1744f11b8b361f0cb103cb5ecd6f5b48ca78",
+      "sourceCountryId": "la",
+      "sourcePath": "browser/assets/countries/la.webp",
+      "sourceSha256": "365adfd9b0d13ce0b8636a6695182eec3d938ccd2d4e567e3d6c0dcf8b551af8",
+      "width": 1716
+    },
+    "lb": {
+      "height": 752,
+      "path": "countries/lb.webp",
+      "portraitPath": "portraits/lb.webp",
+      "portraitSourcePath": "browser/assets/countries/lb-portrait.webp",
+      "portraitSourceSha256": "1949df149146e49f068090b7c36d84725f9646ed176d9878596856b41d2a5d3e",
+      "sourceCountryId": "lb",
+      "sourcePath": "browser/assets/countries/lb.webp",
+      "sourceSha256": "a9672f8fd7ae35e7ed6fb7cc8da1ec0fa07be3886075096dea30e46dcb0d328e",
+      "width": 1764
+    },
+    "lc": {
+      "height": 754,
+      "path": "countries/lc.webp",
+      "portraitPath": "portraits/lc.webp",
+      "portraitSourcePath": "browser/assets/countries/lc-portrait.webp",
+      "portraitSourceSha256": "ce81dc62eadf5f8c49fd0cd1819b782924180a6c3bf9f16f61b370a8ac00bb35",
+      "sourceCountryId": "lc",
+      "sourcePath": "browser/assets/countries/lc.webp",
+      "sourceSha256": "a6e8a19d0a8b869686d22123367d397b1a1d4c66e70f1dca5454dc310f4aafeb",
+      "width": 1324
+    },
+    "li": {
+      "height": 754,
+      "path": "countries/li.webp",
+      "portraitPath": "portraits/li.webp",
+      "portraitSourcePath": "browser/assets/countries/li-portrait.webp",
+      "portraitSourceSha256": "893809addeb3c46bb40832733c9b218528828f4db0687dba36232362e7ba228d",
+      "sourceCountryId": "li",
+      "sourcePath": "browser/assets/countries/li.webp",
+      "sourceSha256": "ef25aca9e06a05e50f1741cdf7f4f5f6a0f6c23a9d1d511c6dc7a1990c9127e9",
+      "width": 1552
+    },
+    "lk": {
+      "height": 778,
+      "path": "countries/lk.webp",
+      "portraitPath": "portraits/lk.webp",
+      "portraitSourcePath": "browser/assets/countries/lk-portrait.webp",
+      "portraitSourceSha256": "fb69a930b660ac1b90f3fccdef884eda795a39fc64c52a4b8b9ee255a5b30ebe",
+      "sourceCountryId": "lk",
+      "sourcePath": "browser/assets/countries/lk.webp",
+      "sourceSha256": "19223a4761b49838fdbbf4290310cd7319863207297f9acf5dfa620b4e26e3e7",
+      "width": 1324
+    },
+    "lr": {
+      "height": 752,
+      "path": "countries/lr.webp",
+      "portraitPath": "portraits/lr.webp",
+      "portraitSourcePath": "browser/assets/countries/lr-portrait.webp",
+      "portraitSourceSha256": "d601df7496958238f8507cdc09fe8b632a9a051757880533cb2e28d8f99b4868",
+      "sourceCountryId": "lr",
+      "sourcePath": "browser/assets/countries/lr.webp",
+      "sourceSha256": "a5dd52423a64f3faee836dc159cf1c6b27b925801403b5c7548e6d51ea97ac1e",
+      "width": 1600
+    },
+    "ls": {
+      "height": 752,
+      "path": "countries/ls.webp",
+      "portraitPath": "portraits/ls.webp",
+      "portraitSourcePath": "browser/assets/countries/ls-portrait.webp",
+      "portraitSourceSha256": "2e87a190377eac336b09f465e22c48389a588d8ef9d9caa5e01779f728f45c9b",
+      "sourceCountryId": "ls",
+      "sourcePath": "browser/assets/countries/ls.webp",
+      "sourceSha256": "df07788aa32f0308c90d0fad84e9812317f07e9f81c684072a2b0a4a34dea9c9",
+      "width": 1628
+    },
+    "lt": {
+      "height": 752,
+      "path": "countries/lt.webp",
+      "portraitPath": "portraits/lt.webp",
+      "portraitSourcePath": "browser/assets/countries/lt-portrait.webp",
+      "portraitSourceSha256": "fc1aa3fae835a6f5f9dc6e844a2fb6c2db2f0f9acb6f765f373e4dce43638864",
+      "sourceCountryId": "lt",
+      "sourcePath": "browser/assets/countries/lt.webp",
+      "sourceSha256": "0e614002f259760fa6932ee4a59c6b61270d5743b262d9e6aa11206c42ed45ce",
+      "width": 1548
+    },
+    "lu": {
+      "height": 752,
+      "path": "countries/lu.webp",
+      "portraitPath": "portraits/lu.webp",
+      "portraitSourcePath": "browser/assets/countries/lu-portrait.webp",
+      "portraitSourceSha256": "68de6801bfd82b5974e958590699ec4de12a0c824fbd66bf9768936c554b15a6",
+      "sourceCountryId": "lu",
+      "sourcePath": "browser/assets/countries/lu.webp",
+      "sourceSha256": "4771f1c7197ca8d984d3231bf2c2d79c286a96fac9a1d0b14ef0b42efbd981d1",
+      "width": 1488
+    },
+    "lv": {
+      "height": 774,
+      "path": "countries/lv.webp",
+      "portraitPath": "portraits/lv.webp",
+      "portraitSourcePath": "browser/assets/countries/lv-portrait.webp",
+      "portraitSourceSha256": "c0aa64516bb2eed759347b40290fd2ac14f821cd623f4c49386f9f168adee7d7",
+      "sourceCountryId": "lv",
+      "sourcePath": "browser/assets/countries/lv.webp",
+      "sourceSha256": "4e0df198f2cd2ae528fc3eb0a3cdc85da960c6427305183bc5041f413b3ebf1d",
+      "width": 1584
+    },
+    "ly": {
+      "height": 752,
+      "path": "countries/ly.webp",
+      "portraitPath": "portraits/ly.webp",
+      "portraitSourcePath": "browser/assets/countries/ly-portrait.webp",
+      "portraitSourceSha256": "8c736be0e47a49c4f7e45070b17f9f06f0113fe40208abccae63cda061c786e3",
+      "sourceCountryId": "ly",
+      "sourcePath": "browser/assets/countries/ly.webp",
+      "sourceSha256": "1263bab4812c46d11fbd8c5d74d472d9ae38e1ddce219ea9bf2c85c5795f160b",
+      "width": 1588
+    },
+    "ma": {
+      "height": 752,
+      "path": "countries/ma.webp",
+      "portraitPath": "portraits/ma.webp",
+      "portraitSourcePath": "browser/assets/countries/ma-portrait.webp",
+      "portraitSourceSha256": "91759591fc9e3205350112e4499389287c80a7889d06d0ef8ac26f170e356e2b",
+      "sourceCountryId": "ma",
+      "sourcePath": "browser/assets/countries/ma.webp",
+      "sourceSha256": "590800d2457bfcef22a784b6979e8f2303c797a03e53e354cfc891716069d611",
+      "width": 1580
+    },
+    "mc": {
+      "height": 756,
+      "path": "countries/mc.webp",
+      "portraitPath": "portraits/mc.webp",
+      "portraitSourcePath": "browser/assets/countries/mc-portrait.webp",
+      "portraitSourceSha256": "8b425f7e622e35e14806d70764c1fdecb0ad021a1f748801f0a56f7852307576",
+      "sourceCountryId": "mc",
+      "sourcePath": "browser/assets/countries/mc.webp",
+      "sourceSha256": "c3a170465bc276bb87085b521bb0ba6f0b511a1ef225b5dbdaa26a84f9ef8bf7",
+      "width": 1708
+    },
+    "md": {
+      "height": 752,
+      "path": "countries/md.webp",
+      "portraitPath": "portraits/md.webp",
+      "portraitSourcePath": "browser/assets/countries/md-portrait.webp",
+      "portraitSourceSha256": "c849313023da0ecb27c65ae2d291ecf1255a630b1f4ea3e292fbabd79cb62c1b",
+      "sourceCountryId": "md",
+      "sourcePath": "browser/assets/countries/md.webp",
+      "sourceSha256": "b251013ab863f17db0a0f22fe0aea1c1002215bea2bf49aac3e61bd152438fc4",
+      "width": 1644
+    },
+    "me": {
+      "height": 752,
+      "path": "countries/me.webp",
+      "portraitPath": "portraits/me.webp",
+      "portraitSourcePath": "browser/assets/countries/me-portrait.webp",
+      "portraitSourceSha256": "ca68e33293855170954c0cbb0df2ff6c181012ba734b6a2d9a0c37d84ffa41ef",
+      "sourceCountryId": "me",
+      "sourcePath": "browser/assets/countries/me.webp",
+      "sourceSha256": "5510c4cc1e347ea5e306cc36a6787b7f37b76bd9bc38337e53066edddd7303e3",
+      "width": 1504
+    },
+    "mg": {
+      "height": 752,
+      "path": "countries/mg.webp",
+      "portraitPath": "portraits/mg.webp",
+      "portraitSourcePath": "browser/assets/countries/mg-portrait.webp",
+      "portraitSourceSha256": "ef27b670038a63fdc5f574bc902004c8ab82a64e4f633ef9b99b30197c366aa8",
+      "sourceCountryId": "mg",
+      "sourcePath": "browser/assets/countries/mg.webp",
+      "sourceSha256": "bc76737e0ddb5b5a9cc9f11c7bfa59f140ce3be0b9a00226c4510014f1719b1f",
+      "width": 1448
+    },
+    "mh": {
+      "height": 758,
+      "path": "countries/mh.webp",
+      "portraitPath": "portraits/mh.webp",
+      "portraitSourcePath": "browser/assets/countries/mh-portrait.webp",
+      "portraitSourceSha256": "24aa3ebcd6eb7869fe9e93063c4f5b30a0a4483b172773f82b2624820915df7b",
+      "sourceCountryId": "mh",
+      "sourcePath": "browser/assets/countries/mh.webp",
+      "sourceSha256": "45d6ba25e77227b10241c49e316d13a62918045045b46ca59dd1dae3f36f3375",
+      "width": 1716
+    },
+    "mk": {
+      "height": 752,
+      "path": "countries/mk.webp",
+      "portraitPath": "portraits/mk.webp",
+      "portraitSourcePath": "browser/assets/countries/mk-portrait.webp",
+      "portraitSourceSha256": "5be6a73371db5aa6e94d67d5c7362fc201d61b5b16253d2570a7279a16b234fd",
+      "sourceCountryId": "mk",
+      "sourcePath": "browser/assets/countries/mk.webp",
+      "sourceSha256": "8f9375d7eb17406c5e3c6fe6abf000d62e5a260fa90dd640e7d56c0c1c92852e",
+      "width": 1668
+    },
+    "ml": {
+      "height": 754,
+      "path": "countries/ml.webp",
+      "portraitPath": "portraits/ml.webp",
+      "portraitSourcePath": "browser/assets/countries/ml-portrait.webp",
+      "portraitSourceSha256": "8c2c07bfc0359688f23bb6718aa0da6f58f6c62aca20533b086ce7b107b539f7",
+      "sourceCountryId": "ml",
+      "sourcePath": "browser/assets/countries/ml.webp",
+      "sourceSha256": "ed3facd6d60b37fba31870aafd89d44cffd78fe438dfa4a3a3c0b40d2db88597",
+      "width": 1544
+    },
+    "mm": {
+      "height": 756,
+      "path": "countries/mm.webp",
+      "portraitPath": "portraits/mm.webp",
+      "portraitSourcePath": "browser/assets/countries/mm-portrait.webp",
+      "portraitSourceSha256": "e35cd6becb2fc8cf2c8f27cd962f8f8167a42c6621dae72387f6c7782658d874",
+      "sourceCountryId": "mm",
+      "sourcePath": "browser/assets/countries/mm.webp",
+      "sourceSha256": "f85a24e25ee81c28b6ecddfaf92749931c4552d51ac19eb6d4d0b7ed076205b1",
+      "width": 1664
+    },
+    "mn": {
+      "height": 752,
+      "path": "countries/mn.webp",
+      "portraitPath": "portraits/mn.webp",
+      "portraitSourcePath": "browser/assets/countries/mn-portrait.webp",
+      "portraitSourceSha256": "f2852ea8c3e56b1c0eae2edab39a527c7c0d3bc4bc4a14e78456fb548e263411",
+      "sourceCountryId": "mn",
+      "sourcePath": "browser/assets/countries/mn.webp",
+      "sourceSha256": "d6d1aa6624a82b1d755501adcf8287462119222b3e4247b3292ab53ebc8c16ae",
+      "width": 1520
+    },
+    "mr": {
+      "height": 752,
+      "path": "countries/mr.webp",
+      "portraitPath": "portraits/mr.webp",
+      "portraitSourcePath": "browser/assets/countries/mr-portrait.webp",
+      "portraitSourceSha256": "5ab271ae7d853e67c0f542c276a5fcdd2be12fcd2eb0603ada895976afb22db3",
+      "sourceCountryId": "mr",
+      "sourcePath": "browser/assets/countries/mr.webp",
+      "sourceSha256": "664067757dff4969d5d7a5fce199149265292aeb91d50a11f0a6ec22eb6a6a40",
+      "width": 1604
+    },
+    "mt": {
+      "height": 752,
+      "path": "countries/mt.webp",
+      "portraitPath": "portraits/mt.webp",
+      "portraitSourcePath": "browser/assets/countries/mt-portrait.webp",
+      "portraitSourceSha256": "cb05679781d474c2f84334b7446dab17c2c8396be487defd00cf20beb845fec6",
+      "sourceCountryId": "mt",
+      "sourcePath": "browser/assets/countries/mt.webp",
+      "sourceSha256": "e94e487d1a4faca442aaebf34e6ac5b6f454575a04f2933973074369df4c87be",
+      "width": 1448
+    },
+    "mu": {
+      "height": 752,
+      "path": "countries/mu.webp",
+      "portraitPath": "portraits/mu.webp",
+      "portraitSourcePath": "browser/assets/countries/mu-portrait.webp",
+      "portraitSourceSha256": "761c2795cb7e2c2ed2de6f78bb9a819294b77fec815e5a35d397c70f4f5d4989",
+      "sourceCountryId": "mu",
+      "sourcePath": "browser/assets/countries/mu.webp",
+      "sourceSha256": "bc879333ae212af0f0181290ef57ed0583962234fa2b37dcf683faea4444f0ff",
+      "width": 1284
+    },
+    "mv": {
+      "height": 752,
+      "path": "countries/mv.webp",
+      "portraitPath": "portraits/mv.webp",
+      "portraitSourcePath": "browser/assets/countries/mv-portrait.webp",
+      "portraitSourceSha256": "84050da17599312b91c64b645e39b2d5098814368b099c07fce2faffc40a633e",
+      "sourceCountryId": "mv",
+      "sourcePath": "browser/assets/countries/mv.webp",
+      "sourceSha256": "59be70f8a28129984bff633eda27b171abd3107022544da7180148289fa28547",
+      "width": 1224
+    },
+    "mw": {
+      "height": 754,
+      "path": "countries/mw.webp",
+      "portraitPath": "portraits/mw.webp",
+      "portraitSourcePath": "browser/assets/countries/mw-portrait.webp",
+      "portraitSourceSha256": "25ba93b79c97a16e127d8e00995843723709d8468610e3ce6b5755425b3886ce",
+      "sourceCountryId": "mw",
+      "sourcePath": "browser/assets/countries/mw.webp",
+      "sourceSha256": "98a493dba404a6556150c03caa59ad0d99077ab1eaa9f8e4c3618551ab8d863e",
+      "width": 1640
+    },
+    "mx": {
+      "height": 754,
+      "path": "countries/mx.webp",
+      "portraitPath": "portraits/mx.webp",
+      "portraitSourcePath": "browser/assets/countries/mx-portrait.webp",
+      "portraitSourceSha256": "209052ace39dc1ad0cff05de972f0f27d1e4237d3e03c96ea4e8c0e9c52c45b9",
+      "sourceCountryId": "mx",
+      "sourcePath": "browser/assets/countries/mx.webp",
+      "sourceSha256": "42a8dfe436c8f790711b68216ead9445a5714a56f269f4d6e46f9a84db0a3fa6",
+      "width": 1504
+    },
+    "my": {
+      "height": 752,
+      "path": "countries/my.webp",
+      "portraitPath": "portraits/my.webp",
+      "portraitSourcePath": "browser/assets/countries/my-portrait.webp",
+      "portraitSourceSha256": "f6643a63d97014814d1b1c54ae965bf406da0255bc140bfdbd1008dcfeab5219",
+      "sourceCountryId": "my",
+      "sourcePath": "browser/assets/countries/my.webp",
+      "sourceSha256": "1a9317c92776260a5b0baa4dd8e8a2def3d54db9eb2a074039b97309de14c461",
+      "width": 1552
+    },
+    "mz": {
+      "height": 756,
+      "path": "countries/mz.webp",
+      "portraitPath": "portraits/mz.webp",
+      "portraitSourcePath": "browser/assets/countries/mz-portrait.webp",
+      "portraitSourceSha256": "2f2721fd4eb4da3d33467e19b2204c6ca9d2b35d4ad5e8d80e95f361f9c30fb4",
+      "sourceCountryId": "mz",
+      "sourcePath": "browser/assets/countries/mz.webp",
+      "sourceSha256": "abf0d55842a5880ed85f928c010a2eb57819649d0351bdb21ecca833772efc82",
+      "width": 1560
+    },
+    "na": {
+      "height": 756,
+      "path": "countries/na.webp",
+      "portraitPath": "portraits/na.webp",
+      "portraitSourcePath": "browser/assets/countries/na-portrait.webp",
+      "portraitSourceSha256": "d47586822f0e6bf14a1f3628980fde4dbee6f3f6d6ed2eac0122620894635b2a",
+      "sourceCountryId": "na",
+      "sourcePath": "browser/assets/countries/na.webp",
+      "sourceSha256": "ea91ab7b803325a0a1ab579cf13e47f7b3d41e3dab5a766d1407e0b285470e82",
+      "width": 1580
+    },
+    "ne": {
+      "height": 752,
+      "path": "countries/ne.webp",
+      "portraitPath": "portraits/ne.webp",
+      "portraitSourcePath": "browser/assets/countries/ne-portrait.webp",
+      "portraitSourceSha256": "fa714176bdef6e7dc17acfa6fa2000522b69348bb3b651bedd8f51daf5cf97d7",
+      "sourceCountryId": "ne",
+      "sourcePath": "browser/assets/countries/ne.webp",
+      "sourceSha256": "fc7c541645a3c507c70b25a5c282aacae7d500cfbe63dfccf4a47deb6cf6b73a",
+      "width": 1572
+    },
+    "ng": {
+      "height": 764,
+      "path": "countries/ng.webp",
+      "portraitPath": "portraits/ng.webp",
+      "portraitSourcePath": "browser/assets/countries/ng-portrait.webp",
+      "portraitSourceSha256": "ba4d3dec243116f34ff11a64cbd5877660cb84d3fcf958dea21d015eb644da99",
+      "sourceCountryId": "ng",
+      "sourcePath": "browser/assets/countries/ng.webp",
+      "sourceSha256": "718bc72ea0038b2d5748421363defd63a1b63a161d141faf7138c2ccde0bb682",
+      "width": 1504
+    },
+    "ni": {
+      "height": 770,
+      "path": "countries/ni.webp",
+      "portraitPath": "portraits/ni.webp",
+      "portraitSourcePath": "browser/assets/countries/ni-portrait.webp",
+      "portraitSourceSha256": "762e9ae53db63f3c7a3b112436bcc2008bb3c18d01bb6df2d5a2a9c9a22a5ca4",
+      "sourceCountryId": "ni",
+      "sourcePath": "browser/assets/countries/ni.webp",
+      "sourceSha256": "47eaeff894de163fd34aebb9d56245d4a762c8bcba4e03806d003a5cb3c7ab69",
+      "width": 1616
+    },
+    "nl": {
+      "height": 752,
+      "path": "countries/nl.webp",
+      "portraitPath": "portraits/nl.webp",
+      "portraitSourcePath": "browser/assets/countries/nl-portrait.webp",
+      "portraitSourceSha256": "714d79a3ab10f9da3a9c1a5df55794e0026461e5fba49546dfedad61a76745bb",
+      "sourceCountryId": "nl",
+      "sourcePath": "browser/assets/countries/nl.webp",
+      "sourceSha256": "98e50724b65454f405481dc77524e6bd38125df8201023bd43078baf66ab1f52",
+      "width": 1608
+    },
+    "no": {
+      "height": 752,
+      "path": "countries/no.webp",
+      "portraitPath": "portraits/no.webp",
+      "portraitSourcePath": "browser/assets/countries/no-portrait.webp",
+      "portraitSourceSha256": "ea19255e7b4c68c24f97b4229995f745e7c88317734de6071b9e8b0e71abaf3f",
+      "sourceCountryId": "no",
+      "sourcePath": "browser/assets/countries/no.webp",
+      "sourceSha256": "b49c211a4eb6adc9541beb131c1624056c1d6e4aa23010f96106b97fe9f0036f",
+      "width": 1592
+    },
+    "np": {
+      "height": 772,
+      "path": "countries/np.webp",
+      "portraitPath": "portraits/np.webp",
+      "portraitSourcePath": "browser/assets/countries/np-portrait.webp",
+      "portraitSourceSha256": "0ee0ed0e74625e01e4854f065d6b064535344629e71ba12017b934c40ec3df6b",
+      "sourceCountryId": "np",
+      "sourcePath": "browser/assets/countries/np.webp",
+      "sourceSha256": "a3f3067601f8e2d4a13332116c9f1f92199b25db4f6238141d580162e81f7cdc",
+      "width": 1560
+    },
+    "nr": {
+      "height": 752,
+      "path": "countries/nr.webp",
+      "portraitPath": "portraits/nr.webp",
+      "portraitSourcePath": "browser/assets/countries/nr-portrait.webp",
+      "portraitSourceSha256": "ba9877b4442dcd29b981cf942d6294366569cc43e2e0eb5af13bad0e8296e70e",
+      "sourceCountryId": "nr",
+      "sourcePath": "browser/assets/countries/nr.webp",
+      "sourceSha256": "404a7720aa62b38f628a3bfaec0ab7d2bc283241ea6699dc0db6ba79ffe65903",
+      "width": 1544
+    },
+    "nz": {
+      "height": 768,
+      "path": "countries/nz.webp",
+      "portraitPath": "portraits/nz.webp",
+      "portraitSourcePath": "browser/assets/countries/nz-portrait.webp",
+      "portraitSourceSha256": "65fb71507857d222d9101330005b83d167b854f55b2d5239cd670dd4698e9441",
+      "sourceCountryId": "nz",
+      "sourcePath": "browser/assets/countries/nz.webp",
+      "sourceSha256": "ff91511e465c479f65b3deb96a684d2b9c25138b5c24c1fd260a6a44af280d5c",
+      "width": 1608
+    },
+    "om": {
+      "height": 760,
+      "path": "countries/om.webp",
+      "portraitPath": "portraits/om.webp",
+      "portraitSourcePath": "browser/assets/countries/om-portrait.webp",
+      "portraitSourceSha256": "9bc9b863dfa95f64ac462b213cc8038b740ed0e48a96c5125d002a2982eab734",
+      "sourceCountryId": "om",
+      "sourcePath": "browser/assets/countries/om.webp",
+      "sourceSha256": "9cd66fb7c33f586a4c48b77a4c52b186b359e9a5e7cbc99a60bb3df3adec4485",
+      "width": 1484
+    },
+    "pa": {
+      "height": 752,
+      "path": "countries/pa.webp",
+      "portraitPath": "portraits/pa.webp",
+      "portraitSourcePath": "browser/assets/countries/pa-portrait.webp",
+      "portraitSourceSha256": "c79bbbd04faa32ee0a720f77cc00cc4df3f571c4af03e771065a1a113ef2d126",
+      "sourceCountryId": "pa",
+      "sourcePath": "browser/assets/countries/pa.webp",
+      "sourceSha256": "f55ff0e98450d48ae06699cf5a36f9061bda3b6a8bf8c516eb9260fc2d8c696a",
+      "width": 1288
+    },
+    "pe": {
+      "height": 758,
+      "path": "countries/pe.webp",
+      "portraitPath": "portraits/pe.webp",
+      "portraitSourcePath": "browser/assets/countries/pe-portrait.webp",
+      "portraitSourceSha256": "f3690a419405a0b387d849aa884b62edc8d21d0523eb5aa517e06f288243af05",
+      "sourceCountryId": "pe",
+      "sourcePath": "browser/assets/countries/pe.webp",
+      "sourceSha256": "1c84725b093ccce90b2de971bf6641c2e73afa7a3ed0fa6f15532c4020791975",
+      "width": 1652
+    },
+    "pg": {
+      "height": 756,
+      "path": "countries/pg.webp",
+      "portraitPath": "portraits/pg.webp",
+      "portraitSourcePath": "browser/assets/countries/pg-portrait.webp",
+      "portraitSourceSha256": "fed45e370be4536a767d71ae756a45c95bd45ea638fa5ff800f2d5f4a78617d3",
+      "sourceCountryId": "pg",
+      "sourcePath": "browser/assets/countries/pg.webp",
+      "sourceSha256": "342c0dcb533c86c7f39db9b42839b0df5b248fd7c451f8e2561d58c17f5820b8",
+      "width": 1604
+    },
+    "ph": {
+      "height": 752,
+      "path": "countries/ph.webp",
+      "portraitPath": "portraits/ph.webp",
+      "portraitSourcePath": "browser/assets/countries/ph-portrait.webp",
+      "portraitSourceSha256": "2e05feb3cb4ffb060ae11c1ee275efcd595d6bd4dfc4cf153a4aaa693ea53ce3",
+      "sourceCountryId": "ph",
+      "sourcePath": "browser/assets/countries/ph.webp",
+      "sourceSha256": "f476c963976a776c7e207ccde43f32e47c83639bdbb07a1993cd118f0570a8f8",
+      "width": 1804
+    },
+    "pk": {
+      "height": 764,
+      "path": "countries/pk.webp",
+      "portraitPath": "portraits/pk.webp",
+      "portraitSourcePath": "browser/assets/countries/pk-portrait.webp",
+      "portraitSourceSha256": "51212b5784d6347a78bc45d871066ac8dae7f095e69feb9217399e2001554511",
+      "sourceCountryId": "pk",
+      "sourcePath": "browser/assets/countries/pk.webp",
+      "sourceSha256": "fdd722a14c4838a4a375355f2d1342811e7a3861f34b530bfd1edb30c64c8716",
+      "width": 1524
+    },
+    "pl": {
+      "height": 758,
+      "path": "countries/pl.webp",
+      "portraitPath": "portraits/pl.webp",
+      "portraitSourcePath": "browser/assets/countries/pl-portrait.webp",
+      "portraitSourceSha256": "0c61764a183f2c8bd6efd8f0744ed2c0217513bd6550909aee90b2c2be4691ac",
+      "sourceCountryId": "pl",
+      "sourcePath": "browser/assets/countries/pl.webp",
+      "sourceSha256": "62d1b3cb3ec3df0ef59b84c7e3dc9dad301bae50bf3fdf3c0adab2000c84bf92",
+      "width": 1556
+    },
+    "ps": {
+      "height": 758,
+      "path": "countries/ps.webp",
+      "portraitPath": "portraits/ps.webp",
+      "portraitSourcePath": "browser/assets/countries/ps-portrait.webp",
+      "portraitSourceSha256": "a23437b481f7c8043da09f07540e28ab9aa3fbc5aabbeef58764359f67dbbfab",
+      "sourceCountryId": "ps",
+      "sourcePath": "browser/assets/countries/ps.webp",
+      "sourceSha256": "2e02b239d697b379649037988e94e1e02e4ea03640c35cb7c5736c635bba27bd",
+      "width": 1708
+    },
+    "pt": {
+      "height": 752,
+      "path": "countries/pt.webp",
+      "portraitPath": "portraits/pt.webp",
+      "portraitSourcePath": "browser/assets/countries/pt-portrait.webp",
+      "portraitSourceSha256": "83e7a0c76f4fcac7bbc0437b3c821f221402e2e59106c592f0f2b82964ffae21",
+      "sourceCountryId": "pt",
+      "sourcePath": "browser/assets/countries/pt.webp",
+      "sourceSha256": "c6580f94f8bcc08562f6fb09c1f84c90bcedabc175023f43fafce8bd233cf67e",
+      "width": 1344
+    },
+    "pw": {
+      "height": 754,
+      "path": "countries/pw.webp",
+      "portraitPath": "portraits/pw.webp",
+      "portraitSourcePath": "browser/assets/countries/pw-portrait.webp",
+      "portraitSourceSha256": "d5ec2b00467274d59f667c6f0ff64677dddafb8077046dd6e83af93286ab0a76",
+      "sourceCountryId": "pw",
+      "sourcePath": "browser/assets/countries/pw.webp",
+      "sourceSha256": "d9818c7402b24c0acc7d5d0f4823603dd1ae2b47b638c3e4ae2160a9645bb2e3",
+      "width": 1448
+    },
+    "py": {
+      "height": 768,
+      "path": "countries/py.webp",
+      "portraitPath": "portraits/py.webp",
+      "portraitSourcePath": "browser/assets/countries/py-portrait.webp",
+      "portraitSourceSha256": "3df86cf6f5e514f30342374d330171384c0d9823dcc072d6097bfc16dd1131fd",
+      "sourceCountryId": "py",
+      "sourcePath": "browser/assets/countries/py.webp",
+      "sourceSha256": "7bf0aa2f8d6bb9a233912cc8654b0fda32eef2fb8d3821ae87c205eb69ffae49",
+      "width": 1344
+    },
+    "qa": {
+      "height": 774,
+      "path": "countries/qa.webp",
+      "portraitPath": "portraits/qa.webp",
+      "portraitSourcePath": "browser/assets/countries/qa-portrait.webp",
+      "portraitSourceSha256": "142d477808c9c6d9d70749a28c4deca67533cb426a22cff3cb3ea2fb46da2699",
+      "sourceCountryId": "qa",
+      "sourcePath": "browser/assets/countries/qa.webp",
+      "sourceSha256": "28c249fcb26ccd4f11011ffa5cb2bcbbf6d625d7dabda716bcfad0fbfd292c00",
+      "width": 1372
+    },
+    "ro": {
+      "height": 774,
+      "path": "countries/ro.webp",
+      "portraitPath": "portraits/ro.webp",
+      "portraitSourcePath": "browser/assets/countries/ro-portrait.webp",
+      "portraitSourceSha256": "aa7475313b5fe3863daa22d10836f5a92fc7d718ea308e4c8cea332061126591",
+      "sourceCountryId": "ro",
+      "sourcePath": "browser/assets/countries/ro.webp",
+      "sourceSha256": "d21e1f815a93f06625b67c2a523ebcb6bf746c98558cc4cea9dcd7354bcb4ce6",
+      "width": 1360
+    },
+    "rs": {
+      "height": 752,
+      "path": "countries/rs.webp",
+      "portraitPath": "portraits/rs.webp",
+      "portraitSourcePath": "browser/assets/countries/rs-portrait.webp",
+      "portraitSourceSha256": "ac522bea4beadf45f8d4d9ba5ab6420ef0add8804cd9585927cf1580824616d6",
+      "sourceCountryId": "rs",
+      "sourcePath": "browser/assets/countries/rs.webp",
+      "sourceSha256": "88b641a11b9e509f76c0634a81896019a936f08bfb3abab98c8f5d1f873aa292",
+      "width": 1808
+    },
+    "ru": {
+      "height": 796,
+      "path": "countries/ru.webp",
+      "portraitPath": "portraits/ru.webp",
+      "portraitSourcePath": "browser/assets/countries/ru-portrait.webp",
+      "portraitSourceSha256": "fd0aa78c5a6ab4e87c7e944ab8a3050b9ec84b989394980c59ba38ec0e43733b",
+      "sourceCountryId": "ru",
+      "sourcePath": "browser/assets/countries/ru.webp",
+      "sourceSha256": "e638c1ef8100d095d96356912e0086cc0ecd259a3b12a8d00d2c0ad2969f502f",
+      "width": 1268
+    },
+    "rw": {
+      "height": 762,
+      "path": "countries/rw.webp",
+      "portraitPath": "portraits/rw.webp",
+      "portraitSourcePath": "browser/assets/countries/rw-portrait.webp",
+      "portraitSourceSha256": "ddd021bcf4aa9314f0dd6086ce31ad94c5604bde06169cfe90ad2ccd7397a401",
+      "sourceCountryId": "rw",
+      "sourcePath": "browser/assets/countries/rw.webp",
+      "sourceSha256": "388777805c131f8f1b8ac1af72151d008793204a046de41a7e0f732bd6875489",
+      "width": 1256
+    },
+    "sa": {
+      "height": 752,
+      "path": "countries/sa.webp",
+      "portraitPath": "portraits/sa.webp",
+      "portraitSourcePath": "browser/assets/countries/sa-portrait.webp",
+      "portraitSourceSha256": "05b2c12991f6866c2c191ce44e06b20653a4048b1a6c67123e80b7774f8d3049",
+      "sourceCountryId": "sa",
+      "sourcePath": "browser/assets/countries/sa.webp",
+      "sourceSha256": "59424e2ad1b5e9145b0d7a8c0708dc5c499b3fff70b48d1de21d316557d1cb0f",
+      "width": 1396
+    },
+    "sb": {
+      "height": 752,
+      "path": "countries/sb.webp",
+      "portraitPath": "portraits/sb.webp",
+      "portraitSourcePath": "browser/assets/countries/sb-portrait.webp",
+      "portraitSourceSha256": "2982d4e8d49e4199abc51be9f1e5e693da5e64616c7543d2dc445a1a0a619e40",
+      "sourceCountryId": "sb",
+      "sourcePath": "browser/assets/countries/sb.webp",
+      "sourceSha256": "d17b81769f00c156a7de0320e015b6bdfd270e6773010c9acdaf4bf2504c6df4",
+      "width": 1256
+    },
+    "sc": {
+      "height": 752,
+      "path": "countries/sc.webp",
+      "portraitPath": "portraits/sc.webp",
+      "portraitSourcePath": "browser/assets/countries/sc-portrait.webp",
+      "portraitSourceSha256": "539a21075307e7d14589c81c39d24e43146992f435bc385ea4c34510a98f0a14",
+      "sourceCountryId": "sc",
+      "sourcePath": "browser/assets/countries/sc.webp",
+      "sourceSha256": "329f215ce325302fccf6f81335252f6d6c027f17fa49064016ed1f5b37922b22",
+      "width": 1512
+    },
+    "sd": {
+      "height": 758,
+      "path": "countries/sd.webp",
+      "portraitPath": "portraits/sd.webp",
+      "portraitSourcePath": "browser/assets/countries/kr-portrait.webp",
+      "portraitSourceSha256": "2d3fe134918b36c36bc185c8eee338b34ead3ef43c0891d3b6c0399c77f6c279",
+      "sourceCountryId": "kr",
+      "sourcePath": "browser/assets/countries/kr.webp",
+      "sourceSha256": "17e632c013f05cb8787bd0b966bcaf5652ccefb864201661fba4f9685f6594bc",
+      "width": 1228
+    },
+    "se": {
+      "height": 770,
+      "path": "countries/se.webp",
+      "portraitPath": "portraits/se.webp",
+      "portraitSourcePath": "browser/assets/countries/sd-portrait.webp",
+      "portraitSourceSha256": "730876e3e5f74d7146a97cc722d80f94c3fd42c4923c6f0f914a6697d60376e7",
+      "sourceCountryId": "sd",
+      "sourcePath": "browser/assets/countries/sd.webp",
+      "sourceSha256": "dbc9534c6927a0af1602f6a9b663c50d556ad23167f2b5dc0410af15e1779ec3",
+      "width": 1256
+    },
+    "sg": {
+      "height": 752,
+      "path": "countries/sg.webp",
+      "portraitPath": "portraits/sg.webp",
+      "portraitSourcePath": "browser/assets/countries/sg-portrait.webp",
+      "portraitSourceSha256": "2126427c5f42ed7e67a9b21474ed4b7ce44d33fe753a1f8222ebf7eed3498aff",
+      "sourceCountryId": "sg",
+      "sourcePath": "browser/assets/countries/sg.webp",
+      "sourceSha256": "658c540b07004bc1bba9b642d191b747322afb77e40af0508ce87513f4f7661a",
+      "width": 1600
+    },
+    "si": {
+      "height": 754,
+      "path": "countries/si.webp",
+      "portraitPath": "portraits/si.webp",
+      "portraitSourcePath": "browser/assets/countries/si-portrait.webp",
+      "portraitSourceSha256": "c1670aeeefb1272d59cf7e8feadc1fcf133670d0cbebbe91a0f6aadb23620739",
+      "sourceCountryId": "si",
+      "sourcePath": "browser/assets/countries/si.webp",
+      "sourceSha256": "dc04ea54392e4aec4b45c9e3829f5228e38999c64b7d5699b14c0fc0714da439",
+      "width": 1512
+    },
+    "sk": {
+      "height": 764,
+      "path": "countries/sk.webp",
+      "portraitPath": "portraits/sk.webp",
+      "portraitSourcePath": "browser/assets/countries/sk-portrait.webp",
+      "portraitSourceSha256": "5729ce7a47c465fd5a03f0e3ed163a2442f3654014c57a3c91420385af19d990",
+      "sourceCountryId": "sk",
+      "sourcePath": "browser/assets/countries/sk.webp",
+      "sourceSha256": "8b1cce555a79456b3a85af6b941528585835fcef157b96fc9e88f1e21d734994",
+      "width": 1732
+    },
+    "sl": {
+      "height": 756,
+      "path": "countries/sl.webp",
+      "portraitPath": "portraits/sl.webp",
+      "portraitSourcePath": "browser/assets/countries/sl-portrait.webp",
+      "portraitSourceSha256": "579f2e1aaf3842082bec2d53a9c1f54edfffe2c940b5fcf915ed42828b45390d",
+      "sourceCountryId": "sl",
+      "sourcePath": "browser/assets/countries/sl.webp",
+      "sourceSha256": "8ece8c6f9fd1a79ed311b9b2f618baa077c1e2069865c7aa8e2f8e682f981abb",
+      "width": 1624
+    },
+    "sm": {
+      "height": 772,
+      "path": "countries/sm.webp",
+      "portraitPath": "portraits/sm.webp",
+      "portraitSourcePath": "browser/assets/countries/sm-portrait.webp",
+      "portraitSourceSha256": "e09ba50727ee4ddbf83d088ea6fc6b39d31d150667fb6155c824ab7c9808b7b1",
+      "sourceCountryId": "sm",
+      "sourcePath": "browser/assets/countries/sm.webp",
+      "sourceSha256": "db676b2460fb1dafc9ca9a0a135710018bce97fbb1ed5c1dd206060ceee84823",
+      "width": 1668
+    },
+    "sn": {
+      "height": 752,
+      "path": "countries/sn.webp",
+      "portraitPath": "portraits/sn.webp",
+      "portraitSourcePath": "browser/assets/countries/sn-portrait.webp",
+      "portraitSourceSha256": "31ca35686bf95daa655a246628b4923b4f6ac83aa5ff24560184917383aa289d",
+      "sourceCountryId": "sn",
+      "sourcePath": "browser/assets/countries/sn.webp",
+      "sourceSha256": "295bb4dbbf3963f0db6ea2d7719b9cf5f43357bdf7e3aa7a521dd233dd792093",
+      "width": 1772
+    },
+    "so": {
+      "height": 786,
+      "path": "countries/so.webp",
+      "portraitPath": "portraits/so.webp",
+      "portraitSourcePath": "browser/assets/countries/es-portrait.webp",
+      "portraitSourceSha256": "f232739d7889d13d79776ad58e6ca2cc67e12350e8c47181829b5853bb9b1c8e",
+      "sourceCountryId": "es",
+      "sourcePath": "browser/assets/countries/es.webp",
+      "sourceSha256": "4a6beef89e715921f8f6b152ada07973e2cd4b8da0f789827c88ef45ae42aa8a",
+      "width": 1316
+    },
+    "sr": {
+      "height": 754,
+      "path": "countries/sr.webp",
+      "portraitPath": "portraits/sr.webp",
+      "portraitSourcePath": "browser/assets/countries/ch-portrait.webp",
+      "portraitSourceSha256": "c49b5ac592fee2f9b6faa7d5f966c094d0172f6a446781b8bb636e2ea906af30",
+      "sourceCountryId": "ch",
+      "sourcePath": "browser/assets/countries/ch.webp",
+      "sourceSha256": "f508f82cf23d6a38662a7622f2434bd7bbee5aa155bcab3087ae93909c1a372f",
+      "width": 1192
+    },
+    "ss": {
+      "height": 762,
+      "path": "countries/ss.webp",
+      "portraitPath": "portraits/ss.webp",
+      "portraitSourcePath": "browser/assets/countries/so-portrait.webp",
+      "portraitSourceSha256": "10fdb0f06da0481c91a2655c7021fd497b095dd4d4671d0a85837a39907d74d0",
+      "sourceCountryId": "so",
+      "sourcePath": "browser/assets/countries/so.webp",
+      "sourceSha256": "8890cb81632a8d8f1c1b336d53902d13f5a38f00e284b1d779566e7f96d0412a",
+      "width": 1204
+    },
+    "st": {
+      "height": 752,
+      "path": "countries/st.webp",
+      "portraitPath": "portraits/st.webp",
+      "portraitSourcePath": "browser/assets/countries/st-portrait.webp",
+      "portraitSourceSha256": "c79e97b901427355096d9e2ee655d14a979b5d6ace6a0c492a0ec0c600bb97be",
+      "sourceCountryId": "st",
+      "sourcePath": "browser/assets/countries/st.webp",
+      "sourceSha256": "05a4935a68185a9555e2679724b1db5e02f62cd8e8d1f96216a18aa2f58ff89a",
+      "width": 1612
+    },
+    "sv": {
+      "height": 752,
+      "path": "countries/sv.webp",
+      "portraitPath": "portraits/sv.webp",
+      "portraitSourcePath": "browser/assets/countries/sv-portrait.webp",
+      "portraitSourceSha256": "ecb28a2e30a63b31b22f17e88b315004cae4f81315f7dd00ea134e0077874d24",
+      "sourceCountryId": "sv",
+      "sourcePath": "browser/assets/countries/sv.webp",
+      "sourceSha256": "8c294baa3661e98e20744195dc0ac0f96736a875062d514f9a87e6046b345de6",
+      "width": 1660
+    },
+    "sy": {
+      "height": 752,
+      "path": "countries/sy.webp",
+      "portraitPath": "portraits/sy.webp",
+      "portraitSourcePath": "browser/assets/countries/sy-portrait.webp",
+      "portraitSourceSha256": "4c8d9402efed554e984562b107330044a12333b097eff8039bf19c5e9b8de0be",
+      "sourceCountryId": "sy",
+      "sourcePath": "browser/assets/countries/sy.webp",
+      "sourceSha256": "7c9415b59875cebf2d48dc2f4b4b768dbe62f0fe49db73ac46c8929dfcf25e63",
+      "width": 1512
+    },
+    "sz": {
+      "height": 752,
+      "path": "countries/sz.webp",
+      "portraitPath": "portraits/sz.webp",
+      "portraitSourcePath": "browser/assets/countries/sz-portrait.webp",
+      "portraitSourceSha256": "af693c135d8acf52110292d237d63503990f4862aae9c9993a07ce2954e26184",
+      "sourceCountryId": "sz",
+      "sourcePath": "browser/assets/countries/sz.webp",
+      "sourceSha256": "6694b97d070d888fcd3e74153cfb4f4d3fd2684016232e844e0425063563c030",
+      "width": 1656
+    },
+    "td": {
+      "height": 752,
+      "path": "countries/td.webp",
+      "portraitPath": "portraits/td.webp",
+      "portraitSourcePath": "browser/assets/countries/td-portrait.webp",
+      "portraitSourceSha256": "695c5b3c658e4083eea9388b2c9c34bbced8fce04679c5089aa169b3d9a8ec95",
+      "sourceCountryId": "td",
+      "sourcePath": "browser/assets/countries/td.webp",
+      "sourceSha256": "4ad6522e74226466b76699e1a549221a57ab686f2459318549f7e4a81a6b5b66",
+      "width": 1716
+    },
+    "tg": {
+      "height": 752,
+      "path": "countries/tg.webp",
+      "portraitPath": "portraits/tg.webp",
+      "portraitSourcePath": "browser/assets/countries/tg-portrait.webp",
+      "portraitSourceSha256": "845bdf7814114b3aff87ef27824d302f3d8a9c6e5636e98f33ab874347a1413d",
+      "sourceCountryId": "tg",
+      "sourcePath": "browser/assets/countries/tg.webp",
+      "sourceSha256": "587d49f2fe27f064235013b5b0b6bb804e62e130d78dc912eade14b1d7434d94",
+      "width": 1488
+    },
+    "th": {
+      "height": 752,
+      "path": "countries/th.webp",
+      "portraitPath": "portraits/th.webp",
+      "portraitSourcePath": "browser/assets/countries/th-portrait.webp",
+      "portraitSourceSha256": "0e4e16df42face01b89ed31d44536b15d3ec11b76554d529ce4c032309cf0002",
+      "sourceCountryId": "th",
+      "sourcePath": "browser/assets/countries/th.webp",
+      "sourceSha256": "aae76c5240e8f8aa76e1388bb0229ac330a920a4dfa1551c57cfd6138ed9f3ba",
+      "width": 1504
+    },
+    "tj": {
+      "height": 752,
+      "path": "countries/tj.webp",
+      "portraitPath": "portraits/tj.webp",
+      "portraitSourcePath": "browser/assets/countries/tj-portrait.webp",
+      "portraitSourceSha256": "627f550a582e17e2cd44d07198f8602ad99a54e8b4b0f6c2e42de8514c7e3f1a",
+      "sourceCountryId": "tj",
+      "sourcePath": "browser/assets/countries/tj.webp",
+      "sourceSha256": "e2eb78a4365372952e1be2c64497321401023f262aaa23989ecbb680f9bd1194",
+      "width": 1460
+    },
+    "tl": {
+      "height": 756,
+      "path": "countries/tl.webp",
+      "portraitPath": "portraits/tl.webp",
+      "portraitSourcePath": "browser/assets/countries/tl-portrait.webp",
+      "portraitSourceSha256": "15562d973d93f6be6823efa9a5a02e95ae5a12ea3afdb4570799ae9d3196e310",
+      "sourceCountryId": "tl",
+      "sourcePath": "browser/assets/countries/tl.webp",
+      "sourceSha256": "9a5af11a8e705daa0bfeb95e61e1aa75fd12cac74bb6a31aef37239c32cfcaee",
+      "width": 1504
+    },
+    "tm": {
+      "height": 752,
+      "path": "countries/tm.webp",
+      "portraitPath": "portraits/tm.webp",
+      "portraitSourcePath": "browser/assets/countries/tm-portrait.webp",
+      "portraitSourceSha256": "fda09919c90c04f07d42387a5dcb1ba344cad45e1c0247550a06e34915e6421d",
+      "sourceCountryId": "tm",
+      "sourcePath": "browser/assets/countries/tm.webp",
+      "sourceSha256": "a84377489d83d78f72bc2bfbd6c05ca6b723696ed51c1ce1bd6027400113a0ee",
+      "width": 1476
+    },
+    "tn": {
+      "height": 758,
+      "path": "countries/tn.webp",
+      "portraitPath": "portraits/tn.webp",
+      "portraitSourcePath": "browser/assets/countries/tn-portrait.webp",
+      "portraitSourceSha256": "a65e5206b50bbe96df899b1f3b6d10932e2b8efb3c1f78d695bc1b960be6c752",
+      "sourceCountryId": "tn",
+      "sourcePath": "browser/assets/countries/tn.webp",
+      "sourceSha256": "aa25f7af1d2f55a49baa3a92eb810723b696d8057c2ae9659a86188afcf81331",
+      "width": 1556
+    },
+    "to": {
+      "height": 754,
+      "path": "countries/to.webp",
+      "portraitPath": "portraits/to.webp",
+      "portraitSourcePath": "browser/assets/countries/to-portrait.webp",
+      "portraitSourceSha256": "3742aab60c3f817cc395701bd5947eef3c8d029833df4d224072b77df2d62499",
+      "sourceCountryId": "to",
+      "sourcePath": "browser/assets/countries/to.webp",
+      "sourceSha256": "0006a70049f05caa016d793d2b19fa79782ad4ab87f1c4ae382c7832a19c06cd",
+      "width": 1476
+    },
+    "tr": {
+      "height": 376,
+      "path": "countries/tr.webp",
+      "portraitPath": "portraits/tr.webp",
+      "portraitSourcePath": "browser/assets/countries/tr-portrait.webp",
+      "portraitSourceSha256": "8c6ac767829cac7bebdb3b5384b09e81aa7a7170b1e67a3343226f5d13c2116e",
+      "sourceCountryId": "tr",
+      "sourcePath": "browser/assets/countries/tr.webp",
+      "sourceSha256": "9ef59be77e165413699433f635b8be82544a2604a99c34c949afc2bff3a8037a",
+      "width": 1552
+    },
+    "tt": {
+      "height": 752,
+      "path": "countries/tt.webp",
+      "portraitPath": "portraits/tt.webp",
+      "portraitSourcePath": "browser/assets/countries/tt-portrait.webp",
+      "portraitSourceSha256": "1cd01432bc31b3cd3e889f98ca264eb2b0b120175972fb858cf74c0bab6fe0f3",
+      "sourceCountryId": "tt",
+      "sourcePath": "browser/assets/countries/tt.webp",
+      "sourceSha256": "da22afbaca9d1a17b8d8c635c86c6ec4accb99318b333fb5f4044332e69945cd",
+      "width": 1408
+    },
+    "tv": {
+      "height": 752,
+      "path": "countries/tv.webp",
+      "portraitPath": "portraits/tv.webp",
+      "portraitSourcePath": "browser/assets/countries/tv-portrait.webp",
+      "portraitSourceSha256": "af98eedb931fddd6dc26929b4450ee7439d0a832803c6f765418a47d51bf29c9",
+      "sourceCountryId": "tv",
+      "sourcePath": "browser/assets/countries/tv.webp",
+      "sourceSha256": "7189706e55e0f0cc6c79bbba7d6583565bd4ca53652afa97a3b1eb8e6afdc29b",
+      "width": 1652
+    },
+    "tw": {
+      "height": 758,
+      "path": "countries/tw.webp",
+      "portraitPath": "portraits/tw.webp",
+      "portraitSourcePath": "browser/assets/countries/tw-portrait.webp",
+      "portraitSourceSha256": "a6807243700d40b08f72837c41ead052bea5cdf1a4fb902cd0dfaa111a3d42e0",
+      "sourceCountryId": "tw",
+      "sourcePath": "browser/assets/countries/tw.webp",
+      "sourceSha256": "fdb9ff4b8977b00d8f1abc185bd9a6f41da31eb5bf0ffc2a6e2a5550698b510b",
+      "width": 1620
+    },
+    "tz": {
+      "height": 752,
+      "path": "countries/tz.webp",
+      "portraitPath": "portraits/tz.webp",
+      "portraitSourcePath": "browser/assets/countries/tz-portrait.webp",
+      "portraitSourceSha256": "098a11d36133c6d81a6b7739dc85fa2ae69ac4e4877bd8e279bdff6adaf5a3c8",
+      "sourceCountryId": "tz",
+      "sourcePath": "browser/assets/countries/tz.webp",
+      "sourceSha256": "5c35bf34cab99feef15b3b7b4d8be743cedf6eaf023bd73c220c4d0e6df874d2",
+      "width": 1560
+    },
+    "ua": {
+      "height": 758,
+      "path": "countries/ua.webp",
+      "portraitPath": "portraits/ua.webp",
+      "portraitSourcePath": "browser/assets/countries/ua-portrait.webp",
+      "portraitSourceSha256": "d8555911124c84182347649d17c3060b2b8412f4f2f1d2c5b525d544b5e08bbe",
+      "sourceCountryId": "ua",
+      "sourcePath": "browser/assets/countries/ua.webp",
+      "sourceSha256": "da75a1e4f128757b7efdea1c98854d9c3aac6b8e082d9330c22fb7fee9c29c1c",
+      "width": 1680
+    },
+    "ug": {
+      "height": 752,
+      "path": "countries/ug.webp",
+      "portraitPath": "portraits/ug.webp",
+      "portraitSourcePath": "browser/assets/countries/ug-portrait.webp",
+      "portraitSourceSha256": "d7a91bba09c3b47c0972e7233dd7a6e044034073724ef38dce71553ccf345364",
+      "sourceCountryId": "ug",
+      "sourcePath": "browser/assets/countries/ug.webp",
+      "sourceSha256": "dbce69b1a145f5c8c61109bb288a612516794607086f143b8131b7ab16d9a02d",
+      "width": 1680
+    },
+    "us": {
+      "height": 762,
+      "path": "countries/us.webp",
+      "portraitPath": "portraits/us.webp",
+      "portraitSourcePath": "browser/assets/countries/us-portrait.webp",
+      "portraitSourceSha256": "5d577ec00b87c6b6d1267fbea0182867b9b78385e766ab9a06110e151341fbb5",
+      "sourceCountryId": "us",
+      "sourcePath": "browser/assets/countries/us.webp",
+      "sourceSha256": "d9681764b77dc65a64e9a3ae45624a8de22742e8026d76027cbfc9caef9d9e5d",
+      "width": 1484
+    },
+    "uy": {
+      "height": 754,
+      "path": "countries/uy.webp",
+      "portraitPath": "portraits/uy.webp",
+      "portraitSourcePath": "browser/assets/countries/uy-portrait.webp",
+      "portraitSourceSha256": "de6009d357bb20929ddda305e6dab0642e6af7dd6febbad3feeaef3f9eb866e9",
+      "sourceCountryId": "uy",
+      "sourcePath": "browser/assets/countries/uy.webp",
+      "sourceSha256": "1330029fd6633f7967d0603244fa1bb6f6abf922458f565a6ba3aff64599b588",
+      "width": 1788
+    },
+    "uz": {
+      "height": 756,
+      "path": "countries/uz.webp",
+      "portraitPath": "portraits/uz.webp",
+      "portraitSourcePath": "browser/assets/countries/uz-portrait.webp",
+      "portraitSourceSha256": "605af8d6b6a22300b6e7d5d721e12e1df1e1a7ddf3dcec3b4eb50df0caba9a68",
+      "sourceCountryId": "uz",
+      "sourcePath": "browser/assets/countries/uz.webp",
+      "sourceSha256": "839623d68128d2c5c9528bd3cbdc12701d7bd97eb5df406719468327ee30a771",
+      "width": 1724
+    },
+    "va": {
+      "height": 752,
+      "path": "countries/va.webp",
+      "portraitPath": "portraits/va.webp",
+      "portraitSourcePath": "browser/assets/countries/va-portrait.webp",
+      "portraitSourceSha256": "5351ae6f9e9e6f532183bbeee38e905b7dadaed91eadda8a4516e1566900cb5b",
+      "sourceCountryId": "va",
+      "sourcePath": "browser/assets/countries/va.webp",
+      "sourceSha256": "9033910ada7b0d43432d4f06f77e6374bef61af486fa911524dc4d3a9afd1213",
+      "width": 1664
+    },
+    "vc": {
+      "height": 752,
+      "path": "countries/vc.webp",
+      "portraitPath": "portraits/vc.webp",
+      "portraitSourcePath": "browser/assets/countries/vc-portrait.webp",
+      "portraitSourceSha256": "c40ca5654b00becb74be4bb23f916959b64a487aef112fa020eceac5c274879f",
+      "sourceCountryId": "vc",
+      "sourcePath": "browser/assets/countries/vc.webp",
+      "sourceSha256": "ea7f53003113a48229229e8b590c1f8b295833347de26491460f6d0b21331dc1",
+      "width": 1276
+    },
+    "ve": {
+      "height": 752,
+      "path": "countries/ve.webp",
+      "portraitPath": "portraits/ve.webp",
+      "portraitSourcePath": "browser/assets/countries/ve-portrait.webp",
+      "portraitSourceSha256": "61e68a091b1ff2d9ff3ed8cacae5bb47e3e0a185667100f67c874f2589d0a7a4",
+      "sourceCountryId": "ve",
+      "sourcePath": "browser/assets/countries/ve.webp",
+      "sourceSha256": "d6d8bfcb40be6b189bee14a7f52a9db5287633a1f5079de00bfbb2baa283221d",
+      "width": 1716
+    },
+    "vn": {
+      "height": 756,
+      "path": "countries/vn.webp",
+      "portraitPath": "portraits/vn.webp",
+      "portraitSourcePath": "browser/assets/countries/vn-portrait.webp",
+      "portraitSourceSha256": "0f45f442daca24a30a6dfd7de8ae30da8e6d0ee84b12d1b020e88565cd67d26d",
+      "sourceCountryId": "vn",
+      "sourcePath": "browser/assets/countries/vn.webp",
+      "sourceSha256": "6ff790439583dca0cb0dcaff582f74603fd992e0668b860336abe5524116cd18",
+      "width": 1668
+    },
+    "vu": {
+      "height": 752,
+      "path": "countries/vu.webp",
+      "portraitPath": "portraits/vu.webp",
+      "portraitSourcePath": "browser/assets/countries/vu-portrait.webp",
+      "portraitSourceSha256": "c5df29640c5ef295a189f90daa4a6224cedba2552b5fe89679b8dbe0ca9feaea",
+      "sourceCountryId": "vu",
+      "sourcePath": "browser/assets/countries/vu.webp",
+      "sourceSha256": "6d52bb16343b6d9d7066dcf444b51a61e78401ed506f08245e122590e80b125e",
+      "width": 1756
+    },
+    "ws": {
+      "height": 772,
+      "path": "countries/ws.webp",
+      "portraitPath": "portraits/ws.webp",
+      "portraitSourcePath": "browser/assets/countries/ws-portrait.webp",
+      "portraitSourceSha256": "a3193ecf86fc30734872dc92422538a492b3b8b9fdb1369a64d7131c68978be3",
+      "sourceCountryId": "ws",
+      "sourcePath": "browser/assets/countries/ws.webp",
+      "sourceSha256": "47840b02af34f3c6654365eb995d7788a9ff897275535a52dbefa484aae72a9a",
+      "width": 1280
+    },
+    "ye": {
+      "height": 754,
+      "path": "countries/ye.webp",
+      "portraitPath": "portraits/ye.webp",
+      "portraitSourcePath": "browser/assets/countries/ye-portrait.webp",
+      "portraitSourceSha256": "6cf35da4d2a120a2f80d7c77b13be17d737121005231d7fca218c480fc19d88f",
+      "sourceCountryId": "ye",
+      "sourcePath": "browser/assets/countries/ye.webp",
+      "sourceSha256": "0edf76719e4b96a6060019908566e836bc7b5029e847713f5f88d77ddd39908e",
+      "width": 1736
+    },
+    "za": {
+      "height": 752,
+      "path": "countries/za.webp",
+      "portraitPath": "portraits/za.webp",
+      "portraitSourcePath": "browser/assets/countries/ss-portrait.webp",
+      "portraitSourceSha256": "7cc776df797adb6abf79e4f2db2417e538e5590412644ca0a4d17f8ff2f5fc71",
+      "sourceCountryId": "ss",
+      "sourcePath": "browser/assets/countries/ss.webp",
+      "sourceSha256": "d40d6a95e78714078d92b706e3128d091eb56138a2559aca4841189aecc9bc4f",
+      "width": 1224
+    },
+    "zm": {
+      "height": 752,
+      "path": "countries/zm.webp",
+      "portraitPath": "portraits/zm.webp",
+      "portraitSourcePath": "browser/assets/countries/zm-portrait.webp",
+      "portraitSourceSha256": "ce4b3d4d744b662cc199c0509379ab4a60e9c0bc267dfd495c2df812113e9000",
+      "sourceCountryId": "zm",
+      "sourcePath": "browser/assets/countries/zm.webp",
+      "sourceSha256": "adcda74c7877311575c75842612ed86b115bb0f4138a8c14a3fe94d42d3adea6",
+      "width": 1668
+    },
+    "zw": {
+      "height": 752,
+      "path": "countries/zw.webp",
+      "portraitPath": "portraits/zw.webp",
+      "portraitSourcePath": "browser/assets/countries/zw-portrait.webp",
+      "portraitSourceSha256": "8d6e72cc0fdd203e90a7e166a94283f41beb24061986d108bc60b5ec5fe048b8",
+      "sourceCountryId": "zw",
+      "sourcePath": "browser/assets/countries/zw.webp",
+      "sourceSha256": "73493166f8d6cb6a9addbbc0e61e5fd56687d973a85cd34e4fce8fd3911afeb9",
+      "width": 1540
+    }
+  },
+  "fileCount": 430,
+  "files": {
+    "CREDITS.txt": {
+      "bytes": 12591,
+      "sha256": "7b0339c3dcc0835a1bf275114f66227f8fbfaccf234cac00e5052d69734379ee"
+    },
+    "arenas/angkor-causeway.webp": {
+      "bytes": 378080,
+      "sha256": "f403f1649915bbcd3a7f7c8f327dde1c847eeb41f8899edcf0cb19f4e640c7fc"
+    },
+    "arenas/angkor-temple.webp": {
+      "bytes": 360026,
+      "sha256": "810c8e42abffc05933780cdd24030243b1298b26f6cc380ab8ecb261e5ee5b7c"
+    },
+    "arenas/athens.webp": {
+      "bytes": 343506,
+      "sha256": "a5941a569b886617137c6e1e9a96d0e8977b641c1bacda363f6087a88a739aa3"
+    },
+    "arenas/bagan.webp": {
+      "bytes": 308584,
+      "sha256": "6d2e7a979c88dc4f7a171f205d9c39667259cc0c515bb23def07c1be9e73c210"
+    },
+    "arenas/barcelona.webp": {
+      "bytes": 334408,
+      "sha256": "317a3d6d05aafd80ae5af513955da01ad0cd2ac81445c9a13817a3528ae3324a"
+    },
+    "arenas/burj-al-arab.webp": {
+      "bytes": 341532,
+      "sha256": "2cf62ce71e9e5c7865bc86d79d0562bebdac3d791e264d146f684e3f45392a87"
+    },
+    "arenas/cappadocia.webp": {
+      "bytes": 321512,
+      "sha256": "ec80324f2a1fb8246b30d25d6f242b14ce741d38512003677e0603e64db22bfc"
+    },
+    "arenas/chichen-itza.webp": {
+      "bytes": 345152,
+      "sha256": "b3b081191c334f2df732f65b26f2a9b0a65d02e824cd8e3f39a25dcd3a3ffbfd"
+    },
+    "arenas/dubai.webp": {
+      "bytes": 300348,
+      "sha256": "b7571696cab831557c04138a76282de77098eae88ed5b81017bdd6d821983c4c"
+    },
+    "arenas/easter-island.webp": {
+      "bytes": 335068,
+      "sha256": "aad01a587731961777acd96a06f062e50a5b8855882f05b812303b577016d465"
+    },
+    "arenas/giza.webp": {
+      "bytes": 238180,
+      "sha256": "cfcea04f0a766503c4794ce1d434ad4c7b471ac794effcebe9ed09e8e77e816f"
+    },
+    "arenas/great-wall.webp": {
+      "bytes": 320602,
+      "sha256": "d11523855a8decf0e36b401bd5595e2ea3849b34cd85d70f30086bb644133759"
+    },
+    "arenas/hagia-sophia.webp": {
+      "bytes": 303314,
+      "sha256": "7be96550d7df8b128330b2bd6fb610b7cd5b63092b916bb20db74adb9ce65906"
+    },
+    "arenas/lahore.webp": {
+      "bytes": 235728,
+      "sha256": "f336c15e62014e98d8d1d7ed8ec0f7f50109621db8cced054e94eea9fa529771"
+    },
+    "arenas/liberty.webp": {
+      "bytes": 321718,
+      "sha256": "c253136af6d0e4e7baf4b14d289838780aeca182a48aae1916df801d7b4c71e8"
+    },
+    "arenas/london.webp": {
+      "bytes": 338086,
+      "sha256": "902c9cf6554738f9bd8c8700a5bfc757fd04eb011338cb686fa032f49273450c"
+    },
+    "arenas/machu-picchu.webp": {
+      "bytes": 345756,
+      "sha256": "fcf72178346f65d60c4d521474c09251f144f9fa455a9c3453a2ebf51f122555"
+    },
+    "arenas/mount-fuji.webp": {
+      "bytes": 374234,
+      "sha256": "f4f2aca7c5a93f477fde235f9a597f5dc8ec7f33950d50a9c426029a6621d6bd"
+    },
+    "arenas/niagara.webp": {
+      "bytes": 317914,
+      "sha256": "b136dbc4c90b08f59d2cf3c4dd305b8073dabd8d916a3440d932b335cc6e240f"
+    },
+    "arenas/paris.webp": {
+      "bytes": 296810,
+      "sha256": "3e62c6487a825a7147d2410254c6c4f33ca08740223e215e45d52cfaba027fa9"
+    },
+    "arenas/petra.webp": {
+      "bytes": 349646,
+      "sha256": "6670e190d1afdcb791fc90f16066cd7128c428f239eeedb45836185c43c9cf6e"
+    },
+    "arenas/rio.webp": {
+      "bytes": 319900,
+      "sha256": "168b32a65570fc2a65654021054a4bc43c17bbb299d95ab1e1f3847aacfafd87"
+    },
+    "arenas/rome.webp": {
+      "bytes": 330216,
+      "sha256": "621899ca88eea2bf736fe78ccd071ec0ffd58f4140fb4fbaa3e99cad8d2cd631"
+    },
+    "arenas/santorini.webp": {
+      "bytes": 333194,
+      "sha256": "dfc4948e5d5aacdc3592e64ece863455e1f1e95d673326883c789195e42ca768"
+    },
+    "arenas/stonehenge.webp": {
+      "bytes": 276108,
+      "sha256": "e8f14e937c387accf9d06b118de22d5bfd92bd6c0284ade9022b51148d85b214"
+    },
+    "arenas/sydney.webp": {
+      "bytes": 336064,
+      "sha256": "4c2f88bfefdcff0ca01e78afe03eb5a70900bcd557f76631573dcf6d51c60d46"
+    },
+    "arenas/taj-mahal.webp": {
+      "bytes": 301596,
+      "sha256": "a57d421e1452a5be638abea248cc14903c0dadd86506b3c24ebd2211881bd905"
+    },
+    "arenas/times-square.webp": {
+      "bytes": 390326,
+      "sha256": "33fd7d5a3360190d34f22666236f7edbc8a8d8fea0ee5ca5d058c1ef82326ebd"
+    },
+    "arenas/tokyo.webp": {
+      "bytes": 439966,
+      "sha256": "5acfce27e3df07d47d16bb79f636bf16f112f28114e9f6a65092b68c935c603a"
+    },
+    "arenas/venice.webp": {
+      "bytes": 335252,
+      "sha256": "a6b0a0785fab648efbbcc4b7ba49cfb9e8011aa98b895e1ba115e67cd5cc0200"
+    },
+    "brand/logo.webp": {
+      "bytes": 341874,
+      "sha256": "d06638cd8b5bf9b0ab8818cc2c3f015d943a7f59ac769ab5c28a8d84c558a8c7"
+    },
+    "countries/ad.webp": {
+      "bytes": 359862,
+      "sha256": "079a6380f5937e4f2f9910a997213cd93f2d37606b39f004364b28ee4b03c151"
+    },
+    "countries/ae.webp": {
+      "bytes": 408616,
+      "sha256": "f53544b2352791268de1ce17f74a33ca34505349601c07fc7054f0459a05f22d"
+    },
+    "countries/af.webp": {
+      "bytes": 362022,
+      "sha256": "02bfe5050ae16cce799de931aa141e1ef179ca66215f286c904ce274885760b7"
+    },
+    "countries/ag.webp": {
+      "bytes": 353336,
+      "sha256": "3e3ce6d6aea21e61427e6cd8c40f2c8f51bcfc8fe3c83e8dd49dd0ec91ef144a"
+    },
+    "countries/al.webp": {
+      "bytes": 327070,
+      "sha256": "f0874dde1d27acf431a135b78a3cf9c90778995d9b1ef9787fa35b0e00d4aa8e"
+    },
+    "countries/am.webp": {
+      "bytes": 358724,
+      "sha256": "41518291b97891a5a09c6feae72a713c958d45207584bce19d304a18f1005f63"
+    },
+    "countries/ao.webp": {
+      "bytes": 357854,
+      "sha256": "75eaa61ddb08b5848da199a0bd7120459c337c6fb225316f45824a352e92589b"
+    },
+    "countries/ar.webp": {
+      "bytes": 401588,
+      "sha256": "e31f2618c6686d94b0e22396e7f6c019355bc06907f38cd2212094f4c9837c3f"
+    },
+    "countries/at.webp": {
+      "bytes": 382120,
+      "sha256": "9c32061ebc2bb6bd62ea78242c7bc1e43cdbe3e7dce2c4beebbe9c307cff3cb7"
+    },
+    "countries/au.webp": {
+      "bytes": 393196,
+      "sha256": "09366561af7b64e6314240f2856e6a51616efa75f6e7a3d449ef49cc59344bed"
+    },
+    "countries/az.webp": {
+      "bytes": 383332,
+      "sha256": "851c3f9eea43d079fff7b6650e60574daecc6583a6df5c1d3b80a2cbbed00f66"
+    },
+    "countries/ba.webp": {
+      "bytes": 384954,
+      "sha256": "f4ec7c9ec5d1244308e79da4d2818c731469faebcf33e7250352bd7a8a82e1da"
+    },
+    "countries/bb.webp": {
+      "bytes": 374426,
+      "sha256": "4be27b5f5d243ff50a777db7ce17f8744330004a690e0ab18ea71a56d48e1b9a"
+    },
+    "countries/bd.webp": {
+      "bytes": 367294,
+      "sha256": "223170d3e43a5eb17506806bbcc02902b3fc934f59949769d7984fd6c6ac8970"
+    },
+    "countries/be.webp": {
+      "bytes": 363036,
+      "sha256": "bf29a4eb54befe33d05524e120c61386e8fa381cc7cbdcec6462338021e3147a"
+    },
+    "countries/bf.webp": {
+      "bytes": 363958,
+      "sha256": "f4dbe8bb4097937b0e3de02c6d29739c50a2e51328a33bec8f63374a77b24987"
+    },
+    "countries/bg.webp": {
+      "bytes": 339976,
+      "sha256": "ffc61caa284e5b093d3c50a413e213b98d7d2d6ea0a32721e13f804f368f1c3e"
+    },
+    "countries/bh.webp": {
+      "bytes": 400148,
+      "sha256": "5b6244b0a715b42d3c5fef9c0483240f57d729c155156d364e83604f9d51db53"
+    },
+    "countries/bi.webp": {
+      "bytes": 340468,
+      "sha256": "e8bb422abf097bc7882d81bd9b042ba7885879821a9089c9f904d4396e629eea"
+    },
+    "countries/bj.webp": {
+      "bytes": 364926,
+      "sha256": "2360044d88e64e59c2c2e9fc58ccaa931e9c16bd84787fed3be0eed27dac75d1"
+    },
+    "countries/bn.webp": {
+      "bytes": 349092,
+      "sha256": "8b5b3cfdc78e02674e804739a36c218a1b8c20b1f3a26092bc1ff43597228755"
+    },
+    "countries/bo.webp": {
+      "bytes": 376652,
+      "sha256": "25bd04cb422a4de4918bcab5d67db3a1079c297b462fd587290555d6a48154db"
+    },
+    "countries/br.webp": {
+      "bytes": 378054,
+      "sha256": "9d8ae0e67703bfd648c9eab7baf1f39930ed2d6984bda6832ffd505df98e7d84"
+    },
+    "countries/bs.webp": {
+      "bytes": 365248,
+      "sha256": "77bfef5b4707f1d9fd1792f07d1afe7525620acffdc1673a41b50b88308b2dbe"
+    },
+    "countries/bt.webp": {
+      "bytes": 387654,
+      "sha256": "a38ccc4b46f2bec958a090412917f6a0bf69abb68fd01d940b87c4b9d1248a40"
+    },
+    "countries/bw.webp": {
+      "bytes": 355828,
+      "sha256": "a1383d897e6a6128cccdab162804a59c01061cbe025bac81c77a12a7892e5a1f"
+    },
+    "countries/by.webp": {
+      "bytes": 336084,
+      "sha256": "31db88299d6224d4925abffe6dd8fe2766da4a2c525327ba1baaf5e092b64aa4"
+    },
+    "countries/bz.webp": {
+      "bytes": 332290,
+      "sha256": "8ca703cd3a050b4a82a65d0a19e9dcd61e841071a4de9aa0ff190f5f4c94094e"
+    },
+    "countries/ca.webp": {
+      "bytes": 364006,
+      "sha256": "c46c43e8c66434dc3e9d345b00b7cb68789b7bda52503ed3abdc45b88e431d1b"
+    },
+    "countries/cd.webp": {
+      "bytes": 393500,
+      "sha256": "b5a33ab90c5678c1f65fe9d776a45aa565d68748aec8f22d606c9196f10a1f69"
+    },
+    "countries/cf.webp": {
+      "bytes": 348038,
+      "sha256": "0a227afcd032ef0b1441e474a876a1fe09c52577de1b6d1859bc7df03eeb6275"
+    },
+    "countries/cg.webp": {
+      "bytes": 303484,
+      "sha256": "f63d74ca235e562c00f3ef945bf3b200eb7c409bda96762ff55a8c146be85e98"
+    },
+    "countries/ch.webp": {
+      "bytes": 257440,
+      "sha256": "f1b2ad129a07ff768cec26f8be8af38f985d9a7d52ffa6716d7630f611a638c0"
+    },
+    "countries/ci.webp": {
+      "bytes": 353716,
+      "sha256": "9ca4fcf6ba751805c427e12844108922eb45f05d7ed32b0ab482e9cefbf96b61"
+    },
+    "countries/cl.webp": {
+      "bytes": 340864,
+      "sha256": "ee9bd8fcb4c0bacfa55644c40faa35b3c847ce6bb08293584d17ad01b88779ea"
+    },
+    "countries/cm.webp": {
+      "bytes": 372272,
+      "sha256": "532b3cdcd2106269e66d9e73ff786ddad08ae05393e86fd7b081d4e61d2afde1"
+    },
+    "countries/cn.webp": {
+      "bytes": 409152,
+      "sha256": "06821e5bcb668f38b02937f797909d0286f250af10292f78972b80ad0ad3d6df"
+    },
+    "countries/co.webp": {
+      "bytes": 390018,
+      "sha256": "9db4c9e5a44069ca3b3fde9ef825c4bb32cc7422afb83e421ab1570cc90ec1be"
+    },
+    "countries/cr.webp": {
+      "bytes": 387048,
+      "sha256": "88e259ed6fc82fd359da8b6bc2d678f3200471ad408ace9a29d8f7b2b6c2a932"
+    },
+    "countries/cu.webp": {
+      "bytes": 342098,
+      "sha256": "0331d9e08d4ba8d4c87ba1be18debc64a5bcbd081fadcab2ea5e8d6d116ae837"
+    },
+    "countries/cv.webp": {
+      "bytes": 362030,
+      "sha256": "cd9126b62417b6e991f39e10a0ad7f8345559edbe2f8b50e105cdd864e2db396"
+    },
+    "countries/cy.webp": {
+      "bytes": 362384,
+      "sha256": "68f3774327973ffdba7ef8fcc5c9c91a428fcc7e143f2f4b69f09b97615d8041"
+    },
+    "countries/cz.webp": {
+      "bytes": 362946,
+      "sha256": "63bb34d2ae064e2581b761ac2c9b74c4f623d89e6b4c5ed45b92a2102d14c88b"
+    },
+    "countries/de.webp": {
+      "bytes": 367036,
+      "sha256": "62469ee16ffe754f5031cf4320c0cad215a3e5e4564df9fef225d30c3bf61d1b"
+    },
+    "countries/dj.webp": {
+      "bytes": 380678,
+      "sha256": "d60d4666bfa37ed3c971fd6d24da998f1bc86952739647cb0f7127842121c7fd"
+    },
+    "countries/dk.webp": {
+      "bytes": 377052,
+      "sha256": "a361671b3256076b2e8acb6924413ce67eef4ea691a4607259f44ddbb4a437ac"
+    },
+    "countries/dm.webp": {
+      "bytes": 369068,
+      "sha256": "9eb29ee438d4d9f58a8165300261a58dceb8f02080ca1fbef03958a5a9017bfe"
+    },
+    "countries/do.webp": {
+      "bytes": 366610,
+      "sha256": "b998ff677ac155c1fe26722856aec290ae77e0a5961f07aa371c99006462cb67"
+    },
+    "countries/dz.webp": {
+      "bytes": 383890,
+      "sha256": "295ebce733175c5fa1f1b0d6c369d7d6ad3272bedb9dbb2153a22cb4dbecd27e"
+    },
+    "countries/ec.webp": {
+      "bytes": 394364,
+      "sha256": "d28034a5bf6d2f7be68a2998044b6cf97644311a83e2c786da314a34637d037a"
+    },
+    "countries/ee.webp": {
+      "bytes": 388556,
+      "sha256": "ad6b5308bf021e800e36327081609beb9abb535f73e79fa36fc0a74bfc277f34"
+    },
+    "countries/eg.webp": {
+      "bytes": 385242,
+      "sha256": "debf6af24cb970a178b320f74d9e83b55b55e868dd15e35b2f9e7dc42c6262d2"
+    },
+    "countries/er.webp": {
+      "bytes": 394632,
+      "sha256": "7d5b1d46feca5774a8df86d9ea48233b81bc4eb7f51c290c87a37e452f5b1e46"
+    },
+    "countries/es.webp": {
+      "bytes": 277168,
+      "sha256": "7ba897f627ab57470377393f2d24e47dbb624e9d401e3184cff6d0a5669e3d4e"
+    },
+    "countries/et.webp": {
+      "bytes": 384828,
+      "sha256": "7d6b908eb5f43796b690a71f81fee7fa6f389600e24e77841d376e489d3d721e"
+    },
+    "countries/fi.webp": {
+      "bytes": 357482,
+      "sha256": "b909bdc667fa69a7be9f4280237132eb380b972fa3b020107039f4b7e611dec1"
+    },
+    "countries/fj.webp": {
+      "bytes": 431744,
+      "sha256": "bab294e99404b06b770c7a8ba3fc579d1584b30a6e8457aaa29a55aa01fca8dd"
+    },
+    "countries/fm.webp": {
+      "bytes": 387188,
+      "sha256": "6e811862d1782cb65e72fb7efed761faf0329bd3514b3cf9cbc99caf2293ee08"
+    },
+    "countries/fr.webp": {
+      "bytes": 354968,
+      "sha256": "97b1fc94199e7de0352ca488490dc933cfe1248df385ef81da95c1205c09f7f6"
+    },
+    "countries/ga.webp": {
+      "bytes": 394970,
+      "sha256": "b65377ea935bf0bebda968368ff5beaeb604d3cada0b3da36d51dc3dfc2a6bac"
+    },
+    "countries/gb.webp": {
+      "bytes": 404352,
+      "sha256": "a4ea1d422084f031bbd3f6c379f92ecf19608fa1b43a412f39fb0c51422d927a"
+    },
+    "countries/gd.webp": {
+      "bytes": 343142,
+      "sha256": "3bc86f83a06f8c0bc0f312d752174e66cb08dd901c458ec07a91c2cdcda79783"
+    },
+    "countries/ge.webp": {
+      "bytes": 389322,
+      "sha256": "deadea3e69a376567e3a01e5bce97219176c41c68b5ec3e181e47235020fe607"
+    },
+    "countries/gh.webp": {
+      "bytes": 354512,
+      "sha256": "dee322ccf7300573db13932d16249a0ca212b18c2b948a0a7d5f08d9c65f26e9"
+    },
+    "countries/gm.webp": {
+      "bytes": 402538,
+      "sha256": "bd43e20ae7fad021f179497be2d563c75a8eac8ec0a266f689883c1e5244a612"
+    },
+    "countries/gn.webp": {
+      "bytes": 281896,
+      "sha256": "7ecdc9228cdc66e7086b23d9ae6b50ea55b932e7d9456ddf1938d8bfd730ad22"
+    },
+    "countries/gq.webp": {
+      "bytes": 351596,
+      "sha256": "a3b2fabbb7e920b436daa85effcb1715d61be6bd4ced7f3715f597cf3425e236"
+    },
+    "countries/gr.webp": {
+      "bytes": 302788,
+      "sha256": "e522da5613c40d1ae9b351b545730c0c07fdcfb397b8f436f8c5620750168538"
+    },
+    "countries/gt.webp": {
+      "bytes": 394688,
+      "sha256": "d7983f390de262a857330c0327330e394c575b5144ce3c8fb34d8a9f44786cfe"
+    },
+    "countries/gw.webp": {
+      "bytes": 390504,
+      "sha256": "d4dfb11282d2f40a0b0149d20cc62e5e6139077ea758b6dee06e903d01d82b2a"
+    },
+    "countries/gy.webp": {
+      "bytes": 382424,
+      "sha256": "a2a279ad1ace83788ba59c9183b7b05f32b13299cabc9c2ff5fe1b0c216ce590"
+    },
+    "countries/hn.webp": {
+      "bytes": 284656,
+      "sha256": "42cf6d7962a7f84bb87105831307749d4948b8f08a5e32b5b5c2c07607418993"
+    },
+    "countries/hr.webp": {
+      "bytes": 382000,
+      "sha256": "c32ce0ade866bbf6229c9a624dca169010693fcbcd950cbac14df2c58a518a51"
+    },
+    "countries/ht.webp": {
+      "bytes": 297300,
+      "sha256": "40f3eadfc9c65c82789f4edcb6b6df83a0ef400af030f077479f8fe43bae2a19"
+    },
+    "countries/hu.webp": {
+      "bytes": 259302,
+      "sha256": "73c3bd8bb4d3895a39c22e1da587b996456604af499203d2eb38f74879821f67"
+    },
+    "countries/id.webp": {
+      "bytes": 377372,
+      "sha256": "cdbc0c131dc4f1b76e0d5d6c19ce61157a0f4a635007f7f2963fc7e85db0e59d"
+    },
+    "countries/ie.webp": {
+      "bytes": 367556,
+      "sha256": "417fef1084b098451ad0f4b9f5527944768a7e595a32da60c6c5bbd235896809"
+    },
+    "countries/il.webp": {
+      "bytes": 387574,
+      "sha256": "d7a9620f5759390f627eaa4f96c96b91e7dcffe833ee2cf6d1e6bfbc66d86457"
+    },
+    "countries/in.webp": {
+      "bytes": 363706,
+      "sha256": "b08bad6a82b7548328306ff54217fc4e0d5957cb025a1e8a2dae2a776cd974ec"
+    },
+    "countries/iq.webp": {
+      "bytes": 364870,
+      "sha256": "00177e1b0f5feb6a356e234f5d9ae8afa8c7e548c9cd0c8c3e02858bb1b51c26"
+    },
+    "countries/ir.webp": {
+      "bytes": 358580,
+      "sha256": "0c8288882887f2c88d8a23f32f19816f5dca00f5d1cf2ae85f45e0daafa038ab"
+    },
+    "countries/is.webp": {
+      "bytes": 384766,
+      "sha256": "1ff7d213ab0947877bd606378be600425d94e15bae8237a741e203f1380c466a"
+    },
+    "countries/it.webp": {
+      "bytes": 355260,
+      "sha256": "7ef2c3e187ddfbb64220909e95c0cf0f3a43c915b315b5b238f9a3712d6e5aa3"
+    },
+    "countries/jm.webp": {
+      "bytes": 343824,
+      "sha256": "9795c88e5c0c38edcec5afe579f1b02c2ee47f861e8d24d1937d8166e5905340"
+    },
+    "countries/jo.webp": {
+      "bytes": 396586,
+      "sha256": "2041a308226efbe45d4f72ef7249ca022e853d244e1d6fa9c816e235f89696bd"
+    },
+    "countries/jp.webp": {
+      "bytes": 303288,
+      "sha256": "5cb1b9d26522d777e31c99b20b9830b1f6ae50b737de6d0498411de4a3de93f7"
+    },
+    "countries/ke.webp": {
+      "bytes": 370000,
+      "sha256": "4b42190040ad616c9797a0dac8202636284083c85624d421cbb7a470a14d2711"
+    },
+    "countries/kg.webp": {
+      "bytes": 360744,
+      "sha256": "61aa47f149377f5500ff88564a1b0b520828f359240e296e5c4b088b718470c9"
+    },
+    "countries/kh.webp": {
+      "bytes": 347960,
+      "sha256": "927e7f7b2f7d85211981d48589041726dcb640812b42a039ee9ee2a330145009"
+    },
+    "countries/ki.webp": {
+      "bytes": 361624,
+      "sha256": "7fbf57cbef82a9e2d03b4f5682a7a30d25f245daa7f649189d7f679e5f7ef2cd"
+    },
+    "countries/km.webp": {
+      "bytes": 361792,
+      "sha256": "3b9818b9488f14843b89fa9f5207536d37d708e2ecce442bafc23990fa337778"
+    },
+    "countries/kn.webp": {
+      "bytes": 325048,
+      "sha256": "6a56f32aad602cc94f4cb826c274f0959493afbeed6f20e4d0c04ef4dca16dd3"
+    },
+    "countries/kp.webp": {
+      "bytes": 325070,
+      "sha256": "bff5c5170728ac0843c39a4d71fe8463c002da617ccb56bcf25617b997b0d9d5"
+    },
+    "countries/kr.webp": {
+      "bytes": 269686,
+      "sha256": "3786d6a26330393e9a7ecc37651f35bebcf708dfa975a0e0fd91e1a791067044"
+    },
+    "countries/kw.webp": {
+      "bytes": 380662,
+      "sha256": "bc42b022de19d67037ce61adacea4b82ddac3af87738961c87e4b3682c971ae0"
+    },
+    "countries/kz.webp": {
+      "bytes": 382652,
+      "sha256": "d0e1a2e32351c0628d59282b6db5ae976f6fe49800e2b2bde9e802a8a7fede08"
+    },
+    "countries/la.webp": {
+      "bytes": 352276,
+      "sha256": "365adfd9b0d13ce0b8636a6695182eec3d938ccd2d4e567e3d6c0dcf8b551af8"
+    },
+    "countries/lb.webp": {
+      "bytes": 368300,
+      "sha256": "a9672f8fd7ae35e7ed6fb7cc8da1ec0fa07be3886075096dea30e46dcb0d328e"
+    },
+    "countries/lc.webp": {
+      "bytes": 318538,
+      "sha256": "a6e8a19d0a8b869686d22123367d397b1a1d4c66e70f1dca5454dc310f4aafeb"
+    },
+    "countries/li.webp": {
+      "bytes": 332178,
+      "sha256": "ef25aca9e06a05e50f1741cdf7f4f5f6a0f6c23a9d1d511c6dc7a1990c9127e9"
+    },
+    "countries/lk.webp": {
+      "bytes": 287452,
+      "sha256": "19223a4761b49838fdbbf4290310cd7319863207297f9acf5dfa620b4e26e3e7"
+    },
+    "countries/lr.webp": {
+      "bytes": 376794,
+      "sha256": "a5dd52423a64f3faee836dc159cf1c6b27b925801403b5c7548e6d51ea97ac1e"
+    },
+    "countries/ls.webp": {
+      "bytes": 367832,
+      "sha256": "df07788aa32f0308c90d0fad84e9812317f07e9f81c684072a2b0a4a34dea9c9"
+    },
+    "countries/lt.webp": {
+      "bytes": 360088,
+      "sha256": "0e614002f259760fa6932ee4a59c6b61270d5743b262d9e6aa11206c42ed45ce"
+    },
+    "countries/lu.webp": {
+      "bytes": 358742,
+      "sha256": "4771f1c7197ca8d984d3231bf2c2d79c286a96fac9a1d0b14ef0b42efbd981d1"
+    },
+    "countries/lv.webp": {
+      "bytes": 351786,
+      "sha256": "4e0df198f2cd2ae528fc3eb0a3cdc85da960c6427305183bc5041f413b3ebf1d"
+    },
+    "countries/ly.webp": {
+      "bytes": 329518,
+      "sha256": "1263bab4812c46d11fbd8c5d74d472d9ae38e1ddce219ea9bf2c85c5795f160b"
+    },
+    "countries/ma.webp": {
+      "bytes": 282308,
+      "sha256": "590800d2457bfcef22a784b6979e8f2303c797a03e53e354cfc891716069d611"
+    },
+    "countries/mc.webp": {
+      "bytes": 379210,
+      "sha256": "c3a170465bc276bb87085b521bb0ba6f0b511a1ef225b5dbdaa26a84f9ef8bf7"
+    },
+    "countries/md.webp": {
+      "bytes": 379582,
+      "sha256": "b251013ab863f17db0a0f22fe0aea1c1002215bea2bf49aac3e61bd152438fc4"
+    },
+    "countries/me.webp": {
+      "bytes": 255668,
+      "sha256": "5510c4cc1e347ea5e306cc36a6787b7f37b76bd9bc38337e53066edddd7303e3"
+    },
+    "countries/mg.webp": {
+      "bytes": 354732,
+      "sha256": "bc76737e0ddb5b5a9cc9f11c7bfa59f140ce3be0b9a00226c4510014f1719b1f"
+    },
+    "countries/mh.webp": {
+      "bytes": 372212,
+      "sha256": "45d6ba25e77227b10241c49e316d13a62918045045b46ca59dd1dae3f36f3375"
+    },
+    "countries/mk.webp": {
+      "bytes": 354186,
+      "sha256": "8f9375d7eb17406c5e3c6fe6abf000d62e5a260fa90dd640e7d56c0c1c92852e"
+    },
+    "countries/ml.webp": {
+      "bytes": 348528,
+      "sha256": "ed3facd6d60b37fba31870aafd89d44cffd78fe438dfa4a3a3c0b40d2db88597"
+    },
+    "countries/mm.webp": {
+      "bytes": 397870,
+      "sha256": "f85a24e25ee81c28b6ecddfaf92749931c4552d51ac19eb6d4d0b7ed076205b1"
+    },
+    "countries/mn.webp": {
+      "bytes": 285286,
+      "sha256": "d6d1aa6624a82b1d755501adcf8287462119222b3e4247b3292ab53ebc8c16ae"
+    },
+    "countries/mr.webp": {
+      "bytes": 368342,
+      "sha256": "664067757dff4969d5d7a5fce199149265292aeb91d50a11f0a6ec22eb6a6a40"
+    },
+    "countries/mt.webp": {
+      "bytes": 269580,
+      "sha256": "e94e487d1a4faca442aaebf34e6ac5b6f454575a04f2933973074369df4c87be"
+    },
+    "countries/mu.webp": {
+      "bytes": 315410,
+      "sha256": "bc879333ae212af0f0181290ef57ed0583962234fa2b37dcf683faea4444f0ff"
+    },
+    "countries/mv.webp": {
+      "bytes": 290186,
+      "sha256": "59be70f8a28129984bff633eda27b171abd3107022544da7180148289fa28547"
+    },
+    "countries/mw.webp": {
+      "bytes": 313872,
+      "sha256": "98a493dba404a6556150c03caa59ad0d99077ab1eaa9f8e4c3618551ab8d863e"
+    },
+    "countries/mx.webp": {
+      "bytes": 319316,
+      "sha256": "42a8dfe436c8f790711b68216ead9445a5714a56f269f4d6e46f9a84db0a3fa6"
+    },
+    "countries/my.webp": {
+      "bytes": 376396,
+      "sha256": "1a9317c92776260a5b0baa4dd8e8a2def3d54db9eb2a074039b97309de14c461"
+    },
+    "countries/mz.webp": {
+      "bytes": 368012,
+      "sha256": "abf0d55842a5880ed85f928c010a2eb57819649d0351bdb21ecca833772efc82"
+    },
+    "countries/na.webp": {
+      "bytes": 359046,
+      "sha256": "ea91ab7b803325a0a1ab579cf13e47f7b3d41e3dab5a766d1407e0b285470e82"
+    },
+    "countries/ne.webp": {
+      "bytes": 366446,
+      "sha256": "fc7c541645a3c507c70b25a5c282aacae7d500cfbe63dfccf4a47deb6cf6b73a"
+    },
+    "countries/ng.webp": {
+      "bytes": 370242,
+      "sha256": "718bc72ea0038b2d5748421363defd63a1b63a161d141faf7138c2ccde0bb682"
+    },
+    "countries/ni.webp": {
+      "bytes": 375908,
+      "sha256": "47eaeff894de163fd34aebb9d56245d4a762c8bcba4e03806d003a5cb3c7ab69"
+    },
+    "countries/nl.webp": {
+      "bytes": 359364,
+      "sha256": "98e50724b65454f405481dc77524e6bd38125df8201023bd43078baf66ab1f52"
+    },
+    "countries/no.webp": {
+      "bytes": 342124,
+      "sha256": "b49c211a4eb6adc9541beb131c1624056c1d6e4aa23010f96106b97fe9f0036f"
+    },
+    "countries/np.webp": {
+      "bytes": 404232,
+      "sha256": "a3f3067601f8e2d4a13332116c9f1f92199b25db4f6238141d580162e81f7cdc"
+    },
+    "countries/nr.webp": {
+      "bytes": 345304,
+      "sha256": "404a7720aa62b38f628a3bfaec0ab7d2bc283241ea6699dc0db6ba79ffe65903"
+    },
+    "countries/nz.webp": {
+      "bytes": 398772,
+      "sha256": "ff91511e465c479f65b3deb96a684d2b9c25138b5c24c1fd260a6a44af280d5c"
+    },
+    "countries/om.webp": {
+      "bytes": 329430,
+      "sha256": "9cd66fb7c33f586a4c48b77a4c52b186b359e9a5e7cbc99a60bb3df3adec4485"
+    },
+    "countries/pa.webp": {
+      "bytes": 292036,
+      "sha256": "f55ff0e98450d48ae06699cf5a36f9061bda3b6a8bf8c516eb9260fc2d8c696a"
+    },
+    "countries/pe.webp": {
+      "bytes": 359640,
+      "sha256": "1c84725b093ccce90b2de971bf6641c2e73afa7a3ed0fa6f15532c4020791975"
+    },
+    "countries/pg.webp": {
+      "bytes": 381892,
+      "sha256": "342c0dcb533c86c7f39db9b42839b0df5b248fd7c451f8e2561d58c17f5820b8"
+    },
+    "countries/ph.webp": {
+      "bytes": 387194,
+      "sha256": "f476c963976a776c7e207ccde43f32e47c83639bdbb07a1993cd118f0570a8f8"
+    },
+    "countries/pk.webp": {
+      "bytes": 385480,
+      "sha256": "fdd722a14c4838a4a375355f2d1342811e7a3861f34b530bfd1edb30c64c8716"
+    },
+    "countries/pl.webp": {
+      "bytes": 369936,
+      "sha256": "62d1b3cb3ec3df0ef59b84c7e3dc9dad301bae50bf3fdf3c0adab2000c84bf92"
+    },
+    "countries/ps.webp": {
+      "bytes": 403582,
+      "sha256": "2e02b239d697b379649037988e94e1e02e4ea03640c35cb7c5736c635bba27bd"
+    },
+    "countries/pt.webp": {
+      "bytes": 319434,
+      "sha256": "c6580f94f8bcc08562f6fb09c1f84c90bcedabc175023f43fafce8bd233cf67e"
+    },
+    "countries/pw.webp": {
+      "bytes": 331672,
+      "sha256": "d9818c7402b24c0acc7d5d0f4823603dd1ae2b47b638c3e4ae2160a9645bb2e3"
+    },
+    "countries/py.webp": {
+      "bytes": 341224,
+      "sha256": "7bf0aa2f8d6bb9a233912cc8654b0fda32eef2fb8d3821ae87c205eb69ffae49"
+    },
+    "countries/qa.webp": {
+      "bytes": 305130,
+      "sha256": "28c249fcb26ccd4f11011ffa5cb2bcbbf6d625d7dabda716bcfad0fbfd292c00"
+    },
+    "countries/ro.webp": {
+      "bytes": 316748,
+      "sha256": "d21e1f815a93f06625b67c2a523ebcb6bf746c98558cc4cea9dcd7354bcb4ce6"
+    },
+    "countries/rs.webp": {
+      "bytes": 308326,
+      "sha256": "88b641a11b9e509f76c0634a81896019a936f08bfb3abab98c8f5d1f873aa292"
+    },
+    "countries/ru.webp": {
+      "bytes": 313446,
+      "sha256": "e638c1ef8100d095d96356912e0086cc0ecd259a3b12a8d00d2c0ad2969f502f"
+    },
+    "countries/rw.webp": {
+      "bytes": 290540,
+      "sha256": "388777805c131f8f1b8ac1af72151d008793204a046de41a7e0f732bd6875489"
+    },
+    "countries/sa.webp": {
+      "bytes": 306808,
+      "sha256": "59424e2ad1b5e9145b0d7a8c0708dc5c499b3fff70b48d1de21d316557d1cb0f"
+    },
+    "countries/sb.webp": {
+      "bytes": 309476,
+      "sha256": "d17b81769f00c156a7de0320e015b6bdfd270e6773010c9acdaf4bf2504c6df4"
+    },
+    "countries/sc.webp": {
+      "bytes": 303156,
+      "sha256": "329f215ce325302fccf6f81335252f6d6c027f17fa49064016ed1f5b37922b22"
+    },
+    "countries/sd.webp": {
+      "bytes": 260208,
+      "sha256": "17e632c013f05cb8787bd0b966bcaf5652ccefb864201661fba4f9685f6594bc"
+    },
+    "countries/se.webp": {
+      "bytes": 268708,
+      "sha256": "dbc9534c6927a0af1602f6a9b663c50d556ad23167f2b5dc0410af15e1779ec3"
+    },
+    "countries/sg.webp": {
+      "bytes": 326974,
+      "sha256": "658c540b07004bc1bba9b642d191b747322afb77e40af0508ce87513f4f7661a"
+    },
+    "countries/si.webp": {
+      "bytes": 276694,
+      "sha256": "dc04ea54392e4aec4b45c9e3829f5228e38999c64b7d5699b14c0fc0714da439"
+    },
+    "countries/sk.webp": {
+      "bytes": 317900,
+      "sha256": "8b1cce555a79456b3a85af6b941528585835fcef157b96fc9e88f1e21d734994"
+    },
+    "countries/sl.webp": {
+      "bytes": 274168,
+      "sha256": "8ece8c6f9fd1a79ed311b9b2f618baa077c1e2069865c7aa8e2f8e682f981abb"
+    },
+    "countries/sm.webp": {
+      "bytes": 348360,
+      "sha256": "db676b2460fb1dafc9ca9a0a135710018bce97fbb1ed5c1dd206060ceee84823"
+    },
+    "countries/sn.webp": {
+      "bytes": 283020,
+      "sha256": "295bb4dbbf3963f0db6ea2d7719b9cf5f43357bdf7e3aa7a521dd233dd792093"
+    },
+    "countries/so.webp": {
+      "bytes": 278998,
+      "sha256": "4a6beef89e715921f8f6b152ada07973e2cd4b8da0f789827c88ef45ae42aa8a"
+    },
+    "countries/sr.webp": {
+      "bytes": 271398,
+      "sha256": "f508f82cf23d6a38662a7622f2434bd7bbee5aa155bcab3087ae93909c1a372f"
+    },
+    "countries/ss.webp": {
+      "bytes": 241848,
+      "sha256": "8890cb81632a8d8f1c1b336d53902d13f5a38f00e284b1d779566e7f96d0412a"
+    },
+    "countries/st.webp": {
+      "bytes": 327570,
+      "sha256": "05a4935a68185a9555e2679724b1db5e02f62cd8e8d1f96216a18aa2f58ff89a"
+    },
+    "countries/sv.webp": {
+      "bytes": 367178,
+      "sha256": "8c294baa3661e98e20744195dc0ac0f96736a875062d514f9a87e6046b345de6"
+    },
+    "countries/sy.webp": {
+      "bytes": 367944,
+      "sha256": "7c9415b59875cebf2d48dc2f4b4b768dbe62f0fe49db73ac46c8929dfcf25e63"
+    },
+    "countries/sz.webp": {
+      "bytes": 405224,
+      "sha256": "6694b97d070d888fcd3e74153cfb4f4d3fd2684016232e844e0425063563c030"
+    },
+    "countries/td.webp": {
+      "bytes": 367308,
+      "sha256": "4ad6522e74226466b76699e1a549221a57ab686f2459318549f7e4a81a6b5b66"
+    },
+    "countries/tg.webp": {
+      "bytes": 341852,
+      "sha256": "587d49f2fe27f064235013b5b0b6bb804e62e130d78dc912eade14b1d7434d94"
+    },
+    "countries/th.webp": {
+      "bytes": 378634,
+      "sha256": "aae76c5240e8f8aa76e1388bb0229ac330a920a4dfa1551c57cfd6138ed9f3ba"
+    },
+    "countries/tj.webp": {
+      "bytes": 349666,
+      "sha256": "e2eb78a4365372952e1be2c64497321401023f262aaa23989ecbb680f9bd1194"
+    },
+    "countries/tl.webp": {
+      "bytes": 348818,
+      "sha256": "9a5af11a8e705daa0bfeb95e61e1aa75fd12cac74bb6a31aef37239c32cfcaee"
+    },
+    "countries/tm.webp": {
+      "bytes": 354932,
+      "sha256": "a84377489d83d78f72bc2bfbd6c05ca6b723696ed51c1ce1bd6027400113a0ee"
+    },
+    "countries/tn.webp": {
+      "bytes": 376630,
+      "sha256": "aa25f7af1d2f55a49baa3a92eb810723b696d8057c2ae9659a86188afcf81331"
+    },
+    "countries/to.webp": {
+      "bytes": 364692,
+      "sha256": "0006a70049f05caa016d793d2b19fa79782ad4ab87f1c4ae382c7832a19c06cd"
+    },
+    "countries/tr.webp": {
+      "bytes": 191530,
+      "sha256": "9ef59be77e165413699433f635b8be82544a2604a99c34c949afc2bff3a8037a"
+    },
+    "countries/tt.webp": {
+      "bytes": 369750,
+      "sha256": "da22afbaca9d1a17b8d8c635c86c6ec4accb99318b333fb5f4044332e69945cd"
+    },
+    "countries/tv.webp": {
+      "bytes": 386660,
+      "sha256": "7189706e55e0f0cc6c79bbba7d6583565bd4ca53652afa97a3b1eb8e6afdc29b"
+    },
+    "countries/tw.webp": {
+      "bytes": 378836,
+      "sha256": "fdb9ff4b8977b00d8f1abc185bd9a6f41da31eb5bf0ffc2a6e2a5550698b510b"
+    },
+    "countries/tz.webp": {
+      "bytes": 368784,
+      "sha256": "5c35bf34cab99feef15b3b7b4d8be743cedf6eaf023bd73c220c4d0e6df874d2"
+    },
+    "countries/ua.webp": {
+      "bytes": 415120,
+      "sha256": "da75a1e4f128757b7efdea1c98854d9c3aac6b8e082d9330c22fb7fee9c29c1c"
+    },
+    "countries/ug.webp": {
+      "bytes": 397312,
+      "sha256": "dbce69b1a145f5c8c61109bb288a612516794607086f143b8131b7ab16d9a02d"
+    },
+    "countries/us.webp": {
+      "bytes": 353058,
+      "sha256": "d9681764b77dc65a64e9a3ae45624a8de22742e8026d76027cbfc9caef9d9e5d"
+    },
+    "countries/uy.webp": {
+      "bytes": 413436,
+      "sha256": "1330029fd6633f7967d0603244fa1bb6f6abf922458f565a6ba3aff64599b588"
+    },
+    "countries/uz.webp": {
+      "bytes": 449462,
+      "sha256": "839623d68128d2c5c9528bd3cbdc12701d7bd97eb5df406719468327ee30a771"
+    },
+    "countries/va.webp": {
+      "bytes": 395710,
+      "sha256": "9033910ada7b0d43432d4f06f77e6374bef61af486fa911524dc4d3a9afd1213"
+    },
+    "countries/vc.webp": {
+      "bytes": 331606,
+      "sha256": "ea7f53003113a48229229e8b590c1f8b295833347de26491460f6d0b21331dc1"
+    },
+    "countries/ve.webp": {
+      "bytes": 396988,
+      "sha256": "d6d8bfcb40be6b189bee14a7f52a9db5287633a1f5079de00bfbb2baa283221d"
+    },
+    "countries/vn.webp": {
+      "bytes": 402632,
+      "sha256": "6ff790439583dca0cb0dcaff582f74603fd992e0668b860336abe5524116cd18"
+    },
+    "countries/vu.webp": {
+      "bytes": 404058,
+      "sha256": "6d52bb16343b6d9d7066dcf444b51a61e78401ed506f08245e122590e80b125e"
+    },
+    "countries/ws.webp": {
+      "bytes": 305068,
+      "sha256": "47840b02af34f3c6654365eb995d7788a9ff897275535a52dbefa484aae72a9a"
+    },
+    "countries/ye.webp": {
+      "bytes": 379110,
+      "sha256": "0edf76719e4b96a6060019908566e836bc7b5029e847713f5f88d77ddd39908e"
+    },
+    "countries/za.webp": {
+      "bytes": 237414,
+      "sha256": "d40d6a95e78714078d92b706e3128d091eb56138a2559aca4841189aecc9bc4f"
+    },
+    "countries/zm.webp": {
+      "bytes": 365070,
+      "sha256": "adcda74c7877311575c75842612ed86b115bb0f4138a8c14a3fe94d42d3adea6"
+    },
+    "countries/zw.webp": {
+      "bytes": 361794,
+      "sha256": "73493166f8d6cb6a9addbbc0e61e5fd56687d973a85cd34e4fce8fd3911afeb9"
+    },
+    "game.js": {
+      "bytes": 2530032,
+      "sha256": "f1171f9f63d50391d20059b42e8e5d650212100823117c6f48342536d9b72e79"
+    },
+    "index.html": {
+      "bytes": 68495,
+      "sha256": "f23a26828afb7a9e1a6a737754c5dfdd900fd93f8d9e5e4995c6e4b4d3295d0d"
+    },
+    "legacy/fighter-body.webp": {
+      "bytes": 236968,
+      "sha256": "a7e9a40b033ebf78af8066d4e71c2da032add91b6c9cf6f4835f90520b8286c1"
+    },
+    "legacy/fighter-heads.webp": {
+      "bytes": 669968,
+      "sha256": "c38f422a05319c911d4ee55daf25f43a3c95bf957a5136d637d1125eba855750"
+    },
+    "legacy/japan-poses.webp": {
+      "bytes": 411264,
+      "sha256": "cd4646843f57c315816aa0c8213b99a90747f8d48dd9463c5bc205b44b37386b"
+    },
+    "legacy/pakistan-poses.webp": {
+      "bytes": 506728,
+      "sha256": "5d127e63e53081e42b507de62650d61bb956524183aa332a5b72587a42191644"
+    },
+    "portraits/ad.webp": {
+      "bytes": 34668,
+      "sha256": "929866926c7e896b331db0183b9036d71eadfc76a661aefcacf89ef6cc78c0d4"
+    },
+    "portraits/ae.webp": {
+      "bytes": 36602,
+      "sha256": "168793d0fb79f01a419ed55e7e2fe2b521e252d4bbd7f7ed2a1f962634a81d83"
+    },
+    "portraits/af.webp": {
+      "bytes": 36578,
+      "sha256": "95ffb3359b5f169760c5fa41df65419d203fcb6d28ab7eb00f74bbef9ab93904"
+    },
+    "portraits/ag.webp": {
+      "bytes": 34196,
+      "sha256": "c77cc435e740024b7be0d775c2cb61bb48bad1d5a4fbaa139457ac521002b969"
+    },
+    "portraits/al.webp": {
+      "bytes": 30516,
+      "sha256": "e9e44cedd86fb758540feced6a3d48f46732b83dea9efe988f4a7b426dd57e8f"
+    },
+    "portraits/am.webp": {
+      "bytes": 33878,
+      "sha256": "10d056a6825cabb8af70d8d3f2ccb24e74ae83df2814b844bc724b942c32796e"
+    },
+    "portraits/ao.webp": {
+      "bytes": 33498,
+      "sha256": "e089a9c3a25b7f14eed7d7626b319b59f603326ccde5b4e9de86611a76f0f46a"
+    },
+    "portraits/ar.webp": {
+      "bytes": 37186,
+      "sha256": "73cebf5ce3509fafa0efc8797a6a18530e9ccb89d1621a543ccd7f636c661038"
+    },
+    "portraits/at.webp": {
+      "bytes": 35526,
+      "sha256": "c6f4e36f9a1d2a5ca9bbf0a89f6cc018075cee439b4bdbd0a31dffe30feb0290"
+    },
+    "portraits/au.webp": {
+      "bytes": 36402,
+      "sha256": "e2a3138861b06778a9a65fdf60d0821900526ee61a43937378004923ce4add0d"
+    },
+    "portraits/az.webp": {
+      "bytes": 39006,
+      "sha256": "16cf20e716c347415c3fca168c5095ae9171d497f1a4369e1541343209522410"
+    },
+    "portraits/ba.webp": {
+      "bytes": 40038,
+      "sha256": "aa4e51d2ec5251b2a55a1fcf80a4a4060517bf836c24417e3e981d71ddfc848d"
+    },
+    "portraits/bb.webp": {
+      "bytes": 34156,
+      "sha256": "eb719342025a13ef43d69dc006a2126da06bae3efd3c366e70c51f910a4f55b7"
+    },
+    "portraits/bd.webp": {
+      "bytes": 36482,
+      "sha256": "37b72479ed0b4c7296d02fbbe2b58695717a38258ec61246ce683f8980809a77"
+    },
+    "portraits/be.webp": {
+      "bytes": 33424,
+      "sha256": "fdcd5f31bae4e8d8f870b6b5adf392ea5a9d92c64aae56610619bfb080572911"
+    },
+    "portraits/bf.webp": {
+      "bytes": 36902,
+      "sha256": "e0e72a4d15e4a22f1686157b41b3201e8b3a1223892828c1bae876e4f22ee2f4"
+    },
+    "portraits/bg.webp": {
+      "bytes": 33748,
+      "sha256": "bd6b98d05fa13a2b92111804936521ccd25af406b1c924447e28ffc2a58519c0"
+    },
+    "portraits/bh.webp": {
+      "bytes": 37404,
+      "sha256": "772653af32b4caaac7f227af2c956de87bd4e74352417c095ae642247b0a32a3"
+    },
+    "portraits/bi.webp": {
+      "bytes": 36946,
+      "sha256": "0bd7ef193bb48b7f17e38a44c228561bd9d13e31b63ed6fb87967889e23c9f04"
+    },
+    "portraits/bj.webp": {
+      "bytes": 33930,
+      "sha256": "3c12fbfb2d14d333670f805fa7a5ead711d1b762770fbf366b50c2e142fc81a7"
+    },
+    "portraits/bn.webp": {
+      "bytes": 35626,
+      "sha256": "c665e721ec08fdd0ae6d7d12c25dc40e10d69c10c7ab85be5c54fa0d6c4a8d1f"
+    },
+    "portraits/bo.webp": {
+      "bytes": 38466,
+      "sha256": "ca8b024779a77c4fe54ec507fa2afda6a4a18ddc0c047c1ff98c3082b5d283f0"
+    },
+    "portraits/br.webp": {
+      "bytes": 37914,
+      "sha256": "162ed88e80438e851bdd31cac57b948e392e8746e483436bb1615999f188d9d1"
+    },
+    "portraits/bs.webp": {
+      "bytes": 35274,
+      "sha256": "19e26b3bdfd631ba00f7f493c30d89f53aab7c0c10ba9e4ee7ec0b93adbf74cf"
+    },
+    "portraits/bt.webp": {
+      "bytes": 36356,
+      "sha256": "2e0e0ccef2a7e18e08114dd0396269f2414ed212ab5bce208c180e6c2ea9cbaf"
+    },
+    "portraits/bw.webp": {
+      "bytes": 36270,
+      "sha256": "e9deadac291f9877020c2830bf8260b1bac8782b8b3eb28aaa57c7db060242f4"
+    },
+    "portraits/by.webp": {
+      "bytes": 33094,
+      "sha256": "02bbd9f6db2196ac28f040e66b8567cc96731caf8cb1d8875ca5abdb0d4cbd32"
+    },
+    "portraits/bz.webp": {
+      "bytes": 36978,
+      "sha256": "62abe5be8322f2dac8afb7b600c30568192c0d42859e62bce1a75b768f2532da"
+    },
+    "portraits/ca.webp": {
+      "bytes": 35144,
+      "sha256": "f0d5660d446fc59292ee020728276fa852e2a5058d94334faa42dfb848afa21f"
+    },
+    "portraits/cd.webp": {
+      "bytes": 37018,
+      "sha256": "1bda38e765919c074921f804542b8427504f732c3dd62a9ffb40169293146a7a"
+    },
+    "portraits/cf.webp": {
+      "bytes": 34226,
+      "sha256": "e0512e184584b47d01a4f1fa938f4d778fb5b20cc47cc827d9bcec861b8bef1a"
+    },
+    "portraits/cg.webp": {
+      "bytes": 34434,
+      "sha256": "40bbb9eac1d6ae20481bccf1465d53841d33f27487d795c596e4c5166021ef16"
+    },
+    "portraits/ch.webp": {
+      "bytes": 27234,
+      "sha256": "b8e605b9826c2b2a4c6aa9a7577d7dde5daa20f7b251a11a7c5dcbd7579f902e"
+    },
+    "portraits/ci.webp": {
+      "bytes": 35474,
+      "sha256": "96f87c232d4a0d35f9b035abeff4b4567e6da508baaa1ed5c7ba745c86fea0b7"
+    },
+    "portraits/cl.webp": {
+      "bytes": 35266,
+      "sha256": "172970d733c08d56ccb4ef4c21865e6a4775cd9036f60e4233ee6eef928b0e11"
+    },
+    "portraits/cm.webp": {
+      "bytes": 36142,
+      "sha256": "e934be4e0bb5a41c1530076d546ed724c45f82fcf6f2b6574fabf9d1f8efc514"
+    },
+    "portraits/cn.webp": {
+      "bytes": 39886,
+      "sha256": "b474c2cdcb35a0e743386b4fc64f1caf9f934bf6bf3130785ac14e79901487e1"
+    },
+    "portraits/co.webp": {
+      "bytes": 35972,
+      "sha256": "69317cf5f328a06838f405a10d8c4d5044f6cf0e624dc94d2f6c3604f59f1f0b"
+    },
+    "portraits/cr.webp": {
+      "bytes": 38374,
+      "sha256": "4f3a0887cd0d9c5c3e032fe6b98bd82e33a2ce63e956fa99e7fe93c5a6a7f54c"
+    },
+    "portraits/cu.webp": {
+      "bytes": 34198,
+      "sha256": "ba37b72d74ef43ee2b4af8f65e180212affb0e55258ffccac2a6918402dc5270"
+    },
+    "portraits/cv.webp": {
+      "bytes": 36816,
+      "sha256": "8b8db41f4d5832a0e747107a891a5a9a2ff69ba8c695f001b8079db2932fcad7"
+    },
+    "portraits/cy.webp": {
+      "bytes": 35456,
+      "sha256": "f20d0e32da07747416cb0a8cfe2f3db91272ffb0cea44e5a374007dcaa6e20cb"
+    },
+    "portraits/cz.webp": {
+      "bytes": 35238,
+      "sha256": "340af7c2b191a97827d689a777f9ec66bede73efa74cf95d92021134845bf5cb"
+    },
+    "portraits/de.webp": {
+      "bytes": 33524,
+      "sha256": "6091cc6ffed6012944e2d1b500900cfed5bf699098dd369bd2cbcab64333fb7f"
+    },
+    "portraits/dj.webp": {
+      "bytes": 37388,
+      "sha256": "7968b9ea62c30f6fd0a0365adfc694950c7cea82dbf2440ced193fc76dc2224b"
+    },
+    "portraits/dk.webp": {
+      "bytes": 33404,
+      "sha256": "6c07b76f0398d1e11dae4521032c6028ff3c7d1c19bfe091e2eac7034f46f1e2"
+    },
+    "portraits/dm.webp": {
+      "bytes": 32828,
+      "sha256": "f26ad0bf710dc3f640a583467ea31c24ca05f2bc5abc6e04aed095b10970578c"
+    },
+    "portraits/do.webp": {
+      "bytes": 34664,
+      "sha256": "735ac74770d5cc107c96bedfc441d2322a98d3b8946588c2f2efd61520e99284"
+    },
+    "portraits/dz.webp": {
+      "bytes": 34346,
+      "sha256": "7e92e7638f7a8f3a74716326df672798fca523e7b9a4db1db62a1baed8323f06"
+    },
+    "portraits/ec.webp": {
+      "bytes": 39748,
+      "sha256": "552d7bb06d1470f29e491453eeea30e1c16199dac66da3c5aca538750a29e8c4"
+    },
+    "portraits/ee.webp": {
+      "bytes": 35550,
+      "sha256": "5c2a510fcc224ef44eb72076324fccc26799a97f0ac97c9b59286144e38c2ba5"
+    },
+    "portraits/eg.webp": {
+      "bytes": 35522,
+      "sha256": "1643475a4dbc33224ffae6902a0015f8352a27fc43cffb12fa77f54a5ff1caec"
+    },
+    "portraits/er.webp": {
+      "bytes": 37048,
+      "sha256": "879af1636e34171c48d056e760635080a360a1b2005fb8c6a855b4e5b1d31124"
+    },
+    "portraits/es.webp": {
+      "bytes": 28940,
+      "sha256": "093c4484bcbf9ef3c119cdf41afa36d608895ce9fec2417ea2f6ba1cc570164f"
+    },
+    "portraits/et.webp": {
+      "bytes": 37034,
+      "sha256": "52e0cf798e1a7db2041c6582fff1d4070f820f4dad39c929c8487538affc8121"
+    },
+    "portraits/fi.webp": {
+      "bytes": 37214,
+      "sha256": "afe693c6361ccc488aa36d3f2760765401ed7a60e42b7bfeb5d0327234ad2dfa"
+    },
+    "portraits/fj.webp": {
+      "bytes": 40476,
+      "sha256": "2bcf9cc8ba083ae1a99f3161ebca6f0ec8e0d9f0d87621a52e20818065f217ab"
+    },
+    "portraits/fm.webp": {
+      "bytes": 35240,
+      "sha256": "8a16a57ad914466bcf96ff0d4b9673c4f49792e98b8d3a55d36c934b915a602d"
+    },
+    "portraits/fr.webp": {
+      "bytes": 33422,
+      "sha256": "79b074aa7e110251d61941c32072c1055b572cbd381eed5c2a354101604c3afc"
+    },
+    "portraits/ga.webp": {
+      "bytes": 36750,
+      "sha256": "9f08e93298f72c807c0ac2e911c632e8fbb0552305bb43f88bd9586faf0b2227"
+    },
+    "portraits/gb.webp": {
+      "bytes": 34474,
+      "sha256": "48c6d9b0c205198db19a5cfb20532b170363a7fcee8914de2d4b0373b41f7a8f"
+    },
+    "portraits/gd.webp": {
+      "bytes": 34038,
+      "sha256": "829bfab0a7b4dffc29eb9de1b1e2bd5e5d82bbc929bc22777dbcfe7703fd8e52"
+    },
+    "portraits/ge.webp": {
+      "bytes": 37086,
+      "sha256": "413d054ada8ae78dc222b8f195c328ff41054e014894b4d23e3f98bbbe7cf17d"
+    },
+    "portraits/gh.webp": {
+      "bytes": 33928,
+      "sha256": "58537c5acc3880e61165e2cc49fb51633c4f72c2c9b56ac4ab232bb91d61af77"
+    },
+    "portraits/gm.webp": {
+      "bytes": 35080,
+      "sha256": "ac7babbfd732d079e27dac0691da53583bc1f0d5db87732b7e8db1e3862bc871"
+    },
+    "portraits/gn.webp": {
+      "bytes": 28310,
+      "sha256": "eff5098c0ee1642d74cd00464efb34612f06ab2b1bb65c757d88e754b6af3f96"
+    },
+    "portraits/gq.webp": {
+      "bytes": 32694,
+      "sha256": "300e28895a6e66bb2c662024d3e9b69e11ef7c4cc35a0cb5cd4d80c3b8b0bd1f"
+    },
+    "portraits/gr.webp": {
+      "bytes": 29816,
+      "sha256": "7965d0024e97fa0c2b116c262668db3218d5d85526539049d78569c4dc07083b"
+    },
+    "portraits/gt.webp": {
+      "bytes": 38340,
+      "sha256": "e7137b7c6503b16ef43054676172f5097c38b598829a212d3becaebd95179b85"
+    },
+    "portraits/gw.webp": {
+      "bytes": 36134,
+      "sha256": "6917427492fe10a668963bef7dd33b63b9a4620bc4f93f42812a33afcd391d58"
+    },
+    "portraits/gy.webp": {
+      "bytes": 36466,
+      "sha256": "69ffebd0b516a498ff480f4a56275562b13d2d1f739df002e91eaffaac0b0f12"
+    },
+    "portraits/hn.webp": {
+      "bytes": 30710,
+      "sha256": "b388a73c99106ebc079c8568d15666b2592c23b1dffe7c5c95a7e4ba81d46f23"
+    },
+    "portraits/hr.webp": {
+      "bytes": 36158,
+      "sha256": "8ccd5833c7b21ab926d958fbfcb09f7a6b46736bd4314d1d2bc8f4e792fa4bba"
+    },
+    "portraits/ht.webp": {
+      "bytes": 29446,
+      "sha256": "9e66574b25429c939cc2d5f17488a1be89263b8c90e0060fe8f39ca94f48cbe6"
+    },
+    "portraits/hu.webp": {
+      "bytes": 27244,
+      "sha256": "a7e6e0b69edd77533a96b40f6992bda7053bece5879c5f62993cb0727e715229"
+    },
+    "portraits/id.webp": {
+      "bytes": 39062,
+      "sha256": "ee824de6812aacb1c04f52d15885544282a13bd2f0ae4cb91127ed0e97af5e20"
+    },
+    "portraits/ie.webp": {
+      "bytes": 38096,
+      "sha256": "e7fd934a1e9048e1aeb60eeddb89e0e9b63bb23782899b61f81485c15348b538"
+    },
+    "portraits/il.webp": {
+      "bytes": 36800,
+      "sha256": "69418ac33c0b93a65f6f742cc1d6263d1d896bf849d6e4f8bcfa3440c9c09162"
+    },
+    "portraits/in.webp": {
+      "bytes": 35392,
+      "sha256": "221847da3b532f009644f47595c1c9ea8deab382a20b2ec1b7939c3b48ea5279"
+    },
+    "portraits/iq.webp": {
+      "bytes": 35812,
+      "sha256": "699e28145d90eb45e66a9afe50977d3558a00a8cdfff27195783b986268ef2e0"
+    },
+    "portraits/ir.webp": {
+      "bytes": 35320,
+      "sha256": "802770a223a72fb7b035022ee821ca22ceccf45fdfcd851ccc56d910e5d42676"
+    },
+    "portraits/is.webp": {
+      "bytes": 37822,
+      "sha256": "1aa847d763494eabe6193c8a5de26728c5fafb52f973b3a14e2743624b278397"
+    },
+    "portraits/it.webp": {
+      "bytes": 35600,
+      "sha256": "e9bc9a85a461584b9d0e360c960c635a206a725db35e49493efea38860a69970"
+    },
+    "portraits/jm.webp": {
+      "bytes": 35674,
+      "sha256": "dab8fba1e1b2b93ac32626e2214038f7ad5112e6b0deed881ae4411d7b998988"
+    },
+    "portraits/jo.webp": {
+      "bytes": 35866,
+      "sha256": "8daeadcc76d3d0b7eab1a1923dcd1d7454b5730576f504bd108a13185f591a1f"
+    },
+    "portraits/jp.webp": {
+      "bytes": 30552,
+      "sha256": "cbe8fc62c407bb005da404381261146ce17334e0e3cd19ff3936a54cb37783b4"
+    },
+    "portraits/ke.webp": {
+      "bytes": 35488,
+      "sha256": "2f759ef27b98bc866ebe6439bcd7a2c8f46fb1e39121670b5eb030c45331ef30"
+    },
+    "portraits/kg.webp": {
+      "bytes": 33584,
+      "sha256": "c71af43a32512691f7073778ed38370c25858a25af83e3e5459cf14bd62dbf97"
+    },
+    "portraits/kh.webp": {
+      "bytes": 35578,
+      "sha256": "4aa655254563e49dccf4f2c7e1fa287a8e88358b96e92d5377d7aa40b1e2ad1d"
+    },
+    "portraits/ki.webp": {
+      "bytes": 35198,
+      "sha256": "acafc571eb0d98c3861bc323913d5e077b01698310af41ef225163e89bf39c1f"
+    },
+    "portraits/km.webp": {
+      "bytes": 34480,
+      "sha256": "c3333cbb5ff4ab5419709956d7c4fea5c54ea1fc2832aca479340502ed7b5140"
+    },
+    "portraits/kn.webp": {
+      "bytes": 37042,
+      "sha256": "212acb43b7ea357452f0c93ca7e0f71712e7bab4fc1f2e6d4031eea1cde144bf"
+    },
+    "portraits/kp.webp": {
+      "bytes": 32680,
+      "sha256": "9ea66e25032557dc9aaa42fc8308998429c60d6de28a2639493c8e704c78cb84"
+    },
+    "portraits/kr.webp": {
+      "bytes": 26650,
+      "sha256": "2ea8f11685633a0e20cc29b854f6342efa389437676e2ab4929957500956e8fb"
+    },
+    "portraits/kw.webp": {
+      "bytes": 37770,
+      "sha256": "d52c352d76cadccec5493ee094108b9c7f56a6fbb8f02cce548dfd3f04532f04"
+    },
+    "portraits/kz.webp": {
+      "bytes": 36852,
+      "sha256": "3bd8274eadaed443cabd10c0c99f3c4cb84ca729f14b8fbd6281f6f394a0caf7"
+    },
+    "portraits/la.webp": {
+      "bytes": 34606,
+      "sha256": "cdfe57d22eba9574de535954747b1744f11b8b361f0cb103cb5ecd6f5b48ca78"
+    },
+    "portraits/lb.webp": {
+      "bytes": 33380,
+      "sha256": "1949df149146e49f068090b7c36d84725f9646ed176d9878596856b41d2a5d3e"
+    },
+    "portraits/lc.webp": {
+      "bytes": 34928,
+      "sha256": "ce81dc62eadf5f8c49fd0cd1819b782924180a6c3bf9f16f61b370a8ac00bb35"
+    },
+    "portraits/li.webp": {
+      "bytes": 30604,
+      "sha256": "893809addeb3c46bb40832733c9b218528828f4db0687dba36232362e7ba228d"
+    },
+    "portraits/lk.webp": {
+      "bytes": 26728,
+      "sha256": "fb69a930b660ac1b90f3fccdef884eda795a39fc64c52a4b8b9ee255a5b30ebe"
+    },
+    "portraits/lr.webp": {
+      "bytes": 36048,
+      "sha256": "d601df7496958238f8507cdc09fe8b632a9a051757880533cb2e28d8f99b4868"
+    },
+    "portraits/ls.webp": {
+      "bytes": 35264,
+      "sha256": "2e87a190377eac336b09f465e22c48389a588d8ef9d9caa5e01779f728f45c9b"
+    },
+    "portraits/lt.webp": {
+      "bytes": 33886,
+      "sha256": "fc1aa3fae835a6f5f9dc6e844a2fb6c2db2f0f9acb6f765f373e4dce43638864"
+    },
+    "portraits/lu.webp": {
+      "bytes": 36658,
+      "sha256": "68de6801bfd82b5974e958590699ec4de12a0c824fbd66bf9768936c554b15a6"
+    },
+    "portraits/lv.webp": {
+      "bytes": 33610,
+      "sha256": "c0aa64516bb2eed759347b40290fd2ac14f821cd623f4c49386f9f168adee7d7"
+    },
+    "portraits/ly.webp": {
+      "bytes": 31402,
+      "sha256": "8c736be0e47a49c4f7e45070b17f9f06f0113fe40208abccae63cda061c786e3"
+    },
+    "portraits/ma.webp": {
+      "bytes": 27756,
+      "sha256": "91759591fc9e3205350112e4499389287c80a7889d06d0ef8ac26f170e356e2b"
+    },
+    "portraits/mc.webp": {
+      "bytes": 36642,
+      "sha256": "8b425f7e622e35e14806d70764c1fdecb0ad021a1f748801f0a56f7852307576"
+    },
+    "portraits/md.webp": {
+      "bytes": 37114,
+      "sha256": "c849313023da0ecb27c65ae2d291ecf1255a630b1f4ea3e292fbabd79cb62c1b"
+    },
+    "portraits/me.webp": {
+      "bytes": 26402,
+      "sha256": "ca68e33293855170954c0cbb0df2ff6c181012ba734b6a2d9a0c37d84ffa41ef"
+    },
+    "portraits/mg.webp": {
+      "bytes": 36642,
+      "sha256": "ef27b670038a63fdc5f574bc902004c8ab82a64e4f633ef9b99b30197c366aa8"
+    },
+    "portraits/mh.webp": {
+      "bytes": 32386,
+      "sha256": "24aa3ebcd6eb7869fe9e93063c4f5b30a0a4483b172773f82b2624820915df7b"
+    },
+    "portraits/mk.webp": {
+      "bytes": 36922,
+      "sha256": "5be6a73371db5aa6e94d67d5c7362fc201d61b5b16253d2570a7279a16b234fd"
+    },
+    "portraits/ml.webp": {
+      "bytes": 36716,
+      "sha256": "8c2c07bfc0359688f23bb6718aa0da6f58f6c62aca20533b086ce7b107b539f7"
+    },
+    "portraits/mm.webp": {
+      "bytes": 38014,
+      "sha256": "e35cd6becb2fc8cf2c8f27cd962f8f8167a42c6621dae72387f6c7782658d874"
+    },
+    "portraits/mn.webp": {
+      "bytes": 30216,
+      "sha256": "f2852ea8c3e56b1c0eae2edab39a527c7c0d3bc4bc4a14e78456fb548e263411"
+    },
+    "portraits/mr.webp": {
+      "bytes": 35592,
+      "sha256": "5ab271ae7d853e67c0f542c276a5fcdd2be12fcd2eb0603ada895976afb22db3"
+    },
+    "portraits/mt.webp": {
+      "bytes": 27410,
+      "sha256": "cb05679781d474c2f84334b7446dab17c2c8396be487defd00cf20beb845fec6"
+    },
+    "portraits/mu.webp": {
+      "bytes": 35816,
+      "sha256": "761c2795cb7e2c2ed2de6f78bb9a819294b77fec815e5a35d397c70f4f5d4989"
+    },
+    "portraits/mv.webp": {
+      "bytes": 31258,
+      "sha256": "84050da17599312b91c64b645e39b2d5098814368b099c07fce2faffc40a633e"
+    },
+    "portraits/mw.webp": {
+      "bytes": 29082,
+      "sha256": "25ba93b79c97a16e127d8e00995843723709d8468610e3ce6b5755425b3886ce"
+    },
+    "portraits/mx.webp": {
+      "bytes": 33350,
+      "sha256": "209052ace39dc1ad0cff05de972f0f27d1e4237d3e03c96ea4e8c0e9c52c45b9"
+    },
+    "portraits/my.webp": {
+      "bytes": 38130,
+      "sha256": "f6643a63d97014814d1b1c54ae965bf406da0255bc140bfdbd1008dcfeab5219"
+    },
+    "portraits/mz.webp": {
+      "bytes": 36560,
+      "sha256": "2f2721fd4eb4da3d33467e19b2204c6ca9d2b35d4ad5e8d80e95f361f9c30fb4"
+    },
+    "portraits/na.webp": {
+      "bytes": 35898,
+      "sha256": "d47586822f0e6bf14a1f3628980fde4dbee6f3f6d6ed2eac0122620894635b2a"
+    },
+    "portraits/ne.webp": {
+      "bytes": 38708,
+      "sha256": "fa714176bdef6e7dc17acfa6fa2000522b69348bb3b651bedd8f51daf5cf97d7"
+    },
+    "portraits/ng.webp": {
+      "bytes": 36108,
+      "sha256": "ba4d3dec243116f34ff11a64cbd5877660cb84d3fcf958dea21d015eb644da99"
+    },
+    "portraits/ni.webp": {
+      "bytes": 38796,
+      "sha256": "762e9ae53db63f3c7a3b112436bcc2008bb3c18d01bb6df2d5a2a9c9a22a5ca4"
+    },
+    "portraits/nl.webp": {
+      "bytes": 35644,
+      "sha256": "714d79a3ab10f9da3a9c1a5df55794e0026461e5fba49546dfedad61a76745bb"
+    },
+    "portraits/no.webp": {
+      "bytes": 34296,
+      "sha256": "ea19255e7b4c68c24f97b4229995f745e7c88317734de6071b9e8b0e71abaf3f"
+    },
+    "portraits/np.webp": {
+      "bytes": 36710,
+      "sha256": "0ee0ed0e74625e01e4854f065d6b064535344629e71ba12017b934c40ec3df6b"
+    },
+    "portraits/nr.webp": {
+      "bytes": 32302,
+      "sha256": "ba9877b4442dcd29b981cf942d6294366569cc43e2e0eb5af13bad0e8296e70e"
+    },
+    "portraits/nz.webp": {
+      "bytes": 39372,
+      "sha256": "65fb71507857d222d9101330005b83d167b854f55b2d5239cd670dd4698e9441"
+    },
+    "portraits/om.webp": {
+      "bytes": 36518,
+      "sha256": "9bc9b863dfa95f64ac462b213cc8038b740ed0e48a96c5125d002a2982eab734"
+    },
+    "portraits/pa.webp": {
+      "bytes": 32464,
+      "sha256": "c79bbbd04faa32ee0a720f77cc00cc4df3f571c4af03e771065a1a113ef2d126"
+    },
+    "portraits/pe.webp": {
+      "bytes": 35884,
+      "sha256": "f3690a419405a0b387d849aa884b62edc8d21d0523eb5aa517e06f288243af05"
+    },
+    "portraits/pg.webp": {
+      "bytes": 35132,
+      "sha256": "fed45e370be4536a767d71ae756a45c95bd45ea638fa5ff800f2d5f4a78617d3"
+    },
+    "portraits/ph.webp": {
+      "bytes": 38266,
+      "sha256": "2e05feb3cb4ffb060ae11c1ee275efcd595d6bd4dfc4cf153a4aaa693ea53ce3"
+    },
+    "portraits/pk.webp": {
+      "bytes": 34846,
+      "sha256": "51212b5784d6347a78bc45d871066ac8dae7f095e69feb9217399e2001554511"
+    },
+    "portraits/pl.webp": {
+      "bytes": 38344,
+      "sha256": "0c61764a183f2c8bd6efd8f0744ed2c0217513bd6550909aee90b2c2be4691ac"
+    },
+    "portraits/ps.webp": {
+      "bytes": 38370,
+      "sha256": "a23437b481f7c8043da09f07540e28ab9aa3fbc5aabbeef58764359f67dbbfab"
+    },
+    "portraits/pt.webp": {
+      "bytes": 35190,
+      "sha256": "83e7a0c76f4fcac7bbc0437b3c821f221402e2e59106c592f0f2b82964ffae21"
+    },
+    "portraits/pw.webp": {
+      "bytes": 34722,
+      "sha256": "d5ec2b00467274d59f667c6f0ff64677dddafb8077046dd6e83af93286ab0a76"
+    },
+    "portraits/py.webp": {
+      "bytes": 36062,
+      "sha256": "3df86cf6f5e514f30342374d330171384c0d9823dcc072d6097bfc16dd1131fd"
+    },
+    "portraits/qa.webp": {
+      "bytes": 32882,
+      "sha256": "142d477808c9c6d9d70749a28c4deca67533cb426a22cff3cb3ea2fb46da2699"
+    },
+    "portraits/ro.webp": {
+      "bytes": 36458,
+      "sha256": "aa7475313b5fe3863daa22d10836f5a92fc7d718ea308e4c8cea332061126591"
+    },
+    "portraits/rs.webp": {
+      "bytes": 30298,
+      "sha256": "ac522bea4beadf45f8d4d9ba5ab6420ef0add8804cd9585927cf1580824616d6"
+    },
+    "portraits/ru.webp": {
+      "bytes": 34900,
+      "sha256": "fd0aa78c5a6ab4e87c7e944ab8a3050b9ec84b989394980c59ba38ec0e43733b"
+    },
+    "portraits/rw.webp": {
+      "bytes": 31340,
+      "sha256": "ddd021bcf4aa9314f0dd6086ce31ad94c5604bde06169cfe90ad2ccd7397a401"
+    },
+    "portraits/sa.webp": {
+      "bytes": 32346,
+      "sha256": "05b2c12991f6866c2c191ce44e06b20653a4048b1a6c67123e80b7774f8d3049"
+    },
+    "portraits/sb.webp": {
+      "bytes": 36214,
+      "sha256": "2982d4e8d49e4199abc51be9f1e5e693da5e64616c7543d2dc445a1a0a619e40"
+    },
+    "portraits/sc.webp": {
+      "bytes": 30354,
+      "sha256": "539a21075307e7d14589c81c39d24e43146992f435bc385ea4c34510a98f0a14"
+    },
+    "portraits/sd.webp": {
+      "bytes": 26858,
+      "sha256": "2d3fe134918b36c36bc185c8eee338b34ead3ef43c0891d3b6c0399c77f6c279"
+    },
+    "portraits/se.webp": {
+      "bytes": 26466,
+      "sha256": "730876e3e5f74d7146a97cc722d80f94c3fd42c4923c6f0f914a6697d60376e7"
+    },
+    "portraits/sg.webp": {
+      "bytes": 29128,
+      "sha256": "2126427c5f42ed7e67a9b21474ed4b7ce44d33fe753a1f8222ebf7eed3498aff"
+    },
+    "portraits/si.webp": {
+      "bytes": 27846,
+      "sha256": "c1670aeeefb1272d59cf7e8feadc1fcf133670d0cbebbe91a0f6aadb23620739"
+    },
+    "portraits/sk.webp": {
+      "bytes": 32206,
+      "sha256": "5729ce7a47c465fd5a03f0e3ed163a2442f3654014c57a3c91420385af19d990"
+    },
+    "portraits/sl.webp": {
+      "bytes": 30012,
+      "sha256": "579f2e1aaf3842082bec2d53a9c1f54edfffe2c940b5fcf915ed42828b45390d"
+    },
+    "portraits/sm.webp": {
+      "bytes": 30772,
+      "sha256": "e09ba50727ee4ddbf83d088ea6fc6b39d31d150667fb6155c824ab7c9808b7b1"
+    },
+    "portraits/sn.webp": {
+      "bytes": 26192,
+      "sha256": "31ca35686bf95daa655a246628b4923b4f6ac83aa5ff24560184917383aa289d"
+    },
+    "portraits/so.webp": {
+      "bytes": 28472,
+      "sha256": "f232739d7889d13d79776ad58e6ca2cc67e12350e8c47181829b5853bb9b1c8e"
+    },
+    "portraits/sr.webp": {
+      "bytes": 30682,
+      "sha256": "c49b5ac592fee2f9b6faa7d5f966c094d0172f6a446781b8bb636e2ea906af30"
+    },
+    "portraits/ss.webp": {
+      "bytes": 23572,
+      "sha256": "10fdb0f06da0481c91a2655c7021fd497b095dd4d4671d0a85837a39907d74d0"
+    },
+    "portraits/st.webp": {
+      "bytes": 32946,
+      "sha256": "c79e97b901427355096d9e2ee655d14a979b5d6ace6a0c492a0ec0c600bb97be"
+    },
+    "portraits/sv.webp": {
+      "bytes": 33908,
+      "sha256": "ecb28a2e30a63b31b22f17e88b315004cae4f81315f7dd00ea134e0077874d24"
+    },
+    "portraits/sy.webp": {
+      "bytes": 35072,
+      "sha256": "4c8d9402efed554e984562b107330044a12333b097eff8039bf19c5e9b8de0be"
+    },
+    "portraits/sz.webp": {
+      "bytes": 37006,
+      "sha256": "af693c135d8acf52110292d237d63503990f4862aae9c9993a07ce2954e26184"
+    },
+    "portraits/td.webp": {
+      "bytes": 34340,
+      "sha256": "695c5b3c658e4083eea9388b2c9c34bbced8fce04679c5089aa169b3d9a8ec95"
+    },
+    "portraits/tg.webp": {
+      "bytes": 34572,
+      "sha256": "845bdf7814114b3aff87ef27824d302f3d8a9c6e5636e98f33ab874347a1413d"
+    },
+    "portraits/th.webp": {
+      "bytes": 40164,
+      "sha256": "0e4e16df42face01b89ed31d44536b15d3ec11b76554d529ce4c032309cf0002"
+    },
+    "portraits/tj.webp": {
+      "bytes": 32734,
+      "sha256": "627f550a582e17e2cd44d07198f8602ad99a54e8b4b0f6c2e42de8514c7e3f1a"
+    },
+    "portraits/tl.webp": {
+      "bytes": 36200,
+      "sha256": "15562d973d93f6be6823efa9a5a02e95ae5a12ea3afdb4570799ae9d3196e310"
+    },
+    "portraits/tm.webp": {
+      "bytes": 37420,
+      "sha256": "fda09919c90c04f07d42387a5dcb1ba344cad45e1c0247550a06e34915e6421d"
+    },
+    "portraits/tn.webp": {
+      "bytes": 35900,
+      "sha256": "a65e5206b50bbe96df899b1f3b6d10932e2b8efb3c1f78d695bc1b960be6c752"
+    },
+    "portraits/to.webp": {
+      "bytes": 33680,
+      "sha256": "3742aab60c3f817cc395701bd5947eef3c8d029833df4d224072b77df2d62499"
+    },
+    "portraits/tr.webp": {
+      "bytes": 34628,
+      "sha256": "8c6ac767829cac7bebdb3b5384b09e81aa7a7170b1e67a3343226f5d13c2116e"
+    },
+    "portraits/tt.webp": {
+      "bytes": 39598,
+      "sha256": "1cd01432bc31b3cd3e889f98ca264eb2b0b120175972fb858cf74c0bab6fe0f3"
+    },
+    "portraits/tv.webp": {
+      "bytes": 36566,
+      "sha256": "af98eedb931fddd6dc26929b4450ee7439d0a832803c6f765418a47d51bf29c9"
+    },
+    "portraits/tw.webp": {
+      "bytes": 37626,
+      "sha256": "a6807243700d40b08f72837c41ead052bea5cdf1a4fb902cd0dfaa111a3d42e0"
+    },
+    "portraits/tz.webp": {
+      "bytes": 37070,
+      "sha256": "098a11d36133c6d81a6b7739dc85fa2ae69ac4e4877bd8e279bdff6adaf5a3c8"
+    },
+    "portraits/ua.webp": {
+      "bytes": 37158,
+      "sha256": "d8555911124c84182347649d17c3060b2b8412f4f2f1d2c5b525d544b5e08bbe"
+    },
+    "portraits/ug.webp": {
+      "bytes": 36502,
+      "sha256": "d7a91bba09c3b47c0972e7233dd7a6e044034073724ef38dce71553ccf345364"
+    },
+    "portraits/us.webp": {
+      "bytes": 34482,
+      "sha256": "5d577ec00b87c6b6d1267fbea0182867b9b78385e766ab9a06110e151341fbb5"
+    },
+    "portraits/uy.webp": {
+      "bytes": 37822,
+      "sha256": "de6009d357bb20929ddda305e6dab0642e6af7dd6febbad3feeaef3f9eb866e9"
+    },
+    "portraits/uz.webp": {
+      "bytes": 41894,
+      "sha256": "605af8d6b6a22300b6e7d5d721e12e1df1e1a7ddf3dcec3b4eb50df0caba9a68"
+    },
+    "portraits/va.webp": {
+      "bytes": 35406,
+      "sha256": "5351ae6f9e9e6f532183bbeee38e905b7dadaed91eadda8a4516e1566900cb5b"
+    },
+    "portraits/vc.webp": {
+      "bytes": 36062,
+      "sha256": "c40ca5654b00becb74be4bb23f916959b64a487aef112fa020eceac5c274879f"
+    },
+    "portraits/ve.webp": {
+      "bytes": 38326,
+      "sha256": "61e68a091b1ff2d9ff3ed8cacae5bb47e3e0a185667100f67c874f2589d0a7a4"
+    },
+    "portraits/vn.webp": {
+      "bytes": 38040,
+      "sha256": "0f45f442daca24a30a6dfd7de8ae30da8e6d0ee84b12d1b020e88565cd67d26d"
+    },
+    "portraits/vu.webp": {
+      "bytes": 36094,
+      "sha256": "c5df29640c5ef295a189f90daa4a6224cedba2552b5fe89679b8dbe0ca9feaea"
+    },
+    "portraits/ws.webp": {
+      "bytes": 33114,
+      "sha256": "a3193ecf86fc30734872dc92422538a492b3b8b9fdb1369a64d7131c68978be3"
+    },
+    "portraits/ye.webp": {
+      "bytes": 35230,
+      "sha256": "6cf35da4d2a120a2f80d7c77b13be17d737121005231d7fca218c480fc19d88f"
+    },
+    "portraits/za.webp": {
+      "bytes": 23894,
+      "sha256": "7cc776df797adb6abf79e4f2db2417e538e5590412644ca0a4d17f8ff2f5fc71"
+    },
+    "portraits/zm.webp": {
+      "bytes": 34862,
+      "sha256": "ce4b3d4d744b662cc199c0509379ab4a60e9c0bc267dfd495c2df812113e9000"
+    },
+    "portraits/zw.webp": {
+      "bytes": 34338,
+      "sha256": "8d6e72cc0fdd203e90a7e166a94283f41beb24061986d108bc60b5ec5fe048b8"
+    }
+  },
+  "format": 1,
+  "game": "NationClash neon 2D, 196 country fighters, 30 arenas",
+  "legacy": {
+    "fighter-body": {
+      "encoding": "WebP quality 92, method 6; same pixel dimensions",
+      "path": "legacy/fighter-body.webp",
+      "sourcePath": "browser/assets/fighter-body.png",
+      "sourceSha256": "86caf22cb0d9c9e27d1d830466a1864695e3ae62f8489194b3b7bd315ed2f891"
+    },
+    "fighter-heads": {
+      "encoding": "WebP quality 92, method 6; same pixel dimensions",
+      "path": "legacy/fighter-heads.webp",
+      "sourcePath": "browser/assets/fighter-heads.png",
+      "sourceSha256": "1ed82bee6a2bebd4f2c2e617e38a00bbea22833fc3e5364d072866361c8c532b"
+    },
+    "japan-poses": {
+      "encoding": "WebP quality 92, method 6; same pixel dimensions",
+      "path": "legacy/japan-poses.webp",
+      "sourcePath": "browser/assets/japan-poses.png",
+      "sourceSha256": "419cdc1a74ea32011f9ab56a6d5c4c64c69afeb6984827155befdb794e6e955c"
+    },
+    "pakistan-poses": {
+      "encoding": "WebP quality 92, method 6; same pixel dimensions",
+      "path": "legacy/pakistan-poses.webp",
+      "sourcePath": "browser/assets/pakistan-poses.png",
+      "sourceSha256": "cd6447e22fe14b8854ed7d8a994c7b0ba710c0f1ab84d6167f092bf31cfbf16f"
+    }
+  },
+  "moduleOrder": [
+    "roster",
+    "powers",
+    "combat",
+    "arena-catalog",
+    "arenas",
+    "audio",
+    "fighters",
+    "sprites",
+    "country-art",
+    "country-sprites",
+    "power-fx",
+    "fighter-preview",
+    "presentation",
+    "game"
+  ],
+  "modules": {
+    "arena-catalog": {
+      "bundledSha256": "f052205e74775a0536c2112dda4019b37ad1b298a409e12b71b79c9e5a95a791",
+      "sourcePath": "browser/src/arena-catalog.js",
+      "sourceSha256": "f052205e74775a0536c2112dda4019b37ad1b298a409e12b71b79c9e5a95a791",
+      "unchanged": true
+    },
+    "arenas": {
+      "bundledSha256": "4ec6a9881351346a102e013d4fcc0d4573a0820090b9404a45c3d703bdd73038",
+      "sourcePath": "browser/src/arenas.js",
+      "sourceSha256": "d69f919e0dc36ae9058c8a14843e162cc388a5842689be4da661ddb3eac23512",
+      "unchanged": false
+    },
+    "audio": {
+      "bundledSha256": "6516a7392abb1dee78e7e44f4dff4dac1752f126f775b6e38848192930d9adaa",
+      "sourcePath": "browser/src/audio.js",
+      "sourceSha256": "7bc84f99a1c4a8d9c07f205c293e8ce70a646706629ce4fde513b959b2cf9274",
+      "unchanged": false
+    },
+    "combat": {
+      "bundledSha256": "ddc2fff5a0dd179b2a89c80c8c7e4bf27c67bbc29590f263cad30ef8e49e3ebb",
+      "sourcePath": "browser/src/combat.js",
+      "sourceSha256": "ddc2fff5a0dd179b2a89c80c8c7e4bf27c67bbc29590f263cad30ef8e49e3ebb",
+      "unchanged": true
+    },
+    "country-art": {
+      "bundledSha256": "8a94da2348114f045f5b16afd6a7857cdd511e716cf06275fc545bf3972ada54",
+      "sourcePath": "browser/src/country-art.js",
+      "sourceSha256": "8a94da2348114f045f5b16afd6a7857cdd511e716cf06275fc545bf3972ada54",
+      "unchanged": true
+    },
+    "country-sprites": {
+      "bundledSha256": "63091014b8cadf515aaf93357f56d3d738a77ad369468ea0b374ca734969a9e9",
+      "sourcePath": "browser/src/country-sprites.js",
+      "sourceSha256": "be9b91d4cdddf23c3d20796bee001f0a81954b87dc81b8e609ce3c7ebbe5172a",
+      "unchanged": false
+    },
+    "fighter-preview": {
+      "bundledSha256": "0b643a2fd0d05ca681fb56ffb0e1abb4c5dcc59720e18f666c30e073ef60544e",
+      "sourcePath": "browser/src/fighter-preview.js",
+      "sourceSha256": "0b643a2fd0d05ca681fb56ffb0e1abb4c5dcc59720e18f666c30e073ef60544e",
+      "unchanged": true
+    },
+    "fighters": {
+      "bundledSha256": "8a5823e9de9cf598a3800cddbc50b0262e4e76e3d250b202872617c1e1d8b9c5",
+      "sourcePath": "browser/src/fighters.js",
+      "sourceSha256": "8a5823e9de9cf598a3800cddbc50b0262e4e76e3d250b202872617c1e1d8b9c5",
+      "unchanged": true
+    },
+    "game": {
+      "bundledSha256": "15189da601dbd54e932d5f7b8706dbbdc42a43e51f026eb7029d82bed2c84c64",
+      "sourcePath": "browser/src/game.js",
+      "sourceSha256": "159e220b530319641cb9ce795e2e93aa47edafeb10bad0f009e951a8f772e655",
+      "unchanged": false
+    },
+    "power-fx": {
+      "bundledSha256": "a5b8c3565efc71816553b43a57e6ed6fa5148fcd76bb10d18de8be190369ed3d",
+      "sourcePath": "browser/src/power-fx.js",
+      "sourceSha256": "a5b8c3565efc71816553b43a57e6ed6fa5148fcd76bb10d18de8be190369ed3d",
+      "unchanged": true
+    },
+    "powers": {
+      "bundledSha256": "d91e837b029dd1176046a69c5a079067d521ee7c80a83fa9e13030ea351bb332",
+      "sourcePath": "browser/src/powers.js",
+      "sourceSha256": "d91e837b029dd1176046a69c5a079067d521ee7c80a83fa9e13030ea351bb332",
+      "unchanged": true
+    },
+    "presentation": {
+      "bundledSha256": "5ec0143ac28105633e95ef84d65a39c519eded7e575609d5bf62a5cf2c0f8cb8",
+      "sourcePath": "browser/src/presentation.js",
+      "sourceSha256": "5ec0143ac28105633e95ef84d65a39c519eded7e575609d5bf62a5cf2c0f8cb8",
+      "unchanged": true
+    },
+    "roster": {
+      "bundledSha256": "b27db67ab912f2717f2b3fc0ee08e5ad29f701ff17b2cfc142d80e14511044e4",
+      "sourcePath": "browser/src/roster.js",
+      "sourceSha256": "b27db67ab912f2717f2b3fc0ee08e5ad29f701ff17b2cfc142d80e14511044e4",
+      "unchanged": true
+    },
+    "sprites": {
+      "bundledSha256": "76c6d7e4fda9a4fbf5366f54536225c95a0506d08a9c6f85cb7153c2bef9fe50",
+      "sourcePath": "browser/src/sprites.js",
+      "sourceSha256": "76c6d7e4fda9a4fbf5366f54536225c95a0506d08a9c6f85cb7153c2bef9fe50",
+      "unchanged": true
+    }
+  },
+  "sourceInputs": {
+    "browser/assets/arenas/metadata.json": "e351bcdb1341c0af46719eaa7ef7e35f248cceb9905796a2a6f1ac9b789aeedb",
+    "browser/assets/branding/metadata.json": "dc079d3658a6c4dea73f50601d4fde67589d11c5d25a319ac7bc35a1e112d500",
+    "browser/assets/branding/nation-clash-logo.webp": "d06638cd8b5bf9b0ab8818cc2c3f015d943a7f59ac769ab5c28a8d84c558a8c7",
+    "browser/assets/countries/metadata.json": "3a0b7d6c8607c08f34ea07ce9cc7326d369ebc35c79c02a9c3d98699e1df1452",
+    "browser/landing-neon.css": "c24e3359875a0f3d47a8a501189e4a4afdbd743a43e7b302aecf2952c748f4ad",
+    "browser/template.html": "d10e9a5325c023de68f656927d3fdca6990d234b293b66c076062a04370a1369",
+    "tools/build-android-assets.py": "4495b4d12302ec498740f6dc11a78c7df3f1464c37c681521e331013958266d8",
+    "tools/build-browser.mjs": "996a361135650b245b0df70d898cc3d4fedf7b1b1e2f0d36582f0e8c5eb5f6aa"
+  },
+  "totalBytes": 90478264,
+  "transformations": [
+    "Asset URI marker substitutions only in arenas, country-sprites, game and audio modules.",
+    "country-sprites.loadImage accepts local WebP URLs before its unchanged browser transports.",
+    "Canonical template and neon CSS load one local game.js instead of an inline script.",
+    "Country files preserve logical country IDs and copy the metadata-assigned sourceCountryId bytes.",
+    "Header and landing logo markers use one shared, byte-identical local WebP brand asset."
+  ],
+  "voices": {
+    "fight": {
+      "sourcePath": "browser/assets/audio/fight.wav",
+      "sourceSha256": "7471cd4f44ad3be5eab6008f0ff58e8b878187acde33b34be6fccda3e56390b1"
+    },
+    "getready": {
+      "sourcePath": "browser/assets/audio/getready.wav",
+      "sourceSha256": "8719da69931d132afdb3c289c90f4133e7457c26d2ab09bdd8bc37855d2e85b1"
+    },
+    "ko": {
+      "sourcePath": "browser/assets/audio/ko.wav",
+      "sourceSha256": "95571eebad6fddfe250bffefd2ad6c9c334993c924b5a4676f150df8c425dddf"
+    },
+    "timeover": {
+      "sourcePath": "browser/assets/audio/timeover.wav",
+      "sourceSha256": "702c855e744808c345415a60f36015adb8dfe740a479d8fd89e9ea8a7a8e1070"
+    }
+  }
+}

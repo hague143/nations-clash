@@ -3,10 +3,16 @@
 **Active version: the neon 2D browser game**, with 196 country fighters,
 hover move previews and 30 arena views.
 
-**Test on Android:** download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk)
+**Play Store bundle:** [NationClash-PlayStore.aab](downloads/NationClash-PlayStore.aab)
+(about 89 MB), signed version **0.2.0**, targets **Android 16 / API 36** and
+includes the refreshed Nation Clash logo in the game and app icon. Upload it
+to Play Console **Internal testing**. See [bundle validation and upload steps](docs/PLAY-STORE-AAB.md).
+
+**Earlier Android test build:** [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk)
 (about 88 MB), install it and open **NationClash**. Android 8.0+ is required.
 All fighters, arenas and audio are included for offline play. See
-[Android installation and build instructions](android/README.md).
+[Android installation and build instructions](android/README.md). This earlier
+APK predates the new logo; the new branding is in the AAB and updated browser game.
 
 **Play without Unity:** download [NationClash-Windows.zip](downloads/NationClash-Windows.zip),
 right-click → **Extract All**, then open the extracted `NationClash.html` in

@@ -1,5 +1,6 @@
 import {readFile,writeFile,mkdir,cp} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
 import path from 'node:path';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const files=['roster','powers','combat','arena-catalog','arenas','audio','fighters','sprites','country-art','country-sprites','power-fx','fighter-preview','presentation','game'];
@@ -31,10 +32,14 @@ for(const key of ['fight','ko','getready','timeover']){
 }
 const template=await readFile(path.join(root,'browser/template.html'),'utf8');
 const neon=await readFile(path.join(root,'browser/landing-neon.css'),'utf8');
+const brandLogo=await readFile(path.join(root,'browser/assets/branding/nation-clash-logo.webp'));
+const brandLogoUri='data:image/webp;base64,'+brandLogo.toString('base64');
+const brandLogoSha256=createHash('sha256').update(brandLogo).digest('hex');
+if(template.split('/* BRAND_LOGO_DATA */').length!==3)throw new Error('Expected the shared brand logo in the header and landing page');
 const flagLicense=await readFile(path.join(root,'browser/assets/flags/LICENSE.txt'),'utf8');
-const credits='<!-- National flag SVGs: lipis/flag-icons 7.5.0.\n'+flagLicense.replace(/--/g,'—')+'\nFighter atlases prepared with image generation; Pakistan/Japan source images supplied by the user.\nArena artwork supplied by the user; synthesized music/impacts and offline eSpeak NG announcer cues.\n-->\n';
-const html=template.replace('/* LANDING_NEON_CSS */',()=>neon).replace('<head>',()=>'<head>\n'+credits).replace('<script>/* COMBAT_SOURCE */</script><script>/* GAME_SOURCE */</script>',()=>'<script>'+script.replace(/<\/script/gi,'<\\/script')+'</script>');
-if(/\/\* (?:[A-Z]+_IMAGE_DATA|AUDIO_[A-Z]+_DATA|COMBAT_SOURCE|GAME_SOURCE) \*\//.test(html))throw new Error('Unresolved standalone asset placeholder');
+const credits='<!-- National flag SVGs: lipis/flag-icons 7.5.0.\n'+flagLicense.replace(/--/g,'—')+'\nFighter atlases prepared with image generation; Pakistan/Japan source images supplied by the user.\nArena artwork supplied by the user; synthesized music/impacts and offline eSpeak NG announcer cues.\nNationClash brand artwork prepared from the user-supplied visual reference. Logo WebP SHA256: '+brandLogoSha256+'.\n-->\n';
+const html=template.replace('/* LANDING_NEON_CSS */',()=>neon).replaceAll('/* BRAND_LOGO_DATA */',()=>brandLogoUri).replace('<head>',()=>'<head>\n'+credits).replace('<script>/* COMBAT_SOURCE */</script><script>/* GAME_SOURCE */</script>',()=>'<script>'+script.replace(/<\/script/gi,'<\\/script')+'</script>');
+if(/\/\* (?:[A-Z]+_IMAGE_DATA|AUDIO_[A-Z]+_DATA|BRAND_LOGO_DATA|COMBAT_SOURCE|GAME_SOURCE) \*\//.test(html))throw new Error('Unresolved standalone asset placeholder');
 await writeFile(path.join(root,'browser/index.html'),html);
 const output=process.env.NATIONCLASH_ARTIFACT_DIR||path.join(root,'artifacts');await mkdir(output,{recursive:true});
 await cp(countryFolder,path.join(output,'country-art'),{recursive:true});

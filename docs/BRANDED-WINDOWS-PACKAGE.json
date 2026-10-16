@@ -1,0 +1,36 @@
+{
+  "format": "self-contained single HTML inside ZIP",
+  "zipBytes": 89922384,
+  "zipSha256": "6942209f260a870836cf23323776c8d4d4d2bed9693c18c9ea3915403a61ab29",
+  "htmlBytes": 118858023,
+  "htmlSha256": "4404eff286168c73b3f5d188eb0d48ca6120a9e9625db3aa943f4dbe3e2ab318",
+  "sourceHtmlSha256": "4b8eae6fe3315408589498052d67a6c26ffa1ada6332e3846b399f5b862ec04c",
+  "zipCrc": "passed",
+  "members": 9,
+  "companionAssetFiles": 0,
+  "embeddedAtlases": 196,
+  "assignedAtlasByteChecks": 196,
+  "sourcePngs": 196,
+  "missingPngs": 0,
+  "eightPoseCountries": 195,
+  "fourPoseCountry": [
+    "tr"
+  ],
+  "sourcePoseTotal": 1564,
+  "arenaSourcePngs": 30,
+  "embeddedArenaViews": 30,
+  "arenaByteChecks": 30,
+  "arenaLandmarks": 29,
+  "countrySignatures": 196,
+  "signatureVisualMaterials": 9,
+  "bundledModuleSourceHashes": {
+    "powers": "d91e837b029dd1176046a69c5a079067d521ee7c80a83fa9e13030ea351bb332",
+    "combat": "ddc2fff5a0dd179b2a89c80c8c7e4bf27c67bbc29590f263cad30ef8e49e3ebb",
+    "power-fx": "a5b8c3565efc71816553b43a57e6ed6fa5148fcd76bb10d18de8be190369ed3d",
+    "fighter-preview": "0b643a2fd0d05ca681fb56ffb0e1abb4c5dcc59720e18f666c30e073ef60544e",
+    "presentation": "5ec0143ac28105633e95ef84d65a39c519eded7e575609d5bf62a5cf2c0f8cb8",
+    "audio": "7bc84f99a1c4a8d9c07f205c293e8ce70a646706629ce4fde513b959b2cf9274",
+    "game": "159e220b530319641cb9ce795e2e93aa47edafeb10bad0f009e951a8f772e655"
+  },
+  "landingThemeSha256": "c24e3359875a0f3d47a8a501189e4a4afdbd743a43e7b302aecf2952c748f4ad"
+}

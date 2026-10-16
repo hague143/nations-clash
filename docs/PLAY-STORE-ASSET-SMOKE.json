@@ -1,0 +1,58 @@
+{
+  "startedAt": "2026-10-16T17:17:23.430Z",
+  "assets": "/workspace/nations-clash/artifacts/android-assets",
+  "checks": [
+    {
+      "name": "Local JavaScript, flags, legacy sheets, portraits and default arena boot",
+      "status": "passed",
+      "verifiedFiles": 430
+    },
+    {
+      "name": "All country sheets, portraits and arenas decode locally with bounded caches",
+      "status": "passed",
+      "countries": 196,
+      "portraits": 196,
+      "arenas": 30
+    },
+    {
+      "name": "Real keyboard j causes correctly timed damage",
+      "status": "passed",
+      "damage": 65,
+      "distance": 1.1
+    },
+    {
+      "name": "Real keyboard k causes correctly timed damage",
+      "status": "passed",
+      "damage": 125,
+      "distance": 1.6
+    },
+    {
+      "name": "Real keyboard h causes correctly timed damage",
+      "status": "passed",
+      "damage": 120,
+      "distance": 3.8
+    },
+    {
+      "name": "Original synthesized music, impact effects and all embedded announcer clips work",
+      "status": "passed"
+    },
+    {
+      "name": "390px touch signature, responsive controls and layout",
+      "status": "passed"
+    },
+    {
+      "name": "844px touch signature, responsive controls and layout",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "/workspace/nations-clash/artifacts/android-assets-desktop.png",
+    "/workspace/nations-clash/artifacts/android-assets-mobile-390.png",
+    "/workspace/nations-clash/artifacts/android-assets-mobile-844.png"
+  ],
+  "passed": true,
+  "manifestSha256": "add49a3e96b79d9bd627e7d6d2a41fad4d652d4dfe0b17d2bda2c2cfab22f0e6",
+  "finishedAt": "2026-10-16T17:17:50.412Z"
+}

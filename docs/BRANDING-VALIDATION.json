@@ -1,0 +1,185 @@
+{
+  "startedAt": "2026-10-16T17:18:38.913Z",
+  "checks": [
+    {
+      "name": "android 1440px shared logo decode, accessible name, size and above-fold layout",
+      "status": "passed",
+      "kind": "android",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "branding": {
+        "images": [
+          {
+            "alt": "NationClash — World Arena",
+            "embedded": false,
+            "localPath": "/android/brand/logo.webp",
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 64,
+            "height": 64,
+            "left": 44,
+            "right": 108,
+            "top": 28,
+            "bottom": 92
+          },
+          {
+            "alt": "NationClash",
+            "embedded": false,
+            "localPath": "/android/brand/logo.webp",
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 176,
+            "height": 176,
+            "left": 44,
+            "right": 220,
+            "top": 231.671875,
+            "bottom": 407.671875
+          }
+        ],
+        "scrollWidth": 1440,
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "name": "android 390px shared logo decode, accessible name, size and above-fold layout",
+      "status": "passed",
+      "kind": "android",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "branding": {
+        "images": [
+          {
+            "alt": "NationClash — World Arena",
+            "embedded": false,
+            "localPath": "/android/brand/logo.webp",
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 44,
+            "height": 44,
+            "left": 13,
+            "right": 57,
+            "top": 16,
+            "bottom": 60
+          },
+          {
+            "alt": "NationClash",
+            "embedded": false,
+            "localPath": "/android/brand/logo.webp",
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 159.890625,
+            "height": 159.890625,
+            "left": 13,
+            "right": 172.890625,
+            "top": 110,
+            "bottom": 269.890625
+          }
+        ],
+        "scrollWidth": 390,
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "android 844px shared logo decode, accessible name, size and above-fold layout",
+      "status": "passed",
+      "kind": "android",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "branding": {
+        "images": [
+          {
+            "alt": "NationClash — World Arena",
+            "embedded": false,
+            "localPath": "/android/brand/logo.webp",
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 44,
+            "height": 44,
+            "left": 14,
+            "right": 58,
+            "top": 8,
+            "bottom": 52
+          },
+          {
+            "alt": "NationClash",
+            "embedded": false,
+            "localPath": "/android/brand/logo.webp",
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 112,
+            "height": 112,
+            "left": 14,
+            "right": 126,
+            "top": 204.9375,
+            "bottom": 316.9375
+          }
+        ],
+        "scrollWidth": 844,
+        "width": 844,
+        "height": 390
+      }
+    },
+    {
+      "name": "browser 1440px shared logo decode, accessible name, size and above-fold layout",
+      "status": "passed",
+      "kind": "browser",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "branding": {
+        "images": [
+          {
+            "alt": "NationClash — World Arena",
+            "embedded": true,
+            "localPath": null,
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 64,
+            "height": 64,
+            "left": 44,
+            "right": 108,
+            "top": 28,
+            "bottom": 92
+          },
+          {
+            "alt": "NationClash",
+            "embedded": true,
+            "localPath": null,
+            "naturalWidth": 1024,
+            "naturalHeight": 1024,
+            "width": 176,
+            "height": 176,
+            "left": 44,
+            "right": 220,
+            "top": 231.671875,
+            "bottom": 407.671875
+          }
+        ],
+        "scrollWidth": 1440,
+        "width": 1440,
+        "height": 900
+      }
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "/workspace/nations-clash/artifacts/branding-android-1440.png",
+    "/workspace/nations-clash/artifacts/branding-android-390.png",
+    "/workspace/nations-clash/artifacts/branding-android-844.png",
+    "/workspace/nations-clash/artifacts/branding-browser-1440.png"
+  ],
+  "passed": true,
+  "logoSha256": "d06638cd8b5bf9b0ab8818cc2c3f015d943a7f59ac769ab5c28a8d84c558a8c7",
+  "androidManifestSha256": "add49a3e96b79d9bd627e7d6d2a41fad4d652d4dfe0b17d2bda2c2cfab22f0e6",
+  "finishedAt": "2026-10-16T17:18:54.524Z"
+}

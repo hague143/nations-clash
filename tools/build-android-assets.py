@@ -52,7 +52,7 @@ def main() -> None:
     if out == ROOT or out in ROOT.parents or out == ROOT / "browser":
         raise ValueError("Output must be a dedicated build directory")
     out.mkdir(parents=True, exist_ok=True)
-    for directory in ("countries", "portraits", "arenas", "legacy"):
+    for directory in ("countries", "portraits", "arenas", "legacy", "brand"):
         (out / directory).mkdir(exist_ok=True)
 
     builder_path = ROOT / "tools/build-browser.mjs"
@@ -182,7 +182,23 @@ def main() -> None:
 
     template_path = ROOT / "browser/template.html"
     neon_path = ROOT / "browser/landing-neon.css"
+    brand_logo_path = ROOT / "browser/assets/branding/nation-clash-logo.webp"
+    brand_metadata_path = ROOT / "browser/assets/branding/metadata.json"
+    brand_logo_relative = "brand/logo.webp"
+    shutil.copyfile(brand_logo_path, out / brand_logo_relative)
+    with Image.open(out / brand_logo_relative) as image:
+        if image.format != "WEBP":
+            raise ValueError("The shared brand logo must be WebP")
+        brand_logo_dimensions = image.size
+        image.verify()
+    brand_logo_hash = sha256(brand_logo_path.read_bytes())
+    brand_metadata = json.loads(brand_metadata_path.read_text())
+    if brand_logo_hash != brand_metadata["exports"][str(brand_logo_path.relative_to(ROOT))]["sha256"]:
+        raise ValueError("Brand logo bytes differ from the supplied artwork inventory")
     html = replace_once(template_path.read_text(), "/* LANDING_NEON_CSS */", neon_path.read_text())
+    if html.count("/* BRAND_LOGO_DATA */") != 2:
+        raise ValueError("Expected the shared brand logo in the header and landing page")
+    html = html.replace("/* BRAND_LOGO_DATA */", brand_logo_relative)
     html = replace_once(
         html,
         "<script>/* COMBAT_SOURCE */</script><script>/* GAME_SOURCE */</script>",
@@ -201,9 +217,11 @@ def main() -> None:
         (ROOT / path).read_text() for path in credit_paths
     )
     credits += "\n\nAndroid packaging loads original assigned country/arena WebP files locally; no hosting or account is required.\n"
+    credits += "NationClash brand artwork was prepared from the user-supplied visual reference.\n"
+    credits += "The same local logo appears in the header and landing page. Logo WebP SHA256: " + brand_logo_hash + ".\n"
     (out / "CREDITS.txt").write_text(credits)
 
-    expected_files = {"index.html", "game.js", "CREDITS.txt"}
+    expected_files = {"index.html", "game.js", "CREDITS.txt", brand_logo_relative}
     expected_files.update(country_files.values())
     expected_files.update(portraits.values())
     expected_files.update(arena_files.values())
@@ -231,14 +249,23 @@ def main() -> None:
         },
         "sourceInputs": {
             str(path.relative_to(ROOT)): sha256(path.read_bytes())
-            for path in (Path(__file__).resolve(), builder_path, template_path, neon_path, country_metadata_path, arena_metadata_path)
+            for path in (Path(__file__).resolve(), builder_path, template_path, neon_path, country_metadata_path, arena_metadata_path, brand_logo_path, brand_metadata_path)
         },
         "transformations": [
             "Asset URI marker substitutions only in arenas, country-sprites, game and audio modules.",
             "country-sprites.loadImage accepts local WebP URLs before its unchanged browser transports.",
             "Canonical template and neon CSS load one local game.js instead of an inline script.",
             "Country files preserve logical country IDs and copy the metadata-assigned sourceCountryId bytes.",
+            "Header and landing logo markers use one shared, byte-identical local WebP brand asset.",
         ],
+        "branding": {
+            "name": "NationClash",
+            "path": brand_logo_relative,
+            "sourcePath": str(brand_logo_path.relative_to(ROOT)),
+            "sourceSha256": brand_logo_hash,
+            "width": brand_logo_dimensions[0],
+            "height": brand_logo_dimensions[1],
+        },
         "countries": countries,
         "arenas": arenas,
         "legacy": legacy,

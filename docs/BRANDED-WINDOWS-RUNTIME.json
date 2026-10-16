@@ -1,0 +1,10 @@
+{
+  "htmlSha256": "4404eff286168c73b3f5d188eb0d48ca6120a9e9625db3aa943f4dbe3e2ab318",
+  "errors": [],
+  "externalRequests": [],
+  "checks": [
+    "Exact ZIP HTML boots without companion files; both logos match shared WebP",
+    "Real keyboard punch causes HP damage in the extracted standalone game"
+  ],
+  "passed": true
+}

@@ -7,6 +7,11 @@ are bundled in the APK; it works without an internet connection.
 
 ## Install and play
 
+For the refreshed logo and Google Play upload, use the
+[signed Play Store AAB and instructions](../docs/PLAY-STORE-AAB.md). An AAB is
+installed through a Play testing track, rather than opened directly as an APK.
+The earlier standalone test APK below retains its previous branding.
+
 1. Download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk)
    on an Android phone running **Android 8.0 or newer**.
 2. Open the downloaded APK. If Android asks, allow **Install unknown apps** for

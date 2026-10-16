@@ -1,6 +1,7 @@
 package com.nationclash.game;
 
 import android.app.Activity;
+import android.content.pm.ApplicationInfo;
 import android.graphics.Color;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -26,6 +27,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.window.OnBackInvokedCallback;
+import android.window.OnBackInvokedDispatcher;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,6 +49,7 @@ public final class MainActivity extends Activity {
     private ProgressBar progress;
     private Button retry;
     private boolean pageFailed;
+    private OnBackInvokedCallback backCallback;
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -54,6 +58,13 @@ public final class MainActivity extends Activity {
         root.setBackgroundColor(Color.rgb(8, 13, 22));
         setContentView(root);
         createNotice();
+        if (Build.VERSION.SDK_INT >= 33) {
+            backCallback = new OnBackInvokedCallback() {
+                @Override public void onBackInvoked() { handleBack(); }
+            };
+            getOnBackInvokedDispatcher().registerOnBackInvokedCallback(
+                OnBackInvokedDispatcher.PRIORITY_DEFAULT, backCallback);
+        }
         try {
             web = new WebView(this);
             web.setBackgroundColor(Color.rgb(8, 13, 22));
@@ -82,8 +93,9 @@ public final class MainActivity extends Activity {
                     return true;
                 }
             });
-            // This APK is an explicitly labelled developer test build.
-            WebView.setWebContentsDebuggingEnabled(true);
+            // Test manifests enable diagnostics; the Play release sets this flag false.
+            WebView.setWebContentsDebuggingEnabled(
+                (getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0);
             root.addView(web, 0, new FrameLayout.LayoutParams(-1, -1));
             root.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
               @Override public WindowInsets onApplyWindowInsets(View v, WindowInsets insets) {
@@ -221,6 +233,10 @@ public final class MainActivity extends Activity {
     }
 
     @Override public void onBackPressed() {
+        handleBack();
+    }
+
+    private void handleBack() {
         if (web == null) { finish(); return; }
         web.evaluateJavascript("(function(){var g=window.NationClash;if(g&&g.fight){"
             + "if(g.paused||g.fight.phase==='complete')document.getElementById('back').click();"
@@ -249,6 +265,10 @@ public final class MainActivity extends Activity {
     }
 
     @Override protected void onDestroy() {
+        if (Build.VERSION.SDK_INT >= 33 && backCallback != null) {
+            getOnBackInvokedDispatcher().unregisterOnBackInvokedCallback(backCallback);
+            backCallback = null;
+        }
         if (web != null) { root.removeView(web); web.destroy(); web = null; }
         super.onDestroy();
     }

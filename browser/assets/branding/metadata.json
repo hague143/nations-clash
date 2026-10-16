@@ -1,0 +1,23 @@
+{
+  "source": "browser/assets/branding/nation-clash-logo.png",
+  "sourceSha256": "e21c7c4c3878342e9e0ba539f080766a7544f5ce488c492cabae541a8bbe086c",
+  "preparation": "Logo prepared from the user-supplied visual reference using image generation; source PNG retained.",
+  "exports": {
+    "browser/assets/branding/nation-clash-logo.webp": {
+      "bytes": 341874,
+      "sha256": "d06638cd8b5bf9b0ab8818cc2c3f015d943a7f59ac769ab5c28a8d84c558a8c7"
+    },
+    "browser/assets/branding/play-store-icon.png": {
+      "bytes": 488397,
+      "sha256": "042b40104b4b11fe849cdefe90ccb980ec7bd87fba06ba510e18911cb6559289"
+    },
+    "android/app/src/main/res/drawable-nodpi/nation_clash_icon.png": {
+      "bytes": 488397,
+      "sha256": "042b40104b4b11fe849cdefe90ccb980ec7bd87fba06ba510e18911cb6559289"
+    },
+    "android/app/src/main/res/drawable-nodpi/nation_clash_foreground.png": {
+      "bytes": 265299,
+      "sha256": "eac9b7ea84479ceada2988f8349b7c4ad45e3821f40ac9255a326118a17d2ca0"
+    }
+  }
+}

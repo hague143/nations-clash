@@ -18,6 +18,11 @@ OUT = ROOT / "artifacts"
 OUT.mkdir(exist_ok=True)
 html = (ROOT / "browser/index.html").read_text()
 source_hash = hashlib.sha256(html.encode()).hexdigest()
+brand_logo = ROOT / "browser/assets/branding/nation-clash-logo.webp"
+brand_logo_bytes = brand_logo.read_bytes()
+brand_logo_hash = hashlib.sha256(brand_logo_bytes).hexdigest()
+brand_logo_uri = "data:image/webp;base64," + base64.b64encode(brand_logo_bytes).decode()
+assert html.count(brand_logo_uri) == 2, "Rebuild browser/index.html with the shared header and landing logo before packaging"
 assets = OUT / "web-assets"
 assets.mkdir(exist_ok=True)
 for name in ("japan-poses", "pakistan-poses", "fighter-heads", "fighter-body"):
@@ -104,6 +109,8 @@ credits += "\n\n" + (ROOT / "browser/assets/arenas/README.md").read_text()
 credits += "\n\n" + (ROOT / "docs/AUDIO-DESIGN.md").read_text()
 credits += "\n\nNational flags: lipis/flag-icons 7.5.0\n"
 credits += (ROOT / "browser/assets/flags/LICENSE.txt").read_text()
+credits += "\n\nNationClash brand artwork was prepared from the user-supplied visual reference.\n"
+credits += "The same logo is embedded in the landing page and header. Logo WebP SHA256: " + brand_logo_hash + ".\n"
 credits += "\nDownload optimization: PNG sources remain intact; the downloadable game embeds WebP variants at the same dimensions. Its inline program is gzip compressed.\n"
 archive = OUT / "NationClash-Windows.zip"
 with ZipFile(archive, "w", ZIP_DEFLATED, compresslevel=9) as zip_file:
@@ -122,6 +129,7 @@ with ZipFile(archive) as zip_file:
     assert zip_file.read("NationClash.html") == game.read_bytes()
     assert len(zip_file.namelist()) == 9
     assert html.count('id="country-art-') == 196
+    assert html.count(brand_logo_uri) == 2, "The standalone download must retain both exact brand images"
     assert not any(n.startswith('country-art/') for n in zip_file.namelist())
 OUT.chmod(0o755)
 for path in (game, archive):
