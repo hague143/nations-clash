@@ -5,6 +5,12 @@ the neon 2D game, the refreshed blue/red Nation Clash branding, all 196 country
 fighters, 30 arena views and offline audio. The same logo appears in the game
 header, landing page and Android adaptive launcher icon.
 
+[Download the signed AAB](https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-PlayStore.aab)
+and the [512x512 store icon](https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-PlayStore-icon.png).
+Full public downloads were verified against the tested files; the downloaded
+AAB also passed strict signing, bundle and payload checks. See
+[public download evidence](PLAY-STORE-PUBLIC-DOWNLOADS.json).
+
 | Field | Release |
 |---|---|
 | Application ID | `com.nationclash.game` |

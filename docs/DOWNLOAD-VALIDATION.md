@@ -1,5 +1,11 @@
 # Neon country-power edition validation
 
+The latest branding refresh adds the blue/red Nation Clash logo to the game
+and includes a signed Android 16 Play Store AAB. Current artifacts, hashes and
+checks are in [the branding/release report](PLAY-STORE-AAB.md) and
+[public download verification](PLAY-STORE-PUBLIC-DOWNLOADS.json). The measurements
+below are retained for the earlier neon edition; its combat sources are unchanged.
+
 The download contains one self-contained `NationClash.html`, with **196 supplied
 fighters, 196 country powers, 30 arena views and original audio** embedded. The
 ZIP includes that HTML and eight instructions, credits and artwork records.

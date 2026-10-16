@@ -1,0 +1,48 @@
+{
+  "status": "verified",
+  "verifiedAt": "2026-10-16T17:25:22.035649+00:00",
+  "sourceCommit": "015a5e65bcc8c1975cb479f978ad77e973f13083",
+  "files": [
+    {
+      "file": "NationClash-PlayStore.aab",
+      "url": "https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-PlayStore.aab",
+      "bytes": 89446219,
+      "sha256": "573a45f24ffebcfc2bc576a7e320f5299c6e98ca105b74f69a80bab95aaba518",
+      "contentType": "application/octet-stream",
+      "httpStatus": 200,
+      "status": "verified",
+      "zipCrc": "passed",
+      "verifiedPayloadHashes": 430,
+      "nativeLibraries": 0,
+      "exactBrandLogo": true,
+      "strictJarSignature": "passed",
+      "bundletoolValidate": "passed",
+      "targetSdk": 36,
+      "versionCode": 2,
+      "debuggable": false
+    },
+    {
+      "file": "NationClash-Windows.zip",
+      "url": "https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-Windows.zip",
+      "bytes": 89922384,
+      "sha256": "6942209f260a870836cf23323776c8d4d4d2bed9693c18c9ea3915403a61ab29",
+      "contentType": "application/zip",
+      "httpStatus": 200,
+      "status": "verified",
+      "zipCrc": "passed",
+      "members": 9,
+      "htmlSha256": "4404eff286168c73b3f5d188eb0d48ca6120a9e9625db3aa943f4dbe3e2ab318",
+      "htmlMatchesRuntimeTestedArtifact": true,
+      "exactEmbeddedLogoCount": 2
+    },
+    {
+      "file": "NationClash-PlayStore-icon.png",
+      "url": "https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-PlayStore-icon.png",
+      "bytes": 488397,
+      "sha256": "042b40104b4b11fe849cdefe90ccb980ec7bd87fba06ba510e18911cb6559289",
+      "contentType": "image/png",
+      "httpStatus": 200,
+      "status": "verified"
+    }
+  ]
+}
