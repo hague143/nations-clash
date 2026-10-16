@@ -1,0 +1,662 @@
+{
+  "status": "passed",
+  "document": {
+    "path": "/workspace/nations-clash/downloads/NationClash-3D-Prototype.html",
+    "bytes": 1070548,
+    "sha256": "ef0215dec776ccbe6cfa027fbc8167dfacbab3b27a7de544e5efe631d7fc1409"
+  },
+  "checks": [
+    {
+      "name": "offline prototype opens with both country choices and an enabled start action",
+      "status": "passed"
+    },
+    {
+      "name": "Pakistan versus Japan match renders in the live canvas",
+      "status": "passed",
+      "width": 1358,
+      "height": 764
+    },
+    {
+      "name": "real WebGL perspective scene contains two volumetric fighters and the modelled Minar landmark",
+      "status": "passed",
+      "fighters": [
+        {
+          "id": "pk",
+          "meshes": 125,
+          "bounds": [
+            1.4416105205415304,
+            2.8887401436013214,
+            1.159999966621399
+          ]
+        },
+        {
+          "id": "jp",
+          "meshes": 120,
+          "bounds": [
+            1.29360202854858,
+            2.898473798845693,
+            1.0069137900567908
+          ]
+        }
+      ],
+      "landmark": {
+        "x": 0,
+        "z": -20.4,
+        "top": 9.36374999821186,
+        "meshCount": 24,
+        "bounds": {
+          "min": [
+            -2.849999964237213,
+            0,
+            -23.24999996423721
+          ],
+          "max": [
+            2.849999964237213,
+            9.36374999821186,
+            -16.278750291466714
+          ],
+          "width": 5.699999928474426,
+          "height": 9.36374999821186,
+          "depth": 6.971249672770497
+        }
+      }
+    },
+    {
+      "name": "every country and facing uses the actual animated fist or foot mesh as its strike point",
+      "status": "passed",
+      "cases": 8,
+      "maximumError": 0
+    },
+    {
+      "name": "both national powers have moving 3D collision cores at their simulation positions",
+      "status": "passed",
+      "cases": 4
+    },
+    {
+      "name": "real J and player-two Numpad2 keyboard inputs land one punch and one mirrored kick",
+      "status": "passed"
+    },
+    {
+      "name": "pause freezes combat and articulated poses, and resume advances the live loop",
+      "status": "passed"
+    },
+    {
+      "name": "real lethal keyboard contact shows a deciding KO and rematch restores both fighters",
+      "status": "passed"
+    },
+    {
+      "name": "choosing Japan swaps the actual rigs and the live computer opponent closes in and attacks",
+      "status": "passed"
+    },
+    {
+      "name": "sound toggle and independent music and effects controls respond",
+      "status": "passed"
+    },
+    {
+      "name": "mobile portrait has usable touch controls without horizontal overflow and touch punch hits",
+      "status": "passed",
+      "width": 390,
+      "scrollWidth": 390,
+      "buttons": [
+        {
+          "width": 83.75,
+          "height": 48
+        },
+        {
+          "width": 83.75,
+          "height": 48
+        },
+        {
+          "width": 83.75,
+          "height": 48
+        },
+        {
+          "width": 83.75,
+          "height": 48
+        },
+        {
+          "width": 83.75,
+          "height": 48
+        },
+        {
+          "width": 83.75,
+          "height": 48
+        },
+        {
+          "width": 83.75,
+          "height": 48
+        },
+        {
+          "width": 83.75,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "name": "mobile landscape keeps the fight and touch controls visible side by side",
+      "status": "passed",
+      "width": 844,
+      "height": 390,
+      "scrollWidth": 844,
+      "scrollHeight": 390,
+      "arena": {
+        "right": 645,
+        "bottom": 339,
+        "width": 632,
+        "height": 328
+      },
+      "controls": {
+        "left": 653,
+        "right": 831,
+        "bottom": 383
+      }
+    },
+    {
+      "name": "no browser runtime errors or external asset dependencies",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/landing-desktop.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/arena-desktop.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/contact-punch.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/contact-kick.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/actual-keyboard-punch.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/deciding-ko.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/landing-mobile.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/arena-mobile.png",
+    "/workspace/nations-clash/artifacts/prototype3d/verified-browser/arena-landscape.png"
+  ],
+  "cases": [
+    {
+      "id": "pk",
+      "side": 0,
+      "action": "punch",
+      "frame": 11,
+      "contact": {
+        "x": -2.38,
+        "y": 2.08,
+        "z": 0.3
+      },
+      "meshWorldPoint": [
+        -2.38,
+        2.08,
+        0.3
+      ],
+      "error": 0
+    },
+    {
+      "id": "pk",
+      "side": 0,
+      "action": "kick",
+      "frame": 19,
+      "contact": {
+        "x": -2.01,
+        "y": 1.7799999999999998,
+        "z": 0.24
+      },
+      "meshWorldPoint": [
+        -2.01,
+        1.7799999999999998,
+        0.24
+      ],
+      "error": 0
+    },
+    {
+      "id": "pk",
+      "side": 1,
+      "action": "punch",
+      "frame": 11,
+      "contact": {
+        "x": 2.38,
+        "y": 2.08,
+        "z": 0.3
+      },
+      "meshWorldPoint": [
+        2.38,
+        2.08,
+        0.3
+      ],
+      "error": 0
+    },
+    {
+      "id": "pk",
+      "side": 1,
+      "action": "kick",
+      "frame": 19,
+      "contact": {
+        "x": 2.01,
+        "y": 1.7799999999999998,
+        "z": 0.24
+      },
+      "meshWorldPoint": [
+        2.01,
+        1.7799999999999998,
+        0.24
+      ],
+      "error": 0
+    },
+    {
+      "id": "jp",
+      "side": 0,
+      "action": "punch",
+      "frame": 11,
+      "contact": {
+        "x": -2.38,
+        "y": 2.08,
+        "z": 0.3
+      },
+      "meshWorldPoint": [
+        -2.38,
+        2.08,
+        0.3
+      ],
+      "error": 0
+    },
+    {
+      "id": "jp",
+      "side": 0,
+      "action": "kick",
+      "frame": 19,
+      "contact": {
+        "x": -2.01,
+        "y": 1.7799999999999998,
+        "z": 0.24
+      },
+      "meshWorldPoint": [
+        -2.01,
+        1.7799999999999998,
+        0.24
+      ],
+      "error": 0
+    },
+    {
+      "id": "jp",
+      "side": 1,
+      "action": "punch",
+      "frame": 11,
+      "contact": {
+        "x": 2.38,
+        "y": 2.08,
+        "z": 0.3
+      },
+      "meshWorldPoint": [
+        2.38,
+        2.08,
+        0.3
+      ],
+      "error": 0
+    },
+    {
+      "id": "jp",
+      "side": 1,
+      "action": "kick",
+      "frame": 19,
+      "contact": {
+        "x": 2.01,
+        "y": 1.7799999999999998,
+        "z": 0.24
+      },
+      "meshWorldPoint": [
+        2.01,
+        1.7799999999999998,
+        0.24
+      ],
+      "error": 0
+    }
+  ],
+  "scene": {
+    "debug": {
+      "renderer": "to",
+      "isWebGLRenderer": true,
+      "isPerspectiveCamera": true,
+      "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "arena": {
+        "landmark": "Minar-e-Pakistan",
+        "geometry": true,
+        "externalAssets": 0,
+        "quality": "balanced",
+        "floorY": 0,
+        "meshCount": 70,
+        "triangles": 24588,
+        "tower": {
+          "x": 0,
+          "z": -20.4,
+          "top": 9.36374999821186,
+          "meshCount": 24,
+          "bounds": {
+            "min": [
+              -2.849999964237213,
+              0,
+              -23.24999996423721
+            ],
+            "max": [
+              2.849999964237213,
+              9.36374999821186,
+              -16.278750291466714
+            ],
+            "width": 5.699999928474426,
+            "height": 9.36374999821186,
+            "depth": 6.971249672770497
+          }
+        },
+        "fightingBounds": {
+          "minX": -4.5,
+          "maxX": 4.5,
+          "z": 0
+        },
+        "water": {
+          "z": -7.4
+        },
+        "animatedWater": true
+      },
+      "fps": 15,
+      "drawCalls": 328,
+      "triangles": 85756,
+      "quality": "balanced",
+      "audio": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.65,
+        "musicVolume": 0.65,
+        "effectsVolume": 0.85,
+        "musicGain": 0.46799999475479126,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 68,
+        "activeVoices": 0,
+        "activeSources": 12,
+        "musicSources": 12,
+        "effectSources": 0,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 0,
+          "kick": 0,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 0,
+          "impact": 0
+        },
+        "lastSignature": null,
+        "decodedCues": [
+          "ko",
+          "fight",
+          "getready",
+          "timeover"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      },
+      "frame": 112,
+      "paused": false,
+      "fighters": [
+        {
+          "id": "pk",
+          "meshes": 125,
+          "sprites": 0,
+          "country": "pk",
+          "type": "articulated-three-dimensional-mesh",
+          "original": true,
+          "flagCostume": "Green and white crescent-star cape; gold trim",
+          "meshCount": 125,
+          "strikePoints": {
+            "punch": [
+              -1.0300000000000002,
+              2.128279764068508,
+              0.32
+            ],
+            "kick": [
+              -1.25,
+              0.12,
+              0.24
+            ]
+          },
+          "bounds": [
+            1.4416105205415304,
+            2.8887401436013214,
+            1.159999966621399
+          ],
+          "position": [
+            -1.6,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "jp",
+          "meshes": 120,
+          "sprites": 0,
+          "country": "jp",
+          "type": "articulated-three-dimensional-mesh",
+          "original": true,
+          "flagCostume": "White sleeveless gi; red sun headband and red belt",
+          "meshCount": 120,
+          "strikePoints": {
+            "punch": [
+              1.0300000000000002,
+              2.128279764068508,
+              0.32
+            ],
+            "kick": [
+              1.25,
+              0.12,
+              0.24
+            ]
+          },
+          "bounds": [
+            1.29360202854858,
+            2.898473798845693,
+            1.0069137900567908
+          ],
+          "position": [
+            1.6,
+            0,
+            0
+          ]
+        }
+      ],
+      "projectiles": [],
+      "camera": {
+        "position": [
+          0,
+          2.6,
+          7.4
+        ],
+        "fov": 46
+      }
+    },
+    "ids": [
+      "pk",
+      "jp"
+    ],
+    "canvas": {
+      "width": 1358,
+      "height": 764
+    }
+  },
+  "powers": [
+    {
+      "id": "pk",
+      "side": 0,
+      "simulation": {
+        "id": 1,
+        "owner": 0,
+        "ownerId": "pk",
+        "x": -2.1466666666666665,
+        "y": 2.08,
+        "z": 0.3,
+        "previousX": -2.263333333333333,
+        "facing": 1,
+        "age": 2,
+        "radius": 0.17,
+        "remaining": 4.7666666666666675,
+        "low": false
+      },
+      "rendered": {
+        "id": 1,
+        "position": [
+          -2.1466666666666665,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "travel": 1.4000000000000004,
+      "after": {
+        "id": 1,
+        "position": [
+          -0.7466666666666661,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "expected": [
+        -0.7466666666666661,
+        2.08,
+        0.3
+      ]
+    },
+    {
+      "id": "pk",
+      "side": 1,
+      "simulation": {
+        "id": 1,
+        "owner": 1,
+        "ownerId": "pk",
+        "x": 2.1466666666666665,
+        "y": 2.08,
+        "z": 0.3,
+        "previousX": 2.263333333333333,
+        "facing": -1,
+        "age": 2,
+        "radius": 0.17,
+        "remaining": 4.7666666666666675,
+        "low": false
+      },
+      "rendered": {
+        "id": 1,
+        "position": [
+          2.1466666666666665,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "travel": -1.4000000000000004,
+      "after": {
+        "id": 1,
+        "position": [
+          0.7466666666666661,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "expected": [
+        0.7466666666666661,
+        2.08,
+        0.3
+      ]
+    },
+    {
+      "id": "jp",
+      "side": 0,
+      "simulation": {
+        "id": 1,
+        "owner": 0,
+        "ownerId": "jp",
+        "x": -2.1466666666666665,
+        "y": 2.08,
+        "z": 0.3,
+        "previousX": -2.263333333333333,
+        "facing": 1,
+        "age": 2,
+        "radius": 0.17,
+        "remaining": 4.7666666666666675,
+        "low": false
+      },
+      "rendered": {
+        "id": 1,
+        "position": [
+          -2.1466666666666665,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "travel": 1.4000000000000004,
+      "after": {
+        "id": 1,
+        "position": [
+          -0.7466666666666661,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "expected": [
+        -0.7466666666666661,
+        2.08,
+        0.3
+      ]
+    },
+    {
+      "id": "jp",
+      "side": 1,
+      "simulation": {
+        "id": 1,
+        "owner": 1,
+        "ownerId": "jp",
+        "x": 2.1466666666666665,
+        "y": 2.08,
+        "z": 0.3,
+        "previousX": 2.263333333333333,
+        "facing": -1,
+        "age": 2,
+        "radius": 0.17,
+        "remaining": 4.7666666666666675,
+        "low": false
+      },
+      "rendered": {
+        "id": 1,
+        "position": [
+          2.1466666666666665,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "travel": -1.4000000000000004,
+      "after": {
+        "id": 1,
+        "position": [
+          0.7466666666666661,
+          2.08,
+          0.3
+        ],
+        "coreRadius": 0.17
+      },
+      "expected": [
+        0.7466666666666661,
+        2.08,
+        0.3
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-16T09:04:53.024Z"
+}

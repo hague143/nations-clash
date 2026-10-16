@@ -1,5 +1,9 @@
 # NationClash
 
+**Try the 3D prototype:** [download the small offline ZIP](downloads/NationClash-3D-Prototype.zip)
+for Pakistan versus Japan at a modelled Minar-e-Pakistan arena.
+See [3D controls and development](browser3d/README.md).
+
 **Play without Unity:** download [NationClash-Windows.zip](downloads/NationClash-Windows.zip),
 right-click → **Extract All**, then open the extracted `NationClash.html` in
 Chrome or Edge. The downloaded HTML contains all artwork and needs no companion

@@ -1,0 +1,1065 @@
+{
+  "status": "passed",
+  "matches": 96,
+  "completed": 96,
+  "stepChecks": 271674,
+  "combatSha256": "2b803c49392e9ec303280cea1f7e250579f3b63d505caf050de83608f2cbd259",
+  "results": [
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 1,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 3584
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 2,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 3104
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 3,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2445
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 4,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2760
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 5,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 4789
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 6,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3664
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 7,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 4219
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 8,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2735
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 9,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 4156
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 10,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2313
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 11,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 4181
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 12,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 3007
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 13,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2600
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 14,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 4998
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 15,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 4546
+    },
+    {
+      "left": "pk",
+      "difficulty": "easy",
+      "seed": 16,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 4053
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 1,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2123
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 2,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1965
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 3,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1985
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 4,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3134
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 5,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 2876
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 6,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3337
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 7,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3419
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 8,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2391
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 9,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2036
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 10,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2909
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 11,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 3706
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 12,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1780
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 13,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3469
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 14,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1779
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 15,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 3103
+    },
+    {
+      "left": "pk",
+      "difficulty": "normal",
+      "seed": 16,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 2920
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 1,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1707
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 2,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2776
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 3,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1697
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 4,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2032
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 5,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2554
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 6,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 2789
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 7,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3101
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 8,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2728
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 9,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1781
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 10,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2792
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 11,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1950
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 12,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1767
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 13,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1826
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 14,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1959
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 15,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2565
+    },
+    {
+      "left": "pk",
+      "difficulty": "hard",
+      "seed": 16,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1727
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 1,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 3584
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 2,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 3104
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 3,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2445
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 4,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2760
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 5,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 4789
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 6,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3664
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 7,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 4219
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 8,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2735
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 9,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 4156
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 10,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2313
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 11,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 4181
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 12,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 3007
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 13,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2600
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 14,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 4998
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 15,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 4546
+    },
+    {
+      "left": "jp",
+      "difficulty": "easy",
+      "seed": 16,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 4053
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 1,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2123
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 2,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1965
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 3,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1985
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 4,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3134
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 5,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 2876
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 6,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3337
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 7,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3419
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 8,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 2391
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 9,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2036
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 10,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2909
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 11,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 3706
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 12,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1780
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 13,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3469
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 14,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1779
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 15,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 3103
+    },
+    {
+      "left": "jp",
+      "difficulty": "normal",
+      "seed": 16,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 2920
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 1,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1707
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 2,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2776
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 3,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1697
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 4,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 2032
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 5,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2554
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 6,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 2789
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 7,
+      "winner": 1,
+      "wins": [
+        1,
+        2
+      ],
+      "frames": 3101
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 8,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2728
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 9,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1781
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 10,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2792
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 11,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1950
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 12,
+      "winner": 1,
+      "wins": [
+        0,
+        2
+      ],
+      "frames": 1767
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 13,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1826
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 14,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1959
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 15,
+      "winner": 0,
+      "wins": [
+        2,
+        1
+      ],
+      "frames": 2565
+    },
+    {
+      "left": "jp",
+      "difficulty": "hard",
+      "seed": 16,
+      "winner": 0,
+      "wins": [
+        2,
+        0
+      ],
+      "frames": 1727
+    }
+  ]
+}

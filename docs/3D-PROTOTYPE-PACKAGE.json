@@ -1,0 +1,22 @@
+{
+  "format": "self-contained offline 3D prototype",
+  "htmlBytes": 1070548,
+  "htmlSha256": "ef0215dec776ccbe6cfa027fbc8167dfacbab3b27a7de544e5efe631d7fc1409",
+  "zipBytes": 323576,
+  "zipSha256": "2c8d11e7cd900f282fc4161c5a0d2567eeadc2c2f2ad9c5ec5129af71585b97e",
+  "fighters": [
+    "pk",
+    "jp"
+  ],
+  "arena": "Minar-e-Pakistan",
+  "threeVersion": "r160",
+  "sourceHashes": {
+    "browser3d/vendor/three-r160.min.js": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "browser3d/src/combat.js": "2b803c49392e9ec303280cea1f7e250579f3b63d505caf050de83608f2cbd259",
+    "browser3d/src/models.js": "2493058df3f7b4b5824d9048d5fb09a5bebd7a6a3afc90fe2179b949ffa7ae0b",
+    "browser3d/src/arena.js": "90f6fc3be4a3ae778e849c63758cd8ce33c2bad0f9334ce5533eab066e031f72",
+    "browser/src/audio.js": "7bc84f99a1c4a8d9c07f205c293e8ce70a646706629ce4fde513b959b2cf9274",
+    "browser3d/src/game.js": "156cbc3ab43c4ee57fd1cd6d31756d001ea3a30b872a72efcf8440777145dec3"
+  },
+  "templateSha256": "734dd74287933ffb4bdc35b303b52e4d2da11bf6b392cfb1876816aecf8e1b2c"
+}
