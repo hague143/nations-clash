@@ -3,7 +3,7 @@
 **Active version: the neon 2D browser game**, with 196 country fighters,
 hover move previews and 30 arena views.
 
-**Test on Android:** download [NationClash-Android-test.apk](downloads/NationClash-Android-test.apk)
+**Test on Android:** download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk)
 (about 88 MB), install it and open **NationClash**. Android 8.0+ is required.
 All fighters, arenas and audio are included for offline play. See
 [Android installation and build instructions](android/README.md).

@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-16T09:43:28.455224+00:00",
+  "sourceCommit": "c7e1ca22607c0c9c7522461b5ce108d32b128c07",
+  "url": "https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk",
+  "status": 200,
+  "contentType": "application/octet-stream",
+  "bytes": 88348437,
+  "sha256": "d9982a792bf33292b56a9c5607995966d159366c2f70775258b97d161922c299",
+  "zipCrcPassed": true,
+  "bundledPayloadHashesPassed": 429,
+  "v2SignatureVerified": true,
+  "v3SignatureVerified": true,
+  "zipAligned": true,
+  "certificateSha256": "c146eec76ef3fdc40ad147ad6ddd8533b37ba93b8af24b797aa5ea8f550f9475"
+}

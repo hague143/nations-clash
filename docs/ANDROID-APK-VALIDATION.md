@@ -47,6 +47,9 @@ Machine-readable evidence:
 - [Build and signing report](ANDROID-APK-BUILD.json)
 - [Exact asset inventory](ANDROID-ASSET-MANIFEST.json)
 - [Browser acceptance report](ANDROID-ASSET-SMOKE.json)
+- [Public download verification](ANDROID-PUBLIC-DOWNLOAD.json): HTTP 200, full
+  88,348,437-byte download, exact APK SHA256, ZIP CRCs, all 429 payload hashes,
+  v2/v3 signing and ZIP alignment rechecked on the downloaded file.
 
 ## Android runtime validation
 

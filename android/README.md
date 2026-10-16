@@ -7,7 +7,7 @@ are bundled in the APK; it works without an internet connection.
 
 ## Install and play
 
-1. Download [NationClash-Android-test.apk](../downloads/NationClash-Android-test.apk)
+1. Download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk)
    on an Android phone running **Android 8.0 or newer**.
 2. Open the downloaded APK. If Android asks, allow **Install unknown apps** for
    the browser or file manager you used, then install **NationClash**.
@@ -19,7 +19,8 @@ are bundled in the APK; it works without an internet connection.
 
 Android Back pauses a running fight; Back again returns to country selection.
 Switching apps pauses combat and music. Rotation keeps the current match.
-Android System WebView or Chrome must be enabled on the device.
+Keep Android System WebView or Chrome enabled and updated on the device;
+old factory WebView versions may not support the game's JavaScript.
 
 This is a **signed test APK**, version `0.1.0-test`, package
 `com.nationclash.game`, rather than a Google Play production release. WebView
@@ -68,3 +69,12 @@ node tools/android-assets-smoke.cjs
 See [Android validation](../docs/ANDROID-APK-VALIDATION.md) for this APK's measured
 results. Physical-phone performance and vendor-specific behavior still need
 your mobile test.
+
+With an attached Android device and standard Android platform-tools, a developer
+can run:
+
+```sh
+adb install -r downloads/NationClash-Android-test.apk
+adb shell am start -n com.nationclash.game/.MainActivity
+adb logcat -s NationClash AndroidRuntime
+```
