@@ -1,5 +1,9 @@
 # Neon country-power edition validation
 
+> Historical validation for the earlier release. For the current compact mobile
+> UI, version-code 3 APK/AAB and tested downloads, see
+> [mobile UI validation](MOBILE-UI-VALIDATION.md).
+
 The latest branding refresh adds the blue/red Nation Clash logo to the game
 and includes a signed Android 16 Play Store AAB. Current artifacts, hashes and
 checks are in [the branding/release report](PLAY-STORE-AAB.md) and

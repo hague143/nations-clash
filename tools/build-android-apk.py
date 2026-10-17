@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import sys
 import zipfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -73,6 +74,10 @@ def main() -> None:
             shutil.rmtree(target)
         target.mkdir()
     app = ROOT / "android/app/src/main"
+    native_manifest = ET.parse(app / "AndroidManifest.xml").getroot()
+    android_ns = "{http://schemas.android.com/apk/res/android}"
+    version_code = int(native_manifest.attrib[android_ns + "versionCode"])
+    version_name = native_manifest.attrib[android_ns + "versionName"]
     unsigned = build / "unsigned.apk"
     aligned = build / "aligned.apk"
     output = args.out.resolve()
@@ -128,7 +133,7 @@ def main() -> None:
     report = {
         "format": 1, "apk": str(output.relative_to(ROOT)) if output.is_relative_to(ROOT) else str(output),
         "bytes": output.stat().st_size, "sha256": digest(output), "package": "com.nationclash.game",
-        "versionName": "0.1.0-test", "versionCode": 1, "minSdk": 26, "targetSdk": 35,
+        "versionName": version_name, "versionCode": version_code, "minSdk": 26, "targetSdk": 35,
         "universalWebViewApk": True, "signatureV2": True, "signatureV3": True, "zipAligned": True,
         "verifiedBundledFiles": manifest["fileCount"], "countries": 196, "arenas": 30,
         "assetManifestSha256": digest(manifest_path), "sourceInputs": source_hashes,

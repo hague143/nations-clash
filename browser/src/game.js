@@ -74,15 +74,14 @@
    $('selection').classList.add('hidden');$('game').classList.remove('hidden');$('overlay').classList.add('hidden');
    $('left-name').textContent=fight.left.data.country;$('right-name').textContent=fight.right.data.country;$('left-style').textContent=fight.left.data.style;$('right-style').textContent=fight.right.data.style;
    $('stage-name').textContent=A.ARENAS.find(a=>a.id===match.arena).name.toUpperCase();$('match-mode').textContent=match.mode==='ai'?'YOU VS COMPUTER · FIRST TO TWO ROUNDS':'LOCAL TWO PLAYER · FIRST TO TWO ROUNDS';
-   $('combat-hint').textContent=match.mode==='local'?'Player 2: arrows move/jump/crouch, right Ctrl block, numpad 1–6 attacks. H / Numpad 7 uses each country power. Both players follow the same combat rules.':'Move into range with A / D. J → J → K launches; L follows with a slam. Hold S for low attacks. Press I quickly to escape a grab. O needs a full meter. H launches your country power; it recharges in four seconds.';
-   window.scrollTo({top:0,behavior:'smooth'});canvas.tabIndex=0;canvas.focus({preventScroll:true});hud();draw(0);
+   window.scrollTo({top:0,behavior:'smooth'});canvas.tabIndex=0;canvas.focus({preventScroll:true});viewportDirty=true;hud();draw(0);
    $('start').textContent='ENTER THE ARENA';
   }catch(error){if(revision!==startRevision)return;A.release();audio.stop();console.error(error);$('start').textContent='START FAILED · RETRY';$('arena-description').textContent=error.message;P.setStatus({state:'error',message:error.message});}
   finally{if(revision===startRevision){starting=false;$('start').disabled=!assetsReady;}}
  }
  $('start').onclick=start;$('rematch').onclick=start;
  $('back').onclick=()=>{startRevision++;starting=false;audio.stop();A.release();P.setFight(false);$('start').textContent='ENTER THE ARENA';$('start').disabled=!assetsReady;P.setStatus({state:'ready',message:'Choose your fighters, country powers and arena.'});fight=null;match=null;paused=false;clearInputs();$('game').classList.add('hidden');$('selection').classList.remove('hidden');roster();$('start').focus({preventScroll:true});};
- function showPause(){if(!fight||fight.phase==='complete')return;paused=!paused;audio.setPaused(paused);accumulator=0;clearInputs();$('overlay').classList.toggle('hidden',!paused);$('resume').classList.toggle('hidden',!paused);$('rematch').classList.toggle('hidden',paused);$('result-label').textContent='TAKE A BREATHER';$('result-title').textContent='Match paused';$('result-description').textContent='Press Escape or Resume to continue.';if(paused)$('resume').focus({preventScroll:true});else canvas.focus({preventScroll:true});}
+ function showPause(){if(!fight||fight.phase==='complete')return;paused=!paused;audio.setPaused(paused);accumulator=0;clearInputs();$('overlay').classList.toggle('hidden',!paused);$('resume').classList.toggle('hidden',!paused);$('rematch').classList.toggle('hidden',paused);$('result-label').textContent='TAKE A BREATHER';$('result-title').textContent='Match paused';$('result-description').textContent='Resume when ready.';if(paused)$('resume').focus({preventScroll:true});else canvas.focus({preventScroll:true});}
  $('pause').onclick=showPause;$('resume').onclick=showPause;
  document.addEventListener('keydown',e=>{if(e.target.closest?.('input,textarea,select,[contenteditable="true"]'))return;if(e.code==='Escape'&&!e.repeat){showPause();return;}if(!fight||paused||fight.phase==='complete')return;if([...Object.keys(keyboard),...Object.keys(second),'KeyA','KeyD','KeyS','KeyF','ArrowLeft','ArrowRight','ArrowDown','ControlRight'].includes(e.code))e.preventDefault();keys.add(e.code);if(!e.repeat){if(keyboard[e.code])actions[0].push(keyboard[e.code]);if(second[e.code])actions[1].push(second[e.code]);}});
  document.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>{clearInputs();if(fight&&!paused&&fight.phase!=='complete')showPause();});
@@ -99,19 +98,61 @@
    label.style.setProperty('--charge',((1-cooldown/(f.signatureTotalCooldown||240))*100)+'%');label.title=power.description;
   }
   const power=Q.get(fight.left.data.id),cooldown=fight.left.signatureCooldown||0;
-  $('signature-hint').textContent='H · '+power.name.toUpperCase()+' · '+(cooldown>0?(cooldown/60).toFixed(1)+'s':'READY');
   const powerButton=document.querySelector('[data-action="signature"]');
   powerButton.disabled=cooldown>0||fight.phase!=='fight'||paused;
   powerButton.dataset.ready=String(cooldown===0);powerButton.title=power.description;
   powerButton.setAttribute('aria-label',power.name+(cooldown>0?', recharging':', country power'));
   $('timer').textContent=String(Math.max(0,Math.ceil(fight.time/60))).padStart(2,'0');$('round-label').textContent='ROUND '+fight.round;
-  const gap=Math.abs(fight.left.x-fight.right.x),reach=getMoveSpec(fight.left.data,'light').reach+C.GEOMETRY.bodyRadius+C.GEOMETRY.strikeRadius;$('reach-hint').textContent=gap<=reach?'IN RANGE · J / K / L':'MOVE CLOSER · A / D';$('reach-hint').classList.toggle('in-range',gap<=reach);
   $('announcement').textContent=fight.phase==='intro'?'GET READY':fight.phase==='intermission'?fight.message:fight.frame-fight.messageAt<65?fight.message:'';
   if(fight.phase==='complete'){const winner=fight.winner===0?fight.left:fight.right;$('overlay').classList.remove('hidden');$('resume').classList.add('hidden');$('rematch').classList.remove('hidden');$('result-label').textContent=`MATCH COMPLETE · ${fight.wins[0]} — ${fight.wins[1]}`;$('result-title').textContent=winner.data.country+' wins';$('result-description').textContent=winner.data.quote;}
  }
- $('sound').onclick=()=>{audio.setEnabled(!audio.enabled);$('sound').textContent=audio.enabled?'SOUND ON':'SOUND OFF';$('sound').classList.toggle('sound-on',audio.enabled);$('sound').setAttribute('aria-pressed',String(audio.enabled));};$('volume').addEventListener('input',()=>audio.setVolume(Number($('volume').value)/100));
- $('music-volume').addEventListener('input',()=>audio.setMusicVolume(Number($('music-volume').value)/100));
- $('effects-volume').addEventListener('input',()=>audio.setEffectsVolume(Number($('effects-volume').value)/100));
+ // Canvas pixels follow the available screen; combat keeps its 1280×720 world.
+ const compactCamera=window.matchMedia('(hover: none), (pointer: coarse), (max-width: 1024px)');
+ let viewportDirty=true,viewport={width:1280,height:720,dpr:1,hudBottom:140},cameraDebug=null;
+ const invalidateViewport=()=>{viewportDirty=true;};
+ window.addEventListener('resize',invalidateViewport);compactCamera.addEventListener('change',invalidateViewport);
+ if(window.ResizeObserver)new ResizeObserver(invalidateViewport).observe(canvas);
+ function measureViewport(){
+  if(!viewportDirty)return;viewportDirty=false;
+  const box=canvas.getBoundingClientRect(),hudBox=document.querySelector('.topbar').getBoundingClientRect();
+  const width=Math.max(1,box.width),height=Math.max(1,box.height),dpr=Math.min(2,window.devicePixelRatio||1);
+  viewport={width,height,dpr,hudBottom:Math.max(0,hudBox.bottom-box.top)};
+  canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
+ }
+ function actorBounds(f,floor){
+  const x=640+f.x*78,y=floor-f.y*78,art=T.METADATA[f.data.id];
+  if(!art)return {countryId:f.data.id,left:x-100,right:x+100,top:y-220,bottom:y+12,feetX:x,feetY:y};
+  const pose=f.hp<=0&&art.hasGroundKo&&fight.frame-f.damagedAt<7?'hit':T.sourcePose(f),frame=art.frames[pose]||art.frames.idle;
+  const attacking=!!f.move&&pose===f.move.visualPose,ranged=attacking&&(['special','ultimate'].includes(f.move.id)||f.move.projectile);
+  const sx=attacking&&!ranged?(f.move.visualScaleX||1):1,sy=(attacking&&!ranged&&!f.move.visualLowWarp?(f.move.visualScaleY||1):1)*(frame.drawScaleY||1);
+  let xs=[frame.x-frame.pivot,frame.x+frame.w-frame.pivot],ys=[frame.y-frame.baseline,frame.y+frame.h-frame.baseline];
+  if(attacking&&f.move.visualLowWarp){
+   const target=f.move.height/art.scale;ys=[-target-(frame.tipY-frame.y),(frame.y+frame.h-frame.tipY)*target/(frame.baseline-frame.tipY)-target];
+  }
+  let corners=xs.flatMap(a=>ys.map(b=>({x:a,y:b})));
+  if(f.hp<=0&&art.adaptedKo){
+   const progress=clamp((fight.frame-f.damagedAt)/10,0,1),ease=1-Math.pow(1-progress,3),angle=-Math.PI/2*ease;
+   corners=corners.map(p=>({x:p.x*Math.cos(angle)-p.y*Math.sin(angle),y:p.x*Math.sin(angle)+p.y*Math.cos(angle)}));
+   const center=(Math.min(...corners.map(p=>p.x))+Math.max(...corners.map(p=>p.x)))/2,bottom=Math.max(...corners.map(p=>p.y));
+   corners=corners.map(p=>({x:p.x-center*ease,y:p.y-bottom*ease}));
+  }
+  const points=corners.map(p=>({x:x+p.x*f.facing*art.scale*78*sx,y:y+p.y*art.scale*78*sy}));
+  return {countryId:f.data.id,left:Math.min(...points.map(p=>p.x))-6,right:Math.max(...points.map(p=>p.x))+6,top:Math.min(...points.map(p=>p.y))-6,bottom:Math.max(...points.map(p=>p.y))+6,feetX:x,feetY:y};
+ }
+ function camera(floor){
+  measureViewport();const {width,height,dpr,hudBottom}=viewport,mobile=compactCamera.matches;
+  const bounds=[fight.left,fight.right].map(f=>actorBounds(f,floor)),center=640+(fight.left.x+fight.right.x)*39;
+  let scale=Math.min(width/1280,height/720),translateX=(width-1280*scale)/2,translateY=(height-720*scale)/2;
+  if(mobile){
+   const ground=height>width?height*.82:height-25;
+   const radius=Math.max(...bounds.flatMap(b=>[center-b.left,b.right-center]));
+   scale=Math.max(.05,Math.min(width/Math.max(380,2*radius+36),(ground-hudBottom-12)/Math.max(200,...bounds.map(b=>floor-b.top)),1.6));
+   translateX=width/2-center*scale;translateY=ground-floor*scale;
+  }
+  cameraDebug={width,height,dpr,scale,translateX,translateY,uniform:true,mobile,originX:640,floor,
+   bounds:bounds.map(b=>({...b,left:b.left*scale+translateX,right:b.right*scale+translateX,top:b.top*scale+translateY,bottom:b.bottom*scale+translateY,feetX:b.feetX*scale+translateX,feetY:b.feetY*scale+translateY}))};
+  return cameraDebug;
+ }
  const line=(a,b,width,color)=>{ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.stroke();},screen=x=>640+x*C.GEOMETRY.pixelsPerUnit;
  function renderFighter(target,f,view={}){const options={time:0,frame:fight?.frame||0,originX:640,floor:551,pixelsPerUnit:78,...view};const result=T.hasArt(f.data.id)?T.draw(target,f,options,assets):S.METADATA[f.data.id]?S.draw(target,f,options,assets):F.draw(target,f,options,assets);if(result)diagnostics.push(result.diagnostic||{countryId:f.data.id,facing:f.facing,flagMirrored:false,pose:f.move?.id||f.pose});return result;}
  function renderFighters(target,actors,view={}){
@@ -129,15 +170,22 @@
   if(!fight||!assetsReady)return;
   const floor=A.getArena(match?.arena).floorY,simTime=fight.frame/60;
   const view={time:simTime,frame:fight.frame,floor,originX:640,pixelsPerUnit:78,reducedMotion:motion.matches};
-  ctx.clearRect(0,0,1280,720);A.drawScene(ctx,match?.arena||$('arena-select').value,t);
+  const cam=camera(floor),{width,height,dpr,scale,translateX,translateY}=cam;
+  ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);
+  // Cover the viewport uniformly and keep the authored ground under the feet.
+  const ground=floor*scale+translateY,bgScale=Math.max(width/1280,ground/floor,(height-ground)/(720-floor));
+  const sceneCenter=clamp(640+(fight.left.x+fight.right.x)*39,width/(2*bgScale),1280-width/(2*bgScale));
+  ctx.save();ctx.translate(width/2-sceneCenter*bgScale,ground-floor*bgScale);ctx.scale(bgScale,bgScale);
+  A.drawScene(ctx,match?.arena||$('arena-select').value,t);ctx.restore();
+  ctx.save();ctx.translate(translateX,translateY);ctx.scale(scale,scale);
   V.drawStageLighting(ctx,{...view,leftX:fight.left.x,rightX:fight.right.x,leftColor:Q.get(fight.left.data.id).color,rightColor:Q.get(fight.right.data.id).color});
   diagnostics.length=0;powerDiagnostics.length=0;
   ctx.save();ctx.translate(!motion.matches&&!paused&&fight.hitstop>0?Math.sin(fight.hitstop*2.5)*Math.min(3,fight.hitstop*.5):0,0);
   const results=renderFighters(ctx,[fight.left,fight.right],view);
   [fight.left,fight.right].forEach((f,i)=>{
-   const x=screen(f.x);ctx.textAlign=f.facing===1?'right':'left';ctx.font='600 11px "Segoe UI",sans-serif';
-   ctx.lineWidth=4;ctx.strokeStyle='#061018';ctx.strokeText(f.data.name.toUpperCase(),x-f.facing*24,floor+35);
-   ctx.fillStyle=f.data.colors[0];ctx.fillText(f.data.name.toUpperCase(),x-f.facing*24,floor+35);
+   const x=screen(f.x),labelX=cam.mobile?x:x-f.facing*24;ctx.textAlign=cam.mobile?'center':f.facing===1?'right':'left';ctx.font='600 11px "Segoe UI",sans-serif';
+   ctx.lineWidth=4;ctx.strokeStyle='#061018';ctx.strokeText(f.data.name.toUpperCase(),labelX,floor+35,cam.mobile?140:500);
+   ctx.fillStyle=f.data.colors[0];ctx.fillText(f.data.name.toUpperCase(),labelX,floor+35,cam.mobile?140:500);
    if(f.meter>=100&&f.hp>0){ctx.save();ctx.globalAlpha=.6;ctx.strokeStyle='#f9dc80';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(x,floor-3,48,11,0,0,Math.PI*2);ctx.stroke();ctx.restore();}
    if(f.move?.id==='signature'&&f.moveFrame<f.move.start&&f.hp>0){
     // A startup aura forms ahead of the guarded stance. The travelling core
@@ -162,10 +210,10 @@
    if(effect.damage){ctx.textAlign='center';ctx.font='bold 24px "Segoe UI",sans-serif';ctx.lineWidth=5;ctx.strokeStyle='#101821';ctx.strokeText('−'+effect.damage,x,y-32-p*38);ctx.fillStyle='#ffdd93';ctx.fillText('−'+effect.damage,x,y-32-p*38);}
    ctx.restore();
   }
-  ctx.restore();
+  ctx.restore();ctx.restore();
  }
  function animate(timestamp){const dt=Math.min(.1,Math.max(0,(timestamp-last)/1000));last=timestamp;if(fight&&!paused){accumulator+=dt;while(accumulator>=1/60){if(fight.phase==='fight')fight.step(input(0),match.mode==='ai'?fight.ai(match.difficulty):input(1));else{actions[0]=[];actions[1]=[];if(fight.phase==='complete')fight.settle();else fight.step();}accumulator-=1/60;if(previousPhase!==fight.phase){actions[0]=[];actions[1]=[];previousPhase=fight.phase;}}}if(fight){hud();draw(timestamp/1000);}requestAnimationFrame(animate);}
- window.NationClash={get fight(){return fight;},get paused(){return paused;},get catalog(){return ROSTER;},get assetsReady(){return assetsReady;},get artReady(){return assetsReady;},get assets(){return assets;},get flagDecodeStatus(){return Object.fromEntries(ROSTER.map(c=>[c.id,{loaded:!!assets?.flags[c.id]?.naturalWidth,width:assets?.flags[c.id]?.naturalWidth||0,height:assets?.flags[c.id]?.naturalHeight||0}]))},get selectedIds(){return selected.map(i=>ROSTER[i].id);},get selectedArena(){return match?.arena||$('arena-select').value;},get audioReadiness(){return audio.debug;},get audioDebug(){return audio.debug;},get rendererDiagnostics(){return [...diagnostics];},get powerDiagnostics(){return [...powerDiagnostics];},renderFighter,renderFighters,start};
+ window.NationClash={get fight(){return fight;},get paused(){return paused;},get catalog(){return ROSTER;},get assetsReady(){return assetsReady;},get artReady(){return assetsReady;},get assets(){return assets;},get flagDecodeStatus(){return Object.fromEntries(ROSTER.map(c=>[c.id,{loaded:!!assets?.flags[c.id]?.naturalWidth,width:assets?.flags[c.id]?.naturalWidth||0,height:assets?.flags[c.id]?.naturalHeight||0}]))},get selectedIds(){return selected.map(i=>ROSTER[i].id);},get selectedArena(){return match?.arena||$('arena-select').value;},get audioReadiness(){return audio.debug;},get audioDebug(){return audio.debug;},get rendererDiagnostics(){return [...diagnostics];},get powerDiagnostics(){return [...powerDiagnostics];},get cameraDebug(){return cameraDebug;},renderFighter,renderFighters,start};
  $('start').disabled=true;$('start').textContent='PREPARING CHAMPIONS…';P.setStatus({state:'preparing',message:'Preparing 196 champions and 30 arenas…'});roster();previewArena();requestAnimationFrame(animate);
  Promise.all([loadImage(IMAGE_DATA.japan),loadImage(IMAGE_DATA.pakistan),loadImage(IMAGE_DATA.heads),loadImage(IMAGE_DATA.body),A.ensure($('arena-select').value)]).then(async([japanImage,pakistanImage,headAtlas,bodyAtlas])=>{assets=await F.prepareAssets(ROSTER,{flags:window.NationRoster.FLAG_SVGS,headAtlas,headAtlasMeta:{columns:4,rows:4,drawWidth:42,drawHeight:48},bodyAtlas,bodyAtlasMeta:{columns:4,rows:2}});Object.assign(assets,{japanImage,pakistanImage,bodyAtlas,headAtlas,sprites:{jp:japanImage,pk:pakistanImage}});assetsReady=true;P.setStatus({state:'ready',message:'Choose your fighters, country powers and arena.'});$('start').disabled=false;$('start').innerHTML='ENTER THE ARENA <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';roster();}).catch(error=>{console.error(error);$('start').textContent='ARTWORK LOAD FAILED';$('arena-description').textContent=error.message;P.setStatus({state:'error',message:error.message});});
 })();

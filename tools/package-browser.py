@@ -29,8 +29,21 @@ for name in ("japan-poses", "pakistan-poses", "fighter-heads", "fighter-body"):
     original = ROOT / "browser/assets" / (name + ".png")
     encoded = assets / (name + ".webp")
     with Image.open(original) as image:
-        image.save(encoded, "WEBP", quality=92, method=6)
         expected_size = image.size
+        cached = False
+        if encoded.is_file() and encoded.stat().st_mtime >= original.stat().st_mtime:
+            try:
+                with Image.open(encoded) as existing:
+                    cached = existing.format == "WEBP" and existing.size == expected_size
+                    existing.verify()
+            except (OSError, ValueError):
+                cached = False
+        if not cached:
+            # Android packaging shares this cache. Readers must see a complete
+            # image even when a browser download is being rebuilt concurrently.
+            temporary = encoded.with_suffix(".tmp.webp")
+            image.save(temporary, "WEBP", quality=92, method=6)
+            temporary.replace(encoded)
     with Image.open(encoded) as image:
         assert image.size == expected_size, "Sprite dimensions must not change"
     old_uri = "data:image/png;base64," + base64.b64encode(original.read_bytes()).decode()
@@ -87,7 +100,9 @@ Move A/D. Jump W. Crouch S. Block F. Attacks J/K/L.
 Guard break U. Throw I. Ultimate O. Pause Escape.
 Country power H (player two: Numpad 7). Each country has its own fantasy power.
 The energy travels to the opponent and can be blocked. Recharge takes four seconds.
-Music and Effects have separate volume sliders; Sound mutes everything.
+Music, announcements and strike sounds play automatically after starting.
+Use your device volume buttons or system volume controls to adjust them.
+The mobile fight screen uses compact touch buttons and a larger responsive arena.
 The neon landing page previews each fighter's actual punch, kick and country power.
 Hover a country card or focus it with Tab. On touch, select a fighter and tap
 PREVIEW MOVES on its large matchup panel. Previews never change your selection.

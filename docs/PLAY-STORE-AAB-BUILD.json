@@ -1,10 +1,10 @@
 {
   "aab": "downloads/NationClash-PlayStore.aab",
   "arenas": 30,
-  "assetManifestSha256": "add49a3e96b79d9bd627e7d6d2a41fad4d652d4dfe0b17d2bda2c2cfab22f0e6",
+  "assetManifestSha256": "57ec59417787f1b4ed3c59d5889fea3aea70d2315777de3ef62596834888f254",
   "bundletoolValidated": true,
   "bundletoolVersion": "1.18.3",
-  "bytes": 89446219,
+  "bytes": 89447588,
   "compileSdk": 36,
   "countries": 196,
   "debuggable": false,
@@ -23,8 +23,8 @@
   "minSdk": 26,
   "native16KBPageSizeRequirement": "Not applicable: app bundles no native shared libraries; system WebView is provided by Android.",
   "nativeInputs": {
-    "android/app/src/main/AndroidManifest.xml": "c9b1de29b164e89fdc3d04d09a876dc47a8cb1d8b4e6c4418d58133b4f01ec5e",
-    "android/app/src/main/java/com/nationclash/game/MainActivity.java": "5666e99747556adb824e547cd541b5e9d83fb9d83a6e7877d89a4772c25080e4",
+    "android/app/src/main/AndroidManifest.xml": "f9eb283457623022847b4556f8bce49952e9807023563bce28a1c5d9569b661a",
+    "android/app/src/main/java/com/nationclash/game/MainActivity.java": "144b07d8c0edb85e096888e9289a4cf43eb70999012d3944356cf8f7823f13af",
     "android/app/src/main/res/drawable-anydpi-v26/ic_launcher.xml": "883d64dc65398c371109e0e49632da2d0c3d6cec37fb7d510fd665619461ba43",
     "android/app/src/main/res/drawable-nodpi/nation_clash_foreground.png": "eac9b7ea84479ceada2988f8349b7c4ad45e3821f40ac9255a326118a17d2ca0",
     "android/app/src/main/res/drawable-nodpi/nation_clash_icon.png": "042b40104b4b11fe849cdefe90ccb980ec7bd87fba06ba510e18911cb6559289",
@@ -37,9 +37,9 @@
   "package": "com.nationclash.game",
   "privateSigningStorage": "Ignored local artifacts/android-signing; never bundled, committed or published.",
   "publication": "Not uploaded to Play Console; store listing, account checks and review remain separate.",
-  "releaseManifestSha256": "4dd74553f9c25b6165f697921c61c4b81dcd9d236b27c491a66dd8184f431bb8",
+  "releaseManifestSha256": "bf3453d26a0f1dcaed24c2948865c44a279ef5ed60b9b6c9145f815914a79182",
   "runtimeTesting": "Build/conversion/signatures/assets checked. Device runtime validation is separate.",
-  "sha256": "573a45f24ffebcfc2bc576a7e320f5299c6e98ca105b74f69a80bab95aaba518",
+  "sha256": "9c88bbac4346954eb614c2b5b822202ff761616ec14e836e0ac0a595091cf7e8",
   "sourceInputs": {
     "browser/assets/arenas/angkor-causeway.webp": "f403f1649915bbcd3a7f7c8f327dde1c847eeb41f8899edcf0cb19f4e640c7fc",
     "browser/assets/arenas/angkor-temple.webp": "810c8e42abffc05933780cdd24030243b1298b26f6cc380ab8ecb261e5ee5b7c",
@@ -475,7 +475,7 @@
     "browser/assets/fighter-heads.png": "1ed82bee6a2bebd4f2c2e617e38a00bbea22833fc3e5364d072866361c8c532b",
     "browser/assets/japan-poses.png": "419cdc1a74ea32011f9ab56a6d5c4c64c69afeb6984827155befdb794e6e955c",
     "browser/assets/pakistan-poses.png": "cd6447e22fe14b8854ed7d8a994c7b0ba710c0f1ab84d6167f092bf31cfbf16f",
-    "browser/landing-neon.css": "c24e3359875a0f3d47a8a501189e4a4afdbd743a43e7b302aecf2952c748f4ad",
+    "browser/landing-neon.css": "8e205446a4fa6104493a5ccf5637c24ab209b70282b201a93d8048609d9539e8",
     "browser/src/arena-catalog.js": "f052205e74775a0536c2112dda4019b37ad1b298a409e12b71b79c9e5a95a791",
     "browser/src/arenas.js": "d69f919e0dc36ae9058c8a14843e162cc388a5842689be4da661ddb3eac23512",
     "browser/src/audio.js": "7bc84f99a1c4a8d9c07f205c293e8ce70a646706629ce4fde513b959b2cf9274",
@@ -484,32 +484,32 @@
     "browser/src/country-sprites.js": "be9b91d4cdddf23c3d20796bee001f0a81954b87dc81b8e609ce3c7ebbe5172a",
     "browser/src/fighter-preview.js": "0b643a2fd0d05ca681fb56ffb0e1abb4c5dcc59720e18f666c30e073ef60544e",
     "browser/src/fighters.js": "8a5823e9de9cf598a3800cddbc50b0262e4e76e3d250b202872617c1e1d8b9c5",
-    "browser/src/game.js": "159e220b530319641cb9ce795e2e93aa47edafeb10bad0f009e951a8f772e655",
+    "browser/src/game.js": "a20905dbf05a0b9fe11f78364415669e7aeaa455a3e0b6c560f66e304e7060dc",
     "browser/src/power-fx.js": "a5b8c3565efc71816553b43a57e6ed6fa5148fcd76bb10d18de8be190369ed3d",
     "browser/src/powers.js": "d91e837b029dd1176046a69c5a079067d521ee7c80a83fa9e13030ea351bb332",
     "browser/src/presentation.js": "5ec0143ac28105633e95ef84d65a39c519eded7e575609d5bf62a5cf2c0f8cb8",
     "browser/src/roster.js": "b27db67ab912f2717f2b3fc0ee08e5ad29f701ff17b2cfc142d80e14511044e4",
     "browser/src/sprites.js": "76c6d7e4fda9a4fbf5366f54536225c95a0506d08a9c6f85cb7153c2bef9fe50",
-    "browser/template.html": "d10e9a5325c023de68f656927d3fdca6990d234b293b66c076062a04370a1369",
+    "browser/template.html": "56cedbaa775398ece0e540785de93f744a7b49b6fd55f69b040434a24cc5519a",
     "tools/build-android-assets.py": "4495b4d12302ec498740f6dc11a78c7df3f1464c37c681521e331013958266d8",
     "tools/build-browser.mjs": "996a361135650b245b0df70d898cc3d4fedf7b1b1e2f0d36582f0e8c5eb5f6aa"
   },
   "targetSdk": 36,
   "testOnly": false,
   "toolchainInputs": {
-    "builder": "650f210c1c5a2b61d60c4149c8db5c6f1cd19c5b2574fd3a4eea235f46bd4c4a",
+    "builder": "66efc0838d70781b2057f5b60861c1450ad44dd133463b47e4aca313fe5ab99a",
     "manifest": "8fdb2b3ee3d1ec3067ce8fec330204130c242459622063e34ad8a205768e6719",
     "setup": "0f9e4ffe437c3785d3dd899e8165f3f4391dcf3d44ca170a148f81d3af07ecab"
   },
   "universalApk": {
     "bytes": 89405607,
     "path": "artifacts/android-aab-build/universal.apk",
-    "sha256": "74fc80f44ba1a33dd1a6c30b9deaf3a6b0d25a5ca4eb756b418055dced4431f3",
+    "sha256": "b07136dccf6ee3d32db4ae0ec63db5e6a7b7d966750ea264f0677ee0070b1c90",
     "signatureV2": true,
     "zipalign16KBCheck": true
   },
   "uploadCertificateSha256": "cba57bfc2a02717a3519340c08d866b34a8cf024e96e3a5264c647c1fdf81dcf",
   "verifiedBundledFiles": 430,
-  "versionCode": 2,
-  "versionName": "0.2.0"
+  "versionCode": 3,
+  "versionName": "0.2.1"
 }

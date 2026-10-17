@@ -1,11 +1,11 @@
 {
-  "startedAt": "2026-10-16T09:40:28.958Z",
+  "startedAt": "2026-10-17T10:42:45.141Z",
   "assets": "/workspace/nations-clash/artifacts/android-assets",
   "checks": [
     {
       "name": "Local JavaScript, flags, legacy sheets, portraits and default arena boot",
       "status": "passed",
-      "verifiedFiles": 429
+      "verifiedFiles": 430
     },
     {
       "name": "All country sheets, portraits and arenas decode locally with bounded caches",
@@ -53,6 +53,6 @@
     "/workspace/nations-clash/artifacts/android-assets-mobile-844.png"
   ],
   "passed": true,
-  "manifestSha256": "6319e10cbba061af4f3687222554afb5e4c4d5de8932d1087aecebfb1ef743ba",
-  "finishedAt": "2026-10-16T09:40:43.262Z"
+  "manifestSha256": "57ec59417787f1b4ed3c59d5889fea3aea70d2315777de3ef62596834888f254",
+  "finishedAt": "2026-10-17T10:43:18.637Z"
 }

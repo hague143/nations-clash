@@ -1,9 +1,9 @@
 {
-  "startedAt": "2026-10-16T17:17:55.588Z",
+  "startedAt": "2026-10-17T10:42:44.933Z",
   "document": {
-    "path": "/workspace/nations-clash/browser/index.html",
-    "bytes": 35886774,
-    "sha256": "4b8eae6fe3315408589498052d67a6c26ffa1ada6332e3846b399f5b862ec04c"
+    "path": "/workspace/nations-clash/artifacts/package-check/NationClash.html",
+    "bytes": 118862787,
+    "sha256": "05c4f7c9580e43973a763b56b7bd46858f9f4a556fc5dc76da8a115dc650b115"
   },
   "checks": [
     {
@@ -27,7 +27,7 @@
     {
       "name": "rapid fighter changes retain the latest country, serialize decoding and remove the preview on stop",
       "status": "passed",
-      "maxPendingLoads": 1
+      "maxPendingLoads": 0
     },
     {
       "name": "tiny, hidden, resized and offscreen hosts stop safely without negative canvas geometry",
@@ -76,5 +76,5 @@
     "/workspace/nations-clash/artifacts/neon-landing/browser/neon-landing-reduced-motion.png"
   ],
   "status": "passed",
-  "finishedAt": "2026-10-16T17:19:03.518Z"
+  "finishedAt": "2026-10-17T10:44:03.186Z"
 }

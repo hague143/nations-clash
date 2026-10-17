@@ -1,5 +1,9 @@
 # Neon 2D Android test APK
 
+> Historical validation for the earlier release. For the current compact mobile
+> UI, version-code 3 APK/AAB and tested downloads, see
+> [mobile UI validation](MOBILE-UI-VALIDATION.md).
+
 Build checks executed on 2026-10-16 in `/workspace/nations-clash`.
 This APK packages the active neon 2D game, not the paused 3D prototype or Unity
 foundation. No Unity Editor, hosting account or login backend is required.

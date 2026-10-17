@@ -378,10 +378,23 @@ async function arenaAcceptance(page){
   await page.locator('#start').click();await waitFight(page);await page.locator('#pause').click();
   assert.equal(await page.evaluate(()=>NationClash.selectedArena),arena.id,'selected arena enters match');
   const loaded=await page.evaluate(async id=>{
-   const image=await NationArenas.ensure(id),expected=document.createElement('canvas');expected.width=1280;expected.height=720;expected.getContext('2d').drawImage(image,0,0);
-   const actual=document.getElementById('arena').getContext('2d'),reference=expected.getContext('2d');
-   const pixelsMatch=[[25,25],[1220,25],[25,680],[1220,680]].every(([x,y])=>String(actual.getImageData(x,y,1,1).data)===String(reference.getImageData(x,y,1,1).data));
-   return {pixelsMatch,retained:NationArenas.retainedId,cache:NationArenas.loadedIds,audio:NationClash.audioDebug.arena};
+   const image=await NationArenas.ensure(id),canvas=document.getElementById('arena'),expected=document.createElement('canvas');
+   expected.width=canvas.width;expected.height=canvas.height;
+   // Observe the transform used by the real background draw. The responsive
+   // camera can cover/crop an image at any backing size; fixed 1280px sample
+   // coordinates would compare unrelated locations or read outside the canvas.
+   const original=NationArenas.drawScene;let observed;
+   NationArenas.drawScene=function(ctx,arena,time,options){
+    if(ctx.canvas===canvas){const m=ctx.getTransform();observed={id:arena,matrix:[m.a,m.b,m.c,m.d,m.e,m.f],width:options?.width||1280,height:options?.height||720};}
+    return original(ctx,arena,time,options);
+   };
+   try{await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));}
+   finally{NationArenas.drawScene=original;}
+   if(!observed||observed.id!==id)return {pixelsMatch:false,observed};
+   const reference=expected.getContext('2d');reference.setTransform(...observed.matrix);reference.drawImage(image,0,0,observed.width,observed.height);
+   const actual=canvas.getContext('2d'),margin=25;
+   const pixelsMatch=[[margin,margin],[canvas.width-margin,margin],[margin,canvas.height-margin],[canvas.width-margin,canvas.height-margin]].every(([x,y])=>String(actual.getImageData(x,y,1,1).data)===String(reference.getImageData(x,y,1,1).data));
+   return {pixelsMatch,observed,retained:NationArenas.retainedId,cache:NationArenas.loadedIds,audio:NationClash.audioDebug.arena};
   },arena.id);
   assert.ok(loaded.pixelsMatch,'live match uses the selected photograph');assert.equal(loaded.retained,arena.id);assert.equal(loaded.audio,arena.id);assert.ok(loaded.cache.length<=3&&loaded.cache.includes(arena.id));
   assert.match(await page.locator('#stage-name').textContent(),new RegExp(arena.name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'i'));
@@ -400,7 +413,7 @@ async function audioAcceptance(page){
  const startCounts=await page.evaluate(()=>NationClash.audioReadiness.cueCounts);
  await page.locator('#start').click();
  // Sound must be enabled/unlocked by a real user gesture, not autoplay assumptions.
- if(await page.locator('#sound').getAttribute('aria-pressed')!=='true')await page.locator('#sound').click();
+ assert.equal(await page.locator('#sound,#volume,#music-volume,#effects-volume,.keys,#combat-hint,#signature-hint,#reach-hint').count(),0,'fight chrome has no removed audio/keyboard/hint nodes');
  await page.waitForFunction(()=>NationClash.audioReadiness?.contextState==='running');
  await waitFight(page);
  let state=await page.evaluate(()=>NationClash.audioReadiness);
@@ -423,15 +436,13 @@ async function audioAcceptance(page){
  await page.waitForFunction(()=>NationClash.fight.phase==='intermission');
  await page.waitForFunction(ko=>NationClash.audioReadiness.cueCounts.ko===ko+1,ko);
  await page.waitForTimeout(150);assert.equal(await page.evaluate(()=>NationClash.audioReadiness.cueCounts.ko),ko+1,'KO cue is deduplicated');
- await page.locator('#volume').focus();await page.locator('#volume').press('Home');
- state=await page.evaluate(()=>NationClash.audioReadiness);assert.equal(state.volume,0,'volume slider affects master gain');
- await page.locator('#volume').evaluate(el=>{el.value='65';el.dispatchEvent(new Event('input',{bubbles:true}));});
- assert.equal(await page.evaluate(()=>NationClash.audioReadiness.volume),.65);
- await page.locator('#sound').click();state=await page.evaluate(()=>NationClash.audioReadiness);
- assert.equal(state.enabled,false);assert.equal(state.musicRunning,false);assert.equal(state.activeVoices,0,'mute cancels audio voices');
+ assert.ok(state.enabled&&state.volume>0&&state.effectsVolume>0,'removing controls keeps sound and effects enabled');
  await page.locator('#pause').click();await page.locator('#back').click();
- assert.equal(await page.evaluate(()=>NationClash.audioReadiness.musicRunning),false,'return to selection leaves music stopped');
- check('bundled start/KO audio, background music, punch/kick sounds, volume, mute, pause and deduplication');
+ const stopped=await page.evaluate(()=>NationClash.audioReadiness);
+ assert.equal(stopped.active,false,'return to selection ends the audio session');
+ assert.equal(stopped.musicRunning,false,'return to selection leaves music stopped');
+ assert.equal(stopped.activeVoices,0,'return to selection cancels voices');
+ check('bundled start/KO audio, background music, punch/kick effects, pause/resume and cue deduplication without audio controls');
 }
 
 async function mobileAcceptance(html){
@@ -462,7 +473,8 @@ async function mobileAcceptance(html){
  const fits=rect=>rect.left>=-.5&&rect.top>=-.5&&rect.right<=layout.width+.5&&rect.bottom<=layout.height+.5;
  assert.ok(fits(layout.arena),'landscape arena remains fully in viewport');
  assert.ok(fits(layout.touch)&&layout.controls.every(fits),'all landscape touch controls remain fully in viewport without scrolling');
- assert.ok(layout.touch.left>=layout.arena.right,'landscape touch controls sit beside the arena');
+ assert.ok(layout.touch.top>=layout.arena.bottom-.5,'compact landscape touch controls sit below the arena');
+ assert.ok(layout.arena.height/layout.height>.55,'landscape arena occupies most of the screen');
  assert.ok(layout.controls.every(r=>r.width>=44&&r.height>=44),'landscape controls preserve 44px touch targets');
  assert.equal(await landscape.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,'landscape arena has no horizontal overflow');
  await fixture(landscape,{distance:1.1});await landscape.locator('[data-action="light"]').tap();
@@ -470,7 +482,7 @@ async function mobileAcceptance(html){
  await fixture(landscape,{distance:1.1});await landscape.locator('[data-action="jump"]').tap();
  await landscape.waitForFunction(()=>NationClash.fight.left.y>0);
  await snapshot(landscape,'mobile-landscape-fight');await landscape.close();
- check('844×390 landscape touch attack/jump, side controls, viewport fit and target sizes');
+ check('844×390 landscape touch attack/jump, compact bottom controls, viewport fit and target sizes');
 }
 
 async function computerAcceptance(page){

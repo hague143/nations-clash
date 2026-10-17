@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-10-16T17:18:38.913Z",
+  "startedAt": "2026-10-17T10:43:19.096Z",
   "checks": [
     {
       "name": "android 1440px shared logo decode, accessible name, size and above-fold layout",
@@ -180,6 +180,6 @@
   ],
   "passed": true,
   "logoSha256": "d06638cd8b5bf9b0ab8818cc2c3f015d943a7f59ac769ab5c28a8d84c558a8c7",
-  "androidManifestSha256": "add49a3e96b79d9bd627e7d6d2a41fad4d652d4dfe0b17d2bda2c2cfab22f0e6",
-  "finishedAt": "2026-10-16T17:18:54.524Z"
+  "androidManifestSha256": "57ec59417787f1b4ed3c59d5889fea3aea70d2315777de3ef62596834888f254",
+  "finishedAt": "2026-10-17T10:43:29.610Z"
 }

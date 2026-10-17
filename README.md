@@ -3,18 +3,21 @@
 **Active version: the neon 2D browser game**, with 196 country fighters,
 hover move previews and 30 arena views.
 
-**Play Store bundle:** [NationClash-PlayStore.aab](https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-PlayStore.aab)
-(about 89 MB), signed version **0.2.0**, targets **Android 16 / API 36** and
-includes the refreshed Nation Clash logo in the game and app icon. Upload it
+**Play Store bundle:** [NationClash-PlayStore.aab](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore.aab)
+(about 89 MB), signed version **0.2.1**, version code **3**, targets
+**Android 16 / API 36** and includes the refreshed NationClash logo and compact
+mobile fight screen. Upload it
 to Play Console **Internal testing**. See [bundle validation and upload steps](docs/PLAY-STORE-AAB.md).
 
-**Earlier Android test build:** [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk)
-(about 88 MB), install it and open **NationClash**. Android 8.0+ is required.
+**Direct Android test build:** [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Android-test.apk)
+(about 89 MB), version **0.2.1-test**, code **3**. Install it and open
+**NationClash**. Android 8.0+ is required; this test APK targets API 35.
 All fighters, arenas and audio are included for offline play. See
-[Android installation and build instructions](android/README.md). This earlier
-APK predates the new logo; the new branding is in the AAB and updated browser game.
+[Android installation and build instructions](android/README.md). It retains the
+previous test signing certificate for compatible APK updates. The Play bundle
+uses its separate upload certificate.
 
-**Play without Unity:** download [NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-Windows.zip),
+**Play without Unity:** download [NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Windows.zip),
 right-click → **Extract All**, then open the extracted `NationClash.html` in
 Chrome or Edge. The downloaded HTML contains all artwork and needs no companion
 folder. Pick a country,
@@ -27,8 +30,11 @@ See the [arena artwork review](docs/ARENA-ARTWORK-REVIEW.md).
 Each country also has a named fantasy signature on **H** (player two: **Numpad 7**),
 with travelling energy, blocks and a four-second recharge. The refreshed matchup
 screen, lighting and shaded particles add a 3D-style presentation to the supplied
-artwork. Original electronic music and layered combat sounds have independent
-Music and Effects controls. See [country powers](docs/COUNTRY-POWERS.md).
+artwork. Original electronic music and layered combat sounds start with a match;
+use the device's media volume controls to adjust sound. The mobile fight screen
+keeps a small logo, pause button, essential HUD and compact touch controls so the
+arena uses most of the available screen. Keyboard hints and sound sliders no
+longer occupy the fight screen. See [country powers](docs/COUNTRY-POWERS.md).
 The roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 **All 196 countries use supplied PNGs**. The latest 36-file archive provides
 32 changed sheets and four unchanged sheets. There are 195 eight-pose fighters

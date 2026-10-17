@@ -19,8 +19,9 @@ roster is 193 UN members plus Palestine, Vatican City and Taiwan.
 5. Choose an arena and difficulty, then click **Enter the arena**.
 
 No Unity, account, server or internet connection is needed after downloading.
-Clicking Enter unlocks browser audio. Master, Music and Effects sliders adjust
-the mix; Sound mutes everything. If the document
+Clicking Enter unlocks browser audio. Use your computer or phone's media volume
+controls to adjust sound; the fight screen has no sound sliders or mute toggle.
+If the document
 opens as text, ensure its extension is `.html`, not `.html.txt`. Allow this large
 HTML to finish loading. For a hosted website, the source build uses `index.html`
 with an accompanying `country-art` folder.
@@ -46,7 +47,13 @@ Previews stop when offscreen or when the match starts. See
 | Country signature power | H | Numpad 7 |
 | Pause/resume | Escape | Escape |
 
-On-screen buttons support mouse and multitouch. Chain **J → J → K** after
+On phones and tablets, compact on-screen buttons support multitouch. Desktop
+players use the keyboard. The mobile fight fills the available screen with a
+small logo and pause icon, an arena with health/round/power status, and twelve
+buttons in three portrait rows or two landscape rows. Touch targets remain at
+least 44px, without keyboard subtitles or long fight instructions.
+
+Chain **J → J → K** after
 connected hits to launch, then use **L** for a slam. Hold **S + attack** to hit low.
 Standing block loses to low attacks; crouching block stops them. Use **U** to break
 guard, **I** during the grab prompt to escape, and **O** with a full meter. First
@@ -76,8 +83,8 @@ decorative animation while keeping attacks visible and playable.
 
 The original offline soundtrack uses an eight-bar electronic score with pads,
 bass, melody and drums, tuned per arena. Layered punch/kick sounds and eight
-power sound families play alongside the existing announcer. Music and Effects
-can be adjusted independently. See [all country powers](../docs/COUNTRY-POWERS.md)
+power sound families play alongside the existing announcer. Adjust their combined
+playback level through the device's media volume controls. See [all country powers](../docs/COUNTRY-POWERS.md)
 and [audio design](../docs/AUDIO-DESIGN.md).
 
 ## Fighters and venues
@@ -127,7 +134,7 @@ on-demand artwork scripts under `browser/country-art/`, and copies both the HTML
 and local artwork files into `artifacts/`. That hosted source HTML requires its
 196 match scripts. `python3 tools/package-browser.py` produces a different,
 self-contained downloadable HTML with all 196 atlas payloads inside it, plus a
-ZIP containing that HTML and six notes/inventory files. No companion asset
+ZIP containing that HTML and eight notes/inventory files. No companion asset
 folder is required by the downloaded HTML.
 Set `NATIONCLASH_ARTIFACT_DIR` to choose a different downloadable output folder.
 

@@ -29,8 +29,8 @@ A = "{" + ANDROID_NS + "}"
 PACKAGE = "com.nationclash.game"
 MIN_SDK = 26
 TARGET_SDK = 36
-VERSION_CODE = 2
-VERSION_NAME = "0.2.0"
+VERSION_CODE = 3
+VERSION_NAME = "0.2.1"
 KEY_ALIAS = "nationclash-upload"
 
 

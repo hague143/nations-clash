@@ -52,14 +52,17 @@ async function renderedPowers(page){
  await back(page);
 }
 async function keyboardPowers(page){
- await choose(page,'ir');await choose(page,'ae',1);await start(page);await reset(page);
+ await choose(page,'ir');await choose(page,'ae',1);await start(page);await reset(page,{distance:6.2});
+ await page.evaluate(()=>{window.__signatureAudioAtHit=null;addEventListener('nation-hit',event=>{if((event.detail.move||event.detail.action)==='signature')window.__signatureAudioAtHit={event:event.detail,audio:NationClash.audioDebug,paused:NationClash.paused};});});
  const before=await page.evaluate(()=>({hp:NationClash.fight.right.hp,sound:NationClash.audioDebug.signatureCounts}));
  await page.keyboard.press('h');
  assert.equal(await page.evaluate(()=>NationClash.fight.right.hp),before.hp,'a keypress cannot cause remote instant damage');
  await page.waitForFunction(()=>NationClash.fight.projectiles.length===1);
  assert.equal(await page.evaluate(()=>NationClash.fight.right.hp),before.hp,'launch precedes impact');
  assert.equal(await page.evaluate(()=>NationClash.fight.projectiles[0].powerId),'ir');
- await page.locator('#pause').click();
+ // Escape is a real production pause input without button actionability waits.
+ // The longer, still-valid flight leaves time to capture it on a loaded CI host.
+ await page.keyboard.press('Escape');await page.waitForFunction(()=>NationClash.paused);
  const frozen=await page.evaluate(()=>({frame:NationClash.fight.frame,x:NationClash.fight.projectiles[0].x,cooldown:NationClash.fight.left.signatureCooldown,canvas:document.getElementById('arena').toDataURL()}));
  await page.waitForTimeout(180);
  const still=await page.evaluate(()=>({frame:NationClash.fight.frame,x:NationClash.fight.projectiles[0].x,cooldown:NationClash.fight.left.signatureCooldown,canvas:document.getElementById('arena').toDataURL()}));
@@ -69,10 +72,10 @@ async function keyboardPowers(page){
  assert.equal(await page.evaluate(()=>NationClash.fight.right.lastDamage),120);
  assert.match(await page.locator('#left-signature').textContent(),/Uranium Pulse/);
  const after=await page.evaluate(()=>NationClash.audioDebug);
- assert.equal(after.signatureCounts.launch,before.sound.launch+1);assert.equal(after.signatureCounts.impact,before.sound.impact+1);assert.ok(after.musicRunning&&after.musicGain>0);
+ assert.equal(after.signatureCounts.launch,before.sound.launch+1);assert.equal(after.signatureCounts.impact,before.sound.impact+1,'signature impact sound remains audible across pause/resume: '+JSON.stringify(await page.evaluate(()=>__signatureAudioAtHit)));assert.ok(after.musicRunning&&after.musicGain>0);
  await page.keyboard.press('h');await page.waitForTimeout(80);assert.equal(await page.evaluate(()=>NationClash.fight.projectiles.length),0,'cooldown prevents a second projectile');
  await page.locator('#pause').click();await modalShot(page,'uranium-impact');await page.locator('#resume').click();
- check('real H launches Iran power, travels before damage, plays sound, recharges and freezes on pause');
+ check('real H launches Iran power, travels before damage, plays sound, recharges and freezes on pause',{signatureAudioBefore:before.sound,signatureAudioAfter:after.signatureCounts,atImpact:await page.evaluate(()=>__signatureAudioAtHit)});
  await reset(page);const guardedHP=await page.evaluate(()=>NationClash.fight.right.hp);await page.keyboard.down('ControlRight');await page.keyboard.press('h');
  await page.waitForFunction(()=>NationClash.fight.effects.some(e=>e.type==='signature'&&e.kind==='block'));
  await page.keyboard.up('ControlRight');assert.equal(await page.evaluate(()=>NationClash.fight.right.hp),guardedHP,'standing guard blocks standing power');
@@ -81,13 +84,27 @@ async function keyboardPowers(page){
  check('real guard, finite-range miss and player-two Numpad7 gold power work');
 }
 async function mix(page){
- await page.locator('#music-volume').evaluate(e=>{e.value='0';e.dispatchEvent(new Event('input',{bubbles:true}));});await page.waitForTimeout(80);
- let d=await page.evaluate(()=>NationClash.audioDebug);assert.equal(d.musicVolume,0);assert.equal(d.musicRunning,false);assert.ok(d.enabled&&d.effectsVolume>0,'music mute keeps effects enabled');
- await page.locator('#music-volume').evaluate(e=>{e.value='65';e.dispatchEvent(new Event('input',{bubbles:true}));});await page.waitForFunction(()=>NationClash.audioDebug.musicRunning);
- await page.locator('#effects-volume').evaluate(e=>{e.value='25';e.dispatchEvent(new Event('input',{bubbles:true}));});await page.waitForTimeout(80);d=await page.evaluate(()=>NationClash.audioDebug);assert.equal(d.musicVolume,.65);assert.equal(d.effectsVolume,.25);assert.ok(d.musicGain>0&&d.effectsGain>0);
- await page.locator('#sound').click();d=await page.evaluate(()=>NationClash.audioDebug);assert.equal(d.enabled,false);assert.equal(d.musicRunning,false);assert.equal(d.activeVoices,0);
- await page.locator('#sound').click();await page.waitForFunction(()=>NationClash.audioDebug.musicRunning);d=await page.evaluate(()=>NationClash.audioDebug);assert.equal(d.musicVolume,.65);assert.equal(d.effectsVolume,.25);
- await back(page);check('music and effects sliders independently adjust sound and survive master mute');
+ assert.equal(await page.locator('#sound,#volume,#music-volume,#effects-volume').count(),0,'removed audio controls are absent, not hidden');
+ const playing=await page.evaluate(()=>NationClash.audioDebug);
+ assert.ok(playing.enabled&&playing.active&&playing.musicRunning&&playing.musicGain>0&&playing.effectsGain>0,'music and effects remain enabled without controls');
+ assert.equal(playing.contextState,'running');assert.equal(playing.lastError,null);
+ assert.deepEqual([...playing.decodedCues].sort(),['fight','getready','ko','timeover']);
+ await page.locator('#pause').click();await page.waitForFunction(()=>NationClash.audioDebug.contextState==='suspended');
+ const paused=await page.evaluate(()=>NationClash.audioDebug);
+ assert.equal(paused.paused,true);assert.equal(paused.musicRunning,false);assert.equal(paused.activeVoices,0);
+ await page.locator('#resume').click();await page.waitForFunction(()=>NationClash.audioDebug.musicRunning&&NationClash.audioDebug.contextState==='running');
+ const resumed=await page.evaluate(()=>NationClash.audioDebug);
+ assert.deepEqual(resumed.cueCounts,paused.cueCounts,'resume does not replay round announcements');
+ for(const key of ['volume','musicVolume','effectsVolume'])assert.equal(resumed[key],playing[key],key+' is preserved through pause');
+ await back(page);
+ const stopped=await page.evaluate(()=>NationClash.audioDebug);
+ assert.equal(stopped.active,false);assert.equal(stopped.musicRunning,false);assert.equal(stopped.activeVoices,0);
+ const before=stopped.cueCounts;await start(page);
+ const restarted=await page.evaluate(()=>NationClash.audioDebug);
+ assert.ok(restarted.enabled&&restarted.musicRunning&&restarted.musicGain>0);
+ assert.equal(restarted.cueCounts.getready,before.getready+1);assert.equal(restarted.cueCounts.fight,before.fight+1);
+ assert.equal(restarted.lastError,null);await back(page);
+ check('music, effects and announcers work without audio UI, pause/resume cleanly and restart once per match');
 }
 async function mobile(viewport){
  const page=await browser.newPage({viewport,isMobile:true,hasTouch:true});watch(page);await page.goto(url);await page.waitForFunction(()=>window.NationClash?.assetsReady);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await choose(page,'ir');await choose(page,'ae',1);await start(page);await reset(page);

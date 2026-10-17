@@ -1,10 +1,10 @@
 {
   "format": "self-contained single HTML inside ZIP",
-  "zipBytes": 89922384,
-  "zipSha256": "6942209f260a870836cf23323776c8d4d4d2bed9693c18c9ea3915403a61ab29",
-  "htmlBytes": 118858023,
-  "htmlSha256": "4404eff286168c73b3f5d188eb0d48ca6120a9e9625db3aa943f4dbe3e2ab318",
-  "sourceHtmlSha256": "4b8eae6fe3315408589498052d67a6c26ffa1ada6332e3846b399f5b862ec04c",
+  "zipBytes": 89924021,
+  "zipSha256": "9e441b09841a95f582a2dc1f5fef3334b5a4fabda52f1891b5ca566c547c9630",
+  "htmlBytes": 118862787,
+  "htmlSha256": "05c4f7c9580e43973a763b56b7bd46858f9f4a556fc5dc76da8a115dc650b115",
+  "sourceHtmlSha256": "6ff3f717b6346242e1a83fed63004261423d5fd7c81168e589c3c555698a71c8",
   "zipCrc": "passed",
   "members": 9,
   "companionAssetFiles": 0,
@@ -30,7 +30,7 @@
     "fighter-preview": "0b643a2fd0d05ca681fb56ffb0e1abb4c5dcc59720e18f666c30e073ef60544e",
     "presentation": "5ec0143ac28105633e95ef84d65a39c519eded7e575609d5bf62a5cf2c0f8cb8",
     "audio": "7bc84f99a1c4a8d9c07f205c293e8ce70a646706629ce4fde513b959b2cf9274",
-    "game": "159e220b530319641cb9ce795e2e93aa47edafeb10bad0f009e951a8f772e655"
+    "game": "a20905dbf05a0b9fe11f78364415669e7aeaa455a3e0b6c560f66e304e7060dc"
   },
-  "landingThemeSha256": "c24e3359875a0f3d47a8a501189e4a4afdbd743a43e7b302aecf2952c748f4ad"
+  "landingThemeSha256": "8e205446a4fa6104493a5ccf5637c24ab209b70282b201a93d8048609d9539e8"
 }

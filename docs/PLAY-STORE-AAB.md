@@ -3,23 +3,25 @@
 `downloads/NationClash-PlayStore.aab` is a signed Android App Bundle containing
 the neon 2D game, the refreshed blue/red Nation Clash branding, all 196 country
 fighters, 30 arena views and offline audio. The same logo appears in the game
-header, landing page and Android adaptive launcher icon.
+header, landing page and Android adaptive launcher icon. Version `0.2.1` keeps
+the fight screen compact: a small logo and pause icon, the arena with essential
+health/round/power information, and twelve touch buttons. Portrait uses three
+button rows; landscape uses two. Music and fight sounds use the phone's media
+volume buttons, with no in-game sliders or keyboard instruction panels.
 
-[Download the signed AAB](https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-PlayStore.aab)
-and the [512x512 store icon](https://raw.githubusercontent.com/hague143/nations-clash/015a5e65bcc8c1975cb479f978ad77e973f13083/downloads/NationClash-PlayStore-icon.png).
-Full public downloads were verified against the tested files; the downloaded
-AAB also passed strict signing, bundle and payload checks. See
-[public download evidence](PLAY-STORE-PUBLIC-DOWNLOADS.json).
+[Download the signed AAB](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore.aab)
+and the [512x512 store icon](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore-icon.png).
+See [public download evidence](PLAY-STORE-PUBLIC-DOWNLOADS.json) for verified
+artifact URLs, exact sizes and hashes.
 
 | Field | Release |
 |---|---|
 | Application ID | `com.nationclash.game` |
-| Version | `0.2.0`, version code `2` |
+| Version | `0.2.1`, version code `3` |
 | Minimum Android | Android 8.0 / API 26, with an updated system WebView |
 | Target / compile SDK | Android 16 / API 36 |
 | Debuggable / testOnly | Both `false` |
-| File size | 89,446,219 bytes (89.45 MB) |
-| SHA256 | `573a45f24ffebcfc2bc576a7e320f5299c6e98ca105b74f69a80bab95aaba518` |
+| File size / SHA256 | See the [current signed build report](PLAY-STORE-AAB-BUILD.json) |
 | Upload certificate SHA256 | `cba57bfc2a02717a3519340c08d866b34a8cf024e96e3a5264c647c1fdf81dcf` |
 
 ## Upload and test
@@ -43,38 +45,31 @@ to Google Play or establish approval/production access. If this application ID
 already has an accepted bundle under a different upload certificate, use the
 existing upload key or complete Google's upload-key reset process first.
 
-## Validation performed
+This release reuses the previous upload certificate and increases the version
+code from `2` to `3`. The direct-install test APK is version `0.2.1-test`, code
+`3`, and targets API 35 with the earlier test certificate; the Play bundle
+targets API 36 with release debugging disabled. The two certificates remain
+separate. Use the [test APK instructions](../android/README.md) for sideloading.
 
-- Official Google **Build Tools 36.0.0**, **Platform 36 revision 2** and
-  **bundletool 1.18.3**, with downloaded/cached archive checksums verified.
-- Native Java compilation and release DEX generation; protobuf Android manifest
-  and resources packaged into a genuine base-module Android App Bundle.
-- Strict JAR signature verification, `bundletool validate`, and a manifest dump
-  confirming package, version, SDK levels and disabled debug/test flags.
-- All **430 payload files** checked against the same manifest as the passing
-  browser acceptance run. Every fighter, portrait, arena and local logo hash
-  matched in both the AAB and its generated universal APK.
-- Conversion to a universal APK passed; its v2/v3 signing and 16 KB ZIP alignment
-  check passed. The bundle and generated APK contain **zero native `.so`
-  libraries**. There is no bundled native ELF alignment requirement to repair;
-  Android supplies its own WebView implementation.
-- Updated game acceptance: **8 groups passed**, covering every atlas/portrait
-  and arena, real punch/kick/signature damage, music/announcements and touch
-  controls. **4 branding viewport checks passed** at desktop, portrait and
-  landscape sizes, including exact embedded/local logo identity and no overflow.
-- Existing landing-preview acceptance: **9 groups passed**, including all 196
-  fighters' 588 authored punch/kick/signature preview fixtures, keyboard and
-  touch behavior, reduced motion and isolation from live combat.
-- The updated Windows ZIP passed CRC and every embedded country/arena byte
-  check. Its exact extracted standalone HTML loaded both logos without companion
-  files and produced real punch damage, with zero errors or external requests.
+## Release validation
 
-The 16 KB checks above concern the artifact and native-library inventory; they
-are not a gameplay run on a physical 16 KB-page Android device. Physical-phone
-QA, release review and Play Console acceptance remain separate. Earlier
-software-emulator WebView failures are documented in
-[the previous test APK report](ANDROID-APK-VALIDATION.md); no new device gameplay
-pass is claimed for this AAB.
+The build process uses official Google **Build Tools 36.0.0**, **Platform 36
+revision 2** and **bundletool 1.18.3**, with archive checksums verified. It compiles
+the native wrapper, generates release DEX, packages the protobuf manifest and
+resources, and validates the signed AAB and a generated universal APK.
+
+Build checks cover signing, package/version/SDK metadata, disabled debug/test
+flags, ZIP integrity, alignment and every bundled payload hash. The asset
+inventory includes all 196 fighter sheets, 196 portraits, 30 arenas and the
+shared logo. Browser acceptance exercises real attacks, audio, mobile controls,
+logo rendering and the compact fight layout; separate landing checks cover all
+196 fighters' punch/kick/country-power previews.
+
+The bundle contains no native `.so` libraries; Android supplies WebView. APK
+alignment checks concern the artifact, and do not establish gameplay on a
+physical 16 KB-page device. See [Android validation](ANDROID-APK-VALIDATION.md)
+for runtime/device status. Use a Play testing track to test performance, touch,
+audio, rotation and background pause on the intended phones before production.
 
 Machine-readable reports:
 
@@ -85,6 +80,14 @@ Machine-readable reports:
 - [Landing preview acceptance](BRANDED-LANDING-VALIDATION.json)
 - [Standalone ZIP payload checks](BRANDED-WINDOWS-PACKAGE.json)
 - [Extracted standalone runtime check](BRANDED-WINDOWS-RUNTIME.json)
+
+To reproduce the current mobile/browser acceptance checks after building assets:
+
+```sh
+node tools/android-assets-smoke.cjs
+node tools/mobile-fight-smoke.cjs
+node tools/branding-smoke.cjs
+```
 
 ## Rebuild and retain the upload key
 

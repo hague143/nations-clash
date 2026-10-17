@@ -1,0 +1,3422 @@
+{
+  "startedAt": "2026-10-17T10:46:26.334Z",
+  "type": "Chromium touch-browser acceptance of generated Android assets; not native Android/emulator validation",
+  "assets": "/workspace/nations-clash/artifacts/android-assets",
+  "checks": [
+    {
+      "name": "Generated Android document and modules match the current game and UI sources",
+      "status": "passed",
+      "assetManifestSha256": "57ec59417787f1b4ed3c59d5889fea3aea70d2315777de3ef62596834888f254",
+      "documentSha256": "64537cde1c4ee5a1f3d8dd560d363aeeb64bbd445b0dfcea46b1cb2966580e51",
+      "countries": 196,
+      "arenas": 30
+    },
+    {
+      "name": "390×844 fight fits its viewport, preserves natural artwork and accepts real touch attacks",
+      "status": "passed",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 844,
+        "scrollWidth": 390,
+        "bodyHeight": 844,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 382,
+          "bottom": 40,
+          "width": 374,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 338,
+          "top": 2,
+          "right": 382,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 382,
+          "bottom": 836,
+          "width": 374,
+          "height": 790
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 382,
+          "bottom": 688,
+          "width": 374,
+          "height": 642
+        },
+        "touch": {
+          "left": 8,
+          "top": 694,
+          "right": 382,
+          "bottom": 836,
+          "width": 374,
+          "height": 142
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 694,
+            "right": 97.75,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 102.75,
+            "top": 694,
+            "right": 192.5,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 197.5,
+            "top": 694,
+            "right": 287.25,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 292.25,
+            "top": 694,
+            "right": 382,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 8,
+            "top": 743,
+            "right": 97.75,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 102.75,
+            "top": 743,
+            "right": 192.5,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 197.5,
+            "top": 743,
+            "right": 287.25,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 292.25,
+            "top": 743,
+            "right": 382,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 8,
+            "top": 792,
+            "right": 97.75,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 102.75,
+            "top": 792,
+            "right": 192.5,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 197.5,
+            "top": 792,
+            "right": 287.25,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 292.25,
+            "top": 792,
+            "right": 382,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          }
+        ],
+        "rows": 3,
+        "columns": 4
+      },
+      "rendering": {
+        "debug": {
+          "width": 372,
+          "height": 640,
+          "dpr": 2,
+          "scale": 0.8131147596435366,
+          "translateX": -334.3934461718634,
+          "translateY": 36.931144213877985,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 14.636065673583744,
+              "right": 183.12699338840707,
+              "top": 355.9047347883925,
+              "bottom": 533.7329301855159,
+              "feetX": 103.55016337214545,
+              "feetY": 524.8
+            },
+            {
+              "countryId": "jp",
+              "left": 216.00103727236353,
+              "right": 334.07071950276645,
+              "top": 355.4341364972045,
+              "bottom": 533.2623318943279,
+              "feetX": 268.44983662785467,
+              "feetY": 524.8
+            }
+          ]
+        },
+        "box": {
+          "width": 372,
+          "height": 640
+        },
+        "backing": {
+          "width": 744,
+          "height": 1280
+        },
+        "ratio": 3,
+        "actors": {
+          "pk": {
+            "frame": 85,
+            "left": 19.514749453595243,
+            "right": 178.24829989253476,
+            "top": 360.27401526089153,
+            "bottom": 528.3448333727098,
+            "sourceWidth": 340,
+            "sourceHeight": 360,
+            "scaleX": 0.46686338364393976,
+            "scaleY": 0.46686338364393976
+          },
+          "jp": {
+            "frame": 85,
+            "left": 220.87976125844176,
+            "right": 329.1920662638358,
+            "top": 359.80341697017843,
+            "bottom": 527.8742350819967,
+            "sourceWidth": 232,
+            "sourceHeight": 360,
+            "scaleX": 0.46686338364393976,
+            "scaleY": 0.46686338364393976
+          }
+        },
+        "arena": {
+          "frame": 85,
+          "left": -428.3999938964844,
+          "right": 800.3999786376953,
+          "top": -51.20000076293945,
+          "bottom": 639.9999837875366,
+          "sourceWidth": 1280,
+          "sourceHeight": 720,
+          "scaleX": 0.9599999785423279,
+          "scaleY": 0.9599999785423279
+        },
+        "pixelRange": 242.33333333333331,
+        "ids": [
+          "pk",
+          "jp"
+        ]
+      },
+      "damage": [
+        {
+          "action": "light",
+          "distance": 1.1,
+          "damage": 65,
+          "events": [
+            {
+              "action": "light",
+              "kind": "hit",
+              "damage": 65
+            }
+          ]
+        },
+        {
+          "action": "heavy",
+          "distance": 1.2,
+          "damage": 125,
+          "events": [
+            {
+              "action": "heavy",
+              "kind": "hit",
+              "damage": 125
+            }
+          ]
+        },
+        {
+          "action": "special",
+          "distance": 1.3,
+          "damage": 150,
+          "events": [
+            {
+              "action": "special",
+              "kind": "hit",
+              "damage": 150
+            }
+          ]
+        },
+        {
+          "action": "signature",
+          "distance": 3.8,
+          "damage": 120,
+          "events": [
+            {
+              "action": "signature",
+              "kind": "hit",
+              "damage": 120,
+              "country": "pk"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.75,
+        "musicVolume": 0.8,
+        "effectsVolume": 0.85,
+        "musicGain": 0.5759999752044678,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 36,
+        "activeVoices": 0,
+        "activeSources": 17,
+        "musicSources": 12,
+        "effectSources": 5,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 2,
+          "kick": 1,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 1,
+          "impact": 1
+        },
+        "lastSignature": {
+          "countryId": "pk",
+          "name": "Emerald Crescent",
+          "sound": "energy"
+        },
+        "decodedCues": [
+          "fight",
+          "ko",
+          "getready",
+          "timeover"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      }
+    },
+    {
+      "name": "360×740 fight fits its viewport, preserves natural artwork and accepts real touch attacks",
+      "status": "passed",
+      "geometry": {
+        "width": 360,
+        "height": 740,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 740,
+        "scrollWidth": 360,
+        "bodyHeight": 740,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 352,
+          "bottom": 40,
+          "width": 344,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 308,
+          "top": 2,
+          "right": 352,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 352,
+          "bottom": 732,
+          "width": 344,
+          "height": 686
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 352,
+          "bottom": 584,
+          "width": 344,
+          "height": 538
+        },
+        "touch": {
+          "left": 8,
+          "top": 590,
+          "right": 352,
+          "bottom": 732,
+          "width": 344,
+          "height": 142
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 590,
+            "right": 90.25,
+            "bottom": 634,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 95.25,
+            "top": 590,
+            "right": 177.5,
+            "bottom": 634,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 182.5,
+            "top": 590,
+            "right": 264.75,
+            "bottom": 634,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 269.75,
+            "top": 590,
+            "right": 352,
+            "bottom": 634,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 8,
+            "top": 639,
+            "right": 90.25,
+            "bottom": 683,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 95.25,
+            "top": 639,
+            "right": 177.5,
+            "bottom": 683,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 182.5,
+            "top": 639,
+            "right": 264.75,
+            "bottom": 683,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 269.75,
+            "top": 639,
+            "right": 352,
+            "bottom": 683,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 8,
+            "top": 688,
+            "right": 90.25,
+            "bottom": 732,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 95.25,
+            "top": 688,
+            "right": 177.5,
+            "bottom": 732,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 182.5,
+            "top": 688,
+            "right": 264.75,
+            "bottom": 732,
+            "width": 82.25,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 269.75,
+            "top": 688,
+            "right": 352,
+            "bottom": 732,
+            "width": 82.25,
+            "height": 44
+          }
+        ],
+        "rows": 3,
+        "columns": 4
+      },
+      "rendering": {
+        "debug": {
+          "width": 342,
+          "height": 536,
+          "dpr": 2,
+          "scale": 0.7475409887045418,
+          "translateX": -307.4262327709067,
+          "translateY": -9.004593222725077,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 13.455737796681774,
+              "right": 168.35868746998716,
+              "top": 284.2453206925544,
+              "bottom": 447.7325325899098,
+              "feetX": 95.1993437453595,
+              "feetY": 439.52
+            },
+            {
+              "countryId": "jp",
+              "left": 198.58159878265673,
+              "right": 307.12953244609173,
+              "top": 283.81267387646227,
+              "bottom": 447.2998857738176,
+              "feetX": 246.80065625464056,
+              "feetY": 439.52
+            }
+          ]
+        },
+        "box": {
+          "width": 342,
+          "height": 536
+        },
+        "backing": {
+          "width": 684,
+          "height": 1072
+        },
+        "ratio": 2,
+        "actors": {
+          "pk": {
+            "frame": 87,
+            "left": 17.940969000731712,
+            "right": 163.87343041582767,
+            "top": 288.24128314226493,
+            "bottom": 442.75800699354295,
+            "sourceWidth": 340,
+            "sourceHeight": 360,
+            "scaleX": 0.42921312180910576,
+            "scaleY": 0.42921312180910576
+          },
+          "jp": {
+            "frame": 87,
+            "left": 203.0668717119231,
+            "right": 302.64431597163565,
+            "top": 287.8086363154813,
+            "bottom": 442.32536016675937,
+            "sourceWidth": 232,
+            "sourceHeight": 360,
+            "scaleX": 0.42921312180910576,
+            "scaleY": 0.42921312180910576
+          }
+        },
+        "arena": {
+          "frame": 87,
+          "left": -343.55999755859375,
+          "right": 685.5600280761719,
+          "top": -42.880001068115234,
+          "bottom": 536.0000133514404,
+          "sourceWidth": 1280,
+          "sourceHeight": 720,
+          "scaleX": 0.8040000200271606,
+          "scaleY": 0.8040000200271606
+        },
+        "pixelRange": 251.66666666666666,
+        "ids": [
+          "pk",
+          "jp"
+        ]
+      },
+      "damage": [
+        {
+          "action": "light",
+          "distance": 1.1,
+          "damage": 65,
+          "events": [
+            {
+              "action": "light",
+              "kind": "hit",
+              "damage": 65
+            }
+          ]
+        },
+        {
+          "action": "heavy",
+          "distance": 1.2,
+          "damage": 125,
+          "events": [
+            {
+              "action": "heavy",
+              "kind": "hit",
+              "damage": 125
+            }
+          ]
+        },
+        {
+          "action": "special",
+          "distance": 1.3,
+          "damage": 150,
+          "events": [
+            {
+              "action": "special",
+              "kind": "hit",
+              "damage": 150
+            }
+          ]
+        },
+        {
+          "action": "signature",
+          "distance": 3.8,
+          "damage": 120,
+          "events": [
+            {
+              "action": "signature",
+              "kind": "hit",
+              "damage": 120,
+              "country": "pk"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.75,
+        "musicVolume": 0.8,
+        "effectsVolume": 0.85,
+        "musicGain": 0.5759999752044678,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 31,
+        "activeVoices": 0,
+        "activeSources": 20,
+        "musicSources": 15,
+        "effectSources": 5,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 2,
+          "kick": 1,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 1,
+          "impact": 1
+        },
+        "lastSignature": {
+          "countryId": "pk",
+          "name": "Emerald Crescent",
+          "sound": "energy"
+        },
+        "decodedCues": [
+          "fight",
+          "ko",
+          "getready",
+          "timeover"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      }
+    },
+    {
+      "name": "412×915 fight fits its viewport, preserves natural artwork and accepts real touch attacks",
+      "status": "passed",
+      "geometry": {
+        "width": 412,
+        "height": 915,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 915,
+        "scrollWidth": 412,
+        "bodyHeight": 915,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 404,
+          "bottom": 40,
+          "width": 396,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 360,
+          "top": 2,
+          "right": 404,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 404,
+          "bottom": 907,
+          "width": 396,
+          "height": 861
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 404,
+          "bottom": 759,
+          "width": 396,
+          "height": 713
+        },
+        "touch": {
+          "left": 8,
+          "top": 765,
+          "right": 404,
+          "bottom": 907,
+          "width": 396,
+          "height": 142
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 765,
+            "right": 103.25,
+            "bottom": 809,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 108.25,
+            "top": 765,
+            "right": 203.5,
+            "bottom": 809,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 208.5,
+            "top": 765,
+            "right": 303.75,
+            "bottom": 809,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 308.75,
+            "top": 765,
+            "right": 404,
+            "bottom": 809,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 8,
+            "top": 814,
+            "right": 103.25,
+            "bottom": 858,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 108.25,
+            "top": 814,
+            "right": 203.5,
+            "bottom": 858,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 208.5,
+            "top": 814,
+            "right": 303.75,
+            "bottom": 858,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 308.75,
+            "top": 814,
+            "right": 404,
+            "bottom": 858,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 8,
+            "top": 863,
+            "right": 103.25,
+            "bottom": 907,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 108.25,
+            "top": 863,
+            "right": 203.5,
+            "bottom": 907,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 208.5,
+            "top": 863,
+            "right": 303.75,
+            "bottom": 907,
+            "width": 95.25,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 308.75,
+            "top": 863,
+            "right": 404,
+            "bottom": 907,
+            "width": 95.25,
+            "height": 44
+          }
+        ],
+        "rows": 3,
+        "columns": 4
+      },
+      "rendering": {
+        "debug": {
+          "width": 394,
+          "height": 711,
+          "dpr": 2,
+          "scale": 0.8612021916654663,
+          "translateX": -354.1694026658985,
+          "translateY": 66.29868500072018,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 15.50163944997837,
+              "right": 193.95708439524833,
+              "top": 404.1363051253404,
+              "bottom": 592.4812217556271,
+              "feetX": 109.6740977651217,
+              "feetY": 583.02
+            },
+            {
+              "countryId": "jp",
+              "left": 228.77529216481503,
+              "right": 353.8275900109945,
+              "top": 403.63787575241554,
+              "bottom": 591.9827923827021,
+              "feetX": 284.3259022348782,
+              "feetY": 583.02
+            }
+          ]
+        },
+        "box": {
+          "width": 394,
+          "height": 711
+        },
+        "backing": {
+          "width": 788,
+          "height": 1422
+        },
+        "ratio": 2,
+        "actors": {
+          "pk": {
+            "frame": 82,
+            "left": 20.668826635955583,
+            "right": 188.78984235904704,
+            "top": 408.81022128488553,
+            "bottom": 586.8207085211,
+            "sourceWidth": 340,
+            "sourceHeight": 360,
+            "scaleX": 0.49447357565615135,
+            "scaleY": 0.49447357565615135
+          },
+          "jp": {
+            "frame": 82,
+            "left": 233.94251844281587,
+            "right": 348.660387995043,
+            "top": 408.3117919206241,
+            "bottom": 586.3222791568386,
+            "sourceWidth": 232,
+            "sourceHeight": 360,
+            "scaleX": 0.49447357565615135,
+            "scaleY": 0.49447357565615135
+          }
+        },
+        "arena": {
+          "frame": 82,
+          "left": -485.55999755859375,
+          "right": 879.5599365234375,
+          "top": -56.880001068115234,
+          "bottom": 710.9999618530273,
+          "sourceWidth": 1280,
+          "sourceHeight": 720,
+          "scaleX": 1.066499948501587,
+          "scaleY": 1.066499948501587
+        },
+        "pixelRange": 252.66666666666666,
+        "ids": [
+          "pk",
+          "jp"
+        ]
+      },
+      "damage": [
+        {
+          "action": "light",
+          "distance": 1.1,
+          "damage": 65,
+          "events": [
+            {
+              "action": "light",
+              "kind": "hit",
+              "damage": 65
+            }
+          ]
+        },
+        {
+          "action": "heavy",
+          "distance": 1.2,
+          "damage": 125,
+          "events": [
+            {
+              "action": "heavy",
+              "kind": "hit",
+              "damage": 125
+            }
+          ]
+        },
+        {
+          "action": "special",
+          "distance": 1.3,
+          "damage": 150,
+          "events": [
+            {
+              "action": "special",
+              "kind": "hit",
+              "damage": 150
+            }
+          ]
+        },
+        {
+          "action": "signature",
+          "distance": 3.8,
+          "damage": 120,
+          "events": [
+            {
+              "action": "signature",
+              "kind": "hit",
+              "damage": 120,
+              "country": "pk"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.75,
+        "musicVolume": 0.8,
+        "effectsVolume": 0.85,
+        "musicGain": 0.5759999752044678,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 34,
+        "activeVoices": 0,
+        "activeSources": 18,
+        "musicSources": 13,
+        "effectSources": 5,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 2,
+          "kick": 1,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 1,
+          "impact": 1
+        },
+        "lastSignature": {
+          "countryId": "pk",
+          "name": "Emerald Crescent",
+          "sound": "energy"
+        },
+        "decodedCues": [
+          "fight",
+          "ko",
+          "getready",
+          "timeover"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      }
+    },
+    {
+      "name": "844×390 fight fits its viewport, preserves natural artwork and accepts real touch attacks",
+      "status": "passed",
+      "geometry": {
+        "width": 844,
+        "height": 390,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 390,
+        "scrollWidth": 844,
+        "bodyHeight": 390,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 836,
+          "bottom": 40,
+          "width": 828,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 792,
+          "top": 2,
+          "right": 836,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 836,
+          "bottom": 382,
+          "width": 828,
+          "height": 336
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 836,
+          "bottom": 283,
+          "width": 828,
+          "height": 237
+        },
+        "touch": {
+          "left": 8,
+          "top": 289,
+          "right": 836,
+          "bottom": 382,
+          "width": 828,
+          "height": 93
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 289,
+            "right": 141.828125,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 146.828125,
+            "top": 289,
+            "right": 280.65625,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 285.65625,
+            "top": 289,
+            "right": 419.484375,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 424.484375,
+            "top": 289,
+            "right": 558.328125,
+            "bottom": 333,
+            "width": 133.84375,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 563.328125,
+            "top": 289,
+            "right": 697.15625,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 702.15625,
+            "top": 289,
+            "right": 835.984375,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 8,
+            "top": 338,
+            "right": 141.828125,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 146.828125,
+            "top": 338,
+            "right": 280.65625,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 285.65625,
+            "top": 338,
+            "right": 419.484375,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 424.484375,
+            "top": 338,
+            "right": 558.328125,
+            "bottom": 382,
+            "width": 133.84375,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 563.328125,
+            "top": 338,
+            "right": 697.15625,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 702.15625,
+            "top": 338,
+            "right": 835.984375,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          }
+        ],
+        "rows": 2,
+        "columns": 6
+      },
+      "rendering": {
+        "debug": {
+          "width": 826,
+          "height": 235,
+          "dpr": 2,
+          "scale": 0.5180510565597961,
+          "translateX": 81.44732380173048,
+          "translateY": -100.83063393587764,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 303.8207406381826,
+              "right": 411.1695522151246,
+              "top": 102.39357722496891,
+              "bottom": 215.691341678277,
+              "feetX": 360.46962286483665,
+              "feetY": 210
+            },
+            {
+              "countryId": "jp",
+              "left": 432.11423802422576,
+              "right": 507.33870406879055,
+              "top": 102.09375,
+              "bottom": 215.3915144533081,
+              "feetX": 465.5303771351633,
+              "feetY": 210
+            }
+          ]
+        },
+        "box": {
+          "width": 826,
+          "height": 235
+        },
+        "backing": {
+          "width": 1652,
+          "height": 470
+        },
+        "ratio": 2,
+        "actors": {
+          "pk": {
+            "frame": 88,
+            "left": 306.92902509646495,
+            "right": 408.0612180352514,
+            "top": 105.15678671404548,
+            "bottom": 212.23793217864286,
+            "sourceWidth": 340,
+            "sourceHeight": 360,
+            "scaleX": 0.29744762629054833,
+            "scaleY": 0.29744762629054833
+          },
+          "jp": {
+            "frame": 88,
+            "left": 435.2225406680354,
+            "right": 504.2303899674426,
+            "top": 104.85695950674459,
+            "bottom": 211.938104971342,
+            "sourceWidth": 232,
+            "sourceHeight": 360,
+            "scaleX": 0.29744762629054833,
+            "scaleY": 0.29744762629054833
+          }
+        },
+        "arena": {
+          "frame": 88,
+          "left": 0,
+          "right": 825.9999847412109,
+          "top": -177.1875,
+          "bottom": 287.43749141693115,
+          "sourceWidth": 1280,
+          "sourceHeight": 720,
+          "scaleX": 0.645312488079071,
+          "scaleY": 0.645312488079071
+        },
+        "pixelRange": 254.33333333333334,
+        "ids": [
+          "pk",
+          "jp"
+        ]
+      },
+      "damage": [
+        {
+          "action": "light",
+          "distance": 1.1,
+          "damage": 65,
+          "events": [
+            {
+              "action": "light",
+              "kind": "hit",
+              "damage": 65
+            }
+          ]
+        },
+        {
+          "action": "heavy",
+          "distance": 1.2,
+          "damage": 125,
+          "events": [
+            {
+              "action": "heavy",
+              "kind": "hit",
+              "damage": 125
+            }
+          ]
+        },
+        {
+          "action": "special",
+          "distance": 1.3,
+          "damage": 150,
+          "events": [
+            {
+              "action": "special",
+              "kind": "hit",
+              "damage": 150
+            }
+          ]
+        },
+        {
+          "action": "signature",
+          "distance": 3.8,
+          "damage": 120,
+          "events": [
+            {
+              "action": "signature",
+              "kind": "hit",
+              "damage": 120,
+              "country": "pk"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.75,
+        "musicVolume": 0.8,
+        "effectsVolume": 0.85,
+        "musicGain": 0.5759999752044678,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 34,
+        "activeVoices": 0,
+        "activeSources": 20,
+        "musicSources": 15,
+        "effectSources": 5,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 2,
+          "kick": 1,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 1,
+          "impact": 1
+        },
+        "lastSignature": {
+          "countryId": "pk",
+          "name": "Emerald Crescent",
+          "sound": "energy"
+        },
+        "decodedCues": [
+          "fight",
+          "ko",
+          "timeover",
+          "getready"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      }
+    },
+    {
+      "name": "740×360 fight fits its viewport, preserves natural artwork and accepts real touch attacks",
+      "status": "passed",
+      "geometry": {
+        "width": 740,
+        "height": 360,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 360,
+        "scrollWidth": 740,
+        "bodyHeight": 360,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 732,
+          "bottom": 40,
+          "width": 724,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 688,
+          "top": 2,
+          "right": 732,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 732,
+          "bottom": 352,
+          "width": 724,
+          "height": 306
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 732,
+          "bottom": 253,
+          "width": 724,
+          "height": 207
+        },
+        "touch": {
+          "left": 8,
+          "top": 259,
+          "right": 732,
+          "bottom": 352,
+          "width": 724,
+          "height": 93
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 259,
+            "right": 124.5,
+            "bottom": 303,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 129.5,
+            "top": 259,
+            "right": 246,
+            "bottom": 303,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 251,
+            "top": 259,
+            "right": 367.5,
+            "bottom": 303,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 372.5,
+            "top": 259,
+            "right": 489,
+            "bottom": 303,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 494,
+            "top": 259,
+            "right": 610.5,
+            "bottom": 303,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 615.5,
+            "top": 259,
+            "right": 732,
+            "bottom": 303,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 8,
+            "top": 308,
+            "right": 124.5,
+            "bottom": 352,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 129.5,
+            "top": 308,
+            "right": 246,
+            "bottom": 352,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 251,
+            "top": 308,
+            "right": 367.5,
+            "bottom": 352,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 372.5,
+            "top": 308,
+            "right": 489,
+            "bottom": 352,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 494,
+            "top": 308,
+            "right": 610.5,
+            "bottom": 352,
+            "width": 116.5,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 615.5,
+            "top": 308,
+            "right": 732,
+            "bottom": 352,
+            "width": 116.5,
+            "height": 44
+          }
+        ],
+        "rows": 2,
+        "columns": 6
+      },
+      "rendering": {
+        "debug": {
+          "width": 722,
+          "height": 205,
+          "dpr": 2,
+          "scale": 0.37402296090459647,
+          "translateX": 121.62530502105827,
+          "translateY": -44.41377654275789,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 282.1746615728321,
+              "right": 359.6784516861586,
+              "top": 102.3102195255857,
+              "bottom": 184.1090399084693,
+              "feetX": 323.0740717642739,
+              "feetY": 180
+            },
+            {
+              "countryId": "jp",
+              "left": 374.80011450749925,
+              "right": 429.1107411652172,
+              "top": 102.09375,
+              "bottom": 183.89257038288358,
+              "feetX": 398.92592823572613,
+              "feetY": 180
+            }
+          ]
+        },
+        "box": {
+          "width": 722,
+          "height": 205
+        },
+        "backing": {
+          "width": 1444,
+          "height": 410
+        },
+        "ratio": 2,
+        "actors": {
+          "pk": {
+            "frame": 85,
+            "left": 284.418790421925,
+            "right": 357.43430464442827,
+            "top": 104.32003506087118,
+            "bottom": 181.63057953175698,
+            "sourceWidth": 340,
+            "sourceHeight": 360,
+            "scaleX": 0.21475151241912727,
+            "scaleY": 0.21475151241912727
+          },
+          "jp": {
+            "frame": 85,
+            "left": 377.04426148770995,
+            "right": 426.8666123689475,
+            "top": 104.10356553635269,
+            "bottom": 181.4141100072385,
+            "sourceWidth": 232,
+            "sourceHeight": 360,
+            "scaleX": 0.21475151241912727,
+            "scaleY": 0.21475151241912727
+          }
+        },
+        "arena": {
+          "frame": 85,
+          "left": 0,
+          "right": 721.9999694824219,
+          "top": -158.4375,
+          "bottom": 247.6874828338623,
+          "sourceWidth": 1280,
+          "sourceHeight": 720,
+          "scaleX": 0.5640624761581421,
+          "scaleY": 0.5640624761581421
+        },
+        "pixelRange": 237.66666666666666,
+        "ids": [
+          "pk",
+          "jp"
+        ]
+      },
+      "damage": [
+        {
+          "action": "light",
+          "distance": 1.1,
+          "damage": 65,
+          "events": [
+            {
+              "action": "light",
+              "kind": "hit",
+              "damage": 65
+            }
+          ]
+        },
+        {
+          "action": "heavy",
+          "distance": 1.2,
+          "damage": 125,
+          "events": [
+            {
+              "action": "heavy",
+              "kind": "hit",
+              "damage": 125
+            }
+          ]
+        },
+        {
+          "action": "special",
+          "distance": 1.3,
+          "damage": 150,
+          "events": [
+            {
+              "action": "special",
+              "kind": "hit",
+              "damage": 150
+            }
+          ]
+        },
+        {
+          "action": "signature",
+          "distance": 3.8,
+          "damage": 120,
+          "events": [
+            {
+              "action": "signature",
+              "kind": "hit",
+              "damage": 120,
+              "country": "pk"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.75,
+        "musicVolume": 0.8,
+        "effectsVolume": 0.85,
+        "musicGain": 0.5759999752044678,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 27,
+        "activeVoices": 0,
+        "activeSources": 19,
+        "musicSources": 14,
+        "effectSources": 5,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 2,
+          "kick": 1,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 1,
+          "impact": 1
+        },
+        "lastSignature": {
+          "countryId": "pk",
+          "name": "Emerald Crescent",
+          "sound": "energy"
+        },
+        "decodedCues": [
+          "ko",
+          "getready",
+          "fight",
+          "timeover"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      }
+    },
+    {
+      "name": "320×568 fight fits its viewport, preserves natural artwork and accepts real touch attacks",
+      "status": "passed",
+      "geometry": {
+        "width": 320,
+        "height": 568,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 568,
+        "scrollWidth": 320,
+        "bodyHeight": 568,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 312,
+          "bottom": 40,
+          "width": 304,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 268,
+          "top": 2,
+          "right": 312,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 312,
+          "bottom": 560,
+          "width": 304,
+          "height": 514
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 312,
+          "bottom": 412,
+          "width": 304,
+          "height": 366
+        },
+        "touch": {
+          "left": 8,
+          "top": 418,
+          "right": 312,
+          "bottom": 560,
+          "width": 304,
+          "height": 142
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 418,
+            "right": 80.25,
+            "bottom": 462,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 85.25,
+            "top": 418,
+            "right": 157.5,
+            "bottom": 462,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 162.5,
+            "top": 418,
+            "right": 234.75,
+            "bottom": 462,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 239.75,
+            "top": 418,
+            "right": 312,
+            "bottom": 462,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 8,
+            "top": 467,
+            "right": 80.25,
+            "bottom": 511,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 85.25,
+            "top": 467,
+            "right": 157.5,
+            "bottom": 511,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 162.5,
+            "top": 467,
+            "right": 234.75,
+            "bottom": 511,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 239.75,
+            "top": 467,
+            "right": 312,
+            "bottom": 511,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 8,
+            "top": 516,
+            "right": 80.25,
+            "bottom": 560,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 85.25,
+            "top": 516,
+            "right": 157.5,
+            "bottom": 560,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 162.5,
+            "top": 516,
+            "right": 234.75,
+            "bottom": 560,
+            "width": 72.25,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 239.75,
+            "top": 516,
+            "right": 312,
+            "bottom": 560,
+            "width": 72.25,
+            "height": 44
+          }
+        ],
+        "rows": 3,
+        "columns": 4
+      },
+      "rendering": {
+        "debug": {
+          "width": 302,
+          "height": 364,
+          "dpr": 2,
+          "scale": 0.6601092941192153,
+          "translateX": -271.4699482362978,
+          "translateY": -97.58557647152918,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 11.881967294145852,
+              "right": 148.6676129120939,
+              "top": 161.36610189810358,
+              "bottom": 305.73200246243493,
+              "feetX": 84.06491757631159,
+              "feetY": 298.47999999999996
+            },
+            {
+              "countryId": "jp",
+              "left": 175.35568079638102,
+              "right": 271.20794970385873,
+              "top": 160.98405704880582,
+              "bottom": 305.3499576131372,
+              "feetX": 217.93508242368836,
+              "feetY": 298.47999999999996
+            }
+          ]
+        },
+        "box": {
+          "width": 302,
+          "height": 364
+        },
+        "backing": {
+          "width": 604,
+          "height": 728
+        },
+        "ratio": 2,
+        "actors": {
+          "pk": {
+            "frame": 86,
+            "left": 15.842609810764202,
+            "right": 144.70694089158224,
+            "top": 164.90341201629138,
+            "bottom": 301.3479978665693,
+            "sourceWidth": 340,
+            "sourceHeight": 360,
+            "scaleX": 0.3790127384729942,
+            "scaleY": 0.3790127384729942
+          },
+          "jp": {
+            "frame": 86,
+            "left": 179.31635230286804,
+            "right": 267.2473076286027,
+            "top": 164.52136717591057,
+            "bottom": 300.9659530261885,
+            "sourceWidth": 232,
+            "sourceHeight": 360,
+            "scaleX": 0.3790127384729942,
+            "scaleY": 0.3790127384729942
+          }
+        },
+        "arena": {
+          "frame": 86,
+          "left": -198.44000244140625,
+          "right": 500.44000244140625,
+          "top": -29.1200008392334,
+          "bottom": 364.00000190734863,
+          "sourceWidth": 1280,
+          "sourceHeight": 720,
+          "scaleX": 0.5460000038146973,
+          "scaleY": 0.5460000038146973
+        },
+        "pixelRange": 253.66666666666666,
+        "ids": [
+          "pk",
+          "jp"
+        ]
+      },
+      "damage": [
+        {
+          "action": "light",
+          "distance": 1.1,
+          "damage": 65,
+          "events": [
+            {
+              "action": "light",
+              "kind": "hit",
+              "damage": 65
+            }
+          ]
+        },
+        {
+          "action": "heavy",
+          "distance": 1.2,
+          "damage": 125,
+          "events": [
+            {
+              "action": "heavy",
+              "kind": "hit",
+              "damage": 125
+            }
+          ]
+        },
+        {
+          "action": "special",
+          "distance": 1.3,
+          "damage": 150,
+          "events": [
+            {
+              "action": "special",
+              "kind": "hit",
+              "damage": 150
+            }
+          ]
+        },
+        {
+          "action": "signature",
+          "distance": 3.8,
+          "damage": 120,
+          "events": [
+            {
+              "action": "signature",
+              "kind": "hit",
+              "damage": 120,
+              "country": "pk"
+            }
+          ]
+        }
+      ],
+      "audio": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.75,
+        "musicVolume": 0.8,
+        "effectsVolume": 0.85,
+        "musicGain": 0.5759999752044678,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 27,
+        "activeVoices": 0,
+        "activeSources": 19,
+        "musicSources": 14,
+        "effectSources": 5,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 2,
+          "kick": 1,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 1,
+          "impact": 1
+        },
+        "lastSignature": {
+          "countryId": "pk",
+          "name": "Emerald Crescent",
+          "sound": "energy"
+        },
+        "decodedCues": [
+          "ko",
+          "fight",
+          "getready",
+          "timeover"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      }
+    },
+    {
+      "name": "Two real touches register movement and guard, releasing guard resumes movement, and release/cancel clear every hold",
+      "status": "passed",
+      "before": -1.5,
+      "held": {
+        "x": -1.5,
+        "guard": true,
+        "axis": 1,
+        "pressed": 2
+      },
+      "released": -1.293333333333333
+    },
+    {
+      "name": "Touch jump and portrait/landscape rotation preserve the same fight, HP, round, frame and pause state",
+      "status": "passed",
+      "before": {
+        "ids": [
+          "pk",
+          "jp"
+        ],
+        "hp": [
+          1050,
+          1000
+        ],
+        "round": 1,
+        "wins": [
+          0,
+          0
+        ],
+        "frame": 2549,
+        "time": 3578,
+        "jump": 1.066666666666667,
+        "cues": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        }
+      },
+      "rotations": [
+        {
+          "viewport": {
+            "width": 844,
+            "height": 390
+          },
+          "geometry": {
+            "width": 844,
+            "height": 390,
+            "scrollX": 0,
+            "scrollY": 0,
+            "scrollHeight": 390,
+            "scrollWidth": 844,
+            "bodyHeight": 390,
+            "header": {
+              "left": 8,
+              "top": 8,
+              "right": 836,
+              "bottom": 40,
+              "width": 828,
+              "height": 32
+            },
+            "logo": {
+              "left": 8,
+              "top": 10,
+              "right": 36,
+              "bottom": 38,
+              "width": 28,
+              "height": 28
+            },
+            "pause": {
+              "left": 792,
+              "top": 2,
+              "right": 836,
+              "bottom": 46,
+              "width": 44,
+              "height": 44
+            },
+            "game": {
+              "left": 8,
+              "top": 46,
+              "right": 836,
+              "bottom": 382,
+              "width": 828,
+              "height": 336
+            },
+            "arena": {
+              "left": 8,
+              "top": 46,
+              "right": 836,
+              "bottom": 283,
+              "width": 828,
+              "height": 237
+            },
+            "touch": {
+              "left": 8,
+              "top": 289,
+              "right": 836,
+              "bottom": 382,
+              "width": 828,
+              "height": 93
+            },
+            "controls": [
+              {
+                "label": "◀︎",
+                "left": 8,
+                "top": 289,
+                "right": 141.828125,
+                "bottom": 333,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "▶︎",
+                "left": 146.828125,
+                "top": 289,
+                "right": 280.65625,
+                "bottom": 333,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Guard",
+                "left": 285.65625,
+                "top": 289,
+                "right": 419.484375,
+                "bottom": 333,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Low",
+                "left": 424.484375,
+                "top": 289,
+                "right": 558.328125,
+                "bottom": 333,
+                "width": 133.84375,
+                "height": 44
+              },
+              {
+                "label": "Jump",
+                "left": 563.328125,
+                "top": 289,
+                "right": 697.15625,
+                "bottom": 333,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Punch",
+                "left": 702.15625,
+                "top": 289,
+                "right": 835.984375,
+                "bottom": 333,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Kick",
+                "left": 8,
+                "top": 338,
+                "right": 141.828125,
+                "bottom": 382,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Special",
+                "left": 146.828125,
+                "top": 338,
+                "right": 280.65625,
+                "bottom": 382,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Break",
+                "left": 285.65625,
+                "top": 338,
+                "right": 419.484375,
+                "bottom": 382,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Throw",
+                "left": 424.484375,
+                "top": 338,
+                "right": 558.328125,
+                "bottom": 382,
+                "width": 133.84375,
+                "height": 44
+              },
+              {
+                "label": "Ultimate",
+                "left": 563.328125,
+                "top": 338,
+                "right": 697.15625,
+                "bottom": 382,
+                "width": 133.828125,
+                "height": 44
+              },
+              {
+                "label": "Power",
+                "left": 702.15625,
+                "top": 338,
+                "right": 835.984375,
+                "bottom": 382,
+                "width": 133.828125,
+                "height": 44
+              }
+            ],
+            "rows": 2,
+            "columns": 6
+          },
+          "state": {
+            "sameFight": true,
+            "ids": [
+              "pk",
+              "jp"
+            ],
+            "hp": [
+              1050,
+              1000
+            ],
+            "round": 1,
+            "wins": [
+              0,
+              0
+            ],
+            "frame": 2549,
+            "time": 3578,
+            "paused": true,
+            "audio": {
+              "enabled": true,
+              "active": true,
+              "paused": true,
+              "contextState": "suspended",
+              "volume": 0.75,
+              "musicVolume": 0.8,
+              "effectsVolume": 0.85,
+              "musicGain": 0.5759999752044678,
+              "effectsGain": 0.7820000052452087,
+              "musicDucking": 1,
+              "musicRunning": false,
+              "musicStep": 43,
+              "activeVoices": 0,
+              "activeSources": 0,
+              "musicSources": 0,
+              "effectSources": 0,
+              "cueCounts": {
+                "fight": 1,
+                "ko": 0,
+                "getready": 1,
+                "timeover": 0
+              },
+              "impactCounts": {
+                "punch": 2,
+                "kick": 1,
+                "block": 0,
+                "throw": 0,
+                "ultimate": 0,
+                "tech": 0
+              },
+              "signatureCounts": {
+                "launch": 1,
+                "impact": 1
+              },
+              "lastSignature": {
+                "countryId": "pk",
+                "name": "Emerald Crescent",
+                "sound": "energy"
+              },
+              "decodedCues": [
+                "fight",
+                "ko",
+                "getready",
+                "timeover"
+              ],
+              "arena": "lahore",
+              "lastError": null
+            },
+            "camera": {
+              "width": 826,
+              "height": 235,
+              "dpr": 2,
+              "scale": 0.46972981031131184,
+              "translateX": 112.37292140076045,
+              "translateY": -71.8378861867871,
+              "uniform": true,
+              "mobile": true,
+              "originX": 640,
+              "floor": 600,
+              "bounds": [
+                {
+                  "countryId": "pk",
+                  "left": 317.94345837774785,
+                  "right": 410.1549418086474,
+                  "top": 102.09375,
+                  "bottom": 175.15630656109067,
+                  "feetX": 365.369397234433,
+                  "feetY": 170.91847978209884
+                },
+                {
+                  "countryId": "jp",
+                  "left": 430.33135621996075,
+                  "right": 498.53925526476183,
+                  "top": 112.15871253984312,
+                  "bottom": 214.88862058937002,
+                  "feetX": 460.630602765567,
+                  "feetY": 210
+                }
+              ]
+            }
+          }
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "geometry": {
+            "width": 390,
+            "height": 844,
+            "scrollX": 0,
+            "scrollY": 0,
+            "scrollHeight": 844,
+            "scrollWidth": 390,
+            "bodyHeight": 844,
+            "header": {
+              "left": 8,
+              "top": 8,
+              "right": 382,
+              "bottom": 40,
+              "width": 374,
+              "height": 32
+            },
+            "logo": {
+              "left": 8,
+              "top": 10,
+              "right": 36,
+              "bottom": 38,
+              "width": 28,
+              "height": 28
+            },
+            "pause": {
+              "left": 338,
+              "top": 2,
+              "right": 382,
+              "bottom": 46,
+              "width": 44,
+              "height": 44
+            },
+            "game": {
+              "left": 8,
+              "top": 46,
+              "right": 382,
+              "bottom": 836,
+              "width": 374,
+              "height": 790
+            },
+            "arena": {
+              "left": 8,
+              "top": 46,
+              "right": 382,
+              "bottom": 688,
+              "width": 374,
+              "height": 642
+            },
+            "touch": {
+              "left": 8,
+              "top": 694,
+              "right": 382,
+              "bottom": 836,
+              "width": 374,
+              "height": 142
+            },
+            "controls": [
+              {
+                "label": "◀︎",
+                "left": 8,
+                "top": 694,
+                "right": 97.75,
+                "bottom": 738,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "▶︎",
+                "left": 102.75,
+                "top": 694,
+                "right": 192.5,
+                "bottom": 738,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Guard",
+                "left": 197.5,
+                "top": 694,
+                "right": 287.25,
+                "bottom": 738,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Low",
+                "left": 292.25,
+                "top": 694,
+                "right": 382,
+                "bottom": 738,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Jump",
+                "left": 8,
+                "top": 743,
+                "right": 97.75,
+                "bottom": 787,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Punch",
+                "left": 102.75,
+                "top": 743,
+                "right": 192.5,
+                "bottom": 787,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Kick",
+                "left": 197.5,
+                "top": 743,
+                "right": 287.25,
+                "bottom": 787,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Special",
+                "left": 292.25,
+                "top": 743,
+                "right": 382,
+                "bottom": 787,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Break",
+                "left": 8,
+                "top": 792,
+                "right": 97.75,
+                "bottom": 836,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Throw",
+                "left": 102.75,
+                "top": 792,
+                "right": 192.5,
+                "bottom": 836,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Ultimate",
+                "left": 197.5,
+                "top": 792,
+                "right": 287.25,
+                "bottom": 836,
+                "width": 89.75,
+                "height": 44
+              },
+              {
+                "label": "Power",
+                "left": 292.25,
+                "top": 792,
+                "right": 382,
+                "bottom": 836,
+                "width": 89.75,
+                "height": 44
+              }
+            ],
+            "rows": 3,
+            "columns": 4
+          },
+          "state": {
+            "sameFight": true,
+            "ids": [
+              "pk",
+              "jp"
+            ],
+            "hp": [
+              1050,
+              1000
+            ],
+            "round": 1,
+            "wins": [
+              0,
+              0
+            ],
+            "frame": 2549,
+            "time": 3578,
+            "paused": true,
+            "audio": {
+              "enabled": true,
+              "active": true,
+              "paused": true,
+              "contextState": "suspended",
+              "volume": 0.75,
+              "musicVolume": 0.8,
+              "effectsVolume": 0.85,
+              "musicGain": 0.5759999752044678,
+              "effectsGain": 0.7820000052452087,
+              "musicDucking": 1,
+              "musicRunning": false,
+              "musicStep": 43,
+              "activeVoices": 0,
+              "activeSources": 0,
+              "musicSources": 0,
+              "effectSources": 0,
+              "cueCounts": {
+                "fight": 1,
+                "ko": 0,
+                "getready": 1,
+                "timeover": 0
+              },
+              "impactCounts": {
+                "punch": 2,
+                "kick": 1,
+                "block": 0,
+                "throw": 0,
+                "ultimate": 0,
+                "tech": 0
+              },
+              "signatureCounts": {
+                "launch": 1,
+                "impact": 1
+              },
+              "lastSignature": {
+                "countryId": "pk",
+                "name": "Emerald Crescent",
+                "sound": "energy"
+              },
+              "decodedCues": [
+                "fight",
+                "ko",
+                "getready",
+                "timeover"
+              ],
+              "arena": "lahore",
+              "lastError": null
+            },
+            "camera": {
+              "width": 372,
+              "height": 640,
+              "dpr": 2,
+              "scale": 0.844056885470081,
+              "translateX": -354.19640670085187,
+              "translateY": 18.3658687179514,
+              "uniform": true,
+              "mobile": true,
+              "originX": 640,
+              "floor": 600,
+              "bounds": [
+                {
+                  "countryId": "pk",
+                  "left": 15.193023938461408,
+                  "right": 180.8877186347131,
+                  "top": 330.9033996599159,
+                  "bottom": 462.18941255861813,
+                  "feetX": 100.41263181333375,
+                  "feetY": 454.5744671288892
+                },
+                {
+                  "countryId": "jp",
+                  "left": 217.14269145979358,
+                  "right": 339.7053765788353,
+                  "top": 348.98911776267533,
+                  "bottom": 533.5843559815246,
+                  "feetX": 271.58736818666614,
+                  "feetY": 524.8
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pause freezes gameplay/audio, Resume restores sound, and Back returns to selection with audio stopped",
+      "status": "passed",
+      "resumed": {
+        "enabled": true,
+        "active": true,
+        "paused": false,
+        "contextState": "running",
+        "volume": 0.75,
+        "musicVolume": 0.8,
+        "effectsVolume": 0.85,
+        "musicGain": 0.5759999752044678,
+        "effectsGain": 0.7820000052452087,
+        "musicDucking": 1,
+        "musicRunning": true,
+        "musicStep": 44,
+        "activeVoices": 0,
+        "activeSources": 0,
+        "musicSources": 0,
+        "effectSources": 0,
+        "cueCounts": {
+          "fight": 1,
+          "ko": 0,
+          "getready": 1,
+          "timeover": 0
+        },
+        "impactCounts": {
+          "punch": 2,
+          "kick": 1,
+          "block": 0,
+          "throw": 0,
+          "ultimate": 0,
+          "tech": 0
+        },
+        "signatureCounts": {
+          "launch": 1,
+          "impact": 1
+        },
+        "lastSignature": {
+          "countryId": "pk",
+          "name": "Emerald Crescent",
+          "sound": "energy"
+        },
+        "decodedCues": [
+          "fight",
+          "ko",
+          "getready",
+          "timeover"
+        ],
+        "arena": "lahore",
+        "lastError": null
+      },
+      "menu": {
+        "fight": null,
+        "selection": true,
+        "bodyInFight": false,
+        "audio": {
+          "enabled": true,
+          "active": false,
+          "paused": false,
+          "contextState": "suspended",
+          "volume": 0.75,
+          "musicVolume": 0.8,
+          "effectsVolume": 0.85,
+          "musicGain": 0.5759999752044678,
+          "effectsGain": 0.7820000052452087,
+          "musicDucking": 1,
+          "musicRunning": false,
+          "musicStep": 0,
+          "activeVoices": 0,
+          "activeSources": 0,
+          "musicSources": 0,
+          "effectSources": 0,
+          "cueCounts": {
+            "fight": 1,
+            "ko": 0,
+            "getready": 1,
+            "timeover": 0
+          },
+          "impactCounts": {
+            "punch": 2,
+            "kick": 1,
+            "block": 0,
+            "throw": 0,
+            "ultimate": 0,
+            "tech": 0
+          },
+          "signatureCounts": {
+            "launch": 1,
+            "impact": 1
+          },
+          "lastSignature": {
+            "countryId": "pk",
+            "name": "Emerald Crescent",
+            "sound": "energy"
+          },
+          "decodedCues": [
+            "fight",
+            "ko",
+            "getready",
+            "timeover"
+          ],
+          "arena": "lahore",
+          "lastError": null
+        }
+      }
+    },
+    {
+      "name": "Mobile browser sessions have zero runtime errors and zero external requests",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-390x844.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-360x740.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-412x915.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-844x390.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-740x360.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-320x568.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-rotated-844x390.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-final/mobile-fight-rotated-390x844.png"
+  ],
+  "status": "passed",
+  "assetManifestSha256": "57ec59417787f1b4ed3c59d5889fea3aea70d2315777de3ef62596834888f254",
+  "documentSha256": "64537cde1c4ee5a1f3d8dd560d363aeeb64bbd445b0dfcea46b1cb2966580e51",
+  "rotations": [
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "geometry": {
+        "width": 844,
+        "height": 390,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 390,
+        "scrollWidth": 844,
+        "bodyHeight": 390,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 836,
+          "bottom": 40,
+          "width": 828,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 792,
+          "top": 2,
+          "right": 836,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 836,
+          "bottom": 382,
+          "width": 828,
+          "height": 336
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 836,
+          "bottom": 283,
+          "width": 828,
+          "height": 237
+        },
+        "touch": {
+          "left": 8,
+          "top": 289,
+          "right": 836,
+          "bottom": 382,
+          "width": 828,
+          "height": 93
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 289,
+            "right": 141.828125,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 146.828125,
+            "top": 289,
+            "right": 280.65625,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 285.65625,
+            "top": 289,
+            "right": 419.484375,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 424.484375,
+            "top": 289,
+            "right": 558.328125,
+            "bottom": 333,
+            "width": 133.84375,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 563.328125,
+            "top": 289,
+            "right": 697.15625,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 702.15625,
+            "top": 289,
+            "right": 835.984375,
+            "bottom": 333,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 8,
+            "top": 338,
+            "right": 141.828125,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 146.828125,
+            "top": 338,
+            "right": 280.65625,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 285.65625,
+            "top": 338,
+            "right": 419.484375,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 424.484375,
+            "top": 338,
+            "right": 558.328125,
+            "bottom": 382,
+            "width": 133.84375,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 563.328125,
+            "top": 338,
+            "right": 697.15625,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 702.15625,
+            "top": 338,
+            "right": 835.984375,
+            "bottom": 382,
+            "width": 133.828125,
+            "height": 44
+          }
+        ],
+        "rows": 2,
+        "columns": 6
+      },
+      "state": {
+        "sameFight": true,
+        "ids": [
+          "pk",
+          "jp"
+        ],
+        "hp": [
+          1050,
+          1000
+        ],
+        "round": 1,
+        "wins": [
+          0,
+          0
+        ],
+        "frame": 2549,
+        "time": 3578,
+        "paused": true,
+        "audio": {
+          "enabled": true,
+          "active": true,
+          "paused": true,
+          "contextState": "suspended",
+          "volume": 0.75,
+          "musicVolume": 0.8,
+          "effectsVolume": 0.85,
+          "musicGain": 0.5759999752044678,
+          "effectsGain": 0.7820000052452087,
+          "musicDucking": 1,
+          "musicRunning": false,
+          "musicStep": 43,
+          "activeVoices": 0,
+          "activeSources": 0,
+          "musicSources": 0,
+          "effectSources": 0,
+          "cueCounts": {
+            "fight": 1,
+            "ko": 0,
+            "getready": 1,
+            "timeover": 0
+          },
+          "impactCounts": {
+            "punch": 2,
+            "kick": 1,
+            "block": 0,
+            "throw": 0,
+            "ultimate": 0,
+            "tech": 0
+          },
+          "signatureCounts": {
+            "launch": 1,
+            "impact": 1
+          },
+          "lastSignature": {
+            "countryId": "pk",
+            "name": "Emerald Crescent",
+            "sound": "energy"
+          },
+          "decodedCues": [
+            "fight",
+            "ko",
+            "getready",
+            "timeover"
+          ],
+          "arena": "lahore",
+          "lastError": null
+        },
+        "camera": {
+          "width": 826,
+          "height": 235,
+          "dpr": 2,
+          "scale": 0.46972981031131184,
+          "translateX": 112.37292140076045,
+          "translateY": -71.8378861867871,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 317.94345837774785,
+              "right": 410.1549418086474,
+              "top": 102.09375,
+              "bottom": 175.15630656109067,
+              "feetX": 365.369397234433,
+              "feetY": 170.91847978209884
+            },
+            {
+              "countryId": "jp",
+              "left": 430.33135621996075,
+              "right": 498.53925526476183,
+              "top": 112.15871253984312,
+              "bottom": 214.88862058937002,
+              "feetX": 460.630602765567,
+              "feetY": 210
+            }
+          ]
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "scrollX": 0,
+        "scrollY": 0,
+        "scrollHeight": 844,
+        "scrollWidth": 390,
+        "bodyHeight": 844,
+        "header": {
+          "left": 8,
+          "top": 8,
+          "right": 382,
+          "bottom": 40,
+          "width": 374,
+          "height": 32
+        },
+        "logo": {
+          "left": 8,
+          "top": 10,
+          "right": 36,
+          "bottom": 38,
+          "width": 28,
+          "height": 28
+        },
+        "pause": {
+          "left": 338,
+          "top": 2,
+          "right": 382,
+          "bottom": 46,
+          "width": 44,
+          "height": 44
+        },
+        "game": {
+          "left": 8,
+          "top": 46,
+          "right": 382,
+          "bottom": 836,
+          "width": 374,
+          "height": 790
+        },
+        "arena": {
+          "left": 8,
+          "top": 46,
+          "right": 382,
+          "bottom": 688,
+          "width": 374,
+          "height": 642
+        },
+        "touch": {
+          "left": 8,
+          "top": 694,
+          "right": 382,
+          "bottom": 836,
+          "width": 374,
+          "height": 142
+        },
+        "controls": [
+          {
+            "label": "◀︎",
+            "left": 8,
+            "top": 694,
+            "right": 97.75,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "▶︎",
+            "left": 102.75,
+            "top": 694,
+            "right": 192.5,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Guard",
+            "left": 197.5,
+            "top": 694,
+            "right": 287.25,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Low",
+            "left": 292.25,
+            "top": 694,
+            "right": 382,
+            "bottom": 738,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Jump",
+            "left": 8,
+            "top": 743,
+            "right": 97.75,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Punch",
+            "left": 102.75,
+            "top": 743,
+            "right": 192.5,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Kick",
+            "left": 197.5,
+            "top": 743,
+            "right": 287.25,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Special",
+            "left": 292.25,
+            "top": 743,
+            "right": 382,
+            "bottom": 787,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Break",
+            "left": 8,
+            "top": 792,
+            "right": 97.75,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Throw",
+            "left": 102.75,
+            "top": 792,
+            "right": 192.5,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Ultimate",
+            "left": 197.5,
+            "top": 792,
+            "right": 287.25,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          },
+          {
+            "label": "Power",
+            "left": 292.25,
+            "top": 792,
+            "right": 382,
+            "bottom": 836,
+            "width": 89.75,
+            "height": 44
+          }
+        ],
+        "rows": 3,
+        "columns": 4
+      },
+      "state": {
+        "sameFight": true,
+        "ids": [
+          "pk",
+          "jp"
+        ],
+        "hp": [
+          1050,
+          1000
+        ],
+        "round": 1,
+        "wins": [
+          0,
+          0
+        ],
+        "frame": 2549,
+        "time": 3578,
+        "paused": true,
+        "audio": {
+          "enabled": true,
+          "active": true,
+          "paused": true,
+          "contextState": "suspended",
+          "volume": 0.75,
+          "musicVolume": 0.8,
+          "effectsVolume": 0.85,
+          "musicGain": 0.5759999752044678,
+          "effectsGain": 0.7820000052452087,
+          "musicDucking": 1,
+          "musicRunning": false,
+          "musicStep": 43,
+          "activeVoices": 0,
+          "activeSources": 0,
+          "musicSources": 0,
+          "effectSources": 0,
+          "cueCounts": {
+            "fight": 1,
+            "ko": 0,
+            "getready": 1,
+            "timeover": 0
+          },
+          "impactCounts": {
+            "punch": 2,
+            "kick": 1,
+            "block": 0,
+            "throw": 0,
+            "ultimate": 0,
+            "tech": 0
+          },
+          "signatureCounts": {
+            "launch": 1,
+            "impact": 1
+          },
+          "lastSignature": {
+            "countryId": "pk",
+            "name": "Emerald Crescent",
+            "sound": "energy"
+          },
+          "decodedCues": [
+            "fight",
+            "ko",
+            "getready",
+            "timeover"
+          ],
+          "arena": "lahore",
+          "lastError": null
+        },
+        "camera": {
+          "width": 372,
+          "height": 640,
+          "dpr": 2,
+          "scale": 0.844056885470081,
+          "translateX": -354.19640670085187,
+          "translateY": 18.3658687179514,
+          "uniform": true,
+          "mobile": true,
+          "originX": 640,
+          "floor": 600,
+          "bounds": [
+            {
+              "countryId": "pk",
+              "left": 15.193023938461408,
+              "right": 180.8877186347131,
+              "top": 330.9033996599159,
+              "bottom": 462.18941255861813,
+              "feetX": 100.41263181333375,
+              "feetY": 454.5744671288892
+            },
+            {
+              "countryId": "jp",
+              "left": 217.14269145979358,
+              "right": 339.7053765788353,
+              "top": 348.98911776267533,
+              "bottom": 533.5843559815246,
+              "feetX": 271.58736818666614,
+              "feetY": 524.8
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "finishedAt": "2026-10-17T10:47:14.803Z"
+}

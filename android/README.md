@@ -7,31 +7,42 @@ are bundled in the APK; it works without an internet connection.
 
 ## Install and play
 
-For the refreshed logo and Google Play upload, use the
-[signed Play Store AAB and instructions](../docs/PLAY-STORE-AAB.md). An AAB is
-installed through a Play testing track, rather than opened directly as an APK.
-The earlier standalone test APK below retains its previous branding.
+The APK below includes the blue/red NationClash logo and the compact mobile
+fight screen. For Google Play upload, use the separate
+[signed Play Store AAB and instructions](../docs/PLAY-STORE-AAB.md). Install an
+AAB through a Play testing track; use the APK for a direct phone test.
 
-1. Download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/c7e1ca22607c0c9c7522461b5ce108d32b128c07/downloads/NationClash-Android-test.apk)
+1. Download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Android-test.apk)
    on an Android phone running **Android 8.0 or newer**.
 2. Open the downloaded APK. If Android asks, allow **Install unknown apps** for
    the browser or file manager you used, then install **NationClash**.
 3. Open NationClash, choose your country, opponent and arena, then tap
-   **Enter the arena**. Turn the phone sideways for more fighting space.
+   **Enter the arena**. Portrait and landscape layouts both fit the screen.
 4. Use the on-screen movement, punch, kick, guard and **country power** buttons.
-   Music and Effects have independent controls. Sound starts after interacting
-   with the game.
+   The arena fills the remaining screen above the compact controls: three rows
+   in portrait or two in landscape. Tap the pause icon beside the small logo to
+   resume or return to fighter selection.
+
+Music and fight sounds start when you enter a match. Use the phone's **physical
+volume buttons** to adjust media audio. The fight screen has no sound sliders,
+keyboard labels or long instruction panels; health, round and power cooldown
+information remain visible.
 
 Android Back pauses a running fight; Back again returns to country selection.
 Switching apps pauses combat and music. Rotation keeps the current match.
 Keep Android System WebView or Chrome enabled and updated on the device;
 old factory WebView versions may not support the game's JavaScript.
 
-This is a **signed test APK**, version `0.1.0-test`, package
+This is a **signed test APK**, version `0.2.1-test`, version code `3`, package
 `com.nationclash.game`, rather than a Google Play production release. WebView
 debugging is enabled for device testing. The wrapper requests only the normal
 Internet permission; it serves game requests from packaged files and blocks
 remote page/asset requests. It has no login, tracking SDK, ads or purchases.
+
+The APK requires Android 8.0 / API 26 and targets Android 15 / API 35. It reuses
+the earlier test signing certificate, so it can update the previous test APK.
+The Play Store AAB is version `0.2.1`, code `3`, targets Android 16 / API 36 and
+uses the existing separate upload certificate with debugging disabled.
 
 ## Rebuild on Linux x86_64
 

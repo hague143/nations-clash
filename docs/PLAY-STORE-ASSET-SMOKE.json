@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-10-16T17:17:23.430Z",
+  "startedAt": "2026-10-17T10:42:45.141Z",
   "assets": "/workspace/nations-clash/artifacts/android-assets",
   "checks": [
     {
@@ -53,6 +53,6 @@
     "/workspace/nations-clash/artifacts/android-assets-mobile-844.png"
   ],
   "passed": true,
-  "manifestSha256": "add49a3e96b79d9bd627e7d6d2a41fad4d652d4dfe0b17d2bda2c2cfab22f0e6",
-  "finishedAt": "2026-10-16T17:17:50.412Z"
+  "manifestSha256": "57ec59417787f1b4ed3c59d5889fea3aea70d2315777de3ef62596834888f254",
+  "finishedAt": "2026-10-17T10:43:18.637Z"
 }

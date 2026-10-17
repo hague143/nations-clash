@@ -1,23 +1,33 @@
 # Play the neon country-power edition
 
-[Download NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/a408b8133194e2c5ad6027b88c6c63ed5500c76b/downloads/NationClash-Windows.zip)
+[Download NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Windows.zip)
 
 Right-click the ZIP → **Extract All**, then open `NationClash.html` in current
 Chrome or Edge. All 196 fighters, 196 powers, 30 arena views and audio are inside
 the single HTML. No companion artwork folder is required. Allow it to finish loading.
 
 **H** launches your country power; player two uses **Numpad 7**. Powers travel,
-can be blocked and recharge in four seconds. Music and Effects have separate
-volume controls. The new matchup screen, lighting and shaded particles give
+can be blocked and recharge in four seconds. Music and fight sounds start with
+a match; adjust sound using the device's media volume controls. The matchup
+screen, lighting and shaded particles give
 the supplied artwork a 3D-style presentation.
 
-ZIP: 89230613 bytes; SHA-256 `4744aefebdc6575353e7df552028920827d5196d4f73686c6f3e5e0eda0e76b3`.
+The compact mobile fight screen reserves most of the screen for the arena,
+with a small logo, pause icon and twelve touch buttons. Portrait uses three
+button rows; landscape uses two. Sound sliders, keyboard labels and long
+instruction panels have been removed from the fight screen.
 
-Extracted HTML: 117944012 bytes; SHA-256 `27b7f8733a26231fc4ac2029bf64f0e46786efab276d4dbfd1582e48f465d09f`.
+For direct phone installation use
+[NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Android-test.apk)
+(`0.2.1-test`, code `3`, Android 8.0+, target API 35). For Google Play use
+[NationClash-PlayStore.aab](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore.aab)
+(`0.2.1`, code `3`, target API 36) and the
+[upload instructions](../docs/PLAY-STORE-AAB.md).
 
-All **81 automated tests**, **38 browser gameplay/presentation groups** and
-three loading/navigation regression cases pass. Every supplied fighter's
-punches/kicks and every arena were rechecked. See [validation](../docs/DOWNLOAD-VALIDATION.md).
+Exact download sizes, SHA256 hashes and current acceptance results are recorded
+in [download validation](../docs/DOWNLOAD-VALIDATION.md),
+[Android checks](../docs/ANDROID-APK-VALIDATION.md) and the
+[Play Store build report](../docs/PLAY-STORE-AAB-BUILD.json).
 
 See [all country powers](../docs/COUNTRY-POWERS.md), [audio design](../docs/AUDIO-DESIGN.md)
 and the existing [source-artwork checklist](../docs/REPLACEMENT-ARTWORK-CHECKLIST.md).

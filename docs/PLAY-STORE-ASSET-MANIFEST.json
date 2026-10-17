@@ -3233,12 +3233,12 @@
       "sha256": "73493166f8d6cb6a9addbbc0e61e5fd56687d973a85cd34e4fce8fd3911afeb9"
     },
     "game.js": {
-      "bytes": 2530032,
-      "sha256": "f1171f9f63d50391d20059b42e8e5d650212100823117c6f48342536d9b72e79"
+      "bytes": 2533119,
+      "sha256": "4d071eadea9eebf2b31255ac982dd4488c5f33ff467a4ea2309c4a36b97221ca"
     },
     "index.html": {
-      "bytes": 68495,
-      "sha256": "f23a26828afb7a9e1a6a737754c5dfdd900fd93f8d9e5e4995c6e4b4d3295d0d"
+      "bytes": 71943,
+      "sha256": "64537cde1c4ee5a1f3d8dd560d363aeeb64bbd445b0dfcea46b1cb2966580e51"
     },
     "legacy/fighter-body.webp": {
       "bytes": 236968,
@@ -4135,9 +4135,9 @@
       "unchanged": true
     },
     "game": {
-      "bundledSha256": "15189da601dbd54e932d5f7b8706dbbdc42a43e51f026eb7029d82bed2c84c64",
+      "bundledSha256": "d043e776ecc6097aaf4d72be3771f61675111a71e2b6ddd772d0c7dd31e853e1",
       "sourcePath": "browser/src/game.js",
-      "sourceSha256": "159e220b530319641cb9ce795e2e93aa47edafeb10bad0f009e951a8f772e655",
+      "sourceSha256": "a20905dbf05a0b9fe11f78364415669e7aeaa455a3e0b6c560f66e304e7060dc",
       "unchanged": false
     },
     "power-fx": {
@@ -4176,12 +4176,12 @@
     "browser/assets/branding/metadata.json": "dc079d3658a6c4dea73f50601d4fde67589d11c5d25a319ac7bc35a1e112d500",
     "browser/assets/branding/nation-clash-logo.webp": "d06638cd8b5bf9b0ab8818cc2c3f015d943a7f59ac769ab5c28a8d84c558a8c7",
     "browser/assets/countries/metadata.json": "3a0b7d6c8607c08f34ea07ce9cc7326d369ebc35c79c02a9c3d98699e1df1452",
-    "browser/landing-neon.css": "c24e3359875a0f3d47a8a501189e4a4afdbd743a43e7b302aecf2952c748f4ad",
-    "browser/template.html": "d10e9a5325c023de68f656927d3fdca6990d234b293b66c076062a04370a1369",
+    "browser/landing-neon.css": "8e205446a4fa6104493a5ccf5637c24ab209b70282b201a93d8048609d9539e8",
+    "browser/template.html": "56cedbaa775398ece0e540785de93f744a7b49b6fd55f69b040434a24cc5519a",
     "tools/build-android-assets.py": "4495b4d12302ec498740f6dc11a78c7df3f1464c37c681521e331013958266d8",
     "tools/build-browser.mjs": "996a361135650b245b0df70d898cc3d4fedf7b1b1e2f0d36582f0e8c5eb5f6aa"
   },
-  "totalBytes": 90478264,
+  "totalBytes": 90484799,
   "transformations": [
     "Asset URI marker substitutions only in arenas, country-sprites, game and audio modules.",
     "country-sprites.loadImage accepts local WebP URLs before its unchanged browser transports.",

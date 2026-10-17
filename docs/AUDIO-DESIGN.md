@@ -19,16 +19,18 @@ The country's stable seed changes tuning and duration within its family. A hit
 adds a short low impact, while an ultimate has a fuller body. None uses a long
 reverb or delay feedback tail.
 
-The mix has three controls, all accepting a number from 0 to 1:
+The mix exposes three developer APIs, all accepting a number from 0 to 1:
 
 - `setVolume(value)` controls the master; the game starts at 0.75.
 - `setMusicVolume(value)` controls music independently; the default is 0.80.
 - `setEffectsVolume(value)` controls combat and spoken announcements; the default
   is 0.85.
 
-Changing a slider preserves the global Sound mute. Announcements lower a separate
-music ducking gain to 30%, then restore it, so changing Music during a cue keeps
-the selected level. A dynamics compressor provides shared mix headroom, with a
+The current game uses the default mix and the device's media volume controls;
+the fight UI has no sliders or mute toggle. Changing a bus gain through the API
+preserves the engine's enabled state. Announcements lower a separate music
+ducking gain to 30%, then restore it, so a gain update during a cue keeps the
+selected level. A dynamics compressor provides shared mix headroom, with a
 gentle final peak guard for simultaneous ultimates at maximum volume. Its lower
 range is linear, preserving the ordinary soundtrack and strike levels.
 
@@ -63,5 +65,6 @@ The focused checks render all thirty arena tunings, all eight power families,
 punches, kicks and a maximum-volume simultaneous-power mix. They measure actual
 samples for audibility, stereo energy, distinct timbres, tail length and peak
 headroom, then exercise independent controls, speech ducking, pause, arena
-changes, mute and cancellation in Chromium. Audibility measurements do not
-replace listening preferences; the sliders allow the player to choose the mix.
+changes, mute and cancellation in Chromium through the developer APIs. Audibility
+measurements do not replace listening tests; players adjust the combined level
+with their device's media volume controls.
