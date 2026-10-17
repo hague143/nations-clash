@@ -12,7 +12,7 @@ fight screen. For Google Play upload, use the separate
 [signed Play Store AAB and instructions](../docs/PLAY-STORE-AAB.md). Install an
 AAB through a Play testing track; use the APK for a direct phone test.
 
-1. Download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Android-test.apk)
+1. Download [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-Android-test.apk)
    on an Android phone running **Android 8.0 or newer**.
 2. Open the downloaded APK. If Android asks, allow **Install unknown apps** for
    the browser or file manager you used, then install **NationClash**.

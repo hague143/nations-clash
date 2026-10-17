@@ -1,10 +1,27 @@
 {
-  "htmlSha256": "4404eff286168c73b3f5d188eb0d48ca6120a9e9625db3aa943f4dbe3e2ab318",
+  "htmlSha256": "05c4f7c9580e43973a763b56b7bd46858f9f4a556fc5dc76da8a115dc650b115",
   "errors": [],
   "externalRequests": [],
   "checks": [
-    "Exact ZIP HTML boots without companion files; both logos match shared WebP",
-    "Real keyboard punch causes HP damage in the extracted standalone game"
+    "196 canonical countries, decoded flags, individual looks and supplied art",
+    "live search, regions, pagination, random pick and every country card",
+    "196 supplied country sprites, zero retained fighters and every archetype attack pose",
+    "196 supplied fighters: 3136 visible melee contacts, both stances/facings, every supplied pose, bounded decoded cache",
+    "196 fighters: striking hand/foot stays visible over defender in both player slots and facings",
+    "four-pose Turkey sheet has grounded adapted crouch and KO",
+    "fallback fighter flag drawing preserves emblem orientation",
+    "real keyboard movement, punch, guard, mirrored kick, whiff, jump and pause",
+    "actual knockout rounds, first-to-two result and rematch reset",
+    "Iraq versus Iran: real keyboard punch/kick hits and genuine whiffs, both stances and directions",
+    "rapid arena selection keeps the latest preview after out-of-order loading",
+    "thirty selectable supplied arena views enter matches with matching previews, scenery and music",
+    "bundled start/KO audio, background music, punch/kick effects, pause/resume and cue deduplication without audio controls",
+    "computer mode movement and combat through live AI adapter",
+    "390px mobile touch attack/jump, target sizes and layout",
+    "844\u00d7390 landscape touch attack/jump, compact bottom controls, viewport fit and target sizes",
+    "zero runtime errors and zero external network requests"
   ],
-  "passed": true
+  "passed": true,
+  "sourceReport": "WORLD-ACCEPTANCE.json",
+  "runtime": "Linux Chromium executing exact extracted standalone ZIP HTML; not physical Android validation"
 }

@@ -9,8 +9,8 @@ health/round/power information, and twelve touch buttons. Portrait uses three
 button rows; landscape uses two. Music and fight sounds use the phone's media
 volume buttons, with no in-game sliders or keyboard instruction panels.
 
-[Download the signed AAB](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore.aab)
-and the [512x512 store icon](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore-icon.png).
+[Download the signed AAB](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-PlayStore.aab)
+and the [512x512 store icon](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-PlayStore-icon.png).
 See [public download evidence](PLAY-STORE-PUBLIC-DOWNLOADS.json) for verified
 artifact URLs, exact sizes and hashes.
 
@@ -76,6 +76,8 @@ Machine-readable reports:
 - [Bundle build/signing checks](PLAY-STORE-AAB-BUILD.json)
 - [Exact bundled asset inventory](PLAY-STORE-ASSET-MANIFEST.json)
 - [Current browser acceptance](PLAY-STORE-ASSET-SMOKE.json)
+- [Compact mobile UI and runtime scope](MOBILE-UI-VALIDATION.md)
+- [Six-viewport touch acceptance](MOBILE-FIGHT-ACCEPTANCE.json)
 - [Branding viewport checks](BRANDING-VALIDATION.json)
 - [Landing preview acceptance](BRANDED-LANDING-VALIDATION.json)
 - [Standalone ZIP payload checks](BRANDED-WINDOWS-PACKAGE.json)

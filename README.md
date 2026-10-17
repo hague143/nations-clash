@@ -3,13 +3,13 @@
 **Active version: the neon 2D browser game**, with 196 country fighters,
 hover move previews and 30 arena views.
 
-**Play Store bundle:** [NationClash-PlayStore.aab](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore.aab)
+**Play Store bundle:** [NationClash-PlayStore.aab](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-PlayStore.aab)
 (about 89 MB), signed version **0.2.1**, version code **3**, targets
 **Android 16 / API 36** and includes the refreshed NationClash logo and compact
 mobile fight screen. Upload it
 to Play Console **Internal testing**. See [bundle validation and upload steps](docs/PLAY-STORE-AAB.md).
 
-**Direct Android test build:** [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Android-test.apk)
+**Direct Android test build:** [NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-Android-test.apk)
 (about 89 MB), version **0.2.1-test**, code **3**. Install it and open
 **NationClash**. Android 8.0+ is required; this test APK targets API 35.
 All fighters, arenas and audio are included for offline play. See
@@ -17,7 +17,7 @@ All fighters, arenas and audio are included for offline play. See
 previous test signing certificate for compatible APK updates. The Play bundle
 uses its separate upload certificate.
 
-**Play without Unity:** download [NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Windows.zip),
+**Play without Unity:** download [NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-Windows.zip),
 right-click → **Extract All**, then open the extracted `NationClash.html` in
 Chrome or Edge. The downloaded HTML contains all artwork and needs no companion
 folder. Pick a country,

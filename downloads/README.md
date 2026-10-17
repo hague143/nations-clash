@@ -1,6 +1,6 @@
 # Play the neon country-power edition
 
-[Download NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Windows.zip)
+[Download NationClash-Windows.zip](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-Windows.zip)
 
 Right-click the ZIP → **Extract All**, then open `NationClash.html` in current
 Chrome or Edge. All 196 fighters, 196 powers, 30 arena views and audio are inside
@@ -18,9 +18,9 @@ button rows; landscape uses two. Sound sliders, keyboard labels and long
 instruction panels have been removed from the fight screen.
 
 For direct phone installation use
-[NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-Android-test.apk)
+[NationClash-Android-test.apk](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-Android-test.apk)
 (`0.2.1-test`, code `3`, Android 8.0+, target API 35). For Google Play use
-[NationClash-PlayStore.aab](https://raw.githubusercontent.com/hague143/nations-clash/backup/nationclash-2026-10-15/downloads/NationClash-PlayStore.aab)
+[NationClash-PlayStore.aab](https://raw.githubusercontent.com/hague143/nations-clash/73d18a25f4c3056e3cf05658f49b31cb4ee4dbda/downloads/NationClash-PlayStore.aab)
 (`0.2.1`, code `3`, target API 36) and the
 [upload instructions](../docs/PLAY-STORE-AAB.md).
 

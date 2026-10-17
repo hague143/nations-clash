@@ -37,6 +37,13 @@ Evidence: [mobile acceptance](MOBILE-FIGHT-ACCEPTANCE.json),
 [branding](BRANDING-VALIDATION.json),
 [standalone landing](BRANDED-LANDING-VALIDATION.json),
 [standalone package](BRANDED-WINDOWS-PACKAGE.json).
+The exact standalone HTML also passes [17 world gameplay groups](WORLD-ACCEPTANCE.json),
+including 3,136 rendered melee contacts, all 30 selected arenas, actual keyboard
+hits/whiffs, KO/results/rematch and live AI.
+[Nine country-power/audio groups](UPGRADE-ACCEPTANCE.json) also pass on that
+same HTML: 392 rendered country missiles, exact signature sound counts through
+pause/resume, actual guarded/ranged hits and misses, both mobile orientations,
+audio cleanup/restart and reduced-motion play.
 See the [portrait](previews/mobile-compact/mobile-fight-390x844.png) and
 [landscape](previews/mobile-compact/mobile-fight-844x390.png) screenshots.
 
@@ -61,7 +68,8 @@ submitted to Google Play as part of this change.
 
 Build evidence: [APK](ANDROID-APK-BUILD.json),
 [AAB](PLAY-STORE-AAB-BUILD.json), [inventory](ANDROID-ASSET-MANIFEST.json).
-Public download verification is recorded separately after upload.
+[Public download verification](MOBILE-PUBLIC-DOWNLOADS.json) records full downloads,
+byte counts, hashes, ZIP CRCs and Android signatures from the immutable artifact commit.
 
 ## Runtime scope
 

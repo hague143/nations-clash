@@ -1,9 +1,9 @@
 {
-  "startedAt": "2026-10-16T06:58:02.100Z",
+  "startedAt": "2026-10-17T10:48:21.555Z",
   "document": {
-    "path": "/workspace/nations-clash/artifacts/neon-landing/package-final/NationClash.html",
-    "bytes": 117944012,
-    "sha256": "27b7f8733a26231fc4ac2029bf64f0e46786efab276d4dbfd1582e48f465d09f"
+    "path": "/workspace/nations-clash/artifacts/package-check/NationClash.html",
+    "bytes": 118862787,
+    "sha256": "05c4f7c9580e43973a763b56b7bd46858f9f4a556fc5dc76da8a115dc650b115"
   },
   "checks": [
     {
@@ -25,7 +25,7 @@
         }
       ],
       "powers": 196,
-      "stage": "Burj Khalifa \u00b7 Dubai, United Arab Emirates"
+      "stage": "Burj Khalifa · Dubai, United Arab Emirates"
     },
     {
       "name": "all 196 country projectiles render their own power at exact collision coordinates in both directions",
@@ -35,14 +35,88 @@
     },
     {
       "name": "real H launches Iran power, travels before damage, plays sound, recharges and freezes on pause",
-      "status": "passed"
+      "status": "passed",
+      "signatureAudioBefore": {
+        "launch": 0,
+        "impact": 0
+      },
+      "signatureAudioAfter": {
+        "launch": 1,
+        "impact": 1
+      },
+      "atImpact": {
+        "event": {
+          "attackerId": "ir",
+          "defenderId": "ae",
+          "attacker": "ir",
+          "action": "signature",
+          "move": "signature",
+          "style": "Trickster",
+          "kind": "hit",
+          "damage": 120,
+          "ultimate": false,
+          "powerId": "ir",
+          "countryId": "ir",
+          "frame": 137
+        },
+        "audio": {
+          "enabled": true,
+          "active": true,
+          "paused": false,
+          "contextState": "running",
+          "volume": 0.75,
+          "musicVolume": 0.8,
+          "effectsVolume": 0.85,
+          "musicGain": 0.5759999752044678,
+          "effectsGain": 0.7820000052452087,
+          "musicDucking": 1,
+          "musicRunning": true,
+          "musicStep": 19,
+          "activeVoices": 0,
+          "activeSources": 18,
+          "musicSources": 13,
+          "effectSources": 5,
+          "cueCounts": {
+            "fight": 2,
+            "ko": 0,
+            "getready": 2,
+            "timeover": 0
+          },
+          "impactCounts": {
+            "punch": 0,
+            "kick": 0,
+            "block": 0,
+            "throw": 0,
+            "ultimate": 0,
+            "tech": 0
+          },
+          "signatureCounts": {
+            "launch": 1,
+            "impact": 1
+          },
+          "lastSignature": {
+            "countryId": "ir",
+            "name": "Uranium Pulse",
+            "sound": "energy"
+          },
+          "decodedCues": [
+            "getready",
+            "fight",
+            "ko",
+            "timeover"
+          ],
+          "arena": "dubai",
+          "lastError": null
+        },
+        "paused": false
+      }
     },
     {
       "name": "real guard, finite-range miss and player-two Numpad7 gold power work",
       "status": "passed"
     },
     {
-      "name": "music and effects sliders independently adjust sound and survive master mute",
+      "name": "music, effects and announcers work without audio UI, pause/resume cleanly and restart once per match",
       "status": "passed"
     },
     {
@@ -65,13 +139,13 @@
   "errors": [],
   "externalRequests": [],
   "screenshots": [
-    "/workspace/nations-clash/artifacts/neon-landing/upgrade/country-power-selection.png",
-    "/workspace/nations-clash/artifacts/neon-landing/upgrade/iran-uranium-projectile.png",
-    "/workspace/nations-clash/artifacts/neon-landing/upgrade/uranium-impact.png",
-    "/workspace/nations-clash/artifacts/neon-landing/upgrade/golden-falcon-projectile.png",
-    "/workspace/nations-clash/artifacts/neon-landing/upgrade/country-power-mobile-390.png",
-    "/workspace/nations-clash/artifacts/neon-landing/upgrade/country-power-mobile-844.png"
+    "/workspace/nations-clash/artifacts/mobile-fight-upgrade-final/country-power-selection.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-upgrade-final/iran-uranium-projectile.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-upgrade-final/uranium-impact.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-upgrade-final/golden-falcon-projectile.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-upgrade-final/country-power-mobile-390.png",
+    "/workspace/nations-clash/artifacts/mobile-fight-upgrade-final/country-power-mobile-844.png"
   ],
   "status": "passed",
-  "finishedAt": "2026-10-16T06:59:21.032Z"
+  "finishedAt": "2026-10-17T10:50:08.149Z"
 }
